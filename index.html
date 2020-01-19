@@ -202,7 +202,7 @@
                 <div>
                 </div>
               </button>
-              <button onclick="proceed(2)" id="startProject1-proceed" type="button"
+              <button onclick="proceed(2)" id="proceed2" type="button" disabled="true"
                 class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
                 <div>
                 </div>
@@ -225,7 +225,9 @@
                 <div>
                   <div class="syne-inputbox p-2">
                     <label class="syne-input-label" for="title">Title</label>
-                    <input type="text" name="title" class="form-control project-title-input" placeholder="Title">
+                    <input type="text" name="title" onblur="formValidCheck('#thirdRegForm', 3)"
+                      onkeyup="formValidCheck('#thirdRegForm', 3)" class="form-control project-title-input"
+                      placeholder="Title">
                   </div>
                 </div>
               </div>
@@ -233,7 +235,8 @@
                 <div>
                   <div class="syne-inputbox p-2">
                     <label for="url" class="syne-input-label">Project URL</label>
-                    <input id="projectUrl" type="text" name="projectUrl" onkeyup="addHyphen(this)"
+                    <input id="projectUrl" type="text" onblur="formValidCheck('#thirdRegForm', 3)" name="projectUrl"
+                      onkeyup="addHyphen(this); formValidCheck('#thirdRegForm', 3)"
                       class="form-control project-title-input" placeholder="Project URL">
                   </div>
                 </div>
@@ -242,8 +245,9 @@
                 <div>
                   <div class="syne-inputbox p-2">
                     <label for="comment" class="Short-description-ab">Short description about project</label>
-                    <textarea name="comment" class="form-control syne-project-description" rows="5"
-                      id="comment"></textarea>
+                    <textarea name="comment" onblur="formValidCheck('#thirdRegForm', 3)"
+                      onkeyup="formValidCheck('#thirdRegForm', 3)" class="form-control syne-project-description"
+                      rows="5" id="comment"></textarea>
                   </div>
                   <small class="noteinstr mt-1" class="form-text text-muted">In less than 60 words</small>
                 </div>
@@ -261,7 +265,7 @@
                 <div>
                 </div>
               </button>
-              <button onclick="proceed(3)" id="startProject1-proceed" type="button"
+              <button onclick="proceed(3)" id="proceed3" type="button" disabled="true"
                 class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
                 <div>
                 </div>
@@ -280,7 +284,7 @@
             <div class="title pt-3 pl-2">Select Country</div>
 
             <form id="fourthRegForm">
-              <div class="d-flex">
+              <div class="d-flex" onclick="formValidCheck('#fourthRegForm', 4)">
                 <div class="countryInput m-2">
                   <div class="syne-inputbox p-2">
                     <select class="mt-2" id="selectCountry" name="selectCountry">
@@ -288,7 +292,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="cityInput m-2">
+                <div class="cityInput m-2" onclick="formValidCheck('#fourthRegForm', 4)">
                   <div class="syne-inputbox p-2">
                     <select class="mt-2" id="selectCity" name="selectCity">
                       <option value="">Select City</option>
@@ -304,7 +308,7 @@
               <div class="title pt-2 pl-2">When to when?</div>
               <div class="d-flex align-items-center">
                 <div class="countryInput m-2">
-                  <div class="syne-inputbox p-2">
+                  <div class="syne-inputbox p-2" onclick="formValidCheck('#fourthRegForm', 4)">
                     <label for="url" class="syne-input-label">Start Date</label>
                     <div class="d-flex">
                       <input id="startDatepicker" name="startDate" type="text"
@@ -319,7 +323,7 @@
                 </div>
 
                 <div class="cityInput m-2">
-                  <div class="syne-inputbox p-2">
+                  <div class="syne-inputbox p-2" onclick="formValidCheck('#fourthRegForm', 4)">
                     <label for="url" class="syne-input-label">End Date</label>
                     <div class="d-flex">
                       <input id="endDatepicker" name="endDate" type="text" class="endDateInput project-title-input">
@@ -333,7 +337,8 @@
               <div class="countryInput m-2">
                 <div class="syne-inputbox p-2 d-flex align-items-center">
                   <img style="height: 20px;" src="img/dollar-symbol.png">
-                  <input type="text" name="targetSupport" class="form-control project-title-input">
+                  <input type="text" name="targetSupport" class="form-control project-title-input"
+                    onblur="formValidCheck('#fourthRegForm', 4)" onkeyup="formValidCheck('#fourthRegForm', 4)">
                 </div>
               </div>
             </form>
@@ -350,7 +355,7 @@
                 <div>
                 </div>
               </button>
-              <button onclick="proceed(4)" id="startProject1-proceed" type="button"
+              <button onclick="proceed(4)" id="proceed4" type="button" disabled="true"
                 class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
                 <div>
                 </div>
@@ -368,10 +373,11 @@
             <div class="Start-a-Project">4/6</div>
             <div class="title pt-2">Add Project Icon</div>
             <div class="form-text text-muted">Upload minimum of 200px by 200px photo of your project icon or logo</div>
-            
-            <form action="/file-upload" class="dropzone project-icon-upload d-flex justify-content-center align-items-center" id="project-icon">
+
+            <form action="/file-upload"
+              class="dropzone project-icon-upload d-flex justify-content-center align-items-center" id="project-icon">
               <div class="d-flex flex-column align-items-center justify-content-center">
-                <img  src="img/img-placeholder.png ">
+                <img src="img/img-placeholder.png ">
                 <div class="drag-in-photos pt-1">Drag in</div>
               </div>
               <div class="fallback">
@@ -382,10 +388,12 @@
             <div class="title pt-3">Add More Photos</div>
             <div class="form-text text-muted">You can upload photos and videos</div>
             <div class="form-group">
-              
-              <form action="/file-upload" class="dropzone add-more-photos d-flex justify-content-around align-items-center" id="project-more-photos">
+
+              <form action="/file-upload"
+                class="dropzone add-more-photos d-flex justify-content-around align-items-center"
+                id="project-more-photos">
                 <div class="d-flex align-items-center">
-                  <img  src="img/img-placeholder.png ">
+                  <img src="img/img-placeholder.png ">
                   <div class="drag-in-photos pl-2">Drag in photos</div>
                 </div>
                 <div class="fallback">
@@ -498,13 +506,6 @@
       $("#socialchange").mouseover(function () {
         document.getElementById('socialchange_img').classList.remove('socialchange_img')
         document.getElementById('socialchange_img').classList.add('socialchange_img_hover');
-      });
-    });
-
-    $(document).ready(function () {
-      $("#socialchange").mouseout(function () {
-        document.getElementById('socialchange_img').classList.remove('socialchange_img_hover')
-        document.getElementById('socialchange_img').classList.add('socialchange_img');
       });
     });
 

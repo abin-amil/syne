@@ -111,6 +111,12 @@
   background-position: center;
 }
 
+.crowdfunding_img_hover_on_click {
+  background: url('../img/crowdfunding-active.png') no-repeat 0;
+  height:96px;
+  background-position: center;
+}
+
 .form-control:focus {
   box-shadow: none !important;
 }
@@ -125,7 +131,12 @@
   background: url('../img/promotions-active.png') no-repeat 0;
   background-position: center;
   height:96px;
-  }
+}
+.promotions_img_hover_on_click {
+  background: url('../img/promotions-active.png') no-repeat 0;
+  background-position: center;
+  height:96px;
+}  
 
 .socialgiving_img {
   background: url('../img/socialgiving.png') no-repeat 0;
@@ -138,6 +149,12 @@
   height:96px;
 }
 
+.socialgiving_img_hover_on_click {
+  background: url('../img/socialgiving-active.png') no-repeat 0;
+  background-position: center;
+  height:96px;
+}
+
 .socialchange_img {
   background: url('../img/socialchange.png') no-repeat 0;
   background-position: center;
@@ -145,6 +162,12 @@
 }
 
 .socialchange_img_hover {
+  background: url('../img/socialchange-active.png') no-repeat 0;
+  background-position: center;
+  height:96px;
+}
+
+.socialchange_img_hover_on_click {
   background: url('../img/socialchange-active.png') no-repeat 0;
   background-position: center;
   height:96px;

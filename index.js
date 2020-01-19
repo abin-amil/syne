@@ -142,6 +142,7 @@ function addHyphen(element) {
 }
 
 var prevId;
+var prevRadioId;
 var projectCategory;
 function projectTypeClick(id, type) {
     switch (type) {
@@ -160,14 +161,23 @@ function projectTypeClick(id, type) {
     }
     var x = document.getElementById(id).querySelectorAll(".radio-button-default");
     if (prevId !== id) {
-        document.getElementById(x[0].id).classList.remove('radio-button-default')
+        document.getElementById(x[0].id).classList.remove('radio-button-default');
         document.getElementById(x[0].id).classList.add('radio-button-on-click');
+
+        document.getElementById(id + '_img').classList.remove(id + '_img')
+        document.getElementById(id + '_img').classList.add(id + '_img_hover_on_click');
+        document.getElementById(id + '_img').classList.remove(id + '_img');
+
         if (prevId) {
-            document.getElementById(prevId).classList.remove('radio-button-on-click')
-            document.getElementById(prevId).classList.add('radio-button-default');
+            document.getElementById(prevRadioId).classList.remove('radio-button-on-click');
+            document.getElementById(prevRadioId).classList.add('radio-button-default');
+
+            document.getElementById(prevId + '_img').classList.remove(prevId + '_img_hover_on_click');
+            document.getElementById(prevId + '_img').classList.add(prevId + '_img');
         }
     }
-    prevId = x[0].id;
+    prevRadioId = x[0].id;
+    prevId = id;
     document.getElementById("proceed1").disabled = false;
 }
 
@@ -183,6 +193,7 @@ function proceed(i) {
 
     var category = $("#category").change(function () {
         var category = $('option:selected', this).text();
+        document.getElementById("proceed2").disabled = false;
     });
 
     switch (i) {
@@ -193,25 +204,25 @@ function proceed(i) {
             projectDetails.category = category[0].value;
             break;
         case 3:
-            let secondformValues = {};
-            $.each($('#thirdRegForm').serializeArray(), function (i, field) {
-                secondformValues[field.name] = field.value;
-            });
-
-            projectDetails.Title = secondformValues.title;
-            projectDetails.Url = secondformValues.projectUrl;
-            projectDetails.Comment = secondformValues.comment;
-            break;
-        case 4:
             let thirdformValues = {};
-            $.each($('#fourthRegForm').serializeArray(), function (i, field) {
+            $.each($('#thirdRegForm').serializeArray(), function (i, field) {
                 thirdformValues[field.name] = field.value;
             });
-            projectDetails.selectedCountry = thirdformValues.selectCountry;
-            projectDetails.selectedCity = thirdformValues.selectCity;
-            projectDetails.startDate = thirdformValues.startDate;
-            projectDetails.endDate = thirdformValues.endDate;
-            projectDetails.targetSupport = thirdformValues.targetSupport;
+
+            projectDetails.Title = thirdformValues.title;
+            projectDetails.Url = thirdformValues.projectUrl;
+            projectDetails.Comment = thirdformValues.comment;
+            break;
+        case 4:
+            let fourthformValues = {};
+            $.each($('#fourthRegForm').serializeArray(), function (i, field) {
+                fourthformValues[field.name] = field.value;
+            });
+            projectDetails.selectedCountry = fourthformValues.selectCountry;
+            projectDetails.selectedCity = fourthformValues.selectCity;
+            projectDetails.startDate = fourthformValues.startDate;
+            projectDetails.endDate = fourthformValues.endDate;
+            projectDetails.targetSupport = fourthformValues.targetSupport;
             break;
         case 5:
             // projectDetails.projectIcon = projectIconContent;
@@ -219,5 +230,20 @@ function proceed(i) {
             break;
         default:
             break;
+    }
+}
+
+function formValidCheck(formId, formNum) {
+    let formValues = {};
+    let invalid = false;
+    $.each($(formId).serializeArray(), function (i, field) {
+        if (field.value === "") {
+            invalid = true;
+        }
+    });
+    if (!invalid) {
+        document.getElementById("proceed" + formNum).disabled = false;
+    } else {
+        document.getElementById("proceed" + formNum).disabled = true;
     }
 }
