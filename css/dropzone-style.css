@@ -7,8 +7,7 @@ body{
 .dropzone{
     width: 98%;
     margin: 1%;
-    border: 2px dashed #3498db !important;
-    border-radius: 5px;
+    border: dashed 2px #bac3cf !important;
     transition: .2s;
   
 }
@@ -17,7 +16,26 @@ body{
 .dropzone.dz-drag-hover{
     border: 2px solid #3498db !important;
 }
-  
+
+.dropzone .dz-preview .dz-image {
+  border-radius: 50px !important;
+  overflow: hidden !important;
+  width: 95px !important;
+  height: 95px !important;
+  position: relative !important;
+  display: block !important;
+  z-index: 10 !important;
+}
+
+.dropzone .dz-preview {
+  /* position: absolute !important; */
+  display: inline-block;
+  top:0;
+  left: 0;
+  vertical-align: top;
+  margin: 16px;
+  min-height: 100px;
+}
   
 
 .dz-message.needsclick
@@ -55,4 +73,38 @@ span.plus{
     color: #AAA;
     line-height: 110px;
   }
+.dropzone .dz-preview.dz-image-preview {
+  background: none !important;
+}
+
+.dropzone .dz-preview .dz-remove {
+  padding-top: 15px;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  border: none;
+}
+
+.dropzone .dz-preview {
+  /* position: absolute !important; */
+  display: inline-block;
+  /* top: 0; */
+  /* left: 0; */
+  vertical-align: top;
+  margin: 10px !important;
+  min-height: 100px;
+}
+
+.dz-message {
+  display: none !important;
+}
+
+.dropzone.dz-started .dz-message {
+  display: none !important;
+}
+
+.dz-remove {
+  color: #7c8796;
+}
     

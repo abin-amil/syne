@@ -400,12 +400,32 @@ input[type=text] {
   background-color: #ffffff;
 }
 
-.dropzone1 {
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    background: white;
-    padding: 20px 20px;
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;;
+.dropzone {
+  min-height: auto !important;
+  border: solid 2px #bac3cf !important;
 }
 
+.add-more-photos {
+  position: relative;
+  height: 174px;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 10px #ffffff;
+  border: dashed 2px #bac3cf;
+  background-color: #f7f8fa !important;
+}
+
+.project-icon-upload {
+  position: relative !important;
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 60px !important;
+  box-shadow: inset 0 0 0 10px #ffffff !important;
+  border: dashed 2px #bac3cf !important;
+  background-color: #f7f8fa !important;
+}
+
+.drag-in-photos {
+  font-family: HKGrotesk;
+  font-size: 13px;
+  color: #7c8796;
+}

@@ -367,19 +367,27 @@
           <div id="startProject5" style="display: none;">
             <div class="Start-a-Project">4/6</div>
             <div class="title pt-2">Add Project Icon</div>
-            <div>Upload minimum of 200px by 200px photo of your project icon or logo</div>
+            <div class="form-text text-muted">Upload minimum of 200px by 200px photo of your project icon or logo</div>
             
-            <form action="/file-upload" class="dropzone" id="project-icon">
+            <form action="/file-upload" class="dropzone project-icon-upload d-flex justify-content-center align-items-center" id="project-icon">
+              <div class="d-flex flex-column align-items-center justify-content-center">
+                <img  src="img/img-placeholder.png ">
+                <div class="drag-in-photos pt-1">Drag in</div>
+              </div>
               <div class="fallback">
                 <input name="file" type="file" multiple />
               </div>
             </form>
 
-            <div class="title pt-2">Add More Photos</div>
-            <di>You can upload photos and videos</di>
+            <div class="title pt-3">Add More Photos</div>
+            <div class="form-text text-muted">You can upload photos and videos</div>
             <div class="form-group">
               
-              <form action="/file-upload" class="dropzone" id="project-more-photos">
+              <form action="/file-upload" class="dropzone add-more-photos d-flex justify-content-around align-items-center" id="project-more-photos">
+                <div class="d-flex align-items-center">
+                  <img  src="img/img-placeholder.png ">
+                  <div class="drag-in-photos pl-2">Drag in photos</div>
+                </div>
                 <div class="fallback">
                   <input name="file" type="file" multiple />
                 </div>
