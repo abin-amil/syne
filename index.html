@@ -160,22 +160,22 @@
                     <div id="crowdfunding_img" class="crowdfunding_img"></div>
                     <div class="projectTitle pt-4">Crowdfunding</div>
                   </div>
-  
+
                   <div id="socialgiving" class="categoryCard p-5 m-3">
                     <div id="socialgiving_img" class="socialgiving_img"></div>
                     <div class="projectTitle pt-4">Social Giving</div>
                   </div>
-  
+
                   <div id="promotions" class="categoryCard p-5 m-3">
                     <div id="promotions_img" class="promotions_img"></div>
                     <div class="projectTitle pt-4">Promotions</div>
                   </div>
-  
+
                   <div id="socialchange" class="categoryCard p-5 m-3">
                     <div id="socialchange_img" class="socialchange_img"></div>
                     <div class="projectTitle pt-4">Social Change</div>
                   </div>
-  
+
                   <div id="socialchange" class="categoryCard p-5 m-3">
                     <div id="socialchange_img" class="socialchange_img"></div>
                     <div class="projectTitle pt-4">Social Change</div>
@@ -187,7 +187,8 @@
             </div>
 
             <div class="d-flex justify-content-around">
-              <button onclick="back(2)" id="startProject1-back" type="button" class="btn  backButton is-success mt-5 d-flex justify-content-around">
+              <button onclick="back(2)" id="startProject1-back" type="button"
+                class="btn  backButton is-success mt-5 d-flex justify-content-around">
                 <div>
                   <img src="img/back-arrow-blue.png">
                 </div>
@@ -246,7 +247,16 @@
             </form>
             <div class="d-flex justify-content-around">
               <button onclick="back(3)" id="startProject1-back" type="button"
-                class="btn  backButton is-success mt-5">Back</button>
+                class="btn  backButton is-success mt-5 d-flex justify-content-around">
+                <div>
+                  <img src="img/back-arrow-blue.png">
+                </div>
+                <div>
+                  Back
+                </div>
+                <div>
+                </div>
+              </button>
               <button onclick="proceed(3)" id="startProject1-proceed" type="button"
                 class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
                 <div>
@@ -265,7 +275,7 @@
             <div class="Start-a-Project">3/6</div>
             <div class="title pt-3 pl-2">Select Country</div>
 
-            <form class="pt-2" id="fourthRegForm">
+            <form id="fourthRegForm">
               <div class="d-flex">
                 <div class="countryInput m-2">
                   <div class="syne-inputbox p-2">
@@ -282,7 +292,8 @@
                   </div>
                 </div>
               </div>
-              <small class="pt-2 pl-2" class="form-text text-muted"> Select the country of your campaign / project, we
+              <small class="pt-2 pl-2" class="form-text text-muted">
+                <img src="img/info-grey.png"> Select the country of your campaign / project, we
                 will
                 set up the currency for you!</small>
 
@@ -292,16 +303,17 @@
                   <div class="syne-inputbox p-2">
                     <label for="url" class="syne-input-label">Start Date</label>
                     <div class="d-flex">
-                      <input id="startDatepicker" name="startDate" type="text" class="startDateInput project-title-input">
+                      <input id="startDatepicker" name="startDate" type="text"
+                        class="startDateInput project-title-input">
                       <img style="height: 24px;" class="pr-2" src="img/calendar-grey.png">
                     </div>
-                    </div>
+                  </div>
                 </div>
 
                 <div class="px-2">
                   <img style="height: 25px;" src="img/arrow-right-black.png">
                 </div>
-                
+
                 <div class="cityInput m-2">
                   <div class="syne-inputbox p-2">
                     <label for="url" class="syne-input-label">End Date</label>
@@ -313,9 +325,10 @@
                 </div>
               </div>
 
-              <div class="title pt-3 pl-2">Target Support</div>
+              <div class="title pt-2 pl-2">Target Support</div>
               <div class="countryInput m-2">
-                <div class="syne-inputbox p-2">
+                <div class="syne-inputbox p-2 d-flex align-items-center">
+                  <img style="height: 20px;" src="img/dollar-symbol.png">
                   <input type="text" name="targetSupport" class="form-control project-title-input">
                 </div>
               </div>
@@ -323,7 +336,16 @@
 
             <div class="d-flex justify-content-around">
               <button onclick="back(4)" id="startProject1-back" type="button"
-                class="btn  backButton is-success mt-5">Back</button>
+                class="btn  backButton is-success mt-5 d-flex justify-content-around">
+                <div>
+                  <img src="img/back-arrow-blue.png">
+                </div>
+                <div>
+                  Back
+                </div>
+                <div>
+                </div>
+              </button>
               <button onclick="proceed(4)" id="startProject1-proceed" type="button"
                 class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
                 <div>
@@ -341,31 +363,51 @@
           <div id="startProject5" style="display: none;">
             <div class="Start-a-Project">4/6</div>
             <div class="title pt-2">Add Project Icon</div>
+            <div>Upload minimum of 200px by 200px photo of your project icon or logo</div>
             <div id="dropzone">
-              <form action="/upload" class="dropzone needsclick" id="demo-upload">
+              <form action="/upload" class="dropzone1 needsclick" id="demo-upload">
                 <div class="dz-message needsclick">
                   <span class="text">
                     <img src="http://www.freeiconspng.com/uploads/------------------------------iconpngm--22.png"
                       alt="Camera" />
                     Drop files here or click to upload.
                   </span>
-                  <span class="plus">+</span>
+                  <span class="project-icon-drag-instr">Drag in</span>
                 </div>
               </form>
             </div>
 
             <div class="title pt-2">Add More Photos</div>
-            <form>
+            <di>You can upload photos and videos</di>
               <div class="form-group">
-                <label for="title">Title</label>
-                <input type="text" class="form-control" placeholder="Title">
+                <div id="dropzone">
+                  <form action="/upload" class="dropzone needsclick" id="demo-upload">
+                    <div class="dz-message needsclick">
+                      <span class="text">
+                        <img src="http://www.freeiconspng.com/uploads/------------------------------iconpngm--22.png"
+                          alt="Camera" />
+                        Drop files here or click to upload.
+                      </span>
+                      <span class="plus">
+                        <img src="http://www.freeiconspng.com/uploads/------------------------------iconpngm--22.png"
+                          alt="Camera" />Drag in photos</span>
+                    </div>
+                  </form>
+                </div>
               </div>
-
-            </form>
 
             <div class="d-flex justify-content-around">
               <button onclick="back(5)" id="startProject1-back" type="button"
-                class="btn  backButton is-success mt-5">Back</button>
+                class="btn  backButton is-success mt-5 d-flex justify-content-around">
+                <div>
+                  <img src="img/back-arrow-blue.png">
+                </div>
+                <div>
+                  Back
+                </div>
+                <div>
+                </div>
+              </button>
               <button onclick="proceed(5)" id="startProject1-proceed" type="button"
                 class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
                 <div>
