@@ -1,3 +1,10 @@
+const projectTypes = {
+    CROWDFUNDING: 'Crowdfunding',
+    SOCIALGIVING: 'Social Giving',
+    PROMOTIONS: 'Promotions',
+    SOCIALCHANGE: 'Social Change'
+}
+
 
 $(document).ready(function () {
     // category dropdown setting
@@ -70,10 +77,106 @@ $('#endDatepicker').datepicker({
 });
 
 var projectDetails = {};
+Dropzone.options.projectIcon = {
+    paramName: "file", // The name that will be used to transfer the file
+    maxFilesize: 2, // MB,
+    addRemoveLinks: true,
+    maxFiles: 1,
+    maxfilesexceeded: function (file) {
+        this.removeAllFiles();
+        this.addFile(file);
+    },
+    init: function () {
+        this.on("addedfile", function (file) {
+            var reader = new FileReader();
+            reader.onload = function (event) {
+                // event.target.result contains base64 encoded image
+                projectDetails.projectIcon = event.target.result;
+            };
+            reader.readAsDataURL(file);
+        });
+
+        this.on('error', function (file, errorMessage) {
+            if (file.accepted) {
+                var mypreview = document.getElementsByClassName('dz-error');
+                mypreview = mypreview[mypreview.length - 1];
+                mypreview.classList.toggle('dz-error');
+                mypreview.classList.toggle('dz-success');
+            }
+        });
+    }
+};
+
+projectDetails.projectMorePhotos = [];
+Dropzone.options.projectMorePhotos = {
+    paramName: "file", // The name that will be used to transfer the file
+    maxFilesize: 2, // MB,
+    addRemoveLinks: true,
+    init: function () {
+        this.on("addedfile", function (file) {
+            var reader = new FileReader();
+            reader.onload = function (event) {
+                // event.target.result contains base64 encoded image
+                projectDetails.projectMorePhotos[projectDetails.projectMorePhotos.length] = event.target.result;
+            };
+            reader.readAsDataURL(file);
+        });
+
+        this.on('error', function (file, errorMessage) {
+            if (file.accepted) {
+                var mypreview = document.getElementsByClassName('dz-error');
+                mypreview = mypreview[mypreview.length - 1];
+                mypreview.classList.toggle('dz-error');
+                mypreview.classList.toggle('dz-success');
+            }
+        });
+    }
+};
+
+// add hyphen to project url when a space is given
+function addHyphen(element) {
+    let ele = document.getElementById(element.id);
+    ele = ele.value.split('--').join('-');    // Remove dash (-) if mistakenly entered.
+    let finalVal = ele.toLowerCase().replace(/ /g, '-');
+    document.getElementById(element.id).value = finalVal;
+}
+
+var prevId;
+var projectCategory;
+function projectTypeClick(id, type) {
+    switch (type) {
+        case projectTypes.CROWDFUNDING:
+            projectCategory = projectTypes.CROWDFUNDING;
+            break;
+        case projectTypes.PROMOTIONS:
+            projectCategory = projectTypes.PROMOTIONS;
+            break;
+        case projectTypes.SOCIALCHANGE:
+            projectCategory = projectTypes.SOCIALCHANGE;
+            break;
+        case projectTypes.SOCIALGIVING:
+            projectCategory = projectTypes.SOCIALGIVING;
+            break;
+    }
+    var x = document.getElementById(id).querySelectorAll(".radio-button-default");
+    if (prevId !== id) {
+        document.getElementById(x[0].id).classList.remove('radio-button-default')
+        document.getElementById(x[0].id).classList.add('radio-button-on-click');
+        if (prevId) {
+            document.getElementById(prevId).classList.remove('radio-button-on-click')
+            document.getElementById(prevId).classList.add('radio-button-default');
+        }
+    }
+    prevId = x[0].id;
+    document.getElementById("proceed1").disabled = false;
+}
+
 function proceed(i) {
-    console.log("startProject" + i);
     document.getElementById("startProject" + i).style.display = "none";
-    document.getElementById("startProject" + (i + 1)).style.display = "block";
+    if (i < 5) {
+        document.getElementById("startProject" + (i + 1)).style.display = "block";
+    }
+
     var progress = i * 20;
     document.getElementById("progressbar").style.width = progress + "%";
 
@@ -82,17 +185,9 @@ function proceed(i) {
         var category = $('option:selected', this).text();
     });
 
-    Dropzone.options.formUpload = {
-        init: function () {
-            this.on("success", function (data) {
-                var response = $.parseJSON(data.xhr.response);
-            });
-        }
-    }
-
     switch (i) {
         case 1:
-            projectDetails.type = "Social Change";
+            projectDetails.type = projectCategory;
             break;
         case 2:
             projectDetails.category = category[0].value;
@@ -117,6 +212,10 @@ function proceed(i) {
             projectDetails.startDate = thirdformValues.startDate;
             projectDetails.endDate = thirdformValues.endDate;
             projectDetails.targetSupport = thirdformValues.targetSupport;
+            break;
+        case 5:
+            // projectDetails.projectIcon = projectIconContent;
+            console.log("content : " + projectDetails.projectIcon);
             break;
         default:
             break;

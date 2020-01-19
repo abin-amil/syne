@@ -92,6 +92,13 @@
   height:24px;
 }
 
+.radio-button-on-click{
+  background: url('../img/radio-checked.png') no-repeat 0;
+  background-position: right top;
+  float: right;
+  height:24px;
+}
+
 .crowdfunding_img {
   background: url('../img/crowdfunding.png') no-repeat 0;
   height:96px;

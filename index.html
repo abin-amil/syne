@@ -85,8 +85,9 @@
 
             <div class="typeOfProject d-flex justify-content-around flex-wrap pt-5">
 
-              <div id="crowdfunding" class="projectCard d-flex flex-column justify-content-center flex-wrap m-3">
-                <div class="radio-button-default mx-3 mt-3"></div>
+              <div id="crowdfunding" onclick="projectTypeClick('crowdfunding', projectTypes.CROWDFUNDING)"
+                class="projectCard d-flex flex-column justify-content-center flex-wrap m-3">
+                <div id="crowdfunding_radio_img" class="radio-button-default mx-3 mt-3"></div>
                 <div class="px-5 pt-3 pb-3">
                   <div id="crowdfunding_img" class="crowdfunding_img"></div>
                   <div class="projectTitle pt-4">Crowdfunding</div>
@@ -94,8 +95,9 @@
                 </div>
               </div>
 
-              <div id="socialgiving" class="projectCard d-flex flex-column justify-content-center flex-wrap m-3">
-                <div class="radio-button-default mx-3 mt-3"></div>
+              <div id="socialgiving" onclick="projectTypeClick('socialgiving', projectTypes.SOCIALGIVING)"
+                class="projectCard d-flex flex-column justify-content-center flex-wrap m-3">
+                <div id="socialgiving_radio_img" class="radio-button-default mx-3 mt-3"></div>
                 <div class="px-5 pt-3 pb-3">
                   <div id="socialgiving_img" class="socialgiving_img"></div>
                   <div class="projectTitle pt-4">Social Giving</div>
@@ -103,8 +105,9 @@
                 </div>
               </div>
 
-              <div id="promotions" class="projectCard d-flex flex-column justify-content-center flex-wrap m-3">
-                <div class="radio-button-default mx-3 mt-3"></div>
+              <div id="promotions" onclick="projectTypeClick('promotions', projectTypes.PROMOTIONS)"
+                class="projectCard d-flex flex-column justify-content-center flex-wrap m-3">
+                <div id="promotions_radio_img" class="radio-button-default mx-3 mt-3"></div>
                 <div class="px-5 pt-3 pb-3">
                   <div id="promotions_img" class="promotions_img"></div>
                   <div class="projectTitle pt-4">Promotions</div>
@@ -112,8 +115,9 @@
                 </div>
               </div>
 
-              <div id="socialchange" class="projectCard d-flex flex-column justify-content-center flex-wrap m-3">
-                <div class="radio-button-default mx-3 mt-3"></div>
+              <div id="socialchange" onclick="projectTypeClick('socialchange', projectTypes.SOCIALCHANGE)"
+                class="projectCard d-flex flex-column justify-content-center flex-wrap m-3">
+                <div id="socialchange_radio_img" class="radio-button-default mx-3 mt-3"></div>
                 <div class="px-5 pt-3 pb-3">
                   <div id="socialchange_img" class="socialchange_img"></div>
                   <div class="projectTitle pt-4">Social Change</div>
@@ -124,7 +128,7 @@
             </div>
 
             <div class="d-flex justify-content-center">
-              <button onclick="proceed(1)" type="button"
+              <button onclick="proceed(1)" type="button" disabled="true" id="proceed1"
                 class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
                 <div>
                 </div>
@@ -229,8 +233,8 @@
                 <div>
                   <div class="syne-inputbox p-2">
                     <label for="url" class="syne-input-label">Project URL</label>
-                    <input type="text" name="projectUrl" class="form-control project-title-input"
-                      placeholder="Project URL">
+                    <input id="projectUrl" type="text" name="projectUrl" onkeyup="addHyphen(this)"
+                      class="form-control project-title-input" placeholder="Project URL">
                   </div>
                 </div>
               </div>
@@ -364,37 +368,23 @@
             <div class="Start-a-Project">4/6</div>
             <div class="title pt-2">Add Project Icon</div>
             <div>Upload minimum of 200px by 200px photo of your project icon or logo</div>
-            <div id="dropzone">
-              <form action="/upload" class="dropzone1 needsclick" id="demo-upload">
-                <div class="dz-message needsclick">
-                  <span class="text">
-                    <img src="http://www.freeiconspng.com/uploads/------------------------------iconpngm--22.png"
-                      alt="Camera" />
-                    Drop files here or click to upload.
-                  </span>
-                  <span class="project-icon-drag-instr">Drag in</span>
-                </div>
-              </form>
-            </div>
+            
+            <form action="/file-upload" class="dropzone" id="project-icon">
+              <div class="fallback">
+                <input name="file" type="file" multiple />
+              </div>
+            </form>
 
             <div class="title pt-2">Add More Photos</div>
             <di>You can upload photos and videos</di>
-              <div class="form-group">
-                <div id="dropzone">
-                  <form action="/upload" class="dropzone needsclick" id="demo-upload">
-                    <div class="dz-message needsclick">
-                      <span class="text">
-                        <img src="http://www.freeiconspng.com/uploads/------------------------------iconpngm--22.png"
-                          alt="Camera" />
-                        Drop files here or click to upload.
-                      </span>
-                      <span class="plus">
-                        <img src="http://www.freeiconspng.com/uploads/------------------------------iconpngm--22.png"
-                          alt="Camera" />Drag in photos</span>
-                    </div>
-                  </form>
+            <div class="form-group">
+              
+              <form action="/file-upload" class="dropzone" id="project-more-photos">
+                <div class="fallback">
+                  <input name="file" type="file" multiple />
                 </div>
-              </div>
+              </form>
+            </div>
 
             <div class="d-flex justify-content-around">
               <button onclick="back(5)" id="startProject1-back" type="button"
@@ -456,7 +446,7 @@
       $("#crowdfunding").mouseover(function () {
         document.getElementById('crowdfunding_img').classList.remove('crowdfunding_img')
         document.getElementById('crowdfunding_img').classList.add('crowdfunding_img_hover');
-        document.getElementById('crowdfunding_img').classList.remove('crowdfunding_img')
+        document.getElementById('crowdfunding_img').classList.remove('crowdfunding_img');
 
       });
     });
@@ -516,14 +506,6 @@
         document.getElementById('socialchange_img').classList.add('socialchange_img');
       });
     });
-
-    function proceed(i) {
-      console.log("startProject" + i);
-      document.getElementById("startProject" + i).style.display = "none";
-      document.getElementById("startProject" + (i + 1)).style.display = "block";
-      var progress = i * 20;
-      document.getElementById("progressbar").style.width = progress + "%";
-    }
 
     function back(i) {
       document.getElementById("startProject" + i).style.display = "none";
