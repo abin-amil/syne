@@ -452,3 +452,7 @@ input[type=text] {
   font-size: 13px;
   color: #7c8796;
 }
+
+.top-padding{
+  padding-top: 33px;
+}

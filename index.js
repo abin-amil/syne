@@ -92,6 +92,9 @@ Dropzone.options.projectIcon = {
             reader.onload = function (event) {
                 // event.target.result contains base64 encoded image
                 projectDetails.projectIcon = event.target.result;
+                document.getElementById("projectIconDefault").classList.remove('d-flex');
+                document.getElementById("projectIconDefault").style.display = "none";
+                document.getElementsByClassName("dz-preview")[0].classList.add("top-padding")
             };
             reader.readAsDataURL(file);
         });
