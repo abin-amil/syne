@@ -69,6 +69,7 @@ $(document).ready(function () {
     $('#selectCity').selectize();
 });
 
+// Date picker actions
 $('#startDatepicker').datepicker({
     uiLibrary: 'bootstrap4'
 });
@@ -85,6 +86,11 @@ Dropzone.options.projectIcon = {
     maxfilesexceeded: function (file) {
         this.removeAllFiles();
         this.addFile(file);
+    },
+    removedfile: function (file) {
+        document.getElementById("projectIconDefault").classList.add('d-flex');
+        var _ref;
+        return (_ref = file.previewElement) != null ? _ref.parentNode.removeChild(file.previewElement) : void 0;
     },
     init: function () {
         this.on("addedfile", function (file) {
@@ -115,12 +121,22 @@ Dropzone.options.projectMorePhotos = {
     paramName: "file", // The name that will be used to transfer the file
     maxFilesize: 2, // MB,
     addRemoveLinks: true,
+    removedfile: function (file) {
+        // remove the file from the projectMorePhotos details.
+        projectDetails.projectMorePhotos = projectDetails.projectMorePhotos.filter(x => { return x.name !== file.name });
+        var _ref;
+        return (_ref = file.previewElement) != null ? _ref.parentNode.removeChild(file.previewElement) : void 0;
+    },
     init: function () {
         this.on("addedfile", function (file) {
+            projectDetails.projectMorePhotos[projectDetails.projectMorePhotos.length] = {
+                name: file.name,
+                data: ""
+            };
             var reader = new FileReader();
             reader.onload = function (event) {
                 // event.target.result contains base64 encoded image
-                projectDetails.projectMorePhotos[projectDetails.projectMorePhotos.length] = event.target.result;
+                projectDetails.projectMorePhotos[projectDetails.projectMorePhotos.length - 1].data = event.target.result;
             };
             reader.readAsDataURL(file);
         });
