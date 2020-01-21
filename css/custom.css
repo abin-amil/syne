@@ -46,6 +46,10 @@
     border-radius: 6px;
 }
 
+.projectCardActive {
+  border: solid 1px #16c0ef;
+}
+
 .categoryCard {
   border: solid 1px #dde2e9;
   border-radius: 6px;
@@ -474,3 +478,25 @@ input[type=number]{
     appearance: none;
     margin: 0; 
 }
+/* category slider classes */
+.col-md-3{
+  display: inline-block;
+  margin-left:-4px;
+}
+.col-md-3 img{
+  width:100%;
+  height:auto;
+}
+body .carousel-indicators li{
+  background-color:red;
+}
+body .carousel-control-prev-icon,
+body .carousel-control-next-icon{
+  background-color:red;
+}
+body .no-padding{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.carousel-indicators li { visibility: hidden; }

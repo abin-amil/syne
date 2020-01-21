@@ -122,9 +122,7 @@ Dropzone.options.projectMorePhotos = {
     maxFilesize: 2, // MB,
     addRemoveLinks: true,
     removedfile: function (file) {
-        debugger;
-        if(projectDetails.projectMorePhotos.length == 1) {
-            debugger;
+        if (projectDetails.projectMorePhotos.length == 1) {
             document.getElementById("projectIconDefault1").classList.add('d-flex');
         }
         // remove the file from the projectMorePhotos details.
@@ -190,6 +188,9 @@ function projectTypeClick(id, type) {
         document.getElementById(x[0].id).classList.remove('radio-button-default');
         document.getElementById(x[0].id).classList.add('radio-button-on-click');
 
+        document.getElementById(id).classList.remove('projectCard');
+        document.getElementById(id).classList.add('projectCardActive');
+
         document.getElementById(id + '_img').classList.remove(id + '_img')
         document.getElementById(id + '_img').classList.add(id + '_img_hover_on_click');
         document.getElementById(id + '_img').classList.remove(id + '_img');
@@ -197,6 +198,9 @@ function projectTypeClick(id, type) {
         if (prevId) {
             document.getElementById(prevRadioId).classList.remove('radio-button-on-click');
             document.getElementById(prevRadioId).classList.add('radio-button-default');
+
+            document.getElementById(prevId).classList.remove('projectCardActive');
+            document.getElementById(prevId).classList.add('projectCard');
 
             document.getElementById(prevId + '_img').classList.remove(prevId + '_img_hover_on_click');
             document.getElementById(prevId + '_img').classList.add(prevId + '_img');
