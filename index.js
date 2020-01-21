@@ -255,8 +255,13 @@ function proceed(i) {
             projectDetails.targetSupport = fourthformValues.targetSupport;
             break;
         case 5:
-            // projectDetails.projectIcon = projectIconContent;
-            console.log("content : " + projectDetails.projectIcon);
+            break;
+        case 6:
+            let sixthformValues = {};
+            $.each($('#sixthRegForm').serializeArray(), function (i, field) {
+                sixthformValues[field.name] = field.value;
+            });
+            projectDetails.projectExplanation = sixthformValues.projectExplanation;
             break;
         default:
             break;
