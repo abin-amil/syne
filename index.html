@@ -156,31 +156,31 @@
 
               <div class="popular-categories mt-5 ml-3">Popular Categories</div>
 
-              <div class="typeOfCategory row pt-2">
+              <div class="row pt-2">
 
-                <div class="categoryList">
-                  <div id="crowdfunding" class="categoryCard p-5 m-3">
+                <div class="categoryList p-2 d-flex">
+                  <div class="categoryCard mx-3 p-2">
                     <!-- <img src="img/crowdfunding-active.png" style="height:96px"> -->
                     <div id="crowdfunding_img" class="crowdfunding_img"></div>
                     <div class="projectTitle pt-4">Crowdfunding</div>
                   </div>
 
-                  <div id="socialgiving" class="categoryCard p-5 m-3">
+                  <div class="categoryCard mx-3 p-2">
                     <div id="socialgiving_img" class="socialgiving_img"></div>
                     <div class="projectTitle pt-4">Social Giving</div>
                   </div>
 
-                  <div id="promotions" class="categoryCard p-5 m-3">
+                  <div class="categoryCard mx-3 p-2">
                     <div id="promotions_img" class="promotions_img"></div>
                     <div class="projectTitle pt-4">Promotions</div>
                   </div>
 
-                  <div id="socialchange" class="categoryCard p-5 m-3">
+                  <div class="categoryCard mx-3 p-2">
                     <div id="socialchange_img" class="socialchange_img"></div>
                     <div class="projectTitle pt-4">Social Change</div>
                   </div>
 
-                  <div id="socialchange" class="categoryCard p-5 m-3">
+                  <div class="categoryCard mx-3 p-2">
                     <div id="socialchange_img" class="socialchange_img"></div>
                     <div class="projectTitle pt-4">Social Change</div>
                   </div>
@@ -235,9 +235,14 @@
                 <div>
                   <div class="syne-inputbox p-2">
                     <label for="url" class="syne-input-label">Project URL</label>
-                    <input id="projectUrl" type="text" onblur="formValidCheck('#thirdRegForm', 3)" name="projectUrl"
-                      onkeyup="addHyphen(this); formValidCheck('#thirdRegForm', 3)"
-                      class="form-control project-title-input" placeholder="Project URL">
+                    <div class="d-flex align-items-center">
+                      <div class="project-title-input pl-3">
+                        syne.com/
+                      </div>
+                      <input id="projectUrl" type="text" onblur="formValidCheck('#thirdRegForm', 3)" name="projectUrl"
+                        onkeyup="addHyphen(this); formValidCheck('#thirdRegForm', 3)"
+                        class="form-control project-title-input px-0" placeholder="Project URL">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -426,6 +431,56 @@
                 </div>
               </button>
             </div>
+          </div>
+
+          <div id="startProject6" style="display: none;">
+            <div class="Start-a-Project">5/6</div>
+            <div class="title pt-2">Explain your project in detail</div>
+
+            <div class="form-text text-muted">Last but very important opportunity to explain your project with as much as details as possible here, since this is the place whrer users 
+              are going to read details of the project and you can elaborate your project details, add attachments if any</div>
+            
+              <div class="form-group pt-3">
+                <textarea class="form-control" rows="10" id="comment"></textarea>
+              </div>
+
+              <div class="d-flex align-items-start">
+                <img class="pr-2" src="img/check-orange.png">
+                <div class="form-text text-muted">Great — you’ve started writing about your project. We recommend adding another <span class="project-detail-characters-left">999</span>  more characters before you finish — keep going!</div>
+              </div>
+
+              <div>
+                <button type="button"
+                class="btn attachMediaButton is-success mt-4 d-flex justify-content-center">
+                <div>
+                  <img src="img/attach-blue.png">
+                </div>
+                <div class="pl-2">
+                  Attach Media
+                </div>
+                </button>
+              </div>
+
+            <div class="d-flex justify-content-around">
+              <button onclick="back(6)" id="startProject1-back" type="button"
+                class="btn  backButton is-success mt-5 d-flex justify-content-around">
+                <div>
+                  <img src="img/back-arrow-blue.png">
+                </div>
+                <div>
+                  Back
+                </div>
+                <div>
+                </div>
+              </button>
+              <button onclick="proceed(6)" id="startProject1-proceed" type="button"
+                class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
+                <div>
+                  Proceed
+                </div>
+              </button>
+            </div>
+
           </div>
 
 

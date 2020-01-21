@@ -23,16 +23,8 @@
     display: flex;
 }
 
-.typeOfCategory {
-  display: table !important;
-  width: 680px; 
-  height: 300px; 
-  overflow-x: scroll;
-  white-space:no-wrap;
-}
-
 .categoryList {
-  display: table-row;
+  /* display: table-row; */
 }
 
 .Start-a-Project {
@@ -56,12 +48,7 @@
 
 .categoryCard {
   border: solid 1px #dde2e9;
-  display: table-cell !important;
   border-radius: 6px;
-
-  margin:20px;
-  width:300px;
-  height:100px;
 }
 
 .countryInput {
@@ -180,6 +167,11 @@
 
 .projectCard:hover{
   border: solid 1px #16c0ef;
+}
+
+.projectCard-active {
+  border: solid 1px #16c0ef;
+  border-radius: 6px;
 }
 
 .close {
@@ -303,7 +295,7 @@ input[type=text] {
 }
 
 .coverPhoto {
-  height: 108px;
+  height: 104px;
 }
 
 .user-name {
@@ -376,7 +368,11 @@ input[type=text] {
 }
 
 .post-image {
-  height: 260px;
+  height: 199px;
+}
+
+.recommended-project-photo {
+  height: 93px;
 }
 
 .post-project-caption {
@@ -455,4 +451,17 @@ input[type=text] {
 
 .top-padding{
   padding-top: 33px;
+}
+
+.project-detail-characters-left {
+
+}
+
+.attachMediaButton {
+  width: 252px;
+  height: 50px;
+  border-radius: 3px !important;
+  border: solid 1px #e0e6ee !important;
+  color: #5d677e !important;
+  font-weight: bold !important;
 }

@@ -202,7 +202,7 @@ function projectTypeClick(id, type) {
 
 function proceed(i) {
     document.getElementById("startProject" + i).style.display = "none";
-    if (i < 5) {
+    if (i < 6) {
         document.getElementById("startProject" + (i + 1)).style.display = "block";
     }
 
