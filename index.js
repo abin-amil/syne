@@ -122,6 +122,11 @@ Dropzone.options.projectMorePhotos = {
     maxFilesize: 2, // MB,
     addRemoveLinks: true,
     removedfile: function (file) {
+        debugger;
+        if(projectDetails.projectMorePhotos.length == 1) {
+            debugger;
+            document.getElementById("projectIconDefault1").classList.add('d-flex');
+        }
         // remove the file from the projectMorePhotos details.
         projectDetails.projectMorePhotos = projectDetails.projectMorePhotos.filter(x => { return x.name !== file.name });
         var _ref;
@@ -137,6 +142,8 @@ Dropzone.options.projectMorePhotos = {
             reader.onload = function (event) {
                 // event.target.result contains base64 encoded image
                 projectDetails.projectMorePhotos[projectDetails.projectMorePhotos.length - 1].data = event.target.result;
+                document.getElementById("projectIconDefault1").classList.remove('d-flex');
+                document.getElementById("projectIconDefault1").style.display = "none";
             };
             reader.readAsDataURL(file);
         });
