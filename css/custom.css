@@ -465,3 +465,12 @@ input[type=text] {
   color: #5d677e !important;
   font-weight: bold !important;
 }
+
+input[type=number], 
+input[type=number]{ 
+  border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
