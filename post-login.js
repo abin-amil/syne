@@ -14,13 +14,50 @@ var dashBoardData = {
         { name: 'Transactions', iconUrl: 'img/transaction-grey-small.png' },
         { name: 'Settings & Privacy', iconUrl: 'img/settings-grey-small.png' }
     ],
-    recommendedProject: [],
-    newsFeedData: []
+    newsFeedData: [
+        {
+            name: 'Sanne Viscal',
+            email: '@sanneviscal',
+            postedTimeDuration: '1 week',
+            imageUrl: 'img/flood-relief.jpg',
+            descriptionHeading: 'Kerala Flood Relief 2019',
+            descriptionContent: 'World Vision distributed food, clothing and hygiene and household items among families in Kerala whose homes have been damaged or destroyed.',
+            targetAmount: '2,500,000',
+            raisedAmount: '293,145',
+            contributorsCount: '2.3K',
+            completionPercentage: '42',
+            isLikedByMe: 'true',
+            likedCount: '657',
+            shareCount: '1.5K',
+            commentCount: '12',
+            comments: []
+        },
+        {
+            name: 'Honey Sara John',
+            email: '@honeysarajohn',
+            postedTimeDuration: '1 month',
+            imageUrl: 'img/beautiful-flower-picture-facebook-cover.jpg',
+            descriptionHeading: 'The state of ux in 2020',
+            descriptionContent: 'A digital team goes and project become more complex, designers are being valued by collaboration and team enablement rather than only individual tasks.',
+            targetAmount: '',
+            raisedAmount: '',
+            contributorsCount: '',
+            completionPercentage: '',
+            isLikedByMe: 'false',
+            likedCount: '657',
+            shareCount: '0',
+            commentCount: '0',
+            comments: []
+        }
+    ],
+    recommendedProject: []
 };
 
 $(document).ready(function () {
     LeftPanelCreation();
     createProfileCompletionSection();
+
+    newsFeedsCreation();
 });
 
 // creating left panel dynamically with dashboard data
@@ -79,6 +116,44 @@ function createProfileCompletionSection() {
         .replace(/{{profileCompletionPercentage}}/g, dashBoardData.profileCompletionPercentage);
 
     document.getElementById("profile-completion-section").innerHTML = profileCompletionsectionFinalHtml;
+}
+
+
+function newsFeedsCreation() {
+    let newsFeed = document.getElementById("template-news-feed");
+    let newsFeedFinalHtml = "";
+
+    dashBoardData.newsFeedData.forEach((newsFeedSingleUnit, index) => {
+        let newsFeedCardHtml = newsFeed.innerHTML;
+        let newsFeedCardFinalHtml = "";
+        let isTargetAmountDisplay = newsFeedSingleUnit.targetAmount !== '' ? 'block' : 'none';
+        let isRaisedAmountDisplay = newsFeedSingleUnit.raisedAmount !== '' ? 'block' : 'none';
+        let showContibutors = newsFeedSingleUnit.contributorsCount !== '' ? 'block' : 'none';
+        let showPercentage = newsFeedSingleUnit.completionPercentage !== '' ? 'block' : 'none';
+        let isLikeByMe = newsFeedSingleUnit.isLikedByMe === 'true' ? 'contents' : 'none';
+        newsFeedCardFinalHtml += newsFeedCardHtml.replace(/{{name}}/g, newsFeedSingleUnit.name)
+            .replace(/{{email}}/g, newsFeedSingleUnit.email)
+            .replace(/{{postedTimeDuration}}/g, newsFeedSingleUnit.postedTimeDuration)
+            .replace(/{{imageUrl}}/g, newsFeedSingleUnit.imageUrl)
+            .replace(/{{descriptionHeading}}/g, newsFeedSingleUnit.descriptionHeading)
+            .replace(/{{descripionContent}}/g, newsFeedSingleUnit.descriptionContent)
+            .replace(/{{targetAmount}}/g, newsFeedSingleUnit.targetAmount)
+            .replace(/{{isTargetAmountDisplay}}/g, isTargetAmountDisplay)
+            .replace(/{{raisedAmount}}/g, newsFeedSingleUnit.raisedAmount)
+            .replace(/{{isRaisedAmountDisplay}}/g, isRaisedAmountDisplay)
+            .replace(/{{contibutorsCount}}/g, newsFeedSingleUnit.contributorsCount)
+            .replace(/{{showContibutors}}/g, showContibutors)
+            .replace(/{{completionPercentage}}/g, newsFeedSingleUnit.completionPercentage)
+            .replace(/{{showPercentage}}/g, showPercentage)
+            .replace(/{{isLikeByMe}}/g, isLikeByMe)
+            .replace(/{{likeCount}}/g, newsFeedSingleUnit.likedCount)
+            .replace(/{{shareCount}}/g, newsFeedSingleUnit.shareCount)
+            .replace(/{{commentCount}}/g, newsFeedSingleUnit.commentCount);
+
+        newsFeedFinalHtml += newsFeedCardFinalHtml;
+    });
+
+    document.getElementById("news-feeds").innerHTML = newsFeedFinalHtml;
 }
 
 
