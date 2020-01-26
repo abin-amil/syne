@@ -88,25 +88,8 @@
             </div>
 
             <div class="col-6">
-                <div class="profile-completion p-4">
-                    <div class="hello-user-text">
-                        Hello Vinith Gopal,
-                    </div>
-                    <div class="welcome-text pt-2">
-                        <span class="welcome-to-syne">Welcome to Syne.</span>Your Profile is 80% complete!
-                    </div>
-                    <div class="pt-2">
-                        <div class="progress" style="height: 5px;">
-                            <div class="progress-bar" id="progressbar" role="progressbar" style="width: 30%;"
-                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="pt-2">
-                        Account
-                    </div>
-
+                <div class="profile-completion p-4" id="profile-completion-section">
+                    <!-- profile completion section template fill here -->
                 </div>
                 <div class="writePost p-4 mt-3">
                     <div class="write-post-text">Write a Post</div>
@@ -293,6 +276,27 @@
     <script id="template-left-panel-top-banner" type="text/template">
         <img class="img-fluid" src="{{coverPhotoUrl}}">
         <img class="img-fluid profile-photo" src="{{profilePhotoUrl}}">
+    </script>
+
+    <!-- profile completion showing section template -->
+    <script id="template-profile-comleption-section" type="text/template">
+        <div class="hello-user-text">
+            Hello {{name}},
+        </div>
+        <div class="welcome-text pt-2">
+            <span class="welcome-to-syne">Welcome to Syne.</span>Your Profile is {{profileCompletionPercentage}} complete!
+        </div>
+        <div class="pt-2">
+            <div class="progress" style="height: 5px;">
+                <div class="progress-bar" id="progressbar" role="progressbar" style="width: {{profileCompletionPercentage}}%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <div>
+        </div>
+        <div class="pt-2">
+            Account
+        </div>
     </script>
 </body>
 <script type="text/javascript" src="post-login.js"></script>

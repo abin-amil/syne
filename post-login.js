@@ -20,6 +20,7 @@ var dashBoardData = {
 
 $(document).ready(function () {
     LeftPanelCreation();
+    createProfileCompletionSection();
 });
 
 // creating left panel dynamically with dashboard data
@@ -66,6 +67,18 @@ function createLeftPanelTopBanner() {
         .replace(/{{profilePhotoUrl}}/g, dashBoardData.profilePhotoUrl);
 
     document.getElementById("left-panel-top-banner").innerHTML = leftPanelTopBannerFinalHtml;
+}
+
+// profile completion section creation
+function createProfileCompletionSection() {
+    let profileCompletionsection = document.getElementById("template-profile-comleption-section");
+    let profileCompletionsectionHtml = profileCompletionsection.innerHTML;
+    let profileCompletionsectionFinalHtml = "";
+
+    profileCompletionsectionFinalHtml += profileCompletionsectionHtml.replace(/{{name}}/g, dashBoardData.name)
+        .replace(/{{profileCompletionPercentage}}/g, dashBoardData.profileCompletionPercentage);
+
+    document.getElementById("profile-completion-section").innerHTML = profileCompletionsectionFinalHtml;
 }
 
 
