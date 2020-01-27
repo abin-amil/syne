@@ -50,7 +50,26 @@ var dashBoardData = {
             comments: []
         }
     ],
-    recommendedProject: []
+    recommendedProject: [
+        {
+            imageUrl: 'img/autumn-seasonal-sale-black.jpg',
+            projectDuration: '3 months',
+            projectName: 'Digital Democracy',
+            projectContent: 'We aim to create digital democracy, where people and…',
+            targetAmount: '2,500,000',
+            raisedAmount: '293,145',
+            completionPercentage: '42'
+        },
+        {
+            imageUrl: 'img/beautiful-flower-picture-facebook-cover.jpg',
+            projectDuration: '3 months',
+            projectName: 'Digital Democracy',
+            projectContent: 'We aim to create digital democracy, where people and…',
+            targetAmount: '3,123,000',
+            raisedAmount: '123,121',
+            completionPercentage: '75'
+        }
+    ]
 };
 
 $(document).ready(function () {
@@ -65,6 +84,8 @@ function LeftPanelCreation() {
     createLeftPanelTopBanner();
     createLeftPanelUserDetails();
     createLeftPanelTabs();
+
+    recommendedProjectPanelCreation();
 }
 
 // left panel user details creation
@@ -154,6 +175,22 @@ function newsFeedsCreation() {
     });
 
     document.getElementById("news-feeds").innerHTML = newsFeedFinalHtml;
+}
+
+function recommendedProjectPanelCreation() {
+    let recommendedProjectPanel = document.getElementById("template-recommended-project");
+    let recommendedProjectPanelHtml = recommendedProjectPanel.innerHTML;
+    let recommendedProjectPanelFinalHtml = "";
+    dashBoardData.recommendedProject.forEach((recommendedProject, index) => {
+        recommendedProjectPanelFinalHtml += recommendedProjectPanelHtml.replace(/{{imageUrl}}/g, recommendedProject.imageUrl)
+            .replace(/{{projectName}}/g, recommendedProject.projectName)
+            .replace(/{{projectContent}}/g, recommendedProject.projectContent)
+            .replace(/{{targetAmount}}/g, recommendedProject.targetAmount)
+            .replace(/{{raisedAmount}}/g, recommendedProject.raisedAmount)
+            .replace(/{{completionPercentage}}/g, recommendedProject.completionPercentage);
+    });
+
+    document.getElementById("recommended-project-panel").innerHTML = recommendedProjectPanelFinalHtml;
 }
 
 
