@@ -190,7 +190,7 @@ function recommendedProjectPanelCreation() {
             .replace(/{{completionPercentage}}/g, recommendedProject.completionPercentage);
     });
 
-    document.getElementById("recommended-project-panel").innerHTML = recommendedProjectPanelFinalHtml;
+    // document.getElementById("recommended-project-panel").innerHTML = recommendedProjectPanelFinalHtml;
 }
 
 

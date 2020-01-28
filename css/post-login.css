@@ -2,3 +2,43 @@
   font-size: 14px;
   color: #7c8796;
 }
+
+.welcome-text{
+  font-size: 13px;
+  color: #2a3844;
+}
+
+.profile-photo {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  max-height: 90px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.profile-top-banner{
+  position: relative;
+}
+
+.profile-completion {
+  border-radius: 4px;
+  box-shadow: 0 2px 8px 0 rgba(57, 64, 79, 0.1);
+  background-color: #ffffff;
+}
+
+.left-tab, .right-tab {
+  border-radius: 4px;
+  border: 1px solid #e0e6ee;
+  background-color: #ffffff;
+  height: fit-content;   
+}
+
+.project-target {
+  font-family: HKGrotesk;
+  font-size: 12px;
+  color: #2a3844;
+}
+
+.progress-percentage {
+  color: #0db2e0;
+}
