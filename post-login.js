@@ -16,6 +16,7 @@ var dashBoardData = {
     ],
     newsFeedData: [
         {
+            userImage: 'img/user.png',
             name: 'Sanne Viscal',
             email: '@sanneviscal',
             postedTimeDuration: '1 week',
@@ -33,6 +34,7 @@ var dashBoardData = {
             comments: []
         },
         {
+            userImage: 'img/user.png',
             name: 'Honey Sara John',
             email: '@honeysarajohn',
             postedTimeDuration: '1 month',
@@ -69,7 +71,9 @@ var dashBoardData = {
             raisedAmount: '123,121',
             completionPercentage: '75'
         }
-    ]
+    ],
+    followList: [],
+    recommendedOrganisations: []
 };
 
 $(document).ready(function () {
@@ -154,6 +158,7 @@ function newsFeedsCreation() {
         let showPercentage = newsFeedSingleUnit.completionPercentage !== '' ? 'block' : 'none';
         let isLikeByMe = newsFeedSingleUnit.isLikedByMe === 'true' ? 'contents' : 'none';
         newsFeedCardFinalHtml += newsFeedCardHtml.replace(/{{name}}/g, newsFeedSingleUnit.name)
+            .replace(/{{userImage}}/g, newsFeedSingleUnit.userImage)
             .replace(/{{email}}/g, newsFeedSingleUnit.email)
             .replace(/{{postedTimeDuration}}/g, newsFeedSingleUnit.postedTimeDuration)
             .replace(/{{imageUrl}}/g, newsFeedSingleUnit.imageUrl)
@@ -191,7 +196,34 @@ function recommendedProjectPanelCreation() {
             .replace(/{{completionPercentage}}/g, recommendedProject.completionPercentage);
     });
 
-    // document.getElementById("recommended-project-panel").innerHTML = recommendedProjectPanelFinalHtml;
+    document.getElementById("recommended-project-panel").innerHTML = recommendedProjectPanelFinalHtml;
 }
 
+$("#cameraIcon").change(function () {
+    getPostUplaodImage();
+});
+
+$("#attachementIcon").change(function () {
+    getPostAttachment();
+});
+
+async function getPostUplaodImage() {
+    const file = document.querySelector('#cameraIcon').files[0];
+    var postImageContent = await toBase64(file);
+    console.log(postImageContent);
+}
+
+async function getPostAttachment() {
+    const file = document.querySelector('#attachementIcon').files[0];
+    var postAttachmentContent = await toBase64(file);
+    console.log(postAttachmentContent);
+}
+
+
+const toBase64 = file => new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = error => reject(error);
+});
 
