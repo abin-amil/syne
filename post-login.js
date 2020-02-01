@@ -72,7 +72,25 @@ var dashBoardData = {
             completionPercentage: '75'
         }
     ],
-    followList: [],
+    whoToFollowList: [
+        {
+            name: 'Sanne Viscaal',
+            email: '@sanneviscaal',
+            imageUrl: 'img/user.png',
+            followersCount: '13k',
+            mutualFollwerName: 'Ginu George',
+            mutualFollowersCount: '5'
+        },
+        {
+            name: 'Iruka Akuchi',
+            email: '@irukaakuchi',
+            imageUrl: 'img/user.png',
+            followersCount: '10k',
+            mutualFollwerName: 'Ginu George',
+            mutualFollowersCount: '7'
+        }
+
+    ],
     recommendedOrganisations: []
 };
 
@@ -81,6 +99,8 @@ $(document).ready(function () {
     createProfileCompletionSection();
 
     newsFeedsCreation();
+    recommendedProjectPanelCreation();
+    whoToFollowListPanelCreation();
 });
 
 // creating left panel dynamically with dashboard data
@@ -88,8 +108,6 @@ function LeftPanelCreation() {
     createLeftPanelTopBanner();
     createLeftPanelUserDetails();
     createLeftPanelTabs();
-
-    recommendedProjectPanelCreation();
 }
 
 // left panel user details creation
@@ -197,6 +215,22 @@ function recommendedProjectPanelCreation() {
     });
 
     document.getElementById("recommended-project-panel").innerHTML = recommendedProjectPanelFinalHtml;
+}
+
+function whoToFollowListPanelCreation() {
+    let whoToFollowListPanel = document.getElementById("template-who-to-follow-list-panel");
+    let whoToFollowListPanelHtml = whoToFollowListPanel.innerHTML;
+    let whoToFollowListPanelFinalHtml = "";
+    dashBoardData.whoToFollowList.forEach((followerSuggestion, index) => {
+        whoToFollowListPanelFinalHtml += whoToFollowListPanelHtml.replace(/{{mutualFollwerName}}/g, followerSuggestion.mutualFollwerName)
+            .replace(/{{mutualFollowersCount}}/g, followerSuggestion.mutualFollowersCount)
+            .replace(/{{name}}/g, followerSuggestion.name)
+            .replace(/{{email}}/g, followerSuggestion.email)
+            .replace(/{{followersCount}}/g, followerSuggestion.followersCount)
+            .replace(/{{imageUrl}}/g, followerSuggestion.imageUrl);
+    });
+
+    document.getElementById("who-to-follow-list-panel").innerHTML = whoToFollowListPanelFinalHtml;
 }
 
 $("#cameraIcon").change(function () {

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/post-login.css">
-    
+
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -97,16 +97,26 @@
                 <div class="writePost p-4 mt-3">
                     <div class="write-post-text">Write a Post</div>
                     <div class="whats_on_mind">Whats on your mind?</div>
-                    <div class="d-flex pt-4"> 
-                        <!-- <input type='file' id="cameraIcon" accept="image/*" /> -->
-                        <img class="pr-2" src="img/camera-grey-small.png">
-                        <!-- <input type='file' id="attachementIcon" accept="application/pdf,application/vnd.ms-excel" /> -->
-                        <img class="px-2" src="img/attach-grey-small.png">
-                        <img class="px-2" src="img/smiley-grey-small.png">
+                    <div class="d-flex pt-4">
+                        <div class="image-upload">
+                            <label for="cameraIcon">
+                                <img class="pr-2" src="img/camera-grey-small.png" />
+                            </label>
+                            <input id="cameraIcon" accept="image/*" type="file"/>
+                        </div>
+                        <div class="image-upload">
+                            <label for="attachementIcon">
+                                <img class="px-2" src="img/attach-grey-small.png" />
+                            </label>
+                            <input type='file' id="attachementIcon" accept="application/pdf,application/vnd.ms-excel" />
+                        </div>
+                        <div>
+                            <img class="px-2" src="img/smiley-grey-small.png">
+                        </div>
                     </div>
                 </div>
                 <div class="post-card mt-3" id="news-feeds">
-                   <!-- news feed template fill here -->
+                    <!-- news feed template fill here -->
                 </div>
             </div>
 
@@ -122,42 +132,9 @@
                 </div>
                 <div class="right-tab mt-3 px-3 pb-2">
                     <div class="recommended-projects-text pt-3">Who to follow</div>
-                    <div class="recommended-project pt-3">
-                        <div>
-                            Followed by Ginu george & 5 others
-                        </div>
-                        <div class="d-flex pt-2">
-                            <img class="img-fluid" style="height: 48px;" src="img/user.png">
-                            <div class="pl-3">
-                                <div class="follow_person_name">Sanne Viscaal</div>
-                                <div>@sanneviscaal</div>
-                            </div>
-                        </div>
-                        <div class="d-flex pt-3 justify-content-between align-items-center">
-                           <div class="follow-button py-1 px-4">Follow</div>
-                           <div class="follower-count">13k Followers</div>
-                        </div>
+                    <div id="who-to-follow-list-panel">
+                        <!-- who to follow template fill here -->
                     </div>
-
-                    <div class="line-seperator my-4"></div>
-
-                    <div class="recommended-project">
-                        <div>
-                            Followed by Ginu george & 5 others
-                        </div>
-                        <div class="d-flex pt-2">
-                            <img class="img-fluid" style="height: 48px;" src="img/user.png">
-                            <div class="pl-3">
-                                <div class="follow_person_name">Sanne Viscaal</div>
-                                <div>@sanneviscaal</div>
-                            </div>
-                        </div>
-                        <div class="d-flex pt-3 justify-content-between align-items-center">
-                           <div class="follow-button py-1 px-4">Follow</div>
-                           <div class="follower-count">13k Followers</div>
-                        </div>
-                    </div>
-
                     <div class="d-flex justify-content-center pt-3">
                         View more…
                     </div>
@@ -317,8 +294,8 @@
         </div>
     </script>
 
-     <!-- recommended project panel -->
-     <script id="template-recommended-project" type="text/template">
+    <!-- recommended project panel -->
+    <script id="template-recommended-project" type="text/template">
         <div class="recommended-project pt-3">
             <div style="max-height:100px; overflow:hidden;">
                 <img class="img-fluid" src="{{imageUrl}}">
@@ -344,7 +321,29 @@
             </div>
         </div>
     </script>
-    
+
+    <!-- who to follow panel template -->
+    <script id="template-who-to-follow-list-panel" type="text/template">
+        <div class="recommended-project pt-3">
+            <div>
+                Followed by {{mutualFollwerName}} & {{mutualFollowersCount}} others
+            </div>
+            <div class="d-flex pt-2">
+                <img class="img-fluid" style="height: 48px;" src="{{imageUrl}}">
+                    <div class="pl-3">
+                        <div class="follow_person_name">{{name}}</div>
+                        <div>{{email}}</div>
+                    </div>
+                            </div>
+                <div class="d-flex pt-3 justify-content-between align-items-center">
+                    <div class="follow-button py-1 px-4">Follow</div>
+                    <div class="follower-count">{{followersCount}} Followers</div>
+                </div>
+            </div>
+
+            <div class="line-seperator my-4"></div>
+    </script>
+
 </body>
 <script type="text/javascript" src="post-login.js"></script>
 

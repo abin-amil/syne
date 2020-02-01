@@ -494,3 +494,8 @@ body .no-padding{
   font-family: HKGrotesk;
 }
 
+.image-upload > input
+{
+    display: none;
+}
+
