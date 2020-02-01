@@ -36,9 +36,30 @@
 .project-target {
   font-family: HKGrotesk;
   font-size: 12px;
-  color: #2a3844;
+  color: #2a3844; 
 }
 
 .progress-percentage {
   color: #0db2e0;
+}
+
+.follow-button {
+  border: 1px solid #0db2e0;
+  border-radius: 15px;
+  color: #0db2e0;
+  font-family: HKGrotesk;
+}
+
+.follow_person_name {
+  font-size: 15px;
+  color: #2a3844;
+  font-family: HKGrotesk;
+}
+.follower-count {
+  color: #7c8796;
+}
+.line-seperator {
+  height: 1px;
+  border-radius: 4px;
+  background-color: #e0e6ee;
 }

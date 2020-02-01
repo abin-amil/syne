@@ -117,6 +117,7 @@ function createLeftPanelTabs() {
 
 // left panel top banner creation
 function createLeftPanelTopBanner() {
+    debugger;
     let leftPanelTopBanner = document.getElementById("template-left-panel-top-banner");
     let leftPanelTopBannerHtml = leftPanelTopBanner.innerHTML;
     let leftPanelTopBannerFinalHtml = "";
