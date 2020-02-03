@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/post-login.css">
+    <link rel="stylesheet" href="css/profile.css">
+
 
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -74,18 +76,24 @@
         </div>
     </div>
 
-    <div>
-        <div>Cover Photo</div>
-        <div>Profile Photo</div>
-    </div>
+   
 
     <div class="container">
+
+        <div>
+            <!-- <div class="">
+                <img class="img-fluid cover-photo" src="img/cover-photo.jpg">
+            </div>
+            <div>Profile Photo</div> -->
+            <div class="profile-top-banner" id="left-panel-top-banner">
+                <!-- left panel top banner template fill here  -->
+
+            </div>
+        </div>
+
         <div class="row pt-5">
             <div class="col-3 px-0 left-tab">
-                <div class="profile-top-banner" id="left-panel-top-banner">
-                    <!-- left panel top banner template fill here  -->
-
-                </div>
+                
                 <div class="px-4 py-5">
                     <div id="left-panel-user-details">
                         <!-- left panel template fill here -->
@@ -182,7 +190,7 @@
 
 <!-- left panel top banner template -->
 <script id="template-left-panel-top-banner" type="text/template">
-    <img class="img-fluid" src="{{coverPhotoUrl}}">
+    <img class="img-fluid w-100" src="{{coverPhotoUrl}}">
     <img class="img-fluid profile-photo" src="{{profilePhotoUrl}}">
 </script>
 

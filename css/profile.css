@@ -1,0 +1,9 @@
+.cover-photo {
+    display: block;
+    position: relative;
+    height: 315px;
+    overflow: hidden;
+    text-decoration: none;
+    max-height: 300px;
+    object-fit: cover;
+}
