@@ -262,6 +262,7 @@ function proceed(i) {
                 sixthformValues[field.name] = field.value;
             });
             projectDetails.projectExplanation = sixthformValues.projectExplanation;
+            window.location.href = "./home.html";
             break;
         default:
             break;
