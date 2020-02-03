@@ -139,7 +139,6 @@ function createLeftPanelTabs() {
 
 // left panel top banner creation
 function createLeftPanelTopBanner() {
-    debugger;
     let leftPanelTopBanner = document.getElementById("template-left-panel-top-banner");
     let leftPanelTopBannerHtml = leftPanelTopBanner.innerHTML;
     let leftPanelTopBannerFinalHtml = "";
@@ -162,7 +161,7 @@ function createProfileCompletionSection() {
     document.getElementById("profile-completion-section").innerHTML = profileCompletionsectionFinalHtml;
 }
 
-
+// user posts/ news feed creation section
 function newsFeedsCreation() {
     let newsFeed = document.getElementById("template-news-feed");
     let newsFeedFinalHtml = "";
@@ -201,6 +200,7 @@ function newsFeedsCreation() {
     document.getElementById("news-feeds").innerHTML = newsFeedFinalHtml;
 }
 
+// right panel recommended project section creation
 function recommendedProjectPanelCreation() {
     let recommendedProjectPanel = document.getElementById("template-recommended-project");
     let recommendedProjectPanelHtml = recommendedProjectPanel.innerHTML;
@@ -217,6 +217,7 @@ function recommendedProjectPanelCreation() {
     document.getElementById("recommended-project-panel").innerHTML = recommendedProjectPanelFinalHtml;
 }
 
+// right panel who to follow list creation
 function whoToFollowListPanelCreation() {
     let whoToFollowListPanel = document.getElementById("template-who-to-follow-list-panel");
     let whoToFollowListPanelHtml = whoToFollowListPanel.innerHTML;
@@ -252,6 +253,14 @@ async function getPostAttachment() {
     var postAttachmentContent = await toBase64(file);
     console.log(postAttachmentContent);
 }
+
+$(function () {
+    // $('textarea').emoji();
+    $('textarea').emoji({
+        place: 'after',
+        rowSize: 17
+    });
+})
 
 
 const toBase64 = file => new Promise((resolve, reject) => {
