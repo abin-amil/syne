@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/post-login.css">
-    
+
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -79,19 +79,283 @@
         <div>Profile Photo</div>
     </div>
 
-    <div class="col-3 px-0 left-tab">
-        <div class="profile-top-banner" id="left-panel-top-banner">
-            <!-- left panel top banner template fill here  -->
-        </div>
-        <div class="px-4 py-5">
-            <div id="left-panel-user-details">
-                <!-- left panel template fill here -->
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-3 px-0 left-tab">
+                <div class="profile-top-banner" id="left-panel-top-banner">
+                    <!-- left panel top banner template fill here  -->
+
+                </div>
+                <div class="px-4 py-5">
+                    <div id="left-panel-user-details">
+                        <!-- left panel template fill here -->
+
+                    </div>
+                    <div class="menu-items py-4" id="left-panel-tabs">
+                        <!-- left panel tabs template fill here -->
+
+                    </div>
+                </div>
             </div>
-            <div class="menu-items py-4" id="left-panel-tabs">
-                <!-- left panel tabs template fill here -->
+
+            <div class="col-6">
+                <div class="profile-completion p-4" id="profile-completion-section">
+                    <!-- profile completion section template fill here -->
+                </div>
+                <div class="writePost p-4 mt-3">
+                    <div class="write-post-text">Write a Post</div>
+                    <div class="whats_on_mind">Whats on your mind?</div>
+                    <div class="d-flex pt-4">
+                        <div class="image-upload">
+                            <label for="cameraIcon">
+                                <img class="pr-2" src="img/camera-grey-small.png" />
+                            </label>
+                            <input id="cameraIcon" accept="image/*" type="file"/>
+                        </div>
+                        <div class="image-upload">
+                            <label for="attachementIcon">
+                                <img class="px-2" src="img/attach-grey-small.png" />
+                            </label>
+                            <input type='file' id="attachementIcon" accept="application/pdf,application/vnd.ms-excel" />
+                        </div>
+                        <div>
+                            <img class="px-2" src="img/smiley-grey-small.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="post-card mt-3" id="news-feeds">
+                    <!-- news feed template fill here -->
+                </div>
+            </div>
+
+            <div class="col-3 p-0">
+                <div class="right-tab px-3 pb-2">
+                    <div class="recommended-projects-text pt-3">Recommended Projects</div>
+                    <div id="recommended-project-panel">
+                        <!-- recommended project template fill here -->
+                    </div>
+                    <div class="d-flex justify-content-center pt-3">
+                        View more…
+                    </div>
+                </div>
+                <div class="right-tab mt-3 px-3 pb-2">
+                    <div class="recommended-projects-text pt-3">Who to follow</div>
+                    <div id="who-to-follow-list-panel">
+                        <!-- who to follow template fill here -->
+                    </div>
+                    <div class="d-flex justify-content-center pt-3">
+                        View more…
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
+
+    <!-- left panel template -->
+    <script id="template-left-panel-user-details" type="text/template">
+        <div class="full-name">
+            {{name}}
+        </div>
+        <div class="user-name mt-2">
+            {{mailId}}
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <div class="mt-3">
+                <div class="follower-count">{{followersCount}}</div>
+                <div class="follower-text">Followers</div>
+            </div>
+            <div class="mt-3">
+                <div class="follower-count">{{followingCount}}</div>
+                <div class="follower-text">Following</div>
+            </div>
+        </div>
+</script>
+
+<!-- left panel tabs template -->
+<script id="template-left-panel-tab-details" type="text/template">
+    <div class="d-flex mt-3">
+        <img src="{{iconUrl}}">
+        <div class="px-2">{{tabName}}</div>
+    </div>
+</script>
+
+<!-- left panel top banner template -->
+<script id="template-left-panel-top-banner" type="text/template">
+    <img class="img-fluid" src="{{coverPhotoUrl}}">
+    <img class="img-fluid profile-photo" src="{{profilePhotoUrl}}">
+</script>
+
+<!-- profile completion showing section template -->
+<script id="template-profile-comleption-section" type="text/template">
+    <div class="hello-user-text">
+        Hello {{name}},
+    </div>
+    <div class="welcome-text pt-2">
+        <span class="welcome-to-syne">Welcome to Syne.</span>Your Profile is {{profileCompletionPercentage}} complete!
+    </div>
+    <div class="pt-2">
+        <div class="progress" style="height: 5px;">
+            <div class="progress-bar" id="progressbar" role="progressbar" style="width: {{profileCompletionPercentage}}%;"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+    <div>
+    </div>
+    <div class="pt-2 d-flex justify-content-between">
+        <div class="d-flex align-items-center d-flex justify-content-center">
+            <img src="img/check-green-small.png">
+            <div class="pl-2">Account</div>
+        </div>
+        <div class="d-flex align-items-center d-flex justify-content-center">
+            <img src="img/check-green-small.png">
+            <div class="pl-2">Profile Picture</div>
+        </div>
+        <div class="d-flex  align-items-center d-flex justify-content-center">
+            <img src="img/check-green-small.png">
+            <div class="pl-2">Cover Picture</div>
+        </div>
+        <div class="d-flex  align-items-center d-flex justify-content-center">
+            <img src="img/check-green-small.png">
+            <div class="pl-2">Short Bio</div>
+        </div>
+       
+    </div>
+</script>
+
+<!-- news feed template -->
+<script id="template-news-feed" type="text/template">
+    <div class="post-card-header">
+        <div class="d-flex p-4">
+            <div class="post-profile-photo">
+                <img style="height: 48px;;" src="{{userImage}}">
+            </div>
+            <div class="pl-3">
+                <div class="post-user">{{name}}</div>
+                <div class="post-user-name">{{email}}</div>
+                <div class="post-time">{{postedTimeDuration}} ago</div>
+            </div>
+        </div>
+
+        <div>
+            <img class="img-fluid" src="{{imageUrl}}">
+        </div>
+
+        <div class="p-4">
+            <div class="post-project-caption">{{descriptionHeading}}</div>
+            <div class="post-project-desc pt-1">
+                {{descripionContent}}
+            </div>
+
+            <div class="pt-2" style="display:{{isTargetAmountDisplay}}">Target ₹{{targetAmount}}</div>
+            <div>
+                <div class="d-flex pt-2 justify-content-between">
+                    <div class="raised-amount" style="display:{{isRaisedAmountDisplay}}">Raised ₹{{raisedAmount}}</div>
+                    <div class="d-flex">
+                        <div class="contributors-comment" style="display:{{showContibutors}}">{{contibutorsCount}} Contributors</div>
+                        <div class="progress-percentage pl-2" style="display:{{showPercentage}}">{{completionPercentage}}%</div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center pt-2">
+                    <div>
+                        <img src="img/like-checked.png">
+                        Like
+                    </div>
+                    <div class="pl-3">
+                        <img src="img/share-checked.png">
+                        Share
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between py-2">
+                    <div class="d-flex">
+                        <div><span style="display:{{isLikeByMe}}">You & </span>{{likeCount}} likes</div>
+                        <div class="pl-3">{{shareCount}} Shares</div>
+                    </div>
+                    <div>
+                        {{commentCount}} Comments
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <img style="height: 48px;" src="img/user.png">
+                        <div>
+                            <div>
+                                <input type="text" name="firstname">
+                            <div>
+                            <div>
+                                <div>
+                                     <img src="img/smiley-grey-small"> 
+                                     <img src="img/camera-grey-small">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+    </div>
+</script>
+
+<!-- recommended project panel -->
+<script id="template-recommended-project" type="text/template">
+    <div class="recommended-project pt-3">
+        <div style="max-height:100px; overflow:hidden;">
+            <img class="img-fluid" src="{{imageUrl}}">
+        </div>
+        <div class="recommended-project-name pt-2">
+            {{projectName}}
+        </div>
+        <div class="recommended-project-disc pt-2">
+            {{projectContent}}
+        </div>
+
+        <div class="project-target pt-2">
+            Target ₹{{targetAmount}}
+        </div>
+
+        <div class="progress pt-2" style="height: 5px;">
+            <div class="progress-bar" id="progressbar" role="progressbar" style="width: {{completionPercentage}}%;"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="d-flex justify-content-between pt-2">
+            <div>Raised ₹{{raisedAmount}}</div>
+            <div>{{completionPercentage}}%</div>
+        </div>
+    </div>
+</script>
+
+<!-- who to follow panel template -->
+<script id="template-who-to-follow-list-panel" type="text/template">
+    <div class="recommended-project pt-3">
+        <div>
+            Followed by {{mutualFollwerName}} & {{mutualFollowersCount}} others
+        </div>
+        <div class="d-flex pt-2">
+            <img class="img-fluid" style="height: 48px;" src="{{imageUrl}}">
+                <div class="pl-3">
+                    <div class="follow_person_name">{{name}}</div>
+                    <div>{{email}}</div>
+                </div>
+                        </div>
+            <div class="d-flex pt-3 justify-content-between align-items-center">
+                <div class="follow-button py-1 px-4">Follow</div>
+                <div class="follower-count">{{followersCount}} Followers</div>
+            </div>
+        </div>
+
+        <div class="line-seperator my-4"></div>
+</script>
+
+
 </body>
+
+
+<script type="text/javascript" src="post-login.js"></script>
+
 </html>
