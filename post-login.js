@@ -91,7 +91,24 @@ var dashBoardData = {
         }
 
     ],
-    recommendedOrganisations: []
+    recommendedOrganisations: [
+        {
+            name: 'Votonomics Foundation',
+            email: '@votonimics',
+            imageUrl: 'img/user.png',
+            followersCount: '13k',
+            mutualFollwerName: 'Ginu George',
+            mutualFollowersCount: '5'
+        },
+        {
+            name: 'Syne Foundation',
+            email: '@synefoundation',
+            imageUrl: 'img/user.png',
+            followersCount: '10k',
+            mutualFollwerName: 'Ginu George',
+            mutualFollowersCount: '7'
+        }
+    ]
 };
 
 $(document).ready(function () {
@@ -101,6 +118,7 @@ $(document).ready(function () {
     newsFeedsCreation();
     recommendedProjectPanelCreation();
     whoToFollowListPanelCreation();
+    recommendedOrganisationListPanelCreation();
 });
 
 // creating left panel dynamically with dashboard data
@@ -232,6 +250,23 @@ function whoToFollowListPanelCreation() {
     });
 
     document.getElementById("who-to-follow-list-panel").innerHTML = whoToFollowListPanelFinalHtml;
+}
+
+// right panel recommended organisation list creation
+function recommendedOrganisationListPanelCreation() {
+    let recommendedOrganisationListPanel = document.getElementById("template-who-to-follow-list-panel");
+    let recommendedOrganisationListPanelHtml = recommendedOrganisationListPanel.innerHTML;
+    let recommendedOrganisationListPanelFinalHtml = "";
+    dashBoardData.recommendedOrganisations.forEach((recommendeOrganisation, index) => {
+        recommendedOrganisationListPanelFinalHtml += recommendedOrganisationListPanelHtml.replace(/{{mutualFollwerName}}/g, recommendeOrganisation.mutualFollwerName)
+            .replace(/{{mutualFollowersCount}}/g, recommendeOrganisation.mutualFollowersCount)
+            .replace(/{{name}}/g, recommendeOrganisation.name)
+            .replace(/{{email}}/g, recommendeOrganisation.email)
+            .replace(/{{followersCount}}/g, recommendeOrganisation.followersCount)
+            .replace(/{{imageUrl}}/g, recommendeOrganisation.imageUrl);
+    });
+
+    document.getElementById("recommended-organisation-panel").innerHTML = recommendedOrganisationListPanelFinalHtml;
 }
 
 $("#cameraIcon").change(function () {
