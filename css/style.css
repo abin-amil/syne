@@ -1,10 +1,10 @@
 /*header*/
 
-.header-menu li {
+.header-menu li, .small-header-menu li {
   float: left;
 }
 
-.header-menu li a {
+.header-menu li a, .small-header-menu li a {
   padding: 10px 25px;
   font-family: HKGrotesk-reg;
   font-weight: bold;
@@ -12,7 +12,7 @@
   color: #7c8796;
 }
 
-.header-menu li:first-child a {
+.header-menu li:first-child a, .small-header-menu li:first-child a {
   border-radius: 4px;
   border: solid 1px #16c0ef;
 }
@@ -89,14 +89,30 @@
   justify-content: flex-end;
 }
 
+/* .header-l {
+  min-width: 500px;
+} */
+
 /*banner*/
 
 .banner {
   padding: 30px 0px 120px 0px;
 }
 
+.banner-r {
+  flex: 1 1 50%;
+}
+
 .banner-r img {
   width: 100%;
+}
+
+.banner-l, .banner-r {
+  min-width: 300px;
+}
+
+.banner-l {
+  flex: 1 1 40%;
 }
 
 .banner-l h1 {
@@ -105,7 +121,7 @@
   letter-spacing: 0.39px;
 }
 
-.banner-l a {
+.banner-txt-links a {
   padding: 14px 30px;
   letter-spacing: 0.5px;
 }
@@ -122,7 +138,8 @@
   box-shadow: 0 1px 3px 0 rgba(45, 50, 63, 0.06);
   border: solid 1px #ebeef3;
   float: left;
-  margin-right: 55px;
+  margin-right: 5vw;
+  min-width: 200px;
 }
 
 .featred-prjcts {
@@ -176,7 +193,8 @@
 }
 
 .prjct-h-dscrp.w60 {
-  min-width: 60%;
+  /* min-width: 60%; */
+  flex: 1 1 60%;
 }
 
 .prjct-tag {
@@ -372,7 +390,7 @@ ul.tabs li.current {
   margin-bottom: 8px;
 }
 
-.y-us-text p {}
+/* .y-us-text p {} */
 
 .y-us h2 {
   margin-bottom: 50px;
@@ -507,6 +525,10 @@ ul.tabs li.current {
 
 .app-dwld-l img {
   width: 100%;
+}
+
+.w40.footer-sub {
+  min-width: 250px;
 }
 
 .footer-sub h4 {
@@ -647,11 +669,41 @@ ul.tabs li.current {
   }
 }
 
+@media(min-width: 601px) {
+  .small-header-menu {
+    display: none;
+  }
+  .d-none {
+    display: none;
+  }
+}
+
 @media(max-width: 600px) {
+  .d-sm-none {
+    display: none;
+  }
   .hm-sties-img, .pjct-h-img.w40 {
     display: none;
   }
   .hm-stries-txt.w40 {
     width: 100%;
+  }
+  .header-menu {
+    display: none;
+  }
+  .small-header-menu {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .small-header-menu li a {
+    white-space: nowrap;
+  }
+}
+
+@media(max-width: 320px) {
+  .small-header-menu ul {
+    display: flex;
   }
 }
