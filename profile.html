@@ -19,20 +19,24 @@
     <link rel="stylesheet" href="css/post-login.css">
     <link rel="stylesheet" href="css/profile.css">
 
-
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+
+    <script src="js/jquery.min.js"></script>
+    <!-- Datepicker -->
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="icon" href="favicon.png" type="image/x-icon">
@@ -76,24 +80,125 @@
         </div>
     </div>
 
-   
+    <div>
+        <!-- <div class="">
+            <img class="img-fluid cover-photo" src="img/cover-photo.jpg">
+        </div>
+        <div>Profile Photo</div> -->
+        <div class="profile-top-banner" id="left-panel-top-banner">
+            <!-- left panel top banner template fill here  -->
 
+        </div>
+    </div>
     <div class="container">
-
-        <div>
-            <!-- <div class="">
-                <img class="img-fluid cover-photo" src="img/cover-photo.jpg">
+        <div class="profile-top-banner overlay-trigger" id="left-panel-top-banner">
+            <img class="img-fluid profile-photo" src="img/user.png">
+            <div class="overlay-item profile-overlay">
+                <a class="profile-edit-button text-center modal-btn" data-target="syne-edit-profile">
+                    Edit
+                </a>
             </div>
-            <div>Profile Photo</div> -->
-            <div class="profile-top-banner" id="left-panel-top-banner">
-                <!-- left panel top banner template fill here  -->
 
+            <div id="syne-edit-profile" class="pop-modal">
+                <div class="modalcontent">
+                    <div class="synemodal-body">
+                        <div class="syne-lgin-r rltv p-3">
+                            <a href="#" class="modalclose flex">
+                                <div class="modal-close-text">Close</div>
+                                <img src="img/close-icon.png" alt="close">
+                            </a>
+                        </div>
+                        <div class="container py-3">
+                            <div class="form-title modal-title">
+                                Edit Account
+                            </div>
+                            <form id="editProfileForm">
+
+                                <div class="mt-3" class="form-group">
+                                    <div>
+                                        <div class="syne-inputbox p-2">
+                                            <label for="comment" class="Short-description-ab">
+                                                Short intro about you
+                                            </label>
+                                            <textarea name="comment" onblur="formValidCheck('#editProfileForm', 1)"
+                                                onkeyup="formValidCheck('#editProfileForm', 1)"
+                                                class="form-control syne-project-description" rows="5"
+                                                id="comment"></textarea>
+                                        </div>
+                                        <small class="noteinstr mt-1" class="form-text text-muted">
+                                            In less than 30 words
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="mt-3 d-flex justify-content-between w-100">
+                                    <div class="countryInput m-2">
+                                        <div class="syne-inputbox p-2" onclick="formValidCheck('#editProfileForm', 2)">
+                                            <label for="url" class="syne-input-label">Date of Birth</label>
+                                            <div class="d-flex">
+                                                <input id="dobPicker" name="startDate" type="text"
+                                                    class="startDateInput project-title-input" placeholder="DD/MM/YY">
+                                                <img style="height: 24px;" class="pr-2" src="img/calendar-grey.png">
+                                            </div>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="syne-inputbox p-2 border-0">
+                                            <select class="syne-inputbox mt-2 ml-3 border-0 form-control" id="dobAccess"
+                                                name="dobAccess">
+                                                <option value="public">Public</option>
+                                                <option value="friends">Friends</option>
+                                                <option value="onlyMe">Only Me</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3 d-flex justify-content-between w-100">
+                                    <div class="countryInput m-2">
+                                        <div class="syne-inputbox p-2" onclick="formValidCheck('#editProfileForm', 3)">
+                                            <label for="url" class="syne-input-label">Location</label>
+                                            <div class="d-flex">
+                                                <input name="startDate" type="text"
+                                                    class="startDateInput project-title-input"
+                                                    placeholder="Enter your current location">
+                                                <img style="height: 24px;" class="pr-2" src="img/calendar-grey.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="syne-inputbox p-2 border-0">
+                                            <select class="syne-inputbox mt-2 ml-3 border-0 form-control"
+                                                id="locationAccess" name="locationAccess">
+                                                <option value="public">Public</option>
+                                                <option value="friends">Friends</option>
+                                                <option value="onlyMe">Only Me</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="mt-3">
+                                    <button onclick="updateProfile()" id="updateProfile" type="button" disabled="true"
+                                        class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
+                                        <div>
+                                        </div>
+                                        <div>
+                                            Save Changes
+                                        </div>
+                                        <div></div>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
         <div class="row pt-5">
             <div class="col-3 px-0 left-tab">
-                
+
                 <div class="px-4 py-5">
                     <div id="left-panel-user-details">
                         <!-- left panel template fill here -->
@@ -118,7 +223,7 @@
                             <label for="cameraIcon">
                                 <img class="pr-2" src="img/camera-grey-small.png" />
                             </label>
-                            <input id="cameraIcon" accept="image/*" type="file"/>
+                            <input id="cameraIcon" accept="image/*" type="file" />
                         </div>
                         <div class="image-upload">
                             <label for="attachementIcon">
@@ -180,23 +285,23 @@
         </div>
 </script>
 
-<!-- left panel tabs template -->
-<script id="template-left-panel-tab-details" type="text/template">
-    <div class="d-flex mt-3">
+    <!-- left panel tabs template -->
+    <script id="template-left-panel-tab-details" type="text/template">
+        <div class="d-flex mt-3">
         <img src="{{iconUrl}}">
         <div class="px-2">{{tabName}}</div>
     </div>
 </script>
 
-<!-- left panel top banner template -->
-<script id="template-left-panel-top-banner" type="text/template">
-    <img class="img-fluid w-100" src="{{coverPhotoUrl}}">
-    <img class="img-fluid profile-photo" src="{{profilePhotoUrl}}">
+    <!-- left `panel top banner template -->
+    <script id="template-left-panel-top-banner" type="text/template">
+        <img class="img-fluid w-100" src="{{coverPhotoUrl}}">
+    <!-- <img class="img-fluid profile-photo" src="{{profilePhotoUrl}}"> -->
 </script>
 
-<!-- profile completion showing section template -->
-<script id="template-profile-comleption-section" type="text/template">
-    <div class="hello-user-text">
+    <!-- profile completion showing section template -->
+    <script id="template-profile-comleption-section" type="text/template">
+        <div class="hello-user-text">
         Hello {{name}},
     </div>
     <div class="welcome-text pt-2">
@@ -227,13 +332,12 @@
             <img src="img/check-green-small.png">
             <div class="pl-2">Short Bio</div>
         </div>
-       
     </div>
 </script>
 
-<!-- news feed template -->
-<script id="template-news-feed" type="text/template">
-    <div class="post-card-header">
+    <!-- news feed template -->
+    <script id="template-news-feed" type="text/template">
+        <div class="post-card-header">
         <div class="d-flex p-4">
             <div class="post-profile-photo">
                 <img style="height: 48px;;" src="{{userImage}}">
@@ -294,8 +398,8 @@
                             <div>
                             <div>
                                 <div>
-                                     <img src="img/smiley-grey-small"> 
-                                     <img src="img/camera-grey-small">
+                                    <img src="img/smiley-grey-small.png"> 
+                                    <img src="img/camera-grey-small.png">
                                 </div>
                             </div>
 
@@ -310,9 +414,9 @@
     </div>
 </script>
 
-<!-- recommended project panel -->
-<script id="template-recommended-project" type="text/template">
-    <div class="recommended-project pt-3">
+    <!-- recommended project panel -->
+    <script id="template-recommended-project" type="text/template">
+        <div class="recommended-project pt-3">
         <div style="max-height:100px; overflow:hidden;">
             <img class="img-fluid" src="{{imageUrl}}">
         </div>
@@ -338,9 +442,9 @@
     </div>
 </script>
 
-<!-- who to follow panel template -->
-<script id="template-who-to-follow-list-panel" type="text/template">
-    <div class="recommended-project pt-3">
+    <!-- who to follow panel template -->
+    <script id="template-who-to-follow-list-panel" type="text/template">
+        <div class="recommended-project pt-3">
         <div>
             Followed by {{mutualFollwerName}} & {{mutualFollowersCount}} others
         </div>
@@ -365,5 +469,43 @@
 
 
 <script type="text/javascript" src="post-login.js"></script>
+
+<script type="text/javascript">
+
+    function formValidCheck(form, number) { }
+
+    function updateProfile() {
+        $("#syne-edit-profile").removeClass("open-pop");
+        $("body").removeClass("modal-blur");
+    }
+
+    $(document).ready(function () {
+
+        $(".modal-btn").click(function (e) {
+            //$(this).next("div").addClass("open-pop");
+            var modl_id = $(this).attr('data-target');
+            $("#" + modl_id).addClass("open-pop");
+            $("body").addClass("modal-blur");
+            e.preventDefault();
+            $('#dobPicker').datepicker({
+                uiLibrary: 'bootstrap4'
+            });
+        });
+
+
+        $("#syne-edit-profile .modalclose").click(function (e) {
+            $("#syne-edit-profile").removeClass("open-pop");
+            $("body").removeClass("modal-blur");
+            e.preventDefault();
+        });
+
+        $(".pop-modal").click(function (e) {
+            if (e.target.className != 'pop-modal' && !$('.pop-modal').find(e.target).length) {
+                $(this).removeClass("open-pop");
+                $("body").removeClass("modal-blur");
+            }
+        });
+    });
+</script>
 
 </html>

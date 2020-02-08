@@ -6,16 +6,32 @@ var dashBoardData = {
     followingCount: '8',
     coverPhotoUrl: 'img/beautiful-flower-picture-facebook-cover.jpg',
     profilePhotoUrl: 'img/user.png',
-    leftPanelTabs: [
-        { name: 'Project', iconUrl: 'img/project-grey-small.png' },
-        { name: 'Events', iconUrl: 'img/events-grey-small.png' },
-        { name: 'Stories', iconUrl: 'img/stories-grey-small.png' },
-        { name: 'Organisations', iconUrl: 'img/org-grey-small.png' },
-        { name: 'Transactions', iconUrl: 'img/transaction-grey-small.png' },
-        { name: 'Settings & Privacy', iconUrl: 'img/settings-grey-small.png' }
-    ],
-    newsFeedData: [
+    leftPanelTabs: [{
+            name: 'Project',
+            iconUrl: 'img/project-grey-small.png'
+        },
         {
+            name: 'Events',
+            iconUrl: 'img/events-grey-small.png'
+        },
+        {
+            name: 'Stories',
+            iconUrl: 'img/stories-grey-small.png'
+        },
+        {
+            name: 'Organisations',
+            iconUrl: 'img/org-grey-small.png'
+        },
+        {
+            name: 'Transactions',
+            iconUrl: 'img/transaction-grey-small.png'
+        },
+        {
+            name: 'Settings & Privacy',
+            iconUrl: 'img/settings-grey-small.png'
+        }
+    ],
+    newsFeedData: [{
             userImage: 'img/user.png',
             name: 'Sanne Viscal',
             email: '@sanneviscal',
@@ -52,8 +68,7 @@ var dashBoardData = {
             comments: []
         }
     ],
-    recommendedProject: [
-        {
+    recommendedProject: [{
             imageUrl: 'img/autumn-seasonal-sale-black.jpg',
             projectDuration: '3 months',
             projectName: 'Digital Democracy',
@@ -72,8 +87,7 @@ var dashBoardData = {
             completionPercentage: '75'
         }
     ],
-    whoToFollowList: [
-        {
+    whoToFollowList: [{
             name: 'Sanne Viscaal',
             email: '@sanneviscaal',
             imageUrl: 'img/user.png',
@@ -91,8 +105,7 @@ var dashBoardData = {
         }
 
     ],
-    recommendedOrganisations: [
-        {
+    recommendedOrganisations: [{
             name: 'Votonomics Foundation',
             email: '@votonimics',
             imageUrl: 'img/user.png',
@@ -164,7 +177,9 @@ function createLeftPanelTopBanner() {
     leftPanelTopBannerFinalHtml += leftPanelTopBannerHtml.replace(/{{coverPhotoUrl}}/g, dashBoardData.coverPhotoUrl)
         .replace(/{{profilePhotoUrl}}/g, dashBoardData.profilePhotoUrl);
 
-    document.getElementById("left-panel-top-banner").innerHTML = leftPanelTopBannerFinalHtml;
+    if (document.getElementById("left-panel-top-banner")) {
+        document.getElementById("left-panel-top-banner").innerHTML = leftPanelTopBannerFinalHtml;
+    }
 }
 
 // profile completion section creation
@@ -266,7 +281,9 @@ function recommendedOrganisationListPanelCreation() {
             .replace(/{{imageUrl}}/g, recommendeOrganisation.imageUrl);
     });
 
-    document.getElementById("recommended-organisation-panel").innerHTML = recommendedOrganisationListPanelFinalHtml;
+    if (document.getElementById("recommended-organisation-panel")) {
+        document.getElementById("recommended-organisation-panel").innerHTML = recommendedOrganisationListPanelFinalHtml;
+    }
 }
 
 $("#cameraIcon").change(function () {
@@ -291,10 +308,12 @@ async function getPostAttachment() {
 
 $(function () {
     // $('textarea').emoji();
-    $('textarea').emoji({
-        place: 'after',
-        rowSize: 17
-    });
+    if ($('textarea').emoji) {
+        $('textarea').emoji({
+            place: 'after',
+            rowSize: 17
+        });
+    }
 })
 
 
@@ -304,4 +323,3 @@ const toBase64 = file => new Promise((resolve, reject) => {
     reader.onload = () => resolve(reader.result);
     reader.onerror = error => reject(error);
 });
-
