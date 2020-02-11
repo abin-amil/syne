@@ -87,3 +87,25 @@
     border: none !important;
     color: #7c8796 !important;
 }
+
+#syne-edit-about-me .modalcontent, #add-work-experience .modalcontent {
+    width: 55%;
+    max-width: 600px;
+}
+
+#work-to-present {
+    background-color: #e9ecef;
+}
+
+.modalcontent {
+    margin-top: 0;
+    position: absolute !important;
+    border-radius: 10px;
+}
+
+.pop-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
