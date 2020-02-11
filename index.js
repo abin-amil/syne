@@ -1,11 +1,3 @@
-const projectTypes = {
-    CROWDFUNDING: 'Crowdfunding',
-    SOCIALGIVING: 'Social Giving',
-    PROMOTIONS: 'Promotions',
-    SOCIALCHANGE: 'Social Change'
-}
-
-
 $(document).ready(function () {
     // category dropdown setting
     let categoryDropdown = document.getElementById("category");
