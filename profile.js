@@ -29,6 +29,6 @@ $(document).ready(function () {
     });
 });
 
-$('#dobPicker').datepicker({
+$('#dateOfBirth').datepicker({
     uiLibrary: 'bootstrap4'
 });

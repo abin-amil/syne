@@ -72,3 +72,18 @@
     outline: none !important;
     border: none !important;
 }
+
+.tab-content {
+    display: block !important;
+}
+
+.nav-link.active {
+    color: deepskyblue !important;
+    border-bottom: 2px solid deepskyblue !important;
+    background-color: transparent !important;
+}
+
+.nav-link {
+    border: none !important;
+    color: #7c8796 !important;
+}
