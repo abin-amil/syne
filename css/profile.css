@@ -55,3 +55,20 @@
 .d-flex {
     display: flex;
 }
+
+.datepicker {
+    z-index: 999999 !important;
+}
+
+.selectpicker+button, .bootstrap-select .dropdown-toggle {
+    height: 40px;
+    width: 100px !important;
+    border: 0 !important;
+    background-color: #ffffff !important;
+}
+
+.bootstrap-select .dropdown-toggle:focus, .selectpicker+button:focus {
+    box-shadow: none;
+    outline: none !important;
+    border: none !important;
+}
