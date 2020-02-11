@@ -1,10 +1,5 @@
 function formValidCheck(form, number) {}
 
-function updateProfile() {
-    $("#syne-edit-profile").removeClass("open-pop");
-    $("body").removeClass("modal-blur");
-}
-
 $(document).ready(function () {
 
     $(".modal-btn").click(function (e) {
@@ -29,6 +24,6 @@ $(document).ready(function () {
     });
 });
 
-$('#dobPicker').datepicker({
+$('#dateOfBirth').datepicker({
     uiLibrary: 'bootstrap4'
 });
