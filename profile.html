@@ -99,8 +99,7 @@
         <div class="profile-top-banner overlay-trigger" id="left-panel-top-banner">
             <img class="img-fluid profile-photo" src="img/user.png">
             <div class="overlay-item profile-overlay">
-                <a class="profile-edit-button text-center modal-btn" href="#syne-edit-profile"
-                    data-target="syne-edit-profile">
+                <a class="profile-edit-button text-center">
                     Edit
                 </a>
             </div>
@@ -116,7 +115,7 @@
                         </div>
                         <div class="container py-3">
                             <div class="form-title modal-title">
-                                Edit Account
+                                Edit Profile
                             </div>
                             <form id="editProfileForm">
 
@@ -161,7 +160,7 @@
                                     </div>
                                 </div>
                                 <div class="mt-3 d-flex justify-content-between w-100">
-                                    <div class="countryInput m-2">
+                                    <div class="countryInput m-2" style="width:70%;">
                                         <div class="syne-inputbox p-2" onclick="formValidCheck('#editProfileForm', 3)">
                                             <label for="userLocation" class=" syne-input-label">Location</label>
                                             <div class="d-flex">
@@ -269,7 +268,7 @@
                             <a class="txt-blue modal-btn" href="#syne-add-work-experience"
                                 data-target="syne-add-work-experience">
                                 Add work experience
-                            </a>-l
+                            </a>
                             <a class="txt-blue modal-btn" href="#syne-add-school-college"
                                 data-target="syne-add-school-college">
                                 Add School
@@ -452,10 +451,10 @@
                                             </div>
 
                                             <div class="form-group mt-3">
-                                                <div class="d-flex align-items-center w-100 justify-content-end">
-                                                    <div class="syne-inputbox p-2 border-0">
+                                                <div class="d-flex align-items-center w-100">
+                                                    <div class="syne-inputbox border-0 p-0">
                                                         <select
-                                                            class="selectpicker show-tick syne-inputbox mt-2 ml-3 border-0 form-control"
+                                                            class="selectpicker show-tick syne-inputbox mt-2 border-0 form-control"
                                                             id="workAccess" name="workAccess">
                                                             <option value="public">Public</option>
                                                             <option value="friends">Friends</option>
@@ -578,9 +577,9 @@
 
                                             <div class="form-group mt-3">
                                                 <div class="d-flex align-items-center w-100 justify-content-start">
-                                                    <div class="syne-inputbox p-2 border-0">
+                                                    <div class="syne-inputbox p-0 border-0">
                                                         <select
-                                                            class="selectpicker show-tick syne-inputbox mt-2 ml-3 border-0 form-control"
+                                                            class="selectpicker show-tick syne-inputbox mt-2 border-0 form-control"
                                                             id="workAccess" name="workAccess">
                                                             <option value="public">Public</option>
                                                             <option value="friends">Friends</option>
@@ -672,8 +671,12 @@
                 </span>
             </div>
             <div class="mt-2">
-                <div style="color: deepskyblue;font-size: small">
-                    <a>Edit Profile</a>
+                <div>
+                    <a style="color: deepskyblue;font-size: small" class="modal-btn" href="#syne-edit-profile"
+                    data-target="syne-edit-profile">
+                    Edit Profile
+                </a>
+                    <!-- <a class="modal-btn">Edit Profile</a> -->
                 </div>
             </div>
         </div>

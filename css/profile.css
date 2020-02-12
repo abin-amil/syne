@@ -88,9 +88,9 @@
     color: #7c8796 !important;
 }
 
-#syne-edit-about-me .modalcontent, #add-work-experience .modalcontent {
+.modalcontent {
     width: 55%;
-    max-width: 600px;
+    max-width: 700px !important;
 }
 
 #work-to-present {
@@ -108,4 +108,36 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+}
+
+.countryInput {
+    width: 40%;
+}
+
+.bootstrap-select .bs-ok-default:after {
+    border-width: 0 .15em .15em 0 !important;
+}
+
+.dropdown-menu {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.dropdown-item {
+    background-color: transparent !important;
+    color: inherit !important;
+}
+
+.bootstrap-select .dropdown-toggle:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+input[type=text] {
+    padding: 4px 20px 0px 12px;
+}
+
+.syne-inputbox .dropdown-toggle {
+    padding-left: 0 !important;
 }

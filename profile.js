@@ -57,7 +57,7 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
-    $("#workStatus").click(function () {
+    $("#workStatus").click(function (e) {
         closeModal("#work-to-default");
         e.preventDefault();
     });

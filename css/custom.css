@@ -20,7 +20,7 @@
 }
 
 .typeOfProject {
-    display: flex;
+  display: flex;
 }
 
 .categoryList {
@@ -41,9 +41,9 @@
 }
 
 .projectCard {
-    /* padding: 20px; */
-    border: solid 1px #dde2e9;
-    border-radius: 6px;
+  /* padding: 20px; */
+  border: solid 1px #dde2e9;
+  border-radius: 6px;
 }
 
 .projectCardActive {
@@ -56,11 +56,11 @@
 }
 
 .countryInput {
-  width:35%;
+  width: 35%;
 }
 
 .cityInput {
-  width:30%;
+  width: 30%;
 }
 
 .startDateInput {
@@ -76,35 +76,35 @@
   display: block;
 }
 
-.radio-button-default{
+.radio-button-default {
   background: url('../img/radio-unchecked.png') no-repeat 0;
   background-position: right top;
   float: right;
-  height:24px;
+  height: 24px;
 }
 
-.radio-button-on-click{
+.radio-button-on-click {
   background: url('../img/radio-checked.png') no-repeat 0;
   background-position: right top;
   float: right;
-  height:24px;
+  height: 24px;
 }
 
 .crowdfunding_img {
   background: url('../img/crowdfunding.png') no-repeat 0;
-  height:96px;
+  height: 96px;
   background-position: center;
 }
 
 .crowdfunding_img_hover {
   background: url('../img/crowdfunding-active.png') no-repeat 0;
-  height:96px;
+  height: 96px;
   background-position: center;
 }
 
 .crowdfunding_img_hover_on_click {
   background: url('../img/crowdfunding-active.png') no-repeat 0;
-  height:96px;
+  height: 96px;
   background-position: center;
 }
 
@@ -114,62 +114,63 @@
 
 .promotions_img {
   background: url('../img/promotions.png') no-repeat 0;
-  height:96px;
+  height: 96px;
   background-position: center;
 }
 
 .promotions_img_hover {
   background: url('../img/promotions-active.png') no-repeat 0;
   background-position: center;
-  height:96px;
+  height: 96px;
 }
+
 .promotions_img_hover_on_click {
   background: url('../img/promotions-active.png') no-repeat 0;
   background-position: center;
-  height:96px;
-}  
+  height: 96px;
+}
 
 .socialgiving_img {
   background: url('../img/socialgiving.png') no-repeat 0;
   background-position: center;
-  height:96px;
+  height: 96px;
 }
+
 .socialgiving_img_hover {
   background: url('../img/socialgiving-active.png') no-repeat 0;
   background-position: center;
-  height:96px;
+  height: 96px;
 }
 
 .socialgiving_img_hover_on_click {
   background: url('../img/socialgiving-active.png') no-repeat 0;
   background-position: center;
-  height:96px;
+  height: 96px;
 }
 
 .socialchange_img {
   background: url('../img/socialchange.png') no-repeat 0;
   background-position: center;
-  height:96px;
+  height: 96px;
 }
 
 .socialchange_img_hover {
   background: url('../img/socialchange-active.png') no-repeat 0;
   background-position: center;
-  height:96px;
+  height: 96px;
 }
 
 .socialchange_img_hover_on_click {
   background: url('../img/socialchange-active.png') no-repeat 0;
   background-position: center;
-  height:96px;
+  height: 96px;
 }
 
 .noteinstr {
-  float:right;
+  float: right;
 }
 
-
-.projectCard:hover{
+.projectCard:hover {
   border: solid 1px #16c0ef;
 }
 
@@ -186,12 +187,12 @@
 }
 
 .proceedButton {
-    width: 252px;
-    height: 50px;
-    border-radius: 3px !important;
-    background-color: #16c0ef !important;
-    color: white !important;
-    font-weight: bold !important;
+  width: 252px;
+  height: 50px;
+  border-radius: 3px !important;
+  background-color: #16c0ef !important;
+  color: white !important;
+  font-weight: bold !important;
 }
 
 .backButton {
@@ -204,17 +205,17 @@
 }
 
 .proceedFooter {
-    display: flex !important;
-    justify-content: center !important;
+  display: flex !important;
+  justify-content: center !important;
 }
 
 .newProjectHeader {
-    display: flex !important;
-    justify-content: space-between !important;
+  display: flex !important;
+  justify-content: space-between !important;
 }
 
 .modal-card-head {
-    background-color: #ffffff !important;
+  background-color: #ffffff !important;
 }
 
 .project-title-input {
@@ -246,13 +247,12 @@
   padding: 10px 0px 0px 12px;
 }
 
-.syne-input-label{
+.syne-input-label {
   font-family: HKGrotesk;
   font-size: 13px;
   font-weight: 500;
   color: #7c8796;
   padding: 0px 0px 0px 12px;
-
 }
 
 input[type=text] {
@@ -293,6 +293,7 @@ input[type=text] {
 .post-page-bg {
   background-color: #f9fafc;
 }
+
 .post-page-header {
   background-color: #ffffff;
   border-bottom: 1px #f9fafc;
@@ -322,7 +323,7 @@ input[type=text] {
 }
 
 .recommndede-project-photo {
-  height:67px;
+  height: 67px;
 }
 
 .recommended-project-disc {
@@ -435,13 +436,11 @@ input[type=text] {
   color: #7c8796;
 }
 
-.top-padding{
+.top-padding {
   padding-top: 33px;
 }
 
-.project-detail-characters-left {
-
-}
+.project-detail-characters-left {}
 
 .attachMediaButton {
   width: 252px;
@@ -452,50 +451,54 @@ input[type=text] {
   font-weight: bold !important;
 }
 
-input[type=number], 
-input[type=number]{ 
+input[type=number], input[type=number] {
   border: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
+
 /* category slider classes */
-.col-md-3{
+
+.col-md-3 {
   display: inline-block;
-  margin-left:-4px;
+  margin-left: -4px;
 }
-.col-md-3 img{
-  width:100%;
-  height:auto;
+
+.col-md-3 img {
+  width: 100%;
+  height: auto;
 }
-body .carousel-indicators li{
-  background-color:red;
+
+body .carousel-indicators li {
+  background-color: red;
 }
-body .carousel-control-prev-icon,
-body .carousel-control-next-icon{
-  background-color:red;
+
+body .carousel-control-prev-icon, body .carousel-control-next-icon {
+  background-color: red;
 }
-body .no-padding{
+
+body .no-padding {
   padding-left: 0;
   padding-right: 0;
 }
 
-.carousel-indicators li { visibility: hidden; }
+.carousel-indicators li {
+  visibility: hidden;
+}
 
 .follower-text {
   font-size: 13px;
   color: #7c8796;
 }
 
-.welcome-to-syne{
+.welcome-to-syne {
   font-size: 13px;
   color: #fb4f6d;
   font-family: HKGrotesk;
 }
 
-.image-upload > input
-{
-    display: none;
+.image-upload>input {
+  display: none;
 }
-
