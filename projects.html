@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/post-login.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/selectize.css">
     <link rel="stylesheet" href="css/projects.css">
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <!-- Latest compiled and minified CSS -->
@@ -60,10 +60,14 @@
                         </div>
                         <div class="header-menu">
                             <ul>
-                                <li><a class="txt-blue f14 modal-button" data-toggle="modal"
+                                <li>
+                                    <a class="txt-blue f14 modal-button" data-toggle="modal"
                                         data-target="#exampleModal">Start a
-                                        Project</a></li>
-                                <li><a href="#" class="f14">Explore Projects</a></li>
+                                        Project</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="f14">Explore Projects</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -85,11 +89,106 @@
         </div>
     </div>
 
-    <div>
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-12 d-flex justify-content-center my-nav-container">
+                <ul class="nav nav-tabs col-10 d-flex flex-wrap my-nav border-0">
+                    <li class="active my-nav-tab">
+                        <a class="py-3" href="#all-section" id="all-tab" data-toggle="tab" role="tab"
+                            aria-controls="all-section" aria-selected="true">
+                            <img class="tab-image  tab-image-default" src="img/crowdfunding.png" alt="">
+                            <img class="tab-image tab-image-active" src="img/crowdfunding-active.png" alt="">
+                            All
+                        </a>
+                    </li>
+                    <li class="my-nav-tab">
+                        <a class="py-3" href="#crowd-funding-section" id="crowd-funding-tab" data-toggle="tab"
+                            role="tab" aria-controls="crowd-funding-section" aria-selected="false">
+                            <img class="tab-image  tab-image-default" src="img/crowdfunding.png" alt="">
+                            <img class="tab-image tab-image-active" src="img/crowdfunding-active.png" alt="">
+                            Crowdfunding
+                        </a>
+                    </li>
+                    <li class="my-nav-tab">
+                        <a class="py-3" href="#social-giving-section" id="social-giving-tab" data-toggle="tab"
+                            role="tab" aria-controls="social-giving-section" aria-selected="false">
+                            <img class="tab-image  tab-image-default" src="img/socialgiving.png" alt="">
+                            <img class="tab-image tab-image-active" src="img/socialgiving-active.png" alt="">
+                            Social Giving
+                        </a>
+                    </li>
+                    <li class="my-nav-tab">
+                        <a class="py-3" href="#promotions-section" id="promotions-tab" data-toggle="tab" role="tab"
+                            aria-controls="promotions-section" aria-selected="false">
+                            <img class="tab-image  tab-image-default" src="img/promotions.png" alt="">
+                            <img class="tab-image tab-image-active" src="img/promotions-active.png" alt="">
+                            Promotions
+                        </a>
+                    </li>
+                    <li class="my-nav-tab">
+                        <a class="py-3" href="#social-change-section" id="social-change-tab" data-toggle="tab"
+                            role="tab" aria-controls="" aria-selected="false">
+                            <img class="tab-image tab-image-default" src="img/socialchange.png" alt="">
+                            <img class="tab-image tab-image-active" src="img/socialchange-active.png" alt="">
+                            Social change
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-100">
+                <form class="d-flex flex-wrap justify-content-between pt-4" id="projectFilterForm">
+                    <div class="d-flex flex-wrap flex-grow-1">
+                        <div class="countryInput m-2">
+                            <div class="syne-inputbox p-2 d-flex align-items-center">
+                                <img style="height: 20px;" src="img/search.png">
+                                <input type="text" name="targetSupport" class="form-control project-title-input"
+                                    onblur="formValidCheck('#projectFilterForm', 1)"
+                                    onkeyup="formValidCheck('#projectFilterForm', 1)" placeholder="Search All Projects">
+                                <img style="height: 20px;" src="img/right.svg">
+                            </div>
+                        </div>
+                        <div class="countryInput countryInput2 m-2">
+                            <select class="syne-inputbox" id="category" name="category">
+                                <option value="">Search Categories</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="countryInput countryInput3 m-2">
+                        <select class="syne-inputbox" id="sortBy" name="sortBy">
+                            <option value="">Sort By</option>
+                        </select>
+                    </div>
+            </div>
+            <div class="w-100">
+
+            </div>
+        </div>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="all-tab" id="all-section">
+                1
+            </div>
+            <div class="tab-pane fade show" role="tabpanel" aria-labelledby="crowd-funding-tab"
+                id="crowd-funding-section">
+                2
+            </div>
+            <div class="tab-pane fade show" role="tabpanel" aria-labelledby="social-giving-tab"
+                id="social-giving-section">
+                3
+            </div>
+            <div class="tab-pane fade show" role="tabpanel" aria-labelledby="promotions-tab"
+                id="promotions-section">
+                4
+            </div>
+            <div class="tab-pane fade show" role="tabpanel" aria-labelledby="social-change-tab"
+                id="social-change-section">
+                5
+            </div>
+        </div>
+    </div>
     </div>
 
 </body>
-<script type="text/javascript" src="post-login.js"></script>
+<script type="text/javascript" src="js/selectize.min.js"></script>
 <script type="text/javascript" src="js/projects.js"></script>
 <script type="text/javascript" src="dataModels.js"></script>
 <script type="text/javascript" src="constants.js"></script>
