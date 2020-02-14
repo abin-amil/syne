@@ -502,3 +502,9 @@ body .no-padding {
 .image-upload>input {
   display: none;
 }
+
+.organisation-image{
+    max-height: 90px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
