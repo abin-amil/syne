@@ -152,5 +152,9 @@ function recommendedOrganisationListPanelCreation() {
 function createOrganisation() {
     document.getElementById('createOrgEmptyState').style.display = "none";
     document.getElementById('publishOrganisationPage').style.display = "block";
+}
 
+function publishOrganisation(){
+    document.getElementById('publishOrganisationPage').style.display = "none";
+    document.getElementById('OrgLandingPage').style.display = "block";
 }

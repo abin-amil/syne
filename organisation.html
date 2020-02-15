@@ -108,7 +108,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="writePost p-4" id="publishOrganisationPage"style="min-height: 75%;  display: none;">
+                <div class="writePost p-4" id="publishOrganisationPage" style="min-height: 75%;  display: none;">
                     <div id="createNewOrg">
                         <div class="full-name">
                             Create New Organisation Page
@@ -249,13 +249,64 @@
                                         <a style="color: #007bff">privacy policy</a>
                                     </div>
                                     <div class="mt-1 m-2">
-                                        <button id="publishOrgPageBtn" type="button"
+                                        <button id="publishOrgPageBtn" type="button" onclick="publishOrganisation()"
                                             class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
                                             Publish Organisation Page
                                         </button>
                                     </div>
                                 </div>
                             </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="writePost p-4" id="OrgLandingPage" style="min-height: 20%; display: none;">
+                    <div class="form-check-inline" style="width: 100%;">
+                        <div class="full-name mt-3" style="font-size:17px;">
+                            My Organisations
+                        </div>
+                        <div class="col-5"></div>
+                        <div class="mt-3 m-2">
+                            <button id="createNew" type="button" class="btn  proceedButton" style="width: 100%;">
+                                + Create New
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <div class="d-flex">
+                            <div class="mt-2">
+                                <div class="full-name">Vivent Org</div>
+                                <div class="follower-text mt-1">Published on 24th Nov 2019</div>
+
+                            </div>
+                            <div class="col-5"></div>
+                            <div>
+                                <img class="profile-photo" style="position: unset;" src="img/logo-1.png">
+                            </div>
+                        </div>
+                        <div class="mt-1">
+                            <div class="col-8 org-url-box">
+                                <span class="fa fa-paperclip"></span>
+                                <span class="ml-1">syne.com/vivent-long-url</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-seperator my-2 mt-4"></div>
+                    <div class="mt-3">
+                        <div class="d-flex">
+                            <div class="mt-2">
+                                <div class="full-name">Second Org Names</div>
+                                <div class="follower-text mt-1">Published on 24th Nov 2019</div>
+                            </div>
+                            <div class="col-5"></div>
+                            <div>
+                                <img class="profile-photo" style="position: unset;" src="img/logo-2.png">
+                            </div>
+                        </div>
+                        <div class="mt-1">
+                            <div class="col-8 org-url-box">
+                                <span class="fa fa-paperclip"></span>
+                                <span class="glyphicon glyphicon-paperclip">syne.com/second-org-long-url</span>
+                            </div>
                         </div>
                     </div>
                 </div>
