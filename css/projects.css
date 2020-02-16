@@ -1,5 +1,5 @@
 .my-nav-container {
-    border-bottom: 1px solid #7c8796;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .my-nav {
@@ -72,10 +72,77 @@
     font-weight: bold;
 }
 
+.countryInput {
+    background-color: #ffffff;
+}
+
 .countryInput2 {
     width: 30% !important;
 }
 
 .countryInput3 {
     width: 20% !important;
+}
+
+.countryInput3 .selectize-control {
+    border: 0 !important;
+}
+
+.featred-prjcts {
+    margin-top: 0px !important;
+}
+
+.project-showcase {
+    background-color: transparent !important;
+}
+
+.featred-prjcts {
+    padding-left: 0 !important;
+}
+
+.ftrd-title {
+    font-weight: 600;
+}
+
+.prjct-h-dscrp h5 {
+    font-weight: 600;
+}
+
+.prjct-tag span {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.prjct-v-box {
+    width: 30% !important;
+}
+
+.project-title-input::placeholder, .countryInput2 ::placeholder, .countryInput3 ::placeholder {
+    color: #bac3cf !important;
+    font-size: 14px;
+}
+
+.project-title-input, .countryInput2 .item, .countryInput3 .item {
+    font-size: 14px;
+}
+
+.countryInput2 .item, .countryInput3 .item, .selectize-dropdown {
+    color: #2a3844 !important;
+    font-weight: 600;
+}
+
+.selectize-dropdown-content {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.syne-inputbox div.selectize-input {
+    display: flex !important;
+    height: 100% !important;
+    align-items: center !important;
+}
+
+.more-prjct-btn {
+    font-weight: 600;
+    color: #bac3cf;
 }

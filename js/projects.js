@@ -4,23 +4,24 @@ $(document).ready(function () {
 
     let categoryDropdown = document.getElementById("category");
     let CategoryList = [{
-            name: "One",
-            value: "1"
+            name: "All Categories",
+            value: "1",
+            selected: true
         },
         {
-            name: "Two",
+            name: "Crowdfunding",
             value: "2"
         },
         {
-            name: "Three",
+            name: "Social Giving",
             value: "3"
         },
         {
-            name: "Four",
+            name: "Promotions",
             value: "4"
         },
         {
-            name: "Five",
+            name: "Social change",
             value: "5"
         },
     ];
@@ -31,6 +32,9 @@ $(document).ready(function () {
         let el = document.createElement("option");
         el.textContent = optionName;
         el.value = optionValue;
+        if (CategoryList[key].selected) {
+            el.selected = CategoryList[key].selected;
+        }
         categoryDropdown.appendChild(el);
     });
     $('#category').selectize();
@@ -38,7 +42,8 @@ $(document).ready(function () {
     let sortByDropdown = document.getElementById("sortBy");
     let sortByList = [{
             name: "Relevance",
-            value: "1"
+            value: "1",
+            selected: true
         },
         {
             name: "Newly Launched",
@@ -60,6 +65,9 @@ $(document).ready(function () {
         let el = document.createElement("option");
         el.textContent = optionName;
         el.value = optionValue;
+        if (sortByList[key].selected) {
+            el.selected = sortByList[key].selected;
+        }
         sortByDropdown.appendChild(el);
     });
     $('#sortBy').selectize();
@@ -68,5 +76,65 @@ $(document).ready(function () {
         $('.my-nav>li.active').removeClass('active');
         $(this).addClass('active');
         $('.my-nav>li.active')
+    });
+
+    $('.featrd-projectslider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        centerMode: true,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+    $('.modal-tstimonial').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed: 2000,
+        cssEase: 'linear'
+    });
+    // tab script
+    $('ul.tabs li').click(function () {
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#" + tab_id).addClass('current');
     });
 });
