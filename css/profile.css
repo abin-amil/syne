@@ -27,6 +27,22 @@
     overflow: hidden;
 }
 
+.profile-photo-height {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.comment-box {
+    /* border-radius: 50%; */
+    background-color: #f9fafc;
+    border: solid 1px #e0e6ee;
+    border-radius: 30px;
+}
+
+.comment-box-color {
+    background-color: #f9fafc !important;
+}
+
 .profile-edit-button {
     height: 30px;
     margin-top: 60px;

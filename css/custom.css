@@ -395,9 +395,13 @@ input[type=text] {
   color: #2a3844;
 }
 
+.post-user {
+  font-weight: bold;
+}
+
 .follower-count {
   font-weight: bold;
-  color: #16c0ef;
+  color: #16c0ef !important;
 }
 
 .writePost {
