@@ -157,3 +157,15 @@ input[type=text] {
 .syne-inputbox .dropdown-toggle {
     padding-left: 0 !important;
 }
+
+.bg-grey-light {
+    background-color: #edf1f5 !important;
+}
+
+.font-weight-normal {
+    font-weight: normal;
+}
+
+.flex-v-base {
+    align-items: baseline;
+}
