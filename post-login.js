@@ -63,7 +63,7 @@ function createLeftPanelTopBanner() {
 
 // profile completion section creation
 function createProfileCompletionSection() {
-    if (document.getElementById("template-profile-comleption-section")) {
+    if (document.getElementById("profile-completion-section")) {
         let profileCompletionsection = document.getElementById("template-profile-comleption-section");
         let profileCompletionsectionHtml = profileCompletionsection.innerHTML;
         let profileCompletionsectionFinalHtml = "";
