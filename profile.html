@@ -252,7 +252,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="post-card mt-3" id="news-feeds">
+                        <div id="news-feeds">
                             <!-- news feed template fill here -->
                         </div>
                     </div>
@@ -726,78 +726,78 @@
 
     <!-- news feed template -->
     <script id="template-news-feed" type="text/template">
-        <div class="post-card-header">
-        <div class="d-flex p-4">
-            <div class="post-profile-photo">
-                <img style="height: 58px;;" src="{{userImage}}">
-            </div>
-            <div class="pl-3">
-                <div class="post-user">{{name}}</div>
-                <div class="post-user-name">{{email}}</div>
-                <div class="post-time">{{postedTimeDuration}} ago</div>
-            </div>
-        </div>
-        </div>
-
-        <div>
-            <img class="img-fluid" src="{{imageUrl}}">
-        </div>
-
-        <div class="p-4">
-            <div class="post-project-caption">{{descriptionHeading}}</div>
-            <div class="post-project-desc pt-1">
-                {{descripionContent}}
-            </div>
-
-            <div class="pt-2 target-amount" style="display:{{isTargetAmountDisplay}}">Target ₹{{targetAmount}}</div>
-            <div>
-                <div class="d-flex pt-2 justify-content-between">
-                    <div class="raised-amount" style="display:{{isRaisedAmountDisplay}}">Raised ₹{{raisedAmount}}</div>
-                    <div class="d-flex">
-                        <div class="contributors-comment" style="display:{{showContibutors}}">{{contibutorsCount}} Contributors</div>
-                        <div class="progress-percentage pl-2" style="display:{{showPercentage}}">{{completionPercentage}}%</div>
+        <div class="post-card mt-3">
+            <div class="post-card-header">
+                <div class="d-flex p-4">
+                    <div class="post-profile-photo">
+                        <img style="height: 58px;;" src="{{userImage}}">
+                    </div>
+                    <div class="pl-3">
+                        <div class="post-user">{{name}}</div>
+                        <div class="post-user-name">{{email}}</div>
+                        <div class="post-time">{{postedTimeDuration}} ago</div>
                     </div>
                 </div>
-
-                <div class="d-flex align-items-center pt-2 like-comment">
-                    <div class="d-flex align-items-center">
-                        <img class="pr-1" src="img/like-checked.png">
-                        Like
-                    </div>
-                    <div class="pl-3 d-flex align-items-center">
-                        <img class="pr-1" src="img/share-checked.png">
-                        Share
-                    </div>
+        
+                <div>
+                    <img class="img-fluid" src="{{imageUrl}}">
                 </div>
-                <div class="d-flex justify-content-between py-2">
-                    <div class="d-flex like-share">
-                        <div><span style="display:{{isLikeByMe}}">You & </span>{{likeCount}} likes</div>
-                        <div class="pl-3">{{shareCount}} Shares</div>
+        
+                <div class="p-4">
+                    <div class="post-project-caption">{{descriptionHeading}}</div>
+                    <div class="post-project-desc pt-1">
+                        {{descripionContent}}
                     </div>
-                    <div class="like-share">
-                        {{commentCount}} Comments
-                    </div>
-                </div>
-
-                <div class="d-flex align-items-center justify-content-between">
-                    <img style="height: 48px;" src="img/user.png">
-                    <div class="d-flex w-100 justify-content-between comment-box p-1 ml-2">
-                        <div>
-                            <input placeholder="Write a reply…" class="comment-box-color" type="text" name="firstname">
+        
+                    <div class="pt-2 target-amount" style="display:{{isTargetAmountDisplay}}">Target ₹{{targetAmount}}</div>
+                    <div>
+                        <div class="d-flex pt-2 justify-content-between">
+                            <div class="raised-amount" style="display:{{isRaisedAmountDisplay}}">Raised ₹{{raisedAmount}}</div>
+                            <div class="d-flex">
+                                <div class="contributors-comment" style="display:{{showContibutors}}">{{contibutorsCount}} Contributors</div>
+                                <div class="progress-percentage pl-2" style="display:{{showPercentage}}">{{completionPercentage}}%</div>
+                            </div>
                         </div>
-                        <div class="pr-2">
-                            <img src="img/smiley-grey-small.png"> 
-                            <img src="img/camera-grey-small.png">
+        
+                        <div class="d-flex align-items-center pt-2 like-comment">
+                            <div class="d-flex align-items-center">
+                                <img class="pr-1" src="img/like-checked.png">
+                                Like
+                            </div>
+                            <div class="pl-3 d-flex align-items-center">
+                                <img class="pr-1" src="img/share-checked.png">
+                                Share
+                            </div>
                         </div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="d-flex like-share">
+                                <div><span style="display:{{isLikeByMe}}">You & </span>{{likeCount}} likes</div>
+                                <div class="pl-3">{{shareCount}} Shares</div>
+                            </div>
+                            <div class="like-share">
+                                {{commentCount}} Comments
+                            </div>
+                        </div>
+        
+                        <div class="d-flex align-items-center justify-content-between">
+                            <img style="height: 48px;" src="img/user.png">
+                            <div class="d-flex w-100 justify-content-between comment-box p-1 ml-2">
+                                <div>
+                                    <input placeholder="Write a reply…" class="comment-box-color" type="text" name="firstname">
+                                </div>
+                                <div class="pr-2">
+                                    <img src="img/smiley-grey-small.png"> 
+                                    <img src="img/camera-grey-small.png">
+                                </div>
+                            </div>
+                        </div>
+        
+                        
                     </div>
                 </div>
-
-                
             </div>
-        </div>
-
-    </div>
-</script>
+        </div>        
+    </script>
 
     <!-- recommended project panel -->
     <script id="template-recommended-project" type="text/template">
