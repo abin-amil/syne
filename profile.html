@@ -257,19 +257,52 @@
                     </div>
                     <div class="tab-pane fade" role="tabpanel" aria-labelledby="projects-tab" id="projects-section">
                     </div>
-                    <div class="tab-pane fade" role="tabpanel" aria-labelledby="about-me-tab" id="about-me-section">
-                        <div class="d-flex flex-column">
-                            <a class="txt-blue modal-btn" href="#syne-edit-about-me" data-target="syne-edit-about-me">
-                                Edit About Me
-                            </a>
-                            <a class="txt-blue modal-btn" href="#syne-add-work-experience"
-                                data-target="syne-add-work-experience">
-                                Add work experience
-                            </a>
-                            <a class="txt-blue modal-btn" href="#syne-add-school-college"
-                                data-target="syne-add-school-college">
-                                Add School
-                            </a>
+                    <div class="tab-pane fade mt-2" role="tabpanel" aria-labelledby="about-me-tab"
+                        id="about-me-section">
+                        <div class="writePost p-4">
+                            <div class="d-flex">
+                                <div class="full-name">About Me</div>
+                                <div class="col-7"></div>
+                                <a class="txt-blue modal-btn" href="#syne-edit-about-me"
+                                    data-target="syne-edit-about-me">
+                                    Edit About Me
+                                </a>
+                            </div>
+                            <div class="form-group mt-2">
+                                <div class="syne-inputbox p-1">
+                                    <label for="orgUrl" class="syne-input-label">Profile URL</label>
+                                    <div class="d-flex align-items-center">
+                                        <div class="project-title-input  pl-3">
+                                            syne.com/
+                                        </div>
+                                        <input id="projectUrl" type="text" class="form-control org-form-input px-0"
+                                            placeholder="Project URL">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line-seperator my-2 mt-4"></div>
+                            <div class="d-flex mt-3">
+                                <div class="full-name">Work Experience</div>
+                                <div class="col-5"></div>
+                                <a class="txt-blue modal-btn" href="#syne-add-work-experience"
+                                    data-target="syne-add-work-experience">
+                                    Add work experience
+                                </a>
+                            </div>
+                            <div class="syne-inputbox p-1">
+                                <div class="d-flex mt-2 mb-2">
+                                    <input name="orgPrimaryLocation" type="text" class="org-form-input" placeholder="Dummy text box" id="orgPrimaryLocation">
+                                </div>
+                            </div>
+                            <div class="line-seperator my-2 mt-4"></div>
+                            <div class="d-flex mt-3">
+                                <div class="full-name">Education</div>
+                                <div class="col-8"></div>
+                                <a class="txt-blue modal-btn" href="#syne-add-school-college"
+                                    data-target="syne-add-school-college">
+                                    Add School
+                                </a>
+                            </div>
                         </div>
 
                         <div id="syne-edit-about-me" class="pop-modal">
