@@ -10,13 +10,22 @@
 
 .profile-photo {
   position: absolute;
-  top: 50%;
+  top: 7%;
   left: 10%;
   max-height: 90px;
   border: 2px solid white;
   border-radius: 50%;
 }
+.comment-box-color {
+  background-color: #f9fafc !important;
+}
 
+.comment-box {
+  /* border-radius: 50%; */
+  background-color: #f9fafc;
+  border: solid 1px #e0e6ee;
+  border-radius: 30px;
+}
 /* .profile-top-banner {
   position: relative;
 } */
