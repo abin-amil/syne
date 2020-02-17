@@ -56,11 +56,6 @@ $(document).ready(function () {
         closeModal("#syne-add-school-college");
         e.preventDefault();
     });
-
-    $("#workStatus").click(function (e) {
-        closeModal("#work-to-default");
-        e.preventDefault();
-    });
 });
 
 const datePickerWidgets = [
