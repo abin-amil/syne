@@ -42,6 +42,8 @@
 
 .progress-percentage {
   color: #0db2e0;
+  font-size: 13px;
+  font-family: HKGrotesk;
 }
 
 .follow-button {

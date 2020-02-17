@@ -326,8 +326,15 @@ input[type=text] {
   height: 67px;
 }
 
+.like-share {
+  font-size: 13px;
+}
+.like-comment {
+  font-size: 14px;
+}
+
 .recommended-project-disc {
-  font-family: HKGrotesk;
+  font-family: HKGrotesk-reg;
   font-size: 12px;
   color: #5d677e;
 }
@@ -381,8 +388,17 @@ input[type=text] {
   font-weight: bold;
 }
 
+.target-amount {
+  font-size: 13px;
+}
+
+.contributors-comment {
+  font-size: 13px;
+  color: #2a3844;
+}
+
 .post-project-desc {
-  font-family: HKGrotesk;
+  font-family: HKGrotesk-reg;
   font-size: 13px;
   color: #5d677e;
   font-weight: normal;
@@ -404,10 +420,29 @@ input[type=text] {
   color: #16c0ef !important;
 }
 
+.followers-count {
+  font-size: 12px;
+  color: #7c8796;
+}
+
 .writePost {
   border-radius: 4px;
   border: solid 1px #e0e6ee;
   background-color: #ffffff;
+}
+
+.raised-amount-text {
+  font-size: 12px;
+  font-weight: bold;
+  color: #2a3844;
+  font-family: HKGrotesk;
+}
+
+.raised-amount-percentage {
+  font-size: 12px;
+  font-weight: bold;
+  color: #16c0ef;
+  font-family: HKGrotesk;
 }
 
 .dropzone {

@@ -10,18 +10,18 @@
 
 .profile-photo {
     position: relative;
-    left: 10%;
-    max-height: 90px;
+    left: 6%;
+    max-height: 140px;
     border: 2px solid white;
     border-radius: 50%;
     margin-top: -45px;
 }
 
 .profile-overlay {
-    width: 90px;
+    width: 115px;
     height: 90px;
     position: relative;
-    left: 10%;
+    left: 7%;
     border-radius: 50%;
     margin-top: -90px;
     overflow: hidden;
@@ -46,7 +46,7 @@
 .profile-edit-button {
     height: 30px;
     margin-top: 60px;
-    width: 90px;
+    width: 115px;
     background-color: #333b3f;
     opacity: 0.9;
     color: #ffffff !important;
@@ -54,6 +54,10 @@
     font-size: 12px;
     font-weight: 600;
     cursor: pointer;
+}
+
+.intro-text {
+    font-weight: 900;
 }
 
 .overlay-trigger .overlay-item {
