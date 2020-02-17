@@ -63,14 +63,16 @@ function createLeftPanelTopBanner() {
 
 // profile completion section creation
 function createProfileCompletionSection() {
-    let profileCompletionsection = document.getElementById("template-profile-comleption-section");
-    let profileCompletionsectionHtml = profileCompletionsection.innerHTML;
-    let profileCompletionsectionFinalHtml = "";
+    if (document.getElementById("template-profile-comleption-section")) {
+        let profileCompletionsection = document.getElementById("template-profile-comleption-section");
+        let profileCompletionsectionHtml = profileCompletionsection.innerHTML;
+        let profileCompletionsectionFinalHtml = "";
 
-    profileCompletionsectionFinalHtml += profileCompletionsectionHtml.replace(/{{name}}/g, dashBoardData.name)
-        .replace(/{{profileCompletionPercentage}}/g, dashBoardData.profileCompletionPercentage);
+        profileCompletionsectionFinalHtml += profileCompletionsectionHtml.replace(/{{name}}/g, dashBoardData.name)
+            .replace(/{{profileCompletionPercentage}}/g, dashBoardData.profileCompletionPercentage);
 
-    document.getElementById("profile-completion-section").innerHTML = profileCompletionsectionFinalHtml;
+        document.getElementById("profile-completion-section").innerHTML = profileCompletionsectionFinalHtml;
+    }
 }
 
 // user posts/ news feed creation section
