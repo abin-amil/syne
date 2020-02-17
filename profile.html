@@ -54,21 +54,28 @@
             <div class="main-wrapper">
 
                 <div class="headerwrap flex">
-                    <div class="header-l w50 flex flex-h-start flex-v-center">
-                        <div class="logo">
+                    <div class="header-l flex flex-h-start flex-v-center">
+                        <div class="logo h-100">
                             <img src="img/syne-logo.png" alt="logo">
                         </div>
-                        <div class="header-menu">
-                            <ul>
+                        <div class="header-menu h-100">
+                            <ul class="d-flex align-items-center">
                                 <li><a class="txt-blue f14 modal-button" data-toggle="modal"
                                         data-target="#exampleModal">Start a
                                         Project</a></li>
                                 <li><a href="#" class="f14">Explore Projects</a></li>
+                                <li>
+                                    <div class="syne-inputbox d-flex align-items-center">
+                                        <img style="height: 20px;" src="img/search.png">
+                                        <input type="text" name="projectSearch" class="form-control project-title-input"
+                                            placeholder="Search here">
+                                    </div>
+                                    </li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="heade-r flex flex-v-center w30">
+                    <div class="heade-r flex flex-v-center">
                         <div class="header-form right">
                             <form action="">
                                 <input id="search" name="search" type="text" placeholder="What're we looking for ?">
