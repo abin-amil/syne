@@ -10,8 +10,8 @@ function updateAboutMe() {
 
 function addWorkExperience() {
     const companyName = $('#companyName').val();
-    const jobPosition = $('#jobPosition').val();
-    const jobLocation = $('#jobLocation').val();
+    const position = $('#position').val();
+    const workLocation = $('#workLocation').val();
     const isCurrentlyWorking = $('#isCurrentlyWorking').val();
     const workStartDate = $('#workStartDate').val();
     let workEndDate = $('#workEndDate').val();
@@ -36,7 +36,7 @@ function addWorkExperience() {
             </div>
             <div class="experience-details d-flex flex-column">
                 <div class="experience-post font-weight-bold font-size-16">
-                ` + jobPosition + `
+                ` + position + `
                 </div>
                 <div class="experience-place font-weight-bold font-size-14">
                 ` + companyName + `
@@ -44,7 +44,7 @@ function addWorkExperience() {
                 <div class="experience-duration font-size-12">
                 ` + workStartDate + ' - ' + workEndDate + '. ' + workDuration + `
                 </div>
-                ` + jobLocation + `
+                ` + workLocation + `
                 </div>
             </div>
         </div>
@@ -56,8 +56,8 @@ function addWorkExperience() {
     document.getElementsByClassName('experience-list')[0].appendChild(newWork);
 
     $('#companyName').val('');
-    $('#jobPosition').val('');
-    $('#jobLocation').val('');
+    $('#position').val('');
+    $('#workLocation').val('');
     $('#isCurrentlyWorking').prop("checked", true)
     $('#workStartDate').val('');
     $('#workEndDate').val('');

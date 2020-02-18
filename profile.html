@@ -60,10 +60,17 @@
                         </div>
                         <div class="header-menu h-100">
                             <ul class="d-flex align-items-center">
-                                <li><a class="txt-blue f14 modal-button" data-toggle="modal"
-                                        data-target="#exampleModal">Start a
-                                        Project</a></li>
-                                <li><a href="#" class="f14">Explore Projects</a></li>
+                                <li>
+                                    <a class="txt-blue f14 modal-button" data-toggle="modal"
+                                        data-target="#exampleModal">
+                                        Start a Project
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="f14">
+                                        Explore Projects
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -93,7 +100,7 @@
             <!-- left panel top banner template fill here  -->
 
         </div>
-       
+
     </div>
     <div class="container">
         <div class="profile-top-banner overlay-trigger" id="left-panel-top-banner">
@@ -211,7 +218,7 @@
                             </a>
                         </div>
                         <div class="container p-0 follower-modal-height">
-                            
+
                             <div class="line-seperator mb-2"></div>
 
                             <div class="d-flex justify-content-between align-items-center px-3">
@@ -353,65 +360,96 @@
                     <div class="tab-pane fade mt-2" role="tabpanel" aria-labelledby="about-me-tab"
                         id="about-me-section">
                         <div class="writePost p-4">
-                            <div class="d-flex">
-                                <div class="full-name">About Me</div>
-                                <div class="col-7"></div>
-                                <a class="txt-blue modal-btn" href="#syne-edit-about-me"
-                                    data-target="syne-edit-about-me">
-                                    Edit About Me
-                                </a>
+                            <div class="d-flex justify-content-between">
+                                <div class="full-name dark-text font-size-20">About Me</div>
+                                <div class="modal-btn cursor-pointer" data-target="syne-edit-about-me">
+                                    <img src="img/edit-grey-small.png" alt="">Edit
+                                </div>
                             </div>
                             <div class="form-group mt-2">
-                                <div class="syne-inputbox p-1">
-                                    <label for="orgUrl" class="syne-input-label">Profile URL</label>
-                                    <div class="d-flex align-items-center">
-                                        <div class="project-title-input  pl-3">
-                                            syne.com/
+                                <div class="syne-inputbox p-0 border-0">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="pl-0 light-text font-size-14">
+                                            + Write some details about you
                                         </div>
-                                        <input id="projectUrl" type="text" class="form-control org-form-input px-0"
-                                            placeholder="Project URL">
+                                    </div>
+                                    <label for="orgUrl" class="syne-input-label pl-0 dark-text">Profile URL</label>
+                                    <div class="d-flex align-items-center">
+                                        <div class="pl-0 light-text font-size-14">
+                                            https://syne.com/yourname
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="line-seperator my-2 mt-4"></div>
-                            <div class="d-flex mt-3">
-                                <div class="full-name">Work Experience</div>
-                                <div class="col-5"></div>
-                                <a class="txt-blue modal-btn" href="#syne-add-work-experience"
-                                    data-target="syne-add-work-experience">
-                                    Add work experience
-                                </a>
+                            <div class="line-seperator my-2 mt-3"></div>
+                            <div class="d-flex mt-4">
+                                <div class="full-name font-size-20">Work Experience</div>
                             </div>
-                            <div class="syne-inputbox p-1">
-                                <div class="d-flex mt-2 mb-2">
-                                    <input name="orgPrimaryLocation" type="text" class="org-form-input" placeholder="Dummy text box" id="orgPrimaryLocation">
+                            <div class="syne-inputbox p-0 border-0">
+
+                                <div class="txt-blue modal-btn p-3 my-3 border font-weight-bold cursor-pointer"
+                                    data-target="syne-add-work-experience">
+                                    + Add a work experience
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="p-0 d-flex">
+                                        <div class="experience-list w-100">
+                                            <div class="experience-container justify-content-between d-flex w-100">
+                                                <div class="experience">
+                                                    <div class="experience-image">
+                                                        <img src="img/icon3.jpg" alt="">
+                                                    </div>
+                                                    <div class="experience-details d-flex flex-column">
+                                                        <div class="experience-post font-weight-bold font-size-16">
+                                                            Senior Software Engineer
+                                                        </div>
+                                                        <div class="experience-place font-weight-bold font-size-14">
+                                                            Alphabet Inc.
+                                                        </div>
+                                                        <div class="experience-duration font-size-12">
+                                                            May 2009 - Present. 11 Yrs 3 mos
+                                                        </div>
+                                                        <div class="experience-location font-size-12">
+                                                            California, USA
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="edit-experience-button modal-btn cursor-pointer"
+                                                    data-target="syne-add-work-experience">
+                                                    <img src="img/edit-grey-small.png" alt="">Edit
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="line-seperator my-2 mt-4"></div>
-                            <div class="d-flex mt-3">
-                                <div class="full-name">Education</div>
-                                <div class="col-8"></div>
-                                <a class="txt-blue modal-btn" href="#syne-add-school-college"
+                            <div class="line-seperator my-2 mt-3"></div>
+                            <div class="d-flex mt-4">
+                                <div class="full-name font-size-20">Education</div>
+                            </div>
+                            <div class="syne-inputbox p-0 border-0">
+                                <div class="txt-blue modal-btn p-3 my-3 border font-weight-bold cursor-pointer"
                                     data-target="syne-add-school-college">
-                                    Add School
-                                </a>
+                                    + Add a School / College
+                                </div>
                             </div>
                         </div>
 
                         <div id="syne-edit-about-me" class="pop-modal">
                             <div class="modalcontent">
-                                <div class="synemodal-body">
-                                    <div class="syne-lgin-r rltv p-3">
+                                <div class="synemodal-body pt-2">
+                                    <div class="syne-lgin-r rltv px-3 pt-5 pb-0">
                                         <a href="#" class="modalclose flex">
                                             <div class="modal-close-text">Close</div>
                                             <img src="img/close-icon.png" alt="close">
                                         </a>
                                     </div>
-                                    <div class="container py-3">
+                                    <div class="container px-5 pb-5">
                                         <div class="form-title modal-title">
                                             About Me
                                         </div>
-                                        <form id="edit-about-me">
+                                        <form id="edit-about-me" class="d-flex flex-column">
 
                                             <div class="form-group mt-3">
                                                 <div>
@@ -449,9 +487,9 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="mt-3 m-2">
+                                            <div class="mt-3">
                                                 <button onclick="updateAboutMe()" id="updateAboutMeBtn" type="button"
-                                                    class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
+                                                    class="btn proceedButton is-success mt-4 d-flex justify-content-around">
                                                     Save Changes
                                                 </button>
                                             </div>
@@ -462,23 +500,23 @@
                         </div>
                         <div id="syne-add-work-experience" class="pop-modal">
                             <div class="modalcontent">
-                                <div class="synemodal-body">
-                                    <div class="syne-lgin-r rltv p-3">
+                                <div class="synemodal-body pt-2">
+                                    <div class="syne-lgin-r rltv px-3 pt-5 pb-0">
                                         <a href="#" class="modalclose flex">
                                             <div class="modal-close-text">Close</div>
                                             <img src="img/close-icon.png" alt="close">
                                         </a>
                                     </div>
-                                    <div class="container py-3">
+                                    <div class="container px-5 pb-5">
                                         <div class="form-title modal-title">
                                             Add Work Experience
                                         </div>
-                                        <form id="add-work-experience">
+                                        <form id="add-work-experience" name="add-work-experience">
                                             <div class="modal-title mt-4 font-weight-bold">
                                                 Company Details
                                             </div>
-                                            <div class="form-group mt-3">
-                                                <div class="syne-inputbox p-2"
+                                            <div class="form-group mt-3 d-flex flex-column">
+                                                <div class="syne-inputbox p-1"
                                                     onclick="formValidCheck('#add-work-experience', 1)">
                                                     <label for="companyName" class="syne-input-label">
                                                         Company Name
@@ -492,18 +530,18 @@
                                             </div>
 
                                             <div class="form-group mt-3">
-                                                <div class="syne-inputbox p-2"
+                                                <div class="syne-inputbox p-1"
                                                     onclick="formValidCheck('#add-work-experience', 2)">
                                                     <label for="location" class="syne-input-label">Position</label>
                                                     <div class="d-flex">
                                                         <input name="position" type="text" class="project-title-input"
-                                                            placeholder="Enter Job Title" id="location">
+                                                            placeholder="Enter Job Title" id="position">
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="form-group mt-3">
-                                                <div class="syne-inputbox p-2"
+                                                <div class="syne-inputbox p-1"
                                                     onclick="formValidCheck('#add-work-experience', 3)">
                                                     <label for="workLocation" class="syne-input-label">Location</label>
                                                     <div class="d-flex">
@@ -523,14 +561,14 @@
                                                     <label class="input-chkbx f12">
                                                         I Currently work here
                                                         <input type="checkbox" name="isCurrentlyWorking"
-                                                            id="isCurrentlyWorking">
+                                                            id="isCurrentlyWorking" checked>
                                                         <span class="checkmark"></span>
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="mt-3 d-flex justify-content-between w-100">
+                                            <div class="mt-3 d-flex justify-content-start w-100">
                                                 <div class="countryInput">
-                                                    <div class="syne-inputbox p-2"
+                                                    <div class="syne-inputbox p-1"
                                                         onclick="formValidCheck('#add-work-experience', 4)">
                                                         <label for="workStartDate" class="syne-input-label">From</label>
                                                         <div class="d-flex">
@@ -545,8 +583,8 @@
 
                                                     </div>
                                                 </div>
-                                                <div class="countryInput">
-                                                    <div class="syne-inputbox p-2 d-block" id="work-to-default"
+                                                <div class="countryInput ml-4">
+                                                    <div class="syne-inputbox p-1 d-none" id="work-to-default"
                                                         onclick="formValidCheck('#add-work-experience', 5)">
                                                         <label for="workEndDate" class="syne-input-label">To</label>
                                                         <div class="d-flex">
@@ -557,12 +595,13 @@
                                                                 src="img/calendar-grey.png">
                                                         </div>
                                                     </div>
-                                                    <div class="syne-inputbox p-2 d-none" id="work-to-present"
+                                                    <div class="syne-inputbox p-1 d-block" id="work-to-present"
                                                         onclick="formValidCheck('#add-work-experience', 5)">
-                                                        <label for="workEndDate" class="syne-input-label">To</label>
+                                                        <label for="workEndDate"
+                                                            class="syne-input-label medium-light-text">To</label>
                                                         <div class="d-flex">
                                                             <input id="workEndDate2" name="workEndDate2" type="text"
-                                                                class="startDateInput project-title-input"
+                                                                class="startDateInput light-text-2 font-weight-bold"
                                                                 placeholder="MM/YYYY" disabled value="Present">
                                                             <img style="height: 24px;" class="pr-2"
                                                                 src="img/calendar-grey.png">
@@ -588,7 +627,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="mt-3 m-2">
+                                            <div class="mt-3">
                                                 <button onclick="addWorkExperience()" id="addWorkExperienceBtn"
                                                     type="button"
                                                     class="btn proceedButton is-success mt-5 d-flex justify-content-around">
@@ -603,14 +642,14 @@
 
                         <div id="syne-add-school-college" class="pop-modal">
                             <div class="modalcontent">
-                                <div class="synemodal-body">
-                                    <div class="syne-lgin-r rltv p-3">
+                                <div class="synemodal-body pt-2">
+                                    <div class="syne-lgin-r rltv px-3 pt-5 pb-0">
                                         <a href="#" class="modalclose flex">
                                             <div class="modal-close-text">Close</div>
                                             <img src="img/close-icon.png" alt="close">
                                         </a>
                                     </div>
-                                    <div class="container py-3">
+                                    <div class="container px-5 pb-5">
                                         <div class="form-title modal-title">
                                             Add School / College
                                         </div>
@@ -619,7 +658,7 @@
                                                 Institution Details
                                             </div>
                                             <div class="form-group mt-3">
-                                                <div class="syne-inputbox p-2"
+                                                <div class="syne-inputbox p-1"
                                                     onclick="formValidCheck('#add-school-college', 1)">
                                                     <label for="institutionName" class="syne-input-label">
                                                         School/College Name
@@ -633,9 +672,9 @@
                                                 </div>
                                             </div>
 
-                                            <div class="form-group mt-3">
-                                                <div class="syne-inputbox p-2"
-                                                    onclick="formValidCheck('#add-school-college', 2)">
+                                            <div class="form-group mt-4">
+                                                <div class="syne-inputbox p-1"
+                                                    onclick=" formValidCheck('#add-school-college', 2)">
                                                     <label for="course" class="syne-input-label">Course</label>
                                                     <div class="d-flex">
                                                         <input name="course" type="text" class="project-title-input"
@@ -645,11 +684,12 @@
                                                 </div>
                                             </div>
 
-                                            <div class="form-group mt-3">
-                                                <div class="syne-inputbox p-2"
+                                            <div class="form-group mt-4">
+                                                <div class="syne-inputbox p-1"
                                                     onclick="formValidCheck('#add-school-college', 3)">
-                                                    <label for="fieldOfStudy" class="syne-input-label">Field of
-                                                        Study</label>
+                                                    <label for="fieldOfStudy" class="syne-input-label">
+                                                        Field of Study
+                                                    </label>
                                                     <div class="d-flex">
                                                         <input name="fieldOfStudy" type="text"
                                                             class="project-title-input"
@@ -662,9 +702,9 @@
                                             <div class="modal-title mt-3 font-weight-bold">
                                                 Time Period
                                             </div>
-                                            <div class="mt-3 d-flex justify-content-between w-100">
+                                            <div class="mt-3 d-flex justify-content-start w-100">
                                                 <div class="countryInput">
-                                                    <div class="syne-inputbox p-2"
+                                                    <div class="syne-inputbox p-1"
                                                         onclick="formValidCheck('#add-school-college', 4)">
                                                         <label for="instituteStartDate"
                                                             class="syne-input-label">From</label>
@@ -680,8 +720,8 @@
 
                                                     </div>
                                                 </div>
-                                                <div class="countryInput">
-                                                    <div class="syne-inputbox p-2 d-block"
+                                                <div class="countryInput ml-4">
+                                                    <div class="syne-inputbox p-1 d-block"
                                                         onclick="formValidCheck('#add-school-college', 5)">
                                                         <label for="instituteEndDate"
                                                             class="syne-input-label">To</label>
@@ -699,7 +739,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="form-group mt-3">
+                                            <div class="form-group mt-4">
                                                 <div class="d-flex align-items-center w-100 justify-content-start">
                                                     <div class="syne-inputbox p-0 border-0">
                                                         <select
@@ -713,7 +753,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="mt-3 m-2">
+                                            <div class="mt-3">
                                                 <button onclick="addSchoolCollege()" id="addSchoolCollegeBtn"
                                                     type="button"
                                                     class="btn proceedButton is-success mt-5 d-flex justify-content-around">
@@ -726,7 +766,6 @@
                             </div>
                         </div>
                     </div>
-                   
                 </div>
             </div>
 
@@ -765,7 +804,6 @@
             
             <div class="d-flex align-items-center">
                 <img style="height: 24px;" class="pr-2" src="img/location-grey-small.png">
-               
                 <span class="follower-text" style="color: deepskyblue;font-weight: bold;">
                 {{location}}
                 </span>

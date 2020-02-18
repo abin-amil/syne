@@ -329,6 +329,7 @@ input[type=text] {
 .like-share {
   font-size: 13px;
 }
+
 .like-comment {
   font-size: 14px;
 }
@@ -371,6 +372,10 @@ input[type=text] {
   font-size: 13px;
   font-weight: 600;
   color: #5d677e;
+}
+
+.menu-items div {
+  cursor: pointer;
 }
 
 .post-image {
@@ -583,33 +588,36 @@ body .no-padding {
   display: none;
 }
 
-.organisation-image{
-    max-height: 90px;
-    border: 2px solid white;
-    border-radius: 50%;
+.organisation-image {
+  max-height: 90px;
+  border: 2px solid white;
+  border-radius: 50%;
 }
 
-.organisation-add-text{
-    color: #7c8796;
-    font-weight: bold;
-    font-size: small;
+.organisation-add-text {
+  color: #7c8796;
+  font-weight: bold;
+  font-size: small;
 }
-.org-form-input{
-    font-size: 13px !important;
-    font-weight: 500 !important;
-    color: #2a3844 !important;
-    padding: 0px 0px 0px 12px !important;
-}
-.org-form-select{
+
+.org-form-input {
   font-size: 13px !important;
   font-weight: 500 !important;
   color: #2a3844 !important;
   padding: 0px 0px 0px 12px !important;
-  border:none;
+}
+
+.org-form-select {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #2a3844 !important;
+  padding: 0px 0px 0px 12px !important;
+  border: none;
   width: 100%;
 }
-.org-url-box{
-  background-color: lightgray; 
-  padding: 5px 0px 5px 5px; 
+
+.org-url-box {
+  background-color: lightgray;
+  padding: 5px 0px 5px 5px;
   border-radius: 6px;
 }
