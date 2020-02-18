@@ -388,6 +388,17 @@ input[type=text] {
   font-weight: bold;
 }
 
+.view-more {
+  font-family: HKGrotesk;
+  font-size: 13px;
+  color: #16c0ef;
+}
+
+.follow-people {
+  font-size: 11px;
+  color: #7c8796;
+}
+
 .target-amount {
   font-size: 13px;
 }
@@ -413,6 +424,17 @@ input[type=text] {
 
 .post-user {
   font-weight: bold;
+  font-size: 15px;
+}
+
+.post-user-name {
+  font-size: 12px;
+  color: #5d677e;
+}
+
+.post-time {
+  font-size: 12px;
+  color: #7c8796;
 }
 
 .follower-count {
