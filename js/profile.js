@@ -9,6 +9,59 @@ function updateAboutMe() {
 }
 
 function addWorkExperience() {
+    const companyName = $('#companyName').val();
+    const jobPosition = $('#jobPosition').val();
+    const jobLocation = $('#jobLocation').val();
+    const isCurrentlyWorking = $('#isCurrentlyWorking').val();
+    const workStartDate = $('#workStartDate').val();
+    let workEndDate = $('#workEndDate').val();
+    const workAccess = $('#workAccess').val();
+    let workDuration = null;
+    const startDate = new Date(workStartDate);
+    let endDate;
+    if (isCurrentlyWorking) {
+        workEndDate = 'Present';
+        endDate = new Date();
+    } else {
+        endDate = new Date(workEndDate);
+    }
+
+    workDuration = (endDate.getTime() - startDate.getTime()) / (1000 * 3600 * 24);
+
+    const newWork = document.createElement('div');
+    newWork.className = 'experience-container justify-content-between d-flex w-100';
+    const newWorkContent = `<div class="experience">
+            <div class="experience-image">
+                <img src="img/icon3.jpg" alt="">
+            </div>
+            <div class="experience-details d-flex flex-column">
+                <div class="experience-post font-weight-bold font-size-16">
+                ` + jobPosition + `
+                </div>
+                <div class="experience-place font-weight-bold font-size-14">
+                ` + companyName + `
+                </div>
+                <div class="experience-duration font-size-12">
+                ` + workStartDate + ' - ' + workEndDate + '. ' + workDuration + `
+                </div>
+                ` + jobLocation + `
+                </div>
+            </div>
+        </div>
+        <div class="edit-experience-button modal-btn cursor-pointer"
+            data-target="syne-add-work-experience">
+            <img src="img/edit-grey-small.png" alt="">Edit
+        </div>`;
+    newWork.innerHTML = newWorkContent;
+    document.getElementsByClassName('experience-list')[0].appendChild(newWork);
+
+    $('#companyName').val('');
+    $('#jobPosition').val('');
+    $('#jobLocation').val('');
+    $('#isCurrentlyWorking').prop("checked", true)
+    $('#workStartDate').val('');
+    $('#workEndDate').val('');
+    $('#workAccess').val('public');
     closeModal("#syne-add-work-experience");
 }
 
@@ -55,6 +108,18 @@ $(document).ready(function () {
     $("#syne-add-school-college .modalclose").click(function (e) {
         closeModal("#syne-add-school-college");
         e.preventDefault();
+    });
+
+    $('#isCurrentlyWorking').change(function (e) {
+        if (e.currentTarget.checked) {
+            $('#work-to-present').addClass('d-block');
+            $('#work-to-default').removeClass('d-block');
+            $('#work-to-default').addClass('d-none');
+        } else {
+            $('#work-to-default').addClass('d-block');
+            $('#work-to-present').removeClass('d-block');
+            $('#work-to-present').addClass('d-none');
+        }
     });
 });
 
