@@ -432,6 +432,23 @@ input[type=text] {
   color: #5d677e;
 }
 
+.modal-title {
+  font-family: HKGrotesk;
+  color: #2a3844;
+  font-size: 15px;
+}
+
+.modal-close-text {
+  color: #7c8796;
+  font-size: 14px;
+  font-family: HKGrotesk;
+}
+
+.follower-modal-height {
+  max-height: 339px;
+  overflow-y: auto;
+}
+
 .post-time {
   font-size: 12px;
   color: #7c8796;
@@ -551,7 +568,9 @@ body .no-padding {
 
 .follower-text {
   font-size: 13px;
-  color: #7c8796;
+  font-family: HKGrotesk-reg;
+  color: #7c8796 !important;
+  font-weight: normal !important;
 }
 
 .welcome-to-syne {

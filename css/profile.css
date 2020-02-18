@@ -116,6 +116,10 @@
     width: 55%;
     max-width: 700px !important;
 }
+.follower-modal {
+    width: 35%;
+    max-width: 500px !important;
+}
 
 #work-to-present {
     background-color: #e9ecef;
