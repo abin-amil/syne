@@ -116,6 +116,7 @@
     width: 55%;
     max-width: 700px !important;
 }
+
 .follower-modal {
     width: 35%;
     max-width: 500px !important;
@@ -194,24 +195,24 @@ input[type=text] {
     color: #bac3cf !important;
 }
 
-.experience-container:not(:first-child) {
+.experience-container:not(:first-child), .education-container:not(:first-child) {
     border-top: 1px solid #dee2e6;
     margin-top: 15px;
     padding-top: 15px;
 }
 
-.experience {
+.experience, .education {
     display: flex;
 }
 
-.experience-image {
+.experience-image, .education-image {
     height: 100%;
     display: flex;
     align-items: flex-start;
     margin-right: 1rem;
 }
 
-.experience-image img {
+.experience-image img, .education-image img {
     min-height: 70%;
     border: 1px solid #e9ecef;
     padding: 10px;

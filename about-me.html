@@ -158,33 +158,7 @@
                             </div>
                             <div class="d-flex flex-column">
                                 <div class="p-0 d-flex">
-                                    <div class="experience-list w-100">
-                                        <div class="experience-container justify-content-between d-flex w-100">
-                                            <div class="experience">
-                                                <div class="experience-image">
-                                                    <img src="img/icon3.jpg" alt="">
-                                                </div>
-                                                <div class="experience-details d-flex flex-column">
-                                                    <div class="experience-post font-weight-bold font-size-16">
-                                                        Senior Software Engineer
-                                                    </div>
-                                                    <div class="experience-place font-weight-bold font-size-14">
-                                                        Alphabet Inc.
-                                                    </div>
-                                                    <div class="experience-duration font-size-12">
-                                                        May 2009 - Present. 11 Yrs 3 mos
-                                                    </div>
-                                                    <div class="experience-location font-size-12">
-                                                        California, USA
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="edit-experience-button modal-btn cursor-pointer"
-                                                data-target="syne-add-work-experience">
-                                                <img src="img/edit-grey-small.png" alt="">Edit
-                                            </div>
-                                        </div>
-
+                                    <div class="experience-list w-100" id="experience-list">
                                     </div>
                                 </div>
                             </div>
@@ -197,6 +171,12 @@
                             <div class="txt-blue modal-btn p-3 my-3 border font-weight-bold cursor-pointer"
                                 data-target="syne-add-school-college">
                                 + Add a School / College
+                            </div>
+                            <div class="d-flex flex-column">
+                                <div class="p-0 d-flex">
+                                    <div class="education-list w-100" id="education-list">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -958,6 +938,30 @@
                 </div>
             </div>
             <div class="edit-experience-button modal-btn cursor-pointer" data-target="syne-add-work-experience">
+                <img src="img/edit-grey-small.png" alt="">Edit
+            </div>
+        </div>
+    </script>
+
+    <script id="template-education" type="text/template">
+        <div class="education-container justify-content-between d-flex w-100">
+            <div class="education">
+                <div class="education-image">
+                    <img src="img/icon3.jpg" alt="">
+                </div>
+                <div class="education-details d-flex flex-column">
+                    <div class="education-post font-weight-bold font-size-16">
+                        {{school}}
+                    </div>
+                    <div class="education-duration font-size-12">
+                        {{duration}}
+                    </div>
+                    <div class="education-location font-size-12">
+                        {{location}}
+                    </div>
+                </div>
+            </div>
+            <div class="edit-education-button cursor-pointer modal-btn" data-target="syne-add-school-college">
                 <img src="img/edit-grey-small.png" alt="">Edit
             </div>
         </div>
