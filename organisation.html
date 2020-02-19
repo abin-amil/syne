@@ -156,7 +156,7 @@
                             </form>
                         </div>
                         <div class="mt-2">
-                            <form>
+                            <form id="orgRegForm">
                                 <div class="form-group mt-3">
                                     <div class="syne-inputbox p-1">
                                         <label for="orgName" class="syne-input-label">
@@ -198,13 +198,13 @@
                                             <div class="ml-3">
                                                 <div class="custom-control custom-radio custom-control-inline">
                                                     <input type="radio" class="custom-control-input" id="forProfit"
-                                                        name="example" value="customEx">
+                                                        name="orgType" value="profit">
                                                     <label class="custom-control-label" for="forProfit">For
                                                         Profit</label>
                                                 </div>
                                                 <div class="custom-control custom-radio custom-control-inline">
                                                     <input type="radio" class="custom-control-input" id="nonProfit"
-                                                        name="example" value="customEx">
+                                                        name="orgType" value="nonProfit">
                                                     <label class="custom-control-label" for="nonProfit">Non
                                                         Profit</label>
                                                 </div>
@@ -263,8 +263,8 @@
                                                 <div class="project-title-input  pl-3">
                                                     syne.com/
                                                 </div>
-                                                <input id="projectUrl" type="text"
-                                                    class="form-control org-form-input px-0" placeholder="Project URL">
+                                                <input name="orgUrl" id="orgUrl" type="text"
+                                                    class="form-control org-form-input px-0" placeholder="Organisation URL">
                                             </div>
                                         </div>
                                     </div>

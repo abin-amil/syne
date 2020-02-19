@@ -55,9 +55,20 @@ function createOrganisation() {
 }
 
 function publishOrganisation() {
+    let orgRegFormValues = {};
+    $.each($('#orgRegForm').serializeArray(), function (i, field) {
+        orgRegFormValues[field.name] = field.value;
+    });
+    let newOrg = {
+        organisationName: orgRegFormValues.orgName ? orgRegFormValues.orgName : 'Second Org Name',
+        publishedDate: '24th Nov 2019',
+        organisationLogo: 'img/logo-2.png',
+        organisationUrl: orgRegFormValues.orgUrl ? orgRegFormValues.orgUrl : 'second-org-long-url'
+    };
+    organisationListData.push(newOrg);
+    createOrganisationList();
     document.getElementById('publishOrganisationPage').style.display = "none";
     document.getElementById('OrgLandingPage').style.display = "block";
-    createOrganisationList();
 }
 
 function createOrganisationList() {

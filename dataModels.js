@@ -159,11 +159,5 @@ var organisationListData = [
         publishedDate: '24th Nov 2019',
         organisationLogo: 'img/logo-1.png',
         organisationUrl: 'vivent-long-url'
-    },
-    {
-        organisationName: 'Second Org Names',
-        publishedDate: '24th Nov 2019',
-        organisationLogo: 'img/logo-2.png',
-        organisationUrl: 'second-org-long-url'
     }
 ];
