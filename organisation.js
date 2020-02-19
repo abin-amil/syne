@@ -1,5 +1,8 @@
 $(document).ready(function () {
+    setTab(6);
 });
+
+
 
 var projectDetails = {};
 Dropzone.options.orgLogo = {

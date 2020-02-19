@@ -8,12 +8,12 @@ var dashBoardData = {
     profilePhotoUrl: 'img/user.png',
     leftPanelTabs: [{
             name: 'Timeline',
-            iconUrl: 'img/time-line.png',
+            iconUrl: 'img/project-grey-small-copy-9.png',
             path: 'timeline.html',
             id: 1
         }, {
             name: 'About Me',
-            iconUrl: 'img/about-me.png',
+            iconUrl: 'img/project-grey-small-copy-8.png',
             path: 'about-me.html',
             id: 2
         },
@@ -165,12 +165,12 @@ var organisationDashBoardData = {
     profilePhotoUrl: 'img/user.png',
     leftPanelTabs: [{
             name: 'Timeline',
-            iconUrl: 'img/time-line.png',
+            iconUrl: 'img/project-grey-small-copy-9.png',
             path: 'timeline.html',
             id: 1
         }, {
             name: 'About Me',
-            iconUrl: 'img/about-me.png',
+            iconUrl: 'img/project-grey-small-copy-8.png',
             path: 'about-me.html',
             id: 2
         },
