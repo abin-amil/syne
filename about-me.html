@@ -200,328 +200,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div id="syne-edit-about-me" class="pop-modal">
-                        <div class="modalcontent">
-                            <div class="synemodal-body pt-2">
-                                <div class="syne-lgin-r rltv px-3 pt-5 pb-0">
-                                    <a href="#" class="modalclose flex">
-                                        <div class="modal-close-text">Close</div>
-                                        <img src="img/close-icon.png" alt="close">
-                                    </a>
-                                </div>
-                                <div class="container px-5 pb-5">
-                                    <div class="form-title modal-title">
-                                        About Me
-                                    </div>
-                                    <form id="edit-about-me" class="d-flex flex-column">
-
-                                        <div class="form-group mt-3">
-                                            <div>
-                                                <div class="syne-inputbox p-2">
-                                                    <label for="comment" class="Short-description-ab">
-                                                        Write some details about you
-                                                    </label>
-                                                    <textarea name="userDetailInto" id="userDetailInto"
-                                                        class="form-control syne-project-description"
-                                                        rows="5"></textarea>
-                                                </div>
-                                                <small class="noteinstr mt-1 form-text text-muted">
-                                                    In less than 100 words
-                                                </small>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group mt-4">
-                                            <div>
-                                                <div class="syne-inputbox p-2">
-                                                    <label for="projectUrl" class="syne-input-label">
-                                                        Project URL
-                                                    </label>
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="project-title-input pl-3">
-                                                            syne.com/
-                                                        </div>
-                                                        <input id="projectUrl" type="text"
-                                                            onblur="formValidCheck('#edit-about-me', 2)"
-                                                            name="projectUrl"
-                                                            onkeyup="addHyphen(this); formValidCheck('#edit-about-me', 2)"
-                                                            class="form-control project-title-input px-0"
-                                                            placeholder="Project URL">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mt-3">
-                                            <button onclick="updateAboutMe()" id="updateAboutMeBtn" type="button"
-                                                class="btn proceedButton is-success mt-4 d-flex justify-content-around">
-                                                Save Changes
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="syne-add-work-experience" class="pop-modal">
-                        <div class="modalcontent">
-                            <div class="synemodal-body pt-2">
-                                <div class="syne-lgin-r rltv px-3 pt-5 pb-0">
-                                    <a href="#" class="modalclose flex">
-                                        <div class="modal-close-text">Close</div>
-                                        <img src="img/close-icon.png" alt="close">
-                                    </a>
-                                </div>
-                                <div class="container px-5 pb-5">
-                                    <div class="form-title modal-title">
-                                        Add Work Experience
-                                    </div>
-                                    <form id="add-work-experience" name="add-work-experience">
-                                        <div class="modal-title mt-4 font-weight-bold">
-                                            Company Details
-                                        </div>
-                                        <div class="form-group mt-3 d-flex flex-column">
-                                            <div class="syne-inputbox p-1"
-                                                onclick="formValidCheck('#add-work-experience', 1)">
-                                                <label for="companyName" class="syne-input-label">
-                                                    Company Name
-                                                </label>
-                                                <div class="d-flex">
-                                                    <input name="companyName" type="text" class="project-title-input"
-                                                        placeholder="Enter Company Name" id="companyName">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group mt-3">
-                                            <div class="syne-inputbox p-1"
-                                                onclick="formValidCheck('#add-work-experience', 2)">
-                                                <label for="location" class="syne-input-label">Position</label>
-                                                <div class="d-flex">
-                                                    <input name="position" type="text" class="project-title-input"
-                                                        placeholder="Enter Job Title" id="position">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group mt-3">
-                                            <div class="syne-inputbox p-1"
-                                                onclick="formValidCheck('#add-work-experience', 3)">
-                                                <label for="workLocation" class="syne-input-label">Location</label>
-                                                <div class="d-flex">
-                                                    <input name="workLocation" type="text" class="project-title-input"
-                                                        placeholder="Enter work location" id="workLocation">
-                                                    <img style="height: 24px;" class="pr-2" src="img/location-icon.png">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-title mt-3 font-weight-bold">
-                                            Time Period
-                                        </div>
-                                        <div class="input-group mt-3">
-                                            <div class="flex flex-v-center">
-                                                <label class="input-chkbx f12">
-                                                    I Currently work here
-                                                    <input type="checkbox" name="isCurrentlyWorking"
-                                                        id="isCurrentlyWorking" checked>
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="mt-3 d-flex justify-content-start w-100">
-                                            <div class="countryInput">
-                                                <div class="syne-inputbox p-1"
-                                                    onclick="formValidCheck('#add-work-experience', 4)">
-                                                    <label for="workStartDate" class="syne-input-label">From</label>
-                                                    <div class="d-flex">
-                                                        <input id="workStartDate" name="workStartDate" type="text"
-                                                            class="startDateInput project-title-input"
-                                                            placeholder="MM/YYYY">
-                                                        <img style="height: 24px;" class="pr-2"
-                                                            src="img/calendar-grey.png">
-                                                    </div>
-                                                </div>
-                                                <div>
-
-                                                </div>
-                                            </div>
-                                            <div class="countryInput ml-4">
-                                                <div class="syne-inputbox p-1 d-none" id="work-to-default"
-                                                    onclick="formValidCheck('#add-work-experience', 5)">
-                                                    <label for="workEndDate" class="syne-input-label">To</label>
-                                                    <div class="d-flex">
-                                                        <input id="workEndDate" name="workEndDate" type="text"
-                                                            class="startDateInput project-title-input"
-                                                            placeholder="MM/YYYY">
-                                                        <img style="height: 24px;" class="pr-2"
-                                                            src="img/calendar-grey.png">
-                                                    </div>
-                                                </div>
-                                                <div class="syne-inputbox p-1 d-block" id="work-to-present"
-                                                    onclick="formValidCheck('#add-work-experience', 5)">
-                                                    <label for="workEndDate"
-                                                        class="syne-input-label medium-light-text">To</label>
-                                                    <div class="d-flex">
-                                                        <input id="workEndDate2" name="workEndDate2" type="text"
-                                                            class="startDateInput light-text-2 font-weight-bold"
-                                                            placeholder="MM/YYYY" disabled value="Present">
-                                                        <img style="height: 24px;" class="pr-2"
-                                                            src="img/calendar-grey.png">
-                                                    </div>
-                                                </div>
-                                                <div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group mt-3">
-                                            <div class="d-flex align-items-center w-100">
-                                                <div class="syne-inputbox border-0 p-0">
-                                                    <select
-                                                        class="selectpicker show-tick syne-inputbox mt-2 border-0 form-control"
-                                                        id="workAccess" name="workAccess">
-                                                        <option value="public">Public</option>
-                                                        <option value="friends">Friends</option>
-                                                        <option value="onlyMe">Only Me</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="mt-3">
-                                            <button onclick="addWorkExperience()" id="addWorkExperienceBtn"
-                                                type="button"
-                                                class="btn proceedButton is-success mt-5 d-flex justify-content-around">
-                                                Save Changes
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="syne-add-school-college" class="pop-modal">
-                        <div class="modalcontent">
-                            <div class="synemodal-body pt-2">
-                                <div class="syne-lgin-r rltv px-3 pt-5 pb-0">
-                                    <a href="#" class="modalclose flex">
-                                        <div class="modal-close-text">Close</div>
-                                        <img src="img/close-icon.png" alt="close">
-                                    </a>
-                                </div>
-                                <div class="container px-5 pb-5">
-                                    <div class="form-title modal-title">
-                                        Add School / College
-                                    </div>
-                                    <form id="add-school-college">
-                                        <div class="modal-title mt-4 font-weight-bold">
-                                            Institution Details
-                                        </div>
-                                        <div class="form-group mt-3">
-                                            <div class="syne-inputbox p-1"
-                                                onclick="formValidCheck('#add-school-college', 1)">
-                                                <label for="institutionName" class="syne-input-label">
-                                                    School/College Name
-                                                </label>
-                                                <div class="d-flex">
-                                                    <input name="institutionName" type="text"
-                                                        class="project-title-input"
-                                                        placeholder="Enter School/College Name" id="institutionName">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group mt-4">
-                                            <div class="syne-inputbox p-1"
-                                                onclick=" formValidCheck('#add-school-college', 2)">
-                                                <label for="course" class="syne-input-label">Course</label>
-                                                <div class="d-flex">
-                                                    <input name="course" type="text" class="project-title-input"
-                                                        placeholder="Eg: High School, Bachelor&apos;s, Master&apos;s etc."
-                                                        id="course">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group mt-4">
-                                            <div class="syne-inputbox p-1"
-                                                onclick="formValidCheck('#add-school-college', 3)">
-                                                <label for="fieldOfStudy" class="syne-input-label">
-                                                    Field of Study
-                                                </label>
-                                                <div class="d-flex">
-                                                    <input name="fieldOfStudy" type="text" class="project-title-input"
-                                                        placeholder="Enter Major Subjects" id="fieldOfStudy">
-                                                    <img style="height: 24px;" class="pr-2" src="img/location-icon.png">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-title mt-3 font-weight-bold">
-                                            Time Period
-                                        </div>
-                                        <div class="mt-3 d-flex justify-content-start w-100">
-                                            <div class="countryInput">
-                                                <div class="syne-inputbox p-1"
-                                                    onclick="formValidCheck('#add-school-college', 4)">
-                                                    <label for="instituteStartDate"
-                                                        class="syne-input-label">From</label>
-                                                    <div class="d-flex">
-                                                        <input id="instituteStartDate" name="instituteStartDate"
-                                                            type="text" class="startDateInput project-title-input"
-                                                            placeholder="MM/YYYY">
-                                                        <img style="height: 24px;" class="pr-2"
-                                                            src="img/calendar-grey.png">
-                                                    </div>
-                                                </div>
-                                                <div>
-
-                                                </div>
-                                            </div>
-                                            <div class="countryInput ml-4">
-                                                <div class="syne-inputbox p-1 d-block"
-                                                    onclick="formValidCheck('#add-school-college', 5)">
-                                                    <label for="instituteEndDate" class="syne-input-label">To</label>
-                                                    <div class="d-flex">
-                                                        <input id="instituteEndDate" name="instituteEndDate" type="text"
-                                                            class="startDateInput project-title-input"
-                                                            placeholder="MM/YYYY">
-                                                        <img style="height: 24px;" class="pr-2"
-                                                            src="img/calendar-grey.png">
-                                                    </div>
-                                                </div>
-                                                <div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group mt-4">
-                                            <div class="d-flex align-items-center w-100 justify-content-start">
-                                                <div class="syne-inputbox p-0 border-0">
-                                                    <select
-                                                        class="selectpicker show-tick syne-inputbox mt-2 border-0 form-control"
-                                                        id="workAccess" name="workAccess">
-                                                        <option value="public">Public</option>
-                                                        <option value="friends">Friends</option>
-                                                        <option value="onlyMe">Only Me</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="mt-3">
-                                            <button onclick="addSchoolCollege()" id="addSchoolCollegeBtn" type="button"
-                                                class="btn proceedButton is-success mt-5 d-flex justify-content-around">
-                                                Save Changes
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -731,6 +409,301 @@
         </div>
     </div>
 
+    <div id="syne-edit-about-me" class="pop-modal">
+        <div class="modalcontent">
+            <div class="synemodal-body pt-2">
+                <div class="syne-lgin-r rltv px-3 pt-5 pb-0">
+                    <a href="#" class="modalclose flex">
+                        <div class="modal-close-text">Close</div>
+                        <img src="img/close-icon.png" alt="close">
+                    </a>
+                </div>
+                <div class="container px-5 pb-5">
+                    <div class="form-title modal-title">
+                        About Me
+                    </div>
+                    <form id="edit-about-me" class="d-flex flex-column">
+
+                        <div class="form-group mt-3">
+                            <div>
+                                <div class="syne-inputbox p-2">
+                                    <label for="comment" class="Short-description-ab">
+                                        Write some details about you
+                                    </label>
+                                    <textarea name="userDetailInto" id="userDetailInto"
+                                        class="form-control syne-project-description" rows="5"></textarea>
+                                </div>
+                                <small class="noteinstr mt-1 form-text text-muted">
+                                    In less than 100 words
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-4">
+                            <div>
+                                <div class="syne-inputbox p-2">
+                                    <label for="projectUrl" class="syne-input-label">
+                                        Project URL
+                                    </label>
+                                    <div class="d-flex align-items-center">
+                                        <div class="project-title-input pl-3">
+                                            syne.com/
+                                        </div>
+                                        <input id="projectUrl" type="text" onblur="formValidCheck('#edit-about-me', 2)"
+                                            name="projectUrl"
+                                            onkeyup="addHyphen(this); formValidCheck('#edit-about-me', 2)"
+                                            class="form-control project-title-input px-0" placeholder="Project URL">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <button onclick="updateAboutMe()" id="updateAboutMeBtn" type="button"
+                                class="btn proceedButton is-success mt-4 d-flex justify-content-around">
+                                Save Changes
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="syne-add-work-experience" class="pop-modal">
+        <div class="modalcontent">
+            <div class="synemodal-body pt-2">
+                <div class="syne-lgin-r rltv px-3 pt-5 pb-0">
+                    <a href="#" class="modalclose flex">
+                        <div class="modal-close-text">Close</div>
+                        <img src="img/close-icon.png" alt="close">
+                    </a>
+                </div>
+                <div class="container px-5 pb-5">
+                    <div class="form-title modal-title">
+                        Add Work Experience
+                    </div>
+                    <form id="add-work-experience" name="add-work-experience">
+                        <div class="modal-title mt-4 font-weight-bold">
+                            Company Details
+                        </div>
+                        <div class="form-group mt-3 d-flex flex-column">
+                            <div class="syne-inputbox p-1" onclick="formValidCheck('#add-work-experience', 1)">
+                                <label for="companyName" class="syne-input-label">
+                                    Company Name
+                                </label>
+                                <div class="d-flex">
+                                    <input name="companyName" type="text" class="project-title-input"
+                                        placeholder="Enter Company Name" id="companyName">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <div class="syne-inputbox p-1" onclick="formValidCheck('#add-work-experience', 2)">
+                                <label for="location" class="syne-input-label">Position</label>
+                                <div class="d-flex">
+                                    <input name="position" type="text" class="project-title-input"
+                                        placeholder="Enter Job Title" id="position">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <div class="syne-inputbox p-1" onclick="formValidCheck('#add-work-experience', 3)">
+                                <label for="workLocation" class="syne-input-label">Location</label>
+                                <div class="d-flex">
+                                    <input name="workLocation" type="text" class="project-title-input"
+                                        placeholder="Enter work location" id="workLocation">
+                                    <img style="height: 24px;" class="pr-2" src="img/location-icon.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-title mt-3 font-weight-bold">
+                            Time Period
+                        </div>
+                        <div class="input-group mt-3">
+                            <div class="flex flex-v-center">
+                                <label class="input-chkbx f12">
+                                    I Currently work here
+                                    <input type="checkbox" name="isCurrentlyWorking" id="isCurrentlyWorking" checked>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mt-3 d-flex justify-content-start w-100">
+                            <div class="countryInput">
+                                <div class="syne-inputbox p-1" onclick="formValidCheck('#add-work-experience', 4)">
+                                    <label for="workStartDate" class="syne-input-label">From</label>
+                                    <div class="d-flex">
+                                        <input id="workStartDate" name="workStartDate" type="text"
+                                            class="startDateInput project-title-input" placeholder="MM/YYYY">
+                                        <img style="height: 24px;" class="pr-2" src="img/calendar-grey.png">
+                                    </div>
+                                </div>
+                                <div>
+
+                                </div>
+                            </div>
+                            <div class="countryInput ml-4">
+                                <div class="syne-inputbox p-1 d-none" id="work-to-default"
+                                    onclick="formValidCheck('#add-work-experience', 5)">
+                                    <label for="workEndDate" class="syne-input-label">To</label>
+                                    <div class="d-flex">
+                                        <input id="workEndDate" name="workEndDate" type="text"
+                                            class="startDateInput project-title-input" placeholder="MM/YYYY">
+                                        <img style="height: 24px;" class="pr-2" src="img/calendar-grey.png">
+                                    </div>
+                                </div>
+                                <div class="syne-inputbox p-1 d-block" id="work-to-present"
+                                    onclick="formValidCheck('#add-work-experience', 5)">
+                                    <label for="workEndDate" class="syne-input-label medium-light-text">To</label>
+                                    <div class="d-flex">
+                                        <input id="workEndDate2" name="workEndDate2" type="text"
+                                            class="startDateInput light-text-2 font-weight-bold" placeholder="MM/YYYY"
+                                            disabled value="Present">
+                                        <img style="height: 24px;" class="pr-2" src="img/calendar-grey.png">
+                                    </div>
+                                </div>
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <div class="d-flex align-items-center w-100">
+                                <div class="syne-inputbox border-0 p-0">
+                                    <select class="selectpicker show-tick syne-inputbox mt-2 border-0 form-control"
+                                        id="workAccess" name="workAccess">
+                                        <option value="public">Public</option>
+                                        <option value="friends">Friends</option>
+                                        <option value="onlyMe">Only Me</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <button onclick="addWorkExperience()" id="addWorkExperienceBtn" type="button"
+                                class="btn proceedButton is-success mt-5 d-flex justify-content-around">
+                                Save Changes
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="syne-add-school-college" class="pop-modal">
+        <div class="modalcontent">
+            <div class="synemodal-body pt-2">
+                <div class="syne-lgin-r rltv px-3 pt-5 pb-0">
+                    <a href="#" class="modalclose flex">
+                        <div class="modal-close-text">Close</div>
+                        <img src="img/close-icon.png" alt="close">
+                    </a>
+                </div>
+                <div class="container px-5 pb-5">
+                    <div class="form-title modal-title">
+                        Add School / College
+                    </div>
+                    <form id="add-school-college">
+                        <div class="modal-title mt-4 font-weight-bold">
+                            Institution Details
+                        </div>
+                        <div class="form-group mt-3">
+                            <div class="syne-inputbox p-1" onclick="formValidCheck('#add-school-college', 1)">
+                                <label for="institutionName" class="syne-input-label">
+                                    School/College Name
+                                </label>
+                                <div class="d-flex">
+                                    <input name="institutionName" type="text" class="project-title-input"
+                                        placeholder="Enter School/College Name" id="institutionName">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-4">
+                            <div class="syne-inputbox p-1" onclick=" formValidCheck('#add-school-college', 2)">
+                                <label for="course" class="syne-input-label">Course</label>
+                                <div class="d-flex">
+                                    <input name="course" type="text" class="project-title-input"
+                                        placeholder="Eg: High School, Bachelor&apos;s, Master&apos;s etc." id="course">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-4">
+                            <div class="syne-inputbox p-1" onclick="formValidCheck('#add-school-college', 3)">
+                                <label for="fieldOfStudy" class="syne-input-label">
+                                    Field of Study
+                                </label>
+                                <div class="d-flex">
+                                    <input name="fieldOfStudy" type="text" class="project-title-input"
+                                        placeholder="Enter Major Subjects" id="fieldOfStudy">
+                                    <img style="height: 24px;" class="pr-2" src="img/location-icon.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-title mt-3 font-weight-bold">
+                            Time Period
+                        </div>
+                        <div class="mt-3 d-flex justify-content-start w-100">
+                            <div class="countryInput">
+                                <div class="syne-inputbox p-1" onclick="formValidCheck('#add-school-college', 4)">
+                                    <label for="instituteStartDate" class="syne-input-label">From</label>
+                                    <div class="d-flex">
+                                        <input id="instituteStartDate" name="instituteStartDate" type="text"
+                                            class="startDateInput project-title-input" placeholder="MM/YYYY">
+                                        <img style="height: 24px;" class="pr-2" src="img/calendar-grey.png">
+                                    </div>
+                                </div>
+                                <div>
+
+                                </div>
+                            </div>
+                            <div class="countryInput ml-4">
+                                <div class="syne-inputbox p-1 d-block"
+                                    onclick="formValidCheck('#add-school-college', 5)">
+                                    <label for="instituteEndDate" class="syne-input-label">To</label>
+                                    <div class="d-flex">
+                                        <input id="instituteEndDate" name="instituteEndDate" type="text"
+                                            class="startDateInput project-title-input" placeholder="MM/YYYY">
+                                        <img style="height: 24px;" class="pr-2" src="img/calendar-grey.png">
+                                    </div>
+                                </div>
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-4">
+                            <div class="d-flex align-items-center w-100 justify-content-start">
+                                <div class="syne-inputbox p-0 border-0">
+                                    <select class="selectpicker show-tick syne-inputbox mt-2 border-0 form-control"
+                                        id="workAccess" name="workAccess">
+                                        <option value="public">Public</option>
+                                        <option value="friends">Friends</option>
+                                        <option value="onlyMe">Only Me</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <button onclick="addSchoolCollege()" id="addSchoolCollegeBtn" type="button"
+                                class="btn proceedButton is-success mt-5 d-flex justify-content-around">
+                                Save Changes
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- left panel template -->
     <script id="template-left-panel-user-details" type="text/template">
         <div class="full-name">
@@ -913,33 +886,33 @@
     <!-- recommended project panel -->
     <script id="template-recommended-project" type="text/template">
         <div class="recommended-project pt-3">
-        <div style="max-height:100px; overflow:hidden;">
-            <img class="img-fluid" src="{{imageUrl}}">
-        </div>
-        <div class="recommended-project-name pt-2">
-            {{projectName}}
-        </div>
-        <div class="recommended-project-disc pt-2">
-            {{projectContent}}
+            <div style="max-height:100px; overflow:hidden;">
+                <img class="img-fluid" src="{{imageUrl}}">
+            </div>
+            <div class="recommended-project-name pt-2">
+                {{projectName}}
+            </div>
+            <div class="recommended-project-disc pt-2">
+                {{projectContent}}
+            </div>
+
+            <div class="project-target pt-2 pb-1">
+                Target ₹{{targetAmount}}
+            </div>
+
+            <div class="progress" style="height: 5px;">
+                <div class="progress-bar" id="progressbar" role="progressbar" style="width: {{completionPercentage}}%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="d-flex justify-content-between pt-2">
+                <div class="raised-amount-text">Raised ₹{{raisedAmount}}</div>
+                <div class="raised-amount-percentage">{{completionPercentage}}%</div>
+            </div>
         </div>
 
-        <div class="project-target pt-2 pb-1">
-            Target ₹{{targetAmount}}
-        </div>
+        <div class="line-seperator my-3"></div>
 
-        <div class="progress" style="height: 5px;">
-            <div class="progress-bar" id="progressbar" role="progressbar" style="width: {{completionPercentage}}%;"
-                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="d-flex justify-content-between pt-2">
-            <div class="raised-amount-text">Raised ₹{{raisedAmount}}</div>
-            <div class="raised-amount-percentage">{{completionPercentage}}%</div>
-        </div>
-    </div>
-
-    <div class="line-seperator my-3"></div>
-
-</script>
+    </script>
 
     <!-- who to follow panel template -->
     <script id="template-who-to-follow-list-panel" type="text/template">
@@ -961,7 +934,34 @@
         </div>
 
         <div class="line-seperator my-3"></div>
-</script>
+    </script>
+
+    <script id="template-work-experience" type="text/template">
+        <div class="experience-container justify-content-between d-flex w-100">
+            <div class="experience">
+                <div class="experience-image">
+                    <img src="img/icon3.jpg" alt="">
+                </div>
+                <div class="experience-details d-flex flex-column">
+                    <div class="experience-post font-weight-bold font-size-16">
+                        {{work}}
+                    </div>
+                    <div class="experience-place font-weight-bold font-size-14">
+                        {{company}}
+                    </div>
+                    <div class="experience-duration font-size-12">
+                        {{duration}}
+                    </div>
+                    <div class="experience-location font-size-12">
+                        {{location}}
+                    </div>
+                </div>
+            </div>
+            <div class="edit-experience-button modal-btn cursor-pointer" data-target="syne-add-work-experience">
+                <img src="img/edit-grey-small.png" alt="">Edit
+            </div>
+        </div>
+    </script>
 
 </body>
 <script type="text/javascript" src="post-login.js"></script>
