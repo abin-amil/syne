@@ -9,41 +9,49 @@ var dashBoardData = {
     leftPanelTabs: [{
             name: 'Timeline',
             iconUrl: 'img/time-line.png',
-            path: 'timeline.html'
+            path: 'timeline.html',
+            id: 1
         }, {
             name: 'About Me',
             iconUrl: 'img/about-me.png',
-            path: 'about-me.html'
+            path: 'about-me.html',
+            id: 2
         },
         {
             name: 'Projects',
             iconUrl: 'img/project-grey-small.png',
-            path: 'projects.html'
+            path: 'projects.html',
+            id: 3
         },
         {
             name: 'Events',
             iconUrl: 'img/events-grey-small.png',
-            path: 'events.html'
+            path: 'events.html',
+            id: 4
         },
         {
             name: 'Stories',
             iconUrl: 'img/stories-grey-small.png',
-            path: 'stories.html'
+            path: 'stories.html',
+            id: 5
         },
         {
             name: 'Organisations',
             iconUrl: 'img/org-grey-small.png',
-            path: 'organisation.html'
+            path: 'organisation.html',
+            id: 6
         },
         {
             name: 'Transactions',
             iconUrl: 'img/transaction-grey-small.png',
-            path: 'transactions.html'
+            path: 'transactions.html',
+            id: 7
         },
         {
             name: 'Settings & Privacy',
             iconUrl: 'img/settings-grey-small.png',
-            path: 'settings-privacy.html'
+            path: 'settings-privacy.html',
+            id: 8
         }
     ],
     newsFeedData: [{
@@ -158,41 +166,49 @@ var organisationDashBoardData = {
     leftPanelTabs: [{
             name: 'Timeline',
             iconUrl: 'img/time-line.png',
-            path: 'timeline.html'
+            path: 'timeline.html',
+            id: 1
         }, {
             name: 'About Me',
             iconUrl: 'img/about-me.png',
-            path: 'about-me.html'
+            path: 'about-me.html',
+            id: 2
         },
         {
             name: 'Projects',
             iconUrl: 'img/project-grey-small.png',
-            path: 'projects.html'
+            path: 'projects.html',
+            id: 3
         },
         {
             name: 'Events',
             iconUrl: 'img/events-grey-small.png',
-            path: 'events.html'
+            path: 'events.html',
+            id: 4
         },
         {
             name: 'Stories',
             iconUrl: 'img/stories-grey-small.png',
-            path: 'stories.html'
+            path: 'stories.html',
+            id: 5
         },
         {
             name: 'Organisations',
             iconUrl: 'img/org-grey-small.png',
-            path: 'organization.html'
+            path: 'organization.html',
+            id: 6
         },
         {
             name: 'Transactions',
             iconUrl: 'img/transaction-grey-small.png',
-            path: 'transactions.html'
+            path: 'transactions.html',
+            id: 7
         },
         {
             name: 'Settings & Privacy',
             iconUrl: 'img/settings-grey-small.png',
-            path: 'settings-privacy.html'
+            path: 'settings-privacy.html',
+            id: 8
         }
     ],
     newsFeedData: [{

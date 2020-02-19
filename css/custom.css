@@ -374,6 +374,10 @@ input[type=text] {
   color: #5d677e;
 }
 
+.menu-items-wrapper {
+  margin: 0 -1.5rem;
+}
+
 .menu-items div {
   cursor: pointer;
 }
@@ -382,6 +386,11 @@ input[type=text] {
   cursor: pointer;
   color: #5d677e;
   text-decoration: none;
+}
+
+.menu-items a.active {
+  background-color: rgba(22, 192, 239, 0.2);
+  border-left: 3px solid rgb(22, 192, 239);
 }
 
 .post-image {

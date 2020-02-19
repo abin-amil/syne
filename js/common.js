@@ -49,7 +49,8 @@ function createLeftPanelTabs() {
         dashBoardData.leftPanelTabs.forEach((tab, index) => {
             leftPanelTabFinalHtml += leftPanelTabHtml.replace(/{{iconUrl}}/g, tab.iconUrl)
                 .replace(/{{tabName}}/g, tab.name)
-                .replace(/{{path}}/g, tab.path);
+                .replace(/{{path}}/g, tab.path)
+                .replace(/{{id}}/g, tab.id);
         });
 
         document.getElementById("left-panel-tabs").innerHTML = leftPanelTabFinalHtml;
@@ -88,4 +89,10 @@ function whoToFollowListPanelCreation() {
     });
 
     document.getElementById("who-to-follow-list-panel").innerHTML = whoToFollowListPanelFinalHtml;
+}
+
+function setTab(tabId) {
+    $('.menu-items a.active').toggleClass('active');
+    const id = '#syne-tab' + tabId;
+    $(id).addClass('active');
 }

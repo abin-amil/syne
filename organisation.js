@@ -76,7 +76,8 @@ function createLeftPanelTabs() {
         organisationDashBoardData.leftPanelTabs.forEach((tab, index) => {
             leftPanelTabFinalHtml += leftPanelTabHtml.replace(/{{iconUrl}}/g, tab.iconUrl)
                 .replace(/{{tabName}}/g, tab.name)
-                .replace(/{{path}}/g, tab.path);
+                .replace(/{{path}}/g, tab.path)
+                .replace(/{{id}}/g, tab.id);
         });
 
         document.getElementById("left-panel-tabs").innerHTML = leftPanelTabFinalHtml;
