@@ -94,6 +94,10 @@ $(document).ready(function () {
         closeModal("#syne-edit-profile");
         e.preventDefault();
     });
+    $("#syne-followers .modalclose").click(function (e) {
+        closeModal("#syne-followers");
+        e.preventDefault();
+    });
 
     $("#syne-edit-about-me .modalclose").click(function (e) {
         closeModal("#syne-edit-about-me");

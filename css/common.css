@@ -625,3 +625,7 @@ input.common-input {
 .profile-top-banner {
     height: 400px;
 }
+
+.follower-count.modal-btn {
+    cursor: pointer;
+}
