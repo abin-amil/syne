@@ -43,7 +43,7 @@ Dropzone.options.orgLogo = {
     }
 };
 
-function createNewOrganisation(){
+function createNewOrganisation() {
     document.getElementById('createOrgEmptyState').style.display = "none";
     document.getElementById('OrgLandingPage').style.display = "none";
     document.getElementById('publishOrganisationPage').style.display = "block";
@@ -57,4 +57,22 @@ function createOrganisation() {
 function publishOrganisation() {
     document.getElementById('publishOrganisationPage').style.display = "none";
     document.getElementById('OrgLandingPage').style.display = "block";
+    createOrganisationList();
+}
+
+function createOrganisationList() {
+    let organisationList = document.getElementById("template-organisation-list");
+    let organisationListHtml = organisationList.innerHTML;
+    let organisationListFinalHtml = "";
+    organisationListData.forEach((organisation, index) => {
+        organisationListFinalHtml += organisationListHtml.replace(/{{organisationName}}/g, organisation.organisationName)
+            .replace(/{{publishedDate}}/g, organisation.publishedDate)
+            .replace(/{{organisationLogo}}/g, organisation.organisationLogo)
+            .replace(/{{organisationUrl}}/g, organisation.organisationUrl)
+    });
+
+    if (document.getElementById("organisation-list-panel")) {
+        document.getElementById("organisation-list-panel").innerHTML = organisationListFinalHtml;
+    }
+
 }
