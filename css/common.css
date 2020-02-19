@@ -621,3 +621,7 @@ input.common-input {
 .font-weight-bold {
     font-weight: bold;
 }
+
+.profile-top-banner {
+    height: 400px;
+}
