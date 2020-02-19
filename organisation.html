@@ -18,23 +18,36 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/dropzone-style.css">
     <link rel="stylesheet" href="css/post-login.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
 
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <!-- Datepicker -->
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
 </head>
+
 
 <body class="post-page-bg">
     <div class="wrapper">
@@ -42,26 +55,32 @@
             <div class="main-wrapper">
 
                 <div class="headerwrap flex">
-                    <div class="header-l w50 flex flex-h-start flex-v-center">
-                        <div class="logo">
+                    <div class="header-l flex flex-h-start flex-v-base">
+                        <div class="logo h-100">
                             <img src="img/syne-logo.png" alt="logo">
                         </div>
-                        <div class="header-menu">
-                            <ul>
-                                <li><a class="txt-blue f14 modal-button" data-toggle="modal"
-                                        data-target="#exampleModal">Start a
-                                        Project</a></li>
-                                <li><a href="#" class="f14">Explore Projects</a></li>
+                        <div class="header-menu h-100">
+                            <ul class="d-flex align-items-center">
+                                <li>
+                                    <a class="txt-blue f14 modal-button" data-toggle="modal"
+                                        data-target="#exampleModal">
+                                        Start a Project
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="f14">
+                                        Explore Projects
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="heade-r flex flex-v-center w30">
-                        <div class="header-form right">
-                            <form action="">
-                                <input id="search" name="search" type="text" placeholder="What're we looking for ?">
-                                <input id="search_submit" value="Rechercher" type="submit">
-                            </form>
+                    <div class="heade-r flex flex-v-center">
+                        <div class="syne-inputbox d-flex align-items-center bg-grey-light mr-2">
+                            <img style="height: 20px;" src="img/search.png">
+                            <input type="text" name="projectSearch"
+                                class="form-control bg-grey-light font-weight-normal" placeholder="Search here">
                         </div>
                         <a href="#" class="txt-blue right modal-btn" href="#syne-login"
                             data-target="syne-login">Login</a>
@@ -72,23 +91,29 @@
 
         </div>
     </div>
+
+    <div>
+        <div class="profile-top-banner" id="left-panel-top-banner">
+            <!-- left panel top banner template fill here  -->
+        </div>
+
+    </div>
     <div class="container">
+        <div class="overlay-trigger" id="left-panel-top-banner">
+            <img class="img-fluid profile-photo" src="img/user.png">
+            <div class="overlay-item profile-overlay">
+                <a class="profile-edit-button text-center">
+                    Edit
+                </a>
+            </div>
+
+        </div>
         <div class="row pt-4">
             <div class="col-3 px-0 left-tab">
-                <div class="profile-top-banner" id="left-panel-top-banner">
-                    <!-- left panel top banner template fill here  -->
-                </div>
+
                 <div class="px-4 py-4">
                     <div id="left-panel-user-details">
                         <!-- left panel template fill here -->
-                    </div>
-                    <div class="menu-items py-4" id="left-panel-tabs">
-                        <!-- left panel tabs template fill here -->
-                    </div>
-                    <div class="mt-2">
-                        <div>
-                            <a href="" style="color: deepskyblue;font-size: small" class="modal-btn">Edit Profile</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -266,12 +291,13 @@
                         </div>
                         <div class="col-5"></div>
                         <div class="mt-3 m-2">
-                            <button id="createNew" type="button" class="btn  proceedButton" style="width: 100%;">
+                            <button id="createNew" type="button" class="btn  proceedButton" style="width: 100%;"
+                                onclick="createNewOrganisation()">
                                 + Create New
                             </button>
                         </div>
                     </div>
-                    <div class="mt-5">
+                    <div class="mt-3">
                         <div class="d-flex">
                             <div class="mt-2">
                                 <div class="full-name">Vivent Org</div>
@@ -280,7 +306,8 @@
                             </div>
                             <div class="col-5"></div>
                             <div>
-                                <img class="profile-photo" style="position: unset;" src="img/logo-1.png">
+                                <img class="profile-photo mt-1" style="max-height: 130px; max-width: 130px;"
+                                    src="img/logo-1.png">
                             </div>
                         </div>
                         <div class="mt-1">
@@ -299,7 +326,8 @@
                             </div>
                             <div class="col-5"></div>
                             <div>
-                                <img class="profile-photo" style="position: unset;" src="img/logo-2.png">
+                                <img class="profile-photo mt-1" style="max-height: 130px; max-width: 130px;"
+                                    src="img/logo-2.png">
                             </div>
                         </div>
                         <div class="mt-1">
@@ -331,14 +359,188 @@
                         View more…
                     </div>
                 </div>
-                <div class="right-tab mt-3 px-3 pb-2">
-                    <div class="recommended-projects-text pt-3">Recommended Organisation</div>
-                    <div id="recommended-organisation-panel">
-                        <!-- who to follow template fill here for recommended organisation list -->
+            </div>
+        </div>
+    </div>
+
+    <div id="syne-edit-profile" class="pop-modal">
+        <div class="modalcontent">
+            <div class="synemodal-body">
+                <div class="syne-lgin-r rltv p-3">
+                    <a href="#" class="modalclose flex">
+                        <div class="modal-close-text">Close</div>
+                        <img src="img/close-icon.png" alt="close">
+                    </a>
+                </div>
+                <div class="container py-3">
+                    <div class="form-title modal-title">
+                        Edit Profile
                     </div>
-                    <div class="d-flex justify-content-center pt-3 view-more py-2">
-                        View more…
+                    <form id="editProfileForm">
+
+                        <div class="form-group mt-3">
+                            <div>
+                                <div class="syne-inputbox p-2">
+                                    <label for="comment" class="Short-description-ab">
+                                        Short intro about you
+                                    </label>
+                                    <textarea name="userDetailInto" id="userDetailInto"
+                                        class="form-control syne-project-description" rows="5"></textarea>
+                                </div>
+                                <small class="noteinstr mt-1 form-text text-muted">
+                                    In less than 30 words
+                                </small>
+                            </div>
+                        </div>
+                        <div class="mt-3 d-flex justify-content-between w-100">
+                            <div class="countryInput m-2">
+                                <div class="syne-inputbox p-2" onclick="formValidCheck('#editProfileForm', 2)">
+                                    <label for="dateOfBirth" class="syne-input-label">Date of Birth</label>
+                                    <div class="d-flex">
+                                        <input id="dateOfBirth" name="dateOfBirth" type="text"
+                                            class="startDateInput project-title-input" placeholder="DD/MM/YY">
+                                        <img style="height: 24px;" class="pr-2" src="img/calendar-grey.png">
+                                    </div>
+                                </div>
+                                <div>
+
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="syne-inputbox p-2 border-0">
+                                    <select class="selectpicker show-tick syne-inputbox mt-2 ml-3 border-0 form-control"
+                                        id="dateOfBirthAccess" name="dateOfBirthAccess">
+                                        <option value="public">Public</option>
+                                        <option value="friends">Friends</option>
+                                        <option value="onlyMe">Only Me</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 d-flex justify-content-between w-100">
+                            <div class="countryInput m-2" style="width:70%;">
+                                <div class="syne-inputbox p-2" onclick="formValidCheck('#editProfileForm', 3)">
+                                    <label for="userLocation" class=" syne-input-label">Location</label>
+                                    <div class="d-flex">
+                                        <input name="userLocation" type="text" class="project-title-input"
+                                            placeholder="Enter your current location" id="userLocation">
+                                        <img style="height: 24px;" class="pr-2" src="img/location-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="syne-inputbox p-2 border-0">
+                                    <select class="selectpicker show-tick syne-inputbox mt-2 ml-3 border-0 form-control"
+                                        id="locationAccess" name="locationAccess">
+                                        <option value="public">
+                                            <img src="img/syne-logo.png" alt="logo">
+                                            Public
+                                        </option>
+                                        <option value="friends">Friends</option>
+                                        <option value="onlyMe">Only Me</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="mt-3 m-2">
+                            <button onclick="updateProfile()" id="updateProfileBtn" type="button"
+                                class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
+                                Save Changes
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="syne-followers" class="pop-modal">
+        <div class="modalcontent follower-modal">
+            <div class="synemodal-body">
+                <div class="syne-lgin-r rltv p-3">
+                    <div class="form-title modal-title">
+                        Followers
                     </div>
+                    <a href="#" class="modalclose flex">
+                        <div class="modal-close-text">Close</div>
+                        <img src="img/close-icon.png" alt="close">
+                    </a>
+                </div>
+                <div class="container p-0 follower-modal-height">
+
+                    <div class="line-seperator mb-2"></div>
+
+                    <div class="d-flex justify-content-between align-items-center px-3">
+                        <div class="d-flex p-2">
+                            <img style="height:40px" src="img/user.png">
+                            <div class="px-2">
+                                <div class="follow_person_name">Name</div>
+                                <div class="follower-user-name">username</div>
+                            </div>
+                        </div>
+                        <div class="follow-button px-4 py-1">
+                            Follow
+                        </div>
+                    </div>
+                    <div class="line-seperator my-2"></div>
+
+                    <div class="d-flex justify-content-between align-items-center px-3">
+                        <div class="d-flex p-2">
+                            <img style="height:40px" src="img/user.png">
+                            <div class="px-2">
+                                <div class="follow_person_name">Name</div>
+                                <div class="follower-user-name">username</div>
+                            </div>
+                        </div>
+                        <div class="follow-button px-4 py-1">
+                            Follow
+                        </div>
+                    </div>
+                    <div class="line-seperator my-2"></div>
+
+                    <div class="d-flex justify-content-between align-items-center px-3">
+                        <div class="d-flex p-2">
+                            <img style="height:40px" src="img/user.png">
+                            <div class="px-2">
+                                <div class="follow_person_name">Name</div>
+                                <div class="follower-user-name">username</div>
+                            </div>
+                        </div>
+                        <div class="follow-button px-4 py-1">
+                            Follow
+                        </div>
+                    </div>
+                    <div class="line-seperator my-2"></div>
+
+                    <div class="d-flex justify-content-between align-items-center px-3">
+                        <div class="d-flex p-2">
+                            <img style="height:40px" src="img/user.png">
+                            <div class="px-2">
+                                <div class="follow_person_name">Name</div>
+                                <div class="follower-user-name">username</div>
+                            </div>
+                        </div>
+                        <div class="follow-button px-4 py-1">
+                            Follow
+                        </div>
+                    </div>
+                    <div class="line-seperator my-2"></div>
+
+                    <div class="d-flex justify-content-between align-items-center px-3">
+                        <div class="d-flex p-2">
+                            <img style="height:40px" src="img/user.png">
+                            <div class="px-2">
+                                <div class="follow_person_name">Name</div>
+                                <div class="follower-user-name">username</div>
+                            </div>
+                        </div>
+                        <div class="follow-button px-4 py-1">
+                            Follow
+                        </div>
+                    </div>
+                    <div class="line-seperator my-2"></div>
+
                 </div>
             </div>
         </div>
@@ -346,106 +548,244 @@
 
     <!-- left panel template -->
     <script id="template-left-panel-user-details" type="text/template">
-            <div class="full-name">
-                {{name}}
-            </div>
-            <div class="user-name mt-2">
-                {{mailId}}
-            </div>
-            <div class="mt-2">
-                <span class="w-25">
-                    <img style="height: 16px;" class="pr-2" src="img/location-icon.png">
+        <div class="full-name">
+            {{name}}
+        </div>
+        <div class="user-name mt-2">
+            {{mailId}}
+        </div>
+        <div class="mt-2">
+            
+            <div class="d-flex align-items-center">
+                <img style="height: 24px;" class="pr-2" src="img/location-grey-small.png">
+                <span class="follower-text" style="color: deepskyblue;font-weight: bold;">
+                {{location}}
                 </span>
-                <span class="follower-text">{{location}}</span>
             </div>
-            <div class="mt-2">
-                <div class="follower-text">{{introDetails}}</div>
+        <div>            
+            <div class="follower-text">{{userIntroDetails}}</div>
+        </div>
+        <div class="line-seperator my-3"></div>
+        <div class="d-flex justify-content-between">
+            <div>
+                <div class="follower-count modal-btn" href="#syne-followers"
+                data-target="syne-followers">{{followersCount}}</div>
+                <a class="follower-text" >Followers</a>
             </div>
-            <div class="line-seperator my-2"></div>
-
-            <div class="d-flex justify-content-between">
-                <div class="mt-3">
-                    <div class="follower-count">{{followersCount}}</div>
-                    <div class="follower-text">Followers</div>
+            <div>
+                <div class="follower-count">{{followingCount}}</div>
+                <div class="follower-text">Following</div>
+            </div>
+        </div>
+        <div class="menu-items-wrapper">
+            <div class="menu-items py-4" id="left-panel-tabs">
+                <!-- left panel tabs template fill here -->
+            </div>
+            <div class="mt-2 pl-3">
+                <div>
+                    <img style="height: 24px;" class="pr-2" src="img/edit-blue-small.png">
+                    <a style="color: deepskyblue;font-size: small" class="modal-btn" href="#syne-edit-profile"
+                    data-target="syne-edit-profile">
+                    Edit Profile
+                    </a>
+                    <!-- <a class="modal-btn">Edit Profile</a> -->
                 </div>
-                <div class="mt-3">
-                    <div class="follower-count">{{followingCount}}</div>
-                    <div class="follower-text">Following</div>
-                </div>
             </div>
+        </div>
     </script>
 
     <!-- left panel tabs template -->
     <script id="template-left-panel-tab-details" type="text/template">
-        <a class="d-flex mt-3" href="{{path}}" id="syne-tab{{id}}">
+        <a class="d-flex py-3 pl-3" href="{{path}}" id="syne-tab{{id}}">
             <img src="{{iconUrl}}">
             <div class="px-2">{{tabName}}</div>
         </a>
     </script>
 
-    <!-- left panel top banner template -->
+    <!-- left `panel top banner template -->
     <script id="template-left-panel-top-banner" type="text/template">
-        <img class="img-fluid" src="{{coverPhotoUrl}}">
-        <img class="img-fluid profile-photo" src="{{profilePhotoUrl}}">
+        <img class="img-fluid w-100 profile-photo-height" src="{{coverPhotoUrl}}">
+    <!-- <img class="img-fluid profile-photo" src="{{profilePhotoUrl}}"> -->
+    </script>
+
+    <!-- profile completion showing section template -->
+    <script id="template-profile-comleption-section" type="text/template">
+        <div class="hello-user-text">
+        Hello {{name}},
+    </div>
+    <div class="welcome-text pt-2">
+        <span class="welcome-to-syne">Welcome to Syne.</span>Your Profile is {{profileCompletionPercentage}} complete!
+    </div>
+    <div class="pt-2">
+        <div class="progress" style="height: 5px;">
+            <div class="progress-bar" id="progressbar" role="progressbar" style="width: {{profileCompletionPercentage}}%;"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+    <div>
+    </div>
+    <div class="pt-2 d-flex justify-content-between">
+        <div class="d-flex align-items-center d-flex justify-content-center">
+            <img src="img/check-green-small.png">
+            <div class="pl-2">Account</div>
+        </div>
+        <div class="d-flex align-items-center d-flex justify-content-center">
+            <img src="img/check-green-small.png">
+            <div class="pl-2">Profile Picture</div>
+        </div>
+        <div class="d-flex  align-items-center d-flex justify-content-center">
+            <img src="img/check-green-small.png">
+            <div class="pl-2">Cover Picture</div>
+        </div>
+        <div class="d-flex  align-items-center d-flex justify-content-center">
+            <img src="img/check-green-small.png">
+            <div class="pl-2">Short Bio</div>
+        </div>
+    </div>
+    </script>
+
+    <!-- news feed template -->
+    <script id="template-news-feed" type="text/template">
+        <div class="post-card mt-3">
+            <div class="post-card-header">
+                <div class="d-flex p-4">
+                    <div class="post-profile-photo">
+                        <img style="height: 58px;;" src="{{userImage}}">
+                    </div>
+                    <div class="pl-3">
+                        <div class="post-user">{{name}}</div>
+                        <div class="post-user-name">{{email}}</div>
+                        <div class="post-time">{{postedTimeDuration}} ago</div>
+                    </div>
+                </div>
+        
+                <div>
+                    <img class="img-fluid" src="{{imageUrl}}">
+                </div>
+        
+                <div class="p-4">
+                    <div class="post-project-caption">{{descriptionHeading}}</div>
+                    <div class="post-project-desc pt-1">
+                        {{descripionContent}}
+                    </div>
+        
+                    <div class="pt-2 target-amount" style="display:{{isTargetAmountDisplay}}">Target ₹{{targetAmount}}</div>
+                    <div class="pt-2" style="display:{{isprogressBarVisible}}">
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar" id="progressbar" role="progressbar" style="width: {{progessBarWidth}}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex pt-2 justify-content-between">
+                            <div class="raised-amount" style="display:{{isRaisedAmountDisplay}}">Raised ₹{{raisedAmount}}</div>
+                            <div class="d-flex">
+                                <div class="contributors-comment" style="display:{{showContibutors}}">{{contibutorsCount}} Contributors</div>
+                                <div class="progress-percentage pl-2" style="display:{{showPercentage}}">{{completionPercentage}}%</div>
+                            </div>
+                        </div>
+        
+                        <div class="d-flex align-items-center pt-3 like-comment">
+                            <div class="d-flex align-items-center">
+                                <img class="pr-1" src="img/like-checked.png">
+                                Like
+                            </div>
+                            <div class="pl-3 d-flex align-items-center">
+                                <img class="pr-1" src="img/share-checked.png">
+                                Share
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between py-3">
+                            <div class="d-flex like-share">
+                                <div><span style="display:{{isLikeByMe}}">You & </span>{{likeCount}} likes</div>
+                                <div class="pl-3">{{shareCount}} Shares</div>
+                            </div>
+                            <div class="like-share">
+                                {{commentCount}} Comments
+                            </div>
+                        </div>
+        
+                        <div class="d-flex align-items-center justify-content-between">
+                            <img style="height: 32px;" src="img/user.png">
+                            <div class="d-flex w-100 justify-content-between comment-box p-1 ml-2">
+                                <div>
+                                    <input placeholder="Write a reply…" class="comment-box-color" type="text" name="firstname">
+                                </div>
+                                <div class="pr-2">
+                                    <img src="img/smiley-lgrey-small.png"> 
+                                    <img src="img/camera-lgrey-small.png">
+                                </div>
+                            </div>
+                        </div>
+        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>        
     </script>
 
     <!-- recommended project panel -->
     <script id="template-recommended-project" type="text/template">
         <div class="recommended-project pt-3">
-            <div style="max-height:100px; overflow:hidden;">
-                <img class="img-fluid" src="{{imageUrl}}">
-            </div>
-            <div class="recommended-project-name pt-2">
-                {{projectName}}
-            </div>
-            <div class="recommended-project-disc pt-2">
-                {{projectContent}}
-            </div>
-
-            <div class="project-target pt-2 pb-1">
-                Target ₹{{targetAmount}}
-            </div>
-
-            <div class="progress" style="height: 5px;">
-                <div class="progress-bar" id="progressbar" role="progressbar" style="width: {{completionPercentage}}%;"
-                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <div class="d-flex justify-content-between pt-2">
-                <div class="raised-amount-text">Raised ₹{{raisedAmount}}</div>
-                <div class="raised-amount-percentage">{{completionPercentage}}%</div>
-            </div>
+        <div style="max-height:100px; overflow:hidden;">
+            <img class="img-fluid" src="{{imageUrl}}">
+        </div>
+        <div class="recommended-project-name pt-2">
+            {{projectName}}
+        </div>
+        <div class="recommended-project-disc pt-2">
+            {{projectContent}}
         </div>
 
-        <div class="line-seperator my-3"></div>
+        <div class="project-target pt-2 pb-1">
+            Target ₹{{targetAmount}}
+        </div>
 
-    </script>
+        <div class="progress" style="height: 5px;">
+            <div class="progress-bar" id="progressbar" role="progressbar" style="width: {{completionPercentage}}%;"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="d-flex justify-content-between pt-2">
+            <div class="raised-amount-text">Raised ₹{{raisedAmount}}</div>
+            <div class="raised-amount-percentage">{{completionPercentage}}%</div>
+        </div>
+    </div>
+
+    <div class="line-seperator my-3"></div>
+
+</script>
 
     <!-- who to follow panel template -->
     <script id="template-who-to-follow-list-panel" type="text/template">
         <div class="recommended-project pt-3">
-            <div class="follow-people">
-                Followed by {{mutualFollwerName}} & {{mutualFollowersCount}} others
-            </div>
-            <div class="d-flex pt-2">
-                <img class="img-fluid" style="height: 48px;" src="{{imageUrl}}">
-                    <div class="pl-3">
-                        <div class="follow_person_name">{{name}}</div>
-                        <div class="follower-user-name">{{email}}</div>
-                    </div>
-                            </div>
-                <div class="d-flex pt-3 justify-content-between align-items-center">
-                    <div class="follow-button py-1 px-4">Follow</div>
-                    <div class="followers-count">{{followersCount}} Followers</div>
+        <div class="follow-people">
+            Followed by {{mutualFollwerName}} & {{mutualFollowersCount}} others
+        </div>
+        <div class="d-flex pt-2">
+            <img class="img-fluid" style="height: 48px;" src="{{imageUrl}}">
+                <div class="pl-3">
+                    <div class="follow_person_name">{{name}}</div>
+                    <div class="follower-user-name">{{email}}</div>
                 </div>
+                        </div>
+            <div class="d-flex pt-3 justify-content-between align-items-center">
+                <div class="follow-button py-1 px-4">Follow</div>
+                <div class="followers-count">{{followersCount}} Followers</div>
             </div>
+        </div>
 
-            <div class="line-seperator my-3"></div>
-    </script>
+        <div class="line-seperator my-3"></div>
+</script>
+
 </body>
 <!-- dropzone.js Plugin -->
 <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css" />
 <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+<script type="text/javascript" src="post-login.js"></script>
 <script type="text/javascript" src="organisation.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/profile.js"></script>
 <script type="text/javascript" src="dataModels.js"></script>
+<script type="text/javascript" src="constants.js"></script>
 
 </html>
