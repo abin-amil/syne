@@ -61,6 +61,7 @@
   color: #0db2e0;
   font-family: HKGrotesk;
   font-size: 13px;
+  cursor: pointer;
 }
 
 .follow_person_name {

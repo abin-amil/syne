@@ -75,7 +75,8 @@ function createLeftPanelTabs() {
         let leftPanelTabFinalHtml = "";
         organisationDashBoardData.leftPanelTabs.forEach((tab, index) => {
             leftPanelTabFinalHtml += leftPanelTabHtml.replace(/{{iconUrl}}/g, tab.iconUrl)
-                .replace(/{{tabName}}/g, tab.name);
+                .replace(/{{tabName}}/g, tab.name)
+                .replace(/{{path}}/g, tab.path);
         });
 
         document.getElementById("left-panel-tabs").innerHTML = leftPanelTabFinalHtml;
@@ -154,7 +155,7 @@ function createOrganisation() {
     document.getElementById('publishOrganisationPage').style.display = "block";
 }
 
-function publishOrganisation(){
+function publishOrganisation() {
     document.getElementById('publishOrganisationPage').style.display = "none";
     document.getElementById('OrgLandingPage').style.display = "block";
 }

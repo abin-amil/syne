@@ -804,7 +804,7 @@
             
             <div class="d-flex align-items-center">
                 <img style="height: 24px;" class="pr-2" src="img/location-grey-small.png">
-                <span class="follower-text" style="color: deepskyblue;font-weight: bold;">
+                <span class="follower-text" style="color: deepskyblue;font-weight: bold; text-transform:uppercase;">
                 {{location}}
                 </span>
             </div>
@@ -842,10 +842,10 @@
 
     <!-- left panel tabs template -->
     <script id="template-left-panel-tab-details" type="text/template">
-        <div class="d-flex mt-3">
+        <a class="d-flex mt-3" href="{{path}}">
             <img src="{{iconUrl}}">
             <div class="px-2">{{tabName}}</div>
-        </div>
+        </a>
     </script>
 
     <!-- left `panel top banner template -->
