@@ -637,3 +637,38 @@ body .no-padding {
   padding: 5px 0px 5px 5px;
   border-radius: 6px;
 }
+.payment-container{
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(57, 64, 79, 0.1);
+    background-color: #ffffff;
+}
+
+.donate-to-text{
+    font-family: HKGrotesk;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2a3844;
+}
+
+.payment-amount-text-box{
+    border-radius: 5px;
+    padding: 0px 0px 0px 12px;
+    border: solid 1px #16c0ef;
+}
+
+.syne-credit-amount{
+    background-color: grey;
+    border-radius: 3px;
+    min-width: 43px;
+    padding-left: 5px;
+    padding-top: 3px;
+    height: 21px;
+}
+
+.payment-methods{
+    border-radius: 4px;
+    border: 1px solid #e0e6ee;
+    height: fit-content;
+    font-weight: bold;
+    font-size: 13px;
+}
