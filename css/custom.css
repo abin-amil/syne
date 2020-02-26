@@ -681,3 +681,10 @@ body .no-padding {
 .w-65{
   width: 65% !important;
 }
+
+.grey-text{
+  color: #7c8796;
+}
+.print-text:hover{
+  cursor: pointer;
+}
