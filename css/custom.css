@@ -672,3 +672,12 @@ body .no-padding {
     font-weight: bold;
     font-size: 13px;
 }
+
+.notify-text{
+    font-size: 9px;
+    width: 67%;
+    margin-left: 68px;
+}
+.w-65{
+  width: 65% !important;
+}

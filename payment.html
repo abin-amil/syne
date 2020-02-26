@@ -86,7 +86,6 @@
         </div>
     </div>
     <div class="container">
-
         <div class="row mt-5">
             <div class="col-3"></div>
             <div class="col-5 ml-5">
@@ -100,60 +99,101 @@
                     <div class="d-flex justify-content-center user-name" style="font-size: 11px;">
                         Vivent Foundation
                     </div>
-                    <div class="payment-amount-text-box p-2 d-flex align-items-center mt-4"
-                        style="margin-left: 70px;width: 65%;">
-                        <img style="height: 20px;" src="img/dollar-symbol.png">
-                        <input type="text" class="form-control project-title-input">
-                    </div>
-                    <div class="row mt-2" style="margin-left:85px;font-weight:bold;font-size:13px">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="syneCredits">
-                            <label class="custom-control-label" for="syneCredits">Use SYNE CREDITS</label>
+                    <div id="logegedInUserPaymentPage1">
+                        <div class="payment-amount-text-box p-2 d-flex align-items-center mt-4"
+                            style="margin-left: 70px;width: 65%;">
+                            <img style="height: 20px;" src="img/dollar-symbol.png">
+                            <input type="text" class="form-control project-title-input">
                         </div>
-                        <div class="ml-5 syne-credit-amount">
-                            <label class="">$400</label>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center mt-4" style="font-weight:bold;font-size:15px">
-                        Choose payment method
-                    </div>
-                    <div class="mt-4 payment-methods" style="width: 65%; margin-left: 74px;">
-                        <div class="custom-control custom-radio mt-3 ml-3">
-                            <input type="radio" class="custom-control-input" id="globalWallet" name="paymentMethod">
-                            <label class="custom-control-label" for="globalWallet">Global Wallet</label>
-                        </div>
-                        <div class="line-seperator my-3"></div>
-                        <div class="custom-control custom-radio mt-3 ml-3">
-                            <input type="radio" class="custom-control-input" id="creditCard" name="paymentMethod">
-                            <label class="custom-control-label" for="creditCard">Credit Card</label>
-                        </div>
-                        <div class="line-seperator my-3"></div>
-                        <div class="custom-control custom-radio mt-3 ml-3">
-                            <input type="radio" class="custom-control-input" id="netBanking" name="paymentMethod">
-                            <label class="custom-control-label" for="netBanking">Net Banking</label>
-                        </div>
-                        <div class="line-seperator my-3"></div>
-                        <div class="custom-control custom-radio mt-3 ml-3">
-                            <input type="radio" class="custom-control-input" id="debitCard" name="paymentMethod">
-                            <label class="custom-control-label" for="debitCard">Debit Card</label>
-                        </div>
-                        <div class="line-seperator my-3"></div>
-                        <div class="custom-control custom-radio mt-3 ml-3">
-                            <input type="radio" class="custom-control-input" id="directPayment" name="paymentMethod">
-                            <label class="custom-control-label" for="directPayment">Direct payment</label>
-                        </div>
-                    </div>
-                    <div>
-                        <button type="button" class="btn  proceedButton is-success mt-5 d-flex justify-content-around"
-                            style="margin-left: 74px;">
-                            <div>
-                                Proceed to Pay $800
+                        <div class="row mt-2" style="margin-left:85px;font-weight:bold;font-size:13px">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="syneCredits">
+                                <label class="custom-control-label" for="syneCredits">Use SYNE CREDITS</label>
                             </div>
-                        </button>
+                            <div class="ml-5 syne-credit-amount">
+                                <label class="">$400</label>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-4" style="font-weight:bold;font-size:15px">
+                            Choose payment method
+                        </div>
+                        <div class="mt-4 payment-methods" style="width: 65%; margin-left: 74px;">
+                            <div class="custom-control custom-radio mt-3 ml-3">
+                                <input type="radio" class="custom-control-input" id="globalWallet" name="paymentMethod">
+                                <label class="custom-control-label" for="globalWallet">Global Wallet</label>
+                            </div>
+                            <div class="line-seperator my-3"></div>
+                            <div class="custom-control custom-radio mt-3 ml-3">
+                                <input type="radio" class="custom-control-input" id="creditCard" name="paymentMethod">
+                                <label class="custom-control-label" for="creditCard">Credit Card</label>
+                            </div>
+                            <div class="line-seperator my-3"></div>
+                            <div class="custom-control custom-radio mt-3 ml-3">
+                                <input type="radio" class="custom-control-input" id="netBanking" name="paymentMethod">
+                                <label class="custom-control-label" for="netBanking">Net Banking</label>
+                            </div>
+                            <div class="line-seperator my-3"></div>
+                            <div class="custom-control custom-radio mt-3 ml-3">
+                                <input type="radio" class="custom-control-input" id="debitCard" name="paymentMethod">
+                                <label class="custom-control-label" for="debitCard">Debit Card</label>
+                            </div>
+                            <div class="line-seperator my-3"></div>
+                            <div class="custom-control custom-radio mt-3 ml-3">
+                                <input type="radio" class="custom-control-input" id="directPayment"
+                                    name="paymentMethod">
+                                <label class="custom-control-label" for="directPayment">Direct payment</label>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button"
+                                class="btn proceedButton is-success mt-5 d-flex justify-content-around"
+                                style="margin-left: 74px;" onclick="proceedToPayButtonClick()">
+                                <div>
+                                    Proceed to Pay $800
+                                </div>
+                            </button>
+                            <div class="mt-3 user-name notify-text">
+                                <span class="d-flex justify-content-center">Tapping on proceed button above will take
+                                    you to a list of</span>
+                                <span class="d-flex justify-content-center">Global Wallet page</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="logegedInUserPaymentPage2" style="display: none;">
+                        <div class="payment-amount-text-box p-2 d-flex align-items-center mt-4"
+                            style="margin-left: 70px;width: 65%;">
+                            <img style="height: 20px;" src="img/dollar-symbol.png">
+                            <input type="text" class="form-control project-title-input" value="1200">
+                        </div>
+                        <div class="row mt-3" style="margin-left:85px;font-weight:bold;font-size:13px">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="syneCredits">
+                                <label class="custom-control-label" for="syneCredits">Use <span
+                                        class="syne-credit-amount">$400</span> SYNE
+                                    CREDITS</label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button type="button"
+                                class="btn  proceedButton is-success mt-5 d-flex justify-content-around"
+                                style="margin-left: 74px;" onclick="proceedToPayButtonClick()">
+                                <div style="height: 70px;">
+                                    <span class="w-65" style="font-size: 10px;">Total Amount $800 </span><br />
+                                    <span class="w-65" style="font-size:12px">Procedd to Payment Gateway</span>
+                                </div>
+                            </button>
+                            <div class="mt-3 user-name notify-text">
+                                <span class="d-flex justify-content-center">Help text explaining what happns next when you tap on</span>
+                                <span class="d-flex justify-content-center mt-1">the payment Gateway button above</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script type="text/javascript" src="payment.js"></script>
+
 </html>
