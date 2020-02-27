@@ -681,6 +681,9 @@ body .no-padding {
 .w-65{
   width: 65% !important;
 }
+.m-74{
+  margin-left: 74px !important;
+}
 
 .grey-text{
   color: #7c8796;
@@ -688,3 +691,18 @@ body .no-padding {
 .print-text:hover{
   cursor: pointer;
 }
+.payment-input-label{
+    font-family: HKGrotesk;
+    font-size: 13px;
+    color: #7c8796;
+    padding: 0px 0px 0px 12px;
+}
+.sign-in-text{
+  font-weight: bold;
+  color: #16c0ef;
+  font-size: 12px;
+}
+.sign-in-text:hover{
+  cursor: pointer;
+}
+
