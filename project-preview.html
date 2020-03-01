@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/post-login.css">
+
   <link rel="stylesheet" href="css/project-preview.css">
 
   <link rel="stylesheet" type="text/css" media="all" href="css/selectize.css">
@@ -62,39 +64,47 @@
   <div class="container">
     
     <div class="project-preview-content">
-        <div class="preview-heading d-flex py-3">
+        <div class="preview-heading d-flex py-3 align-items-center">
           <img style="height: 54px;" src="img/user.png">
           <div class="px-2">
               <div class="project-preview-title">School of Love</div>
               <div class="project-preview-sub-title d-flex">
                   <div>Disability</div>
-                  <div>Muvattupuzha, India</div>
+                  <div class="px-2">Muvattupuzha, India</div>
               </div>
           </div>
         </div>
         <div class="row">
             <div class="col-9">
-                <div>
-                    <img src="img/cover-photo.jpg">
-                    <div class="d-flex py-2">
-                        <div>
-                            <div class="project-date-text">
-                                CREATED
+                <div class="py-1">
+                    <img class="img-fluid" src="img/cover-photo.jpg">
+                    <div class="d-flex py-2 justify-content-between">
+                        <div class="d-flex">
+                            <div>
+                                <div class="project-date-text">
+                                    CREATED
+                                </div>
+                                <div class="project-date">
+                                    14th Aug 2019
+                                </div>
                             </div>
-                            <div class="project-date">
-                                14th Aug 2019
+                            <div class="px-3">
+                                <div class="project-date-text">
+                                    ENDS ON
+                                </div>
+                                <div class="project-date">
+                                    14th Aug 2019
+                                </div>
                             </div>
                         </div>
-                        <div class="px-3">
-                            <div class="project-date-text">
-                                ENDS ON
-                            </div>
-                            <div class="project-date">
-                                14th Aug 2019
+                        <div>
+                            <div class="project-link px-2 py-1">
+                                syne.com/vivent-long-url-here-truncated…
                             </div>
                         </div>
                     </div>
-                    <div class="project-preview-desc">
+                    <div class="line-seperator mb-2"></div>
+                    <div class="project-preview-desc py-2">
                         <p class="project-preview-primary-desc">
                             Children love without boundaries. They help another up when they fall, they share their candies with someone who’s sad. They are inclusive, encouraging, and their kindness extends towards all.   
                         </p>
@@ -110,7 +120,30 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="right-tab px-3 pb-2">
+                <div class="right-tab fund-raise p-2">
+                    <div class="raised-amount">0</div>
+                    <div class="taret-amount-desc">raised of ₹7,500,000 target</div>
+                    <div class="progress-bar"></div>
+                    <button type="button" class="btn w-100  donateButton is-success d-flex justify-content-around">
+                        <img src="img/arrow-right-white.png">
+                          Proceed
+                      </button>
+                    <div class="d-flex">
+                        <div>
+                            <div class="">0</div>
+                            <div>Donors</div>
+                        </div>
+                        <div>
+                            <div>1,434</div>
+                            <div>Followers</div>
+                        </div>
+                        <div>
+                            <div>0</div>
+                            <div>Shares</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-tab px-3 pb-2 my-3">
                     <div class="recommended-projects-text pt-3">Recommended Projects</div>
                     <div id="recommended-project-panel">
                         <!-- recommended project template fill here -->
@@ -123,7 +156,7 @@
             
         </div>
     </div>
-    
+
   </div>
 
    <!-- foooter -->

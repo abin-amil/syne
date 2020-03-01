@@ -41,3 +41,25 @@
 .project-preview-primary-desc {
     font-family: HKGrotesk;
 }
+
+.project-link {
+    background-color: #f2f4f7;
+}
+
+.raised-amount {
+    font-size: 23px;
+    color: #2a3844;
+}
+
+.taret-amount-desc {
+    font-size: 13px;
+    color: #5d677e;
+}
+
+.donateButton {
+    height: 40px;
+    border-radius: 3px !important;
+    background-color: #16c0ef !important;
+    color: white !important;
+    font-weight: bold !important;
+}
