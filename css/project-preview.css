@@ -1,0 +1,43 @@
+.project-preview-title {
+    font-size: 28px;
+    color: #2a3844;
+    font-family: HKGrotesk;
+}
+
+.project-preview-sub-title {
+    font-size: 13px;
+    color: #7c8796;
+}
+.email-activation {
+    /* height: 159px; */
+    background-color: #e3f9ff;
+}
+
+.email-activation-title {
+    font-family: HKGrotesk;
+    font-size: 23px;
+    color: #2a3844;
+}
+.email-activation-text {
+    font-size: 15px;
+    color: #2a3844;
+}
+
+.email-activation-action-text {
+    font-family: HKGrotesk;
+    font-size: 15px;
+    color: #16c0ef;
+}
+
+.email-activation-mail {
+    font-family: HKGrotesk;
+}
+
+.project-preview-desc {
+    font-size: 15px;
+    color: #2a3844;
+}
+
+.project-preview-primary-desc {
+    font-family: HKGrotesk;
+}

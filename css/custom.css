@@ -706,3 +706,22 @@ body .no-padding {
   cursor: pointer;
 }
 
+.comment-options {
+  display: none;
+}
+
+.comment-section:hover .comment-options  {
+  display:block;
+}
+
+.project-date-text {
+  font-size: 11px;
+  color: #7c8796;
+ 
+}
+.project-date {
+  font-size: 13px;
+  color: #2a3844;
+ 
+}
+
