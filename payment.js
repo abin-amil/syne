@@ -19,11 +19,13 @@ function back() {
         case 2:
             document.getElementById('logegedInUserPaymentPage2').style.display = "none";
             document.getElementById('logegedInUserPaymentPage1').style.display = "block";
+            pageNum = 1;
             break;
         case 3:
             document.getElementById('logegedInUserPaymentPage1').style.display = "none";
             document.getElementById('paymentSucessfullPage').style.display = "none";
             document.getElementById('logegedInUserPaymentPage2').style.display = "block";
+            pageNum = 2;
             break;
     }
 
