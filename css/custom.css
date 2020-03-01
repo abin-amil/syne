@@ -733,4 +733,8 @@ body .no-padding {
   margin-top: -65px;
 }
 
+#backBtn:hover {
+  cursor: pointer;
+}
+
 
