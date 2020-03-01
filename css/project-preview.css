@@ -63,3 +63,14 @@
     color: white !important;
     font-weight: bold !important;
 }
+
+.view-count {
+    font-size: 17px;
+    font-family: HKGrotesk;
+    color: #2a3844;
+}
+
+.donors-text {
+    font-size: 13px;
+    color: #5d677e;
+}
