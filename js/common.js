@@ -12,31 +12,33 @@ function LeftPanelCreation() {
 
 // left panel user details creation
 function createLeftPanelUserDetails() {
-    let leftPanel = document.getElementById("template-left-panel-user-details");
-    let leftPanelHtml = leftPanel.innerHTML;
-    let leftPanelFinalHtml = "";
+    if (document.getElementById("template-left-panel-user-details")) {
+        let leftPanel = document.getElementById("template-left-panel-user-details");
+        let leftPanelHtml = leftPanel.innerHTML;
+        let leftPanelFinalHtml = "";
 
-    leftPanelFinalHtml += leftPanelHtml.replace(/{{name}}/g, dashBoardData.name)
-        .replace(/{{mailId}}/g, dashBoardData.mailId)
-        .replace(/{{followersCount}}/g, dashBoardData.followersCount)
-        .replace(/{{followingCount}}/g, dashBoardData.followingCount)
-        .replace(/{{userIntroDetails}}/g, userDetails.userIntroDetails)
-        .replace(/{{birthDay}}/g, userDetails.birthDay)
-        .replace(/{{location}}/g, userDetails.location);
+        leftPanelFinalHtml += leftPanelHtml.replace(/{{name}}/g, dashBoardData.name)
+            .replace(/{{mailId}}/g, dashBoardData.mailId)
+            .replace(/{{followersCount}}/g, dashBoardData.followersCount)
+            .replace(/{{followingCount}}/g, dashBoardData.followingCount)
+            .replace(/{{userIntroDetails}}/g, userDetails.userIntroDetails)
+            .replace(/{{birthDay}}/g, userDetails.birthDay)
+            .replace(/{{location}}/g, userDetails.location);
 
-    document.getElementById("left-panel-user-details").innerHTML = leftPanelFinalHtml;
+        document.getElementById("left-panel-user-details").innerHTML = leftPanelFinalHtml;
+    }
 }
 
 // left panel top banner creation
 function createLeftPanelTopBanner() {
-    let leftPanelTopBanner = document.getElementById("template-left-panel-top-banner");
-    let leftPanelTopBannerHtml = leftPanelTopBanner.innerHTML;
-    let leftPanelTopBannerFinalHtml = "";
+    if (document.getElementById("template-left-panel-top-banner")) {
+        let leftPanelTopBanner = document.getElementById("template-left-panel-top-banner");
+        let leftPanelTopBannerHtml = leftPanelTopBanner.innerHTML;
+        let leftPanelTopBannerFinalHtml = "";
 
-    leftPanelTopBannerFinalHtml += leftPanelTopBannerHtml.replace(/{{coverPhotoUrl}}/g, dashBoardData.coverPhotoUrl)
-        .replace(/{{profilePhotoUrl}}/g, dashBoardData.profilePhotoUrl);
+        leftPanelTopBannerFinalHtml += leftPanelTopBannerHtml.replace(/{{coverPhotoUrl}}/g, dashBoardData.coverPhotoUrl)
+            .replace(/{{profilePhotoUrl}}/g, dashBoardData.profilePhotoUrl);
 
-    if (document.getElementById("left-panel-top-banner")) {
         document.getElementById("left-panel-top-banner").innerHTML = leftPanelTopBannerFinalHtml;
     }
 }
