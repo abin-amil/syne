@@ -1,6 +1,10 @@
 function formValidCheck(form, fieldNum) {}
 
 $(document).ready(function () {
+    setTab(3);
+});
+
+$(document).ready(function () {
 
     let categoryDropdown = document.getElementById("category");
     let CategoryList = [{

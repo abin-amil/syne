@@ -1,6 +1,9 @@
 $(document).ready(function () {
     newsFeedsCreation();
 });
+$(document).ready(function () {
+    setTab(3);
+});
 
 function newsFeedsCreation() {
     if (document.getElementById("news-feeds")) {
