@@ -682,6 +682,7 @@ body .no-padding {
 
 .w-65 {
   width: 65% !important;
+  min-width: 200px !important;
 }
 
 .m-74 {
@@ -732,7 +733,7 @@ body .no-padding {
 }
 
 .payment-page-icon {
-  position: relative;
+  /* position: relative; */
   left: 40%;
   max-height: 140px;
   border: 2px solid white;

@@ -1,3 +1,19 @@
 .custom-radio .custom-control-label::before, .custom-control-label::after, .custom-checkbox .custom-control-label::before {
     margin-top: -7px !important;
 }
+
+.payment-amount-text-box.w-65 {
+    min-width: 150px !important;
+}
+
+.mw-150 {
+    min-width: 150px !important;
+}
+
+.c-6 {
+    flex: 1 1 50% !important;
+}
+
+.c-5 {
+    flex: 1 1 41.666667% !important;
+}
