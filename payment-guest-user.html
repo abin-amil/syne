@@ -48,26 +48,27 @@
 <body class="post-page-bg">
     <div class="container-fluid h-100" id="paymentGuestUser">
         <div class="row justify-content-center h-100">
-            <div class="col-6 hidden-md-down bg-grey-light" id="guestUserPaymentPageLeftSide">
-                <div class="mt-5" style="margin-left: 8rem!important;">
+            <div class="col-6 hidden-md-down bg-grey-light d-flex flex-column align-items-center" id="guestUserPaymentPageLeftSide">
+                <div class="mt-5">
                     <div class="logo h-100">
                         <img src="img/syne-logo.png" alt="logo">
                     </div>
                 </div>
-                <div style="margin-left: 25%; width: 50%;">
+                <div style="min-width: 300px; width: 50%;">
                     <div class="d-flex justify-content-center row mt-5 donate-to-text">
                         Donate to
                     </div>
-                    <div class="payment-container p-4 mt-5">
-                        <img class="img-fluid payment-page-icon" src="img/user.png" style="max-height: 65px;">
+                    <div class="payment-container p-4 mt-5 d-flex flex-column align-items-center">
+                        <div>
+                            <img class="img-fluid payment-page-icon" src="img/user.png" style="max-height: 65px;">
+                        </div>
                         <div class="d-flex justify-content-center row donate-to-text" style="font-size: 17px;">
                             School of love
                         </div>
                         <div class="d-flex justify-content-center user-name" style="font-size: 11px;">
                             Vivent Foundation
                         </div>
-                        <div class="payment-amount-text-box p-2 d-flex align-items-center mt-4 w-65 mb-3"
-                            style="margin-left: 50px;">
+                        <div class="payment-amount-text-box p-2 d-flex align-items-center mt-4 w-65 mb-3">
                             <img style="height: 20px;" src="img/dollar-symbol.png">
                             <input type="text" class="form-control project-title-input" value="1200">
                         </div>
@@ -87,13 +88,12 @@
                             <label class="payment-input-label" for="fName">Email</label>
                             <input type="text" name="phoneNum" class="form-control project-title-input">
                         </div>
-                        <div class="row mt-2 w-65 m-74">
-                            <div class="col-6 p-0" style="border: 1px solid #e0e6ee;">
+                        <div class="row w-65 m-74 justify-content-between">
+                            <div class="p-0 mt-3 mw-150 c-6" style="border: 1px solid #e0e6ee;">
                                 <label class="payment-input-label" for="fName">Given Name</label>
                                 <input type="text" name="phoneNum" class="form-control project-title-input">
                             </div>
-                            <div class="ml-2"></div>
-                            <div class="col-5 p-0" style="border: 1px solid #e0e6ee;">
+                            <div class="p-0 mt-3 mw-150 c-5" style="border: 1px solid #e0e6ee;">
                                 <label class="payment-input-label" for="lName">Surname</label>
                                 <input type="text" name="phoneNum" class="form-control project-title-input">
                             </div>

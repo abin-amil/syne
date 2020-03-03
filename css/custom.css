@@ -637,72 +637,80 @@ body .no-padding {
   padding: 5px 0px 5px 5px;
   border-radius: 6px;
 }
-.payment-container{
-    border-radius: 4px;
-    box-shadow: 0 2px 8px 0 rgba(57, 64, 79, 0.1);
-    background-color: #ffffff;
+
+.payment-container {
+  border-radius: 4px;
+  box-shadow: 0 2px 8px 0 rgba(57, 64, 79, 0.1);
+  background-color: #ffffff;
 }
 
-.donate-to-text{
-    font-family: HKGrotesk;
-    font-size: 20px;
-    font-weight: bold;
-    color: #2a3844;
+.donate-to-text {
+  font-family: HKGrotesk;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2a3844;
 }
 
-.payment-amount-text-box{
-    border-radius: 5px;
-    padding: 0px 0px 0px 12px;
-    border: solid 1px #16c0ef;
+.payment-amount-text-box {
+  border-radius: 5px;
+  padding: 0px 0px 0px 12px;
+  border: solid 1px #16c0ef;
 }
 
-.syne-credit-amount{
-    background-color:#16c0ef40;
-    border-radius: 3px;
-    min-width: 43px;
-    padding-left: 5px;
-    padding-top: 3px;
-    height: 21px;
+.syne-credit-amount {
+  background-color: #16c0ef40;
+  border-radius: 3px;
+  min-width: 43px;
+  padding-left: 5px;
+  padding-top: 3px;
+  height: 21px;
 }
 
-.payment-methods{
-    border-radius: 4px;
-    border: 1px solid #e0e6ee;
-    height: fit-content;
-    font-weight: bold;
-    font-size: 13px;
+.payment-methods {
+  border-radius: 4px;
+  border: 1px solid #e0e6ee;
+  height: fit-content;
+  font-weight: bold;
+  font-size: 13px;
 }
 
-.notify-text{
-    font-size: 9px;
-    width: 67%;
-    margin-left: 68px;
+.notify-text {
+  font-size: 9px;
+  width: 67%;
+  margin-left: 68px;
 }
-.w-65{
+
+.w-65 {
   width: 65% !important;
+  min-width: 200px !important;
 }
-.m-74{
+
+.m-74 {
   margin-left: 74px !important;
 }
 
-.grey-text{
+.grey-text {
   color: #7c8796;
 }
-.print-text:hover{
+
+.print-text:hover {
   cursor: pointer;
 }
-.payment-input-label{
-    font-family: HKGrotesk;
-    font-size: 13px;
-    color: #7c8796;
-    padding: 0px 0px 0px 12px;
+
+.payment-input-label {
+  font-family: HKGrotesk;
+  font-size: 13px;
+  color: #7c8796;
+  padding: 12px 0px 0px 12px;
 }
-.sign-in-text{
+
+.sign-in-text {
   font-weight: bold;
   color: #16c0ef;
   font-size: 12px;
 }
-.sign-in-text:hover{
+
+.sign-in-text:hover {
   cursor: pointer;
 }
 
@@ -710,22 +718,22 @@ body .no-padding {
   display: none;
 }
 
-.comment-section:hover .comment-options  {
-  display:block;
+.comment-section:hover .comment-options {
+  display: block;
 }
 
 .project-date-text {
   font-size: 11px;
   color: #7c8796;
- 
 }
+
 .project-date {
   font-size: 13px;
   color: #2a3844;
- 
 }
-.payment-page-icon{
-  position: relative;
+
+.payment-page-icon {
+  /* position: relative; */
   left: 40%;
   max-height: 140px;
   border: 2px solid white;
@@ -736,5 +744,3 @@ body .no-padding {
 #backBtn:hover {
   cursor: pointer;
 }
-
-
