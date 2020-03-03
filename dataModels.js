@@ -20,7 +20,7 @@ var dashBoardData = {
     {
         name: 'Projects',
         iconUrl: 'img/project-grey-small.png',
-        path: 'projects.html',
+        path: 'my-projects.html',
         id: 3
     },
     {
@@ -161,3 +161,43 @@ var organisationListData = [
         organisationUrl: 'vivent-long-url'
     }
 ];
+
+var myProjectDasboardData = {
+    newsFeedData: [{
+        userImage: 'img/user.png',
+        name: 'Vinith Gopal',
+        email: '@vinithgopalofficial',
+        postedTimeDuration: '1 week',
+        imageUrl: 'img/flood-relief.jpg',
+        descriptionHeading: 'Kerala Flood Relief 2019',
+        descriptionContent: 'World Vision distributed food, clothing and hygiene and household items among families in Kerala whose homes have been damaged or destroyed.',
+        targetAmount: '2,500,000',
+        raisedAmount: '293,145',
+        contributorsCount: '2.3K',
+        completionPercentage: '42',
+        isLikedByMe: 'true',
+        likedCount: '657',
+        shareCount: '1.5K',
+        commentCount: '12',
+        comments: []
+    },
+    {
+        userImage: 'img/user.png',
+        name: 'Vinith Gopal',
+        email: '@vinithgopalofficial',
+        postedTimeDuration: '1 month',
+        imageUrl: 'img/hands-together.jpg',
+        descriptionHeading: 'Assam floof relief 2019',
+        descriptionContent: 'A digital team goes and project become more complex, designers are being valued by collaboration and team enablement rather than only individual tasks.',
+        targetAmount: '',
+        raisedAmount: '',
+        contributorsCount: '',
+        completionPercentage: '',
+        isLikedByMe: 'false',
+        likedCount: '657',
+        shareCount: '0',
+        commentCount: '0',
+        comments: []
+    }
+    ]
+}
