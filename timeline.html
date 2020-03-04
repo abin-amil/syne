@@ -369,41 +369,41 @@
             {{mailId}}
         </div>
         <div class="mt-2">
-            
             <div class="d-flex align-items-center">
                 <img style="height: 24px;" class="pr-2" src="img/location-grey-small.png">
                 <span class="follower-text" style="color: deepskyblue;font-weight: bold;">
-                {{location}}
+                    {{location}}
                 </span>
             </div>
-        <div>            
-            <div class="follower-text">{{userIntroDetails}}</div>
-        </div>
-        <div class="line-seperator my-3"></div>
-        <div class="d-flex justify-content-between">
             <div>
-                <div class="follower-count modal-btn" href="#syne-followers"
-                data-target="syne-followers">{{followersCount}}</div>
-                <a class="follower-text" >Followers</a>
+                <div class="follower-text">{{userIntroDetails}}</div>
             </div>
-            <div>
-                <div class="follower-count modal-btn" href="#syne-followers"
-                data-target="syne-followers">{{followingCount}}</div>
-                <div class="follower-text">Following</div>
-            </div>
-        </div>
-        <div class="menu-items-wrapper">
-            <div class="menu-items py-4" id="left-panel-tabs">
-                <!-- left panel tabs template fill here -->
-            </div>
-            <div class="mt-2 pl-3">
+            <div class="line-seperator my-3"></div>
+            <div class="d-flex justify-content-between">
                 <div>
-                    <img style="height: 24px;" class="pr-2" src="img/edit-blue-small.png">
-                    <a style="color: deepskyblue;font-size: small" class="modal-btn" href="#syne-edit-profile"
-                    data-target="syne-edit-profile">
-                    Edit Profile
-                    </a>
-                    <!-- <a class="modal-btn">Edit Profile</a> -->
+                    <div class="follower-count modal-btn" href="#syne-followers" data-target="syne-followers">{{followersCount}}
+                    </div>
+                    <a class="follower-text">Followers</a>
+                </div>
+                <div>
+                    <div class="follower-count modal-btn" href="#syne-followers" data-target="syne-followers">{{followingCount}}
+                    </div>
+                    <div class="follower-text">Following</div>
+                </div>
+            </div>
+            <div class="menu-items-wrapper">
+                <div class="menu-items py-4" id="left-panel-tabs">
+                    <!-- left panel tabs template fill here -->
+                </div>
+                <div class="mt-2 pl-3">
+                    <div>
+                        <img style="height: 24px;" class="pr-2" src="img/edit-blue-small.png">
+                        <a style="color: deepskyblue;font-size: small" class="modal-btn" href="#syne-edit-profile"
+                            data-target="syne-edit-profile">
+                            Edit Profile
+                        </a>
+                        <!-- <a class="modal-btn">Edit Profile</a> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -420,7 +420,7 @@
     <!-- left `panel top banner template -->
     <script id="template-left-panel-top-banner" type="text/template">
         <img class="img-fluid w-100 profile-photo-height" src="{{coverPhotoUrl}}">
-    <!-- <img class="img-fluid profile-photo" src="{{profilePhotoUrl}}"> -->
+        <!-- <img class="img-fluid profile-photo" src="{{profilePhotoUrl}}"> -->
     </script>
 
     <!-- profile completion showing section template -->
@@ -476,42 +476,44 @@
                     </div>
                     <div class="px-2">
                         <span>
-                        <a href="#" class="dropdown-toggle" id="post-access-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="cursor-pointer" src="img/public-grey-small-copy-2.png">
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="post-access-dropdown">
-                            <a class="dropdown-item" href="#">
-                                <img src="img/public-grey-small-copy-2.png">
-                                Public
+                            <a href="#" class="dropdown-toggle" id="post-access-dropdown" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <img class="cursor-pointer" src="img/public-grey-small-copy-2.png">
                             </a>
-                            <a class="dropdown-item" href="#">
-                                <img src="img/friends-grey.png">
-                                Friends
+                            <div class="dropdown-menu" aria-labelledby="post-access-dropdown">
+                                <a class="dropdown-item" href="#">
+                                    <img src="img/public-grey-small-copy-2.png">
+                                    Public
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img src="img/friends-grey.png">
+                                    Friends
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img src="img/onlyme-grey.png">
+                                    Only Me
+                                </a>
+                            </div>
+                        </span>
+                        <span>
+                            <a href="#" id="post-action-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <img class="cursor-pointer" src="img/more-dots-small-copy-2.png" />
                             </a>
-                            <a class="dropdown-item" href="#">
-                                <img src="img/onlyme-grey.png">
-                                Only Me
-                            </a>
-                        </div>
-                    </span>
-                    <span>
-                        <a href="#" id="post-action-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="cursor-pointer" src="img/more-dots-small-copy-2.png" />
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="post-action-dropdown">
-                            <a class="dropdown-item" href="#">
-                                <img src="img/report-grey-small.png">
-                                Report Post
-                            </a>
-                            <a class="dropdown-item" href="#">
-                                <img src="img/delpost-grey-small.png">
-                                Delete Post
-                            </a>
-                        </div>
-                    </span>
+                            <div class="dropdown-menu" aria-labelledby="post-action-dropdown">
+                                <a class="dropdown-item" href="#">
+                                    <img src="img/report-grey-small.png">
+                                    Report Post
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img src="img/delpost-grey-small.png">
+                                    Delete Post
+                                </a>
+                            </div>
+                        </span>
                     </div>
                 </div>
-                
+        
         
                 <div>
                     <img class="img-fluid" src="{{imageUrl}}">
@@ -526,15 +528,18 @@
                     <div class="pt-2 target-amount" style="display:{{isTargetAmountDisplay}}">Target ₹{{targetAmount}}</div>
                     <div class="pt-2" style="display:{{isprogressBarVisible}}">
                         <div class="progress" style="height: 5px;">
-                            <div class="progress-bar" id="progressbar" role="progressbar" style="width: {{progessBarWidth}}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" id="progressbar" role="progressbar" style="width: {{progessBarWidth}}%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div>
                         <div class="d-flex pt-2 justify-content-between">
                             <div class="raised-amount" style="display:{{isRaisedAmountDisplay}}">Raised ₹{{raisedAmount}}</div>
                             <div class="d-flex">
-                                <div class="contributors-comment" style="display:{{showContibutors}}">{{contibutorsCount}} Contributors</div>
-                                <div class="progress-percentage pl-2" style="display:{{showPercentage}}">{{completionPercentage}}%</div>
+                                <div class="contributors-comment" style="display:{{showContibutors}}">{{contibutorsCount}}
+                                    Contributors</div>
+                                <div class="progress-percentage pl-2" style="display:{{showPercentage}}">
+                                    {{completionPercentage}}%</div>
                             </div>
                         </div>
         
@@ -565,7 +570,7 @@
                                     <input placeholder="Write a reply…" class="comment-box-color" type="text" name="firstname">
                                 </div>
                                 <div class="pr-2">
-                                    <img src="img/smiley-lgrey-small.png"> 
+                                    <img src="img/smiley-lgrey-small.png">
                                     <img src="img/camera-lgrey-small.png">
                                 </div>
                             </div>
@@ -574,61 +579,60 @@
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>
     </script>
 
     <!-- recommended project panel -->
     <script id="template-recommended-project" type="text/template">
         <div class="recommended-project pt-3">
-        <div style="max-height:100px; overflow:hidden;">
-            <img class="img-fluid" src="{{imageUrl}}">
+            <div style="max-height:100px; overflow:hidden;">
+                <img class="img-fluid" src="{{imageUrl}}">
+            </div>
+            <div class="recommended-project-name pt-2">
+                {{projectName}}
+            </div>
+            <div class="recommended-project-disc pt-2">
+                {{projectContent}}
+            </div>
+        
+            <div class="project-target pt-2 pb-1">
+                Target ₹{{targetAmount}}
+            </div>
+        
+            <div class="progress" style="height: 5px;">
+                <div class="progress-bar" id="progressbar" role="progressbar" style="width: {{completionPercentage}}%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="d-flex justify-content-between pt-2">
+                <div class="raised-amount-text">Raised ₹{{raisedAmount}}</div>
+                <div class="raised-amount-percentage">{{completionPercentage}}%</div>
+            </div>
         </div>
-        <div class="recommended-project-name pt-2">
-            {{projectName}}
-        </div>
-        <div class="recommended-project-disc pt-2">
-            {{projectContent}}
-        </div>
-
-        <div class="project-target pt-2 pb-1">
-            Target ₹{{targetAmount}}
-        </div>
-
-        <div class="progress" style="height: 5px;">
-            <div class="progress-bar" id="progressbar" role="progressbar" style="width: {{completionPercentage}}%;"
-                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="d-flex justify-content-between pt-2">
-            <div class="raised-amount-text">Raised ₹{{raisedAmount}}</div>
-            <div class="raised-amount-percentage">{{completionPercentage}}%</div>
-        </div>
-    </div>
-
-    <div class="line-seperator my-3"></div>
-
-</script>
+        
+        <div class="line-seperator my-3"></div>
+    </script>
 
     <!-- who to follow panel template -->
     <script id="template-who-to-follow-list-panel" type="text/template">
         <div class="recommended-project pt-3">
-        <div class="follow-people">
-            Followed by {{mutualFollwerName}} & {{mutualFollowersCount}} others
-        </div>
-        <div class="d-flex pt-2">
-            <img class="img-fluid" style="height: 48px;" src="{{imageUrl}}">
+            <div class="follow-people">
+                Followed by {{mutualFollwerName}} & {{mutualFollowersCount}} others
+            </div>
+            <div class="d-flex pt-2">
+                <img class="img-fluid" style="height: 48px;" src="{{imageUrl}}">
                 <div class="pl-3">
                     <div class="follow_person_name">{{name}}</div>
                     <div class="follower-user-name">{{email}}</div>
                 </div>
-                        </div>
+            </div>
             <div class="d-flex pt-3 justify-content-between align-items-center">
                 <div class="follow-button py-1 px-4">Follow</div>
                 <div class="followers-count">{{followersCount}} Followers</div>
             </div>
         </div>
-
+        
         <div class="line-seperator my-3"></div>
-</script>
+    </script>
 
 </body>
 <script type="text/javascript" src="js/post-login.js"></script>
