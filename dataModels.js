@@ -162,6 +162,57 @@ var organisationListData = [
     }
 ];
 
+var organisationDashboadData = {
+    leftPanelTabs: [{
+        name: 'Timeline',
+        iconUrl: 'img/project-grey-small-copy-9.png',
+        path: 'timeline.html',
+        id: 1
+    }, {
+        name: 'About Organisation',
+        iconUrl: 'img/project-grey-small-copy-8.png',
+        path: 'about-organisation.html',
+        id: 2
+    },
+    {
+        name: 'Projects',
+        iconUrl: 'img/project-grey-small.png',
+        path: 'my-projects.html',
+        id: 3
+    },
+    {
+        name: 'Events',
+        iconUrl: 'img/events-grey-small.png',
+        path: 'events.html',
+        id: 4
+    },
+    {
+        name: 'Stories',
+        iconUrl: 'img/stories-grey-small.png',
+        path: 'stories.html',
+        id: 5
+    },
+    {
+        name: 'Organisations',
+        iconUrl: 'img/org-grey-small.png',
+        path: 'organisation.html',
+        id: 6
+    },
+    {
+        name: 'Transactions',
+        iconUrl: 'img/transaction-grey-small.png',
+        path: 'transactions.html',
+        id: 7
+    },
+    {
+        name: 'Settings & Privacy',
+        iconUrl: 'img/settings-grey-small.png',
+        path: 'settings-privacy.html',
+        id: 8
+    }
+    ]
+}
+
 var myProjectDasboardData = {
     newsFeedData: [{
         userImage: 'img/user.png',

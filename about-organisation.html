@@ -90,17 +90,10 @@
 
         </div>
     </div>
-
     <div>
-        <!-- <div class="">
-            <img class="img-fluid cover-photo" src="img/cover-photo.jpg">
-        </div>
-        <div>Profile Photo</div> -->
         <div class="profile-top-banner" id="left-panel-top-banner">
             <!-- left panel top banner template fill here  -->
-
         </div>
-
     </div>
     <div class="container">
         <div class="overlay-trigger" id="left-panel-top-banner">
@@ -123,10 +116,55 @@
             </div>
 
             <div class="col-6">
+                <div class="writePost p-4" id="about-organisation-container">
+                    <div class="row">
+                        <div class="col-10 about-organisation-header-text">About Vivent Org</div>
+                        <div class="right">
+                            <img style="height: 18px;" src="img/grey-pencil.png">
+                            <a style="color: #7c8796;font-size: small" class="modal-btn">
+                                Edit
+                            </a>
+                        </div>
+                    </div>
 
-                <div id="activities-section">
-                    <div id="news-feeds" class="mb-5">
-                        <!-- news feed template fill here -->
+                    <div class="mt-5 about-organisation-content-text">
+                        Electronic payments have the ability to create a world with greater oppurtunities for all. To
+                        take us beyond borders, to new market. beyond more moments, to meaningful experiences. that's
+                        the powe of a world beyond cash.
+                    </div>
+                    <div class="mt-5 follower-text">
+                        Organisation Type
+                    </div>
+                    <div class="mt-2 about-organisation-field-text">
+                        For Pofit
+                    </div>
+                    <div class="mt-4 row">
+                        <div class="col-6 follower-text">
+                            Organisation Categoy
+                        </div>
+                        <div class="col-6 follower-text">
+                            Organisation size
+                        </div>
+                    </div>
+                    <div class="mt-1 row">
+                        <div class="col-6 about-organisation-field-text">
+                            Categoy Name
+                        </div>
+                        <div class="col-6 about-organisation-field-text">
+                            10000+
+                        </div>
+                    </div>
+                    <div class="mt-5 follower-text">
+                        SYNE Organisation URL
+                    </div>
+                    <div class="mt-2 about-organisation-field-text">
+                        syne.com/yourname
+                    </div>
+                    <div class="mt-5 follower-text">
+                        Organisation Website
+                    </div>
+                    <div class="mt-2 about-organisation-field-text">
+                        acme-industries.com
                     </div>
                 </div>
             </div>
@@ -149,189 +187,6 @@
                     <div class="d-flex justify-content-center py-3 view-more">
                         View more…
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="syne-edit-profile" class="pop-modal">
-        <div class="modalcontent">
-            <div class="synemodal-body">
-                <div class="syne-lgin-r rltv p-3">
-                    <a href="#" class="modalclose flex">
-                        <div class="modal-close-text">Close</div>
-                        <img src="img/close-icon.png" alt="close">
-                    </a>
-                </div>
-                <div class="container py-3">
-                    <div class="form-title modal-title">
-                        Edit Profile
-                    </div>
-                    <form id="editProfileForm">
-
-                        <div class="form-group mt-3">
-                            <div>
-                                <div class="syne-inputbox p-2">
-                                    <label for="comment" class="Short-description-ab">
-                                        Short intro about you
-                                    </label>
-                                    <textarea name="userDetailInto" id="userDetailInto"
-                                        class="form-control syne-project-description" rows="5"></textarea>
-                                </div>
-                                <small class="noteinstr mt-1 form-text text-muted">
-                                    In less than 30 words
-                                </small>
-                            </div>
-                        </div>
-                        <div class="mt-3 d-flex justify-content-between w-100">
-                            <div class="countryInput m-2">
-                                <div class="syne-inputbox p-2" onclick="formValidCheck('#editProfileForm', 2)">
-                                    <label for="dateOfBirth" class="syne-input-label">Date of Birth</label>
-                                    <div class="d-flex">
-                                        <input id="dateOfBirth" name="dateOfBirth" type="text"
-                                            class="startDateInput project-title-input" placeholder="DD/MM/YY">
-                                        <img style="height: 24px;" class="pr-2" src="img/calendar-grey.png">
-                                    </div>
-                                </div>
-                                <div>
-
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <div class="syne-inputbox p-2 border-0">
-                                    <select class="selectpicker show-tick syne-inputbox mt-2 ml-3 border-0 form-control"
-                                        id="dateOfBirthAccess" name="dateOfBirthAccess">
-                                        <option value="public">Public</option>
-                                        <option value="friends">Friends</option>
-                                        <option value="onlyMe">Only Me</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-3 d-flex justify-content-between w-100">
-                            <div class="countryInput m-2" style="width:70%;">
-                                <div class="syne-inputbox p-2" onclick="formValidCheck('#editProfileForm', 3)">
-                                    <label for="userLocation" class=" syne-input-label">Location</label>
-                                    <div class="d-flex">
-                                        <input name="userLocation" type="text" class="project-title-input"
-                                            placeholder="Enter your current location" id="userLocation">
-                                        <img style="height: 24px;" class="pr-2" src="img/location-icon.png">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <div class="syne-inputbox p-2 border-0">
-                                    <select class="selectpicker show-tick syne-inputbox mt-2 ml-3 border-0 form-control"
-                                        id="locationAccess" name="locationAccess">
-                                        <option value="public">
-                                            <img src="img/syne-logo.png" alt="logo">
-                                            Public
-                                        </option>
-                                        <option value="friends">Friends</option>
-                                        <option value="onlyMe">Only Me</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="mt-3 m-2">
-                            <button onclick="updateProfile()" id="updateProfileBtn" type="button"
-                                class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
-                                Save Changes
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="syne-followers" class="pop-modal">
-        <div class="modalcontent follower-modal">
-            <div class="synemodal-body">
-                <div class="syne-lgin-r rltv p-3">
-                    <div class="form-title modal-title">
-                        Followers
-                    </div>
-                    <a href="#" class="modalclose flex">
-                        <div class="modal-close-text">Close</div>
-                        <img src="img/close-icon.png" alt="close">
-                    </a>
-                </div>
-                <div class="container p-0 follower-modal-height">
-
-                    <div class="line-seperator mb-2"></div>
-
-                    <div class="d-flex justify-content-between align-items-center px-3">
-                        <div class="d-flex p-2">
-                            <img style="height:40px" src="img/user.png">
-                            <div class="px-2">
-                                <div class="follow_person_name">Name</div>
-                                <div class="follower-user-name">username</div>
-                            </div>
-                        </div>
-                        <div class="follow-button px-4 py-1">
-                            Follow
-                        </div>
-                    </div>
-                    <div class="line-seperator my-2"></div>
-
-                    <div class="d-flex justify-content-between align-items-center px-3">
-                        <div class="d-flex p-2">
-                            <img style="height:40px" src="img/user.png">
-                            <div class="px-2">
-                                <div class="follow_person_name">Name</div>
-                                <div class="follower-user-name">username</div>
-                            </div>
-                        </div>
-                        <div class="follow-button px-4 py-1">
-                            Follow
-                        </div>
-                    </div>
-                    <div class="line-seperator my-2"></div>
-
-                    <div class="d-flex justify-content-between align-items-center px-3">
-                        <div class="d-flex p-2">
-                            <img style="height:40px" src="img/user.png">
-                            <div class="px-2">
-                                <div class="follow_person_name">Name</div>
-                                <div class="follower-user-name">username</div>
-                            </div>
-                        </div>
-                        <div class="follow-button px-4 py-1">
-                            Follow
-                        </div>
-                    </div>
-                    <div class="line-seperator my-2"></div>
-
-                    <div class="d-flex justify-content-between align-items-center px-3">
-                        <div class="d-flex p-2">
-                            <img style="height:40px" src="img/user.png">
-                            <div class="px-2">
-                                <div class="follow_person_name">Name</div>
-                                <div class="follower-user-name">username</div>
-                            </div>
-                        </div>
-                        <div class="follow-button px-4 py-1">
-                            Follow
-                        </div>
-                    </div>
-                    <div class="line-seperator my-2"></div>
-
-                    <div class="d-flex justify-content-between align-items-center px-3">
-                        <div class="d-flex p-2">
-                            <img style="height:40px" src="img/user.png">
-                            <div class="px-2">
-                                <div class="follow_person_name">Name</div>
-                                <div class="follower-user-name">username</div>
-                            </div>
-                        </div>
-                        <div class="follow-button px-4 py-1">
-                            Follow
-                        </div>
-                    </div>
-                    <div class="line-seperator my-2"></div>
-
                 </div>
             </div>
         </div>
@@ -364,13 +219,12 @@
                 <a class="follower-text" >Followers</a>
             </div>
             <div>
-                <div class="follower-count modal-btn" href="#syne-followers"
-                data-target="syne-followers">{{followingCount}}</div>
+                <div class="follower-count">{{followingCount}}</div>
                 <div class="follower-text">Following</div>
             </div>
         </div>
         <div class="menu-items-wrapper">
-            <div class="menu-items py-4" id="left-panel-tabs">
+            <div class="menu-items py-4" id="org-left-panel-tabs">
                 <!-- left panel tabs template fill here -->
             </div>
             <div class="mt-2 pl-3">
@@ -397,7 +251,6 @@
     <!-- left `panel top banner template -->
     <script id="template-left-panel-top-banner" type="text/template">
         <img class="img-fluid w-100 profile-photo-height" src="{{coverPhotoUrl}}">
-    <!-- <img class="img-fluid profile-photo" src="{{profilePhotoUrl}}"> -->
     </script>
 
     <!-- profile completion showing section template -->
@@ -438,25 +291,18 @@
 
     <!-- news feed template -->
     <script id="template-news-feed" type="text/template">
-        <div class="post-card mb-3">
+        <div class="post-card mt-3">
             <div class="post-card-header">
-                <div class="d-flex align-items-center justify-content-between">
-                    <div class="d-flex p-4">
-                        <div class="post-profile-photo">
-                            <img style="height: 58px;;" src="{{userImage}}">
-                        </div>
-                        <div class="pl-3">
-                            <div class="post-user">{{name}}</div>
-                            <div class="post-user-name">{{email}}</div>
-                            <div class="post-time">{{postedTimeDuration}} ago</div>
-                        </div>
+                <div class="d-flex p-4">
+                    <div class="post-profile-photo">
+                        <img style="height: 58px;;" src="{{userImage}}">
                     </div>
-                    <div class="px-2">
-                        <img src="img/public-grey-small-copy-2.png">
-                        <img src="img/more-dots-small-copy-2.png">
+                    <div class="pl-3">
+                        <div class="post-user">{{name}}</div>
+                        <div class="post-user-name">{{email}}</div>
+                        <div class="post-time">{{postedTimeDuration}} ago</div>
                     </div>
                 </div>
-                
         
                 <div>
                     <img class="img-fluid" src="{{imageUrl}}">
@@ -503,7 +349,7 @@
                             </div>
                         </div>
         
-                        <div class="comment-section d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center justify-content-between">
                             <img style="height: 32px;" src="img/user.png">
                             <div class="d-flex w-100 justify-content-between comment-box p-1 ml-2">
                                 <div>
@@ -514,8 +360,9 @@
                                     <img src="img/camera-lgrey-small.png">
                                 </div>
                             </div>
-                            <img class="comment-options" src="img/more-dots-small-copy-2.png">
                         </div>
+        
+                        
                     </div>
                 </div>
             </div>
@@ -551,7 +398,7 @@
 
     <div class="line-seperator my-3"></div>
 
-</script>
+    </script>
 
     <!-- who to follow panel template -->
     <script id="template-who-to-follow-list-panel" type="text/template">
@@ -573,11 +420,11 @@
         </div>
 
         <div class="line-seperator my-3"></div>
-</script>
-
+    </script>
 </body>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="dataModels.js"></script>
 <script type="text/javascript" src="constants.js"></script>
-<script type="text/javascript" src="js/my-projects.js"></script>
+<script type="text/javascript" src="js/about-organisation.js"></script>
+
 </html>

@@ -55,7 +55,9 @@ function createLeftPanelTabs() {
                 .replace(/{{id}}/g, tab.id);
         });
 
-        document.getElementById("left-panel-tabs").innerHTML = leftPanelTabFinalHtml;
+        if(document.getElementById("left-panel-tabs")){
+            document.getElementById("left-panel-tabs").innerHTML = leftPanelTabFinalHtml;
+        }        
     }
 }
 

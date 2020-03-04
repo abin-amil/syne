@@ -744,3 +744,21 @@ body .no-padding {
 #backBtn:hover {
   cursor: pointer;
 }
+
+.about-organisation-header-text{
+    font-family: HKGrotesk;
+    font-size: 17px;
+    font-weight: bold;
+    color: #2a3844;
+}
+
+.about-organisation-content-text{
+    font-size: 13px;
+    font-family: HKGrotesk-reg;
+    font-weight: normal !important;
+}
+
+.about-organisation-field-text{
+  font-size: 14px;
+  font-weight: normal !important;
+}
