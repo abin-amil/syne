@@ -166,7 +166,7 @@ var organisationDashboadData = {
     leftPanelTabs: [{
         name: 'Timeline',
         iconUrl: 'img/project-grey-small-copy-9.png',
-        path: 'timeline.html',
+        path: 'organisation-timeline.html',
         id: 1
     }, {
         name: 'About Organisation',
