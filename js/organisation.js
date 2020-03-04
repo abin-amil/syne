@@ -1,5 +1,6 @@
 $(document).ready(function () {
     setTab(6);
+    createOrganisationList();
 });
 
 
@@ -51,6 +52,7 @@ function createNewOrganisation() {
 
 function createOrganisation() {
     document.getElementById('createOrgEmptyState').style.display = "none";
+    document.getElementById('OrgLandingPage').style.display = "none";
     document.getElementById('publishOrganisationPage').style.display = "block";
 }
 
