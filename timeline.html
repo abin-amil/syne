@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/post-login.css">
     <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/timeline.css">
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet"
@@ -474,8 +475,40 @@
                         </div>
                     </div>
                     <div class="px-2">
-                        <img class="cursor-pointer" src="img/public-grey-small-copy-2.png">
-                        <img class="cursor-pointer" src="img/more-dots-small-copy-2.png">
+                        <span>
+                        <a href="#" class="dropdown-toggle" id="post-access-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="cursor-pointer" src="img/public-grey-small-copy-2.png">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="post-access-dropdown">
+                            <a class="dropdown-item" href="#">
+                                <img src="img/public-grey-small-copy-2.png">
+                                Public
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <img src="img/friends-grey.png">
+                                Friends
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <img src="img/onlyme-grey.png">
+                                Only Me
+                            </a>
+                        </div>
+                    </span>
+                    <span>
+                        <a href="#" id="post-action-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="cursor-pointer" src="img/more-dots-small-copy-2.png" />
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="post-action-dropdown">
+                            <a class="dropdown-item" href="#">
+                                <img src="img/report-grey-small.png">
+                                Report Post
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <img src="img/delpost-grey-small.png">
+                                Delete Post
+                            </a>
+                        </div>
+                    </span>
                     </div>
                 </div>
                 
