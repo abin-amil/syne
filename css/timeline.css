@@ -78,3 +78,10 @@
     color: #bac3cf;
     margin-left: 10px;
 }
+
+.show-more-comments {
+    font-size: 13px;
+    color: #1b7ad4;
+    cursor: pointer;
+    margin-top: 16px;
+}
