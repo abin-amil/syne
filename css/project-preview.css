@@ -74,3 +74,12 @@
     font-size: 13px;
     color: #5d677e;
 }
+.project-preview-amount-raised-percentage {
+    font-size: 13px;
+    font-weight: bold;
+    color: #2a3844;
+}
+.project-preview-amount-raised-time {
+    font-size: 13px;
+    color: #fb4f6d;
+}
