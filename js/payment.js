@@ -5,6 +5,13 @@ function proceedToPayButtonClick() {
     pageNum = 2;
 }
 
+function proceedToPayButtonClick1()
+{
+    document.getElementById('paymentGuestUser').style.display = "none";
+    document.getElementById('paymentGuestUserPaymentPage').style.display = "block";
+    pageNum = 2;
+}
+
 function proceedToPaymentGateway() {
     document.getElementById('logegedInUserPaymentPage1').style.display = "none";
     document.getElementById('logegedInUserPaymentPage2').style.display = "none";

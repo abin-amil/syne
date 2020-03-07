@@ -73,7 +73,7 @@
                             </div>
                         </div>
 
-                        <div class="heade-r flex flex-v-center">
+                        <div class="heade-r flex flex-v-center mt-sm-3">
                             <div class="syne-inputbox d-flex align-items-center bg-grey-light mr-2">
                                 <img style="height: 20px;" src="img/search.png">
                                 <input type="text" name="projectSearch"
@@ -88,20 +88,21 @@
             </div>
         </div>
         <div class="container">
-            <div class="row mt-5">
+            <div class="mt-5">
                 <div class="col-3">
                     <div class="ml-5 mt-1" onclick="back()" id="backBtn">
                         <img src="img/back-arrow-blue.png">
                         <span class="txt-blue">Back</span>
                     </div>
                 </div>
-                <div class="col-5 ml-5">
+                <div class="d-flex justify-content-center">
+                <div class="col-5 ml-5" style="min-width:365px;">
                     <div id="logegedInUserPaymentPage1">
                         <div class="d-flex justify-content-center row mt-5 donate-to-text">
                             Donate to
                         </div>
                         <div class="payment-container p-4 mt-5">
-                            <img class="img-fluid payment-page-icon" src="img/user.png" style="max-height: 65px;">
+                           <div class="d-flex justify-content-center mt-4"><img class="img-fluid payment-page-icon" src="img/user.png" style="max-height: 65px;"></div> 
                             <div class="d-flex justify-content-center row donate-to-text" style="font-size: 17px;">
                                 School of love
                             </div>
@@ -113,8 +114,8 @@
                                 <img style="height: 20px;" src="img/dollar-symbol.png">
                                 <input type="text" class="form-control project-title-input">
                             </div>
-                            <div class="row mt-2" style="margin-left:85px;font-weight:bold;font-size:13px">
-                                <div class="custom-control custom-checkbox">
+                            <div class="row mt-2 d-flex justify-content-center" style="font-weight:bold;font-size:13px">
+                                <div class="custom-control custom-checkbox mt-2">
                                     <input type="checkbox" class="custom-control-input" id="syneCredits">
                                     <label class="custom-control-label" for="syneCredits">Use SYNE CREDITS</label>
                                 </div>
@@ -123,7 +124,7 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center mt-4" style="font-weight:bold;font-size:15px">
-                                Choose payment method
+                                Choose payment methods
                             </div>
                             <div class="mt-4 payment-methods w-65" style="margin-left: 74px;">
                                 <div class="custom-control custom-radio mt-3 ml-3">
@@ -153,18 +154,17 @@
                                     <label class="custom-control-label" for="directPayment">Direct payment</label>
                                 </div>
                             </div>
-                            <div>
-                                <button type="button"
-                                    class="btn proceedButton is-success mt-5 d-flex justify-content-around"
-                                    style="margin-left: 74px;" onclick="proceedToPayButtonClick()">
+                            <div >
+                                <div class="d-flex justify-content-center"> <button type="button"
+                                    class="btn proceedButton is-success mt-5 d-flex justify-content-around "
+                                     onclick="proceedToPayButtonClick()">
                                     <div>
                                         Proceed to Pay $800
                                     </div>
-                                </button>
+                                </button></div>
                                 <div class="mt-3 user-name notify-text">
                                     <span class="d-flex justify-content-center">Tapping on proceed button above will
-                                        take
-                                        you to a list of</span>
+                                        tak you to a list of</span>
                                     <span class="d-flex justify-content-center">Global Wallet page</span>
                                 </div>
                             </div>
@@ -175,19 +175,20 @@
                             Donate to
                         </div>
                         <div class="payment-container p-4 mt-5">
-                            <img class="img-fluid payment-page-icon" src="img/user.png" style="max-height: 65px;">
+                           <div class="d-flex justify-content-center"><img class="img-fluid payment-page-icon" src="img/user.png" style="max-height: 65px;"></div> 
                             <div class="d-flex justify-content-center row donate-to-text" style="font-size: 17px;">
                                 School of love
                             </div>
                             <div class="d-flex justify-content-center user-name" style="font-size: 11px;">
                                 Vivent Foundation
                             </div>
+                            <div class="d-flex justify-content-center">
                             <div class="payment-amount-text-box p-2 d-flex align-items-center mt-4 w-65"
-                                style="margin-left: 70px;">
+                                >
                                 <img style="height: 20px;" src="img/dollar-symbol.png">
                                 <input type="text" class="form-control project-title-input" value="1200">
-                            </div>
-                            <div class="row mt-3" style="margin-left:85px;font-weight:bold;font-size:13px">
+                            </div></div>
+                            <div class="row mt-3 d-flex justify-content-center" style="font-weight:bold;font-size:13px">
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="syneCredits">
                                     <label class="custom-control-label" for="syneCredits">Use <span
@@ -197,19 +198,19 @@
                             </div>
 
                             <div>
+                                <div class="d-flex justify-content-center">
                                 <button type="button"
                                     class="btn  proceedButton is-success mt-5 d-flex justify-content-around"
-                                    style="margin-left: 74px;" onclick="proceedToPaymentGateway()">
+                                  onclick="proceedToPaymentGateway()">
                                     <div style="height: 70px;">
                                         <span class="w-65" style="font-size: 10px;">Total Amount $800 </span><br />
                                         <span class="w-65" style="font-size:12px">Procedd to Payment Gateway</span>
                                     </div>
-                                </button>
+                                </button></div>
                                 <div class="mt-3 user-name notify-text">
-                                    <span class="d-flex justify-content-center">Help text explaining what happns next
-                                        when you tap on</span>
-                                    <span class="d-flex justify-content-center mt-1">the payment Gateway button
-                                        above</span>
+                                    <div class="d-flex justify-content-center">Help text explaining what happens next when you tap on</div>
+                                    <div class="d-flex justify-content-center mt-1">the payment Gateway button above</div>
+                                        
                                 </div>
                             </div>
                         </div>
@@ -231,7 +232,7 @@
                                 style="font-size: 16px; color: #7c8796;">
                                 You just donate $800 to
                             </div>
-                            <div class="mt-2" style="margin-left: 9.5rem!important;">
+                            <div class="mt-2 d-flex justify-content-center">
                                 <img class="organisation-image" src="img/user.png">
                             </div>
                             <div class="d-flex justify-content-center row donate-to-text" style="font-size: 17px;">
@@ -257,6 +258,7 @@
                                 <a>PRINT RECEIPT</a>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>

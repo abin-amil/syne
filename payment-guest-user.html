@@ -45,21 +45,26 @@
     <script src="scripts/jquery.min.js"></script>
 </head>
 
-<body class="post-page-bg">
+<body class="post-page-bg ">
     <div class="container-fluid h-100" id="paymentGuestUser">
-        <div class="row justify-content-center h-100">
-            <div class="col-6 hidden-md-down bg-grey-light d-flex flex-column align-items-center" id="guestUserPaymentPageLeftSide">
+        <div class=" d-flex flex-wrap ">
+        <div class="row justify-content-center h-100" style="width: 100%" >
+            <div style="min-width: 315px" class="col-6 hidden-md-down bg-grey-light d-flex flex-column align-items-center" id="guestUserPaymentPageLeftSide">
                 <div class="mt-5">
                     <div class="logo h-100">
                         <img src="img/syne-logo.png" alt="logo">
                     </div>
+                    <div   id="backBtn">
+                            <img src="img/back-arrow-blue.png">
+                            <span class="txt-blue">Back</span>
+                    </div>
                 </div>
-                <div style="min-width: 300px; width: 50%;">
+                <div style="min-width: 300px; width: 50%;" class="mt-3">
                     <div class="d-flex justify-content-center row mt-5 donate-to-text">
                         Donate to
                     </div>
                     <div class="payment-container p-4 mt-5 d-flex flex-column align-items-center">
-                        <div>
+                        <div class="mt-3">
                             <img class="img-fluid payment-page-icon" src="img/user.png" style="max-height: 65px;">
                         </div>
                         <div class="d-flex justify-content-center row donate-to-text" style="font-size: 17px;">
@@ -68,44 +73,48 @@
                         <div class="d-flex justify-content-center user-name" style="font-size: 11px;">
                             Vivent Foundation
                         </div>
-                        <div class="payment-amount-text-box p-2 d-flex align-items-center mt-4 w-65 mb-3">
+                        <div class="payment-amount-text-box p-2 d-flex align-items-center mt-4 w-75 mb-3">
                             <img style="height: 20px;" src="img/dollar-symbol.png">
                             <input type="text" class="form-control project-title-input" value="1200">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-6" id="guestUserPaymentPageRightSide" style="background-color: white;">
-                <div class="p-4 mt-5 w-65">
-                    <div class="user-name text-right" style="margin-right: 16%;">
+            <div class="col-md-6 mt-5" id="guestUserPaymentPageRightSide" >
+                <div class="p-4 mt-5 w-75 ml-sm-5 pl-sm-5">
+                    <div class="user-name text-right mt-5 w-75">
                         Already have an acount?
                     </div>
-                    <div class="text-right sign-in-text" style="margin-right: 16%;">
+                    <div class="text-right sign-in-text w-75">
                         Sign in
                     </div>
-                    <form id="guestPaymentForm">
-                        <div class="mt-3 payment-methods w-65 m-74">
+                   
+                    <form id="guestPaymentForm" class="m-5">
+                            <div class="project-title-input ">
+                                    Personal Information
+                            </div>
+                        <div class="mt-3 payment-methods w-75 " style="min-width: 190px;">
                             <label class="payment-input-label" for="fName">Email</label>
                             <input type="text" name="phoneNum" class="form-control project-title-input">
                         </div>
-                        <div class="row w-65 m-74 justify-content-between">
-                            <div class="p-0 mt-3 mw-150 c-6" style="border: 1px solid #e0e6ee;">
+                        <div class=" w-75  d-flex justify-content-between flex-sm-wrap">
+                            <div class="p-0 mt-3 mw-150 c-6 payment-methods" style="border: 1px solid #e0e6ee;max-width: 48%;">
                                 <label class="payment-input-label" for="fName">Given Name</label>
                                 <input type="text" name="phoneNum" class="form-control project-title-input">
                             </div>
-                            <div class="p-0 mt-3 mw-150 c-5" style="border: 1px solid #e0e6ee;">
+                            <div class="p-0 mt-3 mw-150 c-5 payment-methods" style="border: 1px solid #e0e6ee;max-width: 48%;">
                                 <label class="payment-input-label" for="lName">Surname</label>
                                 <input type="text" name="phoneNum" class="form-control project-title-input">
                             </div>
                         </div>
-                        <div class="mt-3 payment-methods w-65 m-74">
+                        <div class="mt-3 payment-methods w-75 " style="min-width: 190px;">
                             <label class="payment-input-label" for="PhoneNum">Phone Number</label>
                             <input type="text" name="phoneNum" class="form-control project-title-input">
                         </div>
-                        <div class="mt-2 m-74" style="font-weight:bold;font-size:15px">
+                        <div class="mt-3" style="font-weight:bold;font-size:15px">
                             Payment method
                         </div>
-                        <div class="mt-4 payment-methods w-65 m-74">
+                        <div class="mt-4 payment-methods w-75">
                             <div class="custom-control custom-radio mt-3 ml-3">
                                 <input type="radio" class="custom-control-input" id="globalWallet" name="paymentMethod">
                                 <label class="custom-control-label" for="globalWallet">Global Wallet</label>
@@ -132,26 +141,148 @@
                                 <label class="custom-control-label" for="directPayment">Direct payment</label>
                             </div>
                         </div>
-                        <div>
+                        <div class="w-75">
+                            <div class="d-flex justify-content-center ">
                             <button type="button"
                                 class="btn proceedButton is-success mt-3 d-flex justify-content-around"
-                                style="margin-left: 74px;" onclick="proceedToPayButtonClick()">
+                                 onclick="proceedToPayButtonClick1()">
                                 <div>
                                     Proceed to Pay $1200
                                 </div>
-                            </button>
-                            <div class="mt-3 user-name notify-text">
-                                <span class="d-flex justify-content-center">Tapping on proceed button above will
-                                    take
-                                    you to a list of</span>
-                                <span class="d-flex justify-content-center">Global Wallet page</span>
+                            </button></div>
+                            <div class="mt-3 user-name notify-text ml-5">
+                                    <span class="d-flex justify-content-center">Tapping on proceed button above will
+                                        tak you to a list of Global Wallet page</span>
+                                    <!-- <span class="d-flex justify-content-center"></span> -->
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+        </div>
     </div>
+
+
+    <div class="container-fluid h-100" id="paymentGuestUserPaymentPage" style="display: none">
+            <div class=" d-flex flex-wrap ">
+            <div class="row justify-content-center h-100" style="width: 100%" >
+                <div style="min-width: 315px" class="col-6 hidden-md-down bg-grey-light d-flex flex-column align-items-center" id="guestUserPaymentPageLeftSide">
+                    <div class="mt-5">
+                        <div class="logo h-100">
+                            <img src="img/syne-logo.png" alt="logo">
+                        </div>
+                        <div   id="backBtn">
+                                <img src="img/back-arrow-blue.png">
+                                <span class="txt-blue">Back</span>
+                        </div>
+                    </div>
+                    <div style="min-width: 300px; width: 50%;" class="mt-3">
+                        <div class="d-flex justify-content-center row mt-5 donate-to-text">
+                            Donate to
+                        </div>
+                        <div class="payment-container p-4 mt-5 d-flex flex-column align-items-center">
+                            <div class="mt-3">
+                                <img class="img-fluid payment-page-icon" src="img/user.png" style="max-height: 65px;">
+                            </div>
+                            <div class="d-flex justify-content-center row donate-to-text" style="font-size: 17px;">
+                                School of love
+                            </div>
+                            <div class="d-flex justify-content-center user-name" style="font-size: 11px;">
+                                Vivent Foundation
+                            </div>
+                            <div class="payment-amount-text-box p-2 d-flex align-items-center mt-4 w-75 mb-3">
+                                <img style="height: 20px;" src="img/dollar-symbol.png">
+                                <input type="text" class="form-control project-title-input" value="1200">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5" id="guestUserPaymentPageRightSide" >
+                    <div class="p-4 mt-5 w-75 ml-sm-5 pl-sm-5">
+                        <div class="user-name text-right mt-5 w-75">
+                            Already have an acount?
+                        </div>
+                        <div class="text-right sign-in-text w-75">
+                            Sign in
+                        </div>
+                       
+                        <form id="guestPaymentForm" class="m-5">
+                                <div class="project-title-input">
+                                        Personal Information
+                                </div>
+                            <div class="mt-3 payment-methods w-75 " style="min-width: 190px">
+                                <label class="payment-input-label" for="fName">Email</label>
+                                <input type="text" name="phoneNum" class="form-control project-title-input">
+                            </div>
+                            <div class=" w-75  d-flex justify-content-between flex-sm-wrap">
+                                <div class="p-0 mt-3 mw-150 c-6 payment-methods" style="border: 1px solid #e0e6ee;max-width: 48%;">
+                                    <label class="payment-input-label" for="fName">Given Name</label>
+                                    <input type="text" name="phoneNum" class="form-control project-title-input">
+                                </div>
+                                <div class="p-0 mt-3 mw-150 c-5 payment-methods" style="border: 1px solid #e0e6ee;max-width: 48%;">
+                                    <label class="payment-input-label" for="lName">Surname</label>
+                                    <input type="text" name="phoneNum" class="form-control project-title-input">
+                                </div>
+                            </div>
+                            <div class="mt-3 payment-methods w-75 " style="min-width: 190px">
+                                <label class="payment-input-label" for="PhoneNum">Phone Number</label>
+                                <input type="text" name="phoneNum" class="form-control project-title-input">
+                            </div>
+                            <!-- <div class="mt-3 m-74" style="font-weight:bold;font-size:15px">
+                                Payment method
+                            </div> -->
+                            <!-- <div class="mt-4 payment-methods w-75 m-74">
+                                <div class="custom-control custom-radio mt-3 ml-3">
+                                    <input type="radio" class="custom-control-input" id="globalWallet" name="paymentMethod">
+                                    <label class="custom-control-label" for="globalWallet">Global Wallet</label>
+                                </div>
+                                <div class="line-seperator my-2"></div>
+                                <div class="custom-control custom-radio mt-3 ml-3">
+                                    <input type="radio" class="custom-control-input" id="creditCard" name="paymentMethod">
+                                    <label class="custom-control-label" for="creditCard">Credit Card</label>
+                                </div>
+                                <div class="line-seperator my-2"></div>
+                                <div class="custom-control custom-radio mt-3 ml-3">
+                                    <input type="radio" class="custom-control-input" id="netBanking" name="paymentMethod">
+                                    <label class="custom-control-label" for="netBanking">Net Banking</label>
+                                </div>
+                                <div class="line-seperator my-2"></div>
+                                <div class="custom-control custom-radio mt-3 ml-3">
+                                    <input type="radio" class="custom-control-input" id="debitCard" name="paymentMethod">
+                                    <label class="custom-control-label" for="debitCard">Debit Card</label>
+                                </div>
+                                <div class="line-seperator my-2"></div>
+                                <div class="custom-control custom-radio mt-3 ml-3">
+                                    <input type="radio" class="custom-control-input" id="directPayment"
+                                        name="paymentMethod">
+                                    <label class="custom-control-label" for="directPayment">Direct payment</label>
+                                </div>
+                            </div> -->
+                            <div class="w-75">
+                                <div class="d-flex justify-content-center">
+                                <button type="button" 
+                                    class="btn proceedButton is-success mt-3 d-flex justify-content-around"
+                                     onclick="proceedToPayButtonClick()">
+                                    <div>
+                                        Proceed to Pay $1200
+                                    </div>
+                                </button></div>
+                                <div class="mt-3 user-name notify-text ml-5">
+                                        <span class="d-flex justify-content-center">Tapping on proceed button above will
+                                            tak you to a list of Global Wallet page</span>
+                                        <!-- <span class="d-flex justify-content-center"></span> -->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+
 </body>
 <script type="text/javascript" src="js/payment.js"></script>
 <style>
