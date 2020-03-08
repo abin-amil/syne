@@ -146,3 +146,14 @@
     font-weight: 600;
     color: #bac3cf;
 }
+
+.progress-bar {
+    background-color: #e0e6ee !important;
+    height: 6px !important;
+    margin-bottom: 16px;
+}
+
+.prograss-bar-inner {
+    background-color: #16c0ef !important;
+    height: 6px !important;
+}

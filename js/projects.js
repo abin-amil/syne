@@ -36,9 +36,7 @@ $(document).ready(function () {
         let el = document.createElement("option");
         el.textContent = optionName;
         el.value = optionValue;
-        if (CategoryList[key].selected) {
-            el.selected = CategoryList[key].selected;
-        }
+        CategoryList[key].selected && (el.selected = CategoryList[key].selected);
         categoryDropdown.appendChild(el);
     });
     $('#category').selectize();
