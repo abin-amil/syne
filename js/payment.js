@@ -12,6 +12,19 @@ function proceedToPayButtonClick1()
     pageNum = 2;
 }
 
+function proceedToPayButton2()
+{
+    document.getElementById('paymentGuestUser').style.display = "none";
+    // document.getElementById('guestUserPaymentPageLeftSide').style.display = "none";
+    // document.getElementById('guestUserPaymentPageRightSide').style.display = "none";
+    document.getElementById('paymentGuestUserPaymentPage').style.display = "none";
+
+
+
+    document.getElementById('paymentSucessfullPage').style.display = "block";
+    pageNum = 2;
+}
+
 function proceedToPaymentGateway() {
     document.getElementById('logegedInUserPaymentPage1').style.display = "none";
     document.getElementById('logegedInUserPaymentPage2').style.display = "none";

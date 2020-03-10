@@ -17,3 +17,60 @@
 .c-5 {
     flex: 1 1 41.666667% !important;
 }
+
+.form-width {
+    max-width: 500px;
+    min-width: 250px;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.last-step-msg{
+    max-width: 500px;
+}
+
+.one-last-step-text {
+    font-size: 26px;
+    color: #395366;
+    font-family: HKGrotesk;
+}
+
+.one-last-step-desc {
+    font-size: 16px;
+    color: #46697f;
+}
+
+.conditions-highlight {
+    color: #16c0ef;
+}
+
+.your-email-text {
+    font-size: 11px;
+    color: #919dac;
+}
+
+.email-text {
+    font-size: 16px;
+    color: #2e404e;
+    font-family: HKGrotesk;
+}
+
+.terms-conditions-text {
+    font-size: 11px;
+    color: #606060;
+}
+
+.payment-container-guest-user {
+    max-width: 500px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(57, 64, 79, 0.1);
+    background-color: #ffffff;
+}
+
+@media(max-width: 768px) { 
+    .bg-grey-light {
+        background-color: #ffffff !important;
+    } 
+}
