@@ -299,8 +299,8 @@
     </div>
 
     <div id="paymentSucessfullPage" class="h-100" style="display: none;">
-       <div class="d-flex h-100">
-        <div class="col-6">
+       <div class="d-flex flex-wrap h-100">
+        <div class="col-sm-12 col-md-6">
             <div class="container p-4 mt-5 donate-to-text">
                 <div class="mt-2 d-flex justify-content-center">
                     <img class="organisation-image" src="img/green-tick.png"
@@ -344,7 +344,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-6 bg-white">
+        <div class="col-sm-12 col-md-6 bg-white">
             <div class="last-step-msg d-flex flex-column justify-content-center h-100 p-4 mx-5">
                 <div class="syne-logo py-3">
                     <img src="img/syne-logo.png">
@@ -357,6 +357,10 @@
                     <div class="your-email-text">Your Email</div>
                     <div class="email-text">williamcharlotte.1987@syne.com</div>
                 </div>
+                <div class="mt-3 payment-methods d-flex align-items-center" style="min-width: 200px; max-width: 300px">
+                    <input type="text" name="password" placeholder="Create a Password" class="form-control project-title-input">
+                    <div class="pr-3 verify-text">Verify</div>
+                </div>
                 <button type="button"
                 class="btn proceedButton is-success mt-3 d-flex justify-content-around"
                 onclick="proceedToPayButton2()">
@@ -364,7 +368,7 @@
                     Join SYNE
                 </div>
                 </button>
-                <div class="terms-conditions-text">By signing up, you confirm that you’ve read and
+                <div class="terms-conditions-text py-2">By signing up, you confirm that you’ve read and
                     <br>accepted our <span class="conditions-highlight">Terms & Conditions</span> and <span class="conditions-highlight">Privacy Policy.</span></div>
 
             </div>
