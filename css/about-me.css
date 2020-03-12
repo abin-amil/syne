@@ -1,0 +1,20 @@
+.experience-location, .experience-duration, .education-duration, .education-location {
+    color: #7c8796;
+}
+
+.experience-place {
+    color: #2a3844;
+}
+
+.edit-experience-button, .edit-education-button, .edit-about-me {
+    display: flex;
+    align-items: center;
+    color: #bac3cf;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.edit-experience-button img, .edit-education-button img, .edit-about-me img {
+    height: 24px;
+    width: 24px;
+}
