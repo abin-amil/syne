@@ -9,6 +9,11 @@ $(document).ready(function () {
         $("body").addClass("modal-blur");
         e.preventDefault();
     });
+
+    // $('textarea#userDetailInto').change(function() {
+    //     var userDetailInto = $.trim($("textarea#userDetailInto").val());
+    //     console.log(userDetailInto);
+    // })
 });
 
 function closeModal(id) {
