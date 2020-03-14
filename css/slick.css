@@ -117,7 +117,7 @@
     --time: 0.7s;
     position: relative;
 /*    display: inline-block;*/
-    height: 1em;
+    /* height: 1em; */
     padding: 1em;
 
     color: white;

@@ -8,3 +8,12 @@
 .edit-icon-text {
     color: #16c0ef;
 }
+
+@media(max-width: 768px) { 
+    .email-verified-text {
+        font-size: 28px;
+        line-height: 1.33;
+        letter-spacing: 0.39px;
+        color: #16c0ef;
+    } 
+}

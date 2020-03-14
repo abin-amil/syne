@@ -133,6 +133,11 @@ p {
     width: auto;
 }
 
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
 .flex {
     display: flex;
     justify-content: space-between;

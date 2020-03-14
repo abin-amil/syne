@@ -119,20 +119,22 @@
             </div>
 
             <div class="col-6">
-                <div class="writePost p-4" id="createOrgEmptyState" style="min-height: 20%;">
-                    <div class="mt-5" style="margin-left: 12.5rem!important;">
+               <div class="d-flex flex-column">
+                <div class="writePost p-4 d-flex flex-column justify-content-center align-items-center w-100" id="createOrgEmptyState" style="min-height: 20%;">
+                    <div class="mt-5">
                         <img class="organisation-image" src="img/no-org-icon.svg">
                     </div>
-                    <div class="full-name mt-4" style="margin-left: 6.5rem!important;">
+                    <div class="full-name mt-4">
                         You haven't created any organisation Page yet
                     </div>
-                    <div class="" style="margin-left: 8rem!important;">
+                    <div class="">
                         <button id="createOrganisationBtn" onclick="createOrganisation()" type="button"
                             class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
                             + Create Organisation Page
                         </button>
                     </div>
                 </div>
+               </div>
                 <div class="writePost p-4" id="publishOrganisationPage" style="min-height: 75%;  display: none;">
                     <div id="createNewOrg">
                         <div class="full-name">
@@ -346,7 +348,7 @@
             <div class="follower-text">{{userIntroDetails}}</div>
         </div>
         <div class="line-seperator my-3"></div>
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between flex-wrap">
             <div>
                 <div class="follower-count modal-btn" href="#syne-followers"
                 data-target="syne-followers">{{followersCount}}</div>
@@ -376,7 +378,7 @@
 
     <!-- left panel tabs template -->
     <script id="template-left-panel-tab-details" type="text/template">
-        <a class="d-flex py-3 pl-3" href="{{path}}" id="syne-tab{{id}}">
+        <a class="d-flex py-3 pl-3 align-items-center" href="{{path}}" id="syne-tab{{id}}">
             <img src="{{iconUrl}}">
             <div class="px-2">{{tabName}}</div>
         </a>
@@ -461,14 +463,14 @@
         <div class="follow-people">
             Followed by {{mutualFollwerName}} & {{mutualFollowersCount}} others
         </div>
-        <div class="d-flex pt-2">
+        <div class="d-flex flex-wrap pt-2">
             <img class="img-fluid" style="height: 48px;" src="{{imageUrl}}">
-                <div class="pl-3">
+                <div class="pl-0 pl-md-3">
                     <div class="follow_person_name">{{name}}</div>
                     <div class="follower-user-name">{{email}}</div>
                 </div>
                         </div>
-            <div class="d-flex pt-3 justify-content-between align-items-center">
+            <div class="d-flex flex-wrap pt-3 justify-content-between align-items-center">
                 <div class="follow-button py-1 px-4">Follow</div>
                 <div class="followers-count">{{followersCount}} Followers</div>
             </div>

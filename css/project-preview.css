@@ -57,7 +57,7 @@
 }
 
 .donateButton {
-    height: 40px;
+    /* height: 40px; */
     border-radius: 3px !important;
     background-color: #16c0ef !important;
     color: white !important;
