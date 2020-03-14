@@ -50,7 +50,7 @@ function addWorkExperience() {
         </div>
         <div class="edit-experience-button modal-btn cursor-pointer"
             data-target="syne-add-work-experience">
-            <img src="img/edit-grey-small.png" alt="">Edit
+            <img src="img/svgImages/edit-grey-small.svg" alt="">Edit
         </div>`;
     newWork.innerHTML = newWorkContent;
     document.getElementsByClassName('experience-list')[0].appendChild(newWork);
