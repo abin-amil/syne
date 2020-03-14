@@ -8,18 +8,18 @@ var dashBoardData = {
     profilePhotoUrl: 'img/user.png',
     leftPanelTabs: [{
         name: 'Timeline',
-        iconUrl: 'img/project-grey-small-copy-9.png',
+        iconUrl: 'img/svgImages/timeline-grey-small.svg',
         path: 'timeline.html',
         id: 1
     }, {
         name: 'About Me',
-        iconUrl: 'img/project-grey-small-copy-8.png',
+        iconUrl: 'img/svgImages/about-me-grey-small.svg',
         path: 'about-me.html',
         id: 2
     },
     {
         name: 'Projects',
-        iconUrl: 'img/project-grey-small.png',
+        iconUrl: 'img/svgImages/project-icon-grey-small.svg',
         path: 'my-projects.html',
         id: 3
     },
