@@ -52,15 +52,15 @@
 <body class="post-page-bg">
     <div class="wrapper">
         <div class="full-wrapper header post-page-header">
-            <div class="main-wrapper">
+            <div class="container p-0">
 
-                <div class="headerwrap flex">
-                    <div class="header-l flex flex-h-start flex-v-base">
+                <div class="headerwrap d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
                         <div class="logo h-100">
                             <img src="img/syne-logo.png" alt="logo">
                         </div>
                         <div class="header-menu h-100">
-                            <ul class="d-flex align-items-center">
+                            <ul class="d-flex align-items-center m-0">
                                 <li>
                                     <a class="txt-blue f14 modal-button" data-toggle="modal"
                                         data-target="#exampleModal">
@@ -76,14 +76,33 @@
                         </div>
                     </div>
 
-                    <div class="heade-r flex flex-v-center">
-                        <div class="syne-inputbox d-flex align-items-center bg-grey-light mr-2">
-                            <img style="height: 20px;" src="img/search.png">
-                            <input type="text" name="projectSearch"
-                                class="form-control bg-grey-light font-weight-normal" placeholder="Search here">
+                    <div class="d-flex flex-row-reverse nav-right">
+                        <div class="d-flex align-items-center">
+                            <div class="syne-inputbox syne-search d-flex align-items-center bg-grey-light mr-2">
+                                <img style="height: 20px;" src="img/search.png">
+                                <input type="text" name="projectSearch"
+                                    class="form-control bg-grey-light font-weight-normal" placeholder="Search here">
+                            </div>
+                            <!-- <img class="px-3" src="img/search-icon.svg"> -->
+                            <div class="position-relative px-4">
+                                <img class=" nav-msg-icon" src="img/msg-icon.svg">
+                                <div class="msg-count">5</div>
+                            </div>
+                            <div class="position-relative px-4">
+                                <img class="" src="img/notif-icon.svg">
+                                <div class="not-count">8</div>
+                            </div>
+                            
+                            <div class="pl-3 d-flex align-items-center">
+                                <img class="pr-2" style="height: 40px;" src="img/user.png">
+                                <div class="nav-username">Vinith</div>
+                                <img class="pl-2" src="img/carrotdown-grey-small.svg">
+                               
+                            </div>
                         </div>
-                        <a href="#" class="txt-blue right modal-btn" href="#syne-login"
-                            data-target="syne-login">Login</a>
+                       
+                        <!-- <a href="#" class="txt-blue right modal-btn" href="#syne-login"
+                            data-target="syne-login">Login</a> -->
                     </div>
                 </div>
 

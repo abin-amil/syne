@@ -748,7 +748,7 @@ body .no-padding {
   max-height: 140px;
   border: 2px solid white;
   border-radius: 50%;
-  margin-top: -65px;
+  margin-top: -58px;
 }
 
 #backBtn:hover {
@@ -771,4 +771,53 @@ body .no-padding {
 .about-organisation-field-text{
   font-size: 14px;
   font-weight: normal !important;
+}
+
+.nav-username {
+  color:#5d677e;
+  font-size: 13px;
+}
+
+.msg-count {
+  position: absolute;
+  background: red;
+  height: 16px;
+  width: 16px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  right:11px;
+  top:-10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-count {
+  position: absolute;
+  background: red;
+  height: 16px;
+  width: 16px;
+  font-size:  12px;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  right:11px;
+  top:-10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-right {
+  max-width: 650px;
+  width: 100%;
+}
+
+.syne-search {
+  max-width: 350px;
+  width: 100%;
 }
