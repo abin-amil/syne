@@ -77,7 +77,7 @@
 
                     <div class="heade-r flex flex-v-center">
                         <div class="syne-inputbox d-flex align-items-center bg-grey-light mr-2">
-                            <img style="height: 20px;" src="img/search.png">
+                            <img style="height: 20px;" src="img/svgImages/search-icon-grey.svg">
                             <input type="text" name="projectSearch"
                                 class="form-control bg-grey-light font-weight-normal" placeholder="Search here">
                         </div>
@@ -120,7 +120,7 @@
                     <div class="row">
                         <div class="col-10 about-organisation-header-text">About Vivent Org</div>
                         <div class="right">
-                            <img style="height: 18px;" src="img/grey-pencil.png">
+                            <img style="height: 18px;" src="img/svgImages/edit-grey-small.svg">
                             <a style="color: #7c8796;font-size: small" class="modal-btn">
                                 Edit
                             </a>
@@ -203,7 +203,7 @@
         <div class="mt-2">
             
             <div class="d-flex align-items-center">
-                <img style="height: 24px;" class="pr-2" src="img/location-grey-small.png">
+                <img style="height: 24px;" class="pr-2" src="img/svgImages/location-grey-small.svg">
                 <span class="follower-text" style="color: deepskyblue;font-weight: bold;">
                 {{location}}
                 </span>
@@ -271,102 +271,22 @@
     </div>
     <div class="pt-2 d-flex justify-content-between">
         <div class="d-flex align-items-center d-flex justify-content-center">
-            <img src="img/check-green-small.png">
+            <img src="img/svgImages/check-green-small.svg">
             <div class="pl-2">Account</div>
         </div>
         <div class="d-flex align-items-center d-flex justify-content-center">
-            <img src="img/check-green-small.png">
+            <img src="img/svgImages/check-green-small.svg">
             <div class="pl-2">Profile Picture</div>
         </div>
         <div class="d-flex  align-items-center d-flex justify-content-center">
-            <img src="img/check-green-small.png">
+            <img src="img/svgImages/check-green-small.svg">
             <div class="pl-2">Cover Picture</div>
         </div>
         <div class="d-flex  align-items-center d-flex justify-content-center">
-            <img src="img/check-green-small.png">
+            <img src="img/svgImages/check-green-small.svg">
             <div class="pl-2">Short Bio</div>
         </div>
     </div>
-    </script>
-
-    <!-- news feed template -->
-    <script id="template-news-feed" type="text/template">
-        <div class="post-card mt-3">
-            <div class="post-card-header">
-                <div class="d-flex p-4">
-                    <div class="post-profile-photo">
-                        <img style="height: 58px;" src="{{userImage}}">
-                    </div>
-                    <div class="pl-3">
-                        <div class="post-user">{{name}}</div>
-                        <div class="post-user-name">{{email}}</div>
-                        <div class="post-time">{{postedTimeDuration}} ago</div>
-                    </div>
-                </div>
-        
-                <div>
-                    <img class="img-fluid" src="{{imageUrl}}">
-                </div>
-        
-                <div class="p-4">
-                    <div class="post-project-caption">{{descriptionHeading}}</div>
-                    <div class="post-project-desc pt-1">
-                        {{descripionContent}}
-                    </div>
-        
-                    <div class="pt-2 target-amount" style="display:{{isTargetAmountDisplay}}">Target ₹{{targetAmount}}</div>
-                    <div class="pt-2" style="display:{{isprogressBarVisible}}">
-                        <div class="progress" style="height: 5px;">
-                            <div class="progress-bar" id="progressbar" role="progressbar" style="width: {{progessBarWidth}}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="d-flex pt-2 justify-content-between">
-                            <div class="raised-amount" style="display:{{isRaisedAmountDisplay}}">Raised ₹{{raisedAmount}}</div>
-                            <div class="d-flex">
-                                <div class="contributors-comment" style="display:{{showContibutors}}">{{contibutorsCount}} Contributors</div>
-                                <div class="progress-percentage pl-2" style="display:{{showPercentage}}">{{completionPercentage}}%</div>
-                            </div>
-                        </div>
-        
-                        <div class="d-flex align-items-center pt-3 like-comment">
-                            <div class="d-flex align-items-center">
-                                <img class="pr-1" src="img/like-checked.png">
-                                Like
-                            </div>
-                            <div class="pl-3 d-flex align-items-center">
-                                <img class="pr-1" src="img/share-checked.png">
-                                Share
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between py-3">
-                            <div class="d-flex like-share">
-                                <div><span style="display:{{isLikeByMe}}">You & </span>{{likeCount}} likes</div>
-                                <div class="pl-3">{{shareCount}} Shares</div>
-                            </div>
-                            <div class="like-share">
-                                {{commentCount}} Comments
-                            </div>
-                        </div>
-        
-                        <div class="d-flex align-items-center justify-content-between">
-                            <img style="height: 32px;" src="img/user.png">
-                            <div class="d-flex w-100 justify-content-between comment-box p-1 ml-2">
-                                <div>
-                                    <input placeholder="Write a reply…" class="comment-box-color" type="text" name="firstname">
-                                </div>
-                                <div class="pr-2">
-                                    <img src="img/smiley-lgrey-small.png"> 
-                                    <img src="img/camera-lgrey-small.png">
-                                </div>
-                            </div>
-                        </div>
-        
-                        
-                    </div>
-                </div>
-            </div>
-        </div>        
     </script>
 
     <!-- recommended project panel -->
