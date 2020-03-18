@@ -175,6 +175,10 @@ input[type=text] {
     background-color: #edf1f5 !important;
 }
 
+.bg-grey-payment-guest-light {
+    background-color: #f9fafc !important;
+}
+
 .font-weight-normal {
     font-weight: normal;
 }

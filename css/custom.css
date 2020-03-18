@@ -291,7 +291,7 @@ input[type=text] {
 /* //Post Page// */
 
 .post-page-bg {
-  background-color: #f9fafc;
+  background-color: #ffffff;
 }
 
 .post-page-header {
@@ -657,13 +657,13 @@ body .no-padding {
 
 .donate-to-text {
   font-family: HKGrotesk;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
-  color: #2a3844;
+  color: #2e404e;
 }
 
 .payment-amount-text-box {
-  border-radius: 5px;
+  border-radius: 4px;
   padding: 0px 0px 0px 12px;
   border: solid 1px #16c0ef;
 }
@@ -748,7 +748,7 @@ body .no-padding {
   max-height: 140px;
   border: 2px solid white;
   border-radius: 50%;
-  margin-top: -58px;
+  margin-top: -100px;
 }
 
 #backBtn:hover {
@@ -820,4 +820,54 @@ body .no-padding {
 .syne-search {
   max-width: 350px;
   width: 100%;
+}
+
+.donating-org-name {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: HKGrotesk;
+  color: #395366;
+}
+
+.foundation-name {
+  /* font-family: HKGrotesk; */
+  font-size: 13px;
+  font-weight: 600;
+  color: #5d677e;
+}
+
+.delete-popup {
+  width: 390px !important;
+  height: 260px;
+  border-radius: 8px;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+.delete-popup-heading {
+  font-family: HKGrotesk;
+  font-size: 25px;
+  font-weight: bold;
+  color: #2e404e;
+}
+
+.delete-popup-confirm-action {
+  border-radius: 4px;
+  background-color: #16c0ef;
+  color: #ffffff;
+  font-family: HKGrotesk;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.delete-popup-decline-action {
+  font-family: HKGrotesk;
+  font-size: 17px;
+  font-weight: bold;
+  color: #7c8796;
+}
+
+.delete-popup-desc {
+  font-size: 15px;
+  color: #2e404e;
 }
