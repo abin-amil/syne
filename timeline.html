@@ -401,10 +401,10 @@
     <div id="syne-share-popup" class="pop-modal">
         <div class="modalcontent share-popup p-4">
             <div class="synemodal-body">
-                
+
                 <div class="d-flex justify-content-between">
-                    <a href="#" class="dropdown-toggle d-flex align-items-center p-2 share-it-on-your-timeline" id="post-access-dropdown" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
+                    <a href="#" class="dropdown-toggle d-flex align-items-center p-2 share-it-on-your-timeline"
+                        id="post-access-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="share-it-on-your-timeline p-2 pr-3">Share it on your timeline</div>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="post-access-dropdown">
@@ -421,18 +421,19 @@
                             Only Me
                         </a>
                     </div>
-                    <a href="#">
+                    <a href="#" class="modalclose">
                         <img src="img/close-icon.png" alt="close">
                     </a>
                 </div>
-                
-                <div class="py-2  write-your-thoughts">
-                    Write your thoughts
-                </div>
                 <div class="written-thoghts">
-                    Lorem Ipsum Dolor Sit..
+                    <div class="p-2">
+                        <div class="py-2  write-your-thoughts">
+                            Write your thoughts
+                        </div>
+                        <input type="text" placeholder="write here" style="padding-left: 3px;">
+                    </div>
                 </div>
-                
+
                 <div class="post-card mt-3">
                     <div class="post-card-header">
                         <div class="d-flex align-items-center justify-content-between">
@@ -448,7 +449,8 @@
                             </div>
                             <div class="px-2">
                                 <span class="">
-                                    <a href="#" class="dropdown-toggle" id="post-access-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a href="#" class="dropdown-toggle" id="post-access-dropdown" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
                                         <img class="cursor-pointer" src="img/svgImages/public-grey-small.svg">
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="post-access-dropdown" style="">
@@ -467,7 +469,8 @@
                                     </div>
                                 </span>
                                 <span class="">
-                                    <a href="#" id="post-action-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a href="#" id="post-action-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
                                         <img class="cursor-pointer" src="img/svgImages/more-dots-small.svg">
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="post-action-dropdown" style="">
@@ -489,7 +492,8 @@
                         <div class="p-4">
                             <div class="post-project-caption">Kerala Flood Relief 2019</div>
                             <div class="post-project-desc pt-1">
-                                World Vision distributed food, clothing and hygiene and household items among families in Kerala whose homes have been damaged or destroyed.
+                                World Vision distributed food, clothing and hygiene and household items among families
+                                in Kerala whose homes have been damaged or destroyed.
                             </div>
                         </div>
                     </div>
@@ -507,8 +511,7 @@
                             <label for="attachementIcon">
                                 <img class="px-2" src="img/svgImages/attach-grey-small.svg" />
                             </label>
-                            <input type='file' id="attachementIcon"
-                                accept="application/pdf,application/vnd.ms-excel" />
+                            <input type='file' id="attachementIcon" accept="application/pdf,application/vnd.ms-excel" />
                         </div>
                         <div>
                             <img class="px-2" src="img/svgImages/smiley-grey-small.svg">
@@ -519,29 +522,30 @@
                             <div class="sharing-with-everyone">Sharing with Everyone</div>
                             <img src="img/svgImages//public-grey-small.svg">
                         </div> -->
-                            <a href="#" class="dropdown-toggle d-flex align-items-center px-2 sharing-with-everyone" id="post-access-dropdown" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                <div class="sharing-with-everyone">Sharing with Everyone</div>
-                                <img class="cursor-pointer pr-2" src="img/svgImages/public-grey-small.svg">
+                        <a href="#" class="dropdown-toggle d-flex align-items-center px-2 sharing-with-everyone"
+                            id="post-access-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="sharing-with-everyone">Sharing with Everyone</div>
+                            <img class="cursor-pointer pr-2" src="img/svgImages/public-grey-small.svg">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="post-access-dropdown">
+                            <a class="dropdown-item" href="#">
+                                <img src="img/svgImages/public-grey-small.svg">
+                                Public
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="post-access-dropdown">
-                                <a class="dropdown-item" href="#">
-                                    <img src="img/svgImages/public-grey-small.svg">
-                                    Public
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <img src="img/svgImages/friends-grey.svg">
-                                    Friends
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <img src="img/svgImages/onlyme-grey.svg">
-                                    Only Me
-                                </a>
-                            </div>
-                        <div class="delete-popup-confirm-action px-2 py-2 text-center">Post</div>
+                            <a class="dropdown-item" href="#">
+                                <img src="img/svgImages/friends-grey.svg">
+                                Friends
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <img src="img/svgImages/onlyme-grey.svg">
+                                Only Me
+                            </a>
+                        </div>
+                        <div id="syne-share-popup-post" class="delete-popup-confirm-action px-2 py-2 text-center">Post
+                        </div>
                     </div>
 
-                   
+
                 </div>
             </div>
 
