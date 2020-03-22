@@ -36,6 +36,7 @@ function newsFeedsCreation() {
             let isLikeByMe = newsFeedSingleUnit.isLikedByMe === 'true' ? 'contents' : 'none';
             let progessBarWidth = 80;
             newsFeedCardFinalHtml += newsFeedCardHtml.replace(/{{name}}/g, newsFeedSingleUnit.name)
+                .replace(/{{dataID}}/g, newsFeedSingleUnit.id)
                 .replace(/{{userImage}}/g, newsFeedSingleUnit.userImage)
                 .replace(/{{email}}/g, newsFeedSingleUnit.email)
                 .replace(/{{postedTimeDuration}}/g, newsFeedSingleUnit.postedTimeDuration)

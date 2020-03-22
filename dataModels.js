@@ -55,6 +55,7 @@ var dashBoardData = {
     }
     ],
     newsFeedData: [{
+        id: 1,
         userImage: 'img/user.png',
         name: 'Sanne Viscal',
         email: '@sanneviscal',
@@ -73,6 +74,7 @@ var dashBoardData = {
         comments: []
     },
     {
+        id: 2,
         userImage: 'img/user.png',
         name: 'Honey Sara John',
         email: '@honeysarajohn',
