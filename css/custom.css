@@ -291,7 +291,7 @@ input[type=text] {
 /* //Post Page// */
 
 .post-page-bg {
-  background-color: #ffffff;
+  background-color: #f9fafc;
 }
 
 .post-page-header {
@@ -813,7 +813,7 @@ body .no-padding {
 }
 
 .nav-right {
-  max-width: 650px;
+  max-width: 500px;
   width: 100%;
 }
 
@@ -858,6 +858,7 @@ body .no-padding {
   font-family: HKGrotesk;
   font-size: 17px;
   font-weight: bold;
+  width: 100px;
 }
 
 .delete-popup-decline-action {
@@ -869,5 +870,41 @@ body .no-padding {
 
 .delete-popup-desc {
   font-size: 15px;
+  color: #2e404e;
+}
+
+.write-your-thoughts {
+  font-size: 14px;
+  color: #7c8796;
+}
+
+.written-thoghts {
+  font-family: HKGrotesk;
+  font-size: 15px;
+  font-weight: bold;
+  color: #2e404e;
+}
+
+.sharing-with-everyone{
+  font-size: 12px;
+  color: #7c8796;
+  font-weight: normal;
+}
+.sharing-with-everyone:hover{
+  text-decoration: none !important;
+  color: #7c8796;
+}
+
+.share-it-on-your-timeline {
+  border-radius: 4px;
+  background-color: #eef0f5;
+  font-family: HKGrotesk;
+  font-size: 15px;
+  font-weight: bold;
+  color: #2e404e;
+}
+
+.share-it-on-your-timeline:hover {
+  text-decoration: none !important;
   color: #2e404e;
 }
