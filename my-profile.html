@@ -62,13 +62,13 @@
                         <div class="header-menu h-100">
                             <ul class="d-flex align-items-center m-0">
                                 <li>
-                                    <a class="txt-blue f14 modal-button" data-toggle="modal"
+                                    <a class="d-flex txt-blue f14 modal-button" data-toggle="modal"
                                         data-target="#exampleModal">
                                         Start a Project
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="explore-projects.html" class="f14">
+                                    <a href="explore-projects.html" class="f14 d-flex">
                                         Explore Projects
                                     </a>
                                 </li>
@@ -92,15 +92,15 @@
                                 <img class="" src="img/notif-icon.svg">
                                 <div class="not-count">8</div>
                             </div>
-                            
+
                             <div class="pl-3 d-flex align-items-center">
                                 <img class="pr-2" style="height: 40px;" src="img/user.png">
                                 <div class="nav-username">Vinith</div>
                                 <img class="pl-2" src="img/carrotdown-grey-small.svg">
-                               
+
                             </div>
                         </div>
-                       
+
                         <!-- <a href="#" class="txt-blue right modal-btn" href="#syne-login"
                             data-target="syne-login">Login</a> -->
                     </div>
@@ -379,6 +379,30 @@
         </div>
     </div>
 
+    <div id="syne-delete-popup" class="pop-modal">
+        <div class="modalcontent delete-popup p-4">
+            <div class="synemodal-body">
+                <a href="#" class="modalclose flex">
+                    <img src="img/close-icon.png" alt="close">
+                </a>
+                <div class="delete-popup-heading py-2">Delete Comment</div>
+                <div class="delete-popup-desc py-2 text-center">
+                    Are you sure you want to delete the comment?
+                </div>
+                <div class="delete-popup-buttons py-3">
+                    <div class="delete-popup-confirm-action px-2 py-3 text-center w-100">Confirm</div>
+                    <div class="delete-popup-decline-action px-2 py-3 text-center w-100">Cancel</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="syne-share-popup" class="pop-modal">
+        <!-- syne-share-popup-template fill here -->
+    </div>
+
+
     <!-- left panel template -->
     <script id="template-left-panel-user-details" type="text/template">
         <div class="full-name">
@@ -410,15 +434,22 @@
                     <div class="follower-text">Following</div>
                 </div>
             </div>
-            <div class="d-flex align-items-center justify-content-center my-3 followButton text-center w-100">
-                <img class="pr-2" src="img/smiley-grey-small.png">Follow
+            <div class="menu-items-wrapper">
+                <!-- <div class="menu-items py-4" id="left-panel-tabs">
+                    
+                </div> -->
+                <div class="mt-2 pl-3">
+                    <div>
+                        <img style="height: 24px;" class="pr-2" src="img/edit-blue-small.png">
+                        <a style="color: deepskyblue;font-size: small" class="modal-btn" href="#syne-edit-profile"
+                            data-target="syne-edit-profile">
+                            Edit Profile
+                        </a>
+                        <!-- <a class="modal-btn">Edit Profile</a> -->
+                    </div>
+                </div>
             </div>
-            <div class="d-flex align-items-center justify-content-center my-3 followingButton text-center w-100">
-                <img class="pr-2" src="img/smiley-grey-small.png">Following
-            </div>
-            <div class="d-flex align-items-center justify-content-center my-3 unfollowButton text-center w-100">
-                <img class="pr-2" src="img/smiley-grey-small.png">Unfollow
-            </div>
+        </div>
     </script>
 
     <!-- left panel tabs template -->
@@ -525,8 +556,13 @@
                                 Like
                             </div>
                             <div class="pl-3 d-flex align-items-center">
-                                <img class="pr-1" src="img/svgImages/share-checked.svg">
-                                Share
+                                <a id="{{dataID}}" onclick="sharePopupContentSetting({{dataID}})" class="dropdown-item modal-btn share-btn" href="#syne-share-popup" data-target="syne-share-popup">
+                                    <!-- <img src="img/delpost-grey-small.png">
+                                    Delete Comment -->
+                                    <img class="pr-1" src="img/svgImages/share-checked.svg">
+                                    Share
+                                </a>
+                               
                             </div>
                         </div>
                         <div class="d-flex justify-content-between py-3">
@@ -547,10 +583,94 @@
                                 </div>
                                 <div class="pr-2">
                                     <img src="img/svgImages/smiley-lgrey-small.svg">
-                                    <img src="img/svgImages/camera-lgrey-small.svg">
+                                    <img  src="img/svgImages/camera-lgrey-small.svg">
                                 </div>
                             </div>
                             <img class="comment-options" src="img/svgImages/more-dots-small.svg">
+                        </div>
+                        <div class="user-comments-section">
+                            <div class="user-comment-item">
+                                <div class="comment-user-img">
+                                    <img style="height: 32px;" src="img/user.png">
+                                </div>
+                                <div class="d-flex flex-column flex-grow-1">
+                                    <div class="d-flex">
+                                        <div class="comment-content">
+                                            <span class="comment-user-name">
+                                                Sanne Viscaal
+                                            </span>
+                                            Sed ut perspiciatis unde omnis iste natus
+                                        </div>
+                                        <div class="comment-actions">
+                                            <a href="#" id="post-action-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <img class="cursor-pointer" src="img/svgImages/more-dots-small.svg" />
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="post-action-dropdown">
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="img/svgImages/edit-grey-small.svg">
+                                                    Edit Comment
+                                                </a>
+                                                <a class="dropdown-item modal-btn" href="#syne-delete-popup" data-target="syne-delete-popup">
+                                                    <img src="img/delpost-grey-small.png">
+                                                    Delete Comment
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="d-flex justify-content-start pl-3 pt-1">
+                                        <div class="like-comment">
+                                            Like
+                                        </div>
+                                        <div class="comment-time">
+                                            . 1 Day Ago
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-comment-item">
+                                <div class="comment-user-img">
+                                    <img style="height: 32px;" src="img/user.png">
+                                </div>
+                                <div class="d-flex flex-column flex-grow-1">
+                                    <div class="d-flex">
+                                        <div class="comment-content">
+                                            <span class="comment-user-name">
+                                                Sanne Viscaal
+                                            </span>
+                                            Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                        </div>
+                                        <div class="comment-actions">
+                                            <a href="#" id="post-action-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <img class="cursor-pointer" src="img/svgImages/more-dots-small.svg" />
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="post-action-dropdown">
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="img/svgImages/edit-grey-small.svg">
+                                                    Edit Comment
+                                                </a>
+                                                <a class="dropdown-item modal-btn" href="#syne-delete-popup" data-target="syne-delete-popup">
+                                                    <img src="img/delpost-grey-small.png">
+                                                    Delete Comment
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-start pl-3 pt-1">
+                                        <div class="like-comment">
+                                            Like
+                                        </div>
+                                        <div class="comment-time">
+                                            . 1 Day Ago
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="show-more-comments">
+                            View 10 More Comments…
                         </div>
                     </div>
                 </div>
@@ -608,6 +728,154 @@
         </div>
         
         <div class="line-seperator my-3"></div>
+    </script>
+
+    <!-- share popup template -->
+    <script id="template-share-popup" type="text/template">
+        <div class="modalcontent share-popup p-4">
+            <div class="synemodal-body">
+
+                <div class="d-flex justify-content-between">
+                    <a href="#" class="dropdown-toggle d-flex align-items-center p-2 share-it-on-your-timeline"
+                        id="post-access-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="share-it-on-your-timeline p-2 pr-3">Share it on your timeline</div>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="post-access-dropdown">
+                        <a class="dropdown-item" href="#">
+                            <img src="img/svgImages/public-grey-small.svg">
+                            Public
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <img src="img/svgImages/friends-grey.svg">
+                            Friends
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <img src="img/svgImages/onlyme-grey.svg">
+                            Only Me
+                        </a>
+                    </div>
+                    <a href="#" class="modalclose" onclick="closeModal('#syne-share-popup')">
+                        <img src="img/close-icon.png" alt="close">
+                    </a>
+                </div>
+                <div class="written-thoghts">
+                    <div class="p-2">
+                        <div class="py-2  write-your-thoughts">
+                            Write your thoughts
+                        </div>
+                        <input type="text" placeholder="write here" style="padding-left: 3px;">
+                    </div>
+                </div>
+
+                <div class="post-card mt-3">
+                    <div class="post-card-header">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex p-4">
+                                <div class="post-profile-photo">
+                                    <img style="height: 58px;" src="img/user.png">
+                                </div>
+                                <div class="pl-3">
+                                    <div class="post-user">{{name}}</div>
+                                    <div class="post-user-name">{{email}}</div>
+                                    <div class="post-time">{{postedTimeDuration}}</div>
+                                </div>
+                            </div>
+                            <div class="px-2">
+                                <span class="">
+                                    <a href="#" class="dropdown-toggle" id="post-access-dropdown" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <img class="cursor-pointer" src="img/svgImages/public-grey-small.svg">
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="post-access-dropdown" style="">
+                                        <a class="dropdown-item" href="#">
+                                            <img src="img/svgImages/public-grey-small.svg">
+                                            Public
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="img/svgImages/friends-grey.svg">
+                                            Friends
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="img/svgImages/onlyme-grey.svg">
+                                            Only Me
+                                        </a>
+                                    </div>
+                                </span>
+                                <span class="">
+                                    <a href="#" id="post-action-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <img class="cursor-pointer" src="img/svgImages/more-dots-small.svg">
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="post-action-dropdown" style="">
+                                        <a class="dropdown-item" href="#">
+                                            <img src="img/report-grey-small.png">
+                                            Report Post
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="img/delpost-grey-small.png">
+                                            Delete Post
+                                        </a>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="img-fluid" src="{{imageUrl}}">
+                        </div>
+                        <div class="p-4">
+                            <div class="post-project-caption">{{descriptionHeading}}</div>
+                            <div class="post-project-desc pt-1">{{descriptionContent}}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between share-popup-footer py-3">
+                    <div class="d-flex pt-4">
+                        <div class="image-upload">
+                            <label for="cameraIcon">
+                                <img class="pr-2" src="img/svgImages/camera-grey-small.svg" />
+                            </label>
+                            <input id="cameraIcon" accept="image/*" type="file" />
+                        </div>
+                        <div class="image-upload">
+                            <label for="attachementIcon">
+                                <img class="px-2" src="img/svgImages/attach-grey-small.svg" />
+                            </label>
+                            <input type='file' id="attachementIcon" accept="application/pdf,application/vnd.ms-excel" />
+                        </div>
+                        <div>
+                            <img class="px-2" src="img/svgImages/smiley-grey-small.svg">
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="dropdown-toggle d-flex align-items-center px-2 sharing-with-everyone"
+                            id="post-access-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="sharing-with-everyone">Sharing with Everyone</div>
+                            <img class="cursor-pointer pr-2" src="img/svgImages/public-grey-small.svg">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="post-access-dropdown">
+                            <a class="dropdown-item" href="#">
+                                <img src="img/svgImages/public-grey-small.svg">
+                                Public
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <img src="img/svgImages/friends-grey.svg">
+                                Friends
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <img src="img/svgImages/onlyme-grey.svg">
+                                Only Me
+                            </a>
+                        </div>
+                        <div class="delete-popup-confirm-action px-2 py-2 text-center" onclick="closeModal('#syne-share-popup')">Post
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
     </script>
 
 </body>
