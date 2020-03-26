@@ -143,7 +143,7 @@
                         <div class="mt-5 organisation-add-text">
                             Add Organisation logo
                         </div>
-                        <div>
+                        <div class="py-2">
                             <form action="/file-upload"
                                 class="dropzone project-icon-upload d-flex justify-content-center align-items-center"
                                 id="org-logo">
@@ -162,7 +162,7 @@
                                 <div class="form-group mt-3">
                                     <div class="syne-inputbox p-1">
                                         <label for="orgName" class="syne-input-label">
-                                            Organisation Name
+                                            Organisation Name<span class="required-field">*</span>
                                         </label>
                                         <div class="d-flex">
                                             <input name="orgName" type="text" class="org-form-input"
@@ -195,7 +195,7 @@
                                     <div class="form-group mt-5">
                                         <div class="p-2">
                                             <label for="orgType" class="syne-input-label">
-                                                Organisation Type
+                                                Organisation Type<span class="required-field">*</span>
                                             </label>
                                             <div class="ml-3">
                                                 <div class="custom-control custom-radio custom-control-inline">
@@ -219,7 +219,7 @@
                                             <label for="" class="syne-input-label"></label>
                                             <div class="d-flex mb-2">
                                                 <select class="org-form-select">
-                                                    <option>Organisation Category</option>
+                                                    <option>Organisation Category<span class="required-field">*</span></option>
                                                     <option>One</option>
                                                     <option>Two</option>
                                                     <option>Three</option>
@@ -228,9 +228,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group mt-2">
-                                        <div class="p-2">
+                                        <div class="p-2 syne-inputbox">
                                             <label for="orgType" class="syne-input-label">
-                                                Organisation Size
+                                                Organisation Size<span class="required-field">*</span>
                                             </label>
                                             <div class="ml-3">
                                                 <input name="" type="text" class="org-form-input" placeholder="dummy"
@@ -260,7 +260,7 @@
                                     </div>
                                     <div class="form-group mt-2">
                                         <div class="syne-inputbox p-1">
-                                            <label for="orgUrl" class="syne-input-label">Syne Organisation URL</label>
+                                            <label for="orgUrl" class="syne-input-label">Syne Organisation URL<span class="required-field">*</span></label>
                                             <div class="d-flex align-items-center">
                                                 <div class="project-title-input  pl-3">
                                                     syne.com/

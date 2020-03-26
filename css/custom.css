@@ -248,11 +248,11 @@
 }
 
 .syne-input-label {
-  font-family: HKGrotesk;
-  font-size: 13px;
-  font-weight: 500;
-  color: #7c8796;
-  padding: 0px 0px 0px 12px;
+    font-family: HKGrotesk-reg;
+    font-size: 12px;
+    font-weight: 500;
+    color: #7c8796;
+    padding: 0px 0px 0px 12px;
 }
 
 input[type=text] {
@@ -623,15 +623,21 @@ body .no-padding {
 
 .organisation-add-text {
   color: #7c8796;
-  font-weight: bold;
-  font-size: small;
+  font-weight: 500;
+  font-family: HKGrotesk-reg;
+  font-size: 12px;
 }
 
 .org-form-input {
-  font-size: 13px !important;
-  font-weight: 500 !important;
+  font-size: 15px;
+  font-weight: 600;
   color: #2a3844 !important;
   padding: 0px 0px 0px 12px !important;
+}
+.org-form-input::placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  color: #bac3cf !important;
 }
 
 .org-form-select {
@@ -940,4 +946,10 @@ body .no-padding {
   font-size: 15px;
   font-weight: bold;
   color: #7c8796;
+}
+
+.required-field {
+  font-family: HKGrotesk;
+  font-size: 10px;
+  color: #cb2a2a;
 }
