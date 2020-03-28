@@ -712,6 +712,13 @@ ul.tabs li.current {
     top: 0px;
   }
 }
+.create-org-modal {
+  width: 100%;
+  max-width: 500px !important;
+  max-height: 573px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
 
 @media(max-width: 320px) {
   .small-header-menu ul {

@@ -26,6 +26,15 @@ body{
   display: block !important;
   z-index: 10 !important;
 }
+#org-logo.dropzone .dz-preview .dz-image {
+  border-radius: 50px !important;
+  overflow: hidden !important;
+  width: 95px !important;
+  height: 95px !important;
+  position: relative !important;
+  display: block !important;
+  z-index: 10 !important;
+}
 
 .dropzone .dz-preview {
   /* position: absolute !important; */
