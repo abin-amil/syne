@@ -17,7 +17,7 @@ body{
     border: 2px solid #3498db !important;
 }
 
-.dropzone .dz-preview .dz-image {
+#project-icon.dropzone .dz-preview .dz-image {
   border-radius: 50px !important;
   overflow: hidden !important;
   width: 95px !important;
