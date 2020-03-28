@@ -109,3 +109,10 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #aaaaaa;
 }
+
+.comment-edit-box {
+    border: solid 1px #dde2e9 !important;
+    border-radius: 3px !important;
+    color: #2a3844 !important;
+    font-size: 12px !important;
+}
