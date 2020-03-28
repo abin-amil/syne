@@ -76,6 +76,8 @@ function closeModal(id) {
 
 $(document).ready(function () {
 
+    addSharedPost();
+
     $(".modal-btn").click(function (e) {
         //$(this).next("div").addClass("open-pop");
         var modl_id = $(this).attr('data-target');
@@ -172,4 +174,54 @@ function convertDateIntoDDMMMYYYY(date) {
     let current_datetime = new Date(date)
     let formatted_date = current_datetime.getDate() + " " + months[current_datetime.getMonth()] + " " + current_datetime.getFullYear()
     return formatted_date;
+}
+
+function addSharedPost() {
+    if (document.getElementById("news-feeds") && document.getElementById("template-shared-post")) {
+        let newsFeed = document.getElementById("template-shared-post");
+        let newsFeedFinalHtml = "";
+
+        dashBoardData.sharedNewsFeedData.forEach((newsFeedSingleUnit, index) => {
+            let newsFeedCardHtml = newsFeed.innerHTML;
+            let newsFeedCardFinalHtml = "";
+            let isSharedPostTargetAmountDisplay = newsFeedSingleUnit.sharedPostTargetAmount !== '' ? 'block' : 'none';
+            let isSharedPostprogressBarVisible = newsFeedSingleUnit.sharedPostTargetAmount !== '' ? 'block' : 'none';
+            let isSharedPostRaisedAmountDisplay = newsFeedSingleUnit.sharedPostRaisedAmount !== '' ? 'block' : 'none';
+            let showSharedPostContributors = newsFeedSingleUnit.sharedPostContributorsCount !== '' ? 'block' : 'none';
+            let showSharedPostPercentage = newsFeedSingleUnit.sharedPostCompletionPercentage !== '' ? 'block' : 'none';
+            let isLikeByMe = newsFeedSingleUnit.isLikedByMe === 'true' ? 'contents' : 'none';
+            let progessBarWidth = 80;
+            newsFeedCardFinalHtml += newsFeedCardHtml.replace(/{{name}}/g, newsFeedSingleUnit.name)
+                .replace(/{{sharedPostName}}/g, newsFeedSingleUnit.sharedPostName)
+                .replace(/{{dataID}}/g, newsFeedSingleUnit.id)
+                .replace(/{{userImage}}/g, newsFeedSingleUnit.userImage)
+                .replace(/{{email}}/g, newsFeedSingleUnit.email)
+                .replace(/{{postedTimeDuration}}/g, newsFeedSingleUnit.postedTimeDuration)
+                .replace(/{{sharedPostUserImage}}/g, newsFeedSingleUnit.sharedPostUserImage)
+                .replace(/{{sharedPostEmail}}/g, newsFeedSingleUnit.sharedPostEmail)
+                .replace(/{{sharedPostPostedTimeDuration}}/g, newsFeedSingleUnit.sharedPostPostedTimeDuration)
+                .replace(/{{sharedPostImageUrl}}/g, newsFeedSingleUnit.sharedPostImageUrl)
+                .replace(/{{sharedPostDescriptionHeading}}/g, newsFeedSingleUnit.sharedPostDescriptionHeading)
+                .replace(/{{sharedPostDescripionContent}}/g, newsFeedSingleUnit.sharedPostDescripionContent)
+                .replace(/{{sharedPostTargetAmount}}/g, newsFeedSingleUnit.sharedPostTargetAmount)
+                .replace(/{{sharedPostIsTargetAmountDisplay}}/g, isSharedPostTargetAmountDisplay)
+                .replace(/{{sharedPostIsprogressBarVisible}}/g, isSharedPostprogressBarVisible)
+                .replace(/{{sharedPostProgessBarWidth}}/g, progessBarWidth)
+                .replace(/{{sharedPostRaisedAmount}}/g, newsFeedSingleUnit.sharedPostRaisedAmount)
+                .replace(/{{sharedPostIsRaisedAmountDisplay}}/g, isSharedPostRaisedAmountDisplay)
+                .replace(/{{sharedPostContributorsCount}}/g, newsFeedSingleUnit.sharedPostContributorsCount)
+                .replace(/{{sharedPostShowContributors}}/g, showSharedPostContributors)
+                .replace(/{{sharedPostCompletionPercentage}}/g, newsFeedSingleUnit.sharedPostCompletionPercentage)
+                .replace(/{{sharedPostShowPercentage}}/g, showSharedPostPercentage)
+                .replace(/{{isLikeByMe}}/g, isLikeByMe)
+                .replace(/{{likeCount}}/g, newsFeedSingleUnit.likedCount)
+                .replace(/{{shareCount}}/g, newsFeedSingleUnit.shareCount)
+                .replace(/{{commentCount}}/g, newsFeedSingleUnit.commentCount);
+
+            newsFeedFinalHtml += newsFeedCardFinalHtml;
+        });
+
+        document.getElementById("news-feeds").innerHTML += newsFeedFinalHtml;
+        document.getElementById("news-feeds").innerHTML
+    }
 }

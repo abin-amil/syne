@@ -16,7 +16,7 @@ function newsFeedsCreation() {
             let isTargetAmountDisplay = newsFeedSingleUnit.targetAmount !== '' ? 'block' : 'none';
             let isprogressBarVisible = newsFeedSingleUnit.targetAmount !== '' ? 'block' : 'none';
             let isRaisedAmountDisplay = newsFeedSingleUnit.raisedAmount !== '' ? 'block' : 'none';
-            let showContibutors = newsFeedSingleUnit.contributorsCount !== '' ? 'block' : 'none';
+            let showContributors = newsFeedSingleUnit.contributorsCount !== '' ? 'block' : 'none';
             let showPercentage = newsFeedSingleUnit.completionPercentage !== '' ? 'block' : 'none';
             let isLikeByMe = newsFeedSingleUnit.isLikedByMe === 'true' ? 'contents' : 'none';
             let progessBarWidth = 80;
@@ -33,8 +33,8 @@ function newsFeedsCreation() {
                 .replace(/{{progessBarWidth}}/g, progessBarWidth)
                 .replace(/{{raisedAmount}}/g, newsFeedSingleUnit.raisedAmount)
                 .replace(/{{isRaisedAmountDisplay}}/g, isRaisedAmountDisplay)
-                .replace(/{{contibutorsCount}}/g, newsFeedSingleUnit.contributorsCount)
-                .replace(/{{showContibutors}}/g, showContibutors)
+                .replace(/{{contributorsCount}}/g, newsFeedSingleUnit.contributorsCount)
+                .replace(/{{showContributors}}/g, showContributors)
                 .replace(/{{completionPercentage}}/g, newsFeedSingleUnit.completionPercentage)
                 .replace(/{{showPercentage}}/g, showPercentage)
                 .replace(/{{isLikeByMe}}/g, isLikeByMe)
