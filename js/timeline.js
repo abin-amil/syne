@@ -1,5 +1,26 @@
 $(document).ready(function () {
     setTab(1);
+    $(".user-comment-item-div").mouseleave(function () {
+        $(this).children()[0].children[1].children[1].style["display"] = "none";
+    });
+
+    $(".comment-actions a").click(function () {
+        $(this).siblings()[0].style["display"] = "";
+    });
+
+    $(".edit-comment-btn").click(function () {
+        const elmts = $(this).parent().parent().siblings()[0].children;
+        $(elmts[1]).toggleClass('d-none').toggleClass('d-inline');
+        $(elmts[2]).toggleClass('d-none').toggleClass('d-flex');
+        elmts[2].children[0].value = elmts[1].innerHTML ? elmts[1].innerHTML.trim() : "";
+    });
+
+    $("button.save-edit-comment").click(function () {
+        const elmts = $(this).parent().parent().children();
+        $(elmts[1]).toggleClass('d-none').toggleClass('d-inline');
+        $(elmts[2]).toggleClass('d-none').toggleClass('d-flex');
+        elmts[1].innerHTML = elmts[2].children[0].value ? elmts[2].children[0].value.trim() : "";
+    });
 });
 
 $("#syne-delete-popup .modalclose").click(function (e) {
@@ -28,7 +49,9 @@ function sharePopupContentSetting(dataId) {
         let sharePopupTemplateContentHtml = sharePopupTemplateContent.innerHTML;
         let sharePopupTemplateContentFinalHtml = "";
 
-        let data = dashBoardData.newsFeedData.filter(x => { return x.id == dataId });
+        let data = dashBoardData.newsFeedData.filter(x => {
+            return x.id == dataId
+        });
 
         sharePopupTemplateContentFinalHtml += sharePopupTemplateContentHtml.replace(/{{name}}/g, data[0].name)
             .replace(/{{email}}/g, data[0].email)
@@ -40,4 +63,3 @@ function sharePopupContentSetting(dataId) {
         document.getElementById("syne-share-popup").innerHTML = sharePopupTemplateContentFinalHtml;
     }
 }
-
