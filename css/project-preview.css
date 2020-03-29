@@ -83,3 +83,76 @@
     font-size: 13px;
     color: #fb4f6d;
 }
+.date-wrapper .date .active {
+    padding: 5px 0;
+    background: #16c0ef;
+    color: #fff;
+    font-size: 10px;
+}
+.date-wrapper .date {
+    width: 45px;
+    text-align: center;
+    border-radius: 2px;
+    border: solid 1px #395366;
+    margin-top: 10px;
+    display: inline-block;
+}
+.oval {
+    width: 17px;
+    height: 17px;
+    border: solid 4px #16c0ef;
+    background-color: #ffffff;
+  }
+
+  .title-milestone
+  {
+    border-radius: 3px;
+    border: solid 1px #16c0ef;
+    background-color: #ffffff;
+    height: 54px;
+  }
+  .title-datewrapper img {
+  height: 24px;
+  width: 24px;
+}
+textarea {
+    height: 200px;
+    border-radius: 3px;
+    border: solid 1px #e0e6ee;
+    background-color: #ffffff;
+    resize: none !important;
+}
+.text-editor-wrapper .btn img {
+    width: 12px;
+}
+.Rectangle {
+        font-size: 15px;
+        font-family: 'HKGrotesk-bold';
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.47;
+        letter-spacing: 0.17px;
+        color: #fff;
+        background-color: #16c0ef;
+        padding: 8px 10px;
+  }
+
+  .comment-box
+  {
+    border: solid 1px #e0e6ee;
+    height:90px;
+    width: 100%;
+    color:#5d677e;
+    text-align:left;
+    padding: 0 0 0 0 !important;
+  }
+
+  .comment-circle
+  {
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        background-color: #e0e6ee;
+
+  }
