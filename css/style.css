@@ -720,6 +720,25 @@ ul.tabs li.current {
   overflow-y: scroll;
 }
 
+.user-name-rectangle{
+  width: 128px;
+  height: 76px;
+  /* opacity: 0.1; */
+  background-color: aliceblue;
+}
+.user-dropdown-item{
+  height: 40px;
+  display: block;
+  width: 100%;
+  padding: .25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
 @media(max-width: 320px) {
   .small-header-menu ul {
     display: flex;
