@@ -77,3 +77,8 @@ function createOrganisationList() {
     }
 
 }
+
+$("#create-oganisation-popup .modalclose").click(function (e) {
+    closeModal("#create-oganisation-popup");
+    e.preventDefault();
+});
