@@ -22,7 +22,7 @@ function closeModal(id) {
 }
 
 function updateAboutMe() {
-    closeModal("#syne-edit-about-me");
+    aboutMeEditPopupClose();
 }
 
 function addWorkExperience() {
@@ -119,3 +119,12 @@ function addDefaultSchool() {
 
     document.getElementById('education-list').innerHTML = document.getElementById('education-list').innerHTML + educationHtml;
 }
+
+function aboutMeEditPopupClose() {
+    closeModal("#syne-edit-about-me");
+}
+
+$("#syne-edit-about-me .modalclose").click(function (e) {
+    aboutMeEditPopupClose();
+    e.preventDefault();
+});
