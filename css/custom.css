@@ -346,7 +346,8 @@ input[type=text] {
 }
 
 .recommended-project-disc {
-  font-family: HKGrotesk-reg;
+  /* font-family: HKGrotesk-reg; */
+  font-family: HKGrotesk;
   font-size: 12px;
   color: #5d677e;
 }

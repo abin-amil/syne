@@ -100,3 +100,9 @@ function setTab(tabId) {
     const id = '#syne-tab' + tabId;
     $(id).addClass('active');
 }
+
+
+function addMilestone()
+{
+    document.getElementById("new-milestone").style.display  = "block";
+}
