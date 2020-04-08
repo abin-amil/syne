@@ -17,3 +17,12 @@ function createOrgLeftPanelTabs() {
         document.getElementById("org-left-panel-tabs").innerHTML = leftPanelTabFinalHtml;
     }
 }
+
+$("#edit-oganisation-popup .modalclose").click(function (e) {
+    closeModal("#edit-oganisation-popup");
+    e.preventDefault();
+});
+
+function publishOrganisation() {
+    closeModal("#edit-oganisation-popup");
+}

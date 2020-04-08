@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/dropzone-style.css">
     <link rel="stylesheet" href="css/post-login.css">
     <link rel="stylesheet" href="css/profile.css">
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
@@ -99,9 +100,8 @@
         <div class="overlay-trigger" id="left-panel-top-banner">
             <img class="img-fluid profile-photo" src="img/user.png">
             <div class="overlay-item profile-overlay">
-                <a class="profile-edit-button text-center modal-btn" href="#edit-oganisation-popup"  
-                data-target="edit-oganisation-popup">
-                Edit
+                <a class="profile-edit-button text-center modal-btn">
+                    Edit
                 </a>
             </div>
 
@@ -122,7 +122,8 @@
                         <div class="col-10 about-organisation-header-text">About Vivent Org</div>
                         <div class="right">
                             <img style="height: 18px;" src="img/svgImages/edit-grey-small.svg">
-                            <a style="color: #7c8796;font-size: small" class="modal-btn">
+                            <a style="color: #7c8796;font-size: small" class="modal-btn" href="#edit-oganisation-popup"
+                                data-target="edit-oganisation-popup">
                                 Edit
                             </a>
                         </div>
@@ -203,7 +204,7 @@
             </div>
             <div id="createNewOrg" class="px-4 py-2">
                 <div class="createOrg-modal-header">
-                    Create New Organisation Page
+                    Edit Organisation
                 </div>
                 <div class="mt-5 organisation-add-text">
                     Add Organisation logo
@@ -266,13 +267,15 @@
                                         <div class="custom-control custom-radio custom-control-inline">
                                             <input type="radio" class="custom-control-input" id="forProfit"
                                                 name="orgType" value="profit">
-                                            <label class="custom-control-label orgModal-radiobutton-text" for="forProfit">For
+                                            <label class="custom-control-label orgModal-radiobutton-text"
+                                                for="forProfit">For
                                                 Profit</label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline">
                                             <input type="radio" class="custom-control-input" id="nonProfit"
                                                 name="orgType" value="nonProfit">
-                                            <label class="custom-control-label orgModal-radiobutton-text" for="nonProfit">Non
+                                            <label class="custom-control-label orgModal-radiobutton-text"
+                                                for="nonProfit">Non
                                                 Profit</label>
                                         </div>
                                     </div>
@@ -511,31 +514,13 @@
         <div class="line-seperator my-3"></div>
     </script>
 </body>
+<!-- dropzone.js Plugin -->
+<link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css" />
+<script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/profile.js"></script>
 <script type="text/javascript" src="dataModels.js"></script>
 <script type="text/javascript" src="constants.js"></script>
 <script type="text/javascript" src="js/about-organisation.js"></script>
-<script type="text/javascript">
-    //modal script
-    $(".modal-btn").click(function (e) {
-      //$(this).next("div").addClass("open-pop");
-      var modl_id = $(this).attr('data-target');
-      $("#" + modl_id).addClass("open-pop");
-      $("body").addClass("modal-blur");
-      e.preventDefault();
-    });
-    $("#syne-login .modalclose").click(function (e) {
-      $("#syne-login").removeClass("open-pop");
-      $("body").removeClass("modal-blur");
-      e.preventDefault();
-    });
-    $(".pop-modal").click(function (e) {
-      if (e.target.className != 'pop-modal' && !$('.pop-modal').find(e.target).length) {
-        $(this).removeClass("open-pop");
-        $("body").removeClass("modal-blur");
-      }
-    });
-</script>
-
 
 </html>
