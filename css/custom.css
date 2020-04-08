@@ -365,12 +365,23 @@ input[type=text] {
   font-weight: bold;
   color: #2a3844;
 }
+.createOrg-modal-header {
+  font-family: HKGrotesk;
+  font-size: 25px;
+  font-weight: bold;
+  color: #395366;
+}
 
 .hello-user-text {
   font-family: HKGrotesk;
   font-size: 20px;
   font-weight: bold;
   color: #2a3844;
+}
+.orgModal-radiobutton-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: #7c8796;
 }
 
 .write-post-text {
@@ -636,8 +647,10 @@ body .no-padding {
   padding: 0px 0px 0px 12px !important;
 }
 .org-form-input::placeholder {
+  font-family: HKGrotesk-reg !important;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 600 !important;
+  /* font-weight: 600; */
   color: #bac3cf !important;
 }
 
@@ -648,6 +661,12 @@ body .no-padding {
   padding: 0px 0px 0px 12px !important;
   border: none;
   width: 100%;
+}
+.terms-conditions {
+  font-family: HKGrotesk-reg;
+  font-size: 13px;
+  font-weight: 500;
+  color: #2a3844;
 }
 
 .org-url-box {
@@ -953,4 +972,10 @@ body .no-padding {
   font-family: HKGrotesk;
   font-size: 10px;
   color: #cb2a2a;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  border-color: #16c0ef !important;
+  background-color: #16c0ef !important  ;
 }

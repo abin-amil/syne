@@ -280,8 +280,8 @@
                     <img src="img/close-icon.png" alt="close">
                 </a>
             </div>
-            <div id="createNewOrg" class="m-3">
-                <div class="full-name">
+            <div id="createNewOrg" class="px-4 py-2">
+                <div class="createOrg-modal-header">
                     Create New Organisation Page
                 </div>
                 <div class="mt-5 organisation-add-text">
@@ -336,7 +336,7 @@
                                 </div>
                                 <small class="noteinstr mt-1">In less than 120 words</small>
                             </div>
-                            <div class="form-group mt-5">
+                            <div class="form-group mt-4">
                                 <div class="p-2">
                                     <label for="orgType" class="syne-input-label">
                                         Organisation Type<span class="required-field">*</span>
@@ -345,13 +345,13 @@
                                         <div class="custom-control custom-radio custom-control-inline">
                                             <input type="radio" class="custom-control-input" id="forProfit"
                                                 name="orgType" value="profit">
-                                            <label class="custom-control-label" for="forProfit">For
+                                            <label class="custom-control-label orgModal-radiobutton-text" for="forProfit">For
                                                 Profit</label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline">
                                             <input type="radio" class="custom-control-input" id="nonProfit"
                                                 name="orgType" value="nonProfit">
-                                            <label class="custom-control-label" for="nonProfit">Non
+                                            <label class="custom-control-label orgModal-radiobutton-text" for="nonProfit">Non
                                                 Profit</label>
                                         </div>
                                     </div>
@@ -423,7 +423,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mt-5">
+                        <div class="mt-5 terms-conditions">
                             By clicking "publish organisation Page" below, you agree to our
                             <a style="color: #007bff">terms of service</a> and
                             <a style="color: #007bff">privacy policy</a>
@@ -431,7 +431,7 @@
                         <div class="mt-1 m-2">
                             <button id="publishOrgPageBtn" type="button" onclick="publishOrganisation()"
                                 class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
-                                Publish Organisation Page
+                                Create New Organisation
                             </button>
                         </div>
                 </div>
