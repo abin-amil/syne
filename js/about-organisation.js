@@ -1,6 +1,13 @@
 $(document).ready(function () {
     createOrgLeftPanelTabs();
     setTab(2);
+
+    $(".modal-btn").click(function (e) {
+        var modl_id = $(this).attr('data-target');
+        $("#" + modl_id).addClass("open-pop");
+        $("body").addClass("modal-blur");
+        e.preventDefault();
+    });
 });
 
 function createOrgLeftPanelTabs() {
@@ -16,6 +23,11 @@ function createOrgLeftPanelTabs() {
         });
         document.getElementById("org-left-panel-tabs").innerHTML = leftPanelTabFinalHtml;
     }
+}
+
+function closeModal(id) {
+    $(id).removeClass("open-pop");
+    $("body").removeClass("modal-blur");
 }
 
 $("#edit-oganisation-popup .modalclose").click(function (e) {
