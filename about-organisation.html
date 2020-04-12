@@ -197,9 +197,9 @@
     <div id="edit-oganisation-popup" class="pop-modal">
         <div class="modalcontent create-org-modal" style="max-width: 500px !important;">
             <div class="syne-lgin-r rltv p-3">
-                <a href="#" class="modalclose flex">
+                <a class="d-flex justify-content-end modal-btn" href="#syne-discard-draft" data-target="syne-discard-draft" >
                     <div class="modal-close-text">Close</div>
-                    <img src="img/close-icon.png" alt="close">
+                    <img src="img/close-icon.png">
                 </a>
             </div>
             <div id="createNewOrg" class="px-4 py-2">
@@ -361,6 +361,25 @@
                 </div>
                 </form>
             </div>
+        </div>
+    </div>
+
+    <div id="syne-discard-draft" class="pop-modal">
+        <div class="modalcontent delete-popup p-4">
+            <div class="synemodal-body">
+                <a href="#" class="modalclose flex">
+                    <img src="img/close-icon.png" alt="close" onclick="closeModal('#syne-discard-draft')">
+                </a>
+                <div class="delete-popup-heading py-2">Discard Draft</div>
+                <div class="delete-popup-desc py-2 text-center">
+                    You haven’t saved the edits you made. Are you sure you want to leave and discard your draft
+                </div>
+                <div class="delete-popup-buttons py-3">
+                    <div class="delete-popup-confirm-action px-2 py-3 text-center w-100">No, Continue Editing</div>
+                    <div class="delete-popup-decline-action px-2 pt-3 pb-1 text-center w-100" alt="close" onclick="closeModals('#edit-oganisation-popup','#syne-discard-draft')">Discard and Exit</div>
+                </div>
+            </div>
+
         </div>
     </div>
 

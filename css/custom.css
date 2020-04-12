@@ -864,7 +864,7 @@ body .no-padding {
 
 .delete-popup {
   width: 390px !important;
-  height: 260px;
+  /* height: 260px; */
   border-radius: 8px;
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
@@ -978,4 +978,29 @@ body .no-padding {
   color: #fff;
   border-color: #16c0ef !important;
   background-color: #16c0ef !important  ;
+}
+
+.unfollow-confirm-text {
+  font-size: 18px;
+  color: #2a3844;
+  font-family: HKGrotesk;
+}
+.popup-unfollow-text  {
+  font-family: HKGrotesk;
+  font-size: 15px;
+  font-weight: 600;
+  color: #f02121;
+}
+.popup-cancel-text  {
+  font-family: HKGrotesk;
+  font-size: 15px;
+  font-weight: 600;
+  color: #3a5366;
+}
+.center-vertical-line {
+  border-left: 6px solid green;
+}
+.copy-link-text {
+font-size: 14px;
+color: #7c8796;
 }

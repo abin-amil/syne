@@ -84,3 +84,7 @@
   border-radius: 4px;
   background-color: #e0e6ee;
 }
+.dropdown-line-seperator {
+  height: 1px;
+  background-color: #f4f7fa;
+}

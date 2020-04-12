@@ -8,12 +8,14 @@
 
 .dropdown-item {
     font-size: 12px;
+    font-family: HKGrotesk-reg;
     color: #5d677e !important;
     padding: .5rem !important;
 }
 
 .dropdown-menu {
-    border-radius: 4px;
+    border-radius: 4px !important;
+    border: none !important;
     box-shadow: 0 6px 12px 0 rgba(10, 11, 13, 0.2);
     background-color: #ffffff;
     margin: -30px 0 0 -30px !important;
