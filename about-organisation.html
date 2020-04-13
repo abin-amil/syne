@@ -355,7 +355,7 @@
                         <div class="mt-1 m-2">
                             <button id="publishOrgPageBtn" type="button" onclick="publishOrganisation()"
                                 class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
-                                Create New Organisation
+                                Update New Organisation
                             </button>
                         </div>
                 </div>
@@ -375,7 +375,7 @@
                     You haven’t saved the edits you made. Are you sure you want to leave and discard your draft
                 </div>
                 <div class="delete-popup-buttons py-3">
-                    <div class="delete-popup-confirm-action px-2 py-3 text-center w-100">No, Continue Editing</div>
+                    <div class="delete-popup-confirm-action px-2 py-3 text-center w-100" onclick="closeModal('#syne-discard-draft')">No, Continue Editing</div>
                     <div class="delete-popup-decline-action px-2 pt-3 pb-1 text-center w-100" alt="close" onclick="closeModals('#edit-oganisation-popup','#syne-discard-draft')">Discard and Exit</div>
                 </div>
             </div>

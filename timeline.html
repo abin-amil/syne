@@ -425,6 +425,25 @@
         </div>
     </div>
 
+    <div id="syne-post-delete-popup" class="pop-modal">
+        <div class="modalcontent delete-popup p-4">
+            <div class="synemodal-body">
+                <a href="#" class="modalclose flex">
+                    <img src="img/close-icon.png" onclick="closeModal('#syne-post-delete-popup')" alt="close">
+                </a>
+                <div class="delete-popup-heading py-2" >Delete Post</div>
+                <div class="delete-popup-desc py-2 text-center">
+                    Are you sure you want to delete the post?
+                </div>
+                <div class="delete-popup-buttons py-3">
+                    <div class="delete-popup-confirm-action px-2 py-3 text-center w-100">Confirm</div>
+                    <div class="delete-popup-decline-action px-2 pt-3 pb-1 text-center w-100" alt="close">Cancel</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <div id="syne-share-popup" class="pop-modal">
         <!-- syne-share-popup-template fill here -->
     </div>
@@ -545,7 +564,8 @@
                                     Report Post
                                 </a>
                                 <div class="dropdown-line-seperator"></div>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item modal-btn" href="#syne-post-delete-popup"
+                                data-target="syne-post-delete-popup" >
                                     <img class="px-1" src="img/delpost-grey-small.png">
                                     Delete Post
                                 </a>
