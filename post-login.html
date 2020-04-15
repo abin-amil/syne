@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/post-login.css">
+    <link rel="stylesheet" href="css/dropzone-style.css">
 
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -127,8 +128,8 @@
                 <div class="writePost p-4 mt-3">
                     <div class="write-post-text">Write a Post</div>
                     <!-- <div class="whats_on_mind">Whats on your mind?</div> -->
-                    <textarea name="emoji" placeholder="Whats on your mind?"
-                        style="width: 100%; border: none;"></textarea>
+                    <textarea name="emoji" placeholder="Whats on your mind?" class="modal-btn"
+                        style="width: 100%; border: none;" href="#write-post" data-target="write-post"></textarea>
                     <div class="d-flex pt-4">
                         <div class="image-upload">
                             <label for="cameraIcon">
@@ -178,6 +179,59 @@
                     </div>
                     <div class="d-flex justify-content-center py-3 view-more">
                         View more…
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="write-post" class="pop-modal">
+        <div class="modalcontent" style="max-width: 40%;">
+            <div class="synemodal-body">
+                <div class="writePost p-4 mt-3">
+                    <a href="#" class="modalclose flex">
+                        <img src="img/close-icon.png" alt="close">
+                    </a>
+                    <div class="write-post-text">Write a Post</div>
+                    <textarea name="emoji" placeholder="Whats on your mind?"
+                        style="width: 100%; border: none;"></textarea>
+                    <div>
+                        <form action="/file-upload"
+                            class="dropzone post-more-photos d-flex justify-content-around align-items-center"
+                            id="post-more-photos">
+                            <div id="postPhotoDefault1" class="d-flex align-items-center">
+                                <img src="img/img-placeholder.png ">
+                                <div class="drag-in-photos pl-2">Drag in photos</div>
+                            </div>
+                            <div class="fallback">
+                                <input name="file" type="file" multiple />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="d-flex pt-4" style="width: 100%;">
+                        <div class="d-flex col-6">
+                            <div class="image-upload mt-1">
+                                <label for="cameraIcon">
+                                    <img class="pr-2" src="img/svgImages/camera-grey-small.svg" />
+                                </label>
+                                <input id="cameraIcon" accept="image/*" type="file" />
+                            </div>
+                            <div class="image-upload mt-1">
+                                <label for="attachementIcon">
+                                    <img class="px-2" src="img/svgImages/attach-grey-small.svg" />
+                                </label>
+                                <input type='file' id="attachementIcon"
+                                    accept="application/pdf,application/vnd.ms-excel" />
+                            </div>
+                            <div class="mt-1">
+                                <img class="px-2" src="img/svgImages/smiley-grey-small.svg">
+                            </div>
+                        </div>
+                        <div class="col-2"></div>
+                        <div class="pull-right col-4">
+                            <div id="postBtn" class="btn proceedButton" style="width: 100%;">Post
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -389,6 +443,11 @@
     </script>
 
 </body>
+
+<!-- dropzone.js Plugin -->
+<link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css" />
+<script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+
 <script type="text/javascript" src="dataModels.js"></script>
 <script type="text/javascript" src="js/post-login.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
