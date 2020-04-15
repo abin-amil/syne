@@ -81,7 +81,8 @@
 }
 
 .countryInput3 {
-    width: 20% !important;
+    width: 23% !important;
+    padding: 0 2px 0 0;
 }
 
 .countryInput3 .selectize-control {
@@ -117,18 +118,25 @@
     width: 30% !important;
 }
 
-.project-title-input::placeholder, .countryInput2 ::placeholder, .countryInput3 ::placeholder {
+.project-title-input::placeholder,
+.countryInput2 ::placeholder,
+.countryInput3 ::placeholder {
     color: #bac3cf !important;
     font-size: 14px;
 }
 
-.project-title-input, .countryInput2 .item, .countryInput3 .item {
+.project-title-input,
+.countryInput2 .item,
+.countryInput3 .item {
     font-size: 14px;
 }
 
-.countryInput2 .item, .countryInput3 .item, .selectize-dropdown {
+.countryInput2 .item,
+.countryInput3 .item,
+.selectize-dropdown {
     color: #2a3844 !important;
     font-weight: 600;
+    padding-left: 8px;
 }
 
 .selectize-dropdown-content {
