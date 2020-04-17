@@ -7,11 +7,6 @@ $(document).ready(function () {
     LeftPanelCreation();
     recommendedProjectPanelCreation();
     whoToFollowListPanelCreation();
-
-    $("#login-link").click(function (e) {
-        document.getElementById("login-link").style.display = "none";
-        document.getElementById("user-link").style.display = "block";
-    });
 });
 
 function LeftPanelCreation() {
@@ -165,4 +160,9 @@ function createHeader(isStartPojectBtnAvailable = false,
         }
         document.getElementById("header").innerHTML = headerFinalHtml;
     }
+
+    $("#login-link").click(function (e) {
+        document.getElementById("login-link").style.display = "none";
+        document.getElementById("user-link").style.display = "block";
+    });
 }
