@@ -21,6 +21,8 @@ $(document).ready(function () {
         $(elmts[2]).toggleClass('d-none').toggleClass('d-flex');
         elmts[1].innerHTML = elmts[2].children[0].value ? elmts[2].children[0].value.trim() : "";
     });
+
+    createHeader(true, true, true, false, true, true);
 });
 
 $("#syne-delete-popup .modalclose").click(function (e) {
