@@ -51,63 +51,8 @@
 
 <body class="post-page-bg">
     <div class="wrapper">
-        <div class="full-wrapper header post-page-header">
-            <div class="container p-0">
-
-                <div class="headerwrap d-flex align-items-center justify-content-between">
-                    <div class="d-flex align-items-center">
-                        <div class="logo h-100">
-                            <img src="img/syne-logo.png" alt="logo">
-                        </div>
-                        <div class="header-menu h-100">
-                            <ul class="d-flex align-items-center m-0">
-                                <li>
-                                    <a class="d-flex txt-blue f14 modal-button" data-toggle="modal"
-                                        data-target="#exampleModal">
-                                        Start a Project
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="explore-projects.html" class="f14 d-flex">
-                                        Explore Projects
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="d-flex flex-row-reverse nav-right">
-                        <div class="d-flex align-items-center">
-                            <div class="syne-inputbox syne-search d-flex align-items-center bg-grey-light mr-2">
-                                <img style="height: 20px;" src="img/search.png">
-                                <input type="text" name="projectSearch"
-                                    class="form-control bg-grey-light font-weight-normal" placeholder="Search here">
-                            </div>
-                            <!-- <img class="px-3" src="img/search-icon.svg"> -->
-                            <div class="position-relative px-4">
-                                <img class=" nav-msg-icon" src="img/msg-icon.svg">
-                                <div class="msg-count">5</div>
-                            </div>
-                            <div class="position-relative px-4">
-                                <img class="" src="img/notif-icon.svg">
-                                <div class="not-count">8</div>
-                            </div>
-
-                            <div class="pl-3 d-flex align-items-center">
-                                <img class="pr-2" style="height: 40px;" src="img/user.png">
-                                <div class="nav-username">Vinith</div>
-                                <img class="pl-2" src="img/carrotdown-grey-small.svg">
-
-                            </div>
-                        </div>
-
-                        <!-- <a href="#" class="txt-blue right modal-btn" href="#syne-login"
-                            data-target="syne-login">Login</a> -->
-                    </div>
-                </div>
-
-            </div>
-
+        <div id="header">
+            <!-- header template fill here -->
         </div>
     </div>
 
@@ -287,7 +232,7 @@
             </div>
         </div>
     </div>
-    
+
     <div id="syne-followers" class="pop-modal">
         <div class="modalcontent follower-modal">
             <div class="synemodal-body">
@@ -312,8 +257,9 @@
                                 <div class="follower-user-name">username</div>
                             </div>
                         </div>
-                        <a class="follow-button px-4 py-1 modal-btn"  href="#syne-followers-unfollow" data-target="syne-followers-unfollow">
-                            Following 
+                        <a class="follow-button px-4 py-1 modal-btn" href="#syne-followers-unfollow"
+                            data-target="syne-followers-unfollow">
+                            Following
                         </a>
                     </div>
                     <div class="line-seperator my-2"></div>
@@ -381,22 +327,22 @@
     <div id="syne-followers-unfollow" class="pop-modal">
         <div class="modalcontent follower-modal">
             <div class="synemodal-body">
-             
+
                 <div class="container p-0 follower-modal-height">
                     <div class="d-flex pt-5 pb-3 flex-column justify-content-center align-items-center">
                         <img style="height:90px" src="img/user.png">
                         <div class="d-flex justify-content-between align-items-center px-3">
-                                <div class="unfollow-confirm-text py-4">Unfollow Sanne Viscaal @sanneviscaal ?</div>
+                            <div class="unfollow-confirm-text py-4">Unfollow Sanne Viscaal @sanneviscaal ?</div>
                         </div>
                     </div>
                     <div class="line-seperator"></div>
                     <div class="d-flex justify-content-around px-3">
-                        <div class="popup-unfollow-text px-4 py-3" >
+                        <div class="popup-unfollow-text px-4 py-3">
                             Unfollow
                         </div>
                         <div class="h-100 center-vertical-line">
                         </div>
-                        <div class="popup-cancel-text px-4 py-3" >
+                        <div class="popup-cancel-text px-4 py-3">
                             Cancel
                         </div>
                     </div>
@@ -404,7 +350,7 @@
             </div>
         </div>
     </div>
-   
+
 
     <div id="syne-delete-popup" class="pop-modal">
         <div class="modalcontent delete-popup p-4">
@@ -431,7 +377,7 @@
                 <a href="#" class="modalclose flex">
                     <img src="img/close-icon.png" onclick="closeModal('#syne-post-delete-popup')" alt="close">
                 </a>
-                <div class="delete-popup-heading py-2" >Delete Post</div>
+                <div class="delete-popup-heading py-2">Delete Post</div>
                 <div class="delete-popup-desc py-2 text-center">
                     Are you sure you want to delete the post?
                 </div>
@@ -448,6 +394,12 @@
         <!-- syne-share-popup-template fill here -->
     </div>
 
+    <!-- templates loades session start here.... these session hide in DOM -->
+
+    <!-- header template loaded here by scipt -->
+    <div id="includedHeaderContent" style="display: none;"></div>
+
+    <!-- templates loades session End here-->
 
     <!-- left panel template -->
     <script id="template-left-panel-user-details" type="text/template">
@@ -1128,7 +1080,6 @@
             </div>
         </div>
     </script>
-
 </body>
 <script type="text/javascript" src="js/post-login.js"></script>
 <script type="text/javascript" src="js/common.js"></script>

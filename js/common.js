@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    createHeader(true, true, true, true);
     LeftPanelCreation();
     recommendedProjectPanelCreation();
     whoToFollowListPanelCreation();
@@ -55,9 +56,9 @@ function createLeftPanelTabs() {
                 .replace(/{{id}}/g, tab.id);
         });
 
-        if(document.getElementById("left-panel-tabs")){
+        if (document.getElementById("left-panel-tabs")) {
             document.getElementById("left-panel-tabs").innerHTML = leftPanelTabFinalHtml;
-        }        
+        }
     }
 }
 
@@ -102,7 +103,66 @@ function setTab(tabId) {
 }
 
 
-function addMilestone()
-{
-    document.getElementById("new-milestone").style.display  = "block";
+function addMilestone() {
+    document.getElementById("new-milestone").style.display = "block";
+}
+
+function createHeader(isStartPojectBtnAvailable = false,
+    isExplorePojectBtnAvailable = false,
+    isSearchAreaAvailable = false,
+    isLoginBtnAvailable = false,
+    isMsgIconAvailable = false,
+    isNotifyIconAvailable = false) {
+
+    $("#includedHeaderContent").load("templates/header.html", function () {
+        if (document.getElementById("template-header")) {
+            let header = document.getElementById("template-header");
+            let headerHtml = header.innerHTML;
+            let headerFinalHtml = headerHtml;
+            if (isStartPojectBtnAvailable) {
+                headerFinalHtml = headerFinalHtml.replace(/{{startProjectBtn}}/g, "block")
+            } else {
+                headerFinalHtml = headerFinalHtml.replace(/{{startProjectBtn}}/g, "none")
+            }
+
+            if (isExplorePojectBtnAvailable) {
+                headerFinalHtml = headerFinalHtml.replace(/{{exploreProjectBtn}}/g, "block")
+            } else {
+                headerFinalHtml = headerFinalHtml.replace(/{{exploreProjectBtn}}/g, "none")
+            }
+
+            if (isSearchAreaAvailable) {
+                headerFinalHtml = headerFinalHtml.replace(/{{seachArea}}/g, "block")
+            } else {
+                headerFinalHtml = headerFinalHtml.replace(/{{seachArea}}/g, "none !important")
+            }
+
+            if (isMsgIconAvailable) {
+                headerFinalHtml = headerFinalHtml.replace(/{{msgIcon}}/g, "block")
+            } else {
+                headerFinalHtml = headerFinalHtml.replace(/{{msgIcon}}/g, "none !important")
+            }
+
+            if (isNotifyIconAvailable) {
+                headerFinalHtml = headerFinalHtml.replace(/{{notifyIcon}}/g, "block")
+            } else {
+                headerFinalHtml = headerFinalHtml.replace(/{{notifyIcon}}/g, "none !important")
+            }
+
+            if (isLoginBtnAvailable) {
+                headerFinalHtml = headerFinalHtml.replace(/{{LoginBtn}}/g, "block")
+                headerFinalHtml = headerFinalHtml.replace(/{{LoggedInUser}}/g, "none !important")
+            } else {
+                headerFinalHtml = headerFinalHtml.replace(/{{LoggedInUser}}/g, "block")
+                headerFinalHtml = headerFinalHtml.replace(/{{LoginBtn}}/g, "none")
+            }
+            document.getElementById("header").innerHTML = headerFinalHtml;
+        }
+
+        $("#login-link").click(function (e) {
+            document.getElementById("login-link").style.display = "none";
+            document.getElementById("user-link").style.display = "block";
+        });
+    });
+
 }
