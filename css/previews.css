@@ -1,0 +1,760 @@
+    .project-preview-title {
+        font-size: 28px;
+        color: #2a3844;
+        font-family: HKGrotesk;
+    }
+    
+    .project-preview-sub-title {
+        font-size: 13px;
+        color: #7c8796;
+    }
+    
+    .email-activation {
+        /* height: 159px; */
+        background-color: #e3f9ff;
+    }
+    
+    .email-activation-title {
+        font-family: HKGrotesk;
+        font-size: 23px;
+        color: #2a3844;
+    }
+    
+    .email-activation-text {
+        font-size: 15px;
+        color: #2a3844;
+    }
+    
+    .email-activation-action-text {
+        font-family: HKGrotesk;
+        font-size: 15px;
+        color: #16c0ef;
+    }
+    
+    .email-activation-mail {
+        font-family: HKGrotesk;
+    }
+    
+    .project-preview-desc {
+        font-size: 15px;
+        color: #2a3844;
+    }
+    
+    .project-preview-primary-desc {
+        font-family: HKGrotesk;
+    }
+    
+    .preview_btn {
+        font-family: HKGrotesk;
+        border-radius: 8px;
+        font-size: 10px;
+        position: absolute;
+        right: 30px;
+        top: -8px;
+        padding: 1px 7px;
+        border: none;
+        font-size: 12px;
+        color: #ffa84e;
+        background-color: #ffd099;
+        outline: none;
+    }
+    
+    .preview_btn:focus {
+        outline: none;
+    }
+    
+    .project-link {
+        background-color: #f2f4f7;
+    }
+    
+    .raised-amount {
+        font-size: 23px;
+        color: #2a3844;
+    }
+    
+    .taret-amount-desc {
+        font-size: 13px;
+        color: #5d677e;
+        font-family: HKGrotesk-reg;
+    }
+    
+    .btn_save_publish .draft_btn {
+        font-size: 15px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.47;
+        letter-spacing: 0.17px;
+        color: #16c0ef;
+        border: 1px solid #16c0ef;
+        background-color: #fff;
+        padding: 8px 18px 8px 32px;
+        background-image: url('../img/save-blue.png');
+        background-size: 15px;
+        background-position: 9px 11px;
+        background-repeat: no-repeat;
+        margin: 0 10px;
+    }
+    
+    .draft_btn:focus {
+        box-shadow: none!important;
+    }
+    
+    .btn_save_publish {
+        position: relative;
+        left: 300px;
+    }
+    
+    .btn_save_publish .publish_btn {
+        font-size: 15px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.47;
+        letter-spacing: 0.17px;
+        color: #fff;
+        background-color: #16c0ef;
+        padding: 8px 18px 8px 32px;
+        background-image: url('../img/svgImages/export-white.svg');
+        background-size: 15px;
+        background-position: 9px 11px;
+        background-repeat: no-repeat;
+    }
+    
+    .publish_btn:hover {
+        color: #fff!important;
+    }
+    
+    .publish_btn:focus {
+        box-shadow: none!important;
+    }
+    
+    .draft_btn:hover {
+        color: #16c0ef!important;
+    }
+    
+    .fund-btn {
+        border-radius: 3px !important;
+        background-color: #e0e6ee !important;
+        color: white !important;
+        font-weight: bold !important;
+    }
+    
+    .donateButton {
+        /* height: 40px; */
+        border-radius: 3px !important;
+        background-color: #e0e6ee !important;
+        color: white !important;
+        font-weight: bold !important;
+        display: flex;
+        align-items: center;
+    }
+    
+    .lock {
+        width: 17px!important;
+        position: relative;
+        bottom: 3px;
+    }
+    
+    .support_btn {
+        border-radius: 3px !important;
+        background-color: #e0e6ee !important;
+        color: white !important;
+        font-weight: bold !important;
+    }
+    
+    .Like_btn {
+        border-radius: 3px !important;
+        background-color: #e0e6ee !important;
+        color: white !important;
+        font-weight: bold !important;
+        display: flex;
+        align-items: center;
+    }
+    
+    .Like_btn img {
+        width: 14px;
+        position: relative;
+        bottom: 1px;
+    }
+    
+    .social {
+        font-size: 17px;
+        color: #2a3844;
+        padding: 10px 0 0 0px;
+    }
+    
+    .time-out {
+        font-size: 11px;
+        text-align: center;
+    }
+    
+    .view-count {
+        font-size: 17px;
+        font-family: HKGrotesk;
+        color: #2a3844;
+    }
+    
+    .donors-text {
+        font-size: 13px;
+        color: #5d677e;
+    }
+    
+    .project-preview-amount-raised-percentage {
+        font-size: 13px;
+        font-weight: bold;
+        color: #2a3844;
+    }
+    
+    .project-preview-amount-raised-time {
+        font-size: 13px;
+        color: #fb4f6d;
+    }
+    
+    .date-wrapper .date .active {
+        padding: 5px 0;
+        background: #16c0ef;
+        color: #fff;
+        font-size: 10px;
+    }
+    
+    .date-wrapper .date {
+        width: 45px;
+        text-align: center;
+        border-radius: 2px;
+        border: solid 1px #395366;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    
+    .gj-picker.gj-picker-md.datepicker.gj-unselectable {
+        top: 1024px;
+    }
+    
+    .oval {
+        width: 17px;
+        height: 17px;
+        border: solid 4px #16c0ef;
+        background-color: #ffffff;
+    }
+    
+    .title-milestone {
+        border-radius: 3px;
+        border: solid 1px #16c0ef;
+        background-color: #ffffff;
+        height: 54px;
+    }
+    
+    .title-datewrapper img {
+        height: 24px;
+        width: 24px;
+    }
+    
+    .title-datewrapper #startDatepicker {
+        padding: 0!important;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.33;
+        letter-spacing: 0.21px;
+        color: #bac3cf!important;
+        border: none;
+    }
+    
+    .gj-icon {
+        display: none!important;
+    }
+    
+    textarea {
+        height: 200px;
+        border-radius: 3px;
+        border: solid 1px #e0e6ee;
+        background-color: #ffffff;
+        resize: none !important;
+    }
+    
+    .text-editor-wrapper .btn img {
+        width: 12px;
+    }
+    
+    .text-editor-wrapper {
+        padding: 20px 0 115px;
+        position: relative;
+    }
+    
+    .text-editor-wrapper .btn img {
+        width: 12px;
+    }
+    
+    .text-editor-wrapper .btn {
+        padding: 0 8px;
+        background-color: transparent;
+        border-radius: 0px!important;
+        border-right: 1px solid #e9e9e9;
+    }
+    
+    .text-editor-wrapper .buttons {
+        padding: 5px 0;
+        background: #f6f6f6;
+        position: relative;
+        border: 1px solid #e0e6ee;
+    }
+    
+    .text-editor-wrapper .buttons span {
+        cursor: pointer;
+    }
+    
+    .text-editor-wrapper .buttons span img {
+        position: relative;
+        top: 3px;
+        right: 6px;
+        cursor: pointer;
+    }
+    
+    .text-editor-wrapper textarea {
+        resize: none;
+        border-radius: 3px;
+        border: solid 1px #e0e6ee;
+        background-color: #ffffff;
+        outline: none;
+        padding: 20px;
+        border-top: none;
+    }
+    
+    .text-editor-wrapper .action-btn .btn {
+        font-size: 15px;
+        font-family: 'HKGrotesk';
+        font-weight: bold;
+        line-height: 1.47;
+        letter-spacing: 0.17px;
+        color: #7c8796;
+        margin: 0 20px;
+        border: none!important;
+    }
+    
+    .text-editor-wrapper .action-btn .active {
+        font-size: 15px;
+        font-family: 'HKGrotesk';
+        font-weight: bold;
+        line-height: 1.47;
+        letter-spacing: 0.17px;
+        color: #fff;
+        background-color: #16c0ef;
+        padding: 8px 10px;
+        border-radius: 5px!important;
+    }
+    
+    .text-editor-wrapper .action-btn {
+        position: absolute;
+        right: 0;
+        bottom: 55px;
+    }
+    
+    .Rectangle {
+        font-size: 15px;
+        font-family: 'HKGrotesk';
+        font-weight: bold;
+        line-height: 1.47;
+        letter-spacing: 0.17px;
+        color: #fff;
+        background-color: #16c0ef;
+        padding: 8px 10px;
+    }
+    
+    .comment-box {
+        border: solid 1px #e0e6ee;
+        height: 90px;
+        width: 100%;
+        color: #5d677e;
+        text-align: left;
+        padding: 0 0 0 0 !important;
+    }
+    
+    .comment-circle {
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        background-color: #e0e6ee;
+    }
+    
+    .share-follow-btn button {
+        border-radius: 3px;
+        border: solid 1px #e0e6ee;
+        background-color: #ffffff;
+        margin-bottom: 20px;
+    }
+    
+    .share-follow-btn button img {
+        width: 14px;
+        object-fit: contain;
+        position: relative;
+        left: -2px;
+        top: -2px;
+    }
+    
+    .btn:focus {
+        box-shadow: none!important;
+    }
+    
+    .del_edit_btn {
+        font-family: HKGrotesk;
+        font-weight: bold;
+        color: #9ca6b3;
+    }
+    
+    .fund-raise h3 {
+        font-size: 12px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.45;
+        letter-spacing: 0.12px;
+        color: #2a3844;
+    }
+    
+    .foundations h1 {
+        font-size: 15px;
+        font-family: 'HKGrotesk';
+        font-weight: bold;
+        line-height: 1.33;
+        letter-spacing: 0.15px;
+        color: #2a3844;
+        margin: 0 0 3px 0;
+    }
+    
+    .foundations img {
+        width: 30px;
+    }
+    
+    .foundations p {
+        font-size: 13px;
+        line-height: 1.8;
+        letter-spacing: 0.14px;
+        color: #5d677e;
+        margin-bottom: 0;
+    }
+    
+    .foundations label {
+        color: #16c0ef;
+        font-size: 14px;
+    }
+    
+    .vivent-foundations {
+        padding: 20px 25px;
+        margin: 15px 0;
+        border-radius: 3px;
+        border: solid 1px #e0e6ee;
+        background-color: #ffffff;
+    }
+    
+    .vivent-foundations h1 {
+        font-size: 13px;
+        line-height: 1.45;
+        letter-spacing: 0.12px;
+        color: #5d677e;
+        margin-bottom: 0;
+    }
+    
+    .vivent-foundations img {
+        position: relative;
+        left: 10px;
+    }
+    
+    .vivent-foundations h2 {
+        font-size: 15px;
+        font-family: 'HKGrotesk';
+        font-weight: bold;
+        line-height: 1.33;
+        letter-spacing: 0.15px;
+        color: #2a3844;
+        margin-bottom: 0;
+    }
+    
+    .vivent-foundations label {
+        font-size: 13px;
+        line-height: 1.8;
+        letter-spacing: 0.14px;
+        color: #5d677e;
+    }
+    
+    .vivent-foundations p {
+        font-size: 14px;
+        line-height: 1.38;
+        letter-spacing: 0.14px;
+        color: #5d677e;
+        padding: 13px 0 0px 14px;
+    }
+    
+    .vivent-foundations p span {
+        color: #16c0ef;
+        font-weight: 500;
+    }
+    
+    .report-wrapper {
+        padding: 0 20px 40px;
+    }
+    
+    .report-wrapper p {
+        font-size: 13px;
+        line-height: 1.8;
+        color: #7c8796;
+        margin-bottom: 0;
+    }
+    
+    .report-wrapper a {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        line-height: 1.69;
+        font-family: 'HKGrotesk';
+        font-weight: bold;
+        color: #7c8796;
+        padding: 3px 0;
+        text-decoration: none;
+    }
+    
+    .report-wrapper a:hover {
+        color: #7c8796;
+        text-decoration: none;
+    }
+    
+    .report-wrapper a img {
+        padding-right: 7px;
+        object-fit: contain;
+        width: 18px;
+    }
+    
+    .report-wrapper h3 {
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #bac3cf;
+    }
+    
+    .add-wrapper .header-section {
+        padding: 20px 0;
+        border-bottom: 1px solid #eef0f5;
+    }
+    
+    .add-wrapper .header-section h5 {
+        font-size: 15px;
+        font-family: 'HKGrotesk';
+        font-weight: bold;
+        letter-spacing: 0.16px;
+        color: #00c8f5;
+        cursor: pointer;
+    }
+    
+    .add-wrapper .header-section p {
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #7c8796;
+        padding: 10px 0;
+    }
+    
+    .title-section .heading {
+        width: 75%;
+        padding: 14px 18px 8px;
+        border: 1px solid #eef0f5;
+        height: 60px;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+    
+    .heading h1,
+    .title-datewrapper label {
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.18px;
+        color: #7c8796;
+    }
+    
+    .heading .title {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.33;
+        letter-spacing: 0.21px;
+        color: #2a3844;
+        border: none;
+        outline: none;
+        padding: 0!important;
+    }
+    
+    .title::placeholder {
+        color: #2a3844;
+    }
+    
+    .title-datewrapper {
+        width: 38%;
+        padding: 8px 18px;
+        border: 1px solid #eef0f5;
+        height: 60px;
+        position: relative;
+        border-radius: 3px;
+    }
+    
+    .title-datewrapper img {
+        position: absolute;
+        right: 30px;
+        top: 17px;
+    }
+    
+    .add-wrapper .adder {
+        font-size: 17px;
+        font-family: 'HKGrotesk';
+        font-weight: bold;
+        line-height: 1.29;
+        color: #2e404e;
+        padding: 10px 0;
+    }
+    
+    .text-editor-wrapper .buttons span {
+        position: absolute;
+        right: 15px;
+        font-size: 12px;
+        top: 11px
+    }
+    
+    .text-editor-wrapper .buttons span img {
+        position: relative;
+        top: -1px;
+        right: 6px;
+    }
+    
+    @media(max-width:600px) {
+        .modal-header {
+            padding-bottom: 45px!important;
+        }
+        .btn_save_publish {
+            position: relative;
+            top: 58px;
+            left: 0;
+        }
+        .del_edit_btn {
+            position: relative;
+            top: 37px;
+            left: -230px;
+        }
+        .project-preview-title {
+            width: 207px;
+        }
+        .project-preview-sub-title {
+            padding: 0 0 13px 0;
+        }
+        .close {
+            margin: 0!important;
+            padding: 0;
+        }
+        .close img {
+            position: relative;
+            left: 28px;
+            bottom: 16px;
+            width: 18px;
+        }
+        .btn_save_publish .draft_btn {
+            position: relative;
+            right: 148px;
+            top: 15px;
+        }
+        .btn_save_publish .publish_btn {
+            position: relative;
+            bottom: 27px;
+        }
+        p {
+            text-align: justify;
+        }
+        .donateButton {
+            background-position: 100px 8px;
+        }
+    }
+    
+    @media(max-width:375px) {
+        .btn_save_publish .draft_btn {
+            padding: 11px 28px 8px 33px!important;
+            margin: 0!important;
+            background-position: 8px 13px;
+        }
+        .title-datewrapper img {
+            top: 30px;
+        }
+    }
+    
+    @media(max-width:360px) {
+        .btn_save_publish .draft_btn {
+            padding: 11px 16px 7px 26px!important;
+        }
+        .title-datewrapper h4 {
+            font-size: 12px;
+        }
+        .title-datewrapper h1 {
+            font-size: 10px;
+        }
+    }
+    
+    @media(max-width:768px) {
+        .btn_save_publish {
+            position: relative;
+            left: 11px;
+        }
+        .foundations p {
+            font-size: 12px;
+        }
+        .foundations img {
+            width: 30px;
+            margin: 0 auto;
+        }
+        .vivent-foundations img {
+            width: 30px;
+            margin: 0 auto;
+        }
+        .vivent-foundations label {
+            font-size: 12px;
+        }
+        .vivent-foundations p {
+            font-size: 12px;
+            padding: 13px 0 0px 0px;
+        }
+        .donateButton {
+            font-size: 12px!important;
+        }
+        .title-datewrapper label {
+            font-size: 10px;
+        }
+        .title-datewrapper input {
+            width: 18px;
+        }
+        .text-editor-wrapper .action-btn {
+            display: flex;
+        }
+    }
+    
+    @media(max-width:320px) {
+        .btn_save_publish .draft_btn {
+            padding: 7px 3px 10px 24px!important;
+            width: 130px!important;
+        }
+        .delete {
+            position: absolute;
+            right: 24px;
+            top: 34px;
+        }
+        .delete img {
+            position: relative;
+            left: 0px;
+            bottom: 0px;
+            width: 18px
+        }
+        .gj-picker.gj-picker-md.datepicker.gj-unselectable {
+            left: 13px!important;
+        }
+    }
+    
+    @media(max-width:1024px) {
+        .btn_save_publish {
+            position: relative;
+            left: 11px;
+        }
+    }

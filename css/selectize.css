@@ -270,6 +270,9 @@
 .selectize-dropdown {
     position: absolute;
     z-index: 10;
+    left: -16px!important;
+    top: 27px!important;
+    padding: 0px 10px;
     /* border: 1px solid #d0d0d0; */
     background: #fff;
     margin: -1px 0 0 0;
