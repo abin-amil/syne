@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="#3D0082" name="msapplication-TileColor">
+    <meta content="#3D0082" name="theme-color">
+    <title>SYNE</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/post-login.css">
+    <link rel="stylesheet" href="css/normal_user_view.css">
+    <link rel="stylesheet" href="css/project-preview.css">
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/selectize.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="modal-header d-flex align-items-center container">
+        <div class="logo">
+            <img src="img/syne-logo.png" alt="logo">
+        </div>
+        <div class="btn_save_publish">
+            <button class="btn draft_btn">
+                Save Draft
+            </button>
+            <button class="btn publish_btn">
+                Publish
+            </button>
+        </div>
+        <div>
+            <button onclick="location.href = './home.html';" class="delete close" type="button" data-dismiss="modal" aria-label="close">Close
+                <img src="img/close-grey.png">
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="project-preview-content">
+            <div class="preview-heading d-flex py-3 align-items-center justify-content-between">
+                <div class="d-flex">
+                    <img style="height: 54px;" src="img/user.png">
+                    <div class="px-2 d-flex align-items-center">
+                        <div>
+                            <div class="project-preview-title">School of Love</div>
+                            <div class="project-preview-sub-title d-flex">
+                                <div>Disability</div>
+                                <div class="px-2">Muvattupuzha, India</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center del_edit_btn">
+                    <div class="d-flex align-items-center px-2"> <img class="px-1" src="img/delete-grey.png"> Delete</div>
+                    <div class="d-flex align-items-center px-2"> <img class="px-1" src="img/svgImages/edit-grey-small.svg">Edit</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="py-1">
+                        <img class="img-fluid" src="img/cover-photo.jpg">
+                        <div class="d-flex py-2 justify-content-between">
+                            <div class="d-flex">
+                                <div>
+                                    <div class="project-date-text">
+                                        CREATED
+                                    </div>
+                                    <div class="project-date">
+                                        14th Aug 2019
+                                    </div>
+                                </div>
+                                <div class="px-3">
+                                    <div class="project-date-text">
+                                        ENDS ON
+                                    </div>
+                                    <div class="project-date">
+                                        14th Aug 2019
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="project-link px-2 py-1 d-flex align-items-center">
+                                    <img src="img/svgImages/attach-grey-small.svg"> syne.com/vivent-long-url-here-truncated…
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line-seperator mb-2"></div>
+                        <div class="project-preview-desc py-2">
+                            <p class="project-preview-primary-desc">
+                                Children love without boundaries. They help another up when they fall, they share their candies with someone who’s sad. They are inclusive, encouraging, and their kindness extends towards all.
+                            </p>
+                            <p>
+                                Children do not worry themselves with the thoughts of tomorrow. They are content living this day to the fullest. Children with disability can also be equal contributors to our society with our love and support to make their life colourful. With your love,
+                                Vivent will be able to develop technology tools that will help students to capitalise on their strengths.
+                            </p>
+                            <p>
+                                Vivent Foundation is intending to develop an interactive learning system with rich content using assistive technologies to improve the skills of differently abled children. Creating assistive technologies are beneficial because they build human capacity
+                                and can be instrumental in enabling people with limitations in functioning to remain in or return to their home or community, live independently, and participate in education,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="comments-wrapper">
+                        <h3>Comments (11)</h3>
+                        <textarea rows="5" placeholder="Write a comment…"></textarea>
+                        <div class="comment d-flex">
+                            <div class="prof-img"></div>
+                            <div class="comment-details">
+                                <h1>Ishaaq El Vohra <span>donated</span> ₹2,000</h1>
+                                <h2>Living the dream and giving a dream...nice job Vivent Foundation. You are a Brightsider</h2>
+                                <label>a day ago</label>
+                            </div>
+                        </div>
+                        <div class="comment d-flex">
+                            <div class="prof-img"></div>
+                            <div class="comment-details">
+                                <h1>Ishaaq El Vohra <span>donated</span> ₹2,000</h1>
+                                <h2>Living the dream and giving a dream...nice job Vivent Foundation. You are a Brightsider</h2>
+                                <label>a day ago</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="main-wrapper">
+                        <div class="prjct-tab">
+                            <div class="prjct-tab-pils flex flex-v-center">
+                                <ul class="tabs">
+                                    <li class="tab-link current" data-tab="tab-1">Popular</li>
+                                    <li class="tab-link" data-tab="tab-2">Latest</li>
+                                    <li class="tab-link" data-tab="tab-3">About to End</li>
+                                </ul>
+                                <a href="#" class="txt-blue prj-link">View All Projects</a>
+                            </div>
+                            <div id="tab-1" class="tab-content current">
+                                <div class="prjct-v-grids flex flex-h-start">
+                                    <div class="prjct-v-box w32">
+                                        <div class="prjct-v-img">
+                                            <img src="img/project1.jpg">
+                                        </div>
+                                        <div class="prjct-v-text">
+                                            <div class="flex prjct-tag prjct-h-tag flex-v-center">
+                                                <span>Disability</span>
+                                                <a href="#" class="hrt"></a>
+                                            </div>
+                                            <h5>School of Love</h5>
+                                            <p>Children love without boundaries. They help another up when they fall, they share their candies with someone who’s sad…</p>
+                                            <label class="prgress-lbl">
+                                             Target ₹2,500,000
+                                              </label>
+                                            <!-- <div class="progress-bar">
+                                    <div class="prograss-bar-inner" style="width:25%"></div>
+                                  </div> -->
+                                            <div class="progress" style="height: 5px; margin: 10px 0px;">
+                                                <div class="progress-bar" id="progressbar" role="progressbar" style="width:50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress-status flex">
+                                                <span><strong>Raised ₹293,145</strong></span>
+                                                <span class="txt-blue"><b>52%</b></span>
+                                            </div>
+                                            <div class="prjct-v-durtn flex-center">
+                                                <img style="padding-right: 8px;" src="img/time-icon.svg">
+                                                <span>Ends in <b>3 Months</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prjct-v-box w32">
+                                        <div class="prjct-v-img">
+                                            <img src="img/project1.jpg">
+                                        </div>
+                                        <div class="prjct-v-text">
+                                            <div class="flex prjct-tag prjct-h-tag flex-v-center">
+                                                <span>Disability</span>
+                                                <a href="#" class="hrt"></a>
+                                            </div>
+                                            <h5>School of Love</h5>
+                                            <p>Children love without boundaries. They help another up when they fall, they share their candies with someone who’s sad…</p>
+                                            <label class="prgress-lbl">
+                                           Target ₹2,500,000
+                                          </label>
+                                            <div class="progress" style="height: 5px; margin: 10px 0px;">
+                                                <div class="progress-bar" id="progressbar" role="progressbar" style="width:50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress-status flex">
+                                                <span><strong>Raised ₹293,145</strong></span>
+                                                <span class="txt-blue"><b>42%</b></span>
+                                            </div>
+                                            <div class="prjct-v-durtn flex-center">
+                                                <img style="padding-right: 8px;" src="img/time-icon.svg">
+                                                <span>Ends in <b>3 Months</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prjct-v-box w32">
+                                        <div class="prjct-v-img">
+                                            <img src="img/project1.jpg">
+                                        </div>
+                                        <div class="prjct-v-text">
+                                            <div class="flex prjct-tag prjct-h-tag flex-v-center">
+                                                <span>Disability</span>
+                                                <a href="#" class="hrt"></a>
+                                            </div>
+                                            <h5>School of Love</h5>
+                                            <p>Children love without boundaries. They help another up when they fall, they share their candies with someone who’s sad…</p>
+                                            <label class="prgress-lbl">
+                                    Target ₹2,500,000
+                                  </label>
+                                            <div class="progress" style="height: 5px; margin: 10px 0px;">
+                                                <div class="progress-bar" id="progressbar" role="progressbar" style="width:50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress-status flex">
+                                                <span><strong>Raised ₹293,145</strong></span>
+                                                <span class="txt-blue"><b>42%</b></span>
+                                            </div>
+                                            <div class="prjct-v-durtn flex-center">
+                                                <img style="padding-right: 8px;" src="img/time-icon.svg">
+                                                <span>Ends in <b>3 Months</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="tab-2" class="tab-content">
+                                <div class="prjct-v-grids flex flex-h-start">
+                                    <div class="prjct-v-box w32">
+                                        <div class="prjct-v-img">
+                                            <img src="img/project1.jpg">
+                                        </div>
+                                        <div class="prjct-v-text">
+                                            <div class="flex prjct-tag prjct-h-tag flex-v-center">
+                                                <span>Disability</span>
+                                                <a href="#" class="hrt"></a>
+                                            </div>
+                                            <h5>School of Love</h5>
+                                            <p>Children love without boundaries. They help another up when they fall, they share their candies with someone who’s sad…</p>
+                                            <label class="prgress-lbl">
+                                           Target ₹2,500,000
+                                          </label>
+                                            <div class="progress" style="height: 5px; margin: 10px 0px;">
+                                                <div class="progress-bar" id="progressbar" role="progressbar" style="width:50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress-status flex">
+                                                <span><strong>Raised ₹293,145</strong></span>
+                                                <span class="txt-blue"><b>42%</b></span>
+                                            </div>
+                                            <div class="prjct-v-durtn flex-center">
+                                                <img style="padding-right: 8px;" src="img/time-icon.svg">
+                                                <span>Ends in <b>3 Months</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prjct-v-box w32">
+                                        <div class="prjct-v-img">
+                                            <img src="img/project1.jpg">
+                                        </div>
+                                        <div class="prjct-v-text">
+                                            <div class="flex prjct-tag prjct-h-tag flex-v-center">
+                                                <span>Disability</span>
+                                                <a href="#" class="hrt"></a>
+                                            </div>
+                                            <h5>School of Love</h5>
+                                            <p>Children love without boundaries. They help another up when they fall, they share their candies with someone who’s sad…</p>
+                                            <label class="prgress-lbl">
+                                           Target ₹2,500,000
+                                          </label>
+                                            <div class="progress" style="height: 5px; margin: 10px 0px;">
+                                                <div class="progress-bar" id="progressbar" role="progressbar" style="width:50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress-status flex">
+                                                <span><strong>Raised ₹293,145</strong></span>
+                                                <span class="txt-blue"><b>42%</b></span>
+                                            </div>
+                                            <div class="prjct-v-durtn flex-center">
+                                                <img style="padding-right: 8px;" src="img/time-icon.svg">
+                                                <span>Ends in <b>3 Months</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-3" class="tab-content">
+                                <div class="prjct-v-grids flex flex-h-start">
+                                    <div class="prjct-v-box w32">
+                                        <div class="prjct-v-img">
+                                            <img src="img/project1.jpg">
+                                        </div>
+                                        <div class="prjct-v-text">
+                                            <div class="flex prjct-tag prjct-h-tag flex-v-center">
+                                                <span>Disability</span>
+                                                <a href="#" class="hrt"></a>
+                                            </div>
+                                            <h5>School of Love</h5>
+                                            <p>Children love without boundaries. They help another up when they fall, they share their candies with someone who’s sad…</p>
+                                            <label class="prgress-lbl">
+                                           Target ₹2,500,000
+                                          </label>
+                                            <div class="progress" style="height: 5px; margin: 10px 0px;">
+                                                <div class="progress-bar" id="progressbar" role="progressbar" style="width:50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress-status flex">
+                                                <span><strong>Raised ₹293,145</strong></span>
+                                                <span class="txt-blue"><b>42%</b></span>
+                                            </div>
+                                            <div class="prjct-v-durtn flex-center">
+                                                <img style="padding-right: 8px;" src="img/time-icon.svg">
+                                                <span>Ends in <b>3 Months</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="right-tab fund-raise p-3">
+                        <div class="taret-amount-desc py-2"><strong>3,031</strong> People Liked this</div>
+                        <button type="button" class="btn w-100  Like_btn_success is-success" id="mybtn">
+                             <img src="img/heart-blue.png">
+                            <img src="img/like-white.png" >
+                           
+                           <label class="label">Like</label> 
+                        </button>
+                        <div class="d-flex flex-wrap  justify-content-between py-3 px-2">
+                            <div>
+                                <div class="view-count">0</div>
+                                <div class="donors-text">Donors</div>
+                            </div>
+                            <div>
+                                <div class="view-count">1,434</div>
+                                <div class="donors-text">Followers</div>
+                            </div>
+                            <div>
+                                <div class="view-count">0</div>
+                                <div class="donors-text">Shares</div>
+                            </div>
+                        </div>
+                        <div class="share-follow-btn">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <button class="btn w-100">
+                                    <img src="img/share-grey.png" alt="share-icon">
+                                    Share
+                                </button>
+                                </div>
+                                <div class="col-lg-6">
+                                    <button class="btn w-100">
+                                    <img src="img/follow-grey.png" alt="follow-icon">
+                                    Follow
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>
+                            Promoted By
+                        </h3>
+                        <div class="row foundations">
+                            <div class="col-lg-2 col-2">
+                                <img src="img/billgates.png" alt="microsoft-logo">
+                            </div>
+                            <div class="col-lg-10 col-10">
+                                <h1>BillGates Foundation</h1>
+                                <p>@billgates_foundation</p>
+                                <label>Know More</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row foundations">
+                            <div class="col-lg-2 col-2">
+                                <img src="img/ibm.png" alt="ibm-log">
+                            </div>
+                            <div class="col-lg-10 col-10">
+                                <h1>IBM Foundation</h1>
+                                <p>@ibm_foundation</p>
+                                <label>Know More</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vivent-foundations right-tab px-3 pb-2 my-3">
+                        <div class="row">
+                            <div class="col-lg-3 col-2">
+                                <img src="img/nt-foundations.png" alt="logo-viventfoundation">
+                            </div>
+                            <div class="col-lg-9 col-10">
+                                <h1>Project Owner</h1>
+                                <h2>Vivent Foundation</h2>
+                                <label>@Vivent Foundation</label>
+                            </div>
+                        </div>
+                        <p>Collectively we are improving communities and human life… <span>Know More</span></p>
+                    </div>
+                    <div class="right-tab px-3 pb-2 my-3">
+                        <div class="recommended-projects-text text-break pt-3">Similar Projects</div>
+                        <div id="recommended-project-panel">
+                            <!-- recommended project template fill here -->
+                        </div>
+                        <div class="d-flex justify-content-center py-3 view-more">
+                            View more…
+                        </div>
+                    </div>
+                    <div class="report-wrapper px-3">
+                        <p>Found any issue with this project?</p>
+                        <a href="#"><img src="img/report-icon.png" alt="flag-icon">Report this Project. </a>
+                        <h3>Report only if you think it violates our policy </h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- foooter -->
+    <div class="full-wrapper footer bg-lght-blue">
+        <div class="main-wrapper">
+            <div class="flex pd-80 footer-top">
+                <div class="w20 footer-sub">
+                    <h4 class="mg-b-15">Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="w20 footer-sub">
+                    <h4 class="mg-b-15">Backed by</h4>
+                    <ul>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="w20 footer-sub">
+                    <h4 class="mg-b-15">Support</h4>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+                <div class="w40 footer-sub">
+                    <form>
+                        <div class="subscribe w100 bg-white flex flex-v-center">
+                            <input class="w70" type="email" name="" placeholder="Enter your Email Address">
+                            <a href="#" type="submit" class="w30 txt-blue text-right f14">Subscribe</a>
+                        </div>
+                    </form>
+                    <div class="footer-social text-right mg-t-15">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="img/facebook.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/twitter-logo.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/linkedin-sign.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/youtube-logo.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="main-wrapper">
+                <span class="left f12">&copy; 2019 Syne.com</span>
+                <ul class="right">
+                    <li class="left"><a href="#" class="txt-grey f12">Terms & Condition.</a></li>
+                    <li class="left"><a href="#" class="txt-grey f12">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+
+    <!-- recommended project panel -->
+    <script id="template-recommended-project" type="text/template">
+        <div class="recommended-project pt-3">
+            <div style="max-height:100px; overflow:hidden;">
+                <img class="img-fluid" src="{{imageUrl}}">
+            </div>
+            <div class="recommended-project-name pt-2">
+                {{projectName}}
+            </div>
+            <div class="recommended-project-disc pt-2">
+                {{projectContent}}
+            </div>
+
+            <div class="project-target pt-2 pb-1">
+                Target ₹{{targetAmount}}
+            </div>
+
+            <div class="progress" style="height: 5px;">
+                <div class="progress-bar" id="progressbar" role="progressbar" style="width: {{completionPercentage}}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="d-flex justify-content-between pt-2">
+                <div class="raised-amount-text">Raised ₹{{raisedAmount}}</div>
+                <div class="raised-amount-percentage">{{completionPercentage}}%</div>
+            </div>
+        </div>
+
+        <div class="line-seperator my-3"></div>
+
+    </script>
+
+</body>
+
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="dataModels.js"></script>
+<script type="text/javascript" src="constants.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        // tab script
+        $('ul.tabs li').click(function() {
+            var tab_id = $(this).attr('data-tab');
+
+            $('ul.tabs li').removeClass('current');
+            $('.tab-content').removeClass('current');
+
+            $(this).addClass('current');
+            $("#" + tab_id).addClass('current');
+        });
+    });
+    // click heart
+    $(".hrt").click(function(e) {
+        $(this).toggleClass("hrt-red");
+        e.preventDefault();
+    });
+    $(".Like_btn_success").click(function() {
+        if ($(this).hasClass("Like_btn_success")) {
+            $(this).addClass("Like_btn_active");
+            $(this).removeClass("Like_btn_success");
+
+        } else {
+            $(this).addClass("Like_btn_success");
+            $(this).removeClass("Like_btn_active");
+
+        }
+
+        $(".label").text(function(i, v) {
+            return v === 'Like' ? 'You Liked this' : 'Like'
+        });
+
+    });
+</script>
+
+</html>
