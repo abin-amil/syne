@@ -394,6 +394,12 @@
         <!-- syne-share-popup-template fill here -->
     </div>
 
+    <!-- templates loades session start here.... these session hide in DOM -->
+
+    <!-- header template loaded here by scipt -->
+    <div id="includedHeaderContent" style="display: none;"></div>
+
+    <!-- templates loades session End here-->
 
     <!-- left panel template -->
     <script id="template-left-panel-user-details" type="text/template">
@@ -1074,74 +1080,6 @@
             </div>
         </div>
     </script>
-
-<!-- header template -->
-<script id="template-header" type="text/template">
-    <div class="full-wrapper header post-page-header">
-        <div class="main-wrapper">
-            <div class="headerwrap flex">
-                <div class="header-l flex flex-h-start flex-v-base">
-                    <div class="logo h-100">
-                        <img src="img/syne-logo.png" alt="logo">
-                    </div>
-                    <div class="header-menu h-100">
-                        <ul class="d-flex align-items-center">
-                            <li style="display:{{startProjectBtn}};">
-                                <a class="txt-blue f14 modal-button" data-toggle="modal"
-                                    data-target="#exampleModal">
-                                    Start a Project
-                                </a>
-                            </li>
-                            <li style="display:{{exploreProjectBtn}};">
-                                <a href="explore-projects.html" class="f14">
-                                    Explore Projects
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="heade-r flex flex-v-center">
-                    <div class="syne-inputbox d-flex align-items-center bg-grey-light mr-2" style="display:{{seachArea}};">
-                        <img style="height: 20px;" src="img/svgImages/search-icon-grey.svg">
-                        <input type="text" name="projectSearch"
-                            class="form-control bg-grey-light font-weight-normal" placeholder="Search here">
-                    </div>
-                    <div class="position-relative px-4" style="display:{{msgIcon}};">
-                        <img class=" nav-msg-icon" src="img/msg-icon.svg">
-                        <div class="msg-count">5</div>
-                    </div>
-                    <div class="position-relative px-4" style="display:{{notifyIcon}};">
-                        <img class="" src="img/notif-icon.svg">
-                        <div class="not-count">8</div>
-                    </div>
-                    <a href="#" class="txt-blue right modal-btn" href="#syne-login"
-                        data-target="syne-login" style="display:{{LoginBtn}};" id="login-link">Login</a>
-                    <div class="pl-3 d-flex align-items-center" style="display:{{LoggedInUser}};" id="user-link">
-                        <img class="pr-2" style="height: 40px;" src="img/user.png">
-                        <div class="nav-username">Vinith</div>
-                        <img class="pl-2" src="img/carrotdown-grey-small.svg" id="user-details-dropdown"
-                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div class="dropdown-menu" aria-labelledby="user-details-dropdown">
-                        <a class="user-dropdown-item" href="#">
-                            Settings & Privacy
-                        </a>
-                        <a class="user-dropdown-item" href="#">
-                            Help & Feedback
-                        </a>
-                        <a class="user-dropdown-item" href="#">
-                            Advertise on SYNE
-                        </a>
-                        <a class="user-dropdown-item" href="#" style="color: red;">
-                            Log Out
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</script>
-
 </body>
 <script type="text/javascript" src="js/post-login.js"></script>
 <script type="text/javascript" src="js/common.js"></script>

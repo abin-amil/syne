@@ -1,9 +1,5 @@
 $(document).ready(function () {
-    let path = window.location.pathname;
-    let page = path.split("/").pop();
-    if (page == "template.html") {
-        createHeader(true, true, true, true);
-    }
+    createHeader(true, true, true, true);
     LeftPanelCreation();
     recommendedProjectPanelCreation();
     whoToFollowListPanelCreation();
@@ -117,52 +113,56 @@ function createHeader(isStartPojectBtnAvailable = false,
     isLoginBtnAvailable = false,
     isMsgIconAvailable = false,
     isNotifyIconAvailable = false) {
-    if (document.getElementById("template-header")) {
-        let header = document.getElementById("template-header");
-        let headerHtml = header.innerHTML;
-        let headerFinalHtml = headerHtml;
-        if (isStartPojectBtnAvailable) {
-            headerFinalHtml = headerFinalHtml.replace(/{{startProjectBtn}}/g, "block")
-        } else {
-            headerFinalHtml = headerFinalHtml.replace(/{{startProjectBtn}}/g, "none")
+
+    $("#includedHeaderContent").load("templates/header.html", function () {
+        if (document.getElementById("template-header")) {
+            let header = document.getElementById("template-header");
+            let headerHtml = header.innerHTML;
+            let headerFinalHtml = headerHtml;
+            if (isStartPojectBtnAvailable) {
+                headerFinalHtml = headerFinalHtml.replace(/{{startProjectBtn}}/g, "block")
+            } else {
+                headerFinalHtml = headerFinalHtml.replace(/{{startProjectBtn}}/g, "none")
+            }
+
+            if (isExplorePojectBtnAvailable) {
+                headerFinalHtml = headerFinalHtml.replace(/{{exploreProjectBtn}}/g, "block")
+            } else {
+                headerFinalHtml = headerFinalHtml.replace(/{{exploreProjectBtn}}/g, "none")
+            }
+
+            if (isSearchAreaAvailable) {
+                headerFinalHtml = headerFinalHtml.replace(/{{seachArea}}/g, "block")
+            } else {
+                headerFinalHtml = headerFinalHtml.replace(/{{seachArea}}/g, "none !important")
+            }
+
+            if (isMsgIconAvailable) {
+                headerFinalHtml = headerFinalHtml.replace(/{{msgIcon}}/g, "block")
+            } else {
+                headerFinalHtml = headerFinalHtml.replace(/{{msgIcon}}/g, "none !important")
+            }
+
+            if (isNotifyIconAvailable) {
+                headerFinalHtml = headerFinalHtml.replace(/{{notifyIcon}}/g, "block")
+            } else {
+                headerFinalHtml = headerFinalHtml.replace(/{{notifyIcon}}/g, "none !important")
+            }
+
+            if (isLoginBtnAvailable) {
+                headerFinalHtml = headerFinalHtml.replace(/{{LoginBtn}}/g, "block")
+                headerFinalHtml = headerFinalHtml.replace(/{{LoggedInUser}}/g, "none !important")
+            } else {
+                headerFinalHtml = headerFinalHtml.replace(/{{LoggedInUser}}/g, "block")
+                headerFinalHtml = headerFinalHtml.replace(/{{LoginBtn}}/g, "none")
+            }
+            document.getElementById("header").innerHTML = headerFinalHtml;
         }
 
-        if (isExplorePojectBtnAvailable) {
-            headerFinalHtml = headerFinalHtml.replace(/{{exploreProjectBtn}}/g, "block")
-        } else {
-            headerFinalHtml = headerFinalHtml.replace(/{{exploreProjectBtn}}/g, "none")
-        }
-
-        if (isSearchAreaAvailable) {
-            headerFinalHtml = headerFinalHtml.replace(/{{seachArea}}/g, "block")
-        } else {
-            headerFinalHtml = headerFinalHtml.replace(/{{seachArea}}/g, "none !important")
-        }
-
-        if (isMsgIconAvailable) {
-            headerFinalHtml = headerFinalHtml.replace(/{{msgIcon}}/g, "block")
-        } else {
-            headerFinalHtml = headerFinalHtml.replace(/{{msgIcon}}/g, "none !important")
-        }
-
-        if (isNotifyIconAvailable) {
-            headerFinalHtml = headerFinalHtml.replace(/{{notifyIcon}}/g, "block")
-        } else {
-            headerFinalHtml = headerFinalHtml.replace(/{{notifyIcon}}/g, "none !important")
-        }
-
-        if (isLoginBtnAvailable) {
-            headerFinalHtml = headerFinalHtml.replace(/{{LoginBtn}}/g, "block")
-            headerFinalHtml = headerFinalHtml.replace(/{{LoggedInUser}}/g, "none !important")
-        } else {
-            headerFinalHtml = headerFinalHtml.replace(/{{LoggedInUser}}/g, "block")
-            headerFinalHtml = headerFinalHtml.replace(/{{LoginBtn}}/g, "none")
-        }
-        document.getElementById("header").innerHTML = headerFinalHtml;
-    }
-
-    $("#login-link").click(function (e) {
-        document.getElementById("login-link").style.display = "none";
-        document.getElementById("user-link").style.display = "block";
+        $("#login-link").click(function (e) {
+            document.getElementById("login-link").style.display = "none";
+            document.getElementById("user-link").style.display = "block";
+        });
     });
+
 }
