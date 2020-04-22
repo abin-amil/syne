@@ -1,0 +1,146 @@
+.prjct-v-box {
+    min-width: 0!important;
+}
+
+.comments-wrapper h3 {
+    font-size: 17px;
+    font-family: 'HKGrotesk';
+    font-weight: bold;
+    line-height: 1.29;
+    color: #2a3844;
+    padding: 12px 0;
+    border-bottom: 2px solid #f4f8fa;
+}
+
+.comments-wrapper .comment-details {
+    margin: 0px 10px;
+}
+
+.comments-wrapper textarea {
+    width: 100%;
+    resize: none;
+    outline: none;
+    padding: 14px 18px;
+    border-radius: 3px;
+    border: solid 1px #e0e6ee;
+    background-color: #ffffff;
+    margin-top: 15px;
+}
+
+.comments-wrapper .comment .prof-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: #b1c1bd;
+}
+
+.comments-wrapper .comment h1 {
+    font-size: 13px;
+    font-family: 'HKGrotesk';
+    font-weight: bold;
+    color: #2a3844;
+}
+
+.comments-wrapper .comment h2 {
+    font-size: 13px;
+    line-height: 1.69;
+    color: #2a3844;
+    padding: 5px 0;
+}
+
+.comments-wrapper .comment label {
+    font-size: 13px;
+    line-height: 1.69;
+    letter-spacing: normal;
+    color: #7c8796;
+}
+
+.comments-wrapper .comment {
+    padding: 23px 0 0;
+    border-bottom: 2px solid #f4f8fa;
+}
+
+.donateButton_success {
+    border-radius: 3px !important;
+    background-color: #16c0ef !important;
+    color: white !important;
+    font-weight: bold !important;
+    display: flex;
+    align-items: center;
+}
+
+.support_btn_success {
+    border-radius: 3px !important;
+    background-color: #16c0ef !important;
+    color: white !important;
+    font-weight: bold !important;
+    display: flex;
+    align-items: center;
+}
+
+.Like_btn_success {
+    border-radius: 3px !important;
+    background-color: #16c0ef !important;
+    color: white !important;
+    font-weight: bold !important;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center;
+    padding: 11px 0px!important;
+}
+
+.Like_btn_active {
+    background-color: white!important;
+    border: 1px solid #16c0ef!important;
+    color: #16c0ef!important;
+    font-weight: bold !important;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center;
+    padding: 11px 0px!important;
+}
+
+.Like_btn_success img,
+.Like_btn_active img {
+    width: 14px;
+    position: relative;
+    bottom: 1px;
+}
+
+.label {
+    margin: 0px 6px;
+}
+
+@media(max-width: 768px) {
+    .prjct-v-box {
+        min-width: 300px!important;
+    }
+    .comments-wrapper .comment .prof-img {
+        width: 65px;
+        height: 40px;
+        margin-right: 15px;
+    }
+    .Like_btn_success {
+        font-size: 12px;
+    }
+    .label {
+        font-size: 12px!important;
+    }
+}
+
+@media(max-width:360px) {
+    .comments-wrapper .comment .prof-img {
+        width: 80px;
+        height: 45px;
+    }
+    .comments-wrapper a {
+        padding: 0 90px;
+    }
+}
+
+@media(max-width:320px) {
+    .comments-wrapper .comment .prof-img {
+        width: 80px;
+        height: 40px;
+    }
+}

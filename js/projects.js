@@ -1,10 +1,10 @@
 function formValidCheck(form, fieldNum) {}
 
-$(document).ready(function () {
+$(document).ready(function() {
     setTab(3);
 });
 
-$(document).ready(function () {
+$(document).ready(function() {
 
     let categoryDropdown = document.getElementById("category");
     let CategoryList = [{
@@ -30,7 +30,7 @@ $(document).ready(function () {
         },
     ];
 
-    $.each(CategoryList, function (key, entry) {
+    $.each(CategoryList, function(key, entry) {
         let optionName = CategoryList[key].name;
         let optionValue = CategoryList[key].value;
         let el = document.createElement("option");
@@ -56,12 +56,12 @@ $(document).ready(function () {
             value: "3"
         },
         {
-            name: "Nearly Founded",
+            name: "Nearly Funded",
             value: "4"
         }
     ];
 
-    $.each(sortByList, function (key, entry) {
+    $.each(sortByList, function(key, entry) {
         let optionName = sortByList[key].name;
         let optionValue = sortByList[key].value;
         let el = document.createElement("option");
@@ -74,7 +74,7 @@ $(document).ready(function () {
     });
     $('#sortBy').selectize();
 
-    $('.my-nav>li').click(function (e) {
+    $('.my-nav>li').click(function(e) {
         $('.my-nav>li.active').removeClass('active');
         $(this).addClass('active');
         $('.my-nav>li.active')
@@ -88,6 +88,7 @@ $(document).ready(function () {
         centerMode: true,
         slidesToScroll: 1,
         autoplay: true,
+        arrows: true,
         autoplaySpeed: 2000,
         responsive: [{
                 breakpoint: 1024,
@@ -130,7 +131,7 @@ $(document).ready(function () {
         cssEase: 'linear'
     });
     // tab script
-    $('ul.tabs li').click(function () {
+    $('ul.tabs li').click(function() {
         var tab_id = $(this).attr('data-tab');
 
         $('ul.tabs li').removeClass('current');

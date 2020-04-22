@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/post-login.css">
+
     <link rel="stylesheet" href="css/previews.css">
 
     <link rel="stylesheet" type="text/css" media="all" href="css/selectize.css">
@@ -36,19 +37,18 @@
         <div class="logo">
             <img src="img/syne-logo.png" alt="logo">
         </div>
+        <div class="btn_save_publish">
+            <button class="btn draft_btn">
+                Save Draft
+            </button>
+            <button class="btn publish_btn">
+                Publish
+            </button>
+        </div>
         <div>
             <button onclick="location.href = './home.html';" class="delete close" type="button" data-dismiss="modal" aria-label="close">Close
                 <img src="img/close-grey.png">
             </button>
-        </div>
-    </div>
-
-
-    <div class="email-activation">
-        <div class="container py-3">
-            <div class="email-activation-title py-1">Email activation required!</div>
-            <div class="email-activation-text">A link to activate your account has been emailed to <span class="email-activation-mail">williamcharlotte.1987@gmail.com</span></div>
-            <div class="email-activation-action-text py-3">Open your email</div>
         </div>
     </div>
 
@@ -68,13 +68,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center del_edit_btn">
                     <div class="d-flex align-items-center px-2"> <img class="px-1" src="img/delete-grey.png"> Delete</div>
                     <div class="d-flex align-items-center px-2"> <img class="px-1" src="img/svgImages/edit-grey-small.svg">Edit</div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-9">
+                <div class="col-md-9">
                     <div class="py-1">
                         <img class="img-fluid" src="img/cover-photo.jpg">
                         <div class="d-flex py-2 justify-content-between">
@@ -118,23 +118,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                     <div class="right-tab fund-raise p-3">
-                        <div class="raised-amount">&#x20B9; 0</div>
-                        <div class="taret-amount-desc py-2">raised of ₹7,500,000 target</div>
-                        <div class="py-2">
-                            <div class="progress" style="height: 5px;">
-                                <div class="progress-bar" id="progressbar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-wrap justify-content-between py-2">
-                            <div class="project-preview-amount-raised-percentage">50%</div>
-                            <div class="project-preview-amount-raised-time"><span style="font-weight: bold;">5</span> months to go</div>
-                        </div>
-                        <button type="button" class="btn w-100  donateButton is-success d-flex justify-content-around">
-                            Donate Now
+                        <button class="preview_btn">Preview</button>
+                        <div class="taret-amount-desc py-2"><strong>3,031</strong> People Liked this</div>
+                        <button type="button" class="btn w-100  Like_btn is-success" disabled>
+                            <img src="img/like-white.png">
+                            Like
                         </button>
-                        <div class="d-flex flex-wrap     justify-content-between py-3 px-2">
+                        <div class="d-flex flex-wrap  justify-content-between py-3 px-2">
                             <div>
                                 <div class="view-count">0</div>
                                 <div class="donors-text">Donors</div>
@@ -148,15 +140,73 @@
                                 <div class="donors-text">Shares</div>
                             </div>
                         </div>
+                        <div class="share-follow-btn">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <button class="btn w-100" disabled>
+                                    <img src="img/share-grey.png" alt="share-icon">
+                                    Share
+                                </button>
+                                </div>
+                                <div class="col-lg-6">
+                                    <button class="btn w-100" disabled>
+                                    <img src="img/follow-grey.png" alt="follow-icon">
+                                    Follow
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>
+                            Promoted By
+                        </h3>
+                        <div class="row foundations">
+                            <div class="col-lg-2 col-2">
+                                <img src="img/billgates.png" alt="microsoft-logo">
+                            </div>
+                            <div class="col-lg-10 col-10">
+                                <h1>BillGates Foundation</h1>
+                                <p>@billgates_foundation</p>
+                                <label>Know More</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row foundations">
+                            <div class="col-lg-2 col-2">
+                                <img src="img/ibm.png" alt="ibm-log">
+                            </div>
+                            <div class="col-lg-10 col-10">
+                                <h1>IBM Foundation</h1>
+                                <p>@ibm_foundation</p>
+                                <label>Know More</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vivent-foundations right-tab px-3 pb-2 my-3">
+                        <div class="row">
+                            <div class="col-lg-3 col-2">
+                                <img src="img/nt-foundations.png" alt="logo-viventfoundation">
+                            </div>
+                            <div class="col-lg-9 col-10">
+                                <h1>Project Owner</h1>
+                                <h2>Vivent Foundation</h2>
+                                <label>@Vivent Foundation</label>
+                            </div>
+                        </div>
+                        <p>Collectively we are improving communities and human life… <span>Know More</span></p>
                     </div>
                     <div class="right-tab px-3 pb-2 my-3">
-                        <div class="recommended-projects-text text-break pt-3">Recommended Projects</div>
+                        <div class="recommended-projects-text text-break pt-3">Similar Projects</div>
                         <div id="recommended-project-panel">
                             <!-- recommended project template fill here -->
                         </div>
                         <div class="d-flex justify-content-center py-3 view-more">
                             View more…
                         </div>
+                    </div>
+                    <div class="report-wrapper px-3">
+                        <p>Found any issue with this project?</p>
+                        <a href="#"><img src="img/report-icon.png" alt="flag-icon">Report this Project. </a>
+                        <h3>Report only if you think it violates our policy </h3>
                     </div>
                 </div>
 

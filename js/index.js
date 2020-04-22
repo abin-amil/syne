@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
     // category dropdown setting
     let categoryDropdown = document.getElementById("category");
     let CategoryList = [
@@ -9,7 +9,7 @@ $(document).ready(function () {
         { name: "Five", value: "5" },
     ]
 
-    $.each(CategoryList, function (key, entry) {
+    $.each(CategoryList, function(key, entry) {
         let optionName = CategoryList[key].name;
         let optionValue = CategoryList[key].value;
         let el = document.createElement("option");
@@ -30,7 +30,7 @@ $(document).ready(function () {
         { name: 'India', code: 'IND' }
     ]
 
-    $.each(CountryList, function (key, entry) {
+    $.each(CountryList, function(key, entry) {
         let optionName = CountryList[key].name;
         let optionValue = CountryList[key].code;
         let el = document.createElement("option");
@@ -50,7 +50,7 @@ $(document).ready(function () {
         { "country": "AD", "name": "la Massana" },
     ]
 
-    $.each(CityList, function (key, entry) {
+    $.each(CityList, function(key, entry) {
         let optionName = CityList[key].name;
         let optionValue = CityList[key].name;
         let el = document.createElement("option");
@@ -75,19 +75,19 @@ Dropzone.options.projectIcon = {
     maxFilesize: 2, // MB,
     addRemoveLinks: true,
     maxFiles: 1,
-    maxfilesexceeded: function (file) {
+    maxfilesexceeded: function(file) {
         this.removeAllFiles();
         this.addFile(file);
     },
-    removedfile: function (file) {
+    removedfile: function(file) {
         document.getElementById("projectIconDefault").classList.add('d-flex');
         var _ref;
         return (_ref = file.previewElement) != null ? _ref.parentNode.removeChild(file.previewElement) : void 0;
     },
-    init: function () {
-        this.on("addedfile", function (file) {
+    init: function() {
+        this.on("addedfile", function(file) {
             var reader = new FileReader();
-            reader.onload = function (event) {
+            reader.onload = function(event) {
                 // event.target.result contains base64 encoded image
                 projectDetails.projectIcon = event.target.result;
                 document.getElementById("projectIconDefault").classList.remove('d-flex');
@@ -97,7 +97,7 @@ Dropzone.options.projectIcon = {
             reader.readAsDataURL(file);
         });
 
-        this.on('error', function (file, errorMessage) {
+        this.on('error', function(file, errorMessage) {
             if (file.accepted) {
                 var mypreview = document.getElementsByClassName('dz-error');
                 mypreview = mypreview[mypreview.length - 1];
@@ -113,7 +113,7 @@ Dropzone.options.projectMorePhotos = {
     paramName: "file", // The name that will be used to transfer the file
     maxFilesize: 2, // MB,
     addRemoveLinks: true,
-    removedfile: function (file) {
+    removedfile: function(file) {
         if (projectDetails.projectMorePhotos.length == 1) {
             document.getElementById("projectIconDefault1").classList.add('d-flex');
         }
@@ -122,14 +122,14 @@ Dropzone.options.projectMorePhotos = {
         var _ref;
         return (_ref = file.previewElement) != null ? _ref.parentNode.removeChild(file.previewElement) : void 0;
     },
-    init: function () {
-        this.on("addedfile", function (file) {
+    init: function() {
+        this.on("addedfile", function(file) {
             projectDetails.projectMorePhotos[projectDetails.projectMorePhotos.length] = {
                 name: file.name,
                 data: ""
             };
             var reader = new FileReader();
-            reader.onload = function (event) {
+            reader.onload = function(event) {
                 // event.target.result contains base64 encoded image
                 projectDetails.projectMorePhotos[projectDetails.projectMorePhotos.length - 1].data = event.target.result;
                 document.getElementById("projectIconDefault1").classList.remove('d-flex');
@@ -138,7 +138,7 @@ Dropzone.options.projectMorePhotos = {
             reader.readAsDataURL(file);
         });
 
-        this.on('error', function (file, errorMessage) {
+        this.on('error', function(file, errorMessage) {
             if (file.accepted) {
                 var mypreview = document.getElementsByClassName('dz-error');
                 mypreview = mypreview[mypreview.length - 1];
@@ -152,7 +152,7 @@ Dropzone.options.projectMorePhotos = {
 // add hyphen to project url when a space is given
 function addHyphen(element) {
     let ele = document.getElementById(element.id);
-    ele = ele.value.split('--').join('-');    // Remove dash (-) if mistakenly entered.
+    ele = ele.value.split('--').join('-'); // Remove dash (-) if mistakenly entered.
     let finalVal = ele.toLowerCase().replace(/ /g, '-');
     document.getElementById(element.id).value = finalVal;
 }
@@ -160,6 +160,7 @@ function addHyphen(element) {
 var prevId;
 var prevRadioId;
 var projectCategory;
+
 function projectTypeClick(id, type) {
     switch (type) {
         case projectTypes.CROWDFUNDING:
@@ -213,7 +214,7 @@ function proceed(i) {
     document.getElementById("progressbar").style.width = progress + "%";
 
 
-    var category = $("#category").change(function () {
+    var category = $("#category").change(function() {
         var category = $('option:selected', this).text();
         document.getElementById("proceed2").disabled = false;
     });
@@ -227,7 +228,7 @@ function proceed(i) {
             break;
         case 3:
             let thirdformValues = {};
-            $.each($('#thirdRegForm').serializeArray(), function (i, field) {
+            $.each($('#thirdRegForm').serializeArray(), function(i, field) {
                 thirdformValues[field.name] = field.value;
             });
 
@@ -237,7 +238,7 @@ function proceed(i) {
             break;
         case 4:
             let fourthformValues = {};
-            $.each($('#fourthRegForm').serializeArray(), function (i, field) {
+            $.each($('#fourthRegForm').serializeArray(), function(i, field) {
                 fourthformValues[field.name] = field.value;
             });
             projectDetails.selectedCountry = fourthformValues.selectCountry;
@@ -250,7 +251,7 @@ function proceed(i) {
             break;
         case 6:
             let sixthformValues = {};
-            $.each($('#sixthRegForm').serializeArray(), function (i, field) {
+            $.each($('#sixthRegForm').serializeArray(), function(i, field) {
                 sixthformValues[field.name] = field.value;
             });
             projectDetails.projectExplanation = sixthformValues.projectExplanation;
@@ -264,7 +265,7 @@ function proceed(i) {
 function formValidCheck(formId, formNum) {
     let formValues = {};
     let invalid = false;
-    $.each($(formId).serializeArray(), function (i, field) {
+    $.each($(formId).serializeArray(), function(i, field) {
         if (field.value === "") {
             invalid = true;
         }
