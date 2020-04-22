@@ -1,5 +1,6 @@
 $(document).ready(function () {
     createHeader(true, true, true, true);
+    createFooter();
     LeftPanelCreation();
     recommendedProjectPanelCreation();
     whoToFollowListPanelCreation();
@@ -165,4 +166,8 @@ function createHeader(isStartPojectBtnAvailable = false,
         });
     });
 
+}
+
+function createFooter() {
+    $("#footer").load("templates/footer.html");
 }
