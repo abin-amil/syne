@@ -179,6 +179,12 @@ $("#write-post .modalclose").click(function (e) {
 });
 
 $("#postBtn").click(function (e) {
+    let node = document.getElementById("news-feeds");
+    while (node.hasChildNodes()) {
+        node.removeChild(node.lastChild);
+    }
+    dashBoardData.newsFeedData.unshift(dashBoardData.newsFeedData[1])
+    newsFeedsCreation();
     closeModal("#write-post");
     e.preventDefault();
 });
