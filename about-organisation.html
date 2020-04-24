@@ -197,7 +197,8 @@
     <div id="edit-oganisation-popup" class="pop-modal">
         <div class="modalcontent create-org-modal" style="max-width: 500px !important;">
             <div class="syne-lgin-r rltv p-3">
-                <a class="d-flex justify-content-end modal-btn" href="#syne-discard-draft" data-target="syne-discard-draft" >
+                <a class="d-flex justify-content-end modal-btn" href="#syne-discard-draft"
+                    data-target="syne-discard-draft">
                     <div class="modal-close-text">Close</div>
                     <img src="img/close-icon.png">
                 </a>
@@ -375,74 +376,25 @@
                     You haven’t saved the edits you made. Are you sure you want to leave and discard your draft
                 </div>
                 <div class="delete-popup-buttons py-3">
-                    <div class="delete-popup-confirm-action px-2 py-3 text-center w-100" onclick="closeModal('#syne-discard-draft')">No, Continue Editing</div>
-                    <div class="delete-popup-decline-action px-2 pt-3 pb-1 text-center w-100" alt="close" onclick="closeModals('#edit-oganisation-popup','#syne-discard-draft')">Discard and Exit</div>
+                    <div class="delete-popup-confirm-action px-2 py-3 text-center w-100"
+                        onclick="closeModal('#syne-discard-draft')">No, Continue Editing</div>
+                    <div class="delete-popup-decline-action px-2 pt-3 pb-1 text-center w-100" alt="close"
+                        onclick="closeModals('#edit-oganisation-popup','#syne-discard-draft')">Discard and Exit</div>
                 </div>
             </div>
 
         </div>
     </div>
 
-    <!-- left panel template -->
-    <script id="template-left-panel-user-details" type="text/template">
-        <div class="full-name">
-            {{name}}
-        </div>
-        <div class="user-name mt-2">
-            {{mailId}}
-        </div>
-        <div class="mt-2">
-            
-            <div class="d-flex align-items-center">
-                <img style="height: 24px;" class="pr-2" src="img/svgImages/location-grey-small.svg">
-                <span class="follower-text" style="color: deepskyblue;font-weight: bold;">
-                {{location}}
-                </span>
-            </div>
-        <div>            
-            <div class="follower-text">{{userIntroDetails}}</div>
-        </div>
-        <div class="line-seperator my-3"></div>
-        <div class="d-flex justify-content-between flex-wrap">
-            <div>
-                <div class="follower-count modal-btn" href="#syne-followers"
-                data-target="syne-followers">{{followersCount}}</div>
-                <a class="follower-text" >Followers</a>
-            </div>
-            <div>
-                <div class="follower-count">{{followingCount}}</div>
-                <div class="follower-text">Following</div>
-            </div>
-        </div>
-        <div class="menu-items-wrapper">
-            <div class="menu-items py-4" id="org-left-panel-tabs">
-                <!-- left panel tabs template fill here -->
-            </div>
-            <div class="mt-2 pl-3">
-                <div>
-                    <img style="height: 24px;" class="pr-2" src="img/edit-blue-small.png">
-                    <a style="color: deepskyblue;font-size: small" class="modal-btn" href="#edit-oganisation-popup"
-                    data-target="edit-oganisation-popup">
-                    Edit Organisation
-                    </a>
-                    <!-- <a class="modal-btn">Edit Profile</a> -->
-                </div>
-            </div>
-        </div>
-    </script>
+    <!-- templates loading session start here.... these session hide in DOM -->
 
-    <!-- left panel tabs template -->
-    <script id="template-left-panel-tab-details" type="text/template">
-        <a class="d-flex py-3 pl-3 align-items-center" href="{{path}}" id="syne-tab{{id}}">
-            <img src="{{iconUrl}}">
-            <div class="px-2">{{tabName}}</div>
-        </a>
-    </script>
+    <!-- header template loaded here by scipt -->
+    <div id="includedHeaderContent" style="display: none;"></div>
 
-    <!-- left `panel top banner template -->
-    <script id="template-left-panel-top-banner" type="text/template">
-        <img class="img-fluid w-100 profile-photo-height" src="{{coverPhotoUrl}}">
-    </script>
+    <!-- left panel template loaded here by scipt -->
+    <div id="includedLeftPanelContent" style="display: none;"></div>
+
+    <!-- templates loading session End here-->
 
     <!-- profile completion showing section template -->
     <script id="template-profile-comleption-section" type="text/template">
