@@ -60,6 +60,21 @@
     border-bottom: 2px solid #f4f8fa;
 }
 
+.comments-wrapper a {
+    font-size: 15px;
+    font-family: 'HKGrotesk';
+    font-weight: bold;
+    line-height: 1.47;
+    letter-spacing: 0.17px;
+    color: #00dbff;
+    padding: 0 10px;
+}
+
+.comments-wrapper a:hover {
+    text-decoration: none;
+    color: #00dbff;
+}
+
 .donateButton_success {
     border-radius: 3px !important;
     background-color: #16c0ef !important;

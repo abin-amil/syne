@@ -33,13 +33,29 @@ body::-webkit-scrollbar-thumb {
     outline: 1px solid slategrey;
 }
 
-ul, li, p, h1, h2, h3, h4, h5, h6, span, b, strong, input, button, label {
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+b,
+strong,
+input,
+button,
+label {
     padding: 0;
     margin: 0;
     line-height: 1;
 }
 
-div, input, a {
+div,
+input,
+a {
     outline: none;
 }
 
@@ -59,14 +75,19 @@ a:hover {
     text-decoration: none;
 }
 
-ul, li {
+ul,
+li {
     margin: 0;
     padding: 0;
     list-style: none;
     font-weight: bold;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0px;
     padding: 0px;
     transition: font 0.3s;
@@ -116,13 +137,17 @@ p {
     float: right;
 }
 
-.clearfix:after, .body-wrapper:after, .full-wrapper:after, .main-wrapper:after {
+.clearfix:after,
+.body-wrapper:after,
+.full-wrapper:after,
+.main-wrapper:after {
     clear: both;
     content: " ";
     display: block;
 }
 
-.full-wrapper, .body-wrapper {
+.full-wrapper,
+.body-wrapper {
     width: 100%;
     float: left;
 }
@@ -133,11 +158,11 @@ p {
     width: auto;
 }
 
-
 .flex-center {
     display: flex;
     align-items: center;
 }
+
 .flex {
     display: flex;
     justify-content: space-between;
@@ -311,7 +336,7 @@ p {
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0) !important;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0) !important;
     opacity: 0;
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
@@ -406,7 +431,8 @@ p {
     letter-spacing: 0.2px;
 }
 
-.input-group-submit input, .input-group-submit a {
+.input-group-submit input,
+.input-group-submit a {
     width: 100%;
     padding: 10px;
     border: 0px;
@@ -443,12 +469,14 @@ input.common-input {
     font-weight: bold;
 }
 
-.effect-19:focus, .has-content.effect-19 {
+.effect-19:focus,
+.has-content.effect-19 {
     padding-bottom: 10px !important;
     padding-top: 20px !important;
 }
 
-.effect-19:focus~label, .has-content.effect-19~label {
+.effect-19:focus~label,
+.has-content.effect-19~label {
     top: 5px;
     font-size: 11px;
     left: 15px;
@@ -489,6 +517,7 @@ input.common-input {
     user-select: none;
 }
 
+
 /* Hide the browser's default checkbox */
 
 .input-chkbx input {
@@ -498,6 +527,7 @@ input.common-input {
     height: 0;
     width: 0;
 }
+
 
 /* Create a custom checkbox */
 
@@ -512,17 +542,20 @@ input.common-input {
     background-color: #ffffff;
 }
 
+
 /* On mouse-over, add a grey background color */
 
 .input-chkbx:hover input~.checkmark {
     background-color: #ccc;
 }
 
+
 /* When the checkbox is checked, add a blue background */
 
 .input-chkbx input:checked~.checkmark {
     background-color: #16c0ef;
 }
+
 
 /* Create the checkmark/indicator (hidden when not checked) */
 
@@ -532,11 +565,13 @@ input.common-input {
     display: none;
 }
 
+
 /* Show the checkmark when checked */
 
 .input-chkbx input:checked~.checkmark:after {
     display: block;
 }
+
 
 /* Style the checkmark/indicator */
 
@@ -550,6 +585,19 @@ input.common-input {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+.edit-btn {
+    width: 192px;
+    background: rgba(19, 28, 35, 0.6);
+    color: #fff;
+    height: 31px;
+    align-items: center;
+    border-radius: 4px;
+    position: absolute;
+    right: 184px;
+    bottom: 0;
+    cursor: pointer;
 }
 
 .modal-cmn-footerlink {
@@ -637,4 +685,9 @@ input.common-input {
 
 .modal-btn {
     cursor: pointer;
+}
+
+.sub-icons {
+    position: relative;
+    top: -1px;
 }
