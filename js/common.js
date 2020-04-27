@@ -7,9 +7,11 @@ $(document).ready(function () {
 });
 
 function LeftPanelCreation() {
-    createLeftPanelTopBanner();
-    createLeftPanelUserDetails();
-    createLeftPanelTabs();
+    $("#includedLeftPanelContent").load("templates/leftPanel.html", function () {
+        createLeftPanelTopBanner();
+        createLeftPanelUserDetails();
+        createLeftPanelTabs();
+    });
 }
 
 // left panel user details creation
@@ -50,7 +52,20 @@ function createLeftPanelTabs() {
         let leftpanelTab = document.getElementById("template-left-panel-tab-details");
         let leftPanelTabHtml = leftpanelTab.innerHTML;
         let leftPanelTabFinalHtml = "";
-        dashBoardData.leftPanelTabs.forEach((tab, index) => {
+        let leftPanelTabsData;
+        let path = window.location.pathname;
+        let page = path.split("/").pop();
+        console.log(page);
+        switch (page) {
+            case 'organisation-timeline.html':
+            case 'about-organisation.html':
+                leftPanelTabsData = organisationDashboadData.leftPanelTabs;
+                break;
+            default:
+                leftPanelTabsData = dashBoardData.leftPanelTabs;
+                break;
+        }
+        leftPanelTabsData.forEach((tab, index) => {
             leftPanelTabFinalHtml += leftPanelTabHtml.replace(/{{iconUrl}}/g, tab.iconUrl)
                 .replace(/{{tabName}}/g, tab.name)
                 .replace(/{{path}}/g, tab.path)
@@ -157,7 +172,9 @@ function createHeader(isStartPojectBtnAvailable = false,
                 headerFinalHtml = headerFinalHtml.replace(/{{LoggedInUser}}/g, "block")
                 headerFinalHtml = headerFinalHtml.replace(/{{LoginBtn}}/g, "none")
             }
-            document.getElementById("header").innerHTML = headerFinalHtml;
+            if (document.getElementById("header")) {
+                document.getElementById("header").innerHTML = headerFinalHtml;
+            }
         }
 
         $("#login-link").click(function (e) {
