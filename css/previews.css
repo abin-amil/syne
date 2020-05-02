@@ -436,6 +436,7 @@
     .foundations label {
         color: #16c0ef;
         font-size: 14px;
+        font-family: 'HKGrotesk';
     }
     
     .vivent-foundations {
@@ -486,7 +487,7 @@
     
     .vivent-foundations p span {
         color: #16c0ef;
-        font-weight: 500;
+        font-family: HKGrotesk;
     }
     
     .report-wrapper {
@@ -528,6 +529,128 @@
         line-height: 1.5;
         letter-spacing: normal;
         color: #bac3cf;
+    }
+    
+    .milestone-wrapper {
+        border-bottom: 1px solid #eef0f5;
+        padding: 0 0 15px;
+    }
+    
+    .events-wrapper label {
+        font-size: 14px;
+        font-family: HkGrotesk;
+        padding-top: 20px;
+    }
+    
+    .date-wrapper {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    .date-wrapper .date {
+        width: 45px;
+        text-align: center;
+        border-radius: 2px;
+        border: solid 1px #395366;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    
+    .date-wrapper .date .active {
+        padding: 5px 0;
+        background: #16c0ef;
+        color: #fff;
+        font-size: 10px;
+    }
+    
+    .date-wrapper b {
+        padding: 7px 0;
+    }
+    
+    .date-wrapper .date span {
+        padding: 5px 0;
+        background: #e0e6ee;
+        color: #000;
+        font-size: 10px;
+    }
+    
+    .date-wrapper .date-active-ptr {
+        background-image: url('../img/ptr-active.png');
+        width: 18px;
+        height: 18px;
+        background-repeat: no-repeat;
+        background-size: 14px;
+        position: absolute;
+        left: -35px;
+    }
+    
+    .date-wrapper .date-ptr {
+        background-image: url('../img/ptr.png');
+        width: 18px;
+        height: 18px;
+        background-repeat: no-repeat;
+        background-size: 14px;
+        position: absolute;
+        left: -35px;
+    }
+    
+    .details .image {
+        width: 150px;
+        height: 100px;
+    }
+    
+    .milestone-wrapper h1 {
+        font-size: 17px;
+        font-family: 'HKGrotesk';
+        font-weight: bold;
+        color: #2e404e;
+        padding-top: 20px;
+    }
+    
+    .milestone-wrapper .events-wrapper {
+        padding-left: 34px;
+        background-image: url('../img/line.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 5px 80px;
+    }
+    
+    .milestone-wrapper p {
+        text-align: justify;
+    }
+    
+    .milestone-title h4 {
+        padding: 12px 0 0px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.67;
+        letter-spacing: normal;
+        color: #a1a8b3;
+    }
+    
+    .milestone-title h2 {
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 1.41;
+        letter-spacing: 0.24px;
+        color: #2a3844;
+        position: relative;
+    }
+    
+    .milestone-title {
+        width: 100%;
+        padding-left: 10px;
+    }
+    
+    .milestone-title span {
+        position: absolute;
+        right: 80px;
+        font-size: 15px;
+        font-family: 'HKGrotesk';
+        font-weight: bold;
+        letter-spacing: 0.16px;
+        color: #00c8f5;
     }
     
     .add-wrapper .header-section {
@@ -632,11 +755,12 @@
             position: relative;
             top: 58px;
             left: 0;
+            width: 246px;
         }
         .del_edit_btn {
             position: relative;
             top: 37px;
-            left: -230px;
+            left: -298px;
         }
         .project-preview-title {
             width: 207px;
@@ -647,6 +771,7 @@
         .close {
             margin: 0!important;
             padding: 0;
+            width: 72px;
         }
         .close img {
             position: relative;
@@ -692,6 +817,16 @@
         .title-datewrapper h1 {
             font-size: 10px;
         }
+        .milestone-title span {
+            position: unset;
+            display: block;
+        }
+        .milestone-wrapper h1 {
+            padding: 20px 25px 0;
+        }
+        .detailsp {
+            padding: 10px 40px 0 0px!important;
+        }
     }
     
     @media(max-width:768px) {
@@ -728,6 +863,22 @@
         }
         .text-editor-wrapper .action-btn {
             display: flex;
+        }
+        .detailsp {
+            padding: 0px 69px 0 20px!important;
+        }
+        .milestone-title span {
+            position: unset;
+            display: block;
+        }
+        .carousel-control-prev {
+            margin: 39px 0;
+        }
+        .carousel-control-next {
+            margin: 39px 0;
+        }
+        .project-preview-sub-title {
+            font-size: 12px;
         }
     }
     

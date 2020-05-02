@@ -1,1175 +1,1270 @@
-.subtext {
-    font-family: HKGrotesk;
-    font-size: 19px;
-    font-weight: 500;
-}
-
-.input-group-append {
-    display: none !important;
-}
-
-.modal-header {
-    border: none !important;
-}
-
-.title {
-    font-family: HKGrotesk;
-    font-size: 27px;
-    font-weight: bold;
-    color: #2a3844;
-}
-
-.typeOfProject {
-    display: flex;
-}
-
-
-/* .categoryList {
+    .subtext {
+        font-family: HKGrotesk;
+        font-size: 19px;
+        font-weight: 500;
+    }
+    
+    .input-group-append {
+        display: none !important;
+    }
+    
+    .modal-header {
+        border: none !important;
+    }
+    
+    .title {
+        font-family: HKGrotesk;
+        font-size: 27px;
+        font-weight: bold;
+        color: #2a3844;
+    }
+    
+    .typeOfProject {
+        display: flex;
+    }
+    /* .categoryList {
   display: table-row;
 } */
-
-.Start-a-Project {
-    font-family: HKGrotesk;
-    font-size: 19px;
-    font-weight: 500;
-    color: #5d677e;
-}
-
-.projectTitle {
-    font-family: HKGrotesk;
-    font-size: 17px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.projectCard {
-    /* padding: 20px; */
-    border: solid 1px #dde2e9;
-    border-radius: 6px;
-}
-
-.projectCardActive {
-    border: solid 1px #16c0ef;
-}
-
-.categoryCard {
-    border: solid 1px #dde2e9;
-    border-radius: 6px;
-}
-
-.countryInput {
-    width: 35%;
-}
-
-.cityInput {
-    width: 30%;
-}
-
-.startDateInput {
-    padding: 0px 0px 0px 12px !important;
-}
-
-.endDateInput {
-    padding: 0px 0px 0px 12px !important;
-}
-
-.info-ico {
-    margin: auto;
-    display: block;
-}
-
-.radio-button-default {
-    background: url('../img/radio-unchecked.png') no-repeat 0;
-    background-position: right top;
-    float: right;
-    height: 24px;
-}
-
-.radio-button-on-click {
-    background: url('../img/radio-checked.png') no-repeat 0;
-    background-position: right top;
-    float: right;
-    height: 24px;
-}
-
-.agriculture {
-    background: url('../img/agriculture.png')no-repeat 0;
-    height: 50px;
-    background-position: center;
-    background-size: contain;
-}
-
-.animals {
-    background: url('../img/animals.png')no-repeat 0;
-    height: 50px;
-    background-position: center;
-    background-size: contain;
-}
-
-.business {
-    background: url('../img/business.png')no-repeat 0;
-    height: 50px;
-    background-position: center;
-    background-size: contain;
-}
-
-.charity {
-    background: url('../img/charity.png')no-repeat 0;
-    height: 50px;
-    background-position: center;
-    background-size: contain;
-}
-
-.community {
-    background: url('../img/community.png')no-repeat 0;
-    height: 50px;
-    background-position: center;
-    background-size: contain;
-}
-
-.competition {
-    background: url('../img/competition.png')no-repeat 0;
-    height: 50px;
-    background-position: center;
-    background-size: contain;
-}
-
-.crowdfunding_img {
-    background: url('../img/crowdfunding.png') no-repeat 0;
-    height: 96px;
-    background-position: center;
-}
-
-.crowdfunding_img_hover {
-    background: url('../img/crowdfunding-active.png') no-repeat 0;
-    height: 96px;
-    background-position: center;
-}
-
-.crowdfunding_img_hover_on_click {
-    background: url('../img/crowdfunding-active.png') no-repeat 0;
-    height: 96px;
-    background-position: center;
-}
-
-.form-control:focus {
-    box-shadow: none !important;
-}
-
-.promotions_img {
-    background: url('../img/promotions.png') no-repeat 0;
-    height: 96px;
-    background-position: center;
-}
-
-.promotions_img_hover {
-    background: url('../img/promotions-active.png') no-repeat 0;
-    background-position: center;
-    height: 96px;
-}
-
-.promotions_img_hover_on_click {
-    background: url('../img/promotions-active.png') no-repeat 0;
-    background-position: center;
-    height: 96px;
-}
-
-.socialgiving_img {
-    background: url('../img/socialgiving.png') no-repeat 0;
-    background-position: center;
-    height: 96px;
-}
-
-.socialgiving_img_hover {
-    background: url('../img/socialgiving-active.png') no-repeat 0;
-    background-position: center;
-    height: 96px;
-}
-
-.socialgiving_img_hover_on_click {
-    background: url('../img/socialgiving-active.png') no-repeat 0;
-    background-position: center;
-    height: 96px;
-}
-
-.socialchange_img {
-    background: url('../img/socialchange.png') no-repeat 0;
-    background-position: center;
-    height: 96px;
-}
-
-.socialchange_img_hover {
-    background: url('../img/socialchange-active.png') no-repeat 0;
-    background-position: center;
-    height: 96px;
-}
-
-.socialchange_img_hover_on_click {
-    background: url('../img/socialchange-active.png') no-repeat 0;
-    background-position: center;
-    height: 96px;
-}
-
-.noteinstr {
-    float: right;
-}
-
-.projectCard:hover {
-    border: solid 1px #16c0ef;
-}
-
-.projectCard-active {
-    border: solid 1px #16c0ef;
-    border-radius: 6px;
-}
-
-.close {
-    font-family: HKGrotesk !important;
-    font-size: 14px !important;
-    font-weight: bold !important;
-    color: #7c8796 !important;
-}
-
-.proceedButton {
-    width: 220px;
-    /* height: 50px; */
-    border-radius: 3px !important;
-    background-color: #16c0ef !important;
-    color: white !important;
-    font-weight: bold !important;
-}
-
-.backButton {
-    width: 220px;
-    height: 50px;
-    border-radius: 3px !important;
-    border: solid 1px #e0e6ee !important;
-    color: #16c0ef !important;
-    font-weight: bold !important;
-}
-
-.back-proceed-btn {
-    padding: 30px 0;
-}
-
-.controls .controls-inner {
-    float: right;
-}
-
-.controls-inner .btn:focus {
-    box-shadow: none;
-}
-
-.proceedFooter {
-    display: flex !important;
-    justify-content: center !important;
-}
-
-.newProjectHeader {
-    display: flex !important;
-    justify-content: space-between !important;
-}
-
-.modal-card-head {
-    background-color: #ffffff !important;
-}
-
-.project-title-input {
-    font-family: HKGrotesk;
-    font-size: 17px !important;
-    font-weight: 600 !important;
-    color: #2a3844 !important;
-}
-
-.syne-inputbox {
-    border-radius: 3px;
-    border: solid 1px #dde2e9;
-    position: relative;
-}
-
-.syne-project-description {
-    border: none !important;
-    font-family: HKGrotesk;
-    font-size: 17px !important;
-    font-weight: 600 !important;
-    color: #2a3844;
-    resize: none;
-}
-
-.syne-project-description::placeholder {
-    color: #bac3cf!important;
-}
-
-.Short-description-ab {
-    font-family: HKGrotesk;
-    font-size: 17px;
-    font-weight: 600;
-    color: #bac3cf;
-    padding: 10px 0px 0px 12px;
-}
-
-.syne-input-label {
-    font-family: HKGrotesk-reg;
-    font-size: 12px;
-    font-weight: 500;
-    color: #7c8796;
-    padding: 0px 0px 0px 12px;
-}
-
-.custom-syne-input .selectize-dropdown {
-    left: 12px!important;
-}
-
-input[type=text] {
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 3px;
-    border: none !important;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 12px;
-}
-
-.popular-categories {
-    font-size: 15px;
-    font-weight: bold;
-    color: #bac3cf;
-}
-
-.progress-bar {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: center;
-    justify-content: center;
-    overflow: hidden;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    background-color: #16c0ef !important;
-    transition: width .6s ease;
-}
-
-
-/* //Post Page// */
-
-.post-page-bg {
-    background-color: #f9fafc;
-}
-
-.post-page-header {
-    background-color: #ffffff;
-    border-bottom: 1px #f9fafc;
-}
-
-.coverPhoto {
-    height: 104px;
-}
-
-.user-name {
-    font-family: HKGrotesk;
-    font-size: 13px;
-    color: #7c8796;
-}
-
-.post-card {
-    border-radius: 4px;
-    border: solid 1px #e0e6ee;
-    background-color: #ffffff;
-}
-
-.recommended-projects-text {
-    font-family: HKGrotesk;
-    font-size: 15px;
-    font-weight: bold;
-    color: #2a3844;
-}
-
-.recommndede-project-photo {
-    height: 67px;
-}
-
-.like-share {
-    font-size: 13px;
-    color: #7c8796;
-}
-
-.like-comment {
-    font-size: 14px;
-}
-
-.progress {
-    display: -ms-flexbox;
-    display: flex;
-    height: 1rem;
-    font-size: .75rem;
-    background-color: #e9ecef;
-    border-radius: .25rem;
-    position: relative;
-    overflow: unset;
-}
-
-.recommended-project-disc {
-    font-family: HKGrotesk-reg;
-    font-size: 12px;
-    color: #5d677e;
-}
-
-.recommended-project-name {
-    font-family: HKGrotesk;
-    font-size: 15px;
-    font-weight: 600;
-    color: #2a3844;
-}
-
-.full-name {
-    font-family: HKGrotesk;
-    font-size: 15px;
-    font-weight: bold;
-    color: #2a3844;
-}
-
-.createOrg-modal-header {
-    font-family: HKGrotesk;
-    font-size: 25px;
-    font-weight: bold;
-    color: #395366;
-}
-
-.hello-user-text {
-    font-family: HKGrotesk;
-    font-size: 20px;
-    font-weight: bold;
-    color: #2a3844;
-}
-
-.orgModal-radiobutton-text {
-    font-size: 15px;
-    font-weight: 500;
-    color: #7c8796;
-}
-
-.write-post-text {
-    font-family: HKGrotesk;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.menu-items {
-    font-family: HKGrotesk;
-    font-size: 13px;
-    font-weight: 600;
-    color: #5d677e;
-}
-
-.menu-items-wrapper {
-    margin: 0 -1.5rem;
-}
-
-.menu-items div {
-    cursor: pointer;
-}
-
-.menu-items a,
-.menu-items a:hover {
-    cursor: pointer;
-    color: #5d677e;
-    text-decoration: none;
-}
-
-.menu-items a.active {
-    background-color: rgba(22, 192, 239, 0.2);
-    border-left: 3px solid rgb(22, 192, 239);
-}
-
-.post-image {
-    height: 199px;
-}
-
-.recommended-project-photo {
-    height: 93px;
-}
-
-.post-project-caption {
-    font-family: HKGrotesk;
-    font-size: 17px;
-    color: #0db2e0;
-    font-weight: bold;
-}
-
-.view-more {
-    font-family: HKGrotesk;
-    font-size: 13px;
-    color: #16c0ef;
-    cursor: pointer;
-}
-
-.follow-people {
-    font-size: 11px;
-    color: #7c8796;
-}
-
-.target-amount {
-    font-size: 13px;
-}
-
-.contributors-comment {
-    font-size: 13px;
-    color: #2a3844;
-}
-
-.post-project-desc {
-    font-family: HKGrotesk-reg;
-    font-size: 13px;
-    color: #5d677e;
-    font-weight: normal;
-}
-
-.raised-amount {
-    font-family: HKGrotesk;
-    font-size: 13px;
-    font-weight: bold;
-    color: #2a3844;
-}
-
-.post-user {
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.post-user-name {
-    font-size: 12px;
-    color: #5d677e;
-}
-
-.modal-title {
-    font-family: HKGrotesk;
-    color: #2a3844;
-    font-size: 15px;
-}
-
-.modal-close-text {
-    color: #7c8796;
-    font-size: 14px;
-    font-family: HKGrotesk;
-}
-
-.follower-modal-height {
-    max-height: 339px;
-    overflow-y: auto;
-}
-
-.post-time {
-    font-size: 12px;
-    color: #7c8796;
-}
-
-.follower-count {
-    font-weight: bold;
-    color: #16c0ef !important;
-}
-
-.followers-count {
-    font-size: 12px;
-    color: #7c8796;
-}
-
-.writePost {
-    border-radius: 4px;
-    border: solid 1px #e0e6ee;
-    background-color: #ffffff;
-}
-
-.raised-amount-text {
-    font-size: 12px;
-    font-weight: bold;
-    color: #2a3844;
-    font-family: HKGrotesk;
-}
-
-.raised-amount-percentage {
-    font-size: 12px;
-    font-weight: bold;
-    color: #16c0ef;
-    font-family: HKGrotesk;
-}
-
-.dropzone {
-    min-height: auto !important;
-    border: solid 2px #bac3cf !important;
-}
-
-.add-more-photos {
-    position: relative;
-    height: 174px;
-    border-radius: 4px;
-    box-shadow: inset 0 0 0 10px #ffffff;
-    border: dashed 2px #bac3cf;
-    background-color: #f7f8fa !important;
-}
-
-.project-icon-upload {
-    position: relative !important;
-    width: 120px !important;
-    height: 120px !important;
-    border-radius: 60px !important;
-    box-shadow: inset 0 0 0 10px #ffffff !important;
-    border: dashed 2px #bac3cf !important;
-    background-color: #f7f8fa !important;
-}
-
-.drag-in-photos {
-    font-family: HKGrotesk;
-    font-size: 13px;
-    color: #7c8796;
-}
-
-.top-padding {
-    padding-top: 33px;
-}
-
-
-/* .project-detail-characters-left {} */
-
-.attachMediaButton {
-    width: 252px;
-    height: 50px;
-    border-radius: 3px !important;
-    border: solid 1px #e0e6ee !important;
-    color: #5d677e !important;
-    font-weight: bold !important;
-}
-
-input[type=number],
-input[type=number] {
-    border: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0;
-}
-
-
-/* category slider classes */
-
-.col-md-3 {
-    display: inline-block;
-    margin-left: -4px;
-}
-
-.col-md-3 img {
-    width: 100%;
-    height: auto;
-}
-
-body .carousel-indicators li {
-    background-color: red;
-}
-
-body .no-padding {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-body .next-arrow {
-    transform: rotate(180deg);
-}
-
-.carousel-indicators li {
-    visibility: hidden;
-}
-
-.follower-text {
-    font-size: 13px;
-    font-family: HKGrotesk-reg;
-    color: #7c8796 !important;
-    font-weight: normal !important;
-}
-
-.welcome-to-syne {
-    font-size: 13px;
-    color: #fb4f6d;
-    font-family: HKGrotesk;
-}
-
-.image-upload>input {
-    display: none;
-}
-
-.organisation-image {
-    max-height: 90px;
-    border: 2px solid white;
-    border-radius: 50%;
-}
-
-.organisation-add-text {
-    color: #7c8796;
-    font-weight: 500;
-    font-family: HKGrotesk-reg;
-    font-size: 12px;
-}
-
-.org-form-input {
-    font-size: 15px;
-    font-weight: 600;
-    color: #2a3844 !important;
-    padding: 0px 0px 0px 12px !important;
-}
-
-.org-form-input::placeholder {
-    font-family: HKGrotesk-reg !important;
-    font-size: 15px;
-    font-weight: 600 !important;
-    /* font-weight: 600; */
-    color: #bac3cf !important;
-}
-
-.org-form-select {
-    font-size: 13px !important;
-    font-weight: 500 !important;
-    color: #2a3844 !important;
-    padding: 0px 0px 0px 12px !important;
-    border: none;
-    width: 100%;
-}
-
-.terms-conditions {
-    font-family: HKGrotesk-reg;
-    font-size: 13px;
-    font-weight: 500;
-    color: #2a3844;
-}
-
-.org-url-box {
-    background-color: lightgray;
-    padding: 5px 0px 5px 5px;
-    border-radius: 6px;
-}
-
-.payment-container {
-    border-radius: 4px;
-    box-shadow: 0 2px 8px 0 rgba(57, 64, 79, 0.1);
-    background-color: #ffffff;
-}
-
-.donate-to-text {
-    font-family: HKGrotesk;
-    font-size: 26px;
-    font-weight: bold;
-    color: #2e404e;
-}
-
-.payment-amount-text-box {
-    border-radius: 4px;
-    padding: 0px 0px 0px 12px;
-    border: solid 1px #16c0ef;
-}
-
-.syne-credit-amount {
-    background-color: #16c0ef40;
-    border-radius: 3px;
-    min-width: 43px;
-    padding-left: 5px;
-    padding-top: 3px;
-    height: 21px;
-}
-
-.payment-methods {
-    background-color: #ffffff;
-    border-radius: 4px;
-    border: 1px solid #e0e6ee;
-    height: fit-content;
-    font-weight: bold;
-    font-size: 13px;
-}
-
-.notify-text {
-    font-size: 9px;
-}
-
-.w-65 {
-    width: 65% !important;
-    min-width: 200px !important;
-}
-
-.m-74 {
-    margin-left: 74px !important;
-}
-
-.grey-text {
-    color: #7c8796;
-}
-
-.print-text:hover {
-    cursor: pointer;
-}
-
-.payment-input-label {
-    font-family: HKGrotesk;
-    font-size: 13px;
-    color: #7c8796;
-    padding: 8px 0px 0px 12px;
-}
-
-.sign-in-text {
-    font-weight: bold;
-    color: #16c0ef;
-    font-size: 12px;
-}
-
-.sign-in-text:hover {
-    cursor: pointer;
-}
-
-.comment-options {
-    display: none;
-}
-
-.comment-section:hover .comment-options {
-    display: block;
-}
-
-.project-date-text {
-    font-size: 11px;
-    color: #7c8796;
-}
-
-.project-date {
-    font-size: 13px;
-    color: #2a3844;
-}
-
-.payment-page-icon {
-    /* position: relative; */
-    left: 40%;
-    max-height: 140px;
-    border: 2px solid white;
-    border-radius: 50%;
-    margin-top: -100px;
-}
-
-#backBtn:hover {
-    cursor: pointer;
-}
-
-.about-organisation-header-text {
-    font-family: HKGrotesk;
-    font-size: 17px;
-    font-weight: bold;
-    color: #2a3844;
-}
-
-.about-organisation-content-text {
-    font-size: 13px;
-    font-family: HKGrotesk-reg;
-    font-weight: normal !important;
-}
-
-.about-organisation-field-text {
-    font-size: 14px;
-    font-weight: normal !important;
-}
-
-.nav-username {
-    color: #5d677e;
-    font-size: 13px;
-}
-
-.msg-count {
-    position: absolute;
-    background: red;
-    height: 16px;
-    width: 16px;
-    font-size: 12px;
-    font-weight: bold;
-    border-radius: 50%;
-    text-align: center;
-    color: white;
-    right: 11px;
-    top: -10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.not-count {
-    position: absolute;
-    background: red;
-    height: 16px;
-    width: 16px;
-    font-size: 12px;
-    font-weight: bold;
-    border-radius: 50%;
-    text-align: center;
-    color: white;
-    right: 11px;
-    top: -10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-right {
-    max-width: 500px;
-    width: 100%;
-}
-
-.syne-search {
-    max-width: 350px;
-    width: 100%;
-}
-
-.donating-org-name {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: HKGrotesk;
-    color: #395366;
-}
-
-.foundation-name {
-    /* font-family: HKGrotesk; */
-    font-size: 13px;
-    font-weight: 600;
-    color: #5d677e;
-}
-
-.delete-popup {
-    width: 390px !important;
-    /* height: 260px; */
-    border-radius: 8px;
-    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
-}
-
-.delete-popup-heading {
-    font-family: HKGrotesk;
-    font-size: 25px;
-    font-weight: bold;
-    color: #2e404e;
-}
-
-.delete-popup-confirm-action {
-    border-radius: 4px;
-    background-color: #16c0ef;
-    color: #ffffff;
-    font-family: HKGrotesk;
-    font-size: 17px;
-    font-weight: bold;
-    width: 100px;
-}
-
-.delete-popup-decline-action {
-    font-family: HKGrotesk;
-    font-size: 17px;
-    font-weight: bold;
-    color: #7c8796;
-}
-
-.delete-popup-desc {
-    font-size: 15px;
-    color: #2e404e;
-}
-
-.write-your-thoughts {
-    font-size: 14px;
-    color: #7c8796;
-}
-
-.written-thoghts {
-    font-family: HKGrotesk;
-    font-size: 15px;
-    font-weight: bold;
-    color: #2e404e;
-}
-
-.sharing-with-everyone {
-    font-size: 12px;
-    color: #7c8796;
-    font-weight: normal;
-}
-
-.sharing-with-everyone:hover {
-    text-decoration: none !important;
-    color: #7c8796;
-}
-
-.share-it-on-your-timeline {
-    border-radius: 4px;
-    background-color: #eef0f5;
-    font-family: HKGrotesk;
-    font-size: 15px;
-    font-weight: bold;
-    color: #2e404e;
-}
-
-.share-it-on-your-timeline:hover {
-    text-decoration: none !important;
-    color: #2e404e;
-}
-
-.followButton {
-    width: 205px;
-    height: 40px;
-    border-radius: 3px;
-    background-color: #16c0ef;
-    font-family: HKGrotesk;
-    font-size: 15px;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.unfollowButton {
-    height: 40px;
-    border-radius: 3px;
-    border: solid 1px #eef0f5;
-    background-color: #ffffff;
-    font-family: HKGrotesk;
-    font-size: 15px;
-    font-weight: bold;
-    color: #fb4f6d;
-}
-
-.followingButton {
-    height: 40px;
-    border-radius: 3px;
-    border: solid 1px #eef0f5;
-    background-color: #ffffff;
-    font-family: HKGrotesk;
-    font-size: 15px;
-    font-weight: bold;
-    color: #7c8796;
-}
-
-.required-field {
-    font-family: HKGrotesk;
-    font-size: 10px;
-    color: #cb2a2a;
-}
-
-.custom-control-input:checked~.custom-control-label::before {
-    color: #fff;
-    border-color: #16c0ef !important;
-    background-color: #16c0ef !important;
-}
-
-.unfollow-confirm-text {
-    font-size: 18px;
-    color: #2a3844;
-    font-family: HKGrotesk;
-}
-
-.popup-unfollow-text {
-    font-family: HKGrotesk;
-    font-size: 15px;
-    font-weight: 600;
-    color: #f02121;
-}
-
-.popup-cancel-text {
-    font-family: HKGrotesk;
-    font-size: 15px;
-    font-weight: 600;
-    color: #3a5366;
-}
-
-.center-vertical-line {
-    border-left: 6px solid green;
-}
-
-.copy-link-text {
-    font-size: 14px;
-    color: #7c8796;
-}
-
-.checkbox-container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.icon {
-    width: 12px;
-    position: absolute;
-    z-index: 5556;
-    top: 26px;
-}
-
-
-/* Hide the browser's default checkbox */
-
-.checkbox-container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-
-/* Create a custom checkbox */
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 145px;
-    height: 25px;
-    width: 25px;
-    background-color: #fff;
-    border-radius: 15px;
-    border: 2px solid #bac3cf;
-}
-
-
-/* On mouse-over, add a grey background color */
-
-.checkbox-container:hover input~.checkmark {
-    background-color: #fff;
-}
-
-
-/* When the checkbox is checked, add a blue background */
-
-.checkbox-container input:checked~.checkmark {
-    background-color: #16c0ef;
-}
-
-
-/* Create the checkmark/indicator (hidden when not checked) */
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-
-/* Show the checkmark when checked */
-
-.checkbox-container input:checked~.checkmark:after {
-    display: block;
-}
-
-
-/* Style the checkmark/indicator */
-
-.checkbox-container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
+    
+    .Start-a-Project {
+        font-family: HKGrotesk;
+        font-size: 19px;
+        font-weight: 500;
+        color: #5d677e;
+    }
+    
+    .projectTitle {
+        font-family: HKGrotesk;
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .projectCard {
+        /* padding: 20px; */
+        border: solid 1px #dde2e9;
+        border-radius: 6px;
+    }
+    
+    .projectCardActive {
+        border: solid 1px #16c0ef;
+    }
+    
+    .categoryCard {
+        border: solid 1px #dde2e9;
+        border-radius: 6px;
+    }
+    
+    .countryInput {
+        width: 35%;
+    }
+    
+    .cityInput {
+        width: 30%;
+    }
+    
+    .startDateInput {
+        padding: 0px 0px 0px 12px !important;
+    }
+    
+    .endDateInput {
+        padding: 0px 0px 0px 12px !important;
+    }
+    
+    .info-ico {
+        margin: auto;
+        display: block;
+    }
+    
+    .radio-button-default {
+        background: url('../img/radio-unchecked.png') no-repeat 0;
+        background-position: right top;
+        float: right;
+        height: 24px;
+    }
+    
+    .radio-button-on-click {
+        background: url('../img/radio-checked.png') no-repeat 0;
+        background-position: right top;
+        float: right;
+        height: 24px;
+    }
+    
+    .agriculture {
+        background: url('../img/agriculture.png')no-repeat 0;
+        height: 50px;
+        background-position: center;
+        background-size: contain;
+    }
+    
+    .animals {
+        background: url('../img/animals.png')no-repeat 0;
+        height: 50px;
+        background-position: center;
+        background-size: contain;
+    }
+    
+    .business {
+        background: url('../img/business.png')no-repeat 0;
+        height: 50px;
+        background-position: center;
+        background-size: contain;
+    }
+    
+    .charity {
+        background: url('../img/charity.png')no-repeat 0;
+        height: 50px;
+        background-position: center;
+        background-size: contain;
+    }
+    
+    .community {
+        background: url('../img/community.png')no-repeat 0;
+        height: 50px;
+        background-position: center;
+        background-size: contain;
+    }
+    
+    .competition {
+        background: url('../img/competition.png')no-repeat 0;
+        height: 50px;
+        background-position: center;
+        background-size: contain;
+    }
+    
+    .crowdfunding_img {
+        background: url('../img/crowdfunding.png') no-repeat 0;
+        height: 96px;
+        background-position: center;
+    }
+    
+    .crowdfunding_img_hover {
+        background: url('../img/crowdfunding-active.png') no-repeat 0;
+        height: 96px;
+        background-position: center;
+    }
+    
+    .crowdfunding_img_hover_on_click {
+        background: url('../img/crowdfunding-active.png') no-repeat 0;
+        height: 96px;
+        background-position: center;
+    }
+    
+    .form-control:focus {
+        box-shadow: none !important;
+    }
+    
+    .promotions_img {
+        background: url('../img/promotions.png') no-repeat 0;
+        height: 96px;
+        background-position: center;
+    }
+    
+    .promotions_img_hover {
+        background: url('../img/promotions-active.png') no-repeat 0;
+        background-position: center;
+        height: 96px;
+    }
+    
+    .promotions_img_hover_on_click {
+        background: url('../img/promotions-active.png') no-repeat 0;
+        background-position: center;
+        height: 96px;
+    }
+    
+    .socialgiving_img {
+        background: url('../img/socialgiving.png') no-repeat 0;
+        background-position: center;
+        height: 96px;
+    }
+    
+    .socialgiving_img_hover {
+        background: url('../img/socialgiving-active.png') no-repeat 0;
+        background-position: center;
+        height: 96px;
+    }
+    
+    .socialgiving_img_hover_on_click {
+        background: url('../img/socialgiving-active.png') no-repeat 0;
+        background-position: center;
+        height: 96px;
+    }
+    
+    .socialchange_img {
+        background: url('../img/socialchange.png') no-repeat 0;
+        background-position: center;
+        height: 96px;
+    }
+    
+    .socialchange_img_hover {
+        background: url('../img/socialchange-active.png') no-repeat 0;
+        background-position: center;
+        height: 96px;
+    }
+    
+    .socialchange_img_hover_on_click {
+        background: url('../img/socialchange-active.png') no-repeat 0;
+        background-position: center;
+        height: 96px;
+    }
+    
+    .noteinstr {
+        float: right;
+    }
+    
+    .projectCard:hover {
+        border: solid 1px #16c0ef;
+    }
+    
+    .projectCard-active {
+        border: solid 1px #16c0ef;
+        border-radius: 6px;
+    }
+    
+    .close {
+        font-family: HKGrotesk !important;
+        font-size: 14px !important;
+        font-weight: bold !important;
+        color: #7c8796 !important;
+    }
+    
+    .proceedButton {
+        width: 220px;
+        /* height: 50px; */
+        border-radius: 3px !important;
+        background-color: #16c0ef !important;
+        color: white !important;
+        font-weight: bold !important;
+    }
+    
+    .backButton {
+        width: 220px;
+        height: 50px;
+        border-radius: 3px !important;
+        border: solid 1px #e0e6ee !important;
+        color: #16c0ef !important;
+        font-weight: bold !important;
+    }
+    
+    .back-proceed-btn {
+        padding: 30px 0;
+    }
+    
+    .controls .controls-inner {
+        float: right;
+    }
+    
+    .controls-inner .btn:focus {
+        box-shadow: none;
+    }
+    
+    .proceedFooter {
+        display: flex !important;
+        justify-content: center !important;
+    }
+    
+    .newProjectHeader {
+        display: flex !important;
+        justify-content: space-between !important;
+    }
+    
+    .modal-card-head {
+        background-color: #ffffff !important;
+    }
+    
+    .project-title-input {
+        font-family: HKGrotesk;
+        font-size: 17px !important;
+        font-weight: 600 !important;
+        color: #2a3844 !important;
+    }
+    
+    .syne-inputbox {
+        border-radius: 3px;
+        border: solid 1px #dde2e9;
+        position: relative;
+    }
+    
+    .syne-project-description {
+        border: none !important;
+        font-family: HKGrotesk;
+        font-size: 17px !important;
+        font-weight: 600 !important;
+        color: #2a3844;
+        resize: none;
+    }
+    
+    .syne-project-description::placeholder {
+        color: #bac3cf!important;
+    }
+    
+    .Short-description-ab {
+        font-family: HKGrotesk;
+        font-size: 17px;
+        font-weight: 600;
+        color: #bac3cf;
+        padding: 10px 0px 0px 12px;
+    }
+    
+    .syne-input-label {
+        font-family: HKGrotesk-reg;
+        font-size: 12px;
+        font-weight: 500;
+        color: #7c8796;
+        padding: 0px 0px 0px 12px;
+    }
+    
+    .custom-syne-input .selectize-dropdown {
+        left: 12px!important;
+    }
+    
+    input[type=text] {
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 3px;
+        border: none !important;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 12px;
+    }
+    
+    .popular-categories {
+        font-size: 15px;
+        font-weight: bold;
+        color: #bac3cf;
+    }
+    
+    .progress-bar {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center;
+        overflow: hidden;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        background-color: #16c0ef !important;
+        transition: width .6s ease;
+    }
+    /* //Post Page// */
+    
+    .post-page-bg {
+        background-color: #f9fafc;
+    }
+    
+    .post-page-header {
+        background-color: #ffffff;
+        border-bottom: 1px #f9fafc;
+    }
+    
+    .coverPhoto {
+        height: 104px;
+    }
+    
+    .user-name {
+        font-family: HKGrotesk-reg;
+        font-size: 13px;
+        color: #7c8796;
+    }
+    
+    .post-card {
+        border-radius: 4px;
+        border: solid 1px #e0e6ee;
+        background-color: #ffffff;
+    }
+    
+    .recommended-projects-text {
+        font-family: HKGrotesk;
+        font-size: 15px;
+        font-weight: bold;
+        color: #2a3844;
+    }
+    
+    .recommndede-project-photo {
+        height: 67px;
+    }
+    
+    .like-share {
+        font-size: 13px;
+        color: #7c8796;
+    }
+    
+    .like-comment {
+        font-size: 14px;
+    }
+    
+    .progress {
+        display: -ms-flexbox;
+        display: flex;
+        height: 1rem;
+        font-size: .75rem;
+        background-color: #e9ecef;
+        border-radius: .25rem;
+        position: relative;
+        overflow: unset;
+    }
+    
+    .recommended-project-disc {
+        font-family: HKGrotesk-reg;
+        font-size: 12px;
+        color: #5d677e;
+    }
+    
+    .recommended-project-name {
+        font-family: HKGrotesk;
+        font-size: 15px;
+        font-weight: 600;
+        color: #2a3844;
+    }
+    
+    .full-name {
+        font-family: HKGrotesk;
+        font-size: 15px;
+        font-weight: bold;
+        color: #2a3844;
+    }
+    
+    .createOrg-modal-header {
+        font-family: HKGrotesk;
+        font-size: 25px;
+        font-weight: bold;
+        color: #395366;
+    }
+    
+    .hello-user-text {
+        font-family: HKGrotesk;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2a3844;
+    }
+    
+    .orgModal-radiobutton-text {
+        font-size: 15px;
+        font-weight: 500;
+        color: #7c8796;
+    }
+    
+    .write-post-text {
+        font-family: HKGrotesk;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .menu-items {
+        font-family: HKGrotesk;
+        font-size: 13px;
+        font-weight: 600;
+        color: #5d677e;
+    }
+    
+    .menu-items-wrapper {
+        margin: 0 -1.5rem;
+    }
+    
+    .menu-items div {
+        cursor: pointer;
+    }
+    
+    .menu-items a,
+    .menu-items a:hover {
+        cursor: pointer;
+        color: #5d677e;
+        text-decoration: none;
+    }
+    
+    .menu-items a.active {
+        background-color: rgba(22, 192, 239, 0.2);
+        border-left: 3px solid rgb(22, 192, 239);
+    }
+    
+    .post-image {
+        height: 199px;
+    }
+    
+    .recommended-project-photo {
+        height: 93px;
+    }
+    
+    .post-project-caption {
+        font-family: HKGrotesk;
+        font-size: 17px;
+        color: #0db2e0;
+        font-weight: bold;
+    }
+    
+    .view-more {
+        font-family: HKGrotesk;
+        font-size: 13px;
+        color: #16c0ef;
+        cursor: pointer;
+    }
+    
+    .follow-people {
+        font-size: 11px;
+        color: #7c8796;
+    }
+    
+    .target-amount {
+        font-size: 13px;
+    }
+    
+    .contributors-comment {
+        font-size: 13px;
+        color: #2a3844;
+    }
+    
+    .post-project-desc {
+        font-family: HKGrotesk-reg;
+        font-size: 13px;
+        color: #5d677e;
+        font-weight: normal;
+    }
+    
+    .raised-amount {
+        font-family: HKGrotesk;
+        font-size: 13px;
+        font-weight: bold;
+        color: #2a3844;
+    }
+    
+    .post-user {
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .post-user-name {
+        font-size: 12px;
+        color: #5d677e;
+    }
+    
+    .modal-title {
+        font-family: HKGrotesk;
+        color: #2a3844;
+        font-size: 15px;
+    }
+    
+    .modal-close-text {
+        color: #7c8796;
+        font-size: 14px;
+        font-family: HKGrotesk;
+    }
+    
+    .follower-modal-height {
+        max-height: 339px;
+        overflow-y: auto;
+    }
+    
+    .post-time {
+        font-size: 12px;
+        color: #7c8796;
+    }
+    
+    .follower-count {
+        font-weight: bold;
+        color: #16c0ef !important;
+    }
+    
+    .followers-count {
+        font-size: 12px;
+        color: #7c8796;
+    }
+    
+    .writePost {
+        border-radius: 4px;
+        border: solid 1px #e0e6ee;
+        background-color: #ffffff;
+    }
+    
+    .raised-amount-text {
+        font-size: 12px;
+        font-weight: bold;
+        color: #2a3844;
+        font-family: HKGrotesk;
+    }
+    
+    .raised-amount-percentage {
+        font-size: 12px;
+        font-weight: bold;
+        color: #16c0ef;
+        font-family: HKGrotesk;
+    }
+    
+    .dropzone {
+        min-height: auto !important;
+        border: solid 2px #bac3cf !important;
+    }
+    
+    .add-more-photos {
+        position: relative;
+        height: 174px;
+        border-radius: 4px;
+        box-shadow: inset 0 0 0 10px #ffffff;
+        border: dashed 2px #bac3cf;
+        background-color: #f7f8fa !important;
+    }
+    
+    .project-icon-upload {
+        position: relative !important;
+        width: 120px !important;
+        height: 120px !important;
+        border-radius: 60px !important;
+        box-shadow: inset 0 0 0 10px #ffffff !important;
+        border: dashed 2px #bac3cf !important;
+        background-color: #f7f8fa !important;
+    }
+    
+    .drag-in-photos {
+        font-family: HKGrotesk;
+        font-size: 13px;
+        color: #7c8796;
+    }
+    
+    .top-padding {
+        padding-top: 33px;
+    }
+    /* .project-detail-characters-left {} */
+    
+    .attachMediaButton {
+        width: 252px;
+        height: 50px;
+        border-radius: 3px !important;
+        border: solid 1px #e0e6ee !important;
+        color: #5d677e !important;
+        font-weight: bold !important;
+    }
+    
+    input[type=number],
+    input[type=number] {
+        border: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+    /* category slider classes */
+    
+    .col-md-3 {
+        display: inline-block;
+        margin-left: -4px;
+    }
+    
+    .col-md-3 img {
+        width: 100%;
+        height: auto;
+    }
+    
+    body .carousel-indicators li {
+        background-color: red;
+    }
+    
+    body .no-padding {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    body .next-arrow {
+        transform: rotate(180deg);
+    }
+    
+    .carousel-indicators li {
+        visibility: hidden;
+    }
+    
+    .follower-text {
+        font-size: 13px;
+        font-family: HKGrotesk-reg;
+        color: #7c8796 !important;
+        font-weight: normal !important;
+    }
+    
+    .welcome-to-syne {
+        font-size: 13px;
+        color: #fb4f6d;
+        font-family: HKGrotesk;
+    }
+    
+    .image-upload>input {
+        display: none;
+    }
+    
+    .organisation-image {
+        max-height: 90px;
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+    
+    .organisation-add-text {
+        color: #7c8796;
+        font-weight: 500;
+        font-family: HKGrotesk-reg;
+        font-size: 12px;
+    }
+    
+    .org-form-input {
+        font-size: 15px;
+        font-weight: 600;
+        color: #2a3844 !important;
+        padding: 0px 0px 0px 12px !important;
+    }
+    
+    .org-form-input:focus {
+        border: 1px solid #16c0ef!important;
+    }
+    
+    .org-form-input::placeholder {
+        font-family: HKGrotesk-reg !important;
+        font-size: 15px;
+        font-weight: 600 !important;
+        /* font-weight: 600; */
+        color: #bac3cf !important;
+    }
+    
+    .org-form-select {
+        font-size: 13px !important;
+        font-weight: 500 !important;
+        color: #2a3844 !important;
+        padding: 0px 0px 0px 12px !important;
+        border: none;
+        width: 100%;
+    }
+    
+    .org-form-select:focus {
+        border: 1px solid #16c0ef!important;
+    }
+    
+    .terms-conditions {
+        font-family: HKGrotesk-reg;
+        font-size: 13px;
+        font-weight: 500;
+        color: #2a3844;
+    }
+    
+    .org-url-box {
+        background-color: #f2f4f7;
+        padding: 5px 0px 5px 5px;
+        border-radius: 6px;
+        color: #a1a8b3;
+    }
+    
+    .payment-container {
+        border-radius: 4px;
+        box-shadow: 0 2px 8px 0 rgba(57, 64, 79, 0.1);
+        background-color: #ffffff;
+    }
+    
+    .donate-to-text {
+        font-family: HKGrotesk;
+        font-size: 26px;
+        font-weight: bold;
+        color: #2e404e;
+    }
+    
+    .payment-amount-text-box {
+        border-radius: 4px;
+        padding: 0px 0px 0px 12px;
+        border: solid 1px #16c0ef;
+    }
+    
+    .syne-credit-amount {
+        background-color: #16c0ef40;
+        border-radius: 3px;
+        min-width: 43px;
+        padding-left: 5px;
+        padding-top: 3px;
+        height: 21px;
+    }
+    
+    .payment-methods {
+        background-color: #ffffff;
+        border-radius: 4px;
+        border: 1px solid #e0e6ee;
+        height: fit-content;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    
+    .notify-text {
+        font-size: 9px;
+    }
+    
+    .w-65 {
+        width: 65% !important;
+        min-width: 200px !important;
+    }
+    
+    .m-74 {
+        margin-left: 74px !important;
+    }
+    
+    .grey-text {
+        color: #7c8796;
+    }
+    
+    .print-text:hover {
+        cursor: pointer;
+    }
+    
+    .payment-input-label {
+        font-family: HKGrotesk;
+        font-size: 13px;
+        color: #7c8796;
+        padding: 8px 0px 0px 12px;
+    }
+    
+    .sign-in-text {
+        font-weight: bold;
+        color: #16c0ef;
+        font-size: 12px;
+    }
+    
+    .sign-in-text:hover {
+        cursor: pointer;
+    }
+    
+    .comment-options {
+        display: none;
+    }
+    
+    .comment-section:hover .comment-options {
+        display: block;
+    }
+    
+    .project-date-text {
+        font-size: 11px;
+        color: #7c8796;
+    }
+    
+    .project-date {
+        font-size: 13px;
+        color: #2a3844;
+    }
+    
+    .payment-page-icon {
+        /* position: relative; */
+        left: 40%;
+        max-height: 140px;
+        border: 2px solid white;
+        border-radius: 50%;
+        margin-top: -100px;
+    }
+    
+    #backBtn:hover {
+        cursor: pointer;
+    }
+    
+    .about-organisation-header-text {
+        font-family: HKGrotesk;
+        font-size: 17px;
+        font-weight: bold;
+        color: #2a3844;
+    }
+    
+    .about-organisation-content-text {
+        font-size: 13px;
+        font-weight: bold;
+        color: #2a3844;
+        font-weight: normal !important;
+    }
+    
+    .about-organisation-field-text {
+        font-size: 14px;
+        font-weight: normal !important;
+        font-family: HKGrotesk;
+    }
+    
+    .nav-username {
+        color: #5d677e;
+        font-size: 13px;
+    }
+    
+    .msg-count {
+        position: absolute;
+        background: red;
+        height: 16px;
+        width: 16px;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 50%;
+        text-align: center;
+        color: white;
+        right: 11px;
+        top: -10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .not-count {
+        position: absolute;
+        background: red;
+        height: 16px;
+        width: 16px;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 50%;
+        text-align: center;
+        color: white;
+        right: 11px;
+        top: -10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-right {
+        max-width: 500px;
+        width: 100%;
+    }
+    
+    .syne-search {
+        max-width: 350px;
+        width: 100%;
+    }
+    
+    .donating-org-name {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: HKGrotesk;
+        color: #395366;
+    }
+    
+    .foundation-name {
+        /* font-family: HKGrotesk; */
+        font-size: 13px;
+        font-weight: 600;
+        color: #5d677e;
+    }
+    
+    .delete-popup {
+        width: 390px !important;
+        /* height: 260px; */
+        border-radius: 8px;
+        box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+    }
+    
+    .delete-popup-heading {
+        font-family: HKGrotesk;
+        font-size: 25px;
+        font-weight: bold;
+        color: #2e404e;
+    }
+    
+    .delete-popup-confirm-action {
+        border-radius: 4px;
+        background-color: #16c0ef;
+        color: #ffffff;
+        font-family: HKGrotesk;
+        font-size: 17px;
+        font-weight: bold;
+        width: 100px;
+    }
+    
+    .delete-popup-decline-action {
+        font-family: HKGrotesk;
+        font-size: 17px;
+        font-weight: bold;
+        color: #7c8796;
+    }
+    
+    .delete-popup-desc {
+        font-size: 15px;
+        color: #2e404e;
+    }
+    
+    .write-your-thoughts {
+        font-size: 14px;
+        color: #7c8796;
+    }
+    
+    .written-thoghts {
+        font-family: HKGrotesk;
+        font-size: 15px;
+        font-weight: bold;
+        color: #2e404e;
+    }
+    
+    .sharing-with-everyone {
+        font-size: 12px;
+        color: #7c8796;
+        font-weight: normal;
+    }
+    
+    .sharing-with-everyone:hover {
+        text-decoration: none !important;
+        color: #7c8796;
+    }
+    
+    .share-it-on-your-timeline {
+        border-radius: 4px;
+        background-color: #eef0f5;
+        font-family: HKGrotesk;
+        font-size: 15px;
+        font-weight: bold;
+        color: #2e404e;
+    }
+    
+    .share-it-on-your-timeline:hover {
+        text-decoration: none !important;
+        color: #2e404e;
+    }
+    
+    .followButton {
+        width: 205px;
+        height: 40px;
+        border-radius: 3px;
+        background-color: #16c0ef;
+        font-family: HKGrotesk;
+        font-size: 15px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    
+    .unfollowButton {
+        height: 40px;
+        border-radius: 3px;
+        border: solid 1px #eef0f5;
+        background-color: #ffffff;
+        font-family: HKGrotesk;
+        font-size: 15px;
+        font-weight: bold;
+        color: #fb4f6d;
+    }
+    
+    .followingButton {
+        height: 40px;
+        border-radius: 3px;
+        border: solid 1px #eef0f5;
+        background-color: #ffffff;
+        font-family: HKGrotesk;
+        font-size: 15px;
+        font-weight: bold;
+        color: #7c8796;
+    }
+    
+    .required-field {
+        font-family: HKGrotesk;
+        font-size: 10px;
+        color: #cb2a2a;
+    }
+    
+    .custom-control-input:checked~.custom-control-label::before {
+        color: #fff;
+        border-color: #16c0ef !important;
+        background-color: #16c0ef !important;
+    }
+    
+    .unfollow-confirm-text {
+        font-size: 18px;
+        color: #2a3844;
+        font-family: HKGrotesk;
+    }
+    
+    .popup-unfollow-text {
+        font-family: HKGrotesk;
+        font-size: 15px;
+        font-weight: 600;
+        color: #f02121;
+    }
+    
+    .popup-cancel-text {
+        font-family: HKGrotesk;
+        font-size: 15px;
+        font-weight: 600;
+        color: #3a5366;
+    }
+    
+    .center-vertical-line {
+        border-left: 6px solid green;
+    }
+    
+    .copy-link-text {
+        font-size: 14px;
+        color: #7c8796;
+    }
+    
+    .checkbox-container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .icon {
+        width: 12px;
+        position: absolute;
+        z-index: 5556;
+        top: 26px;
+    }
+    /* Hide the browser's default checkbox */
+    
+    .checkbox-container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    /* Create a custom checkbox */
+    
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 145px;
+        height: 25px;
+        width: 25px;
+        background-color: #fff;
+        border-radius: 15px;
+        border: 2px solid #bac3cf;
+    }
+    /* On mouse-over, add a grey background color */
+    
+    .checkbox-container:hover input~.checkmark {
+        background-color: #fff;
+    }
+    /* When the checkbox is checked, add a blue background */
+    
+    .checkbox-container input:checked~.checkmark {
+        background-color: #16c0ef;
+    }
+    /* Create the checkmark/indicator (hidden when not checked) */
+    
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    /* Show the checkmark when checked */
+    
+    .checkbox-container input:checked~.checkmark:after {
+        display: block;
+    }
+    /* Style the checkmark/indicator */
+    
+    .checkbox-container .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    
+    .custom-inputbox label {
+        position: absolute;
+        top: 8px;
+    }
+    
+    .custom-inputbox input {
+        height: 60px;
+        padding: 19px 15px 0!important;
+    }
+    
+    .custom-inputbox textarea {
+        padding-top: 25px!important;
+    }
+    
+    .syne-inputbox textarea:focus {
+        border: 1px solid #16c0ef!important;
+    }
+    
+    .custom-inputbox .project-title-input {
+        position: absolute;
+        left: -3px;
+        top: 22px;
+    }
+    
+    .custom-inputbox .url-input {
+        padding: 9px 0 0 99px!important
+    }
+    
+    .custom-inputbox img {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+    }
+    
+    .custom-inputbox .loc {
+        padding: 24px 0 0 32px!important;
+    }
+    
+    .note {
+        width: 280px;
+        position: relative;
+        top: 28px;
+    }
+    
+    .note p {
+        font-size: 11px;
+        line-height: 1.38;
+        letter-spacing: 0.19px;
+        color: #7c8796;
+        font-family: HKGrotesk-reg;
+        padding-left: 12px;
+    }
+    
+    .custom-inputbox .pm-loc {
+        height: 43px;
+        padding: 0 36px 0!important;
+    }
+    
+    .Knw-mr-btn button img {
+        width: 12px!important;
+        margin-left: 7px;
+    }
+    
+    .Knw-mr-btn button {
+        border: solid 1px #e0e6ee;
+        background-color: #ffffff;
+        padding: 10px 0;
+        color: #7c8796;
+        font-family: HKGrotesk;
+    }
+    
+    .Knw-mr-btn button:focus {
+        outline: none;
+    }
+    
+    .carousel-control-prev {
+        background: url('../img/arrow-right-white.png');
+        background-size: 32px;
+        transform: rotate(-180deg);
+        margin: 127px 0px;
+        width: 48px!important;
+        background-color: rgba(9, 9, 10, 0.6);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    
+    .carousel-control-next {
+        background: url('../img/arrow-right-white.png');
+        background-size: 32px;
+        margin: 127px 0px;
+        width: 48px!important;
+        background-color: rgba(9, 9, 10, 0.6);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    
+    .link2 {
+        position: relative;
+        left: 68px;
+        top: 2px;
+    }
