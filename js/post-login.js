@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    createPostLoginSpecificLeftPanelTabs();
     createProfileCompletionSection();
     newsFeedsCreation();
     recommendedOrganisationListPanelCreation();
@@ -21,27 +20,7 @@ $(document).ready(function () {
 });
 
 
-function createPostLoginSpecificLeftPanelTabs() {
-    if (document.getElementById("template-left-panel-tab-details-post-login-specific")) {
-        let leftpanelTab = document.getElementById("template-left-panel-tab-details-post-login-specific");
-        let leftPanelTabHtml = leftpanelTab.innerHTML;
-        let leftPanelTabFinalHtml = "";
-        postLoginSpecificlLeftPanelTabs.forEach((tab, index) => {
-            leftPanelTabFinalHtml += leftPanelTabHtml.replace(/{{iconUrl}}/g, tab.iconUrl)
-                .replace(/{{tabName}}/g, tab.name)
-                .replace(/{{path}}/g, tab.path)
-                .replace(/{{id}}/g, tab.id);
 
-            if (tab.id == 6) {
-                console.log('amil');
-            }
-        });
-
-        if (document.getElementById("left-panel-tabs")) {
-            document.getElementById("left-panel-tabs").innerHTML = leftPanelTabFinalHtml;
-        }
-    }
-}
 
 function adjustStyle() {
     document.getElementById("syne-tab6").classList.add('ml-1')

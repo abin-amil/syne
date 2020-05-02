@@ -61,6 +61,9 @@ function createLeftPanelTabs() {
             case 'about-organisation.html':
                 leftPanelTabsData = organisationDashboadData.leftPanelTabs;
                 break;
+            case 'post-login.html':
+                leftPanelTabsData = postLoginSpecificlLeftPanelTabs;
+                break;
             default:
                 leftPanelTabsData = dashBoardData.leftPanelTabs;
                 break;
