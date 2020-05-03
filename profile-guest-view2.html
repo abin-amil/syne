@@ -116,14 +116,14 @@
             <img class="img-fluid cover-photo" src="img/cover-photo.jpg">
         </div>
         <div>Profile Photo</div> -->
-        <div class="profile-top-banner" id="left-panel-top-banner">
+        <div id="top-banner">
             <!-- left panel top banner template fill here  -->
 
         </div>
 
     </div>
     <div class="container">
-        <div class="overlay-trigger" id="left-panel-top-banner">
+        <div class="overlay-trigger">
             <img class="img-fluid profile-photo" src="img/user.png">
             <div class="overlay-item profile-overlay">
                 <a class="profile-edit-button text-center">
@@ -379,61 +379,15 @@
         </div>
     </div>
 
-    <!-- left panel template -->
-    <script id="template-left-panel-user-details" type="text/template">
-        <div class="full-name">
-            {{name}}
-        </div>
-        <div class="user-name mt-2">
-            {{mailId}}
-        </div>
-        <div class="mt-2">
-            <div class="d-flex align-items-center">
-                <img style="height: 24px;" class="pr-2" src="img/svgImages/location-grey-small.svg">
-                <span class="follower-text" style="color: deepskyblue;font-weight: bold;">
-                    {{location}}
-                </span>
-            </div>
-            <div>
-                <div class="follower-text">{{userIntroDetails}}</div>
-            </div>
-            <div class="line-seperator my-3"></div>
-            <div class="d-flex justify-content-between flex-wrap">
-                <div>
-                    <div class="follower-count modal-btn" href="#syne-followers" data-target="syne-followers">{{followersCount}}
-                    </div>
-                    <a class="follower-text">Followers</a>
-                </div>
-                <div>
-                    <div class="follower-count modal-btn" href="#syne-followers" data-target="syne-followers">{{followingCount}}
-                    </div>
-                    <div class="follower-text">Following</div>
-                </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-center my-3 followButton text-center w-100">
-                <img class="pr-2" src="img/smiley-grey-small.png">Follow
-            </div>
-            <div class="d-flex align-items-center justify-content-center my-3 followingButton text-center w-100">
-                <img class="pr-2" src="img/smiley-grey-small.png">Following
-            </div>
-            <div class="d-flex align-items-center justify-content-center my-3 unfollowButton text-center w-100">
-                <img class="pr-2" src="img/smiley-grey-small.png">Unfollow
-            </div>
-    </script>
+    <!-- templates loading session start here.... these session hide in DOM -->
 
-    <!-- left panel tabs template -->
-    <script id="template-left-panel-tab-details" type="text/template">
-        <a class="d-flex py-3 pl-3 align-items-center" href="{{path}}" id="syne-tab{{id}}">
-            <img src="{{iconUrl}}">
-            <div class="px-2">{{tabName}}</div>
-        </a>
-    </script>
+    <!-- header template loaded here by scipt -->
+    <div id="includedHeaderContent" style="display: none;"></div>
 
-    <!-- left `panel top banner template -->
-    <script id="template-left-panel-top-banner" type="text/template">
-        <img class="img-fluid w-100 profile-photo-height" src="{{coverPhotoUrl}}">
-        <!-- <img class="img-fluid profile-photo" src="{{profilePhotoUrl}}"> -->
-    </script>
+    <!-- left panel template loaded here by scipt -->
+    <div id="includedLeftPanelContent" style="display: none;"></div>
+
+    <!-- templates loading session End here-->
 
     <!-- news feed template -->
     <script id="template-news-feed" type="text/template">

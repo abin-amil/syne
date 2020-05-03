@@ -1,13 +1,14 @@
 $(document).ready(function () {
     createHeader(true, true, true, true);
     createFooter();
-    LeftPanelCreation();
+    LeftPanelAndTopBannerCreation();
     recommendedProjectPanelCreation();
     whoToFollowListPanelCreation();
 });
 
-function LeftPanelCreation() {
+function LeftPanelAndTopBannerCreation() {
     $("#includedLeftPanelContent").load("templates/leftPanel.html", function () {
+        createTopBanner();
         createLeftPanelTopBanner();
         createLeftPanelUserDetails();
         createLeftPanelTabs();
@@ -42,8 +43,25 @@ function createLeftPanelTopBanner() {
 
         leftPanelTopBannerFinalHtml += leftPanelTopBannerHtml.replace(/{{coverPhotoUrl}}/g, dashBoardData.coverPhotoUrl)
             .replace(/{{profilePhotoUrl}}/g, dashBoardData.profilePhotoUrl);
+        if (document.getElementById("left-panel-top-banner")) {
+            document.getElementById("left-panel-top-banner").innerHTML = leftPanelTopBannerFinalHtml;
+        }
 
-        document.getElementById("left-panel-top-banner").innerHTML = leftPanelTopBannerFinalHtml;
+    }
+}
+
+function createTopBanner() {
+    if (document.getElementById("template-left-panel-top-banner")) {
+        let leftPanelTopBanner = document.getElementById("template-left-panel-top-banner");
+        let leftPanelTopBannerHtml = leftPanelTopBanner.innerHTML;
+        let leftPanelTopBannerFinalHtml = "";
+
+        leftPanelTopBannerFinalHtml += leftPanelTopBannerHtml.replace(/{{coverPhotoUrl}}/g, dashBoardData.coverPhotoUrl)
+            .replace(/{{profilePhotoUrl}}/g, dashBoardData.profilePhotoUrl);
+        if (document.getElementById("top-banner")) {
+            document.getElementById("top-banner").innerHTML = leftPanelTopBannerFinalHtml;
+        }
+
     }
 }
 
