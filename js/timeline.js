@@ -23,6 +23,7 @@ $(document).ready(function () {
     });
 
     createHeader(true, true, true, false, true, true);
+    createLeftPanel(2);
 });
 
 $("#syne-delete-popup .modalclose").click(function (e) {
