@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="#3D0082" name="msapplication-TileColor">
+    <meta content="#3D0082" name="theme-color">
+    <title>SYNE</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/post-login.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="css/normal_user_view.css">
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+</head>
+
+<body class="post-page-bg">
+    <div id="paymentRegistredUser">
+        <div class="wrapper">
+            <div class="full-wrapper header post-page-header">
+                <div class="main-wrapper">
+                    <div class="headerwrap flex">
+                        <div class="header-l flex flex-h-start flex-v-base">
+                            <div class="logo h-100">
+                                <img src="img/syne-logo.png" alt="logo">
+                            </div>
+                            <div class="header-menu h-100">
+                                <ul class="d-flex justify-content-around align-items-center">
+                                    <li>
+                                        <a class="txt-blue f14 modal-button" data-toggle="modal" data-target="#exampleModal">
+                                            Start a Project
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="explore-projects.html" class="f14">
+                                            Explore Projects
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row-reverse nav-right">
+                            <div class="d-flex align-items-center">
+                                <div class="syne-inputbox d-flex align-items-center  mr-2">
+                                    <img style="height: 20px; position: relative; left: 5px; top: 1px;" src="img/svgImages/search-icon-grey.svg">
+                                    <input type="text" name="projectSearch" class="form-control  font-weight-normal" placeholder="Search here">
+                                </div>
+                                <div class="position-relative px-4">
+                                    <img class=" nav-msg-icon" src="img/msg-icon.svg">
+                                    <div class="msg-count">5</div>
+                                </div>
+                                <div class="position-relative px-4">
+                                    <img class="" src="img/notif-icon.svg">
+                                    <div class="not-count">8</div>
+                                </div>
+
+                                <div class="pl-3 d-flex align-items-center">
+                                    <img class="pr-2" style="height: 40px;" src="img/user.png">
+                                    <div class="nav-username">Vinith</div>
+                                    <img class="pl-2" src="img/carrotdown-grey-small.svg">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <div class="col-3">
+                    <div class="ml-5 mt-1" onclick="back()" id="backBtn">
+                        <img src="img/back-arrow-blue.png">
+                        <span class="txt-blue">Back</span>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="col-5" style="min-width:365px;">
+                        <div id="logegedInUserPaymentPage1">
+                            <div class="d-flex justify-content-center row mt-5 donate-to-text">
+                                Donate to
+                            </div>
+                            <div class="payment-container p-lg-4 p-md-4 mt-5 mb-5">
+                                <div class="d-flex justify-content-center mt-4"><img class="img-fluid payment-page-icon" src="img/user.png" style="max-height: 65px; position: absolute;
+                                    top: 61px;"></div>
+                                <div class="d-flex justify-content-center row donating-org-name">
+                                    School of love
+                                </div>
+                                <div class="d-flex justify-content-center foundation-name pt-1 pb-3">
+                                    Vivent Foundation
+                                </div>
+                                <div class="payment-amount-text-box p-2 d-flex align-items-center mt-4  m-auto">
+                                    <img style="height: 20px;" src="img/dollar-symbol.png">
+                                    <input type="text" class="form-control project-title-input">
+                                </div>
+                                <div class="row mt-2 d-flex justify-content-around" style="font-weight:bold;font-size:13px">
+                                    <div class="custom-control custom-checkbox mt-2">
+                                        <input type="checkbox" class="custom-control-input" id="syneCredits">
+                                        <label class="custom-control-label" for="syneCredits">Use SYNE CREDITS</label>
+                                    </div>
+                                    <div class="ml-5 syne-credit-amount">
+                                        <label class="">$400</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center my-3" style="font-weight:bold;font-size:15px">
+                                    Choose payment methods
+                                </div>
+                                <div class="mt-4 payment-methods m-auto ">
+                                    <div class="custom-control my-3 m-3">
+                                        <label class="w-100 lbl" for="globalWallet" data-toggle="collapse" href="#globalwallet" aria-expanded="true" aria-controls="globalwallet">Global Wallet 
+                                            <img src="./img/arrow-down-grey.png" width="15px" style="transform: rotate(0deg);"> </label>
+                                        <div class="wallet-details collapse" id="globalwallet">
+                                            <h1>Please select your preferred wallets</h1>
+                                            <div class="wallet-row d-flex justify-content-between">
+                                                <div class="wallet">
+                                                    <div class="w-prof mb-2"></div>
+                                                    <label>WALLET 1</label>
+                                                </div>
+                                                <div class="wallet">
+                                                    <div class="w-prof mb-2"></div>
+                                                    <label>WALLET 2</label>
+                                                </div>
+                                                <div class="wallet">
+                                                    <div class="w-prof mb-2"></div>
+                                                    <label>WALLET 3</label>
+                                                </div>
+                                            </div>
+                                            <div class="wallet-row d-flex justify-content-between mt-3">
+                                                <div class="wallet">
+                                                    <div class="w-prof mb-2"></div>
+                                                    <label>WALLET 1</label>
+                                                </div>
+                                                <div class="wallet">
+                                                    <div class="w-prof mb-2"></div>
+                                                    <label>WALLET 2</label>
+                                                </div>
+                                                <div class="wallet">
+                                                    <div class="w-prof mb-2"></div>
+                                                    <label>WALLET 3</label>
+                                                </div>
+                                            </div>
+                                            <div class="syne-inputbox mt-3">
+                                                <select class="border-0 form-control px-2 org-form-select ">
+                                                <option value="More Wallets">More Wallets</div></option>
+                                                <option value="Wallet 5"> Wallet 5</div></option>
+                                                <option value="Wallet 6"> Wallet 6</div></option>
+                                            </select>
+                                            </div>
+                                            <button type="button" class="btn proceedButton is-success mt-4 d-flex justify-content-around w-btn w-100" onclick="proceedToPayButtonClick()">
+                                                <div>
+                                                    Proceed to Pay $800
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="line-seperator"></div>
+                                    <div class="custom-control my-3 m-3">
+                                        <label class="w-100 lbl" for="creditcard" data-toggle="collapse" href="#creditcard" aria-expanded="false" aria-controls="creditcard">Credit Card
+                                            <img src="./img/arrow-down-grey.png" width="15px" style="transform: rotate(0deg);"> </label>
+                                        <div class="cd-details collapse" id="creditcard">
+                                            <div class="d-flex align-items-center custom-control custom-radio ml-3">
+                                                <input type="radio" class="custom-control-input" id="visa" name="creditCard" value="visa">
+                                                <label class="custom-control-label " for="visa" data-toggle="collapse" href="#card-1" aria-expanded="false" aria-controls="card-1">VISA <span>XXXX</span> <strong>0001</strong></label>
+                                                <div class="del-btn">
+                                                    <button>Delete</button>
+                                                </div>
+                                            </div>
+                                            <div class="cvv-bank  mb-2 collapse ml-3" id="card-1">
+                                                <div class="d-flex align-items-center">
+                                                    <input class="form-control" placeholder="CVV">
+                                                    <label>ICICI</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-3 mb-2 line-seperator"></div>
+                                            <div class="d-flex align-items-center custom-control custom-radio  ml-3">
+                                                <input type="radio" class="custom-control-input" id="rupay" name="creditCard" value="rupay">
+                                                <label class="custom-control-label" for="rupay" data-toggle="collapse" href="#card-2" aria-expanded="false" aria-controls="card-2">Rupay <span>XXXX</span> <strong>0001</strong></label>
+                                                <div class="del-btn">
+                                                    <button>Delete</button>
+                                                </div>
+                                            </div>
+                                            <div class="cvv-bank  mb-2 collapse ml-3" id="card-2">
+                                                <div class="d-flex align-items-center">
+                                                    <input class="form-control" placeholder="CVV">
+                                                    <label>ICICI</label>
+                                                </div>
+                                            </div>
+                                            <div class=" mt-3 line-seperator"></div>
+                                            <div class="new-card syne-inputbox">
+                                                <button class="btn nw-btn" for="newcard" data-toggle="collapse" href="#newcard" role="button" aria-expanded="false" aria-controls="newcard">
+                                                    Use New Card
+                                                </button>
+                                            </div>
+                                            <div class="new-card-details  collapse" id="newcard">
+                                                <div class="syne-inputbox cd-no">
+                                                    <label>Enter Card Number</label>
+                                                    <input type="text" class="form-control" placeholder="0000 0000 0000 0000">
+                                                </div>
+                                                <div class="d-flex justify-content-around">
+                                                    <div class="exp-date syne-inputbox">
+                                                        <input type="text" class="form-control" placeholder="Expiry Date: MM/YY">
+                                                    </div>
+                                                    <div class="cvv syne-inputbox">
+                                                        <input type="text" class="form-control" placeholder="CVV">
+                                                    </div>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mt-2 ml-3">
+                                                    <input type="checkbox" class="custom-control-input" id="secure">
+                                                    <label class="custom-control-label" for="secure">Securely save this card for future use</label>
+                                                </div>
+                                                <button type="button" class="btn proceedButton is-success mt-2 d-flex justify-content-around w-btn w-100" onclick="proceedToPayButtonClick()">
+                                                    <div>
+                                                        Proceed to Pay $800
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="line-seperator"></div>
+                                    <div class="custom-control my-3 m-3">
+                                        <label class="w-100 lbl" for="netbanking" data-toggle="collapse" href="#netbanking" aria-expanded="false" aria-controls="netbanking">Net Banking 
+                                        <img src="./img/arrow-down-grey.png" width="15px" style="transform: rotate(0deg);"> </label>
+                                        <div class="wallet-details collapse" id="netbanking">
+                                            <h1>Please select your bank</h1>
+                                            <div class="wallet-row d-flex justify-content-between">
+                                                <div class="wallet bank">
+                                                    <div class="w-prof mb-2"></div>
+                                                    <label>SBI</label>
+                                                </div>
+                                                <div class="wallet bank">
+                                                    <div class="w-prof mb-2"></div>
+                                                    <label>ICICI</label>
+                                                </div>
+                                                <div class="wallet bank">
+                                                    <div class="w-prof mb-2"></div>
+                                                    <label>HDFC</label>
+                                                </div>
+                                            </div>
+                                            <div class="wallet-row d-flex justify-content-between mt-3">
+                                                <div class="wallet bank">
+                                                    <div class="w-prof mb-2"></div>
+                                                    <label>Kotak</label>
+                                                </div>
+                                                <div class="wallet bank">
+                                                    <div class="w-prof mb-2"></div>
+                                                    <label>Axis</label>
+                                                </div>
+                                                <div class="wallet bank">
+                                                    <div class="w-prof mb-2"></div>
+                                                    <label>Canara</label>
+                                                </div>
+                                            </div>
+                                            <div class="syne-inputbox mt-3">
+                                                <select class="border-0 form-control px-2 org-form-select ">
+                                            <option value="Wallets">More Wallets</div></option>
+                                            <option value="Bank 2">BANK 2</div></option>
+                                            <option value="BAnk 3"> BANK 3</div></option>
+                                        </select>
+                                            </div>
+                                            <button type="button" class="btn proceedButton is-success mt-4 d-flex justify-content-around w-btn w-100" onclick="proceedToPayButtonClick()">
+                                            <div>
+                                                Proceed to Pay $800
+                                            </div>
+                                        </button>
+                                        </div>
+                                    </div>
+                                    <div class="line-seperator"></div>
+                                    <div class="custom-control my-3 ml-3">
+
+                                        <label for="debitCard" class="w-100 lbl" data-toggle="collapse" href="#debitcard" aria-expanded="false" aria-controls="debitcard">Debit Card<img src="./img/arrow-down-grey.png" width="15px" style="right: 26px; transform: rotate(0deg);"> </label>
+                                    </div>
+                                    <div class="line-seperator"></div>
+                                    <div class="custom-control my-3 m-3">
+
+                                        <label class="w-100 lbl" for="upipayment" data-toggle="collapse" href="#upipayment" aria-expanded="false" aria-controls="upipayment">UPI Payement     
+                                            <img src="./img/arrow-down-grey.png" width="15px" style="transform: rotate(0deg);"> </label>
+                                        <div class="up collapse" id="upipayment">
+                                            <div class="syne-inputbox upid">
+                                                <label>Enter your UPI ID</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <p>How it works?</p>
+                                            <button type="button" class="btn proceedButton is-success mt-4 d-flex justify-content-around w-btn w-100" onclick="proceedToPayButtonClick()">
+                                                  <div>
+                                                      Proceed to Pay $800
+                                                 </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="line-seperator"></div>
+
+                                    <div class="custom-control  my-3 ml-3">
+
+                                        <label for="directPayment" class="w-100 lbl" data-toggle="collapse" href="#direct" aria-expanded="false" aria-controls="direct">Direct payment<img src="./img/arrow-down-grey.png" width="15px" style="right: 26px; transform: rotate(0deg);"></label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="logegedInUserPaymentPage2" class="c-page-2" style="display: none;">
+                            <div class="d-flex justify-content-center row mt-5 donate-to-text">
+                                Donate to
+                            </div>
+                            <div class="payment-container p-4 mt-5">
+                                <div class="d-flex justify-content-center"><img class="img-fluid payment-page-icon" src="img/user.png" style="max-height: 65px;     position: absolute;
+                                    top: 61px;"></div>
+                                <div class="d-flex justify-content-center row donating-org-name">
+                                    School of love
+                                </div>
+                                <div class="d-flex justify-content-center user-name foundation-name">
+                                    Vivent Foundation
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <div class="payment-amount-text-box p-2 d-flex align-items-center mt-4 w-65">
+                                        <img style="height: 20px;" src="img/dollar-symbol.png">
+                                        <input type="text" class="form-control project-title-input" value="1200">
+                                    </div>
+                                </div>
+                                <div class="row mt-3 d-flex justify-content-center" style="font-weight:bold;font-size:13px">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="syneCredits">
+                                        <label class="custom-control-label" for="syneCredits">Use <span
+                                            class="syne-credit-amount">$400</span> SYNE
+                                        CREDITS</label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="d-flex justify-content-center">
+                                        <button type="button" class="btn proceedButton is-success mt-4 d-flex justify-content-around" onclick="proceedToPaymentGateway()">
+                                    <div>
+                                        <div class="w-65" style="font-size: 10px;">Total Amount $800 </div>
+                                        <div class="w-65" style="font-size:12px">Proceed to Payment Gateway</div>
+                                    </div>
+                                </button></div>
+                                    <div class="mt-3 user-name notify-text">
+                                        <div class="d-flex justify-content-center">Help text explaining what happens next when you tap on</div>
+                                        <div class="d-flex justify-content-center mt-1">the payment Gateway button above</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="paymentSucessfullPage" style="display: none;">
+                            <div class="container p-4 mt-5 donate-to-text">
+                                <div class="mt-2 d-flex justify-content-center">
+                                    <img class="organisation-image" src="img/green-tick.png" style="width: 45px; height: 48px;">
+                                </div>
+                                <div class="d-flex justify-content-center" style="font-size: 17px;">Payment Successful</div>
+                                <div class="d-flex justify-content-center" style="color: #7c8796;font-size: 12px;">
+                                    Transaction ID : P781JPOKLJG</div>
+
+                            </div>
+                            <div class="payment-container p-4 mt-3">
+                                <div class="d-flex justify-content-center row donate-to-text mt-5" style="font-size: 16px; color: #7c8796;">
+                                    You just donated $800 to
+                                </div>
+                                <div class="mt-2 d-flex justify-content-center">
+                                    <img class="organisation-image" src="img/user.png">
+                                </div>
+                                <div class="d-flex justify-content-center row donating-org-name">
+                                    School of love
+                                </div>
+                                <div class="d-flex justify-content-center user-name mb-4 foundation-name">
+                                    Vivent Foundation
+                                </div>
+                            </div>
+                            <div class="container p-4 mt-3">
+                                <div class="d-flex justify-content-center row grey-text">
+                                    Looking for Receipt?
+                                </div>
+                                <div class="mt-3 grey-text" style="font-size: 13px;">
+                                    <span class="d-flex justify-content-center row">Check your email, we just send the
+                                    receipt to your email address,</span>
+                                    <span class="d-flex justify-content-center row mt-1">altenatively you can print the
+                                    receipt by clicking on button link below</span>
+                                </div>
+                                <div class="d-flex justify-content-center row mt-3 grey-text print-text" style="font-weight: bold;">
+                                    <span class="mr-3"><img src="img/print-icon.png"></span>
+                                    <a>PRINT RECEIPT</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/payment.js"></script>
+
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+</style>
+
+</html>
