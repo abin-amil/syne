@@ -183,6 +183,18 @@ input[type=text] {
     font-weight: normal;
 }
 
+.search-placeholder {
+    font-family: HKGrotesk !important;
+    color: #bac3cf !important;
+    font-size: 14px !important;
+}
+
+.search-placeholder::placeholder {
+    font-family: HKGrotesk-reg !important;
+    color: #bac3cf !important;
+    font-size: 14px !important;
+}
+
 .flex-v-base {
     align-items: baseline;
 }

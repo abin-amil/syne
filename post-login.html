@@ -33,6 +33,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="scripts/inputEmoji.js"></script>
+    <script src="scripts/jquery.min.js"></script>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -105,7 +106,7 @@
     <div class="container">
         <div class="row pt-4">
             <div class="col-3 px-0 left-tab">
-                <div class="profile-top-banner" id="left-panel-top-banner">
+                <div id="left-panel-top-banner">
                     <!-- left panel top banner template fill here  -->
                 </div>
                 <div class="px-4 py-4">
@@ -235,40 +236,15 @@
         </div>
     </div>
 
-    <!-- left panel template -->
-    <script id="template-left-panel-user-details" type="text/template">
-            <div class="full-name">
-                {{name}}
-            </div>
-            <div class="user-name mt-2">
-                {{mailId}}
-            </div>
+    <!-- templates loading session start here.... these session hide in DOM -->
 
-            <div class="d-flex justify-content-between">
-                <div class="mt-3">
-                    <div class="follower-count">{{followersCount}}</div>
-                    <div class="follower-text">Followers</div>
-                </div>
-                <div class="mt-3">
-                    <div class="follower-count">{{followingCount}}</div>
-                    <div class="follower-text">Following</div>
-                </div>
-            </div>
-    </script>
+    <!-- header template loaded here by scipt -->
+    <div id="includedHeaderContent" style="display: none;"></div>
 
-    <!-- left panel tabs template -->
-    <script id="template-left-panel-tab-details-post-login-specific" type="text/template">
-        <a class="d-flex mt-3" href="{{path}}" id="syne-tab{{id}}">
-            <img src="{{iconUrl}}">
-            <div class="px-2">{{tabName}}</div>
-        </a>
-    </script>
+    <!-- left panel template loaded here by scipt -->
+    <div id="includedLeftPanelContent" style="display: none;"></div>
 
-    <!-- left panel top banner template -->
-    <script id="template-left-panel-top-banner" type="text/template">
-        <img class="img-fluid" src="{{coverPhotoUrl}}">
-        <img class="img-fluid profile-photo" src="{{profilePhotoUrl}}">
-    </script>
+    <!-- templates loading session End here-->
 
     <!-- profile completion showing section template -->
     <script id="template-profile-comleption-section" type="text/template">

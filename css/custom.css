@@ -894,8 +894,8 @@
     .msg-count {
         position: absolute;
         background: red;
-        height: 16px;
-        width: 16px;
+        height: 17px;
+        width: 17px;
         font-size: 12px;
         font-weight: bold;
         border-radius: 50%;
@@ -906,13 +906,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+}
     
     .not-count {
         position: absolute;
         background: red;
-        height: 16px;
-        width: 16px;
+        height: 17px;
+        width: 17px;
         font-size: 12px;
         font-weight: bold;
         border-radius: 50%;
@@ -1278,3 +1278,22 @@
         left: 68px;
         top: 2px;
     }
+
+    .start-a-project-border {
+        border: solid 1px #16c0ef;
+        border-radius: 3px;
+      }
+    
+    .explore-project-btn {
+        font-family: HKGrotesk;
+        font-size: 14px;
+        font-weight: bold;
+        color: #7c8796;
+      }
+      .explore-project-btn:hover {
+       text-decoration: none;
+       color: #7c8796;
+      }
+      .start-a-project-btn {
+          font-family: HKGrotesk;
+      }
