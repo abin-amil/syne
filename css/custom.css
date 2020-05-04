@@ -59,6 +59,12 @@
         width: 35%;
     }
     
+    .countryInput2 .selectize-dropdown,
+    .countryInput3 .selectize-dropdown {
+        left: 0px!important;
+        top: 55.5px!important;
+    }
+    
     .cityInput {
         width: 30%;
     }
@@ -226,6 +232,10 @@
         font-size: 14px !important;
         font-weight: bold !important;
         color: #7c8796 !important;
+    }
+    
+    .close:focus {
+        outline: none;
     }
     
     .proceedButton {

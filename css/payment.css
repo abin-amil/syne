@@ -1,4 +1,6 @@
-.custom-radio .custom-control-label::before, .custom-control-label::after, .custom-checkbox .custom-control-label::before {
+.custom-radio .custom-control-label::before,
+.custom-control-label::after,
+.custom-checkbox .custom-control-label::before {
     margin-top: -7px !important;
 }
 
@@ -27,7 +29,7 @@
     background-color: #ffffff;
 }
 
-.last-step-msg{
+.last-step-msg {
     max-width: 500px;
 }
 
@@ -74,8 +76,215 @@
     color: #16c0ef;
 }
 
-@media(max-width: 768px) { 
+
+/* payement-logged-in user */
+
+.wallet-details h1 {
+    font-family: HKGrotesk-reg;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.71;
+    letter-spacing: 0.2px;
+    color: #5d677e;
+}
+
+.payment-methods label {
+    cursor: pointer;
+    color: #7c8796!important;
+}
+
+.wallet-row .wallet {
+    border-radius: 4px;
+    border: solid 1px #eef0f5;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 7px;
+}
+
+.wallet-row .bank {
+    padding: 7px 14px;
+}
+
+.wallet-row .wallet .w-prof {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: #eef0f5;
+    margin: 0 auto;
+}
+
+.wallet-row .wallet label {
+    font-family: HKGrotesk-reg;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #5d677e;
+    text-transform: uppercase;
+}
+
+.payment-methods,
+.payment-amount-text-box {
+    width: 85%;
+}
+
+.payment-methods .custom-control {
+    padding: 10px!important;
+    position: relative;
+}
+
+.payment-container {
+    position: relative;
+}
+
+.w-btn {
+    background: url('../img/lock-white.png');
+    background-repeat: no-repeat;
+    background-position: 41px 8px;
+    background-color: #d8d8d8!important;
+}
+
+.custom-control .lbl img {
+    position: absolute;
+    right: 10px;
+}
+
+.custom-control .upid {
+    position: relative;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.upid label {
+    position: absolute;
+    left: 11px;
+    top: 3px;
+    line-height: 1.45;
+    letter-spacing: 0.15px;
+    color: #606060!important;
+}
+
+.upid input {
+    padding: 17px 0 0px 13px;
+    height: 48px;
+}
+
+.cd-details .new-card {
+    margin-top: 16px;
+    text-align: center;
+    border: 1px solid #16c0ef;
+}
+
+.cd-details .new-card .nw-btn {
+    font-family: HKGrotesk;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.71;
+    letter-spacing: 0.2px;
+    color: #16c0ef;
+    outline: #16c0ef;
+    width: 100%;
+}
+
+.new-card-details .cd-no {
+    height: 45px;
+    margin: 15px 0;
+}
+
+.cd-no label {
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.45;
+    letter-spacing: 0.15px;
+    color: #606060!important;
+}
+
+.cd-no input {
+    padding: 16px 7px 0px;
+    height: 43px;
+}
+
+.upid input:focus,
+.cd-no input:focus,
+.new-card-details .exp-date input:focus,
+.new-card-details .cvv input:focus {
+    border: 1px solid #16c0ef!important;
+}
+
+.new-card-details .cvv {
+    width: 73px;
+    margin-left: 13px
+}
+
+.new-card-details input::placeholder {
+    font-family: HKGrotesk-reg;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.43;
+    letter-spacing: 0.2px;
+    color: #bac3cf!important;
+}
+
+.cd-details label {
+    font-family: HKGrotesk;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.19px;
+    color: #2a3844;
+}
+
+.cd-details label span {
+    color: #bac3cf!important;
+}
+
+.cd-details label strong {
+    color: #5d677e!important;
+}
+
+.up p {
+    font-family: HKGrotesk;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.2px;
+    color: #16c0ef;
+    text-align: right;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.del-btn {
+    position: absolute;
+    right: 5px;
+}
+
+.del-btn button {
+    background-color: #fff;
+    outline: none;
+    font-family: HKGrotesk;
+    font-size: 12px;
+    color: #e36c81;
+    border: none;
+}
+
+.del-btn button:focus {
+    border: none;
+    outline: none;
+}
+
+.cvv-bank input {
+    width: 65px;
+    margin-right: 6px;
+}
+
+.c-page-2 .payment-container {
+    position: relative;
+}
+
+@media(max-width: 768px) {
     .bg-grey-light {
         background-color: #ffffff !important;
-    } 
+    }
 }

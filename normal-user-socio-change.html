@@ -148,7 +148,7 @@
                                     </div>
                                     <div class="milestone-title">
                                         <h4>13 days to go</h4>
-                                        <h2>Title of the Milestone <span>Edit</span></h2>
+                                        <h2>Title of the Milestone </h2>
                                     </div>
                                 </div>
                                 <p>Our long term goal is to enable a source of income for the differently-abled, and create a Centre of Excellence (CoE) with advanced research and learning facility. We believe our goals will help the differently abled individuals
@@ -171,7 +171,7 @@
                                     </div>
                                     <div class="milestone-title">
                                         <h4>31st Dec 2019 </h4>
-                                        <h2>New Year Special <span>Edit</span></h2>
+                                        <h2>New Year Special </h2>
                                     </div>
                                 </div>
                                 <div class="details d-md-flex">
@@ -430,8 +430,8 @@
                             <div class="project-preview-amount-raised-time"><span style="font-weight: bold;">5</span> months to go</div>
                         </div>
                         <div class="target-amount-desc py-2 time-out"><strong>Some Khan </strong>signed 21 minutes ago</div>
-                        <button type="button" class="btn w-100  support_btn_success is-success">
-                            Support
+                        <button type="button" class="btn w-100  support_btn_success is-success" id="supbtn">
+                            <label class="label">Support</label> 
                         </button>
                         <div class="d-flex flex-wrap     justify-content-between py-3 px-2">
                             <div>
@@ -450,15 +450,13 @@
                         <div class="share-follow-btn">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <button class="btn w-100">
-                                    <img src="img/share-grey.png" alt="share-icon">
-                                    Share
-                                </button>
+                                    <button class="btn w-100 s-btn">
+                                        Share
+                                    </button>
                                 </div>
                                 <div class="col-md-6">
-                                    <button class="btn w-100">
-                                    <img src="img/follow-grey.png" alt="follow-icon">
-                                    Follow
+                                    <button class="btn w-100 f-btn">
+                                     <label id="f-btn">Follow</label>   
                                 </button>
                                 </div>
                             </div>
@@ -614,6 +612,28 @@
 
             $(this).addClass('current');
             $("#" + tab_id).addClass('current');
+        });
+    });
+    $(".support_btn_success").click(function() {
+        if ($(this).hasClass("support_btn_success")) {
+            $(this).addClass("support_btn_active");
+            $(this).removeClass("support_btn_success");
+
+        } else {
+            $(this).addClass("support_btn_success");
+            $(this).removeClass("support_btn_active");
+
+        }
+
+        $(".label").text(function(i, v) {
+            return v === 'Support' ? 'You Supported this' : 'Support'
+        });
+
+    });
+    $(".f-btn").click(function() {
+
+        $("#f-btn").text(function(i, v) {
+            return v === 'Follow' ? 'Unfollow' : 'Follow'
         });
     });
     // click heart

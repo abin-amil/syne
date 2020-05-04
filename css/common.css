@@ -690,4 +690,5 @@ input.common-input {
 .sub-icons {
     position: relative;
     top: -1px;
+    object-fit: contain;
 }

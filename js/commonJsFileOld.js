@@ -1,19 +1,34 @@
+
+// left panel change, separate template created and loaded that static template.
+// so the code which is written as common functionality keep in this file
+// changes till 03 may 2020 available in this file
+
 $(document).ready(function () {
     createHeader(true, true, true, true);
     createFooter();
     let path = window.location.pathname;
     let page = path.split("/").pop();
-    LeftPanelAndTopBannerCreation();
     if (page == 'template.html') {
-        createLeftPanel();
+        LeftPanelAndTopBannerCreation();
     }
     recommendedProjectPanelCreation();
     whoToFollowListPanelCreation();
 });
 
-// need to rewrite this function for top banner creation only, after left panel changes are done.
 function LeftPanelAndTopBannerCreation(type) {
-    $("#includedLeftPanelContent").load('templates/leftPanel.html', function () {
+    let template;
+    switch (type) {
+        case 1:
+            template = 'templates/leftPanelTypeOne.html';
+            break;
+        case 1:
+            template = 'templates/leftPanelTypeTwo.html';
+            break;
+        default:
+            template = 'templates/leftPanel.html';
+            break;
+    }
+    $("#includedLeftPanelContent").load(template, function () {
         createTopBanner();
         createLeftPanelTopBanner();
         createLeftPanelUserDetails();
@@ -35,9 +50,8 @@ function createLeftPanelUserDetails() {
             .replace(/{{userIntroDetails}}/g, userDetails.userIntroDetails)
             .replace(/{{birthDay}}/g, userDetails.birthDay)
             .replace(/{{location}}/g, userDetails.location);
-        if (document.getElementById("left-panel-user-details")) {
-            document.getElementById("left-panel-user-details").innerHTML = leftPanelFinalHtml;
-        }
+
+        document.getElementById("left-panel-user-details").innerHTML = leftPanelFinalHtml;
     }
 }
 
@@ -212,70 +226,6 @@ function createHeader(isStartPojectBtnAvailable = false,
 
 }
 
-
-
-// user posts/ news feed creation section
-function newsFeedsCreation() {
-    if (document.getElementById("news-feeds")) {
-        let newsFeed = document.getElementById("template-news-feed");
-        let newsFeedFinalHtml = "";
-
-        dashBoardData.newsFeedData.forEach((newsFeedSingleUnit, index) => {
-            let newsFeedCardHtml = newsFeed.innerHTML;
-            let newsFeedCardFinalHtml = "";
-            let isTargetAmountDisplay = newsFeedSingleUnit.targetAmount !== '' ? 'block' : 'none';
-            let isprogressBarVisible = newsFeedSingleUnit.targetAmount !== '' ? 'block' : 'none';
-            let isRaisedAmountDisplay = newsFeedSingleUnit.raisedAmount !== '' ? 'block' : 'none';
-            let showContributors = newsFeedSingleUnit.contributorsCount !== '' ? 'block' : 'none';
-            let showPercentage = newsFeedSingleUnit.completionPercentage !== '' ? 'block' : 'none';
-            let isLikeByMe = newsFeedSingleUnit.isLikedByMe === 'true' ? 'contents' : 'none';
-            let progessBarWidth = 80;
-            newsFeedCardFinalHtml += newsFeedCardHtml.replace(/{{name}}/g, newsFeedSingleUnit.name)
-                .replace(/{{dataID}}/g, newsFeedSingleUnit.id)
-                .replace(/{{userImage}}/g, newsFeedSingleUnit.userImage)
-                .replace(/{{email}}/g, newsFeedSingleUnit.email)
-                .replace(/{{postedTimeDuration}}/g, newsFeedSingleUnit.postedTimeDuration)
-                .replace(/{{imageUrl}}/g, newsFeedSingleUnit.imageUrl)
-                .replace(/{{descriptionHeading}}/g, newsFeedSingleUnit.descriptionHeading)
-                .replace(/{{descripionContent}}/g, newsFeedSingleUnit.descriptionContent)
-                .replace(/{{targetAmount}}/g, newsFeedSingleUnit.targetAmount)
-                .replace(/{{isTargetAmountDisplay}}/g, isTargetAmountDisplay)
-                .replace(/{{isprogressBarVisible}}/g, isprogressBarVisible)
-                .replace(/{{progessBarWidth}}/g, progessBarWidth)
-                .replace(/{{raisedAmount}}/g, newsFeedSingleUnit.raisedAmount)
-                .replace(/{{isRaisedAmountDisplay}}/g, isRaisedAmountDisplay)
-                .replace(/{{contributorsCount}}/g, newsFeedSingleUnit.contributorsCount)
-                .replace(/{{showContributors}}/g, showContributors)
-                .replace(/{{completionPercentage}}/g, newsFeedSingleUnit.completionPercentage)
-                .replace(/{{showPercentage}}/g, showPercentage)
-                .replace(/{{isLikeByMe}}/g, isLikeByMe)
-                .replace(/{{likeCount}}/g, newsFeedSingleUnit.likedCount)
-                .replace(/{{shareCount}}/g, newsFeedSingleUnit.shareCount)
-                .replace(/{{commentCount}}/g, newsFeedSingleUnit.commentCount);
-
-            newsFeedFinalHtml += newsFeedCardFinalHtml;
-        });
-
-        document.getElementById("news-feeds").innerHTML += newsFeedFinalHtml;
-    }
-}
-
 function createFooter() {
     $("#footer").load("templates/footer.html");
-}
-
-function createLeftPanel(type) {
-    let template;
-    switch (type) {
-        case 1:
-            template = 'templates/leftPanelTypeOne.html';
-            break;
-        case 2:
-            template = 'templates/leftPanelTypeTwo.html';
-            break;
-        default:
-            template = 'templates/leftPanelTypeOne.html';
-            break;
-    }
-    $("#left-panel").load(template);
 }

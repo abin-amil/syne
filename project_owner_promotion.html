@@ -62,8 +62,8 @@
                         <div>
                             <div class="project-preview-title">School of Love</div>
                             <div class="project-preview-sub-title d-flex">
-                                <div>Disability</div>
-                                <div class="px-2">Muvattupuzha, India</div>
+                                <div><img src="./img/ability.png" class="sub-icons"> Disability</div>
+                                <div class="px-2"><img src="./img/loc-fill.png" class="sub-icons"> Muvattupuzha, India</div>
                             </div>
                         </div>
                     </div>
@@ -484,15 +484,14 @@
                         <div class="share-follow-btn">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <button class="btn w-100">
-                                    <img src="img/share-grey.png" alt="share-icon">
+                                    <button class="btn w-100 s-btn">
+                                 
                                     Share
                                 </button>
                                 </div>
                                 <div class="col-lg-6">
-                                    <button class="btn w-100">
-                                    <img src="img/follow-grey.png" alt="follow-icon">
-                                    Follow
+                                    <button class="btn w-100 f-btn">
+                                        <label id="f-btn">Follow</label> 
                                 </button>
                                 </div>
                             </div>
@@ -671,6 +670,11 @@
 
             $(this).addClass('current');
             $("#" + tab_id).addClass('current');
+        });
+    });
+    $(".f-btn").click(function() {
+        $("#f-btn").text(function(i, v) {
+            return v === 'Follow' ? 'Unfollow' : 'Follow'
         });
     });
     // click heart
