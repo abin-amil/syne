@@ -1023,6 +1023,10 @@
         font-weight: bold;
         color: #ffffff;
     }
+
+    .followIcons {
+        height: 15px;
+    }
     
     .unfollowButton {
         height: 40px;
