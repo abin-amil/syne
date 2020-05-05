@@ -15,9 +15,9 @@ $(document).ready(function () {
 function LeftPanelAndTopBannerCreation(type) {
     $("#includedLeftPanelContent").load('templates/leftPanel.html', function () {
         createTopBanner();
-        createLeftPanelTopBanner();
-        createLeftPanelUserDetails();
-        createLeftPanelTabs();
+        // createLeftPanelTopBanner();
+        // createLeftPanelUserDetails();
+        // createLeftPanelTabs();
     });
 }
 
@@ -48,8 +48,7 @@ function createLeftPanelTopBanner() {
         let leftPanelTopBannerHtml = leftPanelTopBanner.innerHTML;
         let leftPanelTopBannerFinalHtml = "";
 
-        leftPanelTopBannerFinalHtml += leftPanelTopBannerHtml.replace(/{{coverPhotoUrl}}/g, dashBoardData.coverPhotoUrl)
-            .replace(/{{profilePhotoUrl}}/g, dashBoardData.profilePhotoUrl);
+        leftPanelTopBannerFinalHtml += leftPanelTopBannerHtml.replace(/{{coverPhotoUrl}}/g, dashBoardData.coverPhotoUrl);
         if (document.getElementById("left-panel-top-banner")) {
             document.getElementById("left-panel-top-banner").innerHTML = leftPanelTopBannerFinalHtml;
         }
@@ -58,15 +57,14 @@ function createLeftPanelTopBanner() {
 }
 
 function createTopBanner() {
-    if (document.getElementById("template-left-panel-top-banner")) {
-        let leftPanelTopBanner = document.getElementById("template-left-panel-top-banner");
-        let leftPanelTopBannerHtml = leftPanelTopBanner.innerHTML;
-        let leftPanelTopBannerFinalHtml = "";
+    if (document.getElementById("template-top-banner")) {
+        let TopBanner = document.getElementById("template-top-banner");
+        let TopBannerHtml = TopBanner.innerHTML;
+        let TopBannerFinalHtml = "";
 
-        leftPanelTopBannerFinalHtml += leftPanelTopBannerHtml.replace(/{{coverPhotoUrl}}/g, dashBoardData.coverPhotoUrl)
-            .replace(/{{profilePhotoUrl}}/g, dashBoardData.profilePhotoUrl);
+        TopBannerFinalHtml += TopBannerHtml.replace(/{{coverPhotoUrl}}/g, dashBoardData.coverPhotoUrl);
         if (document.getElementById("top-banner")) {
-            document.getElementById("top-banner").innerHTML = leftPanelTopBannerFinalHtml;
+            document.getElementById("top-banner").innerHTML = TopBannerFinalHtml;
         }
 
     }
