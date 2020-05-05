@@ -1059,6 +1059,34 @@
         font-weight: bold;
         color: #7c8796;
     }
+
+    .followingButton:hover {
+        height: 40px;
+        border-radius: 3px;
+        border: solid 1px #fb4f6d;
+        background-color: #ffffff;
+        font-family: HKGrotesk;
+        font-size: 15px;
+        font-weight: bold;
+        color: #fb4f6d;
+        content: 'ADD';
+    }
+    .followingButton::after {
+        content: 'Following';
+    }
+    .followingButton:hover:after {
+        content: 'Unfollow';
+    }
+    .followingButton .followIcons:last-child {
+        display: none;  
+    }
+    .followingButton:hover .followIcons:last-child {
+        display: block;  
+    }
+    .followingButton:hover .followIcons:first-child {
+        display: none; 
+    }
+
     
     .required-field {
         font-family: HKGrotesk;

@@ -692,3 +692,12 @@ input.common-input {
     top: -1px;
     object-fit: contain;
 }
+.top-banner-profile-photo {
+    width: 90px !important;
+    position: relative;
+    left: 6%;
+    max-height: 140px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-top: -40px;
+}

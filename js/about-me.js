@@ -9,6 +9,8 @@ $(document).ready(function () {
         $("body").addClass("modal-blur");
         e.preventDefault();
     });
+    createLeftPanel(2);
+
 
     // $('textarea#userDetailInto').change(function() {
     //     var userDetailInto = $.trim($("textarea#userDetailInto").val());

@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    createHeader(true, true, true, true);
+    // createHeader(true, true, true, true);
+    createHeader(true, true, true, false, true, true);
+
     createFooter();
     let path = window.location.pathname;
     let page = path.split("/").pop();
@@ -279,4 +281,5 @@ function createLeftPanel(type) {
             break;
     }
     $("#left-panel").load(template);
+    
 }

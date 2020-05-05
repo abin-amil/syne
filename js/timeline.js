@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    setTab(1);
     $(".user-comment-item-div").mouseleave(function () {
         $(this).children()[0].children[1].children[1].style["display"] = "none";
     });
@@ -24,6 +23,8 @@ $(document).ready(function () {
 
     createHeader(true, true, true, false, true, true);
     createLeftPanel(2);
+    setTab(1);
+
 });
 
 $("#syne-delete-popup .modalclose").click(function (e) {
