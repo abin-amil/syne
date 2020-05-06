@@ -309,5 +309,12 @@ function createLeftPanel(type) {
                 setTab(8);
                 break;
         }
+
+        $(".modal-btn").click(function (e) {
+            var modl_id = $(this).attr('data-target');
+            $("#" + modl_id).addClass("open-pop");
+            $("body").addClass("modal-blur");
+            e.preventDefault();
+        });
     });
 }
