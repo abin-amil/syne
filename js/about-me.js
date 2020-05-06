@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    setTab(2);
+    // setTab(2);
     addDefaultWorkExperience();
     addDefaultSchool();
     $(".modal-btn").click(function (e) {

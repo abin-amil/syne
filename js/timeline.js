@@ -23,8 +23,7 @@ $(document).ready(function () {
 
     createHeader(true, true, true, false, true, true);
     createLeftPanel(2);
-    setTab(1);
-
+    // setTab(1);
 });
 
 $("#syne-delete-popup .modalclose").click(function (e) {

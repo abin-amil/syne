@@ -280,6 +280,34 @@ function createLeftPanel(type) {
             template = 'templates/leftPanelTypeOne.html';
             break;
     }
-    $("#left-panel").load(template);
-    
+    $("#left-panel").load(template, function () {
+        let path = window.location.pathname;
+        let page = path.split("/").pop();
+        switch (page) {
+            case 'timeline.html':
+                setTab(1);
+                break;
+            case 'about-me.html':
+                setTab(2);
+                break;
+            case 'my-projects.html':
+                setTab(3);
+                break;
+            case 'events.html':
+                setTab(4);
+                break;
+            case 'stories.html':
+                setTab(5);
+                break;
+            case 'organisation.html':
+                setTab(6);
+                break;
+            case 'transactions.html':
+                setTab(7);
+                break;
+            case 'settings-privacy.html':
+                setTab(8);
+                break;
+        }
+    });
 }
