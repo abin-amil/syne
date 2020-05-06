@@ -293,6 +293,7 @@
         border-radius: 3px;
         border: solid 1px #dde2e9;
         position: relative;
+        max-width: 435px !important;
     }
     
     .syne-project-description {
