@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    createHeader(true, true, true, false, true, true);
+    createLeftPanel(1);
     setTab(2);
 
     $(".modal-btn").click(function (e) {

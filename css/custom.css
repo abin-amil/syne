@@ -293,6 +293,7 @@
         border-radius: 3px;
         border: solid 1px #dde2e9;
         position: relative;
+        max-width: 435px !important;
     }
     
     .syne-project-description {
@@ -894,8 +895,8 @@
     .msg-count {
         position: absolute;
         background: red;
-        height: 16px;
-        width: 16px;
+        height: 17px;
+        width: 17px;
         font-size: 12px;
         font-weight: bold;
         border-radius: 50%;
@@ -906,13 +907,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+}
     
     .not-count {
         position: absolute;
         background: red;
-        height: 16px;
-        width: 16px;
+        height: 17px;
+        width: 17px;
         font-size: 12px;
         font-weight: bold;
         border-radius: 50%;
@@ -1033,6 +1034,10 @@
         font-weight: bold;
         color: #ffffff;
     }
+
+    .followIcons {
+        height: 15px;
+    }
     
     .unfollowButton {
         height: 40px;
@@ -1055,6 +1060,34 @@
         font-weight: bold;
         color: #7c8796;
     }
+
+    .followingButton:hover {
+        height: 40px;
+        border-radius: 3px;
+        border: solid 1px #fb4f6d;
+        background-color: #ffffff;
+        font-family: HKGrotesk;
+        font-size: 15px;
+        font-weight: bold;
+        color: #fb4f6d;
+        content: 'ADD';
+    }
+    .followingButton::after {
+        content: 'Following';
+    }
+    .followingButton:hover:after {
+        content: 'Unfollow';
+    }
+    .followingButton .followIcons:last-child {
+        display: none;  
+    }
+    .followingButton:hover .followIcons:last-child {
+        display: block;  
+    }
+    .followingButton:hover .followIcons:first-child {
+        display: none; 
+    }
+
     
     .required-field {
         font-family: HKGrotesk;
@@ -1278,3 +1311,22 @@
         left: 68px;
         top: 2px;
     }
+
+    .start-a-project-border {
+        border: solid 1px #16c0ef;
+        border-radius: 3px;
+      }
+    
+    .explore-project-btn {
+        font-family: HKGrotesk;
+        font-size: 14px;
+        font-weight: bold;
+        color: #7c8796;
+      }
+      .explore-project-btn:hover {
+       text-decoration: none;
+       color: #7c8796;
+      }
+      .start-a-project-btn {
+          font-family: HKGrotesk;
+      }

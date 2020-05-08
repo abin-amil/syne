@@ -2,34 +2,36 @@
 <script id="template-header" type="text/template">
     <div class="full-wrapper header post-page-header">
         <div class="main-wrapper">
-            <div class="headerwrap flex">
-                <div class="header-l flex flex-h-start flex-v-base">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
                     <div class="logo h-100">
                         <img src="img/syne-logo.png" alt="logo">
                     </div>
                     <div class="header-menu h-100">
-                        <ul class="d-flex align-items-center">
-                            <li style="display:{{startProjectBtn}};">
-                                <a class="txt-blue f14 modal-button" data-toggle="modal"
+                        <div class="d-flex align-items-center">
+                            <div class="start-a-project-border " style="display:{{startProjectBtn}};">
+                                <a class="start-a-project-btn d-flex text-nowrap txt-blue f14 modal-button px-4 py-2" data-toggle="modal"
                                     data-target="#exampleModal">
                                     Start a Project
                                 </a>
-                            </li>
-                            <li style="display:{{exploreProjectBtn}};">
-                                <a href="explore-projects.html" class="f14">
+                            </div>
+                            <div style="display:{{exploreProjectBtn}};">
+                                <a href="explore-projects.html" class="f14 explore-project-btn px-4 py-2 text-nowrap">
                                     Explore Projects
                                 </a>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="heade-r flex flex-v-center">
-                    <div class="syne-inputbox d-flex align-items-center bg-grey-light mr-2" style="display:{{seachArea}};">
-                        <img style="height: 20px;" src="img/svgImages/search-icon-grey.svg">
-                        <input type="text" name="projectSearch"
-                            class="form-control bg-grey-light font-weight-normal" placeholder="Search here">
-                    </div>
+                <div class="syne-inputbox d-flex align-items-center w-100 mx-md-5" style="display:{{seachArea}};">
+                    <img class="pl-3" src="img/svgImages/search-icon-grey.svg">
+                    <input type="text" name="projectSearch"
+                        class="form-control search-placeholder" placeholder="Search here...">
+                </div>
+
+                <div class="d-flex align-items-center">
+                    
                     <div class="position-relative px-4" style="display:{{msgIcon}};">
                         <img class=" nav-msg-icon" src="img/msg-icon.svg">
                         <div class="msg-count">5</div>

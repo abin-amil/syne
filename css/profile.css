@@ -19,9 +19,9 @@
 
 .profile-overlay {
     width: 115px;
-    height: 90px;
+    height: 88px;
     position: relative;
-    left: 7%;
+    left: 7.1%;
     border-radius: 50%;
     margin-top: -90px;
     overflow: hidden;
@@ -181,6 +181,18 @@ input[type=text] {
 
 .font-weight-normal {
     font-weight: normal;
+}
+
+.search-placeholder {
+    font-family: HKGrotesk !important;
+    color: #bac3cf !important;
+    font-size: 14px !important;
+}
+
+.search-placeholder::placeholder {
+    font-family: HKGrotesk-reg !important;
+    color: #bac3cf !important;
+    font-size: 14px !important;
 }
 
 .flex-v-base {

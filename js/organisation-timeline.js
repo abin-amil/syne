@@ -1,3 +1,3 @@
 $(document).ready(function () {
-    setTab(1);
+    // setTab(1);
 });
