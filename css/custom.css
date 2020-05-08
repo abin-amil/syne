@@ -59,6 +59,12 @@
         width: 35%;
     }
     
+    .countryInput2 .selectize-dropdown,
+    .countryInput3 .selectize-dropdown {
+        left: 0px!important;
+        top: 55.5px!important;
+    }
+    
     .cityInput {
         width: 30%;
     }
@@ -228,6 +234,10 @@
         color: #7c8796 !important;
     }
     
+    .close:focus {
+        outline: none;
+    }
+    
     .proceedButton {
         width: 220px;
         /* height: 50px; */
@@ -358,7 +368,7 @@
     
     .post-page-header {
         background-color: #ffffff;
-        border-bottom: 1px #f9fafc;
+        border-bottom: 1px solid #f9fafc;
     }
     
     .coverPhoto {
