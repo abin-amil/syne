@@ -502,15 +502,15 @@
                         <div class="share-follow-btn">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <button class="btn w-100" disabled>
-                                    <img src="img/share-grey.png" alt="share-icon">
+                                    <button class="btn w-100 s-btn">
+                                   
                                     Share
                                 </button>
                                 </div>
                                 <div class="col-md-6">
-                                    <button class="btn w-100" disabled>
-                                    <img src="img/follow-grey.png" alt="follow-icon">
-                                    Follow
+                                    <button class="f-btn">
+                                        <label id="f-btn">Follow</label> 
+                                  
                                 </button>
                                 </div>
                             </div>
@@ -647,6 +647,11 @@
 
             $(this).addClass('current');
             $("#" + tab_id).addClass('current');
+        });
+    });
+    $(".f-btn").click(function() {
+        $("#f-btn").text(function(i, v) {
+            return v === 'Follow' ? 'Unfollow' : 'Follow'
         });
     });
     // click heart

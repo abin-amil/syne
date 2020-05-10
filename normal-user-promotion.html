@@ -145,7 +145,7 @@
                                     </div>
                                     <div class="milestone-title">
                                         <h4>13 days to go</h4>
-                                        <h2>Title of the Milestone <span>Edit</span></h2>
+                                        <h2>Title of the Milestone </h2>
                                     </div>
                                 </div>
                                 <p>Our long term goal is to enable a source of income for the differently-abled, and create a Centre of Excellence (CoE) with advanced research and learning facility. We believe our goals will help the differently abled individuals
@@ -168,7 +168,7 @@
                                     </div>
                                     <div class="milestone-title">
                                         <h4>31st Dec 2019 </h4>
-                                        <h2>New Year Special <span>Edit</span></h2>
+                                        <h2>New Year Special </h2>
                                     </div>
                                 </div>
                                 <div class="details d-md-flex">
@@ -443,15 +443,14 @@
                         <div class="share-follow-btn">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <button class="btn w-100">
-                                    <img src="img/share-grey.png" alt="share-icon">
+                                    <button class="btn w-100 s-btn">
+                                   
                                     Share
                                 </button>
                                 </div>
                                 <div class="col-lg-6">
-                                    <button class="btn w-100">
-                                    <img src="img/follow-grey.png" alt="follow-icon">
-                                    Follow
+                                    <button class="f-btn">
+                                        <label id="f-btn">Follow</label> 
                                 </button>
                                 </div>
                             </div>
@@ -627,6 +626,11 @@
 
             $(this).addClass('current');
             $("#" + tab_id).addClass('current');
+        });
+    });
+    $(".f-btn").click(function() {
+        $("#f-btn").text(function(i, v) {
+            return v === 'Follow' ? 'Unfollow' : 'Follow'
         });
     });
     // click heart
