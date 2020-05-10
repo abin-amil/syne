@@ -282,6 +282,9 @@ function createLeftPanel(type) {
         case 5:
             template = 'templates/leftPanelTypeFive.html';
             break;
+        case 6:
+            template = 'templates/leftPanelTypeSix.html';
+            break;
         default:
             template = 'templates/leftPanelTypeOne.html';
             break;
