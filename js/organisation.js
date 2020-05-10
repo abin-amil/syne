@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    setTab(6);
+    createLeftPanel(1)
     createOrganisationList();
 });
 

@@ -1,6 +1,6 @@
 $(document).ready(function () {
     newsFeedsCreation();
-    // setTab(3);
+    createLeftPanel(1)
 });
 
 function newsFeedsCreation() {

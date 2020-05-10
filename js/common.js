@@ -279,6 +279,9 @@ function createLeftPanel(type) {
         case 4:
             template = 'templates/leftPanelTypeFour.html';
             break;
+        case 5:
+            template = 'templates/leftPanelTypeFive.html';
+            break;
         default:
             template = 'templates/leftPanelTypeOne.html';
             break;
@@ -288,6 +291,7 @@ function createLeftPanel(type) {
         let page = path.split("/").pop();
         switch (page) {
             case 'timeline.html':
+            case 'organisation-timeline.html':
                 setTab(1);
                 break;
             case 'about-me.html':
@@ -310,6 +314,9 @@ function createLeftPanel(type) {
                 break;
             case 'settings-privacy.html':
                 setTab(8);
+                break;
+            default:
+                setTab(1);
                 break;
         }
 
