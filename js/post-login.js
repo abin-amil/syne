@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    createPostLoginSpecificLeftPanelTabs();
+    createLeftPanel(2);
     createProfileCompletionSection();
     newsFeedsCreation();
     recommendedOrganisationListPanelCreation();
@@ -21,27 +21,7 @@ $(document).ready(function () {
 });
 
 
-function createPostLoginSpecificLeftPanelTabs() {
-    if (document.getElementById("template-left-panel-tab-details-post-login-specific")) {
-        let leftpanelTab = document.getElementById("template-left-panel-tab-details-post-login-specific");
-        let leftPanelTabHtml = leftpanelTab.innerHTML;
-        let leftPanelTabFinalHtml = "";
-        postLoginSpecificlLeftPanelTabs.forEach((tab, index) => {
-            leftPanelTabFinalHtml += leftPanelTabHtml.replace(/{{iconUrl}}/g, tab.iconUrl)
-                .replace(/{{tabName}}/g, tab.name)
-                .replace(/{{path}}/g, tab.path)
-                .replace(/{{id}}/g, tab.id);
 
-            if (tab.id == 6) {
-                console.log('amil');
-            }
-        });
-
-        if (document.getElementById("left-panel-tabs")) {
-            document.getElementById("left-panel-tabs").innerHTML = leftPanelTabFinalHtml;
-        }
-    }
-}
 
 function adjustStyle() {
     document.getElementById("syne-tab6").classList.add('ml-1')
@@ -57,52 +37,6 @@ function createProfileCompletionSection() {
             .replace(/{{profileCompletionPercentage}}/g, dashBoardData.profileCompletionPercentage);
 
         document.getElementById("profile-completion-section").innerHTML = profileCompletionsectionFinalHtml;
-    }
-}
-
-// user posts/ news feed creation section
-function newsFeedsCreation() {
-    if (document.getElementById("news-feeds")) {
-        let newsFeed = document.getElementById("template-news-feed");
-        let newsFeedFinalHtml = "";
-
-        dashBoardData.newsFeedData.forEach((newsFeedSingleUnit, index) => {
-            let newsFeedCardHtml = newsFeed.innerHTML;
-            let newsFeedCardFinalHtml = "";
-            let isTargetAmountDisplay = newsFeedSingleUnit.targetAmount !== '' ? 'block' : 'none';
-            let isprogressBarVisible = newsFeedSingleUnit.targetAmount !== '' ? 'block' : 'none';
-            let isRaisedAmountDisplay = newsFeedSingleUnit.raisedAmount !== '' ? 'block' : 'none';
-            let showContributors = newsFeedSingleUnit.contributorsCount !== '' ? 'block' : 'none';
-            let showPercentage = newsFeedSingleUnit.completionPercentage !== '' ? 'block' : 'none';
-            let isLikeByMe = newsFeedSingleUnit.isLikedByMe === 'true' ? 'contents' : 'none';
-            let progessBarWidth = 80;
-            newsFeedCardFinalHtml += newsFeedCardHtml.replace(/{{name}}/g, newsFeedSingleUnit.name)
-                .replace(/{{dataID}}/g, newsFeedSingleUnit.id)
-                .replace(/{{userImage}}/g, newsFeedSingleUnit.userImage)
-                .replace(/{{email}}/g, newsFeedSingleUnit.email)
-                .replace(/{{postedTimeDuration}}/g, newsFeedSingleUnit.postedTimeDuration)
-                .replace(/{{imageUrl}}/g, newsFeedSingleUnit.imageUrl)
-                .replace(/{{descriptionHeading}}/g, newsFeedSingleUnit.descriptionHeading)
-                .replace(/{{descripionContent}}/g, newsFeedSingleUnit.descriptionContent)
-                .replace(/{{targetAmount}}/g, newsFeedSingleUnit.targetAmount)
-                .replace(/{{isTargetAmountDisplay}}/g, isTargetAmountDisplay)
-                .replace(/{{isprogressBarVisible}}/g, isprogressBarVisible)
-                .replace(/{{progessBarWidth}}/g, progessBarWidth)
-                .replace(/{{raisedAmount}}/g, newsFeedSingleUnit.raisedAmount)
-                .replace(/{{isRaisedAmountDisplay}}/g, isRaisedAmountDisplay)
-                .replace(/{{contributorsCount}}/g, newsFeedSingleUnit.contributorsCount)
-                .replace(/{{showContributors}}/g, showContributors)
-                .replace(/{{completionPercentage}}/g, newsFeedSingleUnit.completionPercentage)
-                .replace(/{{showPercentage}}/g, showPercentage)
-                .replace(/{{isLikeByMe}}/g, isLikeByMe)
-                .replace(/{{likeCount}}/g, newsFeedSingleUnit.likedCount)
-                .replace(/{{shareCount}}/g, newsFeedSingleUnit.shareCount)
-                .replace(/{{commentCount}}/g, newsFeedSingleUnit.commentCount);
-
-            newsFeedFinalHtml += newsFeedCardFinalHtml;
-        });
-
-        document.getElementById("news-feeds").innerHTML += newsFeedFinalHtml;
     }
 }
 

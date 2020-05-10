@@ -77,7 +77,7 @@ function closeModal(id) {
 $(document).ready(function () {
 
     addSharedPost();
-
+    createLeftPanel(4);
     $(".modal-btn").click(function (e) {
         //$(this).next("div").addClass("open-pop");
         var modl_id = $(this).attr('data-target');

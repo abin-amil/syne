@@ -1,3 +1,3 @@
 $(document).ready(function () {
-    createLeftPanel(5);
+    createLeftPanel(6);
 });

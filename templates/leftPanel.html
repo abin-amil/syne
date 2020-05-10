@@ -1,6 +1,7 @@
+<!-- need to delete this file after left panel woking done -->
 <!-- left panel template -->
 <script id="template-left-panel-user-details" type="text/template">
-    <div class="full-name">
+    <div class="full-name pt-5">
         {{name}}
     </div>
     <div class="user-name mt-2">
@@ -14,6 +15,7 @@
             {{location}}
             </span>
         </div>
+       
     <div>            
         <div class="follower-text">{{userIntroDetails}}</div>
     </div>
@@ -28,6 +30,7 @@
             <div class="follower-count">{{followingCount}}</div>
             <div class="follower-text">Following</div>
         </div>
+
     </div>
     <div class="menu-items-wrapper">
         <div class="menu-items py-4" id="left-panel-tabs">
@@ -58,6 +61,22 @@
 
 <!-- left panel top banner template start -->
 <script id="template-left-panel-top-banner" type="text/template">
-    <img class="img-fluid w-100 profile-photo-height" src="{{coverPhotoUrl}}">
+    <div class="profile-top-banner">
+        <img class="img-fluid w-100 profile-photo-height" src="{{coverPhotoUrl}}">
+    </div>
+    <!-- <div class="overlay-trigger">
+        <img class="img-fluid profile-photo" src="img/user.png">
+    </div> -->
+</script>
+<!-- left panel top banner template end-->
+
+<!-- left panel top banner template start -->
+<script id="template-top-banner" type="text/template">
+    <div class="profile-top-banner">
+        <img class="img-fluid w-100 profile-photo-height" src="{{coverPhotoUrl}}">
+    </div>
+    <!-- <div class="overlay-trigger">
+        <img class="img-fluid profile-photo" src="img/user.png">
+    </div> -->
 </script>
 <!-- left panel top banner template end-->

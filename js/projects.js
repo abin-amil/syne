@@ -1,7 +1,7 @@
 function formValidCheck(form, fieldNum) {}
 
 $(document).ready(function() {
-    setTab(3);
+    // setTab(3);
 });
 
 $(document).ready(function() {
