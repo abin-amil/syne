@@ -1,4 +1,4 @@
-.prjct-v-box {
+ .prjct-v-box {
     min-width: 0!important;
 }
 
@@ -280,17 +280,6 @@
     
     .search-page-bg {
         background: #f9fafc;
-    }
-
-    .w-btn {
-        background-position: 13px 8px;
-    }
-}
-
-@media(max-width:360px) {
-    .comments-wrapper .comment .prof-img {
-        width: 80px;
-        height: 45px;
     }
     
     .header-tabs {

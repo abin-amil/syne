@@ -97,7 +97,7 @@
         <div class="container">
             <div>
                 <div class="col-3">
-                    <div class="ml-5 mt-1" onclick="back()" id="backBtn">
+                    <div class="ml-5 mt-1 back-btn" onclick="back()" id="backBtn">
                         <img src="img/back-arrow-blue.png">
                         <span class="txt-blue">Back</span>
                     </div>
@@ -111,7 +111,7 @@
                             <div class="payment-container p-lg-4 p-md-4 mt-5 mb-5">
                                 <div class="d-flex justify-content-center mt-4"><img class="img-fluid payment-page-icon" src="img/user.png" style="max-height: 65px; position: absolute;
                                     top: 61px;"></div>
-                                <div class="d-flex justify-content-center row donating-org-name">
+                                <div class="d-flex justify-content-center row donating-org-name head_sch">
                                     School of love
                                 </div>
                                 <div class="d-flex justify-content-center foundation-name pt-1 pb-3">
@@ -133,9 +133,9 @@
                                 <div class="d-flex justify-content-center my-3" style="font-weight:bold;font-size:15px">
                                     Choose payment methods
                                 </div>
-                                <div class="mt-4 payment-methods m-auto ">
+                                <div class="mt-4 payment-methods pay-custom m-auto ">
                                     <div class="custom-control my-3 m-3">
-                                        <label class="w-100 lbl" for="globalWallet" data-toggle="collapse" href="#globalwallet" aria-expanded="true" aria-controls="globalwallet">Global Wallet 
+                                        <label class="w-100 lbl ml-4" for="globalWallet" data-toggle="collapse" href="#globalwallet" aria-expanded="true" aria-controls="globalwallet"><img src="./img/svgImages/wallet.svg" class="p-icon"> Global Wallet 
                                             <img src="./img/arrow-down-grey.png" width="15px" style="transform: rotate(0deg);"> </label>
                                         <div class="wallet-details collapse" id="globalwallet">
                                             <h1>Please select your preferred wallets</h1>
@@ -168,7 +168,7 @@
                                                 </div>
                                             </div>
                                             <div class="syne-inputbox mt-3">
-                                                <select class="border-0 form-control px-2 org-form-select ">
+                                                <select class="border-0 form-control px-2 org-form-select p-select ">
                                                 <option value="More Wallets">More Wallets</div></option>
                                                 <option value="Wallet 5"> Wallet 5</div></option>
                                                 <option value="Wallet 6"> Wallet 6</div></option>
@@ -183,7 +183,7 @@
                                     </div>
                                     <div class="line-seperator"></div>
                                     <div class="custom-control my-3 m-3">
-                                        <label class="w-100 lbl" for="creditcard" data-toggle="collapse" href="#creditcard" aria-expanded="false" aria-controls="creditcard">Credit Card
+                                        <label class="w-100 lbl ml-4" for="creditcard" data-toggle="collapse" href="#creditcard" aria-expanded="false" aria-controls="creditcard"><img src="./img/svgImages/card.svg" class="p-icon">Credit Card
                                             <img src="./img/arrow-down-grey.png" width="15px" style="transform: rotate(0deg);"> </label>
                                         <div class="cd-details collapse" id="creditcard">
                                             <h1>Pay using a saved card</h1>
@@ -228,7 +228,7 @@
                                             <div class=" mt-3 line-seperator"></div>
                                             <div class="new-card syne-inputbox">
                                                 <button class="btn nw-btn" for="newcard" data-toggle="collapse" href="#newcard" role="button" aria-expanded="false" aria-controls="newcard">
-                                                    Use New Card
+                                                   <img src="./img/svgImages/addnewcard.svg" class="mr-3"><label>Use New Card</label> 
                                                 </button>
                                             </div>
                                             <div class="new-card-details  collapse" id="newcard">
@@ -263,40 +263,52 @@
                                     </div>
                                     <div class="line-seperator"></div>
                                     <div class="custom-control my-3 m-3">
-                                        <label class="w-100 lbl" for="netbanking" data-toggle="collapse" href="#netbanking" aria-expanded="false" aria-controls="netbanking">Net Banking 
+                                        <label class="w-100 lbl ml-4" for="netbanking" data-toggle="collapse" href="#netbanking" aria-expanded="false" aria-controls="netbanking"><img src="./img/svgImages/netbanking.svg" class="p-icon">Net Banking 
                                         <img src="./img/arrow-down-grey.png" width="15px" style="transform: rotate(0deg);"> </label>
                                         <div class="wallet-details collapse" id="netbanking">
                                             <h1>Please select your bank</h1>
                                             <div class="wallet-row d-flex justify-content-between" id="netbankingSession1">
                                                 <div class="wallet bank">
-                                                    <div class="w-prof mb-2"></div>
+                                                    <div class="w-prof mb-2">
+                                                        <img src="./img/svgImages/sbi-logo.svg">
+                                                    </div>
                                                     <label>SBI</label>
                                                 </div>
                                                 <div class="wallet bank">
-                                                    <div class="w-prof mb-2"></div>
+                                                    <div class="w-prof mb-2" style="background: #ffb6a1;">
+                                                        <img src="./img/svgImages/icici-logo.svg" class="icon">
+                                                    </div>
                                                     <label>ICICI</label>
                                                 </div>
                                                 <div class="wallet bank">
-                                                    <div class="w-prof mb-2"></div>
+                                                    <div class="w-prof mb-2" style="background: #004c8f;">
+                                                        <img src="./img/svgImages/hdfc-logo.svg" class="icon">
+                                                    </div>
                                                     <label>HDFC</label>
                                                 </div>
                                             </div>
                                             <div class="wallet-row d-flex justify-content-between mt-3" id="netbankingSession2">
                                                 <div class="wallet bank">
-                                                    <div class="w-prof mb-2"></div>
+                                                    <div class="w-prof mb-2" style="background: #004a8f;">
+                                                        <img src="./img/svgImages/kotak-logo.svg" class="icon">
+                                                    </div>
                                                     <label>Kotak</label>
                                                 </div>
                                                 <div class="wallet bank">
-                                                    <div class="w-prof mb-2"></div>
+                                                    <div class="w-prof mb-2" style="background: #ae285d;">
+                                                        <img src="./img/svgImages/axis-logo.svg" class="icon">
+                                                    </div>
                                                     <label>Axis</label>
                                                 </div>
                                                 <div class="wallet bank">
-                                                    <div class="w-prof mb-2"></div>
+                                                    <div class="w-prof mb-2" style="background: #00adee;">
+                                                        <img src="./img/svgImages/canara-logo.svg" class="icon">
+                                                    </div>
                                                     <label>Canara</label>
                                                 </div>
                                             </div>
                                             <div class="syne-inputbox mt-3">
-                                                <select class="border-0 form-control px-2 org-form-select ">
+                                                <select class="border-0 form-control px-2 org-form-select p-select ">
                                             <option value="Wallets">More Wallets</div></option>
                                             <option value="Bank 2">BANK 2</div></option>
                                             <option value="BAnk 3"> BANK 3</div></option>
@@ -312,12 +324,12 @@
                                     <div class="line-seperator"></div>
                                     <div class="custom-control my-3 ml-3">
 
-                                        <label for="debitCard" class="w-100 lbl" data-toggle="collapse" href="#debitcard" aria-expanded="false" aria-controls="debitcard">Debit Card<img src="./img/arrow-down-grey.png" width="15px" style="right: 26px; transform: rotate(0deg);"> </label>
+                                        <label for="debitCard" class="w-100 lbl ml-4" data-toggle="collapse" href="#debitcard" aria-expanded="false" aria-controls="debitcard"><img src="./img/svgImages/card.svg" class="p-icon">Debit Card<img src="./img/arrow-down-grey.png" width="15px" style="right: 26px; transform: rotate(0deg);"> </label>
                                     </div>
                                     <div class="line-seperator"></div>
                                     <div class="custom-control my-3 m-3">
 
-                                        <label class="w-100 lbl" for="upipayment" data-toggle="collapse" href="#upipayment" aria-expanded="false" aria-controls="upipayment">UPI Payement     
+                                        <label class="w-100 lbl ml-4" for="upipayment" data-toggle="collapse" href="#upipayment" aria-expanded="false" aria-controls="upipayment"><img src="./img/svgImages/upi.svg" class="p-icon">UPI Payement     
                                             <img src="./img/arrow-down-grey.png" width="15px" style="transform: rotate(0deg);"> </label>
                                         <div class="up collapse" id="upipayment">
                                             <div class="syne-inputbox upid">
@@ -336,7 +348,8 @@
 
                                     <div class="custom-control  my-3 ml-3">
 
-                                        <label for="directPayment" class="w-100 lbl" data-toggle="collapse" href="#direct" aria-expanded="false" aria-controls="direct">Direct payment<img src="./img/arrow-down-grey.png" width="15px" style="right: 26px; transform: rotate(0deg);"></label>
+                                        <label for="directPayment" class="w-100 lbl ml-4" data-toggle="collapse" href="#direct" aria-expanded="false" aria-controls="direct"><img src="./img/svgImages/directpay.svg" class="p-icon">Direct payment<img src="./img/svgImages/help-grey.svg" style="    position: absolute;
+                                            left: 133px; top: 11px;"><img src="./img/arrow-down-grey.png" width="15px" style="right: 26px; transform: rotate(0deg);"></label>
                                     </div>
                                 </div>
 

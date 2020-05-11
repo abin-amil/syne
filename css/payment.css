@@ -114,6 +114,13 @@
     margin: 0 auto;
 }
 
+.wallet-row.wallet-row .w-prof .icon {
+    position: relative;
+    top: 12px;
+    object-fit: contain;
+    width: 24px;
+}
+
 .wallet-row .wallet label {
     font-family: HKGrotesk-reg;
     font-size: 14px;
@@ -150,6 +157,12 @@
     right: 10px;
 }
 
+.custom-control .lbl .p-icon {
+    position: absolute;
+    left: -4px;
+    top: 6px;
+}
+
 .custom-control .upid {
     position: relative;
     height: 50px;
@@ -177,14 +190,17 @@
 }
 
 .cd-details .new-card .nw-btn {
-    font-family: HKGrotesk;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 1.71;
-    letter-spacing: 0.2px;
     color: #16c0ef;
     outline: #16c0ef;
     width: 100%;
+}
+
+.cd-details .nw-btn label {
+    font-family: HKGrotesk;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    color: #16c0ef!important;
 }
 
 .new-card-details .cd-no {
@@ -206,6 +222,16 @@
 .cd-no input {
     padding: 16px 7px 0px;
     height: 43px;
+}
+
+.p-select {
+    background: url('../img/arrow-down-grey.png');
+    background-repeat: no-repeat;
+    background-position: 250px 12px;
+    background-size: 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .upid input:focus,
@@ -287,5 +313,26 @@
 @media(max-width: 768px) {
     .bg-grey-light {
         background-color: #ffffff !important;
+    }
+    .p-select {
+        background-position: 200px 12px!important;
+    }
+    .head_sch {
+        margin-top: 25px;
+    }
+    .back-btn {
+        width: 80px;
+    }
+    .pay-custom {
+        width: 100%;
+    }
+}
+
+@media(max-width: 375px) {
+    .pay-custom {
+        width: 85%;
+    }
+    .wallet-row .wallet label {
+        font-size: 12px;
     }
 }
