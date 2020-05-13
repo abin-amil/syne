@@ -701,3 +701,8 @@ input.common-input {
     border-radius: 50%;
     margin-top: -40px;
 }
+
+.project-banner {
+    max-height: 300px;
+    object-fit: cover;
+}

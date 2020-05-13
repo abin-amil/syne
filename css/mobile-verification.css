@@ -6,7 +6,10 @@
 }
 
 .edit-icon-text {
-    color: #16c0ef;
+    color: #16c0ef !important;
+}
+.mobile-number {
+    font-weight: bold;
 }
 
 @media(max-width: 768px) { 
