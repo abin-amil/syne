@@ -1356,3 +1356,11 @@
         color: #7c8796;
         width: 80px;
     }
+    
+    .wallet-row .wallet-selected {
+        border-radius: 4px;
+        text-align: center;
+        padding: 7px;
+        border: solid 1px #16c0ef !important;
+        background-color: #ebfbff !important;
+    }

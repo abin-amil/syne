@@ -1,14 +1,88 @@
 $(document).ready(function () {
+    selectedWalletId = "";
+    selectedNetBankingId="";
     $("#walletSession1").click(function (e) {
-        EnableProceedToBtn('wallet');
+        RemoveHighlightingClass("#walletSession1");
+        RemoveHighlightingClass("#walletSession2");
+
+        RemoveHighlightingClass("#netbankingSession1");
+        RemoveHighlightingClass("#netbankingSession2");
+
+        HighlightSelectedDiv(selectedWalletId);
     });
     $("#walletSession2").click(function (e) {
+        RemoveHighlightingClass("#walletSession1");
+        RemoveHighlightingClass("#walletSession2");
+
+        RemoveHighlightingClass("#netbankingSession1");
+        RemoveHighlightingClass("#netbankingSession2");
+
+        HighlightSelectedDiv(selectedWalletId);
+    });
+    $("#wallet1").click(function (e) {
+        selectedWalletId = "#wallet1";
+        EnableProceedToBtn('wallet');
+    });
+    $("#wallet2").click(function (e) {
+        selectedWalletId = "#wallet2";
+        EnableProceedToBtn('wallet');
+    });
+    $("#wallet3").click(function (e) {
+        selectedWalletId = "#wallet3";
+        EnableProceedToBtn('wallet');
+    });
+    $("#wallet4").click(function (e) {
+        selectedWalletId = "#wallet4";
+        EnableProceedToBtn('wallet');
+    });
+    $("#wallet5").click(function (e) {
+        selectedWalletId = "#wallet5";
+        EnableProceedToBtn('wallet');
+    });
+    $("#wallet6").click(function (e) {
+        selectedWalletId = "#wallet6";
         EnableProceedToBtn('wallet');
     });
     $("#netbankingSession1").click(function (e) {
-        EnableProceedToBtn('netbanking');
+        RemoveHighlightingClass("#netbankingSession1");
+        RemoveHighlightingClass("#netbankingSession2");
+
+        RemoveHighlightingClass("#walletSession1");
+        RemoveHighlightingClass("#walletSession2");
+
+        HighlightSelectedDiv(selectedNetBankingId);
     });
     $("#netbankingSession2").click(function (e) {
+        RemoveHighlightingClass("#netbankingSession1");
+        RemoveHighlightingClass("#netbankingSession2");
+
+        RemoveHighlightingClass("#walletSession1");
+        RemoveHighlightingClass("#walletSession2");
+
+        HighlightSelectedDiv(selectedNetBankingId);
+    });
+    $("#netbankingSbi").click(function (e) {
+        selectedNetBankingId="#netbankingSbi"
+        EnableProceedToBtn('netbanking');
+    });
+    $("#netbankingIcici").click(function (e) {
+        selectedNetBankingId="#netbankingIcici"
+        EnableProceedToBtn('netbanking');
+    });
+    $("#netbankingHdfc").click(function (e) {
+        selectedNetBankingId="#netbankingHdfc"
+        EnableProceedToBtn('netbanking');
+    });
+    $("#netbankingKotak").click(function (e) {
+        selectedNetBankingId="#netbankingKotak"
+        EnableProceedToBtn('netbanking');
+    });
+    $("#netbankingAxis").click(function (e) {
+        selectedNetBankingId="#netbankingAxis"
+        EnableProceedToBtn('netbanking');
+    });
+    $("#netbankingCanara").click(function (e) {
+        selectedNetBankingId="#netbankingCanara"
         EnableProceedToBtn('netbanking');
     });
     $("#visaCardBtn").click(function (e) {
@@ -23,6 +97,14 @@ $(document).ready(function () {
         }
     });
 });
+
+function RemoveHighlightingClass(nodes) {
+    $(nodes).find('*').removeClass("wallet-selected");
+}
+
+function HighlightSelectedDiv(id) {
+    $(id)[0].classList.add('wallet-selected');
+}
 
 function EnableProceedToBtn(type) {
     switch (type) {
