@@ -293,7 +293,6 @@
         border-radius: 3px;
         border: solid 1px #dde2e9;
         position: relative;
-        max-width: 435px !important;
     }
     
     .syne-project-description {
@@ -907,7 +906,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-}
+    }
     
     .not-count {
         position: absolute;
@@ -1034,7 +1033,7 @@
         font-weight: bold;
         color: #ffffff;
     }
-
+    
     .followIcons {
         height: 15px;
     }
@@ -1060,7 +1059,7 @@
         font-weight: bold;
         color: #7c8796;
     }
-
+    
     .followingButton:hover {
         height: 40px;
         border-radius: 3px;
@@ -1072,22 +1071,26 @@
         color: #fb4f6d;
         content: 'ADD';
     }
+    
     .followingButton::after {
         content: 'Following';
     }
+    
     .followingButton:hover:after {
         content: 'Unfollow';
     }
+    
     .followingButton .followIcons:last-child {
-        display: none;  
+        display: none;
     }
+    
     .followingButton:hover .followIcons:last-child {
-        display: block;  
+        display: block;
     }
+    
     .followingButton:hover .followIcons:first-child {
-        display: none; 
+        display: none;
     }
-
     
     .required-field {
         font-family: HKGrotesk;
@@ -1311,22 +1314,45 @@
         left: 68px;
         top: 2px;
     }
-
+    
     .start-a-project-border {
         border: solid 1px #16c0ef;
         border-radius: 3px;
-      }
+    }
     
     .explore-project-btn {
         font-family: HKGrotesk;
         font-size: 14px;
         font-weight: bold;
         color: #7c8796;
-      }
-      .explore-project-btn:hover {
-       text-decoration: none;
-       color: #7c8796;
-      }
-      .start-a-project-btn {
-          font-family: HKGrotesk;
-      }
+    }
+    
+    .explore-project-btn:hover {
+        text-decoration: none;
+        color: #7c8796;
+    }
+    
+    .start-a-project-btn {
+        font-family: HKGrotesk;
+    }
+    
+    .srch-cat img {
+        position: absolute;
+        left: 590px;
+        top: 7px;
+        z-index: 55;
+    }
+    
+    .s-cntry-icon {
+        position: absolute;
+        right: 18px;
+        top: 22px;
+        z-index: 2;
+    }
+    
+    .home-btn label {
+        font-size: 12px;
+        letter-spacing: 0.13px;
+        color: #7c8796;
+        width: 80px;
+    }
