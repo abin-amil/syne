@@ -94,6 +94,16 @@
     color: #7c8796!important;
 }
 
+
+/* .w-btn-active {
+    background-color: #16c0ef;
+}
+
+.wallet-active {
+    border: 1px solid #16c0ef;
+    background: #ebfbff;
+} */
+
 .wallet-row .wallet {
     border-radius: 4px;
     border: solid 1px #eef0f5;

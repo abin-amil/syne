@@ -848,6 +848,7 @@ textarea {
     font-weight: 500;
     letter-spacing: 0.14px;
     color: #2a3844;
+    max-width: 100%!important;
 }
 
 .link-inputbox input {
@@ -880,6 +881,7 @@ textarea {
     font-weight: 600;
     line-height: 1.47;
     color: #2a3844;
+    max-width: 100%!important;
 }
 
 .editor-project {
@@ -957,6 +959,11 @@ textarea {
 
 .p-del {
     margin-left: 100px!important;
+}
+
+.at-btn img {
+    object-fit: contain;
+    width: 20px!important;
 }
 
 @media(max-width:600px) {

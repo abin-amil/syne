@@ -691,6 +691,10 @@ ul.tabs li.current {
     display: none;
 }
 
+.ends {
+    width: 31%;
+}
+
 
 /*responsive*/
 
@@ -706,6 +710,9 @@ ul.tabs li.current {
     }
     .prj-link {
         padding-top: 20px;
+    }
+    .ends {
+        width: 47%;
     }
 }
 
@@ -762,9 +769,8 @@ ul.tabs li.current {
     .steps-cont:after {
         position: absolute;
         content: "";
-        width: 56px;
+        width: 30px;
         height: 100%;
-        background-image: none;
         background-size: 100% 100%;
         right: -25px;
         top: 0px;
@@ -780,6 +786,12 @@ ul.tabs li.current {
         display: block!important;
         position: relative!important;
         bottom: 0!important;
+    }
+    .ends {
+        width: 100%;
+    }
+    .progress-status span {
+        font-size: 11px;
     }
 }
 
@@ -830,6 +842,19 @@ ul.tabs li.current {
     .my-nav-tab {
         flex: 1 1 35%!important;
     }
+    .ends {
+        width: 100%;
+    }
+    .steps-cont:after {
+        position: absolute;
+        content: "";
+        width: 17px;
+        height: 100%;
+        background-size: 100% 100%;
+        right: -9px;
+        top: 4px;
+        background-image: none;
+    }
 }
 
 @media(max-width: 360px) {
@@ -861,5 +886,20 @@ ul.tabs li.current {
     }
     .cityInput {
         width: 100%;
+    }
+    .ends {
+        width: 100%!important;
+    }
+    .steps-cont h4 {
+        font-size: 15px;
+    }
+    .steps-cont::after {
+        position: absolute;
+        content: "";
+        width: 22px;
+        height: 100%;
+        background-size: 100% 100%;
+        right: -10px;
+        top: 3px;
     }
 }
