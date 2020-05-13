@@ -508,7 +508,7 @@
                                 </button>
                                 </div>
                                 <div class="col-md-6">
-                                    <button class="f-btn">
+                                    <button class="f-btn" id="followBtn">
                                         <label id="f-btn">Follow</label> 
                                   
                                 </button>
@@ -653,6 +653,14 @@
         $("#f-btn").text(function(i, v) {
             return v === 'Follow' ? 'Unfollow' : 'Follow'
         });
+
+        // if($('#followBtn')[0].textContent.trim() == "Follow"){
+        //     $('#followBtn')[0].classList.add('className'); // replace the class name with our class
+        // }
+        // else{
+        //     $('#followBtn')[0].classList.remove('className'); // replace the class name with our class
+        // }
+        
     });
     // click heart
     $(".hrt").click(function(e) {
