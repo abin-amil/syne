@@ -1,6 +1,6 @@
 $(document).ready(function () {
     selectedWalletId = "";
-    selectedNetBankingId="";
+    selectedNetBankingId = "";
     $("#walletSession1").click(function (e) {
         RemoveHighlightingClass("#walletSession1");
         RemoveHighlightingClass("#walletSession2");
@@ -62,27 +62,27 @@ $(document).ready(function () {
         HighlightSelectedDiv(selectedNetBankingId);
     });
     $("#netbankingSbi").click(function (e) {
-        selectedNetBankingId="#netbankingSbi"
+        selectedNetBankingId = "#netbankingSbi"
         EnableProceedToBtn('netbanking');
     });
     $("#netbankingIcici").click(function (e) {
-        selectedNetBankingId="#netbankingIcici"
+        selectedNetBankingId = "#netbankingIcici"
         EnableProceedToBtn('netbanking');
     });
     $("#netbankingHdfc").click(function (e) {
-        selectedNetBankingId="#netbankingHdfc"
+        selectedNetBankingId = "#netbankingHdfc"
         EnableProceedToBtn('netbanking');
     });
     $("#netbankingKotak").click(function (e) {
-        selectedNetBankingId="#netbankingKotak"
+        selectedNetBankingId = "#netbankingKotak"
         EnableProceedToBtn('netbanking');
     });
     $("#netbankingAxis").click(function (e) {
-        selectedNetBankingId="#netbankingAxis"
+        selectedNetBankingId = "#netbankingAxis"
         EnableProceedToBtn('netbanking');
     });
     $("#netbankingCanara").click(function (e) {
-        selectedNetBankingId="#netbankingCanara"
+        selectedNetBankingId = "#netbankingCanara"
         EnableProceedToBtn('netbanking');
     });
     $("#visaCardBtn").click(function (e) {
@@ -104,6 +104,15 @@ function RemoveHighlightingClass(nodes) {
 
 function HighlightSelectedDiv(id) {
     $(id)[0].classList.add('wallet-selected');
+}
+
+function collapseExapandedArea(id) {
+    const paymentMethodIds = ['globalwallet', 'creditcard', 'netbanking', 'upipayment'];
+    let selectedPayemntMethod = id;
+    let otherPaymentMethods = paymentMethodIds.filter(x => { return x != selectedPayemntMethod });
+    for (let i = 0; i < otherPaymentMethods.length; i++) {
+        $('#' + otherPaymentMethods[i])[0].classList.remove('show');
+    }
 }
 
 function EnableProceedToBtn(type) {
