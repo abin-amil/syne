@@ -136,6 +136,7 @@
  .label {
      margin: 0px 6px;
  }
+ /*serach page css*/
  
  .search-page-bg {
      background: #f9fafc;
@@ -216,8 +217,6 @@
      letter-spacing: 0.15px;
      text-align: right;
      color: #16c0ef;
-     position: relative;
-     left: 304px;
      cursor: pointer;
  }
  
@@ -413,21 +412,11 @@
      margin-right: 10px;
  }
  
- .ppl h1 span {
-     position: relative;
-     left: 372px;
- }
- 
  .ppl .fol-btn,
  .org .fol-btn {
      position: absolute;
      right: 0;
      top: 2px;
- }
- 
- .org h1 span {
-     position: relative;
-     left: 350px;
  }
  
  .rcnt-srchd .p-pic {
@@ -586,10 +575,9 @@
      .label {
          margin: 0px 6px;
      }
-     /* Search page css */
- }
- 
- @media(max-width: 768px) {
+     .fol-btn .btn {
+         padding: 3px 13px;
+     }
      .prjct-v-box {
          min-width: 300px!important;
      }
@@ -607,14 +595,6 @@
      .w-btn {
          background-position: 13px 8px;
      }
-     .top-srch-rslt h1 span {
-         position: relative;
-         left: 115px;
-     }
-     .post-dtl .post-img,
-     .post-img .overlay {
-         width: 305px;
-     }
      .post-dtl .prcnt label {
          position: relative;
          left: 11px;
@@ -625,16 +605,16 @@
          right: 0;
          top: -7px;
      }
+     .post-dtl .post-img,
+     .post-img .overlay {
+         width: auto!important;
+     }
      .fol-btn {
          padding: 0 6px;
          position: absolute;
          right: 0;
-         top: -9px;
+         top: 8px;
          font-size: 12px;
-     }
-     .ppl h1 span {
-         position: relative;
-         left: 203px;
      }
      .post .fol-btn {
          top: 11px;
@@ -643,12 +623,30 @@
          width: 117px;
          font-size: 12px;
      }
-     .org h1 span {
-         position: relative;
-         left: 168px;
-     }
      .sr-nav {
          justify-content: space-evenly!important;
+     }
+ }
+ 
+ @media(max-width:375px) {
+     .post-dtl .post-img,
+     .post-img .overlay {
+         width: 305px!important;
+     }
+ }
+ 
+ @media(max-width:600px) {
+     .sm {
+         position: relative;
+         left: 328px;
+     }
+     .se-ppl {
+         position: relative;
+         left: 357px;
+     }
+     .post-dtl .post-img,
+     .post-img .overlay {
+         width: 468px;
      }
  }
  
@@ -676,11 +674,30 @@
      .sr-nav {
          justify-content: space-evenly!important;
      }
+     .long {
+         width: 104px!important;
+     }
  }
  
  @media(max-width:320px) {
      .comments-wrapper .comment .prof-img {
          width: 80px;
          height: 40px;
+     }
+     .fol-btn .btn {
+         padding: 0px;
+     }
+     .ppl .fol-btn,
+     .org .fol-btn {
+         position: absolute;
+         right: 0;
+         top: -8px;
+     }
+     .long {
+         width: 90px!important;
+     }
+     .post-dtl .post-img,
+     .post-img .overlay {
+         width: auto!important;
      }
  }
