@@ -1350,11 +1350,15 @@
         z-index: 2;
     }
     
-    .home-btn label {
+    .home-btn a {
         font-size: 12px;
         letter-spacing: 0.13px;
-        color: #7c8796;
+        color: #7c8796!important;
         width: 80px;
+    }
+    
+    .home-btn a:hover {
+        text-decoration: none;
     }
     
     .wallet-row .wallet-selected {
@@ -1363,4 +1367,132 @@
         padding: 7px;
         border: solid 1px #16c0ef !important;
         background-color: #ebfbff !important;
+    }
+    
+    .srch-cat {
+        background: url('../img/svgImages/carrot-down.svg');
+        background-position: 576px 4px;
+        background-size: 22px;
+        background-repeat: no-repeat;
+    }
+    
+    .categ .selectize-input,
+    .categ .selectize-control.single .categ .selectize-input.input-active {
+        background-color: transparent!important;
+    }
+    
+    .final-step-wrapper {
+        background: #00000070;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        text-align: center;
+    }
+    
+    .final-step-wrapper .popup-modal {
+        width: 390px!important;
+        height: 580px!important;
+        background-color: #fff;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+    
+    .popup-modal .syne-inputbox .em-lb {
+        position: absolute;
+        top: 6px;
+    }
+    
+    .popup-modal .syne-inputbox input {
+        height: 50px;
+        padding: 12px 12px 0;
+    }
+    
+    .popup-modal .syne-inputbox input:focus {
+        outline: #0db2e0!important;
+        border: 1px solid #0db2e0!important;
+    }
+    
+    .popup-modal h2 {
+        padding-top: 40px;
+    }
+    
+    .popup-modal .prof-pic {
+        border-radius: 50%;
+        margin: 0 auto;
+        width: 64px!important;
+        height: 64px!important;
+        background-color: #0db2e0;
+    }
+    
+    .popup-modal .syne-inputbox {
+        text-align: left;
+    }
+    
+    .popup-modal .proceedButton {
+        width: 100%;
+    }
+    
+    .popup-modal button {
+        margin: 0 auto;
+    }
+    
+    .second-step-password .pwd-input {
+        padding: 0 12px!important;
+    }
+    
+    .second-step-password .pwd {
+        font-family: HKGrotesk;
+        color: #16c0ef;
+        font-size: 12px;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        cursor: pointer;
+    }
+    
+    .rem-fgt label {
+        line-height: 2;
+        font-family: HKGrotesk-reg;
+        font-size: 12px;
+        color: #2a3844;
+    }
+    
+    .rem-fgt .fgt-lbl {
+        font-family: HKGrotesk;
+        font-size: 12px;
+        text-align: right;
+        color: #16c0ef;
+        line-height: 2;
+    }
+    
+    .pwd-strngth {
+        margin-top: 3px;
+    }
+    
+    .pwd-strngth .strength {
+        background-color: #e0e6ee;
+        height: 3px;
+        width: 75px;
+    }
+    
+    .tc {
+        font-size: 11px;
+        line-height: 1.45;
+        letter-spacing: 0.15px;
+        color: #606060;
+        text-align: left;
+    }
+    
+    .sign-in {
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.2px;
+        text-align: center;
+        color: #606060;
+    }
+    
+    .code-slct .code {
+        height: 51px;
+        padding: 16px 4px;
     }

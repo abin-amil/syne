@@ -1,703 +1,686 @@
  .prjct-v-box {
-    min-width: 0!important;
-}
-
-.comments-wrapper h3 {
-    font-size: 17px;
-    font-family: 'HKGrotesk';
-    font-weight: bold;
-    line-height: 1.29;
-    color: #2a3844;
-    padding: 12px 0;
-    border-bottom: 2px solid #f4f8fa;
-}
-
-.comments-wrapper .comment-details {
-    margin: 0px 10px;
-}
-
-.comments-wrapper textarea {
-    width: 100%;
-    resize: none;
-    outline: none;
-    padding: 14px 18px;
-    border-radius: 3px;
-    border: solid 1px #e0e6ee;
-    background-color: #ffffff;
-    margin-top: 15px;
-}
-
-.comments-wrapper .comment .prof-img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background: #b1c1bd;
-}
-
-.comments-wrapper .comment h1 {
-    font-size: 13px;
-    font-family: 'HKGrotesk';
-    font-weight: bold;
-    color: #2a3844;
-}
-
-.comments-wrapper .comment h2 {
-    font-size: 13px;
-    line-height: 1.69;
-    color: #2a3844;
-    padding: 5px 0;
-}
-
-.comments-wrapper .comment label {
-    font-size: 13px;
-    line-height: 1.69;
-    letter-spacing: normal;
-    color: #7c8796;
-}
-
-.comments-wrapper .comment {
-    padding: 23px 0 0;
-    border-bottom: 2px solid #f4f8fa;
-}
-
-.comments-wrapper a {
-    font-size: 15px;
-    font-family: 'HKGrotesk';
-    font-weight: bold;
-    line-height: 1.47;
-    letter-spacing: 0.17px;
-    color: #00dbff;
-    padding: 0 10px;
-}
-
-.comments-wrapper a:hover {
-    text-decoration: none;
-    color: #00dbff;
-}
-
-.donateButton_success {
-    border-radius: 3px !important;
-    background-color: #16c0ef !important;
-    color: white !important;
-    font-weight: bold !important;
-    display: flex;
-    align-items: center;
-}
-
-.support_btn_success {
-    border-radius: 3px !important;
-    background-color: #16c0ef !important;
-    color: white !important;
-    font-weight: bold !important;
-    display: flex;
-    align-items: center;
-}
-
-.Like_btn_success {
-    border-radius: 3px !important;
-    background-color: #16c0ef !important;
-    color: white !important;
-    font-weight: bold !important;
-    display: flex!important;
-    align-items: center!important;
-    justify-content: center;
-    padding: 11px 0px!important;
-}
-
-.support_btn_active {
-    background-color: white!important;
-    border: 1px solid #16c0ef!important;
-    color: #16c0ef!important;
-    font-weight: bold !important;
-    display: flex!important;
-    align-items: center!important;
-    justify-content: center;
-    padding: 11px 0px!important;
-}
-
-.Like_btn_active {
-    background-color: white!important;
-    border: 1px solid #16c0ef!important;
-    color: #16c0ef!important;
-    font-weight: bold !important;
-    display: flex!important;
-    align-items: center!important;
-    justify-content: center;
-    padding: 11px 0px!important;
-}
-
-.Like_btn_success img,
-.Like_btn_active img {
-    width: 14px;
-    position: relative;
-    bottom: 1px;
-}
-
-.label {
-    margin: 0px 6px;
-}
-
-@media(max-width: 768px) {
-    .prjct-v-box {
-        min-width: 0!important;
-    }
-    
-    .comments-wrapper h3 {
-        font-size: 17px;
-        font-family: 'HKGrotesk';
-        font-weight: bold;
-        line-height: 1.29;
-        color: #2a3844;
-        padding: 12px 0;
-        border-bottom: 2px solid #f4f8fa;
-    }
-    
-    .comments-wrapper .comment-details {
-        margin: 0px 10px;
-    }
-    
-    .comments-wrapper textarea {
-        width: 100%;
-        resize: none;
-        outline: none;
-        padding: 14px 18px;
-        border-radius: 3px;
-        border: solid 1px #e0e6ee;
-        background-color: #ffffff;
-        margin-top: 15px;
-    }
-    
-    .comments-wrapper .comment .prof-img {
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        background: #b1c1bd;
-    }
-    
-    .comments-wrapper .comment h1 {
-        font-size: 13px;
-        font-family: 'HKGrotesk';
-        font-weight: bold;
-        color: #2a3844;
-    }
-    
-    .comments-wrapper .comment h2 {
-        font-size: 13px;
-        line-height: 1.69;
-        color: #2a3844;
-        padding: 5px 0;
-    }
-    
-    .comments-wrapper .comment label {
-        font-size: 13px;
-        line-height: 1.69;
-        letter-spacing: normal;
-        color: #7c8796;
-    }
-    
-    .comments-wrapper .comment {
-        padding: 23px 0 0;
-        border-bottom: 2px solid #f4f8fa;
-    }
-    
-    .comments-wrapper a {
-        font-size: 15px;
-        font-family: 'HKGrotesk';
-        font-weight: bold;
-        line-height: 1.47;
-        letter-spacing: 0.17px;
-        color: #00dbff;
-        padding: 0 10px;
-    }
-    
-    .comments-wrapper a:hover {
-        text-decoration: none;
-        color: #00dbff;
-    }
-    
-    .donateButton_success {
-        border-radius: 3px !important;
-        background-color: #16c0ef !important;
-        color: white !important;
-        font-weight: bold !important;
-        display: flex;
-        align-items: center;
-    }
-    
-    .support_btn_success {
-        border-radius: 3px !important;
-        background-color: #16c0ef !important;
-        color: white !important;
-        font-weight: bold !important;
-        display: flex;
-        align-items: center;
-    }
-    
-    .Like_btn_success {
-        border-radius: 3px !important;
-        background-color: #16c0ef !important;
-        color: white !important;
-        font-weight: bold !important;
-        display: flex!important;
-        align-items: center!important;
-        justify-content: center;
-        padding: 11px 0px!important;
-    }
-    
-    .support_btn_active {
-        background-color: white!important;
-        border: 1px solid #16c0ef!important;
-        color: #16c0ef!important;
-        font-weight: bold !important;
-        display: flex!important;
-        align-items: center!important;
-        justify-content: center;
-        padding: 11px 0px!important;
-    }
-    
-    .Like_btn_active {
-        background-color: white!important;
-        border: 1px solid #16c0ef!important;
-        color: #16c0ef!important;
-        font-weight: bold !important;
-        display: flex!important;
-        align-items: center!important;
-        justify-content: center;
-        padding: 11px 0px!important;
-    }
-    
-    .Like_btn_success img,
-    .Like_btn_active img {
-        width: 14px;
-        position: relative;
-        bottom: 1px;
-    }
-    
-    .label {
-        margin: 0px 6px;
-    }
-    /* Search page css */
-    
-    .search-page-bg {
-        background: #f9fafc;
-    }
-    
-    .header-tabs {
-        padding: 24px 0;
-        background: #fff;
-    }
-    
-    .tab-content .filter-scn {
-        background-color: #fff;
-        border-radius: 4px;
-        border: solid 1px #e0e6ee;
-        padding: 37px 25px 60px;
-    }
-    
-    .filter-scn h1 {
-        font-family: HKGrotesk;
-        font-size: 15px;
-        font-weight: bold;
-        color: #2a3844;
-    }
-    
-    .filter-scn h3 {
-        font-family: HKGrotesk-reg;
-        font-size: 13px;
-        font-weight: 600;
-        letter-spacing: 0.15px;
-        color: #2a3844;
-        margin-top: 30px;
-    }
-    
-    .filter-scn .srch-box input {
-        border-radius: 16px;
-        border: solid 1px #e0e6ee!important;
-        background-color: #ffffff;
-        padding-left: 30px;
-        background: url('../img/search-icon.svg');
-        background-repeat: no-repeat;
-        background-position: 6px 10px;
-    }
-    
-    .filter-lbl {
-        margin-top: 20px;
-    }
-    
-    .filter-lbl .custom-control {
-        margin: 5px 0 0;
-        font-size: 12px;
-        letter-spacing: 0.2px;
-        color: #2a3844;
-        font-family: HKGrotesk;
-    }
-    
-    .filter-lbl .custom-control label {
-        line-height: 2!important;
-    }
-    
-    .top-srch-rslt {
-        border: solid 1px #e0e6ee;
-        background-color: #ffffff;
-        padding: 36px 18px 0;
-    }
-    
-    .top-srch-rslt h1 {
-        font-family: HKGrotesk;
-        font-size: 15px;
-        font-weight: bold;
-        color: #2a3844;
-    }
-    
-    .top-srch-rslt h1 span {
-        font-family: HKGrotesk;
-        font-size: 13px;
-        font-weight: bold;
-        line-height: 1.38;
-        letter-spacing: 0.15px;
-        text-align: right;
-        color: #16c0ef;
-        position: relative;
-        left: 304px;
-        cursor: pointer;
-    }
-    
-    .prof {
-        position: relative;
-    }
-    
-    .prof .detls .sm-lbl {
-        font-family: HKGrotesk;
-        opacity: 0.7;
-        font-size: 10px;
-        margin-bottom: 0!important;
-        letter-spacing: 0.7px;
-        color: #395366;
-        text-transform: uppercase;
-    }
-    
-    .prof .detls h2 {
-        font-family: HKGrotesk;
-        font-size: 15px;
-        font-weight: 600;
-        color: #2a3844;
-        margin: 0;
-        width: 260px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    
-    .detls .flw {
-        font-family: HKGrotesk-reg;
-        font-size: 12px;
-        line-height: 1.33;
-        letter-spacing: 0.14px;
-        color: #5d677e;
-        margin-bottom: 0!important;
-    }
-    
-    .detls h3 {
-        font-family: HKGrotesk;
-        font-size: 12px;
-        letter-spacing: 0.14px;
-        color: #7c8796;
-    }
-    
-    .flw span {
-        color: #7c8796;
-    }
-    
-    .prof-pic img {
-        object-fit: contain;
-        height: 56px;
-        width: 56px;
-        border-radius: 50%;
-    }
-    
-    .fol-btn {
-        border-radius: 17px;
-        border: solid 1px #16c0ef;
-        background-color: #ffffff;
-        padding: 0 23px;
-        position: absolute;
-        right: 0;
-        top: 22px;
-    }
-    
-    .fol-btn .btn {
-        font-family: HKGrotesk;
-        font-size: 13px;
-        font-weight: bold;
-        line-height: 1.38;
-        letter-spacing: 0.15px;
-        text-align: center;
-        color: #16c0ef;
-    }
-    
-    .fol-btn .btn:focus {
-        box-shadow: none;
-    }
-    
-    .fol-btn .btn:hover {
-        color: #16c0ef;
-    }
-    
-    .post {
-        border-radius: 4px;
-        border: solid 1px #e0e6ee;
-        background-color: #ffffff;
-    }
-    
-    .post .prof-pic {
-        position: relative;
-        top: -7px;
-    }
-    
-    .post-dtl .post-img {
-        background: url('../img/hands-together.jpg');
-        background-size: cover;
-        width: 500px;
-        height: 260px;
-    }
-    
-    .post .fol-btn {
-        position: absolute;
-        right: 14px;
-    }
-    
-    .post-img .overlay {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-        width: 500px;
-        height: 260px;
-    }
-    
-    .post-img .overlay label {
-        font-family: HKGrotesk;
-        font-size: 12px;
-        font-weight: bold;
-        line-height: 1.67;
-        letter-spacing: 0.13px;
-        color: #ffffff;
-        margin-left: 5px;
-    }
-    
-    .post-img {
-        position: relative;
-    }
-    
-    .post-img .donat-btn {
-        border-radius: 22px;
-        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
-        background-color: #16c0ef;
-        font-family: HKGrotesk;
-        font-size: 15px;
-        font-weight: bold;
-        line-height: 1.33;
-        letter-spacing: 0.15px;
-        color: #ffffff;
-        text-align: center;
-        width: 126px;
-        padding: 10px 0px;
-        position: absolute;
-        bottom: 15px;
-        right: 16px;
-    }
-    
-    .post-dtl h1 {
-        font-family: HKGrotesk;
-        font-size: 17px;
-        font-weight: bold;
-        line-height: 0.94;
-        letter-spacing: 0.2px;
-        color: #0db2e0;
-    }
-    
-    .post-dtl p {
-        font-family: HKGrotesk-reg;
-        font-size: 13px;
-        line-height: 1.38;
-        letter-spacing: 0.15px;
-        color: #5d677e;
-    }
-    
-    .post-dtl .pg-dt {
-        font-family: HKGrotesk-reg;
-        font-size: 13px;
-        line-height: 1.38;
-        letter-spacing: 0.14px;
-        color: #2a3844;
-    }
-    
-    .post-dtl .prcnt strong {
-        font-family: HKGrotesk;
-        font-size: 13px;
-        font-weight: bold;
-        line-height: 1.38;
-        letter-spacing: 0.14px;
-        color: #2a3844;
-    }
-    
-    .post-dtl .prcnt label {
-        position: relative;
-        left: 196px;
-        color: #16c0ef;
-        font-family: HKGrotesk;
-    }
-    
-    .prcnt label span {
-        font-family: HKGrotesk-reg;
-        font-size: 13px;
-        line-height: 1.38;
-        letter-spacing: 0.14px;
-        color: #2a3844;
-        margin-right: 10px;
-    }
-    
-    .ppl h1 span {
-        position: relative;
-        left: 372px;
-    }
-    
-    .ppl .fol-btn,
-    .org .fol-btn {
-        position: absolute;
-        right: 0;
-        top: 2px;
-    }
-    
-    .org h1 span {
-        position: relative;
-        left: 350px;
-    }
-    
-    .rcnt-srchd .p-pic {
-        background: #000;
-        height: 40px;
-        width: 40px;
-        border-radius: 50%;
-        margin-right: 5px;
-    }
-    
-    .rcnt-srchd .detls {
-        width: 130px;
-    }
-    
-    .mst-srchd-ppl {
-        padding-bottom: 40px!important;
-    }
-    
-    .mst-srchd-ppl h6 {
-        font-family: HKGrotesk;
-        font-size: 13px;
-        font-weight: 600;
-        letter-spacing: 0.15px;
-        color: #16c0ef;
-        text-align: center;
-    }
-    
-    .star {
-        position: relative;
-        top: -1px;
-    }
-    
-    .sr-nav {
-        justify-content: space-between;
-    }
-}
-    
-    @media(max-width: 768px) {
-        .prjct-v-box {
-            min-width: 300px!important;
-        }
-        .comments-wrapper .comment .prof-img {
-            width: 65px;
-            height: 40px;
-            margin-right: 15px;
-        }
-        .Like_btn_success {
-            font-size: 12px;
-        }
-        .label {
-            font-size: 12px!important;
-        }
-        .w-btn {
-            background-position: 13px 8px;
-        }
-        .top-srch-rslt h1 span {
-            position: relative;
-            left: 115px;
-        }
-        .post-dtl .post-img,
-        .post-img .overlay {
-            width: 305px;
-        }
-        .post-dtl .prcnt label {
-            position: relative;
-            left: 11px;
-        }
-        .ppl .fol-btn,
-        .org .fol-btn {
-            position: absolute;
-            right: 0;
-            top: -7px;
-        }
-        .fol-btn {
-            padding: 0 6px;
-            position: absolute;
-            right: 0;
-            top: -9px;
-            font-size: 12px;
-        }
-        .ppl h1 span {
-            position: relative;
-            left: 203px;
-        }
-        .post .fol-btn {
-            top: 11px;
-        }
-        .prof .detls h2 {
-            width: 117px;
-            font-size: 12px;
-        }
-        .org h1 span {
-            position: relative;
-            left: 168px;
-        }
-        .sr-nav {
-            justify-content: space-evenly!important;
-        }
-    }
-    
-    @media(max-width:360px) {
-        .comments-wrapper .comment .prof-img {
-            width: 80px;
-            height: 45px;
-        }
-        .comments-wrapper a {
-            padding: 0 90px;
-        }
-        .post-dtl .post-img,
-        .post-img .overlay {
-            width: 290px;
-        }
-        .ppl .fol-btn,
-        .org .fol-btn {
-            position: absolute;
-            right: 0;
-            top: -12px;
-        }
-        .prof .detls h2 {
-            width: 118px;
-        }
-        .sr-nav {
-            justify-content: space-evenly!important;
-        }
-    }
-    
-    @media(max-width:320px) {
-        .comments-wrapper .comment .prof-img {
-            width: 80px;
-            height: 40px;
-        }
-    }
+     min-width: 0!important;
+ }
+ 
+ .comments-wrapper h3 {
+     font-size: 17px;
+     font-family: 'HKGrotesk';
+     font-weight: bold;
+     line-height: 1.29;
+     color: #2a3844;
+     padding: 12px 0;
+     border-bottom: 2px solid #f4f8fa;
+ }
+ 
+ .comments-wrapper .comment-details {
+     margin: 0px 10px;
+ }
+ 
+ .comments-wrapper textarea {
+     width: 100%;
+     resize: none;
+     outline: none;
+     padding: 14px 18px;
+     border-radius: 3px;
+     border: solid 1px #e0e6ee;
+     background-color: #ffffff;
+     margin-top: 15px;
+ }
+ 
+ .comments-wrapper .comment .prof-img {
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     background: #b1c1bd;
+ }
+ 
+ .comments-wrapper .comment h1 {
+     font-size: 13px;
+     font-family: 'HKGrotesk';
+     font-weight: bold;
+     color: #2a3844;
+ }
+ 
+ .comments-wrapper .comment h2 {
+     font-size: 13px;
+     line-height: 1.69;
+     color: #2a3844;
+     padding: 5px 0;
+ }
+ 
+ .comments-wrapper .comment label {
+     font-size: 13px;
+     line-height: 1.69;
+     letter-spacing: normal;
+     color: #7c8796;
+ }
+ 
+ .comments-wrapper .comment {
+     padding: 23px 0 0;
+     border-bottom: 2px solid #f4f8fa;
+ }
+ 
+ .comments-wrapper a {
+     font-size: 15px;
+     font-family: 'HKGrotesk';
+     font-weight: bold;
+     line-height: 1.47;
+     letter-spacing: 0.17px;
+     color: #00dbff;
+     padding: 0 10px;
+ }
+ 
+ .comments-wrapper a:hover {
+     text-decoration: none;
+     color: #00dbff;
+ }
+ 
+ .donateButton_success {
+     border-radius: 3px !important;
+     background-color: #16c0ef !important;
+     color: white !important;
+     font-weight: bold !important;
+     display: flex;
+     align-items: center;
+ }
+ 
+ .support_btn_success {
+     border-radius: 3px !important;
+     background-color: #16c0ef !important;
+     color: white !important;
+     font-weight: bold !important;
+     display: flex;
+     align-items: center;
+ }
+ 
+ .Like_btn_success {
+     border-radius: 3px !important;
+     background-color: #16c0ef !important;
+     color: white !important;
+     font-weight: bold !important;
+     display: flex!important;
+     align-items: center!important;
+     justify-content: center;
+     padding: 11px 0px!important;
+ }
+ 
+ .support_btn_active {
+     background-color: white!important;
+     border: 1px solid #16c0ef!important;
+     color: #16c0ef!important;
+     font-weight: bold !important;
+     display: flex!important;
+     align-items: center!important;
+     justify-content: center;
+     padding: 11px 0px!important;
+ }
+ 
+ .Like_btn_active {
+     background-color: white!important;
+     border: 1px solid #16c0ef!important;
+     color: #16c0ef!important;
+     font-weight: bold !important;
+     display: flex!important;
+     align-items: center!important;
+     justify-content: center;
+     padding: 11px 0px!important;
+ }
+ 
+ .Like_btn_success img,
+ .Like_btn_active img {
+     width: 14px;
+     position: relative;
+     bottom: 1px;
+ }
+ 
+ .label {
+     margin: 0px 6px;
+ }
+ 
+ .search-page-bg {
+     background: #f9fafc;
+ }
+ 
+ .header-tabs {
+     padding: 24px 0;
+     background: #fff;
+ }
+ 
+ .tab-content .filter-scn {
+     background-color: #fff;
+     border-radius: 4px;
+     border: solid 1px #e0e6ee;
+     padding: 37px 25px 60px;
+ }
+ 
+ .filter-scn h1 {
+     font-family: HKGrotesk;
+     font-size: 15px;
+     font-weight: bold;
+     color: #2a3844;
+ }
+ 
+ .filter-scn h3 {
+     font-family: HKGrotesk-reg;
+     font-size: 13px;
+     font-weight: 600;
+     letter-spacing: 0.15px;
+     color: #2a3844;
+     margin-top: 30px;
+ }
+ 
+ .filter-scn .srch-box input {
+     border-radius: 16px;
+     border: solid 1px #e0e6ee!important;
+     background-color: #ffffff;
+     padding-left: 30px;
+     background: url('../img/search-icon.svg');
+     background-repeat: no-repeat;
+     background-position: 6px 10px;
+ }
+ 
+ .filter-lbl {
+     margin-top: 20px;
+ }
+ 
+ .filter-lbl .custom-control {
+     margin: 5px 0 0;
+     font-size: 12px;
+     letter-spacing: 0.2px;
+     color: #2a3844;
+     font-family: HKGrotesk;
+ }
+ 
+ .filter-lbl .custom-control label {
+     line-height: 2!important;
+ }
+ 
+ .top-srch-rslt {
+     border: solid 1px #e0e6ee;
+     background-color: #ffffff;
+     padding: 36px 18px 0;
+ }
+ 
+ .top-srch-rslt h1 {
+     font-family: HKGrotesk;
+     font-size: 15px;
+     font-weight: bold;
+     color: #2a3844;
+ }
+ 
+ .top-srch-rslt h1 span {
+     font-family: HKGrotesk;
+     font-size: 13px;
+     font-weight: bold;
+     line-height: 1.38;
+     letter-spacing: 0.15px;
+     text-align: right;
+     color: #16c0ef;
+     position: relative;
+     left: 304px;
+     cursor: pointer;
+ }
+ 
+ .prof {
+     position: relative;
+ }
+ 
+ .prof .detls .sm-lbl {
+     font-family: HKGrotesk;
+     opacity: 0.7;
+     font-size: 10px;
+     margin-bottom: 0!important;
+     letter-spacing: 0.7px;
+     color: #395366;
+     text-transform: uppercase;
+ }
+ 
+ .prof .detls h2 {
+     font-family: HKGrotesk;
+     font-size: 15px;
+     font-weight: 600;
+     color: #2a3844;
+     margin: 0;
+     width: 260px;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+ 
+ .detls .flw {
+     font-family: HKGrotesk-reg;
+     font-size: 12px;
+     line-height: 1.33;
+     letter-spacing: 0.14px;
+     color: #5d677e;
+     margin-bottom: 0!important;
+ }
+ 
+ .detls h3 {
+     font-family: HKGrotesk;
+     font-size: 12px;
+     letter-spacing: 0.14px;
+     color: #7c8796;
+ }
+ 
+ .flw span {
+     color: #7c8796;
+ }
+ 
+ .prof-pic img {
+     object-fit: contain;
+     height: 56px;
+     width: 56px;
+     border-radius: 50%;
+ }
+ 
+ .fol-btn {
+     border-radius: 17px;
+     border: solid 1px #16c0ef;
+     background-color: #ffffff;
+     padding: 0 23px;
+     position: absolute;
+     right: 0;
+     top: 22px;
+ }
+ 
+ .fol-btn .btn {
+     font-family: HKGrotesk;
+     font-size: 13px;
+     font-weight: bold;
+     line-height: 1.38;
+     letter-spacing: 0.15px;
+     text-align: center;
+     color: #16c0ef;
+ }
+ 
+ .fol-btn .btn:focus {
+     box-shadow: none;
+ }
+ 
+ .fol-btn .btn:hover {
+     color: #16c0ef;
+ }
+ 
+ .post {
+     border-radius: 4px;
+     border: solid 1px #e0e6ee;
+     background-color: #ffffff;
+ }
+ 
+ .post .prof-pic {
+     position: relative;
+     top: -7px;
+ }
+ 
+ .post-dtl .post-img {
+     background: url('../img/hands-together.jpg');
+     background-size: cover;
+     width: 500px;
+     height: 260px;
+ }
+ 
+ .post .fol-btn {
+     position: absolute;
+     right: 14px;
+ }
+ 
+ .post-img .overlay {
+     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+     width: 500px;
+     height: 260px;
+ }
+ 
+ .post-img .overlay label {
+     font-family: HKGrotesk;
+     font-size: 12px;
+     font-weight: bold;
+     line-height: 1.67;
+     letter-spacing: 0.13px;
+     color: #ffffff;
+     margin-left: 5px;
+ }
+ 
+ .post-img {
+     position: relative;
+ }
+ 
+ .post-img .donat-btn {
+     border-radius: 22px;
+     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+     background-color: #16c0ef;
+     font-family: HKGrotesk;
+     font-size: 15px;
+     font-weight: bold;
+     line-height: 1.33;
+     letter-spacing: 0.15px;
+     color: #ffffff;
+     text-align: center;
+     width: 126px;
+     padding: 10px 0px;
+     position: absolute;
+     bottom: 15px;
+     right: 16px;
+ }
+ 
+ .post-dtl h1 {
+     font-family: HKGrotesk;
+     font-size: 17px;
+     font-weight: bold;
+     line-height: 0.94;
+     letter-spacing: 0.2px;
+     color: #0db2e0;
+ }
+ 
+ .post-dtl p {
+     font-family: HKGrotesk-reg;
+     font-size: 13px;
+     line-height: 1.38;
+     letter-spacing: 0.15px;
+     color: #5d677e;
+ }
+ 
+ .post-dtl .pg-dt {
+     font-family: HKGrotesk-reg;
+     font-size: 13px;
+     line-height: 1.38;
+     letter-spacing: 0.14px;
+     color: #2a3844;
+ }
+ 
+ .post-dtl .prcnt strong {
+     font-family: HKGrotesk;
+     font-size: 13px;
+     font-weight: bold;
+     line-height: 1.38;
+     letter-spacing: 0.14px;
+     color: #2a3844;
+ }
+ 
+ .post-dtl .prcnt label {
+     position: relative;
+     left: 196px;
+     color: #16c0ef;
+     font-family: HKGrotesk;
+ }
+ 
+ .prcnt label span {
+     font-family: HKGrotesk-reg;
+     font-size: 13px;
+     line-height: 1.38;
+     letter-spacing: 0.14px;
+     color: #2a3844;
+     margin-right: 10px;
+ }
+ 
+ .ppl h1 span {
+     position: relative;
+     left: 372px;
+ }
+ 
+ .ppl .fol-btn,
+ .org .fol-btn {
+     position: absolute;
+     right: 0;
+     top: 2px;
+ }
+ 
+ .org h1 span {
+     position: relative;
+     left: 350px;
+ }
+ 
+ .rcnt-srchd .p-pic {
+     background: #000;
+     height: 40px;
+     width: 40px;
+     border-radius: 50%;
+     margin-right: 5px;
+ }
+ 
+ .rcnt-srchd .detls {
+     width: 130px;
+ }
+ 
+ .mst-srchd-ppl {
+     padding-bottom: 40px!important;
+ }
+ 
+ .mst-srchd-ppl h6 {
+     font-family: HKGrotesk;
+     font-size: 13px;
+     font-weight: 600;
+     letter-spacing: 0.15px;
+     color: #16c0ef;
+     text-align: center;
+ }
+ 
+ .star {
+     position: relative;
+     top: -1px;
+ }
+ 
+ .sr-nav {
+     justify-content: space-between;
+ }
+ 
+ @media(max-width: 768px) {
+     .prjct-v-box {
+         min-width: 0!important;
+     }
+     .comments-wrapper h3 {
+         font-size: 17px;
+         font-family: 'HKGrotesk';
+         font-weight: bold;
+         line-height: 1.29;
+         color: #2a3844;
+         padding: 12px 0;
+         border-bottom: 2px solid #f4f8fa;
+     }
+     .comments-wrapper .comment-details {
+         margin: 0px 10px;
+     }
+     .comments-wrapper textarea {
+         width: 100%;
+         resize: none;
+         outline: none;
+         padding: 14px 18px;
+         border-radius: 3px;
+         border: solid 1px #e0e6ee;
+         background-color: #ffffff;
+         margin-top: 15px;
+     }
+     .comments-wrapper .comment .prof-img {
+         border-radius: 50%;
+         width: 50px;
+         height: 50px;
+         background: #b1c1bd;
+     }
+     .comments-wrapper .comment h1 {
+         font-size: 13px;
+         font-family: 'HKGrotesk';
+         font-weight: bold;
+         color: #2a3844;
+     }
+     .comments-wrapper .comment h2 {
+         font-size: 13px;
+         line-height: 1.69;
+         color: #2a3844;
+         padding: 5px 0;
+     }
+     .comments-wrapper .comment label {
+         font-size: 13px;
+         line-height: 1.69;
+         letter-spacing: normal;
+         color: #7c8796;
+     }
+     .comments-wrapper .comment {
+         padding: 23px 0 0;
+         border-bottom: 2px solid #f4f8fa;
+     }
+     .comments-wrapper a {
+         font-size: 15px;
+         font-family: 'HKGrotesk';
+         font-weight: bold;
+         line-height: 1.47;
+         letter-spacing: 0.17px;
+         color: #00dbff;
+         padding: 0 10px;
+     }
+     .comments-wrapper a:hover {
+         text-decoration: none;
+         color: #00dbff;
+     }
+     .donateButton_success {
+         border-radius: 3px !important;
+         background-color: #16c0ef !important;
+         color: white !important;
+         font-weight: bold !important;
+         display: flex;
+         align-items: center;
+     }
+     .support_btn_success {
+         border-radius: 3px !important;
+         background-color: #16c0ef !important;
+         color: white !important;
+         font-weight: bold !important;
+         display: flex;
+         align-items: center;
+     }
+     .Like_btn_success {
+         border-radius: 3px !important;
+         background-color: #16c0ef !important;
+         color: white !important;
+         font-weight: bold !important;
+         display: flex!important;
+         align-items: center!important;
+         justify-content: center;
+         padding: 11px 0px!important;
+     }
+     .support_btn_active {
+         background-color: white!important;
+         border: 1px solid #16c0ef!important;
+         color: #16c0ef!important;
+         font-weight: bold !important;
+         display: flex!important;
+         align-items: center!important;
+         justify-content: center;
+         padding: 11px 0px!important;
+     }
+     .Like_btn_active {
+         background-color: white!important;
+         border: 1px solid #16c0ef!important;
+         color: #16c0ef!important;
+         font-weight: bold !important;
+         display: flex!important;
+         align-items: center!important;
+         justify-content: center;
+         padding: 11px 0px!important;
+     }
+     .Like_btn_success img,
+     .Like_btn_active img {
+         width: 14px;
+         position: relative;
+         bottom: 1px;
+     }
+     .label {
+         margin: 0px 6px;
+     }
+     /* Search page css */
+ }
+ 
+ @media(max-width: 768px) {
+     .prjct-v-box {
+         min-width: 300px!important;
+     }
+     .comments-wrapper .comment .prof-img {
+         width: 65px;
+         height: 40px;
+         margin-right: 15px;
+     }
+     .Like_btn_success {
+         font-size: 12px;
+     }
+     .label {
+         font-size: 12px!important;
+     }
+     .w-btn {
+         background-position: 13px 8px;
+     }
+     .top-srch-rslt h1 span {
+         position: relative;
+         left: 115px;
+     }
+     .post-dtl .post-img,
+     .post-img .overlay {
+         width: 305px;
+     }
+     .post-dtl .prcnt label {
+         position: relative;
+         left: 11px;
+     }
+     .ppl .fol-btn,
+     .org .fol-btn {
+         position: absolute;
+         right: 0;
+         top: -7px;
+     }
+     .fol-btn {
+         padding: 0 6px;
+         position: absolute;
+         right: 0;
+         top: -9px;
+         font-size: 12px;
+     }
+     .ppl h1 span {
+         position: relative;
+         left: 203px;
+     }
+     .post .fol-btn {
+         top: 11px;
+     }
+     .prof .detls h2 {
+         width: 117px;
+         font-size: 12px;
+     }
+     .org h1 span {
+         position: relative;
+         left: 168px;
+     }
+     .sr-nav {
+         justify-content: space-evenly!important;
+     }
+ }
+ 
+ @media(max-width:360px) {
+     .comments-wrapper .comment .prof-img {
+         width: 80px;
+         height: 45px;
+     }
+     .comments-wrapper a {
+         padding: 0 90px;
+     }
+     .post-dtl .post-img,
+     .post-img .overlay {
+         width: 290px;
+     }
+     .ppl .fol-btn,
+     .org .fol-btn {
+         position: absolute;
+         right: 0;
+         top: -12px;
+     }
+     .prof .detls h2 {
+         width: 118px;
+     }
+     .sr-nav {
+         justify-content: space-evenly!important;
+     }
+ }
+ 
+ @media(max-width:320px) {
+     .comments-wrapper .comment .prof-img {
+         width: 80px;
+         height: 40px;
+     }
+ }

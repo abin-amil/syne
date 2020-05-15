@@ -71,7 +71,8 @@
                 <div class="col-3">
                     <div class="ml-5 mt-1 home-btn" id="homebtn">
 
-                        <label>< Home</label>
+                        <a href="./home.html">
+                            < Home</a>
                     </div>
                 </div>
                 <div class="modal-body p-md-5 p-4">
@@ -138,9 +139,10 @@
 
                         <div class="Start-a-Project ml-3">1/6</div>
                         <div class="title pt-2 ml-3">Enter your project category </div>
-                        <div class="srch-cat" style="position: relative;">
-                            <img src="./img/svgImages/carrot-down.svg">
-                            <select class="syne-inputbox mt-2 ml-3" id="category" name="category">
+                        <div class="categ" style="position: relative; max-width: 633px;">
+
+                            <select class="syne-inputbox mt-2 ml-3 srch-cat" id="category" name="category">
+                               
                                 <option value="">Search Categories</option>
                               </select>
                         </div>
@@ -571,7 +573,9 @@
                                      <div class="pl-2">Attach Media</div>
                                     </button>
                                     <button type="button" class="btn ml-3 attachMediaButton is-success mt-4 d-flex justify-content-center">
-                                       <div>  </div>                 
+                                        <div>
+                                            <img src="img/pdficon.png">
+                                       </div>                
                     
                                        <div class="pl-2">Introduction.pdf</div>
                                      </button>
@@ -605,8 +609,106 @@
         </div>
     </div>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- ***************Modal Wrapper******************** -->
+    <div class="final-step-wrapper" style="display: none;">
+        <div class="popup-modal mt-3">
+            <div class="first-step-email" style="display: block;">
+                <h2 class="title ">One last step!</h2>
+                <p>Enter your email address to create the project
+                    <strong>“School of Love”</strong> </p>
+                <div class="prof-pic">
+                </div>
+                <div class="syne-inputbox mt-3">
+                    <label class="syne-input-label em-lb" for="title">Email</label>
+                    <input type="text" name="title" class="form-control project-title-input" placeholder="xyz@gmail.com">
+                </div>
+                <button type="button" class="btn  proceedButton is-success mt-3 d-flex align-items-center justify-content-around">
+               
+                <div>
+                  Proceed
+                </div>
+                
+              </button>
+            </div>
+            <div class="second-step-password" style="display: none;">
+                <h2 class="title ">One last step!</h2>
+                <p>Enter your email address to create the project
+                    <strong>“School of Love”</strong> </p>
+                <div class="prof-pic">
+                </div>
+                <div class="syne-inputbox mt-3">
+                    <label class="syne-input-label em-lb" for="title">Email</label>
+                    <input type="text" name="title" class="form-control project-title-input" placeholder="xyz@gmail.com">
+                </div>
+                <div class="syne-inputbox mt-3">
+                    <label class="syne-input-label pwd" for="title">Show</label>
+                    <input type="password" name="title" class="form-control project-title-input pwd-input" placeholder="Password">
+                </div>
+                <div class="d-flex justify-content-between rem-fgt mt-3">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="remember">
+                        <label class="custom-control-label" for="remember">Remember this device</label>
+                    </div>
+                    <div class="fgt-lbl">Forgot Password?</div>
+                </div>
+                <button type="button" class="btn  proceedButton is-success mt-3 d-flex align-items-center justify-content-around">
+                    <div>
+                        Proceed
+                      </div>
+                      
+                    </button>
+            </div>
+            <div class="third-step-create-account" style="display: none;">
+                <h2 class="title ">Create account & publish</h2>
+                <div class="syne-inputbox mt-3">
+                    <label class="syne-input-label em-lb" for="title">Email</label>
+                    <input type="text" name="title" class="form-control project-title-input" placeholder="xyz@gmail.com">
+                </div>
+                <div class="d-flex justify-content-between mt-4">
+                    <div class="syne-inputbox w45">
+                        <label class="syne-input-label em-lb" for="title">Given Name</label>
+                        <input type="text" name="title" class="form-control project-title-input" placeholder="William">
+                    </div>
+                    <div class="syne-inputbox w45">
+                        <label class="syne-input-label em-lb" for="title">Surname</label>
+                        <input type="text" name="title" class="form-control project-title-input" placeholder="Charlotte">
+                    </div>
+                </div>
+                <div class="phone mt-4 d-flex justify-content-around">
+                    <div class="code-slct syne-inputbox w30">
+                        <label class="syne-input-label em-lb" for="title">IND</label>
+                        <select class="form-control code">
+                            <option>+ 91</option>
+                            <option>+ 80</option>
+                            <option>+ 44</option>
+                        </select>
+                    </div>
+                    <div class="syne-inputbox w70">
+                        <label class="syne-input-label em-lb" for="title">Phone Number</label>
+                        <input type="text" name="title" class="form-control project-title-input" placeholder="00000 000 000">
+                    </div>
+                </div>
+                <div class="syne-inputbox mt-4 second-step-password">
+                    <label class="syne-input-label pwd" for="title">Show</label>
+                    <input type="password" name="title" class="form-control project-title-input pwd-input" placeholder="Create a Password">
 
+                </div>
+                <div class="d-flex justify-content-between pwd-strngth">
+                    <div class="strength "></div>
+                    <div class="strength "></div>
+                    <div class="strength "></div>
+                    <div class="strength "></div>
+                </div>
+                <p class="mt-4 tc">By signing up, you confirm that you’ve read and<br/> accepted our <span class="txt-blue">Terms & Conditions</span> and <span class="txt-blue">Privacy Policy</span> .</p>
+                <button type="button" class="btn  proceedButton is-success mt-4 d-flex align-items-center justify-content-around">
+                    <div>
+                        Proceed
+                      </div>
+                      
+                </button>
+                <p class="sign-in mt-4">Already have an account? <span class="txt-blue"> Sign in</span></p>
+            </div>
+        </div>
     </div>
     <script src="scripts/jquery.min.js"></script>
 
