@@ -594,7 +594,7 @@
                 <div>
                 </div>
               </button>
-                            <button onclick="proceed(6)" id="startProject1-proceed" type="button" class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
+                            <button id="startProject1-proceed modal-final" type="button" class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
                 <div>
                   Proceed
                 </div>
@@ -612,6 +612,7 @@
     <!-- ***************Modal Wrapper******************** -->
     <div class="final-step-wrapper" style="display: none;">
         <div class="popup-modal mt-3">
+            <img src="./img/svgImages/close-icon.svg" class="close">
             <div class="first-step-email" style="display: block;">
                 <h2 class="title ">One last step!</h2>
                 <p>Enter your email address to create the project
@@ -737,6 +738,27 @@
 
             });
         });
+        // $(document).ready(function() {
+        //     //modal script
+        //     $(".modal-final").click(function(e) {
+        //         //$(this).next("div").addClass("open-pop");
+        //         var modl_id = $(this).attr('data-target');
+        //         $("#" + modl_id).addClass("open-pop");
+        //         $("body").addClass("modal-blur");
+        //         e.preventDefault();
+        //     });
+        //     $("#syne-login .modalclose").click(function(e) {
+        //         $("#syne-login").removeClass("open-pop");
+        //         $("body").removeClass("modal-blur");
+        //         e.preventDefault();
+        //     });
+        //     $(".pop-modal").click(function(e) {
+        //         if (e.target.className != 'pop-modal' && !$('.pop-modal').find(e.target).length) {
+        //             $(this).removeClass("open-pop");
+        //             $("body").removeClass("modal-blur");
+        //         }
+        //     });
+        // });
 
         $(document).ready(function() {
             $("#crowdfunding").mouseout(function() {
