@@ -87,9 +87,10 @@ $(document).ready(function() {
         slidesToShow: 2,
         centerMode: true,
         slidesToScroll: 1,
-        autoplay: true,
+        draggable: true,
+        // autoplay: true,
         arrows: true,
-        autoplaySpeed: 2000,
+        // autoplaySpeed: 2000,
         responsive: [{
                 breakpoint: 1024,
                 settings: {
