@@ -1,0 +1,126 @@
+.LineDiv-1 {
+  position: relative;
+  top: 30px;
+  border-bottom: 1px solid #e0e6ee;
+  height: 40px;
+  padding-bottom: 55px;
+  margin-bottom: 20px;
+}
+.LineDiv-1 h2{
+font-family: HKGrotesk-SemiBold;
+font-size: 15px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 2;
+letter-spacing: 0.17px;
+color: #2a3844;
+}
+.LineDiv-1 h4{
+  float: right;
+  margin-top: -25px;
+  font-family: HKGrotesk-Bold;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  text-align: right;
+  color: #2a3844;
+  }
+  .LineDiv-1 p {
+    float: right;
+  font-family: HKGrotesk-SemiBold;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  color: #16c0ef;
+  cursor: pointer;
+  transition: .2s ease-in;
+  text-decoration: underline;
+  }
+  .LineDiv-1 p:hover {
+    color: #162cef;
+  }
+  .SubHistory {
+    position: relative;
+    top: 30px;
+
+  }
+  .SubHistory h5 {
+    font-family: HKGrotesk-SemiBold;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.85;
+    letter-spacing: 0.25px;
+    color: #7c8796;
+    margin-bottom: 10px;
+  }
+  .OfferRect {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 13px;
+    width: 100%;
+    padding-bottom: 19px;
+    background-color: rgba(238, 240, 245, 0.5);
+    margin-bottom: 10px;
+  }
+  .OfferRect p {
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: 0.15px;
+    color: #7c8796;
+  }
+  .OfferRect h4 {
+    padding-right: 40%;
+    padding-top: 5px;
+  font-family: HKGrotesk-SemiBold;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 0.17px;
+  color: #000000;
+}
+.OfferRect h5{
+  float: right;
+  margin-top: -40px;
+  font-family: HKGrotesk-Bold;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  text-align: right;
+  color: #2a3844;
+  }
+  p.viewRec {
+    margin-top: -20px;
+    cursor: pointer;
+    float: right;
+  font-family: HKGrotesk-SemiBold;
+  font-size: 12px;
+  transition: ease-in .2s;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  color: #16c0ef;
+  text-decoration: underline;
+  }
+  p.viewRec:hover {
+    color: #2f00ff;
+  }
+  

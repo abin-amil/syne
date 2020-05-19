@@ -1,0 +1,636 @@
+
+/* Responsive */
+
+@media screen and (max-width: 800px){
+  .followers, .my-3, .follower-text, .mt-2{
+    display: none;
+  }
+  .propic-menu img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+  }
+  .full-name{
+    margin-left: 50px;
+  }
+  .username{
+    font-family: HKGrotesk-Regular;
+    font-size: 12px;
+    margin-left: 50px;
+    line-height: 1.33;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #7c8796;
+  }
+  .rectangle-menu{
+    width: 100%;
+    height: 40px;
+    background-color: #f9fafc;
+    position: absolute;
+    left: 0px;
+    top: 80px;  
+    padding-left: 20px;
+    padding-top: 10px;
+    color: black;
+    font-family: HKGrotesk-Bold;
+    font-size: 15px;
+  }
+  .rectangle-menu-bar{
+    width: 100%;
+    height: 20px;
+    background-color: #f9fafc;
+    position: relative;
+    left: 0px;
+    margin-top: 15px;
+  }
+  .menu-items{
+    margin-top: 20px;
+    
+  }
+  .d-flex{
+    width: 100%;
+    height: 40px;
+    border-bottom: solid .5px #eef0f5;
+    padding-bottom: 15px;
+  }
+  .d-flex img{
+    width: 20px;
+    height: 20px;
+  }
+  .d-flex label{
+  font-family: HKGrotesk;
+  font-size: 13px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.15px;
+  color: #16c0ef;
+  margin-left: 10px;
+  }
+
+  .d-flexRes{
+    width: 100%;
+    height: 30px;
+    border-bottom: solid .5px #eef0f5;
+    padding-bottom: 15px;
+  }
+  .d-flexRes img{
+    width: 20px;
+    height: 20px;
+  }
+  .d-flexRes label{
+  font-family: HKGrotesk;
+  font-size: 13px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.15px;
+  color: #16c0ef;
+  margin-left: 10px;
+  }
+
+  .side-labels{
+  font-family: HKGrotesk-Bold;
+  font-size: 13px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: 0.15px;
+  color: #5d677e;
+  margin-top: 10px;
+  height: 30px;
+  }
+  .left-tab{
+    position: fixed;
+    overflow-x: hidden;
+    scrollbar-width: 1px;
+  }
+}
+
+@media screen and (max-width: 637px){
+  .profile-top-banner{
+    display: none;
+  }
+  .overlay-trigger{
+    display: none;
+  }
+  .left-tab{
+    top: 0px;
+    box-shadow: 25px 2px 5px #888888;
+    transition: ease-in .5s;
+    z-index: 10;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 437px){
+     /*header design*/
+     .fixed-top{
+      display: none;
+    }
+    .responsive-header{
+      width: 100%;
+      height: 56px;
+      border: none;
+      background-color: #ffffff;
+      padding-left: 6%;
+      padding-right: 6%;
+      padding-top: 15px;
+      display: inline-block;
+      position: fixed;
+      z-index: 2;
+      
+    }
+    .logodiv{
+      width: 24px;
+      height: 24px;
+      padding: 2px 2px 2px 2px;
+      display: inline-block;
+      position: fixed;
+      margin-top: 0px;
+    }
+    .menulines{
+      width: 25px;
+      height: 3px;
+      background-color: #16c0ef;
+      margin-top: 5px;
+    }
+    .responsive-header img{
+      width: 48px;
+      height: 15px;
+      position: absolute;
+      display: inline-block;
+      margin-left: 54px;
+      margin-top: 8px;
+    }
+
+    /* code for search */
+    ::-webkit-input-placeholder { 
+      color: #fff;
+    }
+    ::-moz-placeholder { 
+      color: #fff;
+    }
+    .search-focus {
+        background: url(../img/search-icon.svg) no-repeat left;
+        border: 1px solid #ccc;
+        outline: none;
+        background-size: 22px;
+        background-position: 13px;
+        border-radius: 50px;
+        width: 50px;
+        height: 40px;
+        padding: 25px;
+        transition: all .5s;
+        margin-left: 80%;
+        margin-right: 100px;
+        text-align: left;
+        margin-top: -5px;
+        font-family: "HKGrotesk-Regular";
+        font-weight: bold;
+        color: white
+    }
+    .search-focus:focus{
+        width: 50%;
+        padding-left: 50px;
+        background-color: white;
+        margin-right: 00px;
+        margin-left: 50%;
+        color: grey;
+    }
+
+    /* code for search ends */
+ 
+    /*header design ends*/
+    .footer{
+      width: 90%;
+      height: 80px;
+      background-color: green;
+      position: fixed;
+      bottom: 0px;
+      background-color: transparent;
+      z-index: 1;
+    }
+    .floating-footer{
+      width: 100%;
+      height: 50px;
+      background-color: white;
+      position: fixed;
+      bottom: 0px;
+      box-shadow: 10px -2px 1px #e0e6ee;
+      display: inline-block;
+      padding-top: -50px;
+    }
+  
+    .circle{
+      background-color: white;
+      border-radius: 50%;
+      border-style: none;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: -40%;
+      left: 42%;
+      box-shadow: 0px -2px 2px  #e0e6ee;
+    }
+    .main-box-left{
+      background-color: transparent;
+      left: 4%;
+      width: 35%;
+      height: 50px;
+      display: inline-flex;
+      position: absolute;
+      top: 40px;
+    }
+  
+    .main-box-right{
+      background-color: transparent;
+      position: absolute;
+      right: -10%;
+      width: 55%;
+      height: 50px;
+      display: inline-flex;
+      top: 32px;
+      padding-left: 9%;
+      padding-right: 40%;
+    }
+    .item-box{
+      width: 80px;
+      height: 50px;
+      background-color: transparent;
+      top: 20px;
+      margin-left: 5%;
+      display: inline-block;
+    }
+  
+    .item-box img{
+      width: 18px;
+      height: 18px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .item-box label{
+      display: block;
+      font-family: HKGrotesk-Regular;
+      font-size: 10px;
+      color: gray;
+      margin-top: 2px;
+      text-align: center;
+    }
+  
+    .item-box-blank{
+      width: 14%;
+      height: 50px;
+      background-color: transparent;
+      top: 30px;
+      margin-right: 0px;
+      margin-left: 1px;
+      display: inline-block;
+      position: relative;
+      align-content: center;
+    }
+  
+    .item-box-round{
+      width: 50px;
+      height: 50px;
+      background-color: transparent;
+      top: 10px;
+      display: inline-block;
+      position: absolute;
+      margin-left: 47.8%;
+    }
+  
+    .item-box-round img{
+      width: 100%;
+      height: 100%;
+      display: block;
+      align-self: center;
+    }
+    .img-box-round label{
+      display: block;
+      font-family: HKGrotesk-Regular;
+      font-size: 10px;
+      color: gray;
+      margin-top: 2px;
+      text-align: center;
+    }
+    .circleIcon{
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border-width: 2px;
+      border-color: #16c0ef;
+      background-color: #ffffff  ;
+      position: absolute;
+      left:5.5px;
+      top:20%;
+      display: inline-block;
+      color: #16c0ef;
+      border-style: solid;
+    }
+    .circleIcon img{
+      width: 15px;
+      height: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 12px;
+    }
+  
+  }
+  
+
+
+  @media screen and (min-width: 438px) and (max-width: 800px){
+    .profile-top-banner{
+      display: none;
+    }
+    .overlay-trigger{
+      display: none;
+    }
+    .left-tab{
+      top: 0px;
+      left: 0px;
+      box-shadow: 5px 10px 8px #888888;
+      transition: ease-in .5s;;
+      z-index: 10;
+      height: 100%;
+    }
+    /*header design*/
+  .fixed-top{
+    display: none;
+  }
+  .responsive-header{
+    width: 100%;
+    height: 56px;
+    border: none;
+    background-color: #ffffff;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 15px;
+    display: inline-block;
+    position: fixed;
+    z-index: 5;
+  }
+  .logodiv{
+    width: 24px;
+    height: 24px;
+    padding: 2px 2px 2px 2px;
+    display: inline-block;
+    position: fixed;
+    margin-top: 0px;
+  }
+  .menulines{
+    width: 25px;
+    height: 3px;
+    background-color: #16c0ef;
+    margin-top: 5px;
+  }
+  .responsive-header img{
+    width: 48px;
+    height: 15px;
+    position: absolute;
+    display: inline-block;
+    margin-left: 54px;
+    margin-top: 8px;
+  }
+  .search-form{
+    display: inline-block;
+    margin-left: 90%;
+    background-color: #ffffff;
+  }
+  .search-form input{
+    display: none;
+  }
+  /*header design ends*/
+    .footer{
+      width: 90%;
+      height: 80px;
+      background-color: green;
+      position: fixed;
+      bottom: 0px;
+      background-color: transparent;
+       z-index: 2;
+    }
+    .floating-footer{
+      width: 100%;
+      height: 50px;
+      background-color: white;
+      display: block;
+      position: fixed;
+      bottom: 0px;
+      box-shadow: 10px -2px 8px #e0e6ee;
+      display: inline-block;
+      padding-top: -50px;
+    }
+  
+    .circle{
+      background-color: white;
+      border-radius: 50%;
+      border-style: none;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: -40%;
+      left: 45%;
+      box-shadow: 0px -2px 2px #e0e6ee;
+    }
+  
+  
+    .item-box{
+      width: 80%;
+      height: 50px;
+      background-color: transparent;
+      top: 20px;
+      margin-left: 10%;
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      align-content: center;
+    }
+  
+    .main-box-left{
+      background-color: transparent;
+      left: 4%;
+      width: 40%;
+      height: 50px;
+      display: inline-flex;
+      position: absolute;
+      top: 15px;
+    }
+  
+    .main-box-right{
+      background-color: transparent;
+      position: absolute;
+      right: -1%;
+      width: 40%;
+      height: 50px;
+      display: inline-flex;
+      top: 15px;
+    }
+  
+  
+    .item-box img{
+      width: 100%;
+      height: 31px;
+      display: block;
+      align-self: center;
+    }
+    .item-box label{
+      display: block;
+      font-family: HKGrotesk-Regular;
+      font-size: 50%;
+      color: gray;
+      margin-top: 2px;
+      text-align: center;
+    }
+  
+    .item-box-blank{
+      width: 12%;
+      height: 50px;
+      background-color:transparent;
+      top: 30px;
+      margin-right: 2%;
+      display: inline-block;
+      position: relative;
+      align-content: center;
+    }
+  
+    .item-box-round{
+      width: 50px;
+      height: 50px;
+      background-color: transparent;
+      top: 15px;
+      display: inline-block;
+      position: absolute;
+      margin-left: 50.6%;
+    }
+    .item-box-round img{
+      width: 100%;
+      height: 85%;
+      display: block;
+      align-self: center;
+    }
+    .img-box-round label{
+      display: block;
+      font-family: HKGrotesk-Regular;
+      font-size: 65%;
+      color: gray;
+      margin-top: 2px;
+      text-align: center;
+    }
+    .circleIcon{
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border-width: 2px;
+      border-color: #16c0ef;
+      background-color: #ffffff  ;
+      position: absolute;
+      left:5px;
+      top:5%;
+      display: inline-block;
+      color: #16c0ef;
+      border-style: solid;
+    }
+    .circleIcon img{
+      width: 15px;
+      height: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 12px;
+    }
+
+    /* code for search */
+    ::-webkit-input-placeholder { 
+      color: #fff;
+    }
+    ::-moz-placeholder { 
+      color: #fff;
+    }
+    .search-focus {
+        background: url(../img/search-icon.svg) no-repeat left;
+        border: 1px solid #ccc;
+        outline: none;
+        background-size: 22px;
+        background-position: 13px;
+        border-radius: 50px;
+        width: 50px;
+        height: 40px;
+        padding: 25px;
+        transition: all .5s;
+        margin-left: 90%;
+        margin-right: 100px;
+        text-align: left;
+        margin-top: -5px;
+        font-family: "HKGrotesk-Regular";
+        font-weight: bold;
+        color: white
+    }
+    .search-focus:focus{
+        width: 50%;
+        padding-left: 50px;
+        background-color: white;
+        margin-right: 00px;
+        margin-left: 50%;
+        color: grey;
+    }
+
+    /* code for search ends */
+  }
+  
+  @media screen and (min-width: 802px){
+    .footer{
+      display: none;
+    }
+    .responsive-header{
+      display: none;
+    }
+
+    .leftFloat{
+      display: none;
+      visibility: hidden;
+    }
+    .propic-menu img{
+      display: none;
+    }
+
+    .side-labels, .d-flexRes{
+      display: none;
+    }
+    
+  }
+
+  @media screen and (min-width: 440px) and (max-width: 630px){
+    .item-box-round{
+      margin-left: 50.8%;
+    }
+  }
+
+  @media screen and (min-width: 380px) and (max-width: 440px){
+    .item-box-round{
+      margin-left: 47.7%;
+    }
+  }
+
+  @media screen and (max-width: 321px){
+    .item-box-round{
+      margin-left: 47.6%;
+    }
+  }
+
+  @media screen and (min-width: 437px) and (max-width: 440px){
+    .item-box-round{
+      margin-left: 51%;
+    }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 500px){
+    .item-box-round{
+      margin-left: 51.1%;
+    }
+  }

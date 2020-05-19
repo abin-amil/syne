@@ -1,0 +1,150 @@
+.LineDiv-1 {
+  position: relative;
+  top: 40px;
+  border-bottom: 1px solid #e0e6ee;
+  height: 40px;
+  padding-bottom: 55px;
+  margin-bottom: 20px;
+}
+.LineDiv-1 p {
+  font-family: HKGrotesk-Regular;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: 0.15px;
+  color: #5d677e;
+}
+.LineDiv-1 h2{
+font-family: HKGrotesk-SemiBold;
+font-size: 15px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 2;
+letter-spacing: 0.17px;
+color: #2a3844
+}
+.LineDiv-2 {
+  position: relative;
+  top: 30px;
+  border-bottom: 1px solid #e0e6ee;
+  height: 40px;
+  padding-bottom: 65px;
+  margin-bottom: 30px;
+}
+.LineDiv-2 h2{
+font-family: HKGrotesk-SemiBold;
+font-size: 15px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 2;
+letter-spacing: 0.17px;
+color: #2a3844
+}
+.LineDiv-2 p {
+  font-family: HKGrotesk-Regular;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: 0.15px;
+  color: #5d677e;
+}
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  right: 0px;
+  top: 0px;
+}
+
+.switch input { 
+      opacity: 0;
+      width: 0;
+      height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 6px;
+  left: 0;
+  right: 7px;
+  bottom: 0;
+  background-color: #e0e6ee;
+  content: "x";
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.21);
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 1px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(40, 202, 0);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(8, 179, 31);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.on
+{
+display: none;
+}
+
+.on
+{
+color: white;
+position: absolute;
+transform: translate(-50%,-50%);
+top: 50%;
+left: 30%;
+font-size: 14px;
+font-weight: bolder;
+}
+.off
+{ 
+color: #bac3cf;
+position: absolute;
+transform: translate(-50%,-50%);
+top: 46%;
+right: 12%;
+font-size: 14px;
+font-weight: bolder;
+}
+
+input:checked+ .slider .on
+{display: block;}
+
+input:checked + .slider .off
+{display: none;}

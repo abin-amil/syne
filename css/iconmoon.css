@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?73zjy5');
+  src:  url('../fonts/icomoon.eot?73zjy5#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?73zjy5') format('truetype'),
+    url('../fonts/icomoon.woff?73zjy5') format('woff'),
+    url('../fonts/icomoon.svg?73zjy5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-youtube-square:before {
+  content: "\e900";
+}
+.icon-linkedin-square:before {
+  content: "\e901";
+}
+.icon-facebook-square:before {
+  content: "\e902";
+}
+.icon-twitter-square:before {
+  content: "\e903";
+}
+.icon-heart-o:before {
+  content: "\e904";
+}
+.icon-heart:before {
+  content: "\e905";
+}
+.icon-calendar:before {
+  content: "\e906";
+}
+.icon-date:before {
+  content: "\e906";
+}
+.icon-schedule:before {
+  content: "\e906";
+}
+.icon-link:before {
+  content: "\e907";
+}
+.icon-chain:before {
+  content: "\e907";
+}
+.icon-url:before {
+  content: "\e907";
+}
+.icon-uri:before {
+  content: "\e907";
+}
+.icon-anchor:before {
+  content: "\e907";
+}
+.icon-feed:before {
+  content: "\e908";
+}
+.icon-rss:before {
+  content: "\e908";
+}
+.icon-social:before {
+  content: "\e908";
+}
+.icon-location:before {
+  content: "\e909";
+}
+.icon-map-marker:before {
+  content: "\e909";
+}
+.icon-marker:before {
+  content: "\e909";
+}
+.icon-pin:before {
+  content: "\e909";
+}
+.icon-share:before {
+  content: "\e90a";
+}
+.icon-shield:before {
+  content: "\e90b";
+}
+.icon-arrow-left:before {
+  content: "\e910";
+}
+.icon-arrow-right:before {
+  content: "\e911";
+}
+.icon-flag:before {
+  content: "\e90c";
+}
+.icon-time:before {
+  content: "\e90d";
+}
+.icon-search:before {
+  content: "\e90e";
+}
+.icon-notifications_none:before {
+  content: "\e90f";
+}

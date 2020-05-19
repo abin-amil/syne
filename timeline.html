@@ -15,22 +15,36 @@
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/footer-menu.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/login_security.css">
+    <link rel="stylesheet" href="css/change-password.css">
+    <link rel="stylesheet" href="css/account_management.css">
+    <link rel="stylesheet" href="css/settings_account_mngmt.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/post-login.css">
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/timeline.css">
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/footer-menu.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css"><!-- Custom Selectbox-->
+    <link rel="stylesheet" href="css/tui-date-picker.css"> <!-- Date Picker-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="icon" href="favicon.png" type="image/x-icon">
 
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <script src="js/header-footer.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
         </script>
@@ -50,6 +64,198 @@
 
 
 <body class="post-page-bg">
+    <div class="full-wrapper header post-page-header">
+        <!-- Header -->
+        <header class="py-4 fixed-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-12 d-flex justify-content-lg-start mb-3 mb-lg-0">
+                        <div class="row w-100">
+
+                            <div class="col-md-auto col-sm-4 col-12 mb-4 mb-sm-0">
+                                <div class="logo">
+                                    <a href="index.html"><img src="img/syne-logo.png" class="img-fluid"></a>
+                                </div>
+                            </div>
+
+                            <div class="col-auto col-sm-8">
+                                <div class="row">
+                                    <div class="col-auto col-md-auto col-sm-6">
+                                        <a href="#" class="btn btn-outline-primary">Start a Project</a>
+                                    </div>
+                                    <div class="col-auto col-md-auto col-sm-6">
+                                        <a href="#" class="btn sp-btn">Explore Projects</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 d-flex justify-content-lg-end justify-content-md-start">
+                        <div class="row align-items-center w-100 justify-content-lg-end justify-content-md-start ">
+
+                            <div class="col-auto search-form">
+                                <div class="input-group">
+                                    <div class="custom-close"></div>
+                                    <div class="search-form-cvr"><input type="text" class="form-control border-0"
+                                            placeholder="Search..."></div>
+                                    <button class="btn" type="button">
+                                        <img class="pl-3" src="img/svgImages/search-icon-grey.svg">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-auto p-0">
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="img/msg-icon.svg">
+                                        <span class="count">4</span>
+                                    </a>
+                                    <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                        aria-labelledby="navbarDropdown">
+                                        <h6 class="dropdown-header">
+                                            Message
+                                        </h6>
+                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image mr-3">
+                                                <img class="rounded-circle"
+                                                    src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                                                <div class="status-indicator bg-success"></div>
+                                            </div>
+                                            <div class="font-weight-bold">
+                                                <div class="text-truncate">Hi there! I am wondering if you can help me
+                                                    with
+                                                    a problem I've been having.</div>
+                                                <div class="small text-gray-500">Emily Fowler · 58m</div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image mr-3">
+                                                <img class="rounded-circle"
+                                                    src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
+                                                <div class="status-indicator"></div>
+                                            </div>
+                                            <div>
+                                                <div class="text-truncate">I have the photos that you ordered last
+                                                    month,
+                                                    how would you like them sent to you?</div>
+                                                <div class="small text-gray-500">Jae Chun · 1d</div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image mr-3">
+                                                <img class="rounded-circle"
+                                                    src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
+                                                <div class="status-indicator bg-warning"></div>
+                                            </div>
+                                            <div>
+                                                <div class="text-truncate">Last month's report looks great, I am very
+                                                    happy
+                                                    with the progress so far, keep up the good work!</div>
+                                                <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="dropdown-list-image mr-3">
+                                                <img class="rounded-circle"
+                                                    src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+                                                <div class="status-indicator bg-success"></div>
+                                            </div>
+                                            <div>
+                                                <div class="text-truncate">Am I a good boy? The reason I ask is because
+                                                    someone told me that people say this to all dogs, even if they
+                                                    aren't
+                                                    good...</div>
+                                                <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item text-center small text-gray-500" href="#">Read More
+                                            Messages</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto p-0 noti-msg">
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link" href="#" id="navbarDropdown2" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img class="" src="img/notif-icon.svg">
+                                        <span class="count">8</span>
+                                    </a>
+                                    <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                        aria-labelledby="navbarDropdown2">
+                                        <h6 class="dropdown-header">
+                                            Notification
+                                        </h6>
+                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="mr-3">
+                                                <div class="icon-circle bg-primary">
+                                                    <i class="fa fa-file text-white"></i>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="small text-gray-500">December 12, 2019</div>
+                                                <span class="font-weight-bold">A new monthly report is ready!</span>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="mr-3">
+                                                <div class="icon-circle bg-success">
+                                                    <i class="fa fa-pencil text-white"></i>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="small text-gray-500">December 7, 2019</div>
+                                                $290.29 has been deposited!
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="mr-3">
+                                                <div class="icon-circle bg-warning">
+                                                    <i class="fa fa-exclamation-triangle text-white"></i>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="small text-gray-500">December 2, 2019</div>
+                                                Spending alert: unusual high spending.
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item text-center small text-gray-500" href="#">Show All
+                                            Alerts</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto pr-0">
+                                <div class="nav-item dropdown user-deatsils">
+                                    <a class="nav-link p-0 tog" href="#" id="navbarDropdown2" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="img/avatar.jpg">
+                                        <span>Vinith <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
+                                        <a class="dropdown-item" href="#">My Profile</a>
+                                        <a class="dropdown-item" href="#">Settings</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Logout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Responsive header -->
+        <header class="responsive-header">
+            <div class="logodiv" onclick="showLeftpanel()">
+                <div class="menulines"></div>
+                <div class="menulines"></div>
+                <div class="menulines"></div>
+            </div>
+            <img href="index.html" src="img/syne-logo.png" />
+            <input type="text" class="search-focus" name="">
+        </header>
+        <!-- Responsive header ends -->
+    </div>
+
     <div class="wrapper">
         <div id="header">
             <!-- header template fill here -->
@@ -127,6 +333,146 @@
             </div>
         </div>
     </div>
+
+    <!-- floating footer-->
+    <div id="footer" class="footer">
+        <div id="floating-footer" class="floating-footer">
+            <div class="circle"></div>
+        </div>
+        <div class="main-box-left">
+            <div class="item-box">
+                <img src="img/footerImgs/home.svg" alt="Home" />
+                <label>Home</label>
+            </div>
+            <div class="item-box">
+                <img src="img/footerImgs/explore.svg" alt="Explore" />
+                <label>Explore</label>
+            </div>
+        </div>
+        <div class="item-box-round">
+            <div class="circleIcon">
+                <img src="img/footerImgs/plusbig.svg" alt="Add Image" />
+            </div>
+            <label>&nbsp;</label>
+        </div>
+        <div class="item-box-blank">
+        </div>
+        <div class="main-box-right">
+            <div class="item-box" style="top: 13px;">
+                <div class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+
+                        <img src="img/footerImgs/chat.svg" alt="Explore" />
+                        <label>Messages</label>
+
+                    </a>
+                    <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                        aria-labelledby="navbarDropdown">
+                        <h6 class="dropdown-header">
+                            Message
+                        </h6>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="dropdown-list-image mr-3">
+                                <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                                <div class="status-indicator bg-success"></div>
+                            </div>
+                            <div class="font-weight-bold">
+                                <div class="text-truncate">Hi there! I am wondering if you can help me with a problem
+                                    I've been having.</div>
+                                <div class="small text-gray-500">Emily Fowler · 58m</div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="dropdown-list-image mr-3">
+                                <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
+                                <div class="status-indicator"></div>
+                            </div>
+                            <div>
+                                <div class="text-truncate">I have the photos that you ordered last month, how would you
+                                    like them sent to you?</div>
+                                <div class="small text-gray-500">Jae Chun · 1d</div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="dropdown-list-image mr-3">
+                                <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
+                                <div class="status-indicator bg-warning"></div>
+                            </div>
+                            <div>
+                                <div class="text-truncate">Last month's report looks great, I am very happy with the
+                                    progress so far, keep up the good work!</div>
+                                <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="dropdown-list-image mr-3">
+                                <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+                                <div class="status-indicator bg-success"></div>
+                            </div>
+                            <div>
+                                <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me
+                                    that people say this to all dogs, even if they aren't good...</div>
+                                <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-box" style="top: 13px;">
+                <div class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="img/footerImgs/notifications.svg" alt="Explore" />
+                        <label>Notifications</label>
+                    </a>
+                    <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                        aria-labelledby="navbarDropdown2">
+                        <h6 class="dropdown-header">
+                            Notification
+                        </h6>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="mr-3">
+                                <div class="icon-circle bg-primary">
+                                    <i class="fa fa-file text-white"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="small text-gray-500">December 12, 2019</div>
+                                <span class="font-weight-bold">A new monthly report is ready!</span>
+                            </div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="mr-3">
+                                <div class="icon-circle bg-success">
+                                    <i class="fa fa-pencil text-white"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="small text-gray-500">December 7, 2019</div>
+                                $290.29 has been deposited!
+                            </div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="mr-3">
+                                <div class="icon-circle bg-warning">
+                                    <i class="fa fa-exclamation-triangle text-white"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="small text-gray-500">December 2, 2019</div>
+                                Spending alert: unusual high spending.
+                            </div>
+                        </a>
+                        <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- floating footer ends-->
 
     <div id="syne-edit-profile" class="pop-modal">
         <div class="modalcontent">
@@ -311,7 +657,7 @@
             </div>
         </div>
     </div>
-    
+
     <div id="syne-followers-unfollow" class="pop-modal">
         <div class="modalcontent follower-modal">
             <div class="synemodal-body">
@@ -385,13 +731,13 @@
     <!-- templates loading session start here.... these session hide in DOM -->
 
     <!-- header template loaded here by scipt -->
-    <div id="includedHeaderContent" style="display: none;"></div>
+    <!-- <div id="includedHeaderContent" style="display: none;"></div> -->
 
     <!-- left panel template loaded here by scipt -->
     <div id="includedLeftPanelContent" style="display: none;"></div>
 
     <!-- templates loading session End here-->
-    
+
     <!-- news feed template -->
     <script id="template-news-feed" type="text/template">
         <div class="post-card mt-3">
@@ -1007,6 +1353,49 @@
                 </div>
             </div>
         </div>
+    </script>
+    <script>
+        function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-blu";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-blu", "");
+            }
+        }
+        function myAccFunc2() {
+            var x = document.getElementById("demoAcc2");
+
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-blu";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-blu", "");
+            }
+        }
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            var y = document.getElementById("mySidenav");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.width = "0%";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+            document.getElementById("myDIV").style.display = "none";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
     </script>
 </body>
 <script type="text/javascript" src="js/common.js"></script>

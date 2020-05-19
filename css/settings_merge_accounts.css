@@ -1,0 +1,176 @@
+.sendVerificationMain{
+    width: 390px;
+    height: 405px;
+    border-radius: 8px;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.modal_head_verify{
+    font-family: HKGrotesk-Bold;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.29px;
+    color: #2e404e;
+}
+
+.verifyAccountBody{
+    display: contents;
+}
+
+.verifyAccountBody p{
+    margin-top: 24px;
+}
+
+.box{
+    position: relative;
+    margin-top: 24px;
+    display: inline-block;
+}
+
+.instruction{
+    display: inline;
+    left: 1px;
+    font-family: HKGrotesk-Light;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: 0.15px;
+    color: #5d677e;
+}
+
+.try{
+    display: inline;
+    padding-left: 130px;
+    font-family: HKGrotesk-Regular;
+    font-size: 13px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: 0.15px;
+    color: #16c0ef;
+    cursor: pointer;
+}
+
+.codeInput{
+    margin-top: 16px;
+    margin-right: 8px;
+    width: 40px;
+    height: 50px;
+    border-radius: 4px;
+    border: solid 1px #e0e6ee;
+    background-color: #ffffff;
+    display: inline-block;
+  font-family: HKGrotesk-Regular;
+  font-size: 13px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.46;
+  letter-spacing: 0.15px;
+  color: #5d677e;
+  padding-left: 15px;
+}
+
+.codeInput:focus{
+    border: solid 1px #16c0ef;
+}
+
+.ButtonAct{
+    width: 310px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #16c0ef;
+  font-family: HKGrotesk-Bold;
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  margin-top: 20px;
+}
+.ButtonCancelFour{
+    width: 310px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: none;
+  font-family: HKGrotesk-Regular;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #7c8796;
+  margin-top: 10px;
+}
+
+/*for iphone se and small devices*/
+@media screen and (max-width: 330px){
+.sendVerificationMain{
+    width: 100%;
+    height: 405px;
+    border-radius: 8px;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+.codeInput{
+    width: 33px;
+    height: 40px;
+    padding-left: 12px;
+}
+.try{
+    display: inline;
+    padding-left: 70px;
+}
+.verifyAccountBody{
+    width: 70%;
+}
+.ButtonAct{
+    width: 95%;
+}
+.ButtonCancelFour{
+    width: 95%;
+}
+}
+/* larger devices */
+@media screen and (max-width: 376px) and (min-width: 331px){
+    .sendVerificationMain{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .codeInput{
+        width: 40px;
+        height: 40px;
+        padding-left: 15px;
+    }
+    .try{
+        display: inline;
+        padding-left: 100px;
+    }
+    .verifyAccountBody{
+        width: 85%;
+    }
+    .ButtonAct{
+        width: 95%;
+    }
+    .ButtonCancelFour{
+        width: 95%;
+    }
+}

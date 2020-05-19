@@ -1,0 +1,309 @@
+
+.FormBox {
+  position: relative;
+  top: 50px;
+  width: 100%;
+  display: block;
+}
+.selectdiv {
+  position: relative;
+  top: -30px;
+  float: right;
+  width: 116px;
+  height: 40px;
+  padding: 0px 0px;
+  border-radius: 4px;
+  border: solid 1px #dde2e9;
+  background-color: transparent;
+  font-family: HKGrotesk-SemiBold;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.15px;
+  color: #5d677e;
+}
+
+.selectdiv:after {
+    content: '\f078';
+    font: normal normal normal 12px/1 FontAwesome;
+    color: #5d677e;
+    right: 11px;
+    top: 0px;
+    height: 34px;
+    padding: 14px 0px 0px 0px;
+    position: absolute;
+    pointer-events: none;
+}
+.selectdiv2 {
+  position: relative;
+  top: -30px;
+  float: right;
+  
+  height: 40px;
+  padding: 0px 0px;
+  border-radius: 4px;
+  border: solid 1px #dde2e9;
+  background-color: transparent;
+  font-family: HKGrotesk-SemiBold;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.15px;
+  color: #5d677e;
+}
+
+.selectdiv2:after {
+    content: '\f078';
+    font: normal normal normal 12px/1 FontAwesome;
+    color: #5d677e;
+    right: 11px;
+    top: 0px;
+    height: 34px;
+    padding: 14px 0px 0px 0px;
+    position: absolute;
+    pointer-events: none;
+}
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+display: none;
+}
+.form-control1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  color: #5d677e;
+}
+.form-control1 option{
+font-family: HKGrotesk-SemiBold;
+font-size: 15px;
+padding: 20px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.71;
+letter-spacing: 0.15px;
+color: #5d677e;
+}
+.form-control2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  color: #5d677e;
+}
+.form-control2 > option{
+font-family: HKGrotesk-SemiBold;
+font-size: 14px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.71;
+letter-spacing: 0.15px;
+color: #5d677e;
+}
+.Visible-to {
+  position: relative;
+  top: 40px;
+  right: 50px;
+  float: right;
+  font-family: HKGrotesk-Regular;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.15px;
+  text-align: right;
+  color: #5d677e;
+}
+.ContentDiv {
+  width: 100%;
+  height: 65px;
+  border-bottom:1px solid #e0e6ee;
+  margin-bottom: 10px;
+
+}
+.ContentDiv h3 {
+
+  margin-top: 15px;
+  left: 1px;
+  font-family: HKGrotesk-Medium;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: 0.16px;
+  color: #5d677e;
+ }
+ @media (max-width: 1100px) {
+  .changes-saved-box {
+    position: absolute;
+    top: 2px;
+   right: 120px;
+   width: 130px;
+  }
+  .selectdiv2 {
+    width: 160px;
+  }
+  .tble h4 {
+    position: relative;
+    top: 5px;
+    left: 0px;
+  }
+ }
+ @media (min-width: 1100px) {
+  .changes-saved-box {
+    position: absolute;
+    top: 2px;
+   right: 150px;
+   width: 139px;
+  }
+  .selectdiv2 {
+    width: 216px;
+  }
+  th.IPaddress {
+    width: 179px;
+  }
+  .tble h4 {
+    position: relative;
+    bottom: 14px;
+    left: 85px;
+  }
+ }
+ .changes-saved-box {
+  height: 32px;
+  border-radius: 4px;
+  background-color: #d7f9ea;
+  font-family: HKGrotesk-SemiBold;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  color: #0ad179;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LogoutBTN{
+  position: relative;
+  top: 30px;
+  width: 209px;
+  height: 44px;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #16c0ef;
+  font-family: HKGrotesk-Bold;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: 0.2px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+.LogoutBTN:hover {
+    background-color: #24a3f7;
+}
+.This-will-log-you-ou {
+  position: relative;
+  top: 40px;
+  margin-bottom: 40px;
+  font-family: HKGrotesk-Regular;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: 0.15px;
+  color: #5d677e;
+}
+.tble {
+  position: relative;
+  top: 30px;
+  width: 100%;
+  cursor: default;
+  table-layout: fixed;
+}
+.tble th {
+  border-top: none;
+  font-family: HKGrotesk-SemiBold;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.85;
+  letter-spacing: 0.25px;
+  color: #7c8796;
+}
+.tble td {
+  padding-top: 20px;
+font-family: HKGrotesk-SemiBold;
+font-size: 13px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.54;
+letter-spacing: 0.15px;
+color: #000000;
+}
+.rght {
+  text-align: right;
+}
+
+.tble p {
+  position: relative;
+  font-family: HKGrotesk-Regular;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: 0.15px;
+  color: #c4c4c4;
+}
+.tble h4 {
+
+  font-family: HKGrotesk-Regular;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: 0.15px;
+  color: #10c273;
+}
+i.arrows {
+  position: absolute;
+  right: 5px;
+  top: 4px;
+  border: solid black;
+  border-width: 0 1.2px 1.2px 0;
+  display: inline-block;
+  padding: 2.8px;
+  z-index: 99;
+}
+.downs {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.form-control-sm {
+  background-color: transparent;
+}

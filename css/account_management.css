@@ -1,0 +1,302 @@
+.statusDIv1 {
+  position: relative;
+  top: 40px;
+  height: 60px;
+  border-bottom: solid 1px #e0e6ee;
+}
+.statusDIv1 p{
+  position: relative;
+  top: 10px;
+font-family: HKGrotesk-Medium;
+font-size: 14px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 2.14;
+letter-spacing: 0.16px;
+color: #5d677e;
+}
+.StatusDrop {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  width: 157px;
+  height: 40px;
+  border-radius: 4px;
+  border: solid 1px #c9ebdc;
+  background-color: #e5fff3;
+}
+.StatusDrop p{
+  padding-left: 13px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+font-family: HKGrotesk-SemiBold;
+font-size: 14px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.71;
+letter-spacing: 0.15px;
+color: #0ad179;
+}
+.StatusDrop:hover {
+  background-color: #d8f7e8;
+  cursor: pointer;
+}
+i.arrow {
+  position: relative;
+  left: 130px;
+  top: -18px;
+  border: solid black;
+  border-width: 0 1.2px 1.2px 0;
+  display: inline-block;
+  padding: 2.8px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+@media (max-width: 1100px) {
+  .DropMenu {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    z-index: 1;
+    }
+    .DropMenu2 {
+      position: absolute;
+      top: 50px;
+      right: 0px;
+      z-index: 1;
+      }
+}
+@media (min-width: 1100px) {
+  .DropMenu {
+  position: absolute;
+  top: 0px;
+  right: -170px;
+  }
+  .DropMenu2 {
+    position: absolute;
+    top: 0px;
+    right: -170px;
+    }
+}
+.DropMenu {
+  display: none;
+
+  width: 157px;
+  height: 81px;
+  transition: .2s ease-in;
+  border-radius: 4px;
+  box-shadow: 0 6px 20px 0 rgba(19, 26, 32, 0.15);
+  border: solid 1px #eef0f5;
+  background-color: #ffffff;
+}
+#shown,
+#hidden:target {
+    display: none; 
+}
+
+#hidden:target + #shown,
+#hidden:target ~ #ans {
+    display: block; 
+}
+.DropMenu p.act{
+  padding-left: 13px;
+  padding-bottom: 7px;
+text-align: left;
+font-family: HKGrotesk-SemiBold;
+font-size: 14px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.71;
+letter-spacing: 0.15px;
+color: #0ad179;
+cursor: pointer;
+border-bottom: 1px solid #eef0f5;
+
+}
+p.act:hover {
+  color: #00ff0d
+}
+p.deact{
+  cursor: pointer;
+  margin-top: -18px;
+  padding-left: 13px;
+  padding-bottom: 7px;
+text-align: left;
+font-family: HKGrotesk-SemiBold;
+font-size: 14px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.71;
+letter-spacing: 0.15px;
+color: #fd9b57;
+
+}
+p.deact:hover {
+  color: #cf5600
+}
+.up {
+  transform: rotate(220deg);
+  -webkit-transform: rotate(220deg);
+}
+.statusDIv2 {
+  position: relative;
+  top: 50px;
+  height: 60px;
+  border-bottom: solid 1px #e0e6ee;
+}
+.statusDIv2 p{
+  position: relative;
+  top: 10px;
+font-family: HKGrotesk-Medium;
+font-size: 14px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 2.14;
+letter-spacing: 0.16px;
+color: #5d677e;
+}
+.StatusDrop2 {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  width: 157px;
+  height: 40px;
+  border-radius: 4px;
+  border: solid 1px #c9ebdc;
+  background-color: #f8e6cf;
+}
+.StatusDrop2 p{
+  padding-left: 13px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+font-family: HKGrotesk-SemiBold;
+font-size: 14px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.71;
+letter-spacing: 0.15px;
+color: #ea8945;
+}
+.StatusDrop2:hover {
+  background-color: #f8dab4;
+  cursor: pointer;
+}
+i.arrow {
+  position: relative;
+  left: 130px;
+  top: -18px;
+  border: solid black;
+  border-width: 0 1.2px 1.2px 0;
+  display: inline-block;
+  padding: 2.8px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.DropMenu2 {
+  display: none;
+
+  width: 157px;
+  height: 81px;
+  transition: .2s ease-in;
+  border-radius: 4px;
+  box-shadow: 0 6px 20px 0 rgba(19, 26, 32, 0.15);
+  border: solid 1px #eef0f5;
+  background-color: #ffffff;
+}
+#shown2,
+#hidden2:target {
+    display: none; 
+}
+
+#hidden2:target + #shown2,
+#hidden2:target ~ #ans2 {
+    display: block; 
+}
+.DropMenu2 p.act{
+  padding-left: 13px;
+  padding-bottom: 7px;
+text-align: left;
+font-family: HKGrotesk-SemiBold;
+font-size: 14px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.71;
+letter-spacing: 0.15px;
+color: #0ad179;
+cursor: pointer;
+border-bottom: 1px solid #eef0f5;
+
+}
+p.act:hover {
+  color: #00ff0d
+}
+p.deact{
+  cursor: pointer;
+  margin-top: -18px;
+  padding-left: 13px;
+  padding-bottom: 7px;
+text-align: left;
+font-family: HKGrotesk-SemiBold;
+font-size: 14px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.71;
+letter-spacing: 0.15px;
+color: #fd9b57;
+
+}
+p.deact:hover {
+  color: #cf5600
+}
+.up {
+  transform: rotate(220deg);
+  -webkit-transform: rotate(220deg);
+}
+.BottomRect {
+  padding-top: 23px;
+  padding-left: 20px;
+  padding-right: 12px;
+  margin-top: 70px;
+  width: 100%;
+  padding-bottom: 40px;
+  border-radius: 6px;
+  background-color: #fef2f4;
+}
+
+.BottomRect p {
+  font-family: HKGrotesk-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.16px;
+  color: #000000;
+}
+.BottomRect h5{
+  position: relative;
+  top: 15px;
+font-size: 17px;
+font-family: HKGrotesk-Bold;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: 0.2px;
+color: #fb4f6d;
+}
+

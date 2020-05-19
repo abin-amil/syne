@@ -1,0 +1,70 @@
+@media (min-width: 1200px){
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1159px;
+    
+}
+
+}
+body{
+    background-color:#f9fafc ;
+}
+@media (max-width: 1198px){
+.c-px-65 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}
+@media (max-width: 768px){
+	.header-fix {
+    margin-top: 170px;
+}
+	footer {
+    margin-top: 27px;
+    padding-top: 27px;
+}
+	.comment-sec {
+    margin-bottom: 32px;
+}
+}
+
+@media (max-width: 767px){
+	.header-fix {
+    margin-top: 156px;
+}
+	.social-media ul li {
+padding-right: 19px;
+    padding-left: 0px;
+}
+	.social-media{display: flex;}
+
+	.banner-header h1 {
+		    line-height: 27px;
+    font-size: 21px;}
+	header{margin-bottom: 25px;}
+.search-form-cvr {
+right: inherit;
+    left: 46px;
+    z-index: 9;}
+    .custom-close {
+    right: inherit;
+    left: 402px;}
+}
+@media (max-width: 479px){
+	.header-fix {
+    margin-top: 216px;
+}
+	.click-clipboard {
+    float: left;
+    margin-top: 10px;
+}
+	.banner-bottom-details {
+    display: inline-block;}
+	.banner-logo {
+    width: 44px;
+    height: 44px;}
+	.custom-close {
+    left: 232px;
+}
+.search-form.active .search-form-cvr {
+    width: 220px;}}
