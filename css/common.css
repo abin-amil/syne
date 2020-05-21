@@ -225,6 +225,10 @@ p {
     width: 25%;
 }
 
+.w20 {
+    width: 20%;
+}
+
 .f12 {
     font-size: 12px;
 }
@@ -692,6 +696,7 @@ input.common-input {
     top: -1px;
     object-fit: contain;
 }
+
 .top-banner-profile-photo {
     width: 90px !important;
     position: relative;

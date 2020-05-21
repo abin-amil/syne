@@ -75,14 +75,14 @@
                             < Home</a>
                     </div>
                 </div>
-                <div class="modal-body p-md-5 p-4">
+                <div class="modal-body p-md-5 p-3">
                     <div id="startProject1">
 
                         <div class="Start-a-Project ml-3">Start a Project</div>
                         <div class="title pt-2 ml-3">What type of project do you want to start?</div>
-                        <div class="typeOfProject d-flex justify-content-around flex-wrap pt-5">
+                        <div class="typeOfProject d-flex justify-content-around flex-wrap pt-5 ">
 
-                            <div id="crowdfunding" onclick="projectTypeClick('crowdfunding', projectTypes.CROWDFUNDING)" class="projectCard d-flex flex-column justify-content-center flex-wrap m-3">
+                            <div id="crowdfunding" onclick="projectTypeClick('crowdfunding', projectTypes.CROWDFUNDING)" class="projectCard d-flex flex-column justify-content-center flex-wrap m-3 w20">
                                 <div id="crowdfunding_radio_img" class="radio-button-default mx-3 mt-3"></div>
                                 <div class="px-5 pt-3 pb-3">
                                     <div id="crowdfunding_img" class="crowdfunding_img"></div>
@@ -91,7 +91,7 @@
                                 </div>
                             </div>
 
-                            <div id="socialgiving" onclick="projectTypeClick('socialgiving', projectTypes.SOCIALGIVING)" class="projectCard d-flex flex-column justify-content-center flex-wrap m-3">
+                            <div id="socialgiving" onclick="projectTypeClick('socialgiving', projectTypes.SOCIALGIVING)" class="projectCard d-flex flex-column justify-content-center flex-wrap m-3 w20">
                                 <div id="socialgiving_radio_img" class="radio-button-default mx-3 mt-3"></div>
                                 <div class="px-5 pt-3 pb-3">
                                     <div id="socialgiving_img" class="socialgiving_img"></div>
@@ -100,7 +100,7 @@
                                 </div>
                             </div>
 
-                            <div id="promotions" onclick="projectTypeClick('promotions', projectTypes.PROMOTIONS)" class="projectCard d-flex flex-column justify-content-center flex-wrap m-3">
+                            <div id="promotions" onclick="projectTypeClick('promotions', projectTypes.PROMOTIONS)" class="projectCard d-flex flex-column justify-content-center flex-wrap m-3 w20">
                                 <div id="promotions_radio_img" class="radio-button-default mx-3 mt-3"></div>
                                 <div class="px-5 pt-3 pb-3">
                                     <div id="promotions_img" class="promotions_img"></div>
@@ -109,7 +109,7 @@
                                 </div>
                             </div>
 
-                            <div id="socialchange" onclick="projectTypeClick('socialchange', projectTypes.SOCIALCHANGE)" class="projectCard d-flex flex-column justify-content-center flex-wrap m-3">
+                            <div id="socialchange" onclick="projectTypeClick('socialchange', projectTypes.SOCIALCHANGE)" class="projectCard d-flex flex-column justify-content-center flex-wrap m-3 w20">
                                 <div id="socialchange_radio_img" class="radio-button-default mx-3 mt-3"></div>
                                 <div class="px-5 pt-3 pb-3">
                                     <div id="socialchange_img" class="socialchange_img"></div>
@@ -140,7 +140,7 @@
                         <div class="Start-a-Project ml-3">1/6</div>
                         <div class="title pt-2 ml-3">Enter your project category </div>
                         <div class="categ" style="position: relative; max-width: 633px;">
-
+                            <img src="./img/svgImages/carrot-down.svg" class="s-cntry-icon">
                             <select class="syne-inputbox mt-2 ml-3 srch-cat" id="category" name="category">
                                
                                 <option value="">Search Categories</option>
@@ -594,7 +594,7 @@
                 <div>
                 </div>
               </button>
-                            <button onclick="proceed(6)" id="startProject1-proceed" type="button" class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
+                            <button id="startProject1-proceed modal-final" type="button" class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
                 <div>
                   Proceed
                 </div>
@@ -612,6 +612,7 @@
     <!-- ***************Modal Wrapper******************** -->
     <div class="final-step-wrapper" style="display: none;">
         <div class="popup-modal mt-3">
+            <img src="./img/svgImages/close-icon.svg" class="close">
             <div class="first-step-email" style="display: block;">
                 <h2 class="title ">One last step!</h2>
                 <p>Enter your email address to create the project
@@ -737,6 +738,27 @@
 
             });
         });
+        // $(document).ready(function() {
+        //     //modal script
+        //     $(".modal-final").click(function(e) {
+        //         //$(this).next("div").addClass("open-pop");
+        //         var modl_id = $(this).attr('data-target');
+        //         $("#" + modl_id).addClass("open-pop");
+        //         $("body").addClass("modal-blur");
+        //         e.preventDefault();
+        //     });
+        //     $("#syne-login .modalclose").click(function(e) {
+        //         $("#syne-login").removeClass("open-pop");
+        //         $("body").removeClass("modal-blur");
+        //         e.preventDefault();
+        //     });
+        //     $(".pop-modal").click(function(e) {
+        //         if (e.target.className != 'pop-modal' && !$('.pop-modal').find(e.target).length) {
+        //             $(this).removeClass("open-pop");
+        //             $("body").removeClass("modal-blur");
+        //         }
+        //     });
+        // });
 
         $(document).ready(function() {
             $("#crowdfunding").mouseout(function() {

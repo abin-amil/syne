@@ -725,6 +725,18 @@ ul.tabs li.current {
     margin-right: 5px;
 }
 
+.publsh-btn {
+    background-color: #e0e6ee!important;
+    color: #fff!important;
+    font-family: HKGrotesk;
+    font-size: 15px;
+    padding: 8px 18px 8px 32px!important;
+    background-image: url('../img/svgImages/export-white.svg');
+    background-size: 15px;
+    background-position: 9px 11px;
+    background-repeat: no-repeat;
+}
+
 
 /*responsive*/
 
@@ -829,6 +841,24 @@ ul.tabs li.current {
     .project-h-bttm {
         padding: 20px;
     }
+    .publsh-btn {
+        position: relative;
+        bottom: 28px;
+    }
+}
+
+@media(max-width:414px) {
+    .publsh-btn {
+        position: relative;
+        bottom: 28px;
+    }
+    .arrows {
+        position: relative;
+        right: 21px;
+    }
+    .back-proceed-btn {
+        flex-direction: column!important;
+    }
 }
 
 .create-org-modal {
@@ -892,6 +922,15 @@ ul.tabs li.current {
         top: 4px;
         background-image: none;
     }
+    .modal-header .close {
+        padding: 0!important;
+        position: relative;
+        top: 4px;
+        left: -60px;
+    }
+    .s-cntry-icon {
+        display: none!important;
+    }
 }
 
 @media(max-width: 360px) {
@@ -901,6 +940,52 @@ ul.tabs li.current {
     }
     .my-nav-tab {
         flex: 1 1 35%!important;
+    }
+}
+
+@media(max-width:375px) {
+    .final-step-wrapper .popup-modal {
+        width: 305px!important;
+    }
+    .popup-modal .close {
+        position: relative;
+        top: 13px;
+        left: 17px;
+        width: 29px;
+    }
+    .rem-fgt label {
+        font-size: 10px!important;
+    }
+    .publsh-btn {
+        position: relative;
+        bottom: 28px;
+    }
+    ul.tabs li {
+        margin-right: 24px!important;
+    }
+    .arrows {
+        position: relative;
+        top: 0px;
+    }
+    .del_edit_btn {
+        position: relative;
+        top: -6px!important;
+        left: -29px!important;
+    }
+    .projectCard,
+    .projectCardActive {
+        width: 100%!important;
+    }
+    .controls .controls-inner {
+        float: none!important;
+        display: flex;
+        justify-content: center;
+    }
+    .back-proceed-btn {
+        padding-top: 0!important;
+    }
+    .back-proceed-btn {
+        flex-direction: column!important;
     }
 }
 
@@ -915,13 +1000,16 @@ ul.tabs li.current {
         width: 35% !important;
         padding: 14px 2px 14px 0!important;
     }
-    .back-proceed-btn {
-        flex-direction: column!important;
-    }
     #startProject4 {
         padding: 0!important;
     }
     .cityInput {
+        width: 44%!important;
+    }
+    .countryInput {
+        width: 47%!important;
+    }
+    .back-proceed-btn {
         width: 100%;
     }
     .ends {
@@ -941,5 +1029,12 @@ ul.tabs li.current {
         background-size: 100% 100%;
         right: -10px;
         top: 3px;
+    }
+    .home-btn {
+        width: 80px!important;
+    }
+    .projectCard,
+    .projectCardActive {
+        width: 70%!important;
     }
 }
