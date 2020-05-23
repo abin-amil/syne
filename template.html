@@ -78,16 +78,17 @@
 
     <div class="container">
         <div class="overlay-trigger">
-            <img class="img-fluid profile-photo" id="user-img" src="img/user.png">
-            <div class="overlay-item profile-overlay">
-                <a class="profile-edit-button text-center">
-                    Edit
-                </a>
-                <input type="file"  class="item-user-img file center-block" name="file_photo" />
-                <!-- <input type="file" class="item-img file center-block" name="file_photo"/> -->
-
-            </div>
-
+            <label class="cabinet center-block">
+                <img class="img-fluid profile-photo" id="user-img" src="img/user.png">
+                <div class="overlay-item profile-overlay">
+                    <a class="profile-edit-button text-center">
+                        Edit
+                    </a>
+                    <input type="file"  class="item-user-img file center-block" name="file_photo" />
+                    <!-- <input type="file" class="item-img file center-block" name="file_photo"/> -->
+    
+                </div>
+            </label>
         </div>
         <div class="row pt-4">
             <div class="col-3 px-0 left-tab">
@@ -317,7 +318,7 @@
                     <h4 class="modal-title" id="myModalLabel">
                         <?=multiLanguage( "Edit Foto" , "Edit Photo" )?></h4>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body d-flex justify-content-center">
                     <div id="upload-demo" class="center-block"></div>
                 </div>
                 <div class="modal-footer">

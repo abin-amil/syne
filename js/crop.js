@@ -30,11 +30,14 @@ $(document).ready(function () {
 
     $uploadCrop = $('#upload-demo').croppie({
         viewport: {
-            width: 200,
-            height: 200,
+            width: 300,
+            // height: 150,
         },
         enforceBoundary: false,
-        enableExif: true
+        enableExif: true,
+        enableZoom: true, //default true // previously showZoom
+        showZoomer: false, //default true
+        mouseWheelZoom: true //default true
     });
     $('#cropImagePop').on('shown.bs.modal', function () {
         // alert('Shown pop');
@@ -63,7 +66,7 @@ $(document).ready(function () {
         $uploadCrop.croppie('result', {
             type: 'base64',
             format: 'jpeg',
-            size: { width: 200, height: 200 }
+            size: { width:800, height: 170 }
         }).then(function (resp) {
             $('#' + outputImgId).attr('src', resp);
             $('#cropImagePop').modal('hide');
