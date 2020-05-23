@@ -69,10 +69,13 @@
             <!-- left panel top banner template fill here  -->
         </div>
         <div class="edit-btn d-flex justify-content-around">
-            <img src="./img/svgImages/camera-lgrey-small.svg"> Upload Cover Picture
-            <input type="file" name="file_photo" class="item-cover-img" />
+            <label class="cabinet center-block">
+                <img src="./img/svgImages/camera-lgrey-small.svg"> Upload Cover Picture
+                <input type="file" name="file_photo" class="item-cover-img file" />
+            </label>
         </div>
     </div>
+
     <div class="container">
         <div class="overlay-trigger">
             <img class="img-fluid profile-photo" id="user-img" src="img/user.png">
@@ -80,7 +83,9 @@
                 <a class="profile-edit-button text-center">
                     Edit
                 </a>
-                <input type="file" name="file_photo" class="item-user-img" />
+                <input type="file"  class="item-user-img file center-block" name="file_photo" />
+                <!-- <input type="file" class="item-img file center-block" name="file_photo"/> -->
+
             </div>
 
         </div>

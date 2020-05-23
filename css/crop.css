@@ -4,7 +4,8 @@ label.cabinet{
 }
 
 label.cabinet input.file{
-	position: relative;
+  position: relative;
+  display: none;
 	height: 100%;
 	width: auto;
 	opacity: 0;
