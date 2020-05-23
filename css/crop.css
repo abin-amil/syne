@@ -1,10 +1,12 @@
 label.cabinet{
 	display: block;
-	cursor: pointer;
+  cursor: pointer;
+  margin-bottom: 0px !important;
 }
 
 label.cabinet input.file{
   position: relative;
+  
   display: none;
 	height: 100%;
 	width: auto;
