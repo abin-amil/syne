@@ -71,9 +71,40 @@
                     <div class="d-flex flex-row-reverse nav-right">
                         <div class="d-flex align-items-center">
                             <div class="syne-inputbox d-flex align-items-center  mr-2">
-                                <img style="height: 20px; position: relative; left: 5px; top: 1px;" src="img/svgImages/search-icon-grey.svg">
-                                <input type="text" name="projectSearch" class="form-control  font-weight-normal" placeholder="Search here">
+                                <div class="search_scn">
+                                    <img style="height: 18px; position: absolute;left: 5px; top: 11px;" src="img/svgImages/search-icon-grey.svg">
+                                    <input type="text" name="projectSearch" autocomplete="off" id="search-bar" class="form-control  font-weight-normal" placeholder="Search here">
+                                    <ul class="recent_search" style="display:block">
+                                        <li class="rcnt_head">Recent Search<span>Clear all</span></li>
+                                        <ul class="pt-3">
+                                            <li class="prediction"><img src="./img/smiley-lgrey-small.png">john hardy</li>
+                                            <li class="prediction"><img src="./img/smiley-lgrey-small.png">Isha Foundation <span class="rcnt_head">Organisation</span></li>
+                                            <li class="prediction"><img src="./img/smiley-lgrey-small.png">yoga foundation</li>
+                                            <li class="prediction"><img src="./img/smiley-lgrey-small.png">Dr Ramesh</li>
+                                            <li class="prediction"><img src="./img/smiley-lgrey-small.png">Vineeth G S</li>
+                                            <li class="prediction"><img src="./img/smiley-lgrey-small.png">Ajas Mangal</li>
+                                            <li class="prediction"><img src="./img/smiley-lgrey-small.png">Sandeep Brahmajanl</li>
+
+                                        </ul>
+                                    </ul>
+                                    <ul class="recent_search suggestn_srch" style="display:none">
+                                        <li class="suggestion"><img src="./img/smiley-lgrey-small.png">Johnson & Johnson <span class="rcnt_head">Organisation</span></li>
+                                        <li class="suggestion"><img src="./img/smiley-lgrey-small.png">Johnson Abraham </li>
+                                        <li class="suggestion"><img src="./img/smiley-lgrey-small.png">Johnson Kishore</li>
+                                        <li class="suggestion"><img src="./img/smiley-lgrey-small.png">Johnson V</li>
+                                        <li class="suggestion"><img src="./img/smiley-lgrey-small.png">Johnson Joe</li>
+                                        <li class="suggestion"><img src="./img/smiley-lgrey-small.png">Johnson Controls</li>
+
+                                        <ul>
+                                            <li class="rcnt_head"><span>See all results for “Johnson”</span></li>
+                                        </ul>
+                                    </ul>
+                                </div>
                             </div>
+                            <!-- <ul class="output" style="display:none;">
+                                <li>Recent Search<span>Clear all</span></li>
+                            </ul> -->
+
                             <div class="position-relative px-4">
                                 <img class=" nav-msg-icon" src="img/msg-icon.svg">
                                 <div class="msg-count">5</div>
@@ -488,5 +519,6 @@
 <script type="text/javascript " src="dataModels.js "></script>
 <script type="text/javascript " src="constants.js "></script>
 <script type="text/javascript " src="js/about-organisation.js "></script>
+<script type="text/javascript " src="js/search.js "></script>
 
 </html>

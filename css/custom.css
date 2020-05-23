@@ -1523,3 +1523,168 @@ body .next-arrow {
     height: 51px;
     padding: 16px 4px;
 }
+
+.count {
+    position: absolute;
+    right: 50px;
+    opacity: 0.6;
+}
+
+
+/*search suggestion*/
+
+.output {
+    list-style: none;
+    width: 235px;
+    min-height: 0px;
+    border: 0 !important;
+    color: #2a3844;
+    font-size: 13px;
+    transition: min-height 0.2s;
+    position: absolute;
+    top: 70px;
+    box-shadow: 0 6px 20px 0 rgba(19, 26, 32, 0.15);
+    z-index: 5;
+}
+
+.output,
+#search-bar {
+    background: #fff;
+    border: 1px solid #767676;
+}
+
+.prediction-item {
+    padding: .5em .75em;
+    height: 36px;
+    position: relative;
+}
+
+.prediction-item::after {
+    content: url('../img/svgImages/search-close-small.svg');
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+.prediction-item::before {
+    content: url('../img/smiley-lgrey-small.png');
+    position: relative;
+    top: 0px;
+}
+
+.prediction-text {
+    position: relative;
+    top: -8px;
+    left: 6px;
+    color: #2a3844;
+}
+
+.output:hover .focus {
+    background: #f2f4f7;
+    color: #767676;
+}
+
+.prediction-item:hover,
+.focus,
+.output:hover .focus:hover {
+    background: #f2f4f7;
+    color: #333;
+}
+
+.prediction-item:hover {
+    cursor: pointer;
+}
+
+.prediction-item strong {
+    color: #2a3844;
+}
+
+.prediction-item:hover strong {
+    color: #2a3844;
+}
+
+
+/*Search bar*/
+
+.search_scn {
+    position: relative;
+    width: 280px;
+}
+
+.search_scn input {
+    padding: 0 0 0 30px!important;
+}
+
+.recent_search {
+    position: absolute;
+    top: 39px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 6px 20px 0 rgba(19, 26, 32, 0.15);
+    z-index: 5;
+    padding: 13px 9px;
+}
+
+.recent_search .rcnt_head {
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.7px;
+    color: #bac3cf;
+}
+
+.rcnt_head span {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    float: right;
+    color: #16c0ef
+}
+
+.prediction,
+.suggestion {
+    font-size: 13px;
+    line-height: 1.85;
+    letter-spacing: 0.19px;
+    color: #2a3844;
+    position: relative;
+    padding: 5px 0;
+}
+
+.prediction::after {
+    content: url('../img/svgImages/search-close-small.svg');
+    position: absolute;
+    top: 2px;
+    right: 7px;
+}
+
+.prediction img,
+.suggestion img {
+    object-fit: contain;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.prediction .rcnt_head {
+    position: absolute;
+    top: 10px;
+    right: 29px;
+    font-size: 8px;
+    opacity: 0.5;
+}
+
+.suggestion .rcnt_head {
+    position: absolute;
+    top: 13px;
+    right: 29px;
+    font-size: 8px;
+    opacity: 0.5;
+}
+
+.suggestn_srch .rcnt_head span {
+    font-size: 14px!important;
+    float: left;
+    line-height: 1.8!important;
+    padding-left: 5px;
+}
