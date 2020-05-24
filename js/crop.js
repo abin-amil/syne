@@ -28,17 +28,17 @@ $(document).ready(function () {
         readFile(data);
     }
 
-    $uploadCrop = $('#upload-demo').croppie({
-        viewport: {
-            width: 300,
-            // height: 150,
-        },
-        enforceBoundary: false,
-        enableExif: true,
-        enableZoom: true, //default true // previously showZoom
-        showZoomer: false, //default true
-        mouseWheelZoom: true //default true
-    });
+    function initializeCoppie(width, height) {
+        $('#upload-demo').croppie('destroy');
+        $uploadCrop = $('#upload-demo').croppie({
+            viewport: {
+                width: width,
+                height: height,
+            },
+            enforceBoundary: false,
+            enableExif: true
+        });
+    }
     $('#cropImagePop').on('shown.bs.modal', function () {
         // alert('Shown pop');
         $uploadCrop.croppie('bind', {
@@ -50,16 +50,19 @@ $(document).ready(function () {
 
     $('.item-img').on('change', function () {
         outputImgId = "item-img-output" // this is the crop test element
+        initializeCoppie(200, 200);
         setImageChangeData(this);
     });
 
     $('.item-cover-img').on('change', function () {
         outputImgId = "coverPhoto";
+        initializeCoppie(400, 100);
         setImageChangeData(this);
     });
 
     $('.item-user-img').on('change', function () {
         outputImgId = "user-img";
+        initializeCoppie(200, 200);
         setImageChangeData(this);
     });
     $('#cropImageBtn').on('click', function (ev) {
