@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // createHeader(true, true, true, true);
-    createHeader(true, true, true, false, true, true);
+    // createHeader(true, true, true, false, true, true);
 
     createFooter();
     let path = window.location.pathname;
