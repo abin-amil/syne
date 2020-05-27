@@ -75,7 +75,88 @@ Dropzone.options.projectIcon = {
     maxFilesize: 2, // MB,
     addRemoveLinks: true,
     maxFiles: 1,
-    maxfilesexceeded: function(file) {
+    transformFile: function (file, done) {
+        var projectIcon = this;
+
+        let cropHtmlTemplate = `<div class="modal fade" id="cropImagePop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width: 69%;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">
+                <?=multiLanguage( "Edit Foto" , "Edit Photo" )?></h4>
+          </div>
+          <div class="modal-body">
+          <div id="upload-demo" class="center-block"></div>
+      </div>
+           <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <button type="button" id="cropImageBtn" class="btn btn-primary">Crop</button>
+      </div>
+          </div>
+        </div>
+      
+      </div>`
+
+        var editor = createElementFromHTML(cropHtmlTemplate);
+        document.body.appendChild(editor);
+
+        $('#cropImageBtn').on('click', function () {
+            // Get the output file data from Croppie
+            croppie.croppie('result', {
+                type: 'blob',
+                size: { width: 200, height: 200 }
+            }).then(function (blob) {
+                // Update the image thumbnail with the new image data
+                projectIcon.createThumbnail(
+                    blob,
+                    projectIcon.options.thumbnailWidth,
+                    projectIcon.options.thumbnailHeight,
+                    projectIcon.options.thumbnailMethod,
+                    false,
+                    function (dataURL) {
+
+                        // Update the Dropzone file thumbnail
+                        projectIcon.emit('thumbnail', file, dataURL);
+
+                        // Return modified file to dropzone
+                        done(blob);
+                    }
+                );
+            });
+
+            // Remove the editor from view
+            editor.parentNode.removeChild(editor);
+
+        });
+
+        $('#cropImagePop').removeClass('fade');
+        $('#cropImagePop').addClass('show');
+        $('#cropImagePop').addClass('display-block');
+
+        // Create the croppie editor
+        var croppie = $('#upload-demo').croppie({
+            viewport: {
+                width: 200,
+                height: 200,
+            },
+            enforceBoundary: false,
+            enableExif: true,
+            enableResize: true
+        });
+
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            croppie.croppie('bind', {
+                url: e.target.result
+            }).then(function () {
+                console.log('jQuery bind complete');
+            });
+        };
+        reader.readAsDataURL(file);
+    },
+
+    maxfilesexceeded: function (file) {
         this.removeAllFiles();
         this.addFile(file);
     },
@@ -275,4 +356,12 @@ function formValidCheck(formId, formNum) {
     } else {
         document.getElementById("proceed" + formNum).disabled = true;
     }
+}
+
+function createElementFromHTML(htmlString) {
+    var div = document.createElement('div');
+    div.innerHTML = htmlString.trim();
+
+    // Change this to div.childNodes to support multiple top-level nodes
+    return div.firstChild;
 }

@@ -711,3 +711,7 @@ input.common-input {
     max-height: 300px;
     object-fit: cover;
 }
+
+.display-block {
+    display: block !important;
+}
