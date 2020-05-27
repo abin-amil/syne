@@ -40,7 +40,7 @@ $(document).ready(function () {
         profilePicCropping = false;
     }
 
-    function initializeCoppie(width, height) {
+    function initializeCoppie(width,height) {
         $('#upload-demo').croppie('destroy');
         $uploadCrop = $('#upload-demo').croppie({
             viewport: {
@@ -63,14 +63,14 @@ $(document).ready(function () {
     $('.item-img').on('change', function () {
         outputImgId = "item-img-output" // this is the crop test element
         setProfilePhotoCropping();
-        initializeCoppie(200, 200);
+        initializeCoppie(200);
         setImageChangeData(this);
     });
 
     $('.item-cover-img').on('change', function () {
         outputImgId = "coverPhoto";
         setCoverPhotoCropping();
-        initializeCoppie(400, 100);
+        initializeCoppie(300, 100);
         setImageChangeData(this);
     });
 
