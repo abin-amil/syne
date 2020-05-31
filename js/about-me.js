@@ -141,3 +141,14 @@ $("#syne-add-school-college .modalclose").click(function (e) {
     e.preventDefault();
 });
 
+$('#workStartDate').datepicker({
+    uiLibrary: 'bootstrap4'
+});
+
+$('#instituteStartDate').datepicker({
+    uiLibrary: 'bootstrap4'
+});
+
+$('#instituteEndDate').datepicker({
+    uiLibrary: 'bootstrap4'
+});
