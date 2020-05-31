@@ -9,8 +9,7 @@
     <meta content="#3D0082" name="msapplication-TileColor">
     <meta content="#3D0082" name="theme-color">
     <title>SYNE</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700&display=swap&subset=cyrillic"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/common.css">
@@ -21,24 +20,19 @@
     <link rel="stylesheet" href="css/payment.css">
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
 
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="icon" href="favicon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-        </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
@@ -47,12 +41,10 @@
 
 <body class="post-page-bg ">
     <div class="container-fluid h-100" id="paymentGuestUser">
-        <div class=" d-flex flex-wrap h-100">
+        <div class=" d-flex flex-wrap h-100 payment-scn-1">
             <div class="row justify-content-center h-100" style="width: 100%">
-                <div style="min-width: 315px"
-                    class="col-6 hidden-md-down bg-grey-payment-guest-light d-flex flex-column align-items-center"
-                    id="guestUserPaymentPageLeftSide">
-                    <div class="mt-5">
+                <div style="min-width: 315px; padding: 0 150px;" class="col-6 hidden-md-down bg-grey-payment-guest-light d-flex flex-column" id="guestUserPaymentPageLeftSide">
+                    <div style="margin-top: 35px;">
                         <div class="logo h-100">
                             <img src="img/syne-logo.png" alt="logo">
                         </div>
@@ -61,8 +53,8 @@
                             <span class="txt-blue">Back</span>
                         </div>
                     </div>
-                    <div style="min-width: 300px; width: 50%;" class="mt-3">
-                        <div class="d-flex justify-content-center row mt-5 donate-to-text">
+                    <div style="min-width: 380px; width: 50%; margin-top: 38px;" class="donate-scn">
+                        <div class="d-flex justify-content-center row mt-5 pb-4 donate-to-text">
                             Donate to
                         </div>
                         <div class="payment-container p-4 mt-5 d-flex flex-column align-items-center">
@@ -82,304 +74,283 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mt-0 mt-md-5" id="guestUserPaymentPageRightSide">
-                    <div class="p-4 m-5 form-width">
-                        <div class="user-na text-right mt-5">
-                            Already have an acount?
-                        </div>
-                        <div class="text-right sign-in-text">
-                            Sign in
-                        </div>
+                <div class="col-md-6 mt-0 pt-md-5 pl-md-5 bg-white" id="guestUserPaymentPageRightSide">
+                    <div class="payments">
+                        <div class="form-width">
+                            <div class="user-na text-right mt-5">
+                                Already have an acount?
+                            </div>
+                            <div class="text-right sign-in-text">
+                                Sign in
+                            </div>
 
-                        <form id="guestPaymentForm">
-                            <div class="project-title-input ">
-                                Personal Information
-                            </div>
-                            <div class="mt-3 payment-methods " style="min-width: 200px;">
-                                <label class="payment-input-label" for="fName">Email</label>
-                                <input type="text" name="phoneNum" class="form-control project-title-input">
-                            </div>
-                            <div class=" d-flex justify-content-between flex-sm-wrap">
-                                <div class="p-0 mt-3 mw-150 c-6 payment-methods"
-                                    style="border: 1px solid #e0e6ee;max-width: 48%;">
-                                    <label class="payment-input-label" for="fName">Given Name</label>
-                                    <input type="text" name="phoneNum" class="form-control project-title-input">
-                                </div>
-                                <div class="p-0 mt-3 mw-150 c-5 payment-methods"
-                                    style="border: 1px solid #e0e6ee;max-width: 48%;">
-                                    <label class="payment-input-label" for="lName">Surname</label>
-                                    <input type="text" name="phoneNum" class="form-control project-title-input">
-                                </div>
-                            </div>
-                            <div class="mt-3 payment-methods" style="min-width: 200px;">
-                                <label class="payment-input-label" for="PhoneNum">Phone Number</label>
-                                <input type="text" name="phoneNum" class="form-control project-title-input">
-                            </div>
-                            <div class="mt-3" style="font-weight:bold;font-size:15px">
-                                Payment method
-                            </div>
-                            <div class="mt-4 payment-methods" style="min-width:200px ">
-                                <div class="d-flex align-items-center custom-control custom-radio my-3 ml-3">
-                                    <input type="radio" class="custom-control-input" id="globalWallet"
-                                        name="paymentMethod">
-                                    <label class="custom-control-label" for="globalWallet">Global Wallet</label>
-                                </div>
-                                <div class="line-seperator"></div>
-                                <div class="d-flex align-items-center custom-control custom-radio my-3 ml-3">
-                                    <input type="radio" class="custom-control-input" id="creditCard"
-                                        name="paymentMethod">
-                                    <label class="custom-control-label" for="creditCard">Credit Card</label>
-                                </div>
-                                <div class="line-seperator"></div>
-                                <div class="d-flex align-items-center custom-control custom-radio my-3 ml-3">
-                                    <input type="radio" class="custom-control-input" id="netBanking"
-                                        name="paymentMethod">
-                                    <label class="custom-control-label" for="netBanking">Net Banking</label>
-                                </div>
-                                <div class="line-seperator"></div>
-                                <div class="d-flex align-items-center custom-control custom-radio my-3 ml-3">
-                                    <input type="radio" class="custom-control-input" id="debitCard"
-                                        name="paymentMethod">
-                                    <label class="custom-control-label" for="debitCard">Debit Card</label>
-                                </div>
-                                <div class="line-seperator"></div>
-                                <div class="d-flex align-items-center custom-control custom-radio my-3 ml-3">
-                                    <input type="radio" class="custom-control-input" id="directPayment"
-                                        name="paymentMethod">
-                                    <label class="custom-control-label" for="directPayment">Direct payment</label>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="d-flex justify-content-center ">
-                                    <button type="button"
-                                        class="btn proceedButton is-success mt-3 d-flex justify-content-around"
-                                        onclick="proceedToPayButtonClick1()">
-                                        <div>
-                                            Proceed to Pay $1200
-                                        </div>
-                                    </button></div>
-                                <div class="mt-3 user-name notify-text">
-                                    <span class="d-flex justify-content-center">Tapping on proceed button above will
-                                        tak you to a list of Global Wallet page</span>
-                                    <!-- <span class="d-flex justify-content-center"></span> -->
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid h-100" id="paymentGuestUserPaymentPage" style="display: none">
-        <div class=" d-flex flex-wrap h-100">
-            <div class="row justify-content-center h-100" style="width: 100%">
-                <div style="min-width: 315px"
-                    class="col-6 hidden-md-down bg-grey-payment-guest-light d-flex flex-column align-items-center"
-                    id="guestUserPaymentPageLeftSide">
-                    <div class="mt-5">
-                        <div class="logo h-100">
-                            <img src="img/syne-logo.png" alt="logo">
-                        </div>
-                        <div id="backBtn">
-                            <img src="img/back-arrow-blue.png">
-                            <span class="txt-blue">Back</span>
-                        </div>
-                    </div>
-                    <div style="min-width: 300px; width: 50%;" class="mt-3">
-                        <div class="d-flex justify-content-center row mt-5 donate-to-text">
-                            Donate to
-                        </div>
-                        <div class="payment-container p-4 mt-5 d-flex flex-column align-items-center">
-                            <div class="mt-3">
-                                <img class="img-fluid payment-page-icon" src="img/user.png" style="max-height: 65px;">
-                            </div>
-                            <div class="d-flex justify-content-center row donating-org-name">
-                                School of love
-                            </div>
-                            <div class="d-flex justify-content-center user-name foundation-name">
-                                Vivent Foundation
-                            </div>
-                            <div class="payment-amount-text-box p-2 d-flex align-items-center mt-4 mb-3">
-                                <img style="height: 20px;" src="img/dollar-symbol.png">
-                                <input type="text" class="form-control project-title-input" value="1200">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mt-0 mt-md-5" id="guestUserPaymentPageRightSide" style="display: block;">
-                    <div class="p-4 m-5 form-width">
-                        <div class="user-name text-right mt-5">
-                            Already have an acount?
-                        </div>
-                        <div class="text-right sign-in-text">
-                            Sign in
-                        </div>
-
-                        <form id="guestPaymentForm">
-                            <div>
-                                <div class="project-title-input">
+                            <form id="guestPaymentForm" class="mt-5">
+                                <div class="project-title-input ">
                                     Personal Information
                                 </div>
-                                <div class="mt-3 payment-methods" style="min-width: 200px">
+                                <div class="mt-3 payment-methods " style="min-width: 200px;">
                                     <label class="payment-input-label" for="fName">Email</label>
                                     <input type="text" name="phoneNum" class="form-control project-title-input">
                                 </div>
-                                <div class="d-flex justify-content-between flex-sm-wrap">
-                                    <div class="p-0 mt-3 mw-150 c-6 payment-methods"
-                                        style="border: 1px solid #e0e6ee;max-width: 48%;">
+                                <div class=" d-flex justify-content-between flex-sm-wrap">
+                                    <div class="p-0 mt-3 mw-150 c-6 payment-methods" style="border: 1px solid #e0e6ee;max-width: 48%;">
                                         <label class="payment-input-label" for="fName">Given Name</label>
                                         <input type="text" name="phoneNum" class="form-control project-title-input">
                                     </div>
-                                    <div class="p-0 mt-3 mw-150 c-5 payment-methods"
-                                        style="border: 1px solid #e0e6ee;max-width: 48%;">
+                                    <div class="p-0 mt-3 mw-150 c-5 payment-methods" style="border: 1px solid #e0e6ee;max-width: 48%;">
                                         <label class="payment-input-label" for="lName">Surname</label>
                                         <input type="text" name="phoneNum" class="form-control project-title-input">
                                     </div>
                                 </div>
-                                <div class="mt-3 payment-methods" style="min-width: 200px">
-                                    <label class="payment-input-label" for="PhoneNum">Phone Number</label>
-                                    <input type="text" name="phoneNum" class="form-control project-title-input">
-                                </div>
-                                <!-- <div class="mt-3 m-74" style="font-weight:bold;font-size:15px">
-                                        Payment method
-                                    </div> -->
-                                <!-- <div class="mt-4 payment-methods w-75 m-74">
-                                        <div class="custom-control custom-radio mt-3 ml-3">
-                                            <input type="radio" class="custom-control-input" id="globalWallet" name="paymentMethod">
-                                            <label class="custom-control-label" for="globalWallet">Global Wallet</label>
-                                        </div>
-                                        <div class="line-seperator my-2"></div>
-                                        <div class="custom-control custom-radio mt-3 ml-3">
-                                            <input type="radio" class="custom-control-input" id="creditCard" name="paymentMethod">
-                                            <label class="custom-control-label" for="creditCard">Credit Card</label>
-                                        </div>
-                                        <div class="line-seperator my-2"></div>
-                                        <div class="custom-control custom-radio mt-3 ml-3">
-                                            <input type="radio" class="custom-control-input" id="netBanking" name="paymentMethod">
-                                            <label class="custom-control-label" for="netBanking">Net Banking</label>
-                                        </div>
-                                        <div class="line-seperator my-2"></div>
-                                        <div class="custom-control custom-radio mt-3 ml-3">
-                                            <input type="radio" class="custom-control-input" id="debitCard" name="paymentMethod">
-                                            <label class="custom-control-label" for="debitCard">Debit Card</label>
-                                        </div>
-                                        <div class="line-seperator my-2"></div>
-                                        <div class="custom-control custom-radio mt-3 ml-3">
-                                            <input type="radio" class="custom-control-input" id="directPayment"
-                                                name="paymentMethod">
-                                            <label class="custom-control-label" for="directPayment">Direct payment</label>
-                                        </div>
-                                    </div> -->
-                                <div>
-                                    <div class="d-flex justify-content-center">
-                                        <button type="button"
-                                            class="btn proceedButton is-success mt-3 d-flex justify-content-around"
-                                            onclick="proceedToPayButton2()">
-                                            <div>
-                                                Proceed to Pay $1200
-                                            </div>
-                                        </button></div>
-                                    <div class="mt-3 user-name notify-text">
-                                        <span class="d-flex justify-content-center">Tapping on proceed button above will
-                                            tak you to a list of Global Wallet page</span>
-                                        <!-- <span class="d-flex justify-content-center"></span> -->
+                                <div class="mobile-wrappper mt-3 d-flex" style="position: relative;">
+                                    <label class="payment-input-label">IND</label>
+                                    <select name="Code" id="phone">
+                                    <option value="+ 91 "> +91</option>
+                                    <option value="+ 1 ">+1</option>
+                                    <option value="opel ">+22</option>
+                                    <option value="audi ">+55</option>
+                                     </select>
+                                    <div class=" payment-methods " style="min-width: 200px; ">
+                                        <label class="payment-input-label " for="PhoneNum ">Phone Number</label>
+                                        <input type="text " name="phoneNum " class="form-control project-title-input ">
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                                <div class="mt-3 " style="font-weight:bold;font-size:15px ">
+                                    Payment method
+                                </div>
+                                <div class="mt-4 payment-methods " style="min-width:200px ">
+                                    <div class="d-flex align-items-center custom-control custom-radio my-3 ml-3 ">
+                                        <input type="radio " class="custom-control-input " id="globalWallet " name="paymentMethod ">
+                                        <label class="custom-control-label " for="globalWallet ">Global Wallet</label>
+                                    </div>
+                                    <div class="line-seperator "></div>
+                                    <div class="d-flex align-items-center custom-control custom-radio my-3 ml-3 ">
+                                        <input type="radio " class="custom-control-input " id="creditCard " name="paymentMethod ">
+                                        <label class="custom-control-label " for="creditCard ">Credit Card</label>
+                                    </div>
+                                    <div class="line-seperator "></div>
+                                    <div class="d-flex align-items-center custom-control custom-radio my-3 ml-3 ">
+                                        <input type="radio " class="custom-control-input " id="netBanking " name="paymentMethod ">
+                                        <label class="custom-control-label " for="netBanking ">Net Banking</label>
+                                    </div>
+                                    <div class="line-seperator "></div>
+                                    <div class="d-flex align-items-center custom-control custom-radio my-3 ml-3 ">
+                                        <input type="radio " class="custom-control-input " id="debitCard " name="paymentMethod ">
+                                        <label class="custom-control-label " for="debitCard ">Debit Card</label>
+                                    </div>
+                                    <div class="line-seperator "></div>
+                                    <div class="d-flex align-items-center custom-control custom-radio my-3 ml-3 ">
+                                        <input type="radio " class="custom-control-input " id="directPayment " name="paymentMethod ">
+                                        <label class="custom-control-label " for="directPayment ">Direct payment</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex justify-content-center ">
+                                        <button type="button " class="btn proceedButton is-success mt-3 p-2 d-flex justify-content-around w-100 " onclick="proceedToPayButtonClick1() ">
+                                        <div>
+                                            Proceed to Pay $1200
+                                        </div>
+                                    </button></div>
+                                    <div class="mt-3 user-name notify-text ">
+                                        <span class="f10 ">Tapping on proceed button above will
+                                        tak you to a list of </br>Global Wallet page</span>
+                                        <!-- <span class="d-flex justify-content-center "></span> -->
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-
-                
-                
             </div>
         </div>
     </div>
 
-    <div id="paymentSucessfullPage" class="h-100" style="display: none;">
-       <div class="d-flex flex-wrap h-100">
-        <div class="col-sm-12 col-md-6">
-            <div class="container p-4 mt-5 donate-to-text">
-                <div class="mt-2 d-flex justify-content-center">
-                    <img class="organisation-image" src="img/green-tick.png"
-                        style="width: 45px; height: 48px;">
+
+    <div class="container-fluid h-100 " id="paymentGuestUserPaymentPage " style="display: none">
+        <div class=" d-flex flex-wrap h-100 payments-2">
+            <div class="row justify-content-center h-100 " style="width: 100% ">
+                <div style="min-width: 315px; padding: 0 150px;" class="col-6 hidden-md-down bg-grey-payment-guest-light d-flex flex-column" id="guestUserPaymentPageLeftSide ">
+                    <div style="margin-top: 35px;">
+                        <div class="logo h-100">
+                            <img src="img/syne-logo.png " alt="logo ">
+                        </div>
+                        <div id="backBtn ">
+                            <img src="img/back-arrow-blue.png ">
+                            <span class="txt-blue ">Back</span>
+                        </div>
+                    </div>
+                    <div style="min-width: 380px; width: 50%; margin-top: 70px;" class="donate-scn">
+                        <div class="d-flex justify-content-center row donate-to-text ">
+                            Donate to
+                        </div>
+                        <div class="payment-container p-4 d-flex flex-column align-items-center" style="margin-top: 75px;">
+                            <div class="mt-3">
+                                <img class="img-fluid payment-page-icon " src="img/user.png " style="max-height: 65px; ">
+                            </div>
+                            <div class="d-flex justify-content-center row donating-org-name ">
+                                School of love
+                            </div>
+                            <div class="d-flex justify-content-center user-name foundation-name ">
+                                Vivent Foundation
+                            </div>
+                            <div class="payment-amount-text-box pay-amt-box d-flex align-items-center mt-4 mb-3">
+                                <img src="img/dollar-symbol.png ">
+                                <input type="text " class="form-control project-title-input " value="1200 ">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-center" style="font-size: 17px;">Payment Successful</div>
-                <div class="d-flex justify-content-center" style="color: #7c8796;font-size: 12px;">
-                    Transaction
-                    ID : P781JPOKLJG</div>
-    
-            </div>
-            <div class="payment-container-guest-user p-4 mt-3 mx-auto">
-                <div class="d-flex justify-content-center row donate-to-text mt-5"
-                    style="font-size: 16px; color: #7c8796;">
-                    You just donate $800 to
+                <div class="col-md-6 mt-0 mt-md-5 " id="guestUserPaymentPageRightSide " style="display: block; ">
+                    <div class="payments" style="padding-top: 70px;">
+                        <div class="form-width">
+                            <div class="user-name text-right mt-5">
+                                Already have an acount?
+                            </div>
+                            <div class="text-right sign-in-text ">
+                                Sign in
+                            </div>
+
+                            <form id="guestPaymentForm" class="mt-5">
+                                <div>
+                                    <div class="project-title-input ">
+                                        Personal Information
+                                    </div>
+                                    <div class="mt-3 payment-methods w-100">
+                                        <label class="payment-input-label " for="fName ">Email</label>
+                                        <input type="text " name="phoneNum " class="form-control project-title-input ">
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-sm-wrap ">
+                                        <div class="p-0 mt-3 mw-150 c-6 payment-methods " style="border: 1px solid #e0e6ee;max-width: 48%; ">
+                                            <label class="payment-input-label " for="fName ">Given Name</label>
+                                            <input type="text " name="phoneNum " class="form-control project-title-input ">
+                                        </div>
+                                        <div class="p-0 mt-3 mw-150 c-5 payment-methods " style="border: 1px solid #e0e6ee;max-width: 48%; ">
+                                            <label class="payment-input-label " for="lName ">Surname</label>
+                                            <input type="text " name="phoneNum " class="form-control project-title-input ">
+                                        </div>
+                                    </div>
+                                    <div class="mobile-wrappper mt-3 d-flex" style="position: relative;">
+                                        <label class="payment-input-label">IND</label>
+                                        <select name="Code" id="phone">
+                                        <option value="+ 91 "> +91</option>
+                                        <option value="+ 1 ">+1</option>
+                                        <option value="opel ">+22</option>
+                                        <option value="audi ">+55</option>
+                                         </select>
+                                        <div class=" payment-methods w-100">
+                                            <label class="payment-input-label " for="PhoneNum ">Phone Number</label>
+                                            <input type="text " name="phoneNum " class="form-control project-title-input ">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="d-flex justify-content-center ">
+                                            <button type="button" class="btn w-100 proceedButton is-success mt-3 d-flex justify-content-around " onclick="proceedToPayButton2() ">
+                                            <div>
+                                                Proceed to Pay $1200
+                                            </div>
+                                            </button>
+                                        </div>
+                                        <div class="mt-3 user-name notify-text">
+                                            <span class="d-flex">help text explaining what happens next, when you tap on the payment  </br>gateway button above.</span>
+                                            <!-- <span class="d-flex justify-content-center "></span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="mt-2 d-flex justify-content-center">
-                    <img class="organisation-image" src="img/user.png">
-                </div>
-                <div class="d-flex justify-content-center row donate-to-text" style="font-size: 17px;">
-                    School of love
-                </div>
-                <div class="d-flex justify-content-center user-name mb-4" style="font-size: 11px;">
-                    Vivent Foundation
-                </div>
-            </div>
-            <div class="container p-4 mt-3">
-                <div class="d-flex justify-content-center row grey-text">
-                    Looking for Receipt?
-                </div>
-                <div class="mt-3 grey-text" style="font-size: 13px;">
-                    <span class="d-flex justify-content-center row">Check you email, we just send the
-                        receipt to your email address,</span>
-                    <span class="d-flex justify-content-center row mt-1">altenatively you can print the
-                        receipt by clicking on button link below</span>
-                </div>
-                <div class="d-flex justify-content-center row mt-3 grey-text print-text"
-                    style="font-weight: bold;">
-                    <span class="mr-3"><img src="img/print-icon.png"></span>
-                    <a>PRINT RECEIPT</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6 bg-white">
-            <div class="last-step-msg d-flex flex-column justify-content-center h-100 p-4 mx-5">
-                <div class="syne-logo py-3">
-                    <img src="img/syne-logo.png">
-                </div>
-                <div class="one-last-step-text py-2">William, one last step!</div>
-                <div class="one-last-step-desc py-3">Create a password and Join SYNE Community.
-                You can explore,recieve updates from your favorite projects like ‘School of Love.
-                </div>
-                <div class="email-section py-3">
-                    <div class="your-email-text">Your Email</div>
-                    <div class="email-text">williamcharlotte.1987@syne.com</div>
-                </div>
-                <div class="mt-3 payment-methods d-flex align-items-center" style="min-width: 200px; max-width: 300px">
-                    <input type="text" name="password" placeholder="Create a Password" class="form-control project-title-input">
-                    <div class="pr-3 verify-text">Verify</div>
-                </div>
-                <button type="button"
-                class="btn proceedButton is-success mt-3 d-flex justify-content-around"
-                onclick="proceedToPayButton2()">
-                <div>
-                    Join SYNE
-                </div>
-                </button>
-                <div class="terms-conditions-text py-2">By signing up, you confirm that you’ve read and
-                    <br>accepted our <span class="conditions-highlight">Terms & Conditions</span> and <span class="conditions-highlight">Privacy Policy.</span></div>
+
+
 
             </div>
         </div>
-       </div>
+    </div>
+
+    <div id="paymentSucessfullPage " class="h-100" style="display:none; ">
+        <div class="d-flex flex-wrap h-100 payment-scn-3">
+            <div class="col-sm-12 col-md-6 ">
+                <div class="container p-4 mt-5 donate-to-text ">
+                    <div class="mt-2 d-flex justify-content-center ">
+                        <img class="organisation-image " src="img/green-tick.png " style="width: 45px; height: 48px; ">
+                    </div>
+                    <div class="d-flex justify-content-center " style="font-size: 17px; ">Payment Successful</div>
+                    <div class="d-flex justify-content-center " style="color: #7c8796;font-size: 12px; ">
+                        Transaction ID : P781JPOKLJG</div>
+
+                </div>
+                <div class="payment-container-guest-user p-4 mt-3 mx-auto ">
+                    <div class="d-flex justify-content-center row donate-to-text mt-5 " style="font-size: 16px; color: #7c8796; ">
+                        You just donate $800 to
+                    </div>
+                    <div class="mt-2 d-flex justify-content-center">
+                        <img class="organisation-image " src="img/user.png ">
+                    </div>
+                    <div class="d-flex justify-content-center row donate-to-text " style="font-size: 17px;">
+                        School of love
+                    </div>
+                    <div class="d-flex justify-content-center user-name mb-4 " style="font-size: 11px; ">
+                        Vivent Foundation
+                    </div>
+                </div>
+                <div class="container pt-1 mt-3 ">
+                    <div class="d-flex justify-content-center row grey-text rcpt f15">
+                        Looking for Receipt?
+                    </div>
+                    <div class="mt-3 grey-text " style="font-size: 12px; color: #4d748c;">
+                        <span class="d-flex justify-content-center row ">Check you email, we just send the
+                        receipt to your email address,</span>
+                        <span class="d-flex justify-content-center row mt-1">altenatively you can print the
+                        receipt by clicking on button link below</span>
+                    </div>
+                    <div class="d-flex justify-content-center row mt-3 grey-text print-text " style="font-weight: bold; ">
+                        <span class="mr-3 "><img src="img/print-icon.png "></span>
+                        <a>PRINT RECEIPT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 bg-white">
+
+                <div class="last-step-msg d-flex flex-column justify-content-center h-100 mx-5 ">
+                    <div class="syne-logo py-3" style="margin-top: 25px;">
+                        <img src="img/syne-logo.png ">
+                    </div>
+                    <div class="one-last-step-text py-2">William, one last step!</div>
+                    <div class="one-last-step-desc py-3">Create a password and Join SYNE Community.<br> You can explore,recieve updates from your favorite <br> projects like ‘School of Love. </div>
+                    <div class="email-section py-3 ">
+                        <div class="your-email-text ">Your Email</div>
+                        <div class="email-text ">williamcharlotte.1987@syne.com</div>
+                    </div>
+                    <div class="pay-3">
+                        <div class="mt-3 payment-methods d-flex align-items-center w-100">
+                            <input type="text " name="password " placeholder="Create a Password " class="form-control project-title-input ">
+                            <div class="pr-3 verify-text ">Show</div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="pwd-strngth"></div>
+                            <div class="pwd-strngth"></div>
+                            <div class="pwd-strngth"></div>
+                            <div class="pwd-strngth"></div>
+                            <div class="pwd-strngth"></div>
+                        </div>
+
+                        <button type="button" class="btn w-100 proceedButton is-success mt-3 d-flex justify-content-around " onclick="proceedToPayButton2() ">
+                                    Join SYNE
+               
+                     </button>
+                        <div class="terms-conditions-text py-2 ">By signing up, you confirm that you’ve read and
+                            <br>accepted our <span class="conditions-highlight ">Terms & Conditions</span> and <span class="conditions-highlight ">Privacy Policy.</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
 
 
 </body>
-<script type="text/javascript" src="js/payment.js"></script>
+<script type="text/javascript " src="js/payment.js "></script>
 <style>
     html,
     body {

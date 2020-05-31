@@ -76,7 +76,7 @@
 
 
             <div class="col-6">
-                <div class="writePost p-4" id="about-organisation-container">
+                <div class="writePost p-4" id="about-organisation-container" style="height:67%">
                     <div class="row">
                         <div class="col-10 about-organisation-header-text">About Vivent Org</div>
                         <div class="right">
@@ -87,16 +87,16 @@
                         </div>
                     </div>
 
-                    <div class="mt-5 about-organisation-content-text">
+                    <div class="about-organisation-content-text">
                         Electronic payments have the ability to create a world with greater oppurtunities for all. To take us beyond borders, to new market. beyond more moments, to meaningful experiences. that's the powe of a world beyond cash.
                     </div>
-                    <div class="mt-5 follower-text">
+                    <div class="follower-text" style="margin-top: 30px;">
                         Organisation Type
                     </div>
                     <div class="mt-2 about-organisation-field-text ">
                         For Pofit
                     </div>
-                    <div class="mt-4 row">
+                    <div class="row" style="margin-top: 30px;">
                         <div class="col-6 follower-text">
                             Organisation Categoy
                         </div>
@@ -112,13 +112,13 @@
                             10000+
                         </div>
                     </div>
-                    <div class="mt-5 follower-text">
+                    <div class="follower-text" style="margin-top: 30px;">
                         SYNE Organisation URL
                     </div>
                     <div class="mt-2 about-organisation-field-text">
                         syne.com/yourname
                     </div>
-                    <div class="mt-5 follower-text">
+                    <div class="follower-text" style="margin-top: 30px;">
                         Organisation Website
                     </div>
                     <div class="mt-2 about-organisation-field-text">
@@ -128,19 +128,19 @@
             </div>
 
             <div class="col-3 p-0">
-                <div class="right-tab px-3 pb-2">
-                    <div class="recommended-projects-text pt-3">Recommended Organisation</div>
-                    <div id="recommended-project-panel">
-                        <!-- recommended project template fill here -->
+                <div class="right-tab px-4 pb-2">
+                    <div class="recommended-projects-text pt-3">Who to follow</div>
+                    <div id="who-to-follow-list-panel">
+                        <!-- who to follow template fill here -->
                     </div>
                     <div class="d-flex justify-content-center py-3 view-more">
                         View more…
                     </div>
                 </div>
                 <div class="right-tab mt-3 px-3 pb-2">
-                    <div class="recommended-projects-text pt-3">Who to follow</div>
-                    <div id="who-to-follow-list-panel">
-                        <!-- who to follow template fill here -->
+                    <div class="recommended-projects-text pt-3">Recommended Projects</div>
+                    <div id="recommended-project-panel">
+                        <!-- recommended project template fill here -->
                     </div>
                     <div class="d-flex justify-content-center py-3 view-more">
                         View more…
@@ -151,159 +151,166 @@
     </div>
 
     <div id="edit-oganisation-popup" class="pop-modal">
-        <div class="modalcontent create-org-modal" style="max-width: 500px !important;">
-            <div class="syne-lgin-r rltv p-3">
-                <a class="d-flex justify-content-end modal-btn" href="#syne-discard-draft" data-target="syne-discard-draft">
-                    <div class="modal-close-text">Close</div>
-                    <img src="img/close-icon.png">
-                </a>
-            </div>
-            <div id="createNewOrg" class="px-4 py-2">
-                <div class="createOrg-modal-header">
-                    Edit Organisation
+        <div class="modalcontent create-org-modal" style="max-width: 500px !important; overflow: hidden!important;">
+            <div class="scroll" id="style-1">
+                <div class="syne-lgin-r rltv p-3">
+                    <a class="d-flex justify-content-end modal-btn" href="#syne-discard-draft" data-target="syne-discard-draft">
+                        <div class="modal-close-text">Close</div>
+                        <img src="img/close-icon.png">
+                    </a>
                 </div>
-                <div class="mt-5 organisation-add-text">
-                    Add Organisation logo
-                </div>
-                <div class="py-2 d-flex">
-                    <form action="/file-upload" class="dropzone project-icon-upload d-flex justify-content-center align-items-center" id="org-logo">
-                        <div id="projectIconDefault" class="d-flex flex-column align-items-center justify-content-center">
-                            <img src="img/img-placeholder.png ">
-                            <div class="drag-in-photos pt-1">Drag in</div>
-                        </div>
-                        <div class="fallback">
-                            <input name="file" type="file" multiple />
-                        </div>
-                    </form>
-                    <div class="note">
-                        <label class="syne-input-label">Note</label>
-                        <p>Upload minimum of 200px by 200px photo of your project icon or logo</p>
+                <div id="createNewOrg" class="px-4">
+                    <div class="createOrg-modal-header">
+                        Edit Acme Organisation
                     </div>
-                </div>
-                <div class="mt-2">
-                    <form id="orgRegForm">
-                        <div class="form-group mt-3">
-                            <div class="syne-inputbox custom-inputbox">
-                                <label for="orgName" class="syne-input-label">
-                                    Organisation Name<span class="required-field">*</span>
-                                </label>
-                                <div class="d-flex">
-                                    <input name="orgName" type="text" class="org-form-input" placeholder="Enter Organisation Name" id="orgName">
-                                </div>
+                    <div class="mt-4 pt-3 organisation-add-text">
+                        Add Organisation logo
+                    </div>
+                    <div class="py-2 d-flex">
+                        <form action="/file-upload" class="dropzone project-icon-upload d-flex justify-content-center align-items-center" id="org-logo">
+                            <div id="projectIconDefault" class="d-flex flex-column align-items-center justify-content-center">
+                                <img src="img/img-placeholder.png ">
+                                <div class="drag-in-photos pt-1">Drag in</div>
                             </div>
+                            <div class="fallback">
+                                <input name="file" type="file" multiple />
+                            </div>
+                        </form>
+                        <div class="note">
+                            <label class="syne-input-label">Note</label>
+                            <p>Upload minimum of 200px by 200px photo of your project icon or logo</p>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <form id="orgRegForm">
                             <div class="form-group mt-3">
                                 <div class="syne-inputbox custom-inputbox">
-                                    <label for="tagLine" class="syne-input-label">
-                                        Tag Line
+                                    <label for="orgName" class="syne-input-label">
+                                        Organisation Name<span class="required-field">*</span>
                                     </label>
                                     <div class="d-flex">
-                                        <input name="tagLine" type="text" class="org-form-input" placeholder="Enter Tag Line" id="tagLine">
+                                        <input name="orgName" type="text" class="org-form-input" placeholder="Enter Organisation Name" id="orgName">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group mt-3">
-                                <div class="syne-inputbox custom-inputbox">
-                                    <label for="orgDescription" class="syne-input-label">
-                                        Organisation Description
-                                    </label>
-                                    <textarea name="orgDescription" id="orgDescription" class="form-control org-form-input" rows="5" placeholder="Enter description here" style="border:0; resize: none!important;"></textarea>
-                                </div>
-                                <small class="noteinstr mt-1" style="color: #7c8796;">In less than 120 words</small>
-                            </div>
-                            <div class="form-group mt-4">
-                                <div class="p-2">
-                                    <label for="orgType" class="syne-input-label">
-                                        Organisation Type<span class="required-field">*</span>
-                                    </label>
-                                    <div class="ml-3 d-flex">
-                                        <div class="custom-control custom-radio custom-control-inline d-flex" style="align-items: center;">
-                                            <input type="radio" class="custom-control-input" id="forProfit" name="orgType" value="profit">
-                                            <label class="custom-control-label orgModal-radiobutton-text" for="forProfit">For
-                                                Profit</label>
-                                        </div>
-                                        <div class="custom-control custom-radio custom-control-inline d-flex" style="align-items: center;">
-                                            <input type="radio" class="custom-control-input" id="nonProfit" name="orgType" value="nonProfit">
-                                            <label class="custom-control-label orgModal-radiobutton-text" for="nonProfit">Non
-                                                Profit</label>
+                                <div class="form-group mt-3">
+                                    <div class="syne-inputbox custom-inputbox">
+                                        <label for="tagLine" class="syne-input-label">
+                                            Tag Line
+                                        </label>
+                                        <div class="d-flex">
+                                            <input name="tagLine" type="text" class="org-form-input" placeholder="Enter Tag Line" id="tagLine">
                                         </div>
                                     </div>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <div class="syne-inputbox custom-inputbox">
+                                        <label for="orgDescription" class="syne-input-label">
+                                            Organisation Description
+                                        </label>
+                                        <textarea name="orgDescription" id="orgDescription" class="form-control org-form-input" rows="5" placeholder="Enter description here" style="border:0; resize: none!important;"></textarea>
+                                    </div>
+                                    <small class="noteinstr mt-1" style="color: #7c8796;">In less than 120 words</small>
+                                </div>
+                                <div class="form-group mt-4">
+                                    <div class="p-2">
+                                        <label for="orgType" class="syne-input-label">
+                                            Organisation Type<span class="required-field">*</span>
+                                        </label>
+                                        <div class="ml-3 d-flex">
+                                            <div class="custom-control custom-radio custom-control-inline d-flex" style="align-items: center;">
+                                                <input type="radio" class="custom-control-input" id="forProfit" name="orgType" value="profit">
+                                                <label class="custom-control-label orgModal-radiobutton-text lbel-prft" for="forProfit">For
+                                                    Profit</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline d-flex" style="align-items: center;">
+                                                <input type="radio" class="custom-control-input" id="nonProfit" name="orgType" value="nonProfit">
+                                                <label class="custom-control-label orgModal-radiobutton-text lbel-prft" for="nonProfit">Non
+                                                    Profit</label>
+                                            </div>
+                                        </div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group ">
-                                <div class="syne-inputbox">
-                                    <!-- <label for="" class="syne-input-label"></label> -->
-                                    <div class="d-flex ">
-                                        <select class="org-form-select pb-2 pt-2">
-                                            <option>Organisation Category<span class="required-field">*</span>
-                                            </option>
-                                            <option>One</option>
-                                            <option>Two</option>
-                                            <option>Three</option>
-                                        </select>
+                                <div class="form-group ">
+                                    <div class="syne-inputbox">
+                                        <!-- <label for="" class="syne-input-label"></label> -->
+                                        <div class="d-flex ">
+                                            <select class="org-form-select form-slt pb-2 pt-2">
+                                                <option>Organisation Category
+                                                </option>
+                                                <option>One</option>
+                                                <option>Two</option>
+                                                <option>Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <div class="syne-inputbox">
+                                        <!-- <label for="" class="syne-input-label"></label> -->
+                                        <div class="d-flex ">
+                                            <select class="org-form-select form-slt pb-2 pt-2">
+                                                <option>Organisation Size
+                                                </option>
+                                                <option>One</option>
+                                                <option>Two</option>
+                                                <option>Three</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group ">
-                                <div class="syne-inputbox">
-                                    <!-- <label for="" class="syne-input-label"></label> -->
-                                    <div class="d-flex ">
-                                        <select class="org-form-select pb-2 pt-2">
-                                            <option>Organisation Size<span class="required-field">*</span>
-                                            </option>
-                                            <option>One</option>
-                                            <option>Two</option>
-                                            <option>Three</option>
-                                        </select>
+                            <div class="form-group mt-2">
+                                <div class="syne-inputbox custom-inputbox">
+                                    <div class="d-flex">
+                                        <!-- <img src="./img/svgImages/search-icon-grey.svg">
+                                        <input name="orgPrimaryLocation" type="text" class="org-form-input loc" placeholder="Primary location" id="orgPrimaryLocation"> -->
+                                        <img src="./img/svgImages/search-icon-grey.svg">
+                                        <select class="org-form-select pb-2 pt-2 slt-loc">
+                                        <option>Primary location
+                                        </option>
+                                        <option>One</option>
+                                        <option>Two</option>
+                                        <option>Three</option>
+                                    </select>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group mt-2">
-                            <div class="syne-inputbox custom-inputbox">
-                                <label for="orgWebsite" class="syne-input-label">
-                                    Primary Location<span class="required-field">*</span>
-                                </label>
-                                <div class="d-flex">
-                                    <img src="./img/svgImages/search-icon-grey.svg">
-                                    <input name="orgPrimaryLocation" type="text" class="org-form-input loc" placeholder="Primary location" id="orgPrimaryLocation"><span class="required-field">*</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group mt-2">
-                            <div class="syne-inputbox custom-inputbox">
-                                <label for="orgWebsite" class="syne-input-label">
-                                    Organisation Website
-                                </label>
-                                <div class="d-flex">
-                                    <input name="orgWebsite" type="text" class="org-form-input" placeholder="Enter Organisation Website" id="orgWebsite">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group mt-2">
-                            <div class="syne-inputbox custom-inputbox">
-                                <label for="orgUrl" class="syne-input-label">Syne Organisation URL<span
-                                        class="required-field">*</span></label>
-                                <div class="d-flex align-items-center">
-                                    <div class="project-title-input  pl-3">
-                                        syne.com/
+                            <div class="form-group mt-2">
+                                <div class="syne-inputbox custom-inputbox">
+                                    <label for="orgWebsite" class="syne-input-label">
+                                        Organisation Website
+                                    </label>
+                                    <div class="d-flex">
+                                        <input name="orgWebsite" type="text" class="org-form-input" placeholder="Enter Organisation Website" id="orgWebsite">
                                     </div>
-                                    <input name="orgUrl" id="orgUrl" type="text" class="form-control org-form-input px-0 url-input" placeholder="Organisation URL">
                                 </div>
                             </div>
-                        </div>
-                        <div class="mt-5 terms-conditions">
-                            By clicking "publish organisation Page" below, you agree to our
-                            <a style="color: #007bff">terms of service</a> and
-                            <a style="color: #007bff">privacy policy</a>
-                        </div>
-                        <div class="mt-1 m-2">
-                            <button id="publishOrgPageBtn" type="button" onclick="publishOrganisation()" class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
-                                Update New Organisation
-                            </button>
-                        </div>
+                            <div class="form-group mt-2">
+                                <div class="syne-inputbox custom-inputbox">
+                                    <label for="orgUrl" class="syne-input-label">Syne Organisation URL<span
+                                            class="required-field">*</span></label>
+                                    <div class="d-flex align-items-center">
+                                        <div class="project-title-input">
+                                            syne.com/
+                                        </div>
+                                        <input name="orgUrl" id="orgUrl" type="text" class="form-control org-form-input px-0 url-input" placeholder="Organisation URL">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4 pt-3 terms-conditions">
+                                By clicking "publish organisation Page" below, you agree to our
+                                <a style="color: #16c0ef">terms of service</a> and
+                                <a style="color: #16c0ef">privacy policy</a>
+                            </div>
+                            <div class="mt-1 m-2">
+                                <button id="publishOrgPageBtn" type="button" onclick="publishOrganisation()" class="btn  proceedButton is-success mt-5 d-flex justify-content-around">
+                                    Update New Organisation
+                                </button>
+                            </div>
+                    </div>
+                    </form>
                 </div>
-                </form>
             </div>
         </div>
     </div>
@@ -419,8 +426,11 @@
     <!-- recommended project panel -->
     <script id="template-recommended-project" type="text/template">
         <div class="recommended-project pt-3">
-            <div style="max-height:100px; overflow:hidden;">
+            <div class="rcmd" style="max-height:100px; overflow:hidden;">
                 <img class="img-fluid" src="{{imageUrl}}">
+                <div class="overlay">
+                    <label><img src="./img/time-icon.svg " class="mr-2 ">Ends in <strong>3 Months</strong> </label>
+                </div>
             </div>
             <div class="recommended-project-name pt-2">
                 {{projectName}}

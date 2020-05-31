@@ -273,6 +273,11 @@
      border-radius: 50%;
  }
  
+ .p-pic img {
+     width: 40px;
+     height: auto;
+ }
+ 
  .fol-btn {
      border-radius: 17px;
      border: solid 1px #16c0ef;
@@ -353,6 +358,58 @@
      height: auto;
      position: absolute;
      top: 0;
+ }
+ 
+ .custom-link {
+     background-size: 12px;
+     background-repeat: no-repeat;
+     background-position: 1px 8px;
+ }
+ 
+ .custom-link.active {}
+ 
+ .tab-active-1 {
+     background-image: url('../img/svgImages/stack-grey.svg');
+ }
+ 
+ .tab-active-1.active {
+     background-image: url('../img/svgImages/stack.svg');
+ }
+ 
+ .tab-active-2 {
+     background-image: url('../img/svgImages/people-grey.svg');
+ }
+ 
+ .tab-active-2.active {
+     background-image: url('../img/svgImages/people-active.svg');
+ }
+ 
+ .tab-active-3 {
+     background-image: url('../img/svgImages/org-grey.svg');
+     background-size: 15px;
+     background-position-x: -1px;
+ }
+ 
+ .tab-active-3.active {
+     background-image: url('../img/svgImages/org-active.svg');
+     background-size: 15px;
+     background-position-x: -1px;
+ }
+ 
+ .tab-active-4 {
+     background-image: url('../img/svgImages/project-grey.svg');
+ }
+ 
+ .tab-active-4.active {
+     background-image: url('../img/svgImages/project-active.svg');
+ }
+ 
+ .tab-active-5 {
+     background-image: url('../img/svgImages/events-grey.svg');
+ }
+ 
+ .tab-active-5.active {
+     background-image: url('../img/svgImages/events-active.svg');
  }
  
  .post-img {

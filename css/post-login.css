@@ -1,90 +1,194 @@
 .whats_on_mind {
-  font-size: 14px;
-  color: #7c8796;
+    font-size: 14px;
+    color: #7c8796;
 }
 
 .welcome-text {
-  font-size: 13px;
-  color: #2a3844;
+    font-size: 13px;
+    color: #2a3844;
 }
 
 .profile-photo {
-  position: absolute;
-  top: 7%;
-  left: 10%;
-  max-height: 90px;
-  border: 2px solid white;
-  border-radius: 50%;
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    max-height: 90px;
+    border: 2px solid white;
+    border-radius: 50%;
 }
+
 .comment-box-color {
-  background-color: #f9fafc !important;
+    background-color: #f9fafc !important;
 }
 
 .comment-box {
-  /* border-radius: 50%; */
-  background-color: #f9fafc;
-  border: solid 1px #e0e6ee;
-  border-radius: 30px;
+    /* border-radius: 50%; */
+    background-color: #f9fafc;
+    border: solid 1px #e0e6ee;
+    border-radius: 30px;
 }
+
+
 /* .profile-top-banner {
   position: relative;
 } */
 
 .profile-completion {
-  border-radius: 4px;
-  box-shadow: 0 2px 8px 0 rgba(57, 64, 79, 0.1);
-  background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(57, 64, 79, 0.1);
+    background-color: #ffffff;
 }
 
-.left-tab, .right-tab {
-  border-radius: 4px;
-  border: 1px solid #e0e6ee;
-  background-color: #ffffff;
-  height: fit-content;
+.left-tab,
+.right-tab {
+    border-radius: 4px;
+    border: 1px solid #e0e6ee;
+    background-color: #ffffff;
+    height: fit-content;
 }
 
 .project-target {
-  font-family: HKGrotesk-reg;
-  font-size: 12px;
-  color: #2a3844;
+    font-family: HKGrotesk-reg;
+    font-size: 12px;
+    color: #2a3844;
 }
 
 .progress-percentage {
-  color: #0db2e0;
-  font-size: 13px;
-  font-family: HKGrotesk;
+    color: #0db2e0;
+    font-size: 13px;
+    font-family: HKGrotesk;
 }
 
 .follow-button {
-  border: 1px solid #0db2e0;
-  border-radius: 15px;
-  color: #0db2e0;
-  font-family: HKGrotesk;
-  font-size: 13px;
-  cursor: pointer;
+    border: 1px solid #0db2e0;
+    border-radius: 15px;
+    color: #0db2e0;
+    font-family: HKGrotesk;
+    font-size: 13px;
+    cursor: pointer;
 }
 
 .follow_person_name {
-  font-size: 15px;
-  color: #2a3844;
-  font-family: HKGrotesk;
+    font-size: 15px;
+    color: #2a3844;
+    font-family: HKGrotesk;
 }
 
 .follower-user-name {
-  font-size: 12px;
-  color: #7c8796;
+    font-size: 12px;
+    color: #7c8796;
 }
 
 .follower-count {
-  color: #7c8796;
+    color: #7c8796;
 }
 
 .line-seperator {
-  height: 1px;
-  border-radius: 4px;
-  background-color: #e0e6ee;
+    height: 1px;
+    border-radius: 4px;
+    background-color: #e0e6ee;
 }
+
 .dropdown-line-seperator {
-  height: 1px;
-  background-color: #f4f7fa;
+    height: 1px;
+    background-color: #f4f7fa;
+}
+
+.signin-wrapper {
+    transform: translate3d(138px, 50px, 0px)!important;
+}
+
+
+/********************/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #35414a;
+}
+
+.drop {
+    width: 20em;
+    margin: 5em auto;
+    color: #86919a;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.drop .option {
+    padding: 1em;
+    cursor: pointer;
+    background-color: #485761;
+}
+
+.drop .option:not(.active) {
+    display: none;
+}
+
+.drop.visible:before,
+.drop.visible:after {
+    border-color: #fff;
+}
+
+.drop.visible:before {
+    opacity: 0;
+}
+
+.drop.visible:after {
+    opacity: 1;
+}
+
+.drop.visible .option {
+    color: #fff;
+    display: block;
+}
+
+.drop.opacity .option {
+    opacity: 1;
+}
+
+.drop.withBG .option {
+    transition: background-color 0.1s;
+}
+
+.drop.withBG .option:not(.placeholder):hover {
+    background-color: #5aafee;
+}
+
+.drop.withBG .option:not(.placeholder).active {
+    background-color: #5aafee;
+}
+
+.drop:after,
+.drop:before {
+    content: "";
+    position: absolute;
+    top: 1.5em;
+    right: 1em;
+    width: 0.75em;
+    height: 0.75em;
+    border: 0.2em solid #86919a;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transition: opacity 0.2s;
+}
+
+.drop:before {
+    border-left: none;
+    border-top: none;
+    top: 1.2em;
+}
+
+.drop:after {
+    border-right: none;
+    border-bottom: none;
+    opacity: 0;
 }
