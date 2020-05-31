@@ -217,6 +217,16 @@
     background-color: #ffffff;
     text-align: center;
     padding: 7px;
+    border: solid 1px #16c0ef;
+  background-color: #ebfbff;
+}
+
+.wallet-row .wallet-selected {
+    border-radius: 4px;
+    text-align: center;
+    padding: 7px;
+    border: solid 1px #16c0ef;
+    background-color: #ebfbff;
 }
 
 .wallet-row .bank {
@@ -230,6 +240,7 @@
     background-color: #eef0f5;
     margin: 0 auto;
 }
+
 
 .wallet-row.wallet-row .w-prof .icon {
     position: relative;
