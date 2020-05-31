@@ -348,3 +348,14 @@ $("#write-post .modalclose").click(function (e) {
     $("body").removeClass("modal-blur");
     e.preventDefault();
 });
+
+// common popups close functinalities 
+$("#syne-followers .modalclose").click(function (e) {
+    closeModal("#syne-followers");
+    e.preventDefault();
+});
+
+$("#syne-edit-profile .modalclose").click(function (e) {
+    closeModal("#syne-edit-profile");
+    e.preventDefault();
+});

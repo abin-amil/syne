@@ -130,3 +130,14 @@ $("#syne-edit-about-me .modalclose").click(function (e) {
     aboutMeEditPopupClose();
     e.preventDefault();
 });
+
+$("#syne-add-work-experience .modalclose").click(function (e) {
+    closeModal("#syne-add-work-experience");
+    e.preventDefault();
+});
+
+$("#syne-add-school-college .modalclose").click(function (e) {
+    closeModal("#syne-add-school-college");
+    e.preventDefault();
+});
+
