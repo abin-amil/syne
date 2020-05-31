@@ -331,3 +331,20 @@ function createLeftPanel(type) {
         });
     });
 }
+
+// write post popup functinalities
+$("#postBtn").click(function (e) {
+    let node = document.getElementById("news-feeds");
+    while (node.hasChildNodes()) {
+        node.removeChild(node.lastChild);
+    }
+    dashBoardData.newsFeedData.unshift(dashBoardData.newsFeedData[1])
+    newsFeedsCreation();
+    closeModal("#write-post");
+    e.preventDefault();
+});
+$("#write-post .modalclose").click(function (e) {
+    $("#write-post").removeClass("open-pop");
+    $("body").removeClass("modal-blur");
+    e.preventDefault();
+});

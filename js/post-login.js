@@ -112,17 +112,6 @@ $("#write-post .modalclose").click(function (e) {
     e.preventDefault();
 });
 
-$("#postBtn").click(function (e) {
-    let node = document.getElementById("news-feeds");
-    while (node.hasChildNodes()) {
-        node.removeChild(node.lastChild);
-    }
-    dashBoardData.newsFeedData.unshift(dashBoardData.newsFeedData[1])
-    newsFeedsCreation();
-    closeModal("#write-post");
-    e.preventDefault();
-});
-
 postPhotos = [];
 Dropzone.options.postMorePhotos = {
     paramName: "file", // The name that will be used to transfer the file
