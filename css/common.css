@@ -229,8 +229,16 @@ p {
     width: 20%;
 }
 
+.f10 {
+    font-size: 10px;
+}
+
 .f12 {
     font-size: 12px;
+}
+
+.f13 {
+    font-size: 13px;
 }
 
 .f14 {
@@ -247,6 +255,10 @@ p {
 
 .f18 {
     font-size: 18px;
+}
+
+.f25 {
+    font-size: 25px!important;
 }
 
 .mg-b-30 {
@@ -324,7 +336,7 @@ p {
 }
 
 .pop-modal {
-    height: 100vh;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.73);
     position: fixed;
     top: 0px;
@@ -392,8 +404,8 @@ p {
 
 .modalclose {
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 45px;
+    top: 20px;
 }
 
 .form-title {
@@ -710,4 +722,69 @@ input.common-input {
 .project-banner {
     max-height: 300px;
     object-fit: cover;
+}
+
+.rcmd .overlay label {
+    font-family: HKGrotesk-reg;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.13px;
+    color: #ffffff;
+    margin-left: 5px;
+}
+
+.rcmd {
+    position: relative!important;
+}
+
+.rcmd .overlay {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))!important;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+}
+
+.my-projt .overlay label {
+    font-family: HKGrotesk-reg;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.13px;
+    color: #ffffff;
+    margin-left: 5px;
+}
+
+.my-projt {
+    position: relative!important;
+}
+
+.my-projt .overlay {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))!important;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+}
+
+.my-projt .donat-btn {
+    border-radius: 22px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #16c0ef;
+    font-family: HKGrotesk;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.33;
+    letter-spacing: 0.15px;
+    color: #ffffff;
+    text-align: center;
+    width: 126px;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: 15px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.my-projt .main-img {
+    width: 100%;
 }

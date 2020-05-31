@@ -33,6 +33,33 @@
     max-width: 500px;
 }
 
+.mobile-wrappper select {
+    border: 1px solid #e0e6ee!important;
+    padding: 2px 8px 0;
+    font-size: 13px;
+    font-weight: bold;
+    color: #5d677e;
+}
+
+.payments-2 input {
+    width: 100%;
+}
+
+.payments-2 .pay-amt-box {
+    position: relative;
+    padding: 0px;
+}
+
+.pay-amt-box img {
+    height: 18px;
+    position: absolute;
+    left: 8px;
+}
+
+.pay-amt-box input {
+    padding: 0px 30px;
+}
+
 .one-last-step-text {
     font-size: 26px;
     color: #395366;
@@ -74,6 +101,86 @@
 .verify-text {
     font-size: 12px;
     color: #16c0ef;
+}
+
+.payments {
+    width: 54%;
+    padding-bottom: 100px;
+}
+
+.payments .notify-text span {
+    line-height: 1.8!important;
+}
+
+.bg-white {
+    background-color: #fff!important;
+}
+
+.payments .payment-methods .custom-control {
+    padding: 0px 25px!important;
+}
+
+.payments .user-na {
+    color: #7c8796;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.payments .payment-methods {
+    width: 100%;
+    position: relative;
+}
+
+.payments .payment-input-label {
+    position: absolute;
+    top: 0;
+    z-index: 22;
+}
+
+.payments .payment-methods input {
+    height: 55px;
+    padding: 17px 12px 0;
+    border: none;
+}
+
+.payments .payment-methods input:focus {
+    border: 1px solid #16c0ef!important;
+}
+
+.payment-scn-3 .payment-container-guest-user {
+    width: 50%;
+}
+
+.payment-scn-3 .rcpt {
+    color: #4d748c;
+    font-weight: bold;
+}
+
+.payment-scn-3 .one-last-step-desc {
+    font-weight: 600;
+    color: #4d748c;
+    font-size: 14px;
+}
+
+.pay-3 {
+    width: 60%;
+}
+
+.payment-scn-3 .verify-text {
+    position: absolute;
+    right: 0px;
+}
+
+.payment-scn-3 .pwd-strngth {
+    padding: 1.5px 0px;
+    background: #e0e6ee;
+    width: 60px;
+    margin: 3px 2px;
+}
+
+.payment-scn-3 .terms-conditions-text {
+    font-weight: 500;
+    font-size: 10px;
 }
 
 
@@ -144,6 +251,7 @@
 .payment-methods,
 .payment-amount-text-box {
     width: 85%;
+    position: relative;
 }
 
 .payment-methods .custom-control {
@@ -336,13 +444,54 @@
     .pay-custom {
         width: 100%;
     }
+    .payments {
+        width: 100%;
+    }
+    .payments input {
+        width: 100%;
+    }
+    .payment-scn-3 .payment-container-guest-user {
+        width: 100%;
+    }
+    .payment-scn-3 .last-step-msg {
+        justify-content: start!important;
+    }
+    .payment-scn-1 .bg-grey-payment-guest-light,
+    .payments-2 .bg-grey-payment-guest-light {
+        padding: 0 10px!important;
+    }
+    .payments-2 .donate-scn {
+        min-width: 310px;
+    }
 }
 
-@media(max-width: 375px) {
+@media(max-width: 414px) {
     .pay-custom {
         width: 85%;
     }
     .wallet-row .wallet label {
         font-size: 12px;
+    }
+}
+
+@media(max-width:600px) {
+    .payment-scn-1 .bg-grey-payment-guest-light,
+    .payments-2 .bg-grey-payment-guest-light {
+        padding: 0!important;
+    }
+    .payment-scn-1 .donate-scn,
+    .payments-2 .donate-scn {
+        min-width: 320px!important;
+        width: 100%;
+        margin-top: 0px;
+    }
+    .payment-scn-3 .payment-container-guest-user {
+        width: 100%;
+    }
+    .pay-3 {
+        width: 100%;
+    }
+    .payment-scn-3 .last-step-msg {
+        margin: 0 14px!important;
     }
 }

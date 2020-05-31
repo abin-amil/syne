@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/post-login.css">
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/timeline.css">
+
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
@@ -613,8 +614,12 @@
     <!-- recommended project panel -->
     <script id="template-recommended-project" type="text/template">
         <div class="recommended-project pt-3">
-            <div style="max-height:100px; overflow:hidden;">
+            <div class="rcmd" style="max-height:100px; overflow:hidden;">
                 <img class="img-fluid" src="{{imageUrl}}">
+                <div class="overlay">
+                    <label><img src="./img/time-icon.svg " class="mr-2 ">Ends in <strong>3 Months</strong> </label>
+
+                </div>
             </div>
             <div class="recommended-project-name pt-2">
                 {{projectName}}

@@ -1,4 +1,7 @@
-.experience-location, .experience-duration, .education-duration, .education-location {
+.experience-location,
+.experience-duration,
+.education-duration,
+.education-location {
     color: #7c8796;
 }
 
@@ -6,7 +9,9 @@
     color: #2a3844;
 }
 
-.edit-experience-button, .edit-education-button, .edit-about-me {
+.edit-experience-button,
+.edit-education-button,
+.edit-about-me {
     display: flex;
     align-items: center;
     color: #bac3cf;
@@ -14,7 +19,140 @@
     font-weight: 600;
 }
 
-.edit-experience-button img, .edit-education-button img, .edit-about-me img {
+.edit-experience-button img,
+.edit-education-button img,
+.edit-about-me img {
     height: 24px;
     width: 24px;
+    position: relative;
+    top: -2px;
+}
+
+.edit-experience-button,
+.edit-education-button {
+    position: relative;
+    top: -25px;
+}
+
+a:hover {
+    text-decoration: none!important;
+}
+
+.work-present {
+    background-color: #fff!important;
+}
+
+.current-wrk {
+    position: relative;
+    left: -134px;
+    top: -7px;
+}
+
+.experience-image,
+.education-image {
+    object-fit: contain;
+    width: 48px;
+    height: 48px;
+}
+
+.lg-txt {
+    color: #bac3cf;
+    font-size: 13px;
+}
+
+.prof-url {
+    font-family: HKGrotesk;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.54;
+    letter-spacing: 0.15px;
+    color: #5d677e;
+}
+
+.wrk-exp {
+    border: 1px solid #eef0f5!important;
+}
+
+.bootstrap-select .dropdown-toggle:focus,
+.bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline: 0!important;
+}
+
+.visible select {
+    width: 80px;
+    background: transparent;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: #7c8796;
+}
+
+
+/*Styled Checkbox*/
+
+.styled-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.styled-checkbox+label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    font-family: HKGrotesk;
+}
+
+.styled-checkbox+label:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 18px;
+    height: 18px;
+    background: white;
+    border: 1px solid #16c0ef;
+    border-radius: 2px;
+}
+
+.styled-checkbox:hover+label:before {
+    background: #16c0ef;
+}
+
+.styled-checkbox:focus+label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+.styled-checkbox:checked+label:before {
+    background: #16c0ef;
+}
+
+.styled-checkbox:disabled+label {
+    color: #b8b8b8;
+    cursor: auto;
+}
+
+.styled-checkbox:disabled+label:before {
+    box-shadow: none;
+    background: #ddd;
+}
+
+.styled-checkbox:checked+label:after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+}
+
+.modalclose:hover {
+    color: rgb(124, 135, 150);
+}
+
+.enddate {
+    background-color: #e0e6ee!important;
 }

@@ -599,8 +599,12 @@
     <!-- recommended project panel -->
     <script id="template-recommended-project" type="text/template">
         <div class="recommended-project pt-3">
-            <div style="max-height:100px; overflow:hidden;">
+            <div class="rcmd" style="max-height:100px; overflow:hidden;">
                 <img class="img-fluid" src="{{imageUrl}}">
+                <div class="overlay">
+                    <label><img src="./img/time-icon.svg " class="mr-2 ">Ends in <strong>3 Months</strong> </label>
+
+                </div>
             </div>
             <div class="recommended-project-name pt-2">
                 {{projectName}}
@@ -660,7 +664,7 @@
         // else{
         //     $('#followBtn')[0].classList.remove('className'); // replace the class name with our class
         // }
-        
+
     });
     // click heart
     $(".hrt").click(function(e) {

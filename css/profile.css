@@ -80,14 +80,16 @@
     z-index: 999999 !important;
 }
 
-.selectpicker+button, .bootstrap-select .dropdown-toggle {
+.selectpicker+button,
+.bootstrap-select .dropdown-toggle {
     height: 40px;
     width: 100px !important;
     border: 0 !important;
     background-color: #ffffff !important;
 }
 
-.bootstrap-select .dropdown-toggle:focus, .selectpicker+button:focus {
+.bootstrap-select .dropdown-toggle:focus,
+.selectpicker+button:focus {
     box-shadow: none;
     outline: none !important;
     border: none !important;
@@ -183,6 +185,12 @@ input[type=text] {
     font-weight: normal;
 }
 
+.line-seperator-2 {
+    height: 1px;
+    border-radius: 4px;
+    background-color: #eef0f5;
+}
+
 .search-placeholder {
     font-family: HKGrotesk !important;
     color: #bac3cf !important;
@@ -211,25 +219,83 @@ input[type=text] {
     color: #bac3cf !important;
 }
 
-.experience-container:not(:first-child), .education-container:not(:first-child) {
+.experience-container:not(:first-child),
+.education-container:not(:first-child) {
     border-top: 1px solid #dee2e6;
     margin-top: 15px;
     padding-top: 15px;
 }
 
-.experience, .education {
+.experience,
+.education {
     display: flex;
 }
 
-.experience-image, .education-image {
+.experience-image,
+.education-image {
     height: 100%;
     display: flex;
     align-items: flex-start;
     margin-right: 1rem;
 }
 
-.experience-image img, .education-image img {
+.experience-image img,
+.education-image img {
     min-height: 70%;
+    width: 100%;
     border: 1px solid #e9ecef;
     padding: 10px;
+}
+
+.modal-btn:hover,
+.modalclose:hover {
+    text-decoration: none!important;
+}
+
+.orgModal-radiobutton-text {
+    line-height: 1.6;
+}
+
+.cls-btn {
+    position: absolute;
+    right: 18px;
+    top: 20px;
+}
+
+.slt-loc {
+    padding: 0 30px!important;
+}
+
+.saved-post-wrapper {
+    border-radius: 4px;
+    border: solid 1px #e0e6ee;
+    background-color: #ffffff;
+}
+
+.saved-post-wrapper .post-pic img {
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.saved-post-wrapper h2 {
+    font-family: HKGrotesk;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.33;
+    color: #2e404e;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.saved-post-wrapper p {
+    font-family: HKGrotesk-reg;
+    font-size: 12px;
+    line-height: 1.67;
+    text-align: center;
+    color: #4d748c;
+    padding: 0 50px;
 }
