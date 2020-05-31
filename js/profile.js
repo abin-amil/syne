@@ -207,6 +207,7 @@ function addSharedPost() {
                 .replace(/{{isLikeByMe}}/g, isLikeByMe)
                 .replace(/{{likeCount}}/g, newsFeedSingleUnit.likedCount)
                 .replace(/{{shareCount}}/g, newsFeedSingleUnit.shareCount)
+                .replace(/{{postId}}/g, newsFeedSingleUnit.id)
                 .replace(/{{commentCount}}/g, newsFeedSingleUnit.commentCount);
 
             newsFeedFinalHtml += newsFeedCardFinalHtml;

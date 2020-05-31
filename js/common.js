@@ -359,3 +359,13 @@ $("#syne-edit-profile .modalclose").click(function (e) {
     closeModal("#syne-edit-profile");
     e.preventDefault();
 });
+
+function likeBtnClick(id) {
+    let likeId = "#like" + id;
+    if ($(likeId).hasClass("hrt-chck")) {
+        $(likeId).removeClass("hrt-chck");
+    } else {
+        $(likeId).addClass("hrt-chck");
+    }
+
+}
