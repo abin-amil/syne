@@ -318,6 +318,9 @@ function createLeftPanel(type) {
             case 'settings-privacy.html':
                 setTab(8);
                 break;
+            case 'savedpost.html':
+                setTab(9);
+                break;
             default:
                 setTab(1);
                 break;
