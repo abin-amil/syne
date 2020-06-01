@@ -363,6 +363,17 @@ $("#syne-edit-profile .modalclose").click(function (e) {
     e.preventDefault();
 });
 
+$("#syne-followers-unfollow-cancel-btn").click(function (e) {
+    closeModal("#syne-followers-unfollow");
+    e.preventDefault();
+});
+
+$("#syne-followers-unfollow-unfollow-btn").click(function (e) {
+    closeModal("#syne-followers-unfollow");
+    e.preventDefault();
+});
+
+
 function likeBtnClick(id) {
     let likeId = "#like" + id;
     if ($(likeId).hasClass("hrt-chck")) {
