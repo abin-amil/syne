@@ -363,6 +363,11 @@ $("#syne-edit-profile .modalclose").click(function (e) {
     e.preventDefault();
 });
 
+$("#syne-followers-following-unfollow .modalclose").click(function (e) {
+    closeModal("#syne-followers-following-unfollow");
+    e.preventDefault();
+});
+
 $("#syne-followers-unfollow-cancel-btn").click(function (e) {
     closeModal("#syne-followers-unfollow");
     e.preventDefault();
@@ -373,6 +378,15 @@ $("#syne-followers-unfollow-unfollow-btn").click(function (e) {
     e.preventDefault();
 });
 
+$("#syne-following-unfollow-unfollow-btn").click(function (e) {
+    closeModal("#syne-following-unfollow");
+    e.preventDefault();
+});
+
+$("#syne-following-unfollow-cancel-btn").click(function (e) {
+    closeModal("#syne-following-unfollow");
+    e.preventDefault();
+});
 
 function likeBtnClick(id) {
     let likeId = "#like" + id;
