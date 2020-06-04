@@ -145,10 +145,25 @@ $('#workStartDate').datepicker({
     uiLibrary: 'bootstrap4'
 });
 
+$('#workEndDate2').datepicker({
+    uiLibrary: 'bootstrap4'
+});
+
 $('#instituteStartDate').datepicker({
     uiLibrary: 'bootstrap4'
 });
 
 $('#instituteEndDate').datepicker({
     uiLibrary: 'bootstrap4'
+});
+
+$("#currentlyWorkHere").click(function (e) {
+    if ($('#styled-checkbox-1:checkbox:checked').length == 1) {
+        $('#workEndDate2')[0].disabled = true;
+        $('#workEndDate2')[0].value = 'Present';
+    }
+    else {
+        $('#workEndDate2')[0].disabled = false;
+        $('#workEndDate2')[0].value = '';
+    }
 });
