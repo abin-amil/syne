@@ -48,7 +48,6 @@
     <div class="wrapper">
         <div class="full-wrapper header post-page-header">
             <div class="main-wrapper">
-
                 <div class="headerwrap flex">
                     <div class="header-l flex flex-h-start flex-v-base">
                         <div class="logo h-100">
@@ -89,7 +88,9 @@
             <!-- left panel top banner template fill here  -->
         </div>
         <div class="edit-btn d-flex justify-content-around">
+
             <img src="./img/svgImages/camera-lgrey-small.svg"> Upload Cover Picture
+
         </div>
     </div>
 
@@ -358,6 +359,26 @@
             </div>
         </div>
     </script>
+    <div class="modal fade" id="cropImagePop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        <?=multiLanguage( "Edit Foto" , "Edit Photo" )?>
+                    </h4>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                    <div id="upload-demo" class="center-block"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" id="cropImageBtn" class="btn btn-primary">Crop</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- header template loaded here by scipt -->
     <div id="includedHeaderContent" style="display: none;"></div>

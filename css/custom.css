@@ -71,6 +71,10 @@ display: table-row;
     width: 30%;
 }
 
+.md-sm-desptn {
+    display: none;
+}
+
 .startDateInput {
     padding: 0px 0px 0px 12px !important;
 }
@@ -256,6 +260,7 @@ display: table-row;
     border: solid 1px #e0e6ee !important;
     color: #16c0ef !important;
     font-weight: bold !important;
+    background-color: #fff!important;
 }
 
 .back-proceed-btn {
@@ -627,7 +632,7 @@ input[type=text] {
     height: 120px !important;
     border-radius: 60px !important;
     box-shadow: inset 0 0 0 10px #ffffff !important;
-    border: dashed 2px #bac3cf !important;
+    border: dashed 2px #bac3cf;
     background-color: #f7f8fa !important;
 }
 

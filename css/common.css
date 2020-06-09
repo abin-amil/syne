@@ -788,3 +788,33 @@ input.common-input {
 .my-projt .main-img {
     width: 100%;
 }
+
+.top-banner {
+    display: block;
+    background-image: linear-gradient(to bottom, #2a93ce, #16c0ef);
+    margin: 0 auto;
+    width: 100%;
+    height: 398px;
+}
+
+.top-banner .cover-img {
+    object-fit: contain;
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+.top-banner h1,
+.top-banner h2 {
+    text-align: center;
+    opacity: 0.6;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    bottom: 130px;
+}
+
+.custom-edit {
+    position: absolute;
+    top: 367px;
+}

@@ -1,9 +1,9 @@
-$(document).ready(function () {
+$(document).ready(function() {
     createHeader(true, true, true, false, true, true);
-    createLeftPanel(1);
+    createLeftPanel(5);
     setTab(2);
 
-    $(".modal-btn").click(function (e) {
+    $(".modal-btn").click(function(e) {
         var modl_id = $(this).attr('data-target');
         $("#" + modl_id).addClass("open-pop");
         $("body").addClass("modal-blur");
@@ -16,13 +16,14 @@ function closeModal(id) {
     $(id).removeClass("open-pop");
     $("body").removeClass("modal-blur");
 }
-function closeModals(id1,id2) {
+
+function closeModals(id1, id2) {
     $(id1).removeClass("open-pop");
     $(id2).removeClass("open-pop");
     $("body").removeClass("modal-blur");
 }
 
-$("#edit-oganisation-popup .modalclose").click(function (e) {
+$("#edit-oganisation-popup .modalclose").click(function(e) {
     closeModal("#edit-oganisation-popup");
     e.preventDefault();
 });

@@ -1,5 +1,5 @@
-$(document).ready(function () {
-    createLeftPanel(1)
+$(document).ready(function() {
+    createLeftPanel(7)
     createOrganisationList();
 });
 
@@ -11,19 +11,19 @@ Dropzone.options.orgLogo = {
     maxFilesize: 2, // MB,
     addRemoveLinks: true,
     maxFiles: 1,
-    maxfilesexceeded: function (file) {
+    maxfilesexceeded: function(file) {
         this.removeAllFiles();
         this.addFile(file);
     },
-    removedfile: function (file) {
+    removedfile: function(file) {
         document.getElementById("projectIconDefault").classList.add('d-flex');
         var _ref;
         return (_ref = file.previewElement) != null ? _ref.parentNode.removeChild(file.previewElement) : void 0;
     },
-    init: function () {
-        this.on("addedfile", function (file) {
+    init: function() {
+        this.on("addedfile", function(file) {
             var reader = new FileReader();
-            reader.onload = function (event) {
+            reader.onload = function(event) {
                 // event.target.result contains base64 encoded image
                 projectDetails.projectIcon = event.target.result;
                 document.getElementById("projectIconDefault").classList.remove('d-flex');
@@ -33,7 +33,7 @@ Dropzone.options.orgLogo = {
             reader.readAsDataURL(file);
         });
 
-        this.on('error', function (file, errorMessage) {
+        this.on('error', function(file, errorMessage) {
             if (file.accepted) {
                 var mypreview = document.getElementsByClassName('dz-error');
                 mypreview = mypreview[mypreview.length - 1];
@@ -46,7 +46,7 @@ Dropzone.options.orgLogo = {
 
 function publishOrganisation() {
     let orgRegFormValues = {};
-    $.each($('#orgRegForm').serializeArray(), function (i, field) {
+    $.each($('#orgRegForm').serializeArray(), function(i, field) {
         orgRegFormValues[field.name] = field.value;
     });
     let newOrg = {
@@ -78,7 +78,7 @@ function createOrganisationList() {
 
 }
 
-$("#create-oganisation-popup .modalclose").click(function (e) {
+$("#create-oganisation-popup .modalclose").click(function(e) {
     closeModal("#create-oganisation-popup");
     e.preventDefault();
 });

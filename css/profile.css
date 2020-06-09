@@ -122,6 +122,7 @@
 .follower-modal {
     width: 35%;
     max-width: 500px !important;
+    top: 100px!important;
 }
 
 #work-to-present {
@@ -129,7 +130,7 @@
 }
 
 .modalcontent {
-    top:0;
+    top: 0;
     margin-top: 0;
     position: absolute !important;
     border-radius: 10px;
@@ -238,6 +239,7 @@ input[type=text] {
     display: flex;
     align-items: flex-start;
     margin-right: 1rem;
+    background-color: #eef0f5;
 }
 
 .experience-image img,
@@ -299,4 +301,12 @@ input[type=text] {
     text-align: center;
     color: #4d748c;
     padding: 0 50px;
+}
+
+
+/* new code */
+
+.check {
+    position: absolute;
+    left: 415px!important;
 }

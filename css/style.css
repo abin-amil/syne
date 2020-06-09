@@ -754,6 +754,10 @@ ul.tabs li.current {
     background-repeat: no-repeat;
 }
 
+.categoryCard:focus {
+    border: 1px solid #16c0ef;
+}
+
 
 /*responsive*/
 
@@ -876,8 +880,150 @@ ul.tabs li.current {
         position: relative;
         right: 21px;
     }
+    .md-projectcard,
+    .projectCardActive {
+        width: 90%!important;
+        height: 50px;
+        position: relative;
+    }
+    .md-custom-radio {
+        position: relative;
+        margin: 0!important;
+        left: 230px;
+        top: -3px;
+    }
+    .md-projectype-wrapper {
+        padding: 0 37px!important;
+        width: 70%;
+    }
+    .md-bg-img {
+        background-size: 40px!important;
+        position: relative;
+        right: 120px;
+        top: 25px;
+    }
+    .md-projectTitle {
+        position: relative;
+        top: -30px;
+        right: 37px;
+        font-size: 14px!important;
+    }
+    .md-info-icon {
+        position: relative;
+        bottom: 55px;
+        left: 54px;
+    }
+    .md-proceed {
+        position: fixed;
+        margin: 0!important;
+        bottom: 0;
+        width: 100%!important;
+    }
+    .md-checkmark {
+        position: absolute;
+        top: 0;
+        left: 280px!important;
+    }
+    .md-cat-img {
+        width: 40px;
+        position: relative;
+        top: -19px;
+        left: 5px;
+    }
+    .md-prj {
+        position: absolute;
+        top: 13px;
+        left: -38px;
+        right: 38px;
+    }
     .back-proceed-btn {
-        flex-direction: column!important;
+        flex-direction: row!important;
+        position: fixed!important;
+        padding: 0!important;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .md-prj-title {
+        height: 25px;
+        padding: 0 12px;
+    }
+    .md-sm-desptn {
+        display: block!important;
+    }
+    .md-lg-desptn {
+        display: none;
+    }
+    .md-country-input {
+        flex-direction: column;
+    }
+    .md-country-input .countryInput,
+    .md-country-input .cityInput,
+    .md-date-wrapper .countryInput,
+    .md-date-wrapper .cityInput {
+        width: 100%!important;
+    }
+    .md-country-input .countryInput .syne-inputbox,
+    .md-country-input .cityInput .syne-inputbox {
+        height: 50px;
+    }
+    .title {
+        font-size: 20px!important;
+    }
+    .arrow-right {
+        display: none;
+    }
+    .md-date-wrapper {
+        flex-direction: column;
+    }
+    .md-date-wrapper .syne-inputbox {
+        height: 50px;
+    }
+    .md-date-wrapper .syne-inputbox input {
+        position: relative;
+        top: -12px;
+        background: transparent;
+    }
+    .md-date-wrapper img {
+        position: relative;
+        top: -10px;
+    }
+    .md-target {
+        width: 100%!important;
+        margin-bottom: 60px!important;
+    }
+    .md-target .syne-inputbox {
+        height: 50px;
+    }
+    .md-dropzone {
+        position: relative!important;
+        left: 100px;
+        border: solid 2px #f7f8fa!important;
+    }
+    .md-upload {
+        height: 60px!important;
+    }
+    .md-dropzone .drag-in-photos,
+    .md-upload .drag-in-photos {
+        color: #16c0ef;
+    }
+    .icon {
+        top: 20px!important;
+    }
+    .form-text {
+        font-size: 14px;
+    }
+    .md-textarea {
+        height: 200px!important;
+    }
+    .md-attach {
+        margin-bottom: 70px;
+        flex-direction: column;
+    }
+    .md-attach button {
+        width: 100%!important;
+        justify-content: left!important;
     }
 }
 
@@ -961,6 +1107,50 @@ ul.tabs li.current {
     .s-cntry-icon {
         display: none!important;
     }
+    .md-bg-img {
+        background-size: 40px!important;
+        position: relative;
+        right: 101px;
+        top: 29px;
+    }
+    .md-projectTitle {
+        width: 100px;
+    }
+    .md-projectype-wrapper {
+        padding: 0 37px!important;
+        width: 63%;
+    }
+    .md-custom-radio {
+        position: relative;
+        margin: 0!important;
+        left: 178px;
+        top: -3px;
+    }
+    .md-prj {
+        position: absolute;
+        top: 13px;
+        left: 17px;
+        right: 38px;
+    }
+    .md-checkmark {
+        position: absolute;
+        top: 0;
+        left: 180px!important;
+    }
+    .noteinstr {
+        margin-bottom: 80px;
+    }
+    .md-dropzone {
+        left: 50px;
+    }
+    .text-editor-wrapper .buttons span {
+        display: contents;
+    }
+    .md-checkmark {
+        position: absolute;
+        top: 0;
+        left: 180px!important;
+    }
 }
 
 @media(max-width: 360px) {
@@ -1002,23 +1192,18 @@ ul.tabs li.current {
         top: -6px!important;
         left: -29px!important;
     }
-    .projectCard,
-    .projectCardActive {
-        width: 100%!important;
-    }
     .controls .controls-inner {
         float: none!important;
         display: flex;
         justify-content: center;
     }
-    .back-proceed-btn {
-        padding-top: 0!important;
-    }
-    .back-proceed-btn {
-        flex-direction: column!important;
-    }
     .rcmd .overlay label {
         width: 100%;
+    }
+    .md-checkmark {
+        position: absolute;
+        top: 0;
+        left: 230px!important;
     }
 }
 
@@ -1037,10 +1222,10 @@ ul.tabs li.current {
         padding: 0!important;
     }
     .cityInput {
-        width: 44%!important;
+        width: 44%;
     }
     .countryInput {
-        width: 47%!important;
+        width: 47%;
     }
     .back-proceed-btn {
         width: 100%;
@@ -1066,8 +1251,9 @@ ul.tabs li.current {
     .home-btn {
         width: 80px!important;
     }
-    .projectCard,
+    .md-projectcard,
     .projectCardActive {
-        width: 70%!important;
+        width: 100%!important;
+        position: relative;
     }
 }

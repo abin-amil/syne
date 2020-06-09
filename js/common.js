@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
     // createHeader(true, true, true, true);
     createHeader(true, true, true, false, true, true);
 
@@ -15,7 +15,7 @@ $(document).ready(function () {
 
 // need to rewrite this function for top banner creation only, after left panel changes are done.
 function LeftPanelAndTopBannerCreation(type) {
-    $("#includedLeftPanelContent").load('templates/leftPanel.html', function () {
+    $("#includedLeftPanelContent").load('templates/leftPanel.html', function() {
         createTopBanner();
         // createLeftPanelTopBanner();
         // createLeftPanelUserDetails();
@@ -157,7 +157,7 @@ function createHeader(isStartPojectBtnAvailable = false,
     isMsgIconAvailable = false,
     isNotifyIconAvailable = false) {
 
-    $("#includedHeaderContent").load("templates/header.html", function () {
+    $("#includedHeaderContent").load("templates/header.html", function() {
         if (document.getElementById("template-header")) {
             let header = document.getElementById("template-header");
             let headerHtml = header.innerHTML;
@@ -204,7 +204,7 @@ function createHeader(isStartPojectBtnAvailable = false,
             }
         }
 
-        $("#login-link").click(function (e) {
+        $("#login-link").click(function(e) {
             document.getElementById("login-link").style.display = "none";
             document.getElementById("user-link").style.display = "block";
         });
@@ -285,11 +285,15 @@ function createLeftPanel(type) {
         case 6:
             template = 'templates/leftPanelTypeSix.html';
             break;
+        case 7:
+            template = 'templates/leftPanelTypeSeven.html';
+            break;
+
         default:
             template = 'templates/leftPanelTypeOne.html';
             break;
     }
-    $("#left-panel").load(template, function () {
+    $("#left-panel").load(template, function() {
         let path = window.location.pathname;
         let page = path.split("/").pop();
         switch (page) {
@@ -326,7 +330,7 @@ function createLeftPanel(type) {
                 break;
         }
 
-        $(".modal-btn").click(function (e) {
+        $(".modal-btn").click(function(e) {
             var modl_id = $(this).attr('data-target');
             $("#" + modl_id).addClass("open-pop");
             $("body").addClass("modal-blur");
@@ -336,7 +340,7 @@ function createLeftPanel(type) {
 }
 
 // write post popup functinalities
-$("#postBtn").click(function (e) {
+$("#postBtn").click(function(e) {
     let node = document.getElementById("news-feeds");
     while (node.hasChildNodes()) {
         node.removeChild(node.lastChild);
@@ -346,44 +350,44 @@ $("#postBtn").click(function (e) {
     closeModal("#write-post");
     e.preventDefault();
 });
-$("#write-post .modalclose").click(function (e) {
+$("#write-post .modalclose").click(function(e) {
     $("#write-post").removeClass("open-pop");
     $("body").removeClass("modal-blur");
     e.preventDefault();
 });
 
 // common popups close functinalities 
-$("#syne-followers .modalclose").click(function (e) {
+$("#syne-followers .modalclose").click(function(e) {
     closeModal("#syne-followers");
     e.preventDefault();
 });
 
-$("#syne-edit-profile .modalclose").click(function (e) {
+$("#syne-edit-profile .modalclose").click(function(e) {
     closeModal("#syne-edit-profile");
     e.preventDefault();
 });
 
-$("#syne-followers-following-unfollow .modalclose").click(function (e) {
+$("#syne-followers-following-unfollow .modalclose").click(function(e) {
     closeModal("#syne-followers-following-unfollow");
     e.preventDefault();
 });
 
-$("#syne-followers-unfollow-cancel-btn").click(function (e) {
+$("#syne-followers-unfollow-cancel-btn").click(function(e) {
     closeModal("#syne-followers-unfollow");
     e.preventDefault();
 });
 
-$("#syne-followers-unfollow-unfollow-btn").click(function (e) {
+$("#syne-followers-unfollow-unfollow-btn").click(function(e) {
     closeModal("#syne-followers-unfollow");
     e.preventDefault();
 });
 
-$("#syne-following-unfollow-unfollow-btn").click(function (e) {
+$("#syne-following-unfollow-unfollow-btn").click(function(e) {
     closeModal("#syne-following-unfollow");
     e.preventDefault();
 });
 
-$("#syne-following-unfollow-cancel-btn").click(function (e) {
+$("#syne-following-unfollow-cancel-btn").click(function(e) {
     closeModal("#syne-following-unfollow");
     e.preventDefault();
 });
