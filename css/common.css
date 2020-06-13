@@ -72,7 +72,7 @@ a {
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
 ul,
@@ -550,7 +550,7 @@ input.common-input {
 .checkmark {
     position: absolute;
     top: -4px;
-    left: 0;
+    right: 0;
     height: 18px;
     width: 18px;
     border-radius: 3px;
@@ -817,4 +817,10 @@ input.common-input {
 .custom-edit {
     position: absolute;
     top: 367px;
+}
+
+.custom-main-wrapper {
+    max-width: 96%!important;
+    margin-left: 0;
+    margin-bottom: 130px;
 }

@@ -15,12 +15,8 @@ $(document).ready(function() {
 
 // need to rewrite this function for top banner creation only, after left panel changes are done.
 function LeftPanelAndTopBannerCreation(type) {
-    $("#includedLeftPanelContent").load('templates/leftPanel.html', function () {
-        let path = window.location.pathname;
-        let page = path.split("/").pop();
-        if (page != 'organisation.html') {
-            createTopBanner();
-        }
+    $("#includedLeftPanelContent").load('templates/leftPanel.html', function() {
+        createTopBanner();
         // createLeftPanelTopBanner();
         // createLeftPanelUserDetails();
         // createLeftPanelTabs();

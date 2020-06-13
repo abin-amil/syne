@@ -42,6 +42,7 @@
 
 .project-preview-primary-desc {
     font-family: HKGrotesk;
+    margin-bottom: 32px;
 }
 
 .preview_btn {
@@ -49,13 +50,13 @@
     border-radius: 8px;
     font-size: 10px;
     position: absolute;
-    right: 30px;
+    right: 85px;
     top: -8px;
     padding: 1px 7px;
     border: none;
     font-size: 12px;
     color: #ffa84e;
-    background-color: #ffd099;
+    background-color: #fcece3;
     outline: none;
 }
 
@@ -65,6 +66,37 @@
 
 .project-link {
     background-color: #f2f4f7;
+    color: #a1a8b3;
+    font-size: 13px;
+    font-family: HKGrotesk;
+}
+
+.progess-bar-wrapper {
+    background-color: #e0e6ee;
+    height: 6px;
+    position: relative;
+    margin-bottom: 8px;
+    border-radius: .25rem;
+}
+
+.custom-progress {
+    background-color: #16c0ef;
+    width: 130px;
+    height: 6px;
+    position: relative;
+}
+
+.custom-progress::after {
+    left: 100%;
+    top: 0%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-left-color: #16c0ef;
+    border-width: 3.2px;
 }
 
 .raised-amount {
@@ -102,7 +134,12 @@
 
 .btn_save_publish {
     position: relative;
-    left: 300px;
+    left: 200px;
+}
+
+.custom-close {
+    position: relative;
+    right: 60px;
 }
 
 .btn_save_publish .publish_btn {
@@ -381,6 +418,14 @@ textarea {
     border: solid 1px #e0e6ee;
     background-color: #ffffff;
     margin-bottom: 20px;
+    height: 46px;
+    font-family: 'HKGrotesk';
+    color: #bac3cf;
+    font-size: 15px;
+}
+
+.share-follow-btn button:hover {
+    color: #bac3cf;
 }
 
 .share-follow-btn button img {
@@ -405,6 +450,15 @@ textarea {
     background: url('../img/share-grey.png');
     background-repeat: no-repeat;
     background-position: 10px 7px;
+}
+
+.prj-link {
+    position: relative;
+    left: -17px;
+}
+
+.prj-link:hover {
+    text-decoration: none;
 }
 
 .f-btn:hover {
@@ -451,6 +505,8 @@ textarea {
     font-family: HKGrotesk;
     font-weight: bold;
     color: #9ca6b3;
+    position: relative;
+    right: 45px;
 }
 
 .fund-raise h3 {
@@ -473,8 +529,12 @@ textarea {
     margin: 0 0 3px 0;
 }
 
+.doner-follower-wrapper {
+    width: 216px!important;
+}
+
 .foundations img {
-    width: 30px;
+    width: 40px;
 }
 
 .foundations p {
@@ -492,7 +552,7 @@ textarea {
 }
 
 .vivent-foundations {
-    padding: 20px 25px;
+    padding: 30px 25px;
     margin: 15px 0;
     border-radius: 3px;
     border: solid 1px #e0e6ee;
@@ -500,7 +560,7 @@ textarea {
 }
 
 .vivent-foundations h1 {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.45;
     letter-spacing: 0.12px;
     color: #5d677e;
@@ -543,7 +603,8 @@ textarea {
 }
 
 .report-wrapper {
-    padding: 0 20px 40px;
+    padding: 0 0px 40px;
+    margin-top: 8px;
 }
 
 .report-wrapper p {
@@ -563,6 +624,7 @@ textarea {
     color: #7c8796;
     padding: 3px 0;
     text-decoration: none;
+    margin: 3px 0px;
 }
 
 .report-wrapper a:hover {
@@ -800,6 +862,12 @@ textarea {
     right: 6px;
 }
 
+.footer-main-wrapper {
+    position: relative;
+    left: -30px;
+    max-width: 1050px;
+}
+
 
 /* project-edit page style css */
 
@@ -964,6 +1032,14 @@ textarea {
 .at-btn img {
     object-fit: contain;
     width: 20px!important;
+}
+
+.c-img {
+    height: 345px!important;
+}
+
+.prjct-v-box:hover {
+    box-shadow: 0 6px 24px 0 rgba(17, 146, 182, 0.2);
 }
 
 @media(max-width:600px) {

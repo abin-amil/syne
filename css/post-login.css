@@ -192,3 +192,7 @@ body {
     border-bottom: none;
     opacity: 0;
 }
+
+.right-tab-custom {
+    width: 300px;
+}

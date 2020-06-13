@@ -204,6 +204,10 @@
     border: 0px;
 }
 
+.s-add {
+    display: none;
+}
+
 .prjct-tag a.hrt-red {
     background-image: url(../img/heart-red.svg);
 }
@@ -309,7 +313,7 @@ ul.tabs li {
     line-height: 1.25;
     letter-spacing: 0.17px;
     color: #7c8796;
-    margin-right: 50px;
+    margin-right: 60px;
 }
 
 ul.tabs li:last-child {
@@ -595,10 +599,13 @@ ul.tabs li.current {
 }
 
 .subscribe {
-    padding: 15px;
+    padding: 11px;
     border-radius: 2px;
     border: solid 1px #e0e6ee;
     background-color: #ffffff;
+    height: 46px;
+    width: 396px;
+    margin-left: auto;
 }
 
 .subscribe input {
@@ -758,6 +765,12 @@ ul.tabs li.current {
     border: 1px solid #16c0ef;
 }
 
+.srch-icon {
+    position: absolute;
+    left: 27px;
+    top: 8px;
+}
+
 
 /*responsive*/
 
@@ -883,7 +896,7 @@ ul.tabs li.current {
     .md-projectcard,
     .projectCardActive {
         width: 90%!important;
-        height: 50px;
+        height: 50px!important;
         position: relative;
     }
     .md-custom-radio {
@@ -922,13 +935,13 @@ ul.tabs li.current {
     .md-checkmark {
         position: absolute;
         top: 0;
-        left: 280px!important;
+        left: 280px;
     }
     .md-cat-img {
         width: 40px;
-        position: relative;
-        top: -19px;
-        left: 5px;
+        position: absolute;
+        left: 10px;
+        top: 0;
     }
     .md-prj {
         position: absolute;
@@ -1009,7 +1022,7 @@ ul.tabs li.current {
         color: #16c0ef;
     }
     .icon {
-        top: 20px!important;
+        top: 23px!important;
     }
     .form-text {
         font-size: 14px;
@@ -1024,6 +1037,31 @@ ul.tabs li.current {
     .md-attach button {
         width: 100%!important;
         justify-content: left!important;
+    }
+    .s-placeholder {
+        display: none;
+    }
+    .s-add {
+        color: #16c0ef;
+        font-family: HKGrotesk;
+        display: block;
+    }
+    .dropzone {
+        border: dashed 2px #ffffff !important;
+    }
+    .text-editor-wrapper {
+        padding: 20px 3px 115px;
+        position: relative;
+    }
+    .srch-cat {
+        width: 100%!important;
+    }
+    .categoryCard-carousel {
+        flex-direction: column;
+    }
+    .c-2 {
+        position: relative;
+        left: 0!important;
     }
 }
 
@@ -1104,8 +1142,16 @@ ul.tabs li.current {
         top: 4px;
         left: -60px;
     }
-    .s-cntry-icon {
-        display: none!important;
+    .md-checkmark {
+        position: absolute;
+        top: 0;
+        left: 180px!important;
+    }
+    .md-custom-radio {
+        position: relative;
+        margin: 0!important;
+        left: 180px!important;
+        top: -3px;
     }
     .md-bg-img {
         background-size: 40px!important;
@@ -1161,6 +1207,12 @@ ul.tabs li.current {
     .my-nav-tab {
         flex: 1 1 35%!important;
     }
+    .md-custom-radio {
+        position: relative;
+        margin: 0!important;
+        left: 219px;
+        top: -3px;
+    }
 }
 
 @media(max-width:375px) {
@@ -1201,9 +1253,27 @@ ul.tabs li.current {
         width: 100%;
     }
     .md-checkmark {
-        position: absolute;
+        position: relative;
         top: 0;
-        left: 230px!important;
+        left: 230px;
+    }
+    #startProject3,
+    #startProject2 {
+        margin-bottom: 90px!important;
+    }
+    .icon {
+        top: 18px!important;
+        left: 3px;
+    }
+    .s-cntry-icon {
+        position: absolute;
+        right: 12px;
+        top: 16px!important;
+    }
+    .s-cntry-icon-1 {
+        position: absolute;
+        right: 12px;
+        top: 10px!important;
     }
 }
 
