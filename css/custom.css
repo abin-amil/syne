@@ -1201,15 +1201,35 @@ body .next-arrow {
 
 /* Create a custom checkbox */
 
+.custom-checkmark {
+    display: block !important;
+    position: relative !important;
+    padding-left: 25px !important;
+    cursor: pointer !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
 .checkmark {
-    position: absolute;
+    /* position: absolute;
     top: 0;
     right: 0;
     height: 25px;
     width: 25px;
     background-color: #fff;
     border-radius: 15px;
-    border: 2px solid #bac3cf;
+    border: 2px solid #bac3cf; */
+
+    position: absolute;
+    top: -4px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: solid 1px #16c0ef;
+    background-color: #ffffff;
 }
 
 
