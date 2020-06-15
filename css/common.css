@@ -184,6 +184,10 @@ p {
 .txt-blue {
     color: #16c0ef !important;
 }
+a .txt-blue {
+    color: #16c0ef !important;
+}
+
 
 .txt-grey {
     color: #7c8796;

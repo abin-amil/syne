@@ -1231,7 +1231,17 @@ body .next-arrow {
     border: solid 1px #16c0ef;
     background-color: #ffffff;
 }
-
+.activate-account-info {
+    border-radius: 4px;
+    background-color: #f1f4f8;
+}
+.activate-account-email {
+    font-family: HKGrotesk;
+    font-size: 14px;
+}
+.bold-text {
+    font-family: HKGrotesk;
+}
 
 /* On mouse-over, add a grey background color */
 

@@ -149,7 +149,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="text-center modal-cmn-footerlink w100">
-                                                        <p class="f14 modal-btn">New to SYNE? <a class="modal-btn" href="#syne-signup" data-target="syne-signup" class="txt-blue"> Sign up</a></p>
+                                                        <p class="f14 modal-btn">New to SYNE? <a class="modal-btn txt-blue" href="#syne-signup" data-target="syne-signup"> Sign up</a></p>
                                                     </div>
                                                 </div>
                                                 <!-- ********* forget Password ************************ -->
@@ -264,10 +264,8 @@
                                         <div class="syne-lgin-r rltv w50">
                                             <a href="#" class="modalclose"><img src="img/close-icon.png" alt="close"></a>
                                             <div class="modal-form-wrap">
-                                                <!-- **************** signup forms are ******************-->
                                                 <div class="login-wrap login-common-form">
                                                     <h4 class="text-center form-title mg-b-30">Sign up</h4>
-                                                    <!-- ********************* signup-first step ********************* -->
                                                     <div class="login-input login-valid">
                                                         <form id="signup_form" method="post" action="">
 
@@ -278,7 +276,22 @@
                                                                 </div>
                                                                 <div class="inpt-group mg-b-20 ml-2">
                                                                     <input class="effect-19 w100 common-input" id="login-email" type="email" name="" placeholder="" required>
-                                                                    <label>Sur Name</label>
+                                                                    <label>Surname</label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="phone mt-4 mg-b-20 d-flex justify-content-around">
+                                                                <div class="syne-inputbox w30">
+                                                                    <label class="syne-input-label em-lb" for="title">IND</label>
+                                                                    <select class="form-control code border-0 bold-text" style="width: auto;">
+                                                                        <option class="bold-text">+ 91</option>
+                                                                        <option class="bold-text">+ 80</option>
+                                                                        <option class="bold-text">+ 44</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="syne-inputbox w70">
+                                                                    <label class="syne-input-label em-lb" for="title">Phone Number</label>
+                                                                    <input type="text" name="title" class="form-control project-title-input" placeholder="00000 000 000">
                                                                 </div>
                                                             </div>
                                                             
@@ -304,12 +317,11 @@
 
                                                             
                                                             <div class="input-group-submit mt-3">
-                                                                <!-- <input type="submit" name="" value="Log in" class="btn-blue f16"> -->
                                                                 <a href="#" type="submit" class="login-btn btn-blue f16">Sign Up</a>
                                                             </div>
                                                         </form>
                                                     </div>
-                                                    <!--****************** login -nvalid ********************************-->
+
                                                     <div class="login-input login-invalid ">
                                                         <h4 class="text-center form-title mg-b-30">Log in</h4>
                                                         <form id="login_form" method="post" action="">
@@ -344,9 +356,64 @@
                                                         <p class="f14">Already have an account? <a class="modal-btn" href="#syne-login" data-target="syne-login" class="txt-blue"> Sign in</a></p>
                                                     </div>
                                                 </div>
-                                                <!-- //////////////////////// -->
                                             </div>
                                         </div>
+                                        
+                                        <div class="syne-lgin-r rltv w50" style="display: none;">
+                                            <a href="#" class="modalclose"><img src="img/close-icon.png" alt="close"></a>
+                                            <div class="modal-form-wrap">
+                                                <div class="login-wrap login-common-form">
+                                                    <h4 class="text-center form-title mg-b-30">Activate account</h4>
+                                                    <div class="activate-account-info">
+                                                        <div class="d-flex px-5 pt-4 text-center">
+                                                            A link to activate your account has been emailed to 
+                                                        </div>
+                                                        <div class="d-flex activate-account-email justify-content-center align-items-center p-3 f14">
+                                                            williamcharlotte.1987@syne.com
+                                                        </div>
+                                                       
+                                                    </div>
+                                                    <div>
+                                                        <p class="f14 d-flex justify-content-center pt-3">Didn’t receive the email?<a class="modal-btn ml-1" href="#syne-login" data-target="syne-login" class="txt-blue">Resend</a></p>
+                                                    </div>
+
+                                                    <div class="text-center modal-cmn-footerlink w100">
+                                                        <p class="f14">Already have an account? <a class="modal-btn" href="#syne-login" data-target="syne-login" class="txt-blue"> Sign in</a></p>
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="syne-lgin-r rltv w50" style="display: none;">
+                                            <a href="#" class="modalclose"><img src="img/close-icon.png" alt="close"></a>
+                                            <div class="modal-form-wrap">
+                                                <div class="login-wrap login-common-form">
+                                                    <h4 class="text-center form-title mg-b-30">Account exists!</h4>
+                                                    <div class="activate-account-info">
+                                                        <div class="d-flex px-5 pt-4 text-center justify-content-center">
+                                                            There is already an account existing with  
+                                                        </div>
+                                                        <div class="d-flex activate-account-email justify-content-center align-items-center p-3 f14">
+                                                            williamcharlotte.1987@syne.com
+                                                        </div>
+                                                        <div class="d-flex justify-content-center  py-3  text-center">
+                                                            Please Sign in using your account details
+                                                        </div>
+                                                       
+                                                    </div>
+                                                    <div>
+                                                        <p class="f14 d-flex justify-content-center pt-3"><a class="modal-btn ml-1 txt-blue" href="#syne-login" data-target="syne-login">Sign in</a></p>
+                                                    </div>
+
+                                                    <div class="text-center modal-cmn-footerlink w100">
+                                                        <p class="f14">Go back to <a class="modal-btn txt-blue " href="#syne-signup" data-target="syne-sigup"> Sign up</a></p>
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
